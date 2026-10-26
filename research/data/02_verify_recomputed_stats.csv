@@ -1,0 +1,26 @@
+indicator,dataset,year,unit,FR,EU27_agg,EU27_mean,EU27_median,FR_rank_EU27,EA20_rank,Panel8_mean,Panel8_rank,note,dataset_updated,recomputed_on
+social_benefits_total,spr_exp_func,2024,PC_GDP,31.96,27.41,23.02,22.94,2,2,28.22,1,FI 32.46 first,2026-10-23,2026-10-25
+social_benefits_total,spr_exp_func,2025,PC_GDP,32.12,27.49,23.06,23.07,3,3,28.31,1,AT 32.36; FI 32.20 (early estimates),2026-10-23,2026-10-25
+social_benefits_total,spr_exp_func,2024,PPS_HAB,12606,10974,9218,7939,7,6,12210,5,behind LU AT DE NL DK BE,2026-10-23,2026-10-25
+unemployment,spr_exp_func,2024,PC_GDP,1.76,1.08,0.77,0.72,1,1,1.11,1,,2026-10-23,2026-10-25
+unemployment,spr_exp_func,2025,PPS_HAB,699.8,448.3,319.8,301.3,2,2,483.3,1,AT 745 first in 2025e,2026-10-23,2026-10-25
+family,spr_exp_func,2024,PC_GDP,2.24,2.41,2.06,1.92,9,6,2.28,4,,2026-10-23,2026-10-25
+cofog_GF10,gov_10a_exp,2024,PC_GDP,23.7,19.5,16.96,17.1,2,2,19.96,1,ratio uses pre-revision GDP (~2918 bn),2026-10-21,2026-10-25
+cofog_GF07,gov_10a_exp,2024,PC_GDP,8.9,7.3,6.81,6.6,4,3,7.58,1,,2026-10-21,2026-10-25
+cofog_total,gov_10a_exp,2024,PC_GDP,57.3,48.8,45.91,46.8,2,2,49.8,1,level 1671.8 bn vs gov_10a_main 1672.7 bn (57.0%),2026-10-21,2026-10-25
+arop_total,ilc_li02,2025,PC,16.3,16.3,16.02,15.6,17,12,15.28,6,rank 1 = lowest,2026-10-20,2026-10-25
+arop_under18,ilc_li02,2025,PC,22.8,19.6,17.91,16.9,22-23 (tie EL),17-18 (tie EL),18.11,6,rank 1 = lowest,2026-10-20,2026-10-25
+arop_65plus,ilc_li02,2025,PC,11.6,16.3,19.51,16.4,7,5,14.05,3,rank 1 = lowest,2026-10-20,2026-10-25
+arop_before_transfers_excl_pensions,ilc_li10,2025,PC,26.5,24.4,24.09,24.4,20,14,24.64,7,,2026-10-20,2026-10-25
+arop_before_all_transfers,ilc_li09,2025,PC,46.8,42.8,40.56,41.1,26,19,41.7,7,,2026-10-20,2026-10-25
+gini_disposable,ilc_di12,2025,0-100,30.4,29.2,29.07,29.2,17,,28.55,6,,2026-10-20,2026-10-25
+gini_before_excl_pensions,ilc_di12c,2025,0-100,37.4,34.1,33.64,34.1,22-23 (tie LU),,34.44,8,,2026-10-20,2026-10-25
+gini_before_incl_pensions,ilc_di12b,2025,0-100,53.7,47.8,46.26,46.7,27,,47.59,8,,2026-10-20,2026-10-25
+life_expectancy_birth,demo_mlexpec,2024,years,83.0,81.5,80.89,82.0,7,,82.75,4,2005: 80.3 tied 3rd-4th with ES,2026-09-25,2026-10-25
+hly_birth,hlth_hlye,2024,years,63.6,65.2,63.95,63.9,15/26,,65.16,5,,2026-07-17,2026-10-25
+hly_65,hlth_hlye,2024,years,10.9,10.3,9.67,9.6,10/26,,11.5,6,,2026-07-17,2026-10-25
+oop_share_che,hlth_sha11_hf,2024,PC_CHE,10.17,15.06,19.27,16.95,3,,,1,rank 1 = lowest,2026-10-23,2026-10-25
+health_spending,hlth_sha11_hf,2024,PPS_HAB,4491,4075,3519,3247,8,,,5,SE 4777 > FR,2026-10-23,2026-10-25
+tfr,demo_find,2024,births per woman,1.61,1.34,,,2,,,,2005: 1.94 rank 1,2026-09-30,2026-10-25
+socx_net_total,OECD DF_NET_GDP,2021,PT_B1GQ,31.95,OECD 22.59,21.98,,2/38,,,,USA 33.24 first,retrieved 2026-10-25,2026-10-25
+socx_gross_public,OECD DF_SOCX_AGG ES10,2021,PT_B1GQ,32.72,OECD 22.11,,,1/42,,,,USA 21.62 rank 23/42,retrieved 2026-10-25,2026-10-25

@@ -1,0 +1,70 @@
+country,tot_prim_postsec,tot_secondary,tot_tert_inclRD,tot_tert_exclRD,tot_prim_tert_inclRD,tot_prim_tert_exclRD,gov_prim_postsec,gov_secondary,gov_tert_inclRD,gov_tert_exclRD,gov_prim_tert_inclRD,gov_prim_tert_exclRD
+Australia,16697,19373,29004,19916,19179,17346,13875,15288,9846,,13063,
+Austria,19508,20930,27994,17268,22073,18831,18580,19935,24551,14792,20385,17435
+Belgium,19027,20739,26885,16776,20642,18564,18168,19665,22099,14644,18976,17444
+Canada,16003,16128,29822,21299,19744,17437,14523,14636,13852,8193,14341,12809
+Chile,7809,7887,11511,10961,8908,8745,6227,6386,4770,4335,5794,5665
+Colombia,3506,3479,3042,,3405,,3498,3471,3042,,3398,
+Costa Rica,,,19872,,,,5845,5798,17459,17457,7028,7027
+Czechia,13061,15318,16609,10369,13706,12572,11843,13736,11945,6757,11861,10919
+Denmark,17055,16947,32299,14643,20508,16508,15934,15496,26320,14314,18287,15567
+Estonia,11418,10793,22077,12849,13369,11680,10983,10391,17660,11444,12205,11067
+Finland,14717,15293,21179,11065,16141,13913,14677,15229,18566,10734,15533,13808
+France,14932,16745,23285,16970,16800,15388,13400,14674,15130,10318,13787,12711
+Germany,17123,18924,24738,13950,18785,16430,14918,16589,20459,11686,16127,14212
+Greece,8790,8305,5890,3672,7647,6774,6975,6725,4499,3106,6000,5451
+Hungary,8660,8558,21004,17172,10847,10168,7762,7678,14483,10948,8953,8326
+Iceland,19876,18611,24010,,20719,,19308,17720,21107,,19675,
+Ireland,15496,14722,25576,20165,17277,16301,12751,12731,14799,10365,13113,12330
+Israel,13333,12798,14966,10990,13653,12873,12064,10831,6202,2225,10913,10132
+Italy,14848,14541,15385,10534,14981,13780,13970,13767,9628,5423,12895,11854
+Japan,12013,12969,21662,,14212,,11085,11312,7743,,10323,
+Korea,19179,21980,16479,12611,18256,16933,18017,20627,7792,4935,14521,13544
+Latvia,9519,10091,16880,12825,11022,10194,8909,9295,8125,5566,8749,8226
+Lithuania,10802,10891,18175,12508,12374,11166,10164,10262,13073,8405,10785,9789
+Luxembourg,32766,34385,64008,37519,34958,33100,31046,32553,56513,35231,32832,31339
+Mexico,,,,,,,,,,,,
+Netherlands,18363,20142,26538,17223,20416,18077,16248,16657,19036,11487,16949,15052
+New Zealand,11852,12914,20548,15463,13284,12447,10220,10766,11352,8113,10407,9873
+Norway,20528,21218,30939,20223,22866,20459,19932,20159,28207,18855,21791,19690
+Poland,11056,10538,16958,10633,12195,10975,9725,9198,13133,8337,10383,9457
+Portugal,13893,15303,16637,12038,14546,13452,12352,13519,9213,5544,11605,10733
+Slovak Republic,11270,11172,21225,15631,12810,11945,10439,10332,17471,,11527,
+Slovenia,13655,13069,24063,19029,15466,14590,12192,11513,19765,15879,13510,12834
+Spain,14009,15051,19732,14723,15374,14179,11963,13163,12621,8284,12120,11085
+Sweden,16353,16247,29485,14027,18669,15943,16323,16201,24094,12466,17694,15643
+Switzerland,,,,,,,21918,21299,34241,15840,24347,20720
+Türkiye,5118,5226,11311,8428,6348,5775,4377,4430,9093,6247,5314,4748
+United Kingdom,15879,16109,34269,28081,19318,18161,13491,13156,7457,3265,12363,11579
+United States,17164,17711,39551,34303,22144,20977,15847,16350,15181,12018,15699,14995
+OECD average,14436,15003,22878,16058,16075,14865,13231,13555,15960,10538,13601,12690
+Argentina,,,,,,,,,,,,
+Brazil,,,,,,,4294,4448,3539,,4133,
+Bulgaria,8471,8547,14332,13617,9676,9530,8212,8214,9054,8714,8385,8315
+China,5019,5901,7710,,5626,,4386,4981,4480,,4407,
+Croatia,7949,7962,10982,10982,8680,8680,7477,7358,8224,8224,7657,7657
+India,,,,,,,,,,,,
+Indonesia,,,,,,,,,,,,
+Peru,2308,2722,3649,3623,2618,2612,1989,2324,1424,1399,1858,1853
+Romania,7365,9732,13332,13304,8432,8427,6477,8387,11042,11015,7293,7288
+Saudi Arabia,,,,,,,10380,10003,9348,,10036,
+South Africa,,,,,,,,,,,,
+Thailand,,,,,,,,,,,,
+EU25 average,14004,14598,22211,14780,15496,14047,12860,13331,16860,10987,13504,12439
+G20 average,,15055,23020,,,,11736,12328,10273,,11308,
+"1. Includes some expenditure outside educational institutions, such as scholarships or student loans.",,,,,,,,,,,,
+2. Excludes local government expenditure on post-secondary non-tertiary private institutions.,,,,,,,,,,,,
+3. Includes expenditure on post-secondary non-tertiary institutions in lower and upper secondary education.,,,,,,,,,,,,
+4. Excludes expenditure on post-secondary non-tertiary institutions.,,,,,,,,,,,,
+5. Excludes payments from private sources to educational institutions and expenditure on private institutions by local governments and international sources.,,,,,,,,,,,,
+6. Government expenditure on independent private institutions is included in government-dependent private institutions (web columns).,,,,,,,,,,,,
+7. Lower and upper secondary education includes post-secondary non-tertiary education.,,,,,,,,,,,,
+8. Excludes expenditure from international sources. Includes private expenditure for goods and services required directly or indirectly by educational institutions.,,,,,,,,,,,,
+9. Expenditure on public educational institutions includes transfers from international sources to the government and private educational institutions.,,,,,,,,,,,,
+10. Includes expenditure on post-secondary non-tertiary institutions in upper secondary and tertiary education.,,,,,,,,,,,,
+11. Total expenditure on short-cycle tertiary education excludes the payments to private institutions from non-educational private entities.,,,,,,,,,,,,
+12. Excludes some local government expenditure (web columns).,,,,,,,,,,,,
+13. Excludes some expenditure from private sources.,,,,,,,,,,,,
+14. Excludes government and private expenditure on independent private institutions (web columns).,,,,,,,,,,,,
+15. Year of reference 2022.,,,,,,,,,,,,
+16. Excludes international and household expenditure on primary education. Lower and upper secondary categories include only lower secondary expenditure.,,,,,,,,,,,,

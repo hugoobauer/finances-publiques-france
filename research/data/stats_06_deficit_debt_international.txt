@@ -1,0 +1,108 @@
+B9 2005 EU27: n=27 mean=-1.6 median=-2.1 FR=-3.5 rank_worst=6/27
+B9 2005 EA20: n=20 mean=-1.8 median=-2.4 FR=-3.5 rank_worst=4/20
+B9 2005 Panel8: n=8 mean=-0.7 median=-1.6 FR=-3.5 rank_worst=2/8
+   aggregates: EU27=-2.4 EA20=-2.7 EA21=-2.6
+GD 2005 EU27: n=27 mean=47.9 median=42.4 FR=68.2 rank_worst=7/27
+GD 2005 EA20: n=20 mean=51.4 median=46.0 FR=68.2 rank_worst=7/20
+GD 2005 Panel8: n=8 mean=64.7 median=58.3 FR=68.2 rank_worst=3/8
+   aggregates: EU27=67.2 EA20=70.3 EA21=70.2
+D41PAY 2005 EU27: n=27 mean=2.2 median=1.8 FR=2.7 rank_worst=9/27
+D41PAY 2005 EA20: n=20 mean=2.3 median=2.0 FR=2.7 rank_worst=8/20
+D41PAY 2005 Panel8: n=8 mean=2.8 median=2.5 FR=2.7 rank_worst=3/8
+   aggregates: EU27=2.8 EA20=2.9 EA21=2.9
+B9 2007 EU27: n=27 mean=-0.3 median=-0.6 FR=-3.0 rank_worst=3/27
+B9 2007 EA20: n=20 mean=-0.3 median=-0.4 FR=-3.0 rank_worst=2/20
+B9 2007 Panel8: n=8 mean=0.8 median=0.2 FR=-3.0 rank_worst=1/8
+   aggregates: EU27=-0.6 EA20=-0.7 EA21=-0.7
+GD 2007 EU27: n=27 mean=43.7 median=37.1 FR=65.5 rank_worst=7/27
+GD 2007 EA20: n=20 mean=47.3 median=40.0 FR=65.5 rank_worst=6/20
+GD 2007 Panel8: n=8 mean=58.5 median=53.2 FR=65.5 rank_worst=3/8
+   aggregates: EU27=62.4 EA20=65.9 EA21=65.8
+D41PAY 2007 EU27: n=27 mean=2.1 median=1.6 FR=2.7 rank_worst=10/27
+D41PAY 2007 EA20: n=20 mean=2.2 median=1.9 FR=2.7 rank_worst=9/20
+D41PAY 2007 Panel8: n=8 mean=2.6 median=2.4 FR=2.7 rank_worst=3/8
+   aggregates: EU27=2.7 EA20=2.9 EA21=2.9
+B9 2015 EU27: n=27 mean=-1.9 median=-1.9 FR=-3.9 rank_worst=4/27
+B9 2015 EA20: n=20 mean=-2.1 median=-2.2 FR=-3.9 rank_worst=4/20
+B9 2015 Panel8: n=8 mean=-2.0 median=-2.1 FR=-3.9 rank_worst=2/8
+   aggregates: EU27=-1.9 EA20=-2.0 EA21=-2.0
+GD 2015 EU27: n=27 mean=71.5 median=68.8 FR=97.0 rank_worst=7/27
+GD 2015 EA20: n=20 mean=80.6 median=78.5 FR=97.0 rank_worst=7/20
+GD 2015 Panel8: n=8 mean=83.1 median=84.0 FR=97.0 rank_worst=4/8
+   aggregates: EU27=85.0 EA20=91.0 EA21=90.7
+D41PAY 2015 EU27: n=27 mean=2.1 median=1.8 FR=2.0 rank_worst=13/27
+D41PAY 2015 EA20: n=20 mean=2.3 median=2.3 FR=2.0 rank_worst=12/20
+D41PAY 2015 Panel8: n=8 mean=2.1 median=1.7 FR=2.0 rank_worst=4/8
+   aggregates: EU27=2.2 EA20=2.3 EA21=2.3
+B9 2019 EU27: n=27 mean=-0.0 median=0.3 FR=-2.4 rank_worst=3/27
+B9 2019 EA20: n=20 mean=-0.0 median=0.2 FR=-2.4 rank_worst=2/20
+B9 2019 Panel8: n=8 mean=-0.1 median=-0.6 FR=-2.4 rank_worst=2/8
+   aggregates: EU27=-0.5 EA20=-0.5 EA21=-0.5
+GD 2019 EU27: n=27 mean=63.5 median=55.8 FR=98.2 rank_worst=4/27
+GD 2019 EA20: n=20 mean=72.3 median=65.7 FR=98.2 rank_worst=4/20
+GD 2019 Panel8: n=8 mean=76.0 median=78.0 FR=98.2 rank_worst=2/8
+   aggregates: EU27=77.4 EA20=83.5 EA21=83.2
+D41PAY 2019 EU27: n=27 mean=1.4 median=1.3 FR=1.5 rank_worst=10/27
+D41PAY 2019 EA20: n=20 mean=1.5 median=1.4 FR=1.5 rank_worst=9/20
+D41PAY 2019 Panel8: n=8 mean=1.5 median=1.1 FR=1.5 rank_worst=4/8
+   aggregates: EU27=1.5 EA20=1.6 EA21=1.6
+B9 2024 EU27: n=27 mean=-2.2 median=-2.5 FR=-5.8 rank_worst=3/27
+B9 2024 EA20: n=20 mean=-1.8 median=-2.1 FR=-5.8 rank_worst=1/20
+B9 2024 Panel8: n=8 mean=-2.2 median=-3.0 FR=-5.8 rank_worst=1/8
+   aggregates: EU27=-3.1 EA20=-3.0 EA21=-3.0
+GD 2024 EU27: n=27 mean=64.4 median=56.5 FR=112.6 rank_worst=3/27
+GD 2024 EA20: n=20 mean=71.2 median=60.8 FR=112.6 rank_worst=3/20
+GD 2024 Panel8: n=8 mean=77.7 median=81.4 FR=112.6 rank_worst=2/8
+   aggregates: EU27=80.3 EA20=86.6 EA21=86.1
+D41PAY 2024 EU27: n=27 mean=1.6 median=1.3 FR=2.0 rank_worst=9/27
+D41PAY 2024 EA20: n=20 mean=1.5 median=1.4 FR=2.0 rank_worst=6/20
+D41PAY 2024 Panel8: n=8 mean=1.7 median=1.5 FR=2.0 rank_worst=4/8
+   aggregates: EU27=1.9 EA20=1.9 EA21=1.9
+B9 2025 EU27: n=27 mean=-2.4 median=-2.5 FR=-5.1 rank_worst=4/27
+B9 2025 EA20: n=20 mean=-2.0 median=-2.5 FR=-5.1 rank_worst=2/20
+B9 2025 Panel8: n=8 mean=-2.4 median=-2.6 FR=-5.1 rank_worst=2/8
+   aggregates: EU27=-3.1 EA20=-3.0 EA21=-3.0
+GD 2025 EU27: n=27 mean=64.9 median=58.9 FR=115.7 rank_worst=3/27
+GD 2025 EA20: n=20 mean=71.1 median=61.6 FR=115.7 rank_worst=3/20
+GD 2025 Panel8: n=8 mean=78.8 median=81.7 FR=115.7 rank_worst=2/8
+   aggregates: EU27=81.5 EA20=87.7 EA21=87.3
+D41PAY 2025 EU27: n=27 mean=1.6 median=1.3 FR=2.2 rank_worst=8/27
+D41PAY 2025 EA20: n=20 mean=1.5 median=1.4 FR=2.2 rank_worst=5/20
+D41PAY 2025 Panel8: n=8 mean=1.7 median=1.7 FR=2.2 rank_worst=4/8
+   aggregates: EU27=1.9 EA20=1.9 EA21=1.9
+Panel 2025:
+FR [-5.1, 115.7, 2.2] debt2005 68.2 debt2007 65.5
+DE [-2.9, 62.8, 1.1] debt2005 67.1 debt2007 63.7
+IT [-3.1, 136.7, 3.8] debt2005 106.2 debt2007 103.5
+ES [-2.4, 100.5, 2.4] debt2005 42.4 debt2007 35.7
+NL [-1.6, 44.7, 0.7] debt2005 49.6 debt2007 42.8
+BE [-5.2, 108.1, 2.3] debt2005 95.2 debt2007 87.5
+SE [-1.6, 35.1, 0.6] debt2005 49.1 debt2007 39.4
+DK [2.9, 27.2, 0.8] debt2005 39.4 debt2007 29.5
+FR vs EA20 deficit gap:
+2000 -1.3 -1.3 gap 0.0 debtFR 59.7 debtEA20 69.2 debtEU27 66.6
+2001 -1.4 -2.0 gap 0.6 debtFR 59.3 debtEA20 68.2 debtEU27 65.8
+2002 -3.2 -2.8 gap -0.4 debtFR 61.3 debtEA20 68.1 debtEU27 65.6
+2003 -4.1 -3.2 gap -0.9 debtFR 65.4 debtEA20 69.4 debtEU27 66.8
+2004 -3.6 -2.9 gap -0.7 debtFR 66.9 debtEA20 69.7 debtEU27 67.1
+2005 -3.5 -2.7 gap -0.8 debtFR 68.2 debtEA20 70.3 debtEU27 67.2
+2006 -2.7 -1.6 gap -1.1 debtFR 65.4 debtEA20 68.3 debtEU27 65.0
+2007 -3.0 -0.7 gap -2.3 debtFR 65.5 debtEA20 65.9 debtEU27 62.4
+2008 -3.5 -2.3 gap -1.2 debtFR 69.8 debtEA20 69.6 debtEU27 65.1
+2009 -7.4 -6.3 gap -1.1 debtFR 84.1 debtEA20 80.0 debtEU27 75.7
+2010 -7.2 -6.3 gap -0.9 debtFR 86.3 debtEA20 85.5 debtEU27 80.4
+2011 -5.3 -4.2 gap -1.1 debtFR 88.7 debtEA20 87.3 debtEU27 81.7
+2012 -5.2 -3.9 gap -1.3 debtFR 91.7 debtEA20 90.8 debtEU27 85.0
+2013 -4.9 -3.2 gap -1.7 debtFR 94.6 debtEA20 92.8 debtEU27 86.8
+2014 -4.6 -2.5 gap -2.1 debtFR 96.2 debtEA20 92.9 debtEU27 86.9
+2015 -3.9 -2.0 gap -1.9 debtFR 97.0 debtEA20 91.0 debtEU27 85.0
+2016 -3.8 -1.5 gap -2.3 debtFR 98.1 debtEA20 89.9 debtEU27 84.0
+2017 -3.4 -1.0 gap -2.4 debtFR 98.8 debtEA20 87.4 debtEU27 81.5
+2018 -2.3 -0.5 gap -1.8 debtFR 98.5 debtEA20 85.4 debtEU27 79.4
+2019 -2.4 -0.5 gap -1.9 debtFR 98.2 debtEA20 83.5 debtEU27 77.4
+2020 -8.9 -7.0 gap -1.9 debtFR 114.9 debtEA20 96.3 debtEU27 89.4
+2021 -6.6 -5.1 gap -1.5 debtFR 112.8 debtEA20 93.6 debtEU27 86.6
+2022 -4.7 -3.4 gap -1.3 debtFR 111.4 debtEA20 89.2 debtEU27 82.3
+2023 -5.4 -3.4 gap -2.0 debtFR 109.5 debtEA20 86.7 debtEU27 80.3
+2024 -5.8 -3.0 gap -2.8 debtFR 112.6 debtEA20 86.6 debtEU27 80.3
+2025 -5.1 -3.0 gap -2.1 debtFR 115.7 debtEA20 87.7 debtEU27 81.5

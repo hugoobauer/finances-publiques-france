@@ -1,0 +1,3144 @@
+{
+  "meta": {
+    "dataset": "simulator-levers",
+    "schema": "schemas/simulator-levers.schema.json",
+    "as_of": "2026-10-25",
+    "version": "1.0.0",
+    "description": "Levers of the 'Balance the budget yourself' simulator (file 20 §5.3 after the 15-18 sync), multiplier classes (file 17 §8), toggles and anti-double-counting rules. Sign: positive = improves the balance.",
+    "conventions": "Decimal points and no thousands separators in JSON numbers; French formatting (comma decimal, narrow no-break space) is applied at render time. EUR bn = billions of euros, current prices. Every share says % of GDP or % of total public expenditure."
+  },
+  "sign_convention": "Positive EUR bn = improves the public balance; negative = worsens it.",
+  "menu_groups": [
+    {
+      "id": "taxing_the_very_wealthy",
+      "label_en": "Taxing the very wealthy",
+      "label_fr": "Taxer les plus fortunés",
+      "side": "revenue",
+      "mirrors": "popular_targets"
+    },
+    {
+      "id": "broad_revenue",
+      "label_en": "Broad taxes and tax expenditures",
+      "label_fr": "Impôts larges et niches fiscales",
+      "side": "revenue",
+      "mirrors": null
+    },
+    {
+      "id": "revenue_claims",
+      "label_en": "Party revenue claims (not independently costed)",
+      "label_fr": "Recettes annoncées par les partis (non chiffrées de façon indépendante)",
+      "side": "revenue",
+      "mirrors": null
+    },
+    {
+      "id": "core_spending",
+      "label_en": "Pensions, health, civil service, benefits",
+      "label_fr": "Retraites, santé, fonction publique, prestations",
+      "side": "spending",
+      "mirrors": null
+    },
+    {
+      "id": "price_and_wage_measures",
+      "label_en": "Price freezes, energy VAT, minimum wage",
+      "label_fr": "Gels de prix, TVA énergie, SMIC",
+      "side": "spending",
+      "mirrors": null
+    },
+    {
+      "id": "spending_claims",
+      "label_en": "Party savings claims (not independently costed)",
+      "label_fr": "Économies annoncées par les partis (non chiffrées de façon indépendante)",
+      "side": "spending",
+      "mirrors": null
+    },
+    {
+      "id": "popular_targets",
+      "label_en": "Popular targets",
+      "label_fr": "Cibles souvent citées",
+      "side": "spending",
+      "mirrors": "taxing_the_very_wealthy"
+    },
+    {
+      "id": "growth_and_risk",
+      "label_en": "Growth and structural levers, risk scenarios (2032 tab)",
+      "label_fr": "Leviers de croissance et structurels, scénarios de risque (onglet 2032)",
+      "side": "structural",
+      "mirrors": null
+    }
+  ],
+  "multiplier_classes": [
+    {
+      "id": "operating_spending_wages",
+      "label_en": "Operating spending and public wage bill",
+      "label_fr": "Dépenses de fonctionnement et masse salariale publique",
+      "y1": {
+        "default": 0.8,
+        "low": 0.5,
+        "high": 1.1
+      },
+      "y3_5": {
+        "default": 0.7,
+        "low": 0.4,
+        "high": 1.0
+      },
+      "kind": "demand",
+      "basis": "Mésange; OFCE PB 154; ESCB; BdF; GLP (low end)",
+      "flag": null,
+      "source_ids": [
+        "f17",
+        "f17:S6",
+        "f17:S8"
+      ]
+    },
+    {
+      "id": "public_investment",
+      "label_en": "Public investment",
+      "label_fr": "Investissement public",
+      "y1": {
+        "default": 1.0,
+        "low": 0.6,
+        "high": 1.4
+      },
+      "y3_5": {
+        "default": 0.9,
+        "low": 0.5,
+        "high": 1.3
+      },
+      "kind": "demand",
+      "basis": "Mésange; Gechert; Cour (long-run potential-growth warning)",
+      "flag": null,
+      "source_ids": [
+        "f17",
+        "f17:S6"
+      ]
+    },
+    {
+      "id": "health_in_kind",
+      "label_en": "Health and other transfers in kind",
+      "label_fr": "Santé et autres transferts en nature",
+      "y1": {
+        "default": 0.8,
+        "low": 0.5,
+        "high": 1.0
+      },
+      "y3_5": {
+        "default": 0.7,
+        "low": 0.4,
+        "high": 0.9
+      },
+      "kind": "demand",
+      "basis": "e-mod.fr; OFCE social-security savings 0.69",
+      "flag": null,
+      "source_ids": [
+        "f17",
+        "f17:S9"
+      ]
+    },
+    {
+      "id": "cash_benefits_working_age",
+      "label_en": "Cash social benefits (working-age, means-tested)",
+      "label_fr": "Prestations sociales en espèces (âge actif, sous condition de ressources)",
+      "y1": {
+        "default": 0.5,
+        "low": 0.3,
+        "high": 1.0
+      },
+      "y3_5": {
+        "default": 0.7,
+        "low": 0.4,
+        "high": 0.9
+      },
+      "kind": "demand",
+      "basis": "Mésange CSG/IR proxy; OFCE prime d'activité ≈ 1",
+      "flag": null,
+      "source_ids": [
+        "f17"
+      ]
+    },
+    {
+      "id": "pension_indexation",
+      "label_en": "Pension under-indexation or freeze",
+      "label_fr": "Sous-indexation ou gel des pensions",
+      "y1": {
+        "default": 0.3,
+        "low": 0.2,
+        "high": 0.5
+      },
+      "y3_5": {
+        "default": 0.6,
+        "low": 0.3,
+        "high": 0.8
+      },
+      "kind": "demand",
+      "basis": "e-mod.fr; Cour 2026",
+      "flag": null,
+      "source_ids": [
+        "f17",
+        "f17:S9"
+      ]
+    },
+    {
+      "id": "vat",
+      "label_en": "VAT",
+      "label_fr": "TVA",
+      "y1": {
+        "default": 0.3,
+        "low": 0.1,
+        "high": 0.5
+      },
+      "y3_5": {
+        "default": 0.5,
+        "low": 0.1,
+        "high": 0.8
+      },
+      "kind": "demand",
+      "basis": "Mésange vs e-mod.fr vs ESCB (largest model disagreement)",
+      "flag": "Show the model's own balance gain as an alternative (file 17 §8).",
+      "source_ids": [
+        "f17"
+      ]
+    },
+    {
+      "id": "income_tax_csg",
+      "label_en": "Income tax or CSG",
+      "label_fr": "Impôt sur le revenu ou CSG",
+      "y1": {
+        "default": 0.4,
+        "low": 0.1,
+        "high": 0.5
+      },
+      "y3_5": {
+        "default": 0.8,
+        "low": 0.4,
+        "high": 0.9
+      },
+      "kind": "demand",
+      "basis": "Mésange; e-mod.fr; ESCB",
+      "flag": null,
+      "source_ids": [
+        "f17"
+      ]
+    },
+    {
+      "id": "employer_contributions",
+      "label_en": "Employer contributions or production taxes",
+      "label_fr": "Cotisations employeurs ou impôts de production",
+      "y1": {
+        "default": 0.3,
+        "low": 0.2,
+        "high": 0.4
+      },
+      "y3_5": {
+        "default": 0.7,
+        "low": 0.6,
+        "high": 1.0
+      },
+      "kind": "demand",
+      "basis": "Mésange; e-mod.fr (rising in the long run)",
+      "flag": "Rule and model diverge (Mésange: rule 0.89 vs model 0.72); show the model's balance gain.",
+      "source_ids": [
+        "f17"
+      ]
+    },
+    {
+      "id": "corporate_capital",
+      "label_en": "Corporate surtax, taxes on capital income (and high incomes)",
+      "label_fr": "Surtaxe d'IS, impôts sur les revenus du capital (et hauts revenus)",
+      "y1": {
+        "default": 0.3,
+        "low": 0.1,
+        "high": 0.4
+      },
+      "y3_5": {
+        "default": 0.4,
+        "low": 0.2,
+        "high": 0.8
+      },
+      "kind": "demand",
+      "basis": "OFCE PB 154 (large-firm surtax 0.29, CDHR ≈ 0); ESCB",
+      "flag": "Long-run warning for permanent capital-tax rises.",
+      "source_ids": [
+        "f17",
+        "f17:S8"
+      ]
+    },
+    {
+      "id": "wealth_tax",
+      "label_en": "Wealth tax on very large fortunes",
+      "label_fr": "Impôt sur les très grandes fortunes",
+      "y1": {
+        "default": 0.1,
+        "low": 0.0,
+        "high": 0.3
+      },
+      "y3_5": {
+        "default": 0.2,
+        "low": 0.0,
+        "high": 0.5
+      },
+      "kind": "demand",
+      "basis": "Expert proxy (OFCE CDHR ≈ 0; ESCB capital tax): no direct French estimate",
+      "flag": "Expert proxy, labeled as such; revenue uncertainty dominates.",
+      "source_ids": [
+        "f17"
+      ]
+    },
+    {
+      "id": "pension_age_supply",
+      "label_en": "Pension age (supply measure)",
+      "label_fr": "Âge de la retraite (mesure d'offre)",
+      "y1": {
+        "default": 0.0,
+        "low": -0.1,
+        "high": 0.1
+      },
+      "y3_5": null,
+      "kind": "supply",
+      "basis": "Cour des comptes Feb 2025 model comparison: GDP +0.3% at 10 years (-0.1% to +1.1%); balance gain +0.4 pt for 2 years (+0.1 to +0.9)",
+      "flag": "Applied to pension-system figures only; 'all public finances' figures of file 03 already include induced effects.",
+      "source_ids": [
+        "f17"
+      ],
+      "long_run": {
+        "gdp_effect_pct_at_10y": {
+          "default": 0.3,
+          "low": -0.1,
+          "high": 1.1
+        },
+        "balance_gain_pts_gdp_2y": {
+          "default": 0.4,
+          "low": 0.1,
+          "high": 0.9
+        }
+      }
+    },
+    {
+      "id": "eu_contribution_dev_aid",
+      "label_en": "EU contribution; development aid",
+      "label_fr": "Contribution à l'UE ; aide au développement",
+      "y1": {
+        "default": 0.0,
+        "low": 0.0,
+        "high": 0.2
+      },
+      "y3_5": {
+        "default": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "kind": "demand",
+      "basis": "OFCE PB 154: 'zero or very low'",
+      "flag": null,
+      "source_ids": [
+        "f17",
+        "f17:S8"
+      ]
+    },
+    {
+      "id": "annee_blanche_composite",
+      "label_en": "Année blanche composite (income tax 0.4 / pension indexation 0.3 / cash benefits 0.5)",
+      "label_fr": "Composite année blanche (IR 0,4 / indexation des pensions 0,3 / prestations 0,5)",
+      "y1": {
+        "default": 0.4,
+        "low": 0.3,
+        "high": 0.5
+      },
+      "y3_5": {
+        "default": 0.7,
+        "low": 0.6,
+        "high": 0.8
+      },
+      "kind": "demand",
+      "basis": "File 20 §5.3 midpoint of the file 17 components",
+      "flag": "Our composite (file 20), flagged.",
+      "source_ids": [
+        "f20",
+        "f17"
+      ]
+    },
+    {
+      "id": "firms_taxes_subsidies",
+      "label_en": "Firms' taxes and subsidies (our mapping: employer-contribution / corporate rows)",
+      "label_fr": "Impôts et subventions aux entreprises (notre rattachement : cotisations employeurs / IS)",
+      "y1": {
+        "default": 0.3,
+        "low": 0.1,
+        "high": 0.4
+      },
+      "y3_5": {
+        "default": null,
+        "low": 0.4,
+        "high": 0.7
+      },
+      "kind": "demand",
+      "basis": "File 20 §5.3 mapping of S7 to file 17 rows",
+      "flag": "Our mapping, flagged; no central Y3-5 value given.",
+      "source_ids": [
+        "f20",
+        "f17"
+      ]
+    },
+    {
+      "id": "operating_in_kind_associations",
+      "label_en": "Operating spending / transfers in kind (our mapping for associations)",
+      "label_fr": "Fonctionnement / transferts en nature (notre rattachement pour les associations)",
+      "y1": {
+        "default": 0.8,
+        "low": 0.5,
+        "high": 1.0
+      },
+      "y3_5": {
+        "default": 0.7,
+        "low": 0.4,
+        "high": 0.9
+      },
+      "kind": "demand",
+      "basis": "File 20 §5.3 (associations deliver services)",
+      "flag": "Our mapping, flagged.",
+      "source_ids": [
+        "f20",
+        "f17"
+      ]
+    },
+    {
+      "id": "fallback_mixed",
+      "label_en": "Fallback: official mixed-package value (±50%)",
+      "label_fr": "Valeur par défaut : paquet mixte officiel (±50 %)",
+      "y1": {
+        "default": 0.6,
+        "low": 0.3,
+        "high": 0.9
+      },
+      "y3_5": {
+        "default": 0.6,
+        "low": 0.3,
+        "high": 0.9
+      },
+      "kind": "demand",
+      "basis": "File 00 row 62 (HCFP-2026-5 §36) with the ±50% band of file 17 §0 item 9",
+      "flag": "Fallback: no file 17 category.",
+      "source_ids": [
+        "f00:row62",
+        "f17"
+      ]
+    },
+    {
+      "id": "none",
+      "label_en": "No multiplier (growth levers and risk scenarios)",
+      "label_fr": "Pas de multiplicateur (leviers de croissance et scénarios de risque)",
+      "y1": null,
+      "y3_5": null,
+      "kind": "none",
+      "basis": "File 20 §5.3",
+      "flag": null,
+      "source_ids": [
+        "f20"
+      ]
+    }
+  ],
+  "toggles": [
+    {
+      "id": "behavioral_responses",
+      "label_en": "Behavioral responses",
+      "label_fr": "Réactions comportementales",
+      "default": false,
+      "rule_en": "Switches from static to post-behavior values where the research base has them (R1, R2, R5, R11); elsewhere shows 'no behavioral estimate available'."
+    },
+    {
+      "id": "short_long_run",
+      "label_en": "Short run / long run",
+      "label_fr": "Court terme / long terme",
+      "default": "short",
+      "rule_en": "Retirement age, contribution relief, employment."
+    },
+    {
+      "id": "include_party_claims",
+      "label_en": "Include party claims not independently costed",
+      "label_fr": "Inclure les annonces des partis non chiffrées de façon indépendante",
+      "default": false,
+      "rule_en": "Off by default; R13, S11, S12 and claim positions of S14, S17, S19."
+    },
+    {
+      "id": "macro_feedback",
+      "label_en": "Macro feedback",
+      "label_fr": "Bouclage macroéconomique",
+      "default": true,
+      "rule_en": "Net deficit improvement = measure x (1 - m x 0.57), m = the lever's year-1 multiplier; opposite sign for measures that raise spending or cut taxes. Applies to the expected (behavioral) yield.",
+      "semi_elasticity_figure_id": "deficit_semi_elasticity",
+      "no_self_financing_threshold": "1 / 0.57 ≈ 1.75: no source supports a multiplier above it in normal times"
+    }
+  ],
+  "anti_double_counting": [
+    {
+      "id": "R1xR2",
+      "levers": [
+        "R1",
+        "R2"
+      ],
+      "rule_en": "Overlapping wealth bases: cap the combination at the file 07 §5 band (3-10).",
+      "cap_eur_bn": {
+        "low": 3,
+        "high": 10
+      }
+    },
+    {
+      "id": "R8xS2",
+      "levers": [
+        "R8",
+        "S2"
+      ],
+      "rule_en": "Pension freeze counted once.",
+      "cap_eur_bn": null
+    },
+    {
+      "id": "R9xR10",
+      "levers": [
+        "R9",
+        "R10"
+      ],
+      "rule_en": "The 10% pension allowance is a tax expenditure: counted once.",
+      "cap_eur_bn": null
+    },
+    {
+      "id": "S11xS19",
+      "levers": [
+        "S11",
+        "S19"
+      ],
+      "rule_en": "The AME → AMU line is inside the RN immigration block.",
+      "cap_eur_bn": null
+    },
+    {
+      "id": "S13xS18",
+      "levers": [
+        "S13",
+        "S18"
+      ],
+      "rule_en": "EUR 0.20 bn of aid flows through associations.",
+      "overlap_eur_bn": 0.2,
+      "cap_eur_bn": null
+    },
+    {
+      "id": "S11xS18",
+      "levers": [
+        "S11",
+        "S18"
+      ],
+      "rule_en": "EUR 0.94 bn of immigration-related payments to associations.",
+      "overlap_eur_bn": 0.94,
+      "cap_eur_bn": null
+    },
+    {
+      "id": "R11_behavioral_x_macro",
+      "levers": [
+        "R11"
+      ],
+      "rule_en": "With the Bozio-Wasmer behavioral yield shown, the macro toggle adds no second employment effect.",
+      "cap_eur_bn": null
+    },
+    {
+      "id": "S1_all_pf_x_macro",
+      "levers": [
+        "S1"
+      ],
+      "rule_en": "S1 'all public finances' figures already include induced effects: no macro feedback on them.",
+      "cap_eur_bn": null
+    }
+  ],
+  "levers": [
+    {
+      "id": "R1",
+      "label_en": "Zucman tax (2% floor on wealth above EUR 100 m)",
+      "label_fr": "Taxe Zucman (impôt plancher de 2 % sur les patrimoines de plus de 100 M EUR)",
+      "category": "wealth_taxation",
+      "menu_group": "taxing_the_very_wealthy",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 15,
+      "yield_central": 20,
+      "yield_high": 25,
+      "yield_static": {
+        "low": 15,
+        "central": 20,
+        "high": 25,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Proponents' static range (AN bill no. 768)"
+      },
+      "yield_behavioral": {
+        "low": 2,
+        "central": 5,
+        "high": 6,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Critics after behavioral and legal effects"
+      },
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": true,
+        "effect_en": "Switches to the post-behavior value."
+      },
+      "multiplier_class": "wealth_tax",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "constitutional_risk",
+        "note_en": "A 2% uncapped wealth tax may be struck down (Senate report 689)."
+      },
+      "confidence": "L",
+      "claim_status": "range_across_estimates",
+      "political_origin": {
+        "proposed_by": [
+          "LFI",
+          "PS_PP",
+          "EELV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LFI books 15 bn in 2027; PS-Place publique supports it (not costed); Les Écologistes list it (not costed)."
+      },
+      "figure_ids": [
+        "zucman_proponents_eur_bn",
+        "zucman_critics_eur_bn"
+      ],
+      "source_ids": [
+        "f00:row45",
+        "f07:S4",
+        "f07:S5"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "zucman_tax"
+      ],
+      "disabled": false,
+      "notes_en": "Constitutional risk flag; the base is concentrated (three departures would halve it). Cannot be stacked in full with R2.",
+      "notes_fr": "Risque constitutionnel ; l'assiette est concentrée (trois départs la réduiraient de moitié). Non cumulable en totalité avec R2."
+    },
+    {
+      "id": "R2",
+      "label_en": "Restore the ISF (net of the IFI)",
+      "label_fr": "Rétablir l'ISF (net de l'IFI)",
+      "category": "wealth_taxation",
+      "menu_group": "taxing_the_very_wealthy",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 2,
+      "yield_central": 2.5,
+      "yield_high": 3,
+      "yield_static": {
+        "low": 2,
+        "central": 2.5,
+        "high": 3,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Net of the IFI it replaces; gross 3-4.5"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle",
+        "gross_eur_bn": {
+          "low": 3,
+          "high": 4.5
+        }
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "Behavioral response 'lower (not quantified)': the toggle shows the static value with a 'not quantified' label."
+      },
+      "multiplier_class": "wealth_tax",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "PCF"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "PCF: 'triple the ISF'. LFI's 'reinforced/climate ISF' is a separate claim (R13)."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S4",
+        "f07:S5",
+        "f07:S37"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "isf_restoration"
+      ],
+      "disabled": false,
+      "notes_en": "Cannot be stacked in full with R1 (overlapping bases): the tool caps the R1 + R2 combination at the file 07 §5 band (3-10).",
+      "notes_fr": "Non cumulable en totalité avec R1 (assiettes qui se recoupent) : l'outil plafonne R1 + R2 à la fourchette du fichier 07 §5 (3-10)."
+    },
+    {
+      "id": "R3",
+      "label_en": "End the flat tax (PFU)",
+      "label_fr": "Supprimer le prélèvement forfaitaire unique (PFU)",
+      "category": "capital_taxation",
+      "menu_group": "taxing_the_very_wealthy",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 3.2,
+      "yield_central": 3.2,
+      "yield_high": 9,
+      "yield_static": {
+        "low": 3.2,
+        "central": 3.2,
+        "high": 9,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "3.2 Institut Montaigne (default); 9 = LFI claim"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "corporate_capital",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M/L",
+      "claim_status": "range_across_estimates",
+      "political_origin": {
+        "proposed_by": [
+          "LFI"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S14",
+        "f07:S18"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "pfu_abolition_lfi"
+      ],
+      "disabled": false,
+      "notes_en": "Show both values; default 3.2 (Montaigne). France Stratégie found no investment effect of the 2018 reform.",
+      "notes_fr": "Afficher les deux valeurs ; 3,2 par défaut (Montaigne). France Stratégie n'a pas trouvé d'effet de la réforme de 2018 sur l'investissement."
+    },
+    {
+      "id": "R4",
+      "label_en": "Inheritance reform targeting large estates",
+      "label_fr": "Réforme des droits de succession ciblant les gros patrimoines",
+      "category": "wealth_taxation",
+      "menu_group": "taxing_the_very_wealthy",
+      "side": "revenue",
+      "type": "stepper",
+      "unit": "positions",
+      "min": 0,
+      "max": 3,
+      "default": 0,
+      "step": 1,
+      "positions": null,
+      "options": null,
+      "yield_low": 3,
+      "yield_central": 6.5,
+      "yield_high": 10,
+      "yield_static": {
+        "low": 3,
+        "central": 6.5,
+        "high": 10,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "File 07 §5 plausible range; no independent costing found"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "positions",
+        "note": "File 20 gives the range for the reform, not per position: mapping of positions 1-3 to the range is to be specified by the editorial team."
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "wealth_tax",
+      "multiplier_note": "R4 mapped to the wealth-tax class by us, flagged.",
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "L",
+      "claim_status": "not_costed",
+      "political_origin": {
+        "proposed_by": [
+          "LFI",
+          "PS_PP",
+          "EELV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LFI +20 'the first year'; PS-Place publique +15 package; Les Écologistes surtaxes (not costed). CAE Note 69: +9 to +19 in steady state for a broad reform."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07",
+        "f11:S16"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "11-2027-candidate-programs-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "inheritance_reform_lfi",
+        "inheritance_package_ps"
+      ],
+      "disabled": false,
+      "notes_en": "'No independent costing found.' Mapped to the wealth-tax multiplier by us (flagged).",
+      "notes_fr": "« Aucun chiffrage indépendant trouvé. » Rattaché au multiplicateur de l'impôt sur la fortune par nos soins (signalé)."
+    },
+    {
+      "id": "R5",
+      "label_en": "Strengthen the CDHR (minimum tax on top incomes)",
+      "label_fr": "Renforcer la CDHR (contribution différentielle sur les hauts revenus)",
+      "category": "capital_taxation",
+      "menu_group": "taxing_the_very_wealthy",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 0.5,
+      "yield_central": 0.75,
+      "yield_high": 1,
+      "yield_static": {
+        "low": 0.5,
+        "central": 0.75,
+        "high": 1,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": null
+      },
+      "yield_behavioral": {
+        "low": 0.5,
+        "central": 0.75,
+        "high": 1,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Observed basis (2025 yield below 0.4 vs about 2 announced)"
+      },
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": true,
+        "effect_en": "Static and behavioral are both on an observed basis."
+      },
+      "multiplier_class": "corporate_capital",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "H",
+      "claim_status": "observed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": "Existing measure (government, 2025 budget); no party proposal to strengthen it is documented."
+      },
+      "figure_ids": [
+        "cdhr_observed_2025_eur_bn",
+        "cdhr_announced_eur_bn"
+      ],
+      "source_ids": [
+        "f07:S7",
+        "f07:S35"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "cdhr"
+      ],
+      "disabled": false,
+      "notes_en": "The real-world test of top-income taxation: the 2025 yield was about a quarter to a third of the announcement.",
+      "notes_fr": "Le test grandeur nature de la taxation des hauts revenus : le rendement 2025 a été d'environ un quart à un tiers de l'annonce."
+    },
+    {
+      "id": "R6",
+      "label_en": "Corporate-tax surtax on large firms (renewed)",
+      "label_fr": "Surtaxe d'impôt sur les sociétés des grandes entreprises (reconduite)",
+      "category": "corporate_taxation",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 8.0,
+      "yield_central": 8.0,
+      "yield_high": 8.0,
+      "yield_static": {
+        "low": 8.0,
+        "central": 8.0,
+        "high": 8.0,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "2025 one-off yield"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "corporate_capital",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "H",
+      "claim_status": "observed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": "Government measure (2025 budget)."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S1"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "cit_surtax_large_firms"
+      ],
+      "disabled": false,
+      "notes_en": "One-off in 2025; renewal is a choice.",
+      "notes_fr": "Mesure ponctuelle en 2025 ; sa reconduction est un choix."
+    },
+    {
+      "id": "R7",
+      "label_en": "VAT, all rates",
+      "label_fr": "TVA, tous les taux",
+      "category": "consumption_taxation",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "slider",
+      "unit": "points_of_vat",
+      "min": -1,
+      "max": 2,
+      "default": 0,
+      "step": 0.5,
+      "positions": null,
+      "options": null,
+      "yield_low": 8.2,
+      "yield_central": 8.2,
+      "yield_high": 8.2,
+      "yield_static": {
+        "low": 8.2,
+        "central": 8.2,
+        "high": 8.2,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "+1 point",
+        "note": "Net per point (13 gross)"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "linear_per_unit",
+        "per_unit_eur_bn": 8.2,
+        "unit": "point of VAT (net)",
+        "gross_per_unit_eur_bn": 13
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "vat",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M/H",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "vat_1pt_net_eur_bn"
+      ],
+      "source_ids": [
+        "f07:S6"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "vat_plus1"
+      ],
+      "disabled": false,
+      "notes_en": "Regressive: Insee finds levies on consumption raise inequality by 3.9 Gini points.",
+      "notes_fr": "Régressif : l'Insee montre que les prélèvements sur la consommation accroissent les inégalités de 3,9 points de Gini."
+    },
+    {
+      "id": "R8",
+      "label_en": "Année blanche (freeze of income-tax brackets, pensions and benefits)",
+      "label_fr": "Année blanche (gel du barème de l'IR, des pensions et des prestations)",
+      "category": "freeze",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 4.4,
+      "yield_central": 5.05,
+      "yield_high": 5.7,
+      "yield_static": {
+        "low": 4.4,
+        "central": 5.05,
+        "high": 5.7,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "annee_blanche_composite",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M/H",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "RE"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "Renaissance: année blanche on social benefits in budget 2028, small pensions protected (not costed; IPP full version is an upper bound)."
+      },
+      "figure_ids": [
+        "annee_blanche_eur_bn"
+      ],
+      "source_ids": [
+        "f07:S8"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "annee_blanche"
+      ],
+      "disabled": false,
+      "notes_en": "Regressive overall (IPP). Overlaps S2 (pension freeze): the tool prevents double counting.",
+      "notes_fr": "Régressif dans l'ensemble (IPP). Recoupe S2 (gel des pensions) : l'outil empêche le double compte."
+    },
+    {
+      "id": "R9",
+      "label_en": "Tax expenditures (niches): cut x% of the EUR 91.8 bn",
+      "label_fr": "Dépenses fiscales (niches) : réduire de x % les 91,8 Md EUR",
+      "category": "tax_expenditures",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "step": 1,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 91.83",
+        "note": "Linear: x% x 91.83"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "tax_expenditures_2025_eur_bn",
+        "max_share": 0.3,
+        "max_yield_eur_bn": 27.549,
+        "note": "Behavioral response 'lower; not modeled'."
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "income_tax_csg",
+      "multiplier_note": "R9 mapping is ours (most large tax expenditures reduce income or corporate tax).",
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [
+          "LFI",
+          "EELV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LFI: +22 'unjust tax and social expenditures'; Les Écologistes: Dutreil exemption 75% → 50%."
+      },
+      "figure_ids": [
+        "tax_expenditures_2025_eur_bn"
+      ],
+      "source_ids": [
+        "f00:row56",
+        "f05"
+      ],
+      "research_files": [
+        "05-taxation.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "tax_expenditures_trim_lfi",
+        "dutreil_reform_eelv"
+      ],
+      "disabled": false,
+      "notes_en": "474 measures; actual cost known for only 55%; largest items: CIR 7.1, home-employee credit 7.1, 10% pension allowance 5.6, Dutreil 3.8.",
+      "notes_fr": "474 mesures ; coût réel connu pour 55 % seulement ; principaux postes : CIR 7,1, crédit d'impôt emploi à domicile 7,1, abattement de 10 % des retraités 5,6, Dutreil 3,8."
+    },
+    {
+      "id": "R10",
+      "label_en": "Cap the 10% pension allowance at EUR 3,000",
+      "label_fr": "Plafonner l'abattement de 10 % des retraités à 3 000 EUR",
+      "category": "tax_expenditures",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 1.4,
+      "yield_central": 1.4,
+      "yield_high": 1.4,
+      "yield_static": {
+        "low": 1.4,
+        "central": 1.4,
+        "high": 1.4,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "income_tax_csg",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "GOV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "Government, PLF 2027."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S3"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "PLF 2027 measure. Part of R9 (the 10% allowance is a tax expenditure): no double counting.",
+      "notes_fr": "Mesure du PLF 2027. Incluse dans R9 (l'abattement de 10 % est une dépense fiscale) : pas de double compte."
+    },
+    {
+      "id": "R11",
+      "label_en": "General employer contribution relief (allègements généraux, about EUR 75 bn)",
+      "label_fr": "Allègements généraux de cotisations patronales (environ 75 Md EUR)",
+      "category": "social_contributions",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "slider",
+      "unit": "pct_removal",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "step": 5,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": 75,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": 75,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "100% removal",
+        "note": "Linear, up to 75"
+      },
+      "yield_behavioral": {
+        "low": null,
+        "central": null,
+        "high": 48,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "100% removal",
+        "note": "About 48 net with -980,000 FTE jobs (Bozio-Wasmer)"
+      },
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "contribution_relief_general_eur_bn",
+        "max_share": 1.0,
+        "max_yield_eur_bn": 75.0,
+        "published_max_eur_bn": 75
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": "Short-run / long-run toggle (Toggle 2).",
+      "behavioral_toggle": {
+        "available": true,
+        "effect_en": "Shows the Bozio-Wasmer net yield (about 48 at 100%) and the job-loss counter."
+      },
+      "multiplier_class": "employer_contributions",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "LFI",
+          "EELV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LFI: end of relief above 2 SMIC (not costed); Les Écologistes: 'take 10%' of the relief (+7.7 claimed)."
+      },
+      "figure_ids": [
+        "contribution_relief_general_eur_bn",
+        "contribution_relief_abolition_net_eur_bn",
+        "contribution_relief_abolition_jobs_fte"
+      ],
+      "source_ids": [
+        "f08"
+      ],
+      "research_files": [
+        "08-revenue-cuts-since-2017-and-structural.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "contribution_relief_eelv"
+      ],
+      "disabled": false,
+      "notes_en": "Employment-loss counter shown alongside (-980,000 FTE at 100%). With the behavioral toggle on, the macro toggle adds no second employment effect.",
+      "notes_fr": "Compteur de pertes d'emplois affiché à côté (-980 000 ETP à 100 %). Avec les comportements activés, le bouclage macro n'ajoute pas un second effet emploi."
+    },
+    {
+      "id": "R12",
+      "label_en": "Anti-fraud plan",
+      "label_fr": "Plan de lutte contre la fraude",
+      "category": "enforcement",
+      "menu_group": "broad_revenue",
+      "side": "revenue",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 1,
+      "yield_central": 2.0,
+      "yield_high": 3,
+      "yield_static": {
+        "low": 1,
+        "central": 2.0,
+        "high": 3,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "fallback_mixed",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "GOV",
+          "LFI",
+          "RN",
+          "LR"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "Government budgets 1.0 in 2027; LFI +2; RN +1.1 (2027) → +23.8 (2031); LR +5."
+      },
+      "figure_ids": [
+        "antifraud_marginal_yield_eur_bn",
+        "social_fraud_hcfips_2024_eur_bn"
+      ],
+      "source_ids": [
+        "f07:S3",
+        "f07:S10"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "antifraud_plan",
+        "lfi_antifraud",
+        "rn_fraud",
+        "lr_fraud"
+      ],
+      "disabled": false,
+      "notes_en": "'Not credible' label above 3 (HCFP). Estimated social fraud (about 13-14 bn) is a loss estimate, not a recoverable yield.",
+      "notes_fr": "Étiquette « non crédible » au-delà de 3 (HCFP). La fraude sociale estimée (environ 13-14 Md) est une perte, pas un rendement récupérable."
+    },
+    {
+      "id": "R13",
+      "label_en": "Party-specific revenue claims (buyback tax 8.4, 'climate ISF' 10, multinationals tax...)",
+      "label_fr": "Recettes spécifiques annoncées par les partis (taxe sur les rachats d'actions 8,4, « ISF climatique » 10, taxe sur les multinationales...)",
+      "category": "party_claims",
+      "menu_group": "revenue_claims",
+      "side": "revenue",
+      "type": "custom",
+      "unit": "custom",
+      "min": null,
+      "max": null,
+      "default": null,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": null,
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "custom",
+        "note": "Claimed amount; behavioral value = claim halved (convention, file 11 §5.1)."
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "Behavioral value = claim halved (convention, file 11 §5.1)."
+      },
+      "multiplier_class": "fallback_mixed",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "L",
+      "claim_status": "party_claim",
+      "political_origin": {
+        "proposed_by": [
+          "RN",
+          "LFI"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S19",
+        "f07:S18",
+        "f11:S1"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "11-2027-candidate-programs-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "buyback_tax_rn",
+        "isf_climate_lfi",
+        "multinationals_tax_lfi"
+      ],
+      "disabled": false,
+      "notes_en": "Shown under 'claims', in grey; off by default (Toggle 3). The multiplier applies to the claimed amount only when Toggle 3 is on.",
+      "notes_fr": "Affiché parmi les « annonces », en gris ; désactivé par défaut (bascule 3). Le multiplicateur ne s'applique au montant annoncé que si la bascule 3 est activée."
+    },
+    {
+      "id": "S1",
+      "label_en": "Legal retirement age",
+      "label_fr": "Âge légal de départ à la retraite",
+      "category": "pensions",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "slider",
+      "unit": "age_years",
+      "min": 60,
+      "max": 66,
+      "default": 64,
+      "step": 1,
+      "positions": [
+        {
+          "setting": 60,
+          "static_eur_bn": {
+            "low": -58,
+            "high": -43
+          },
+          "note": "General return (64 → 60)"
+        },
+        {
+          "setting": 62,
+          "static_eur_bn": {
+            "low": -17,
+            "high": -10
+          },
+          "note": "Pension system; about -26 including induced revenue"
+        },
+        {
+          "setting": 63,
+          "static_eur_bn": {
+            "low": -5.8,
+            "high": -5.8
+          },
+          "note": "Pension system, 2035 (-13 for all public finances)"
+        },
+        {
+          "setting": 64,
+          "static_eur_bn": {
+            "low": 0,
+            "high": 0
+          },
+          "note": "Current law"
+        },
+        {
+          "setting": 65,
+          "static_eur_bn": {
+            "low": 9,
+            "high": 19
+          },
+          "note": "+1 year: +0.3 to +0.65 pt of GDP in 10-20 years"
+        }
+      ],
+      "options": null,
+      "yield_low": -58,
+      "yield_central": null,
+      "yield_high": -43,
+      "yield_static": {
+        "low": -58,
+        "central": null,
+        "high": -43,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "60",
+        "note": "Cost of a general return to 60: EUR 43 bn (Fipeco, about) to 58 bn (Institut Montaigne). The 26-35 bn range applies to partial (RN-type) versions only."
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "positions",
+        "note": "Pension-system figures unless stated; 'all public finances' figures already include induced effects."
+      },
+      "ramp_up_years": {
+        "min": 2,
+        "max": 4
+      },
+      "ramp_up_note": "Ramp-up 2-4 years (file 20 §5.3).",
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "pension_age_supply",
+      "multiplier_note": "Supply measure: no year-1 demand multiplier; applied to pension-system figures only.",
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "range_across_estimates",
+      "political_origin": {
+        "proposed_by": [
+          "NFP_2024",
+          "LFI",
+          "RN",
+          "EELV"
+        ],
+        "opposite_direction_by": [
+          "LR",
+          "HOR",
+          "REC",
+          "NE"
+        ],
+        "note_en": "Lowering: NFP 2024 (60), LFI (60 with 40 years), RN (62, 60 for early starters), Écologistes (62 then 60). Raising: LR (full rate at 65), Horizons (65 within 10 years), Reconquête (64-65), Lisnard (65). Renaissance: abolish the legal age (contribution length only)."
+      },
+      "figure_ids": [
+        "return_60_general_cost_eur_bn",
+        "return_60_partial_cost_eur_bn"
+      ],
+      "source_ids": [
+        "f00:row44",
+        "f03"
+      ],
+      "research_files": [
+        "03-pensions.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "retirement_60_general_nfp",
+        "retirement_60_partial_rn_2024",
+        "rn_back_to_62",
+        "repeal_2023_reform_lfi",
+        "lfi_retirement_60_40",
+        "horizons_pensions_45y_65",
+        "lr_pensions"
+      ],
+      "disabled": false,
+      "notes_en": "Short-run / long-run toggle. Costs ramp up over 2-4 years; DG Trésor (long run) vs OFCE (short run) models.",
+      "notes_fr": "Bascule court terme / long terme. Les coûts montent en charge sur 2 à 4 ans ; modèles DG Trésor (long terme) et OFCE (court terme)."
+    },
+    {
+      "id": "S2",
+      "label_en": "Pension indexation (PLFSS 2027: full indexation only up to EUR 1,260 a month, lower above)",
+      "label_fr": "Revalorisation des pensions (PLFSS 2027 : revalorisation complète jusqu'à 1 260 EUR par mois seulement, moindre au-delà)",
+      "category": "pensions",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 4.1,
+      "yield_central": 4.1,
+      "yield_high": 4.1,
+      "yield_static": {
+        "low": 4.1,
+        "central": 4.1,
+        "high": 4.1,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "PLFSS 2027 indexation savings"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "pension_indexation",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M/H",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "GOV"
+        ],
+        "opposite_direction_by": [
+          "LFI"
+        ],
+        "note_en": "Government, PLFSS 2027. LFI proposes the opposite (indexation of all pensions and benefits)."
+      },
+      "figure_ids": [
+        "pension_indexation_plfss2027_eur_bn"
+      ],
+      "source_ids": [
+        "f03"
+      ],
+      "research_files": [
+        "03-pensions.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Overlaps R8 (the tool prevents double counting). File 20 labels this lever 'one-year freeze of base pensions, lowest pensions protected', but the 4.1 bn is the PLFSS 2027 partial under-indexation (file 03).",
+      "notes_fr": "Recoupe R8 (l'outil empêche le double compte). Le fichier 20 parle d'un « gel d'un an des pensions de base, petites pensions protégées », mais les 4,1 Md correspondent à la sous-indexation partielle du PLFSS 2027 (fichier 03)."
+    },
+    {
+      "id": "S3",
+      "label_en": "Civil-service index point",
+      "label_fr": "Point d'indice de la fonction publique",
+      "category": "civil_service",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_vs_freeze",
+      "min": -1,
+      "max": 10,
+      "default": 0,
+      "step": 0.5,
+      "positions": null,
+      "options": null,
+      "yield_low": 2.1,
+      "yield_central": 2.25,
+      "yield_high": 2.4,
+      "yield_static": {
+        "low": 2.1,
+        "central": 2.25,
+        "high": 2.4,
+        "central_is_midpoint": true,
+        "computed_by_us": false,
+        "at_setting": "-1%",
+        "note": "Per point; a +1% rise costs the same amount"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "linear_per_unit",
+        "per_unit_eur_bn": {
+          "low": 2.1,
+          "high": 2.4
+        },
+        "unit": "1% of the index point",
+        "sign": "a rise costs, a cut saves"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_spending_wages",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "LFI",
+          "NFP_2024",
+          "EELV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LFI/NFP +10% (cost); Écologistes: index point indexed to inflation."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S33",
+        "f07:S47"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "index_point_plus1",
+        "index_point_plus10_lfi"
+      ],
+      "disabled": false,
+      "notes_en": "Teacher pay is about 18% below the OECD average at 15 years.",
+      "notes_fr": "Les enseignants sont payés environ 18 % de moins que la moyenne de l'OCDE à 15 ans d'ancienneté."
+    },
+    {
+      "id": "S4",
+      "label_en": "Public headcount",
+      "label_fr": "Effectifs publics",
+      "category": "civil_service",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "slider",
+      "unit": "posts",
+      "min": null,
+      "max": null,
+      "default": null,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": null,
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "none",
+        "note": "Not costed in the research base: v2 needs an average cost per FTE from DGAFP."
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_spending_wages",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "n/a",
+      "claim_status": "not_costed",
+      "political_origin": {
+        "proposed_by": [
+          "LR",
+          "HOR",
+          "RE",
+          "RN"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LR: 400,000 non-replacements; Horizons: replace 2 of 3; Renaissance: 100,000 fewer State posts; RN: 201,000 posts not filled. Party claims only (file 11)."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f20"
+      ],
+      "research_files": [
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "lr_non_replacement_400k",
+        "horizons_replace_2_of_3",
+        "re_100k_posts",
+        "rn_posts_not_filled"
+      ],
+      "disabled": true,
+      "notes_en": "Disabled in v1: not costed in the research base.",
+      "notes_fr": "Désactivé en v1 : non chiffré dans la base de recherche."
+    },
+    {
+      "id": "S5",
+      "label_en": "ONDAM growth (health)",
+      "label_fr": "Progression de l'ONDAM (santé)",
+      "category": "health",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_growth",
+      "min": 0,
+      "max": 5,
+      "default": null,
+      "step": 0.1,
+      "positions": null,
+      "options": null,
+      "yield_low": 0.27,
+      "yield_central": 0.27,
+      "yield_high": 0.27,
+      "yield_static": {
+        "low": 0.27,
+        "central": 0.27,
+        "high": 0.27,
+        "central_is_midpoint": false,
+        "computed_by_us": true,
+        "at_setting": "per 0.1 pt of growth",
+        "note": "0.001 x 273.3 bn (ONDAM 2026), computed"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "linear_per_unit",
+        "per_unit_eur_bn": 0.27,
+        "unit": "0.1 pt of ONDAM growth",
+        "base_figure_id": "ondam_2026_eur_bn"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "health_in_kind",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M (computed)",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "ondam_2026_eur_bn"
+      ],
+      "source_ids": [
+        "f02"
+      ],
+      "research_files": [
+        "02-social-protection.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Quality and access trade-off; shows access indicators (GP shortages: 29% of the population). Default growth not set in file 20.",
+      "notes_fr": "Arbitrage qualité / accès ; affiche des indicateurs d'accès (pénurie de généralistes : 29 % de la population). Taux par défaut non fixé dans le fichier 20."
+    },
+    {
+      "id": "S6",
+      "label_en": "Health restructuring (administration, low-value care)",
+      "label_fr": "Restructuration de la santé (gestion, soins de faible valeur)",
+      "category": "health",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": null,
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "pool_not_yield",
+        "pools_eur_bn": {
+          "administration_gap": 6,
+          "low_value_care": 22
+        }
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": "Multi-year, uncertain.",
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "health_in_kind",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "L",
+      "claim_status": "pool_not_yield",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "health_admin_gap_eur_bn",
+        "low_value_care_eur_bn"
+      ],
+      "source_ids": [
+        "f12"
+      ],
+      "research_files": [
+        "12-health-hospital-outcomes-international.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Pool, not yield: shown as 'potential, not a budget figure'. Multi-year and uncertain; excluded from totals.",
+      "notes_fr": "Gisement, pas rendement : affiché comme « potentiel, pas un chiffre budgétaire ». Pluriannuel et incertain ; exclu des totaux."
+    },
+    {
+      "id": "S7",
+      "label_en": "Targeted business aid (HCSP perimeter 1, EUR 82 bn)",
+      "label_fr": "Aides ciblées aux entreprises (périmètre 1 du HCSP, 82 Md EUR)",
+      "category": "business_aid",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 30,
+      "default": 0,
+      "step": 1,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 82",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "business_aid_hcsp_perimeter1_eur_bn",
+        "max_share": 0.3,
+        "max_yield_eur_bn": 24.6
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "firms_taxes_subsidies",
+      "multiplier_note": "Our mapping (employer-contribution / corporate rows), flagged.",
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "L",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": "Left-coded target (33% of people would cut business aid first); no party costing in the research base."
+      },
+      "figure_ids": [
+        "business_aid_hcsp_perimeter1_eur_bn"
+      ],
+      "source_ids": [
+        "f08"
+      ],
+      "research_files": [
+        "08-revenue-cuts-since-2017-and-structural.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Linear; effects unknown (evaluation lacking, HCSP and Senate agree).",
+      "notes_fr": "Linéaire ; effets inconnus (évaluation insuffisante, HCSP et Sénat d'accord)."
+    },
+    {
+      "id": "S8",
+      "label_en": "Family / minimum-income benefits",
+      "label_fr": "Prestations familiales / minima sociaux",
+      "category": "social_benefits",
+      "menu_group": "core_spending",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 10,
+      "default": 0,
+      "step": 1,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x (65.8 + 34.0)",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "drees_family_benefits_2024_eur_bn",
+        "extra_base_figure_ids": [
+          "drees_poverty_exclusion_benefits_2024_eur_bn"
+        ],
+        "max_share": 0.1,
+        "max_yield_eur_bn": 9.98,
+        "note": "Base = family 65.8 + poverty-exclusion 34.0 (Drees 2024, all schemes)."
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "cash_benefits_working_age",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [
+          "LR"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LR: cap cumulated non-contributory aid at 70% of the SMIC (part of a +30 claim with unemployment insurance)."
+      },
+      "figure_ids": [
+        "drees_family_benefits_2024_eur_bn",
+        "drees_poverty_exclusion_benefits_2024_eur_bn"
+      ],
+      "source_ids": [
+        "f02"
+      ],
+      "research_files": [
+        "02-social-protection.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Drees scope (all schemes), flagged. Poverty-rate effect not modeled; child-poverty warning.",
+      "notes_fr": "Périmètre Drees (tous régimes), signalé. Effet sur le taux de pauvreté non modélisé ; alerte pauvreté des enfants."
+    },
+    {
+      "id": "S9",
+      "label_en": "Price freezes and energy VAT",
+      "label_fr": "Gels de prix et TVA sur l'énergie",
+      "category": "price_measures",
+      "menu_group": "price_and_wage_measures",
+      "side": "spending",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": [
+        {
+          "id": "energy_vat_5_5",
+          "label_en": "Energy VAT 20% → 5.5% (RN)",
+          "label_fr": "TVA énergie 20 % → 5,5 % (RN)",
+          "static_eur_bn": {
+            "low": null,
+            "central": -11,
+            "high": null
+          },
+          "note": "Montaigne 2024: '> 11' (a lower bound on the cost; the only independent costing); RN's own figure -12.2; francebudget.fr's -17.4 is not used (file 07)."
+        },
+        {
+          "id": "fuel_freeze_1_70",
+          "label_en": "Fuel price frozen at EUR 1.70/l (LFI), oil-price slider",
+          "label_fr": "Carburant bloqué à 1,70 EUR/l (LFI), curseur du prix du pétrole",
+          "static_eur_bn": {
+            "low": -26.5,
+            "central": -12,
+            "high": 0
+          },
+          "note": "-26.5 at Oct 2026 spot prices; about -12 at the PLF's 80.3 $/b; about 0 at 2025 prices; 4.6 bn per EUR 0.10/l"
+        }
+      ],
+      "yield_low": -26.5,
+      "yield_central": null,
+      "yield_high": 0,
+      "yield_static": {
+        "low": -26.5,
+        "central": null,
+        "high": 0,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Envelope of the two options"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "options"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "vat",
+      "multiplier_note": "Opposite sign (measures that cut taxes).",
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "range_across_estimates",
+      "political_origin": {
+        "proposed_by": [
+          "RN",
+          "LFI"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S13",
+        "f07:S20",
+        "f11:S20",
+        "f11:S3"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "11-2027-candidate-programs-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "energy_vat_rn",
+        "fuel_freeze_lfi"
+      ],
+      "disabled": false,
+      "notes_en": "Untargeted support (Cour des comptes). Mapping the fuel-price freeze to VAT is ours (flagged); opposite sign (a cost). Energy-VAT option: file 20 shows -11 to -17.4, but file 07 rules out the 17.4 figure; the option uses Montaigne's '> 11' lower bound.",
+      "notes_fr": "Soutien non ciblé (Cour des comptes). Le rattachement du gel des carburants à la TVA est le nôtre (signalé) ; signe opposé (un coût). Option TVA énergie : le fichier 20 indique -11 à -17,4, mais le fichier 07 écarte le chiffre de 17,4 ; l'option retient la borne basse de Montaigne (« plus de 11 »)."
+    },
+    {
+      "id": "S10",
+      "label_en": "SMIC at EUR 1,600-1,700 net",
+      "label_fr": "SMIC à 1 600-1 700 EUR net",
+      "category": "wages",
+      "menu_group": "price_and_wage_measures",
+      "side": "spending",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": -4,
+      "yield_central": null,
+      "yield_high": -1.8,
+      "yield_static": {
+        "low": -4,
+        "central": null,
+        "high": -1.8,
+        "central_is_midpoint": false,
+        "computed_by_us": true,
+        "at_setting": null,
+        "note": "Public-finance effect only. Own scaling of Montaigne 2024 (file 11): 1,600 net (+8.3% vs the SMIC in force since June 2026) about -1.8 to -2.2; 1,700 net (+15%) about -3.5 to -4."
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "fallback_mixed",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [
+          "LFI",
+          "NFP_2024",
+          "PS_PP",
+          "EELV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LFI 1,700 net; NFP 2024 and PS 1,600 net; Écologistes 2,000 gross."
+      },
+      "figure_ids": [],
+      "source_ids": [
+        "f07:S17",
+        "f11:S1"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "11-2027-candidate-programs-costing.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "smic_1600_nfp",
+        "smic_1700_lfi",
+        "smic_1600_ps",
+        "smic_2000_gross_eelv"
+      ],
+      "disabled": false,
+      "notes_en": "Employment effect not costed. File 20 shows -3.5 to -4 for the whole 1,600-1,700 range; file 11 rescales 1,600 net to about -1.8 to -2.2 after the June 2026 SMIC rise.",
+      "notes_fr": "Effet sur l'emploi non chiffré. Le fichier 20 indique -3,5 à -4 pour l'ensemble de la fourchette 1 600-1 700 ; le fichier 11 ramène 1 600 EUR net à environ -1,8 à -2,2 après la hausse du SMIC de juin 2026."
+    },
+    {
+      "id": "S11",
+      "label_en": "Immigration-related savings (claims)",
+      "label_fr": "Économies liées à l'immigration (annonces)",
+      "category": "party_claims",
+      "menu_group": "spending_claims",
+      "side": "spending",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 8,
+      "yield_central": null,
+      "yield_high": 15.1,
+      "yield_static": {
+        "low": 8,
+        "central": null,
+        "high": 15.1,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "RN 2024 (8) to RN 2027 (15.1) claimed; LR +10"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "fallback_mixed",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "legal_fragility",
+        "note_en": "Constitutional Council decision 2024-6 RIP; 92% of the RN block 'undocumented or legally fragile' (Institut de l'Entreprise)."
+      },
+      "confidence": "L",
+      "claim_status": "party_claim",
+      "political_origin": {
+        "proposed_by": [
+          "RN",
+          "LR"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "immig_net_contrib_individual_pct_gdp",
+        "immig_net_contrib_all_public_goods_pct_gdp",
+        "ame_2025_eur_bn"
+      ],
+      "source_ids": [
+        "f07:S13",
+        "f07:S20",
+        "f15",
+        "f00:row55",
+        "f00:row54"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "15-immigration-and-public-finances.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "rn_immigration_2024",
+        "rn_immigration_2026",
+        "rn_immigration_2027",
+        "lr_immigration"
+      ],
+      "disabled": false,
+      "notes_en": "Grey 'claim'. Context chip: net fiscal contribution +1.02% to -0.85% of GDP (OECD); AME 1.34 bn. Overlaps S19 (the AME → AMU line is inside the RN block).",
+      "notes_fr": "« Annonce » en gris. Repère : contribution budgétaire nette de +1,02 % à -0,85 % du PIB (OCDE) ; AME 1,34 Md. Recoupe S19 (la ligne AME → AMU est incluse dans le bloc RN)."
+    },
+    {
+      "id": "S12",
+      "label_en": "EU contribution cap at EUR 5 bn",
+      "label_fr": "Plafonnement de la contribution à l'UE à 5 Md EUR",
+      "category": "party_claims",
+      "menu_group": "spending_claims",
+      "side": "spending",
+      "type": "toggle",
+      "unit": "on_off",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": null,
+      "positions": null,
+      "options": null,
+      "yield_low": 11.1,
+      "yield_central": 11.1,
+      "yield_high": 11.1,
+      "yield_static": {
+        "low": 11.1,
+        "central": 11.1,
+        "high": 11.1,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Claimed (2027)"
+      },
+      "yield_behavioral": {
+        "low": 1.4,
+        "central": null,
+        "high": 4.5,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Ceiling even if legal (net 6.4 or 9.5 minus 5); legal unilateral yield about 0"
+      },
+      "yield_model": {
+        "kind": "toggle"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": true,
+        "effect_en": "Shows the 1.4-4.5 ceiling 'even if legal'."
+      },
+      "multiplier_class": "eu_contribution_dev_aid",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "treaty_conflict",
+        "note_en": "Own Resources Decision (unanimity, ratified by every member state): legal unilateral yield ≈ 0."
+      },
+      "confidence": "very_low",
+      "claim_status": "party_claim",
+      "political_origin": {
+        "proposed_by": [
+          "RN"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "eu_net_contribution_2025_accounting_eur_bn",
+        "eu_net_contribution_2025_operating_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S3",
+        "f00:row52",
+        "f11:S7a"
+      ],
+      "research_files": [
+        "07-proposals-costing.md",
+        "11-2027-candidate-programs-costing.md",
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "rn_eu_cap"
+      ],
+      "disabled": false,
+      "notes_en": "Grey 'claim': the control shows the claimed bar next to the 1.4-4.5 ceiling and the verified net contribution (9.5 / 6.4).",
+      "notes_fr": "« Annonce » en gris : le contrôle montre la barre annoncée à côté du plafond de 1,4-4,5 et de la contribution nette vérifiée (9,5 / 6,4)."
+    },
+    {
+      "id": "S13",
+      "label_en": "Development-aid budget mission (programmes 110, 209, 365, 370, 384)",
+      "label_fr": "Mission budgétaire « Aide publique au développement » (programmes 110, 209, 365, 370, 384)",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "step": 5,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 3.17",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "oda_mission_plf2027_eur_bn",
+        "max_share": 1.0,
+        "max_yield_eur_bn": 3.17
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "eu_contribution_dev_aid",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "international_commitments",
+        "note_en": "International aid commitments."
+      },
+      "confidence": "H (budget line)",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": "No party costing in the research base; the government already cuts it in PLF 2027."
+      },
+      "figure_ids": [
+        "oda_mission_plf2027_eur_bn",
+        "oda_2025_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S2",
+        "f00:row53"
+      ],
+      "research_files": [
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "International commitments; cutting the mission does not cut OECD ODA (12.9) one-for-one. The PLF 2027 baseline already includes a 0.40 cut. Overlap: 0.20 of State payments to associations is aid (S18).",
+      "notes_fr": "Engagements internationaux ; réduire la mission ne réduit pas l'APD OCDE (12,9) à due proportion. Le PLF 2027 inclut déjà une baisse de 0,40. Recoupement : 0,20 des versements aux associations relève de l'aide (S18)."
+    },
+    {
+      "id": "S14",
+      "label_en": "State operators and agencies",
+      "label_fr": "Opérateurs et agences de l'État",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "select",
+      "unit": "positions",
+      "min": 0,
+      "max": 3,
+      "default": 0,
+      "step": null,
+      "positions": [
+        {
+          "setting": 0,
+          "static_eur_bn": {
+            "low": 0,
+            "high": 0
+          },
+          "note": "No change"
+        },
+        {
+          "setting": 1,
+          "static_eur_bn": {
+            "low": 0.54,
+            "high": 0.54
+          },
+          "note": "Senate structural reform",
+          "confidence": "M"
+        },
+        {
+          "setting": 2,
+          "static_eur_bn": {
+            "low": 2.2,
+            "high": 2.2
+          },
+          "note": "8% cut of all staff and running costs",
+          "confidence": "L"
+        },
+        {
+          "setting": 3,
+          "static_eur_bn": {
+            "low": 2,
+            "high": 3
+          },
+          "note": "Government 2025 figure (claim, no published method)",
+          "confidence": "claim"
+        }
+      ],
+      "options": null,
+      "yield_low": 0.54,
+      "yield_central": 0.54,
+      "yield_high": 3,
+      "yield_static": {
+        "low": 0.54,
+        "central": 0.54,
+        "high": 3,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": null,
+        "note": "Senate 0.54 / 8% cut 2.2 / government 2025 claim 2-3"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "positions"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_spending_wages",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M / L / claim",
+      "claim_status": "range_across_estimates",
+      "political_origin": {
+        "proposed_by": [
+          "RN",
+          "LR",
+          "NE",
+          "GOV"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "RN +3.4 (2027) → 10.1 (2031); LR +7.5; Lisnard: abolish half of 1,200 agencies; government 2025: 2-3."
+      },
+      "figure_ids": [
+        "agencies_senate_saving_eur_bn",
+        "operators_public_funding_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S4",
+        "f16:S5"
+      ],
+      "research_files": [
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "agencies_reform",
+        "rn_agencies",
+        "lr_agencies"
+      ],
+      "disabled": false,
+      "notes_en": "Treemap link: most funding goes to universities, research, training and housing. 2.2 is 'not at constant missions' (Senate); 2-3 has no published method.",
+      "notes_fr": "Lien vers l'arborescence : l'essentiel des fonds va aux universités, à la recherche, à la formation et au logement. 2,2 n'est « pas à missions constantes » (Sénat) ; 2-3 n'a pas de méthode publiée."
+    },
+    {
+      "id": "S15",
+      "label_en": "Strategy and organization consulting",
+      "label_fr": "Conseil en stratégie et organisation",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "step": 10,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 0.06",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "strategy_consulting_2025_eur_bn",
+        "max_share": 1.0,
+        "max_yield_eur_bn": 0.06,
+        "published_max_eur_bn": 0.06
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_spending_wages",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "H",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "strategy_consulting_2025_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S7"
+      ],
+      "research_files": [
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "The slider's maximum shows how small the line now is (Senate 2021: 1.07 on a wider scope).",
+      "notes_fr": "Le maximum du curseur montre combien la ligne est désormais petite (Sénat 2021 : 1,07 sur un périmètre plus large)."
+    },
+    {
+      "id": "S16",
+      "label_en": "Pouvoirs publics mission + ministerial cabinets",
+      "label_fr": "Mission « Pouvoirs publics » + cabinets ministériels",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 50,
+      "default": 0,
+      "step": 5,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 1.3",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "pouvoirs_publics_mission_eur_bn",
+        "extra_base_figure_ids": [
+          "ministerial_cabinets_gross_pay_eur_bn"
+        ],
+        "max_share": 0.5,
+        "max_yield_eur_bn": 0.657,
+        "note": "Base = 1.16 (mission) + 0.155 (cabinet gross pay) = 1.315. File 20 rounds the base to 1.3 and shows a 0.65 maximum; the exact maximum is 0.66."
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_spending_wages",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "institutional_autonomy",
+        "note_en": "Budgets of Parliament and the Constitutional Council are set by their own bodies."
+      },
+      "confidence": "H",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "pouvoirs_publics_mission_eur_bn",
+        "ministerial_cabinets_gross_pay_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S2",
+        "f16:S8"
+      ],
+      "research_files": [
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Parliament's and the Constitutional Council's budgets are set by their own bodies. Presidency 0.123; Parliament 0.98.",
+      "notes_fr": "Les budgets du Parlement et du Conseil constitutionnel sont fixés par ces institutions. Présidence 0,123 ; Parlement 0,98."
+    },
+    {
+      "id": "S17",
+      "label_en": "Public broadcasting",
+      "label_fr": "Audiovisuel public",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "step": 5,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 3.82",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "public_broadcasting_plf2027_eur_bn",
+        "max_share": 1.0,
+        "max_yield_eur_bn": 3.82,
+        "alternative": {
+          "id": "rn_privatize",
+          "claimed_eur_bn": 1.6,
+          "label_en": "RN 'privatize' (claim)"
+        }
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_spending_wages",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "feasibility_uncertain",
+        "note_en": "Feasibility 'uncertain' (Institut Montaigne); pluralism."
+      },
+      "confidence": "M / claim",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [
+          "RN"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "public_broadcasting_plf2027_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S2",
+        "f16:S12"
+      ],
+      "research_files": [
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "rn_broadcasting_privatization"
+      ],
+      "disabled": false,
+      "notes_en": "Privatization brings a one-off sale price, not a recurrent saving; feasibility 'uncertain' (Montaigne). External broadcasting and INA are likely to stay public.",
+      "notes_fr": "Une privatisation rapporte un prix de cession ponctuel, pas une économie récurrente ; faisabilité « incertaine » (Montaigne). L'audiovisuel extérieur et l'INA resteraient vraisemblablement publics."
+    },
+    {
+      "id": "S18",
+      "label_en": "State payments to associations",
+      "label_fr": "Versements de l'État aux associations",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 20,
+      "default": 0,
+      "step": 1,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 10.5",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "state_payments_associations_2025_eur_bn",
+        "max_share": 0.2,
+        "max_yield_eur_bn": 2.1,
+        "reference": {
+          "share": 0.1,
+          "eur_bn": 1.05
+        }
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "operating_in_kind_associations",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "M",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [
+          "LR"
+        ],
+        "opposite_direction_by": [],
+        "note_en": "LR: +3 from associations 'challenging the law'; iFRAP (think tank): 1.6 from a 10% cut by State and local authorities."
+      },
+      "figure_ids": [
+        "state_payments_associations_2025_eur_bn"
+      ],
+      "source_ids": [
+        "f16:S9",
+        "f16:S13"
+      ],
+      "research_files": [
+        "16-oda-eu-contribution-and-other-popular-targets.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "lr_associations",
+        "ifrap_associations_10pct"
+      ],
+      "disabled": false,
+      "notes_en": "Service-delivery cuts (shelters, asylum reception, legal aid). iFRAP's 1.6 includes local authorities (outside this lever). Overlaps S13 (0.20) and S11 (immigration associations 0.94).",
+      "notes_fr": "Coupes dans des services rendus (hébergement d'urgence, accueil des demandeurs d'asile, aide juridique). Les 1,6 de l'iFRAP incluent les collectivités (hors de ce levier). Recoupe S13 (0,20) et S11 (associations liées à l'immigration 0,94)."
+    },
+    {
+      "id": "S19",
+      "label_en": "AME (State medical aid)",
+      "label_fr": "AME (aide médicale de l'État)",
+      "category": "popular_targets",
+      "menu_group": "popular_targets",
+      "side": "spending",
+      "type": "slider",
+      "unit": "pct_cut",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "step": 5,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": null,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": null,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "x% x 1.34",
+        "note": null
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "ame_2025_eur_bn",
+        "max_share": 1.0,
+        "max_yield_eur_bn": 1.34,
+        "alternative": {
+          "id": "rn_ame_to_amu",
+          "claimed_eur_bn": 1.3,
+          "label_en": "RN 'AME → AMU' (claim)"
+        }
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "health_in_kind",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "public_health",
+        "note_en": "Public-health and emergency-care obligations remain."
+      },
+      "confidence": "L / claim",
+      "claim_status": "computed",
+      "political_origin": {
+        "proposed_by": [
+          "RN"
+        ],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "ame_2025_eur_bn",
+        "ame_action_plf2027_eur_bn"
+      ],
+      "source_ids": [
+        "f00:row54",
+        "f15"
+      ],
+      "research_files": [
+        "15-immigration-and-public-finances.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [
+        "rn_ame_to_amu"
+      ],
+      "disabled": false,
+      "notes_en": "No official costing of an emergency-only scheme; soins urgents (0.07) and hospital bad debt remain; Évin-Stefanini advised against replacement. Credits (1.208) are below actual spending. Overlaps S11.",
+      "notes_fr": "Aucun chiffrage officiel d'un dispositif limité aux urgences ; les soins urgents (0,07) et les créances irrécouvrables des hôpitaux demeurent ; le rapport Évin-Stefanini déconseille le remplacement. Les crédits (1,208) sont inférieurs à la dépense réelle. Recoupe S11."
+    },
+    {
+      "id": "G1",
+      "label_en": "Employment rate: close X% of the gap with Germany (FTE)",
+      "label_fr": "Taux d'emploi : combler X % de l'écart avec l'Allemagne (ETP)",
+      "category": "employment",
+      "menu_group": "growth_and_risk",
+      "side": "structural",
+      "type": "slider",
+      "unit": "pct_gap_closed",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "step": 10,
+      "positions": null,
+      "options": null,
+      "yield_low": null,
+      "yield_central": null,
+      "yield_high": 38,
+      "yield_static": {
+        "low": null,
+        "central": null,
+        "high": 38,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "100%",
+        "note": "Up to +38 bn of levies (illustrative; up to 84 in the headcount scenario)"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "share_of_base",
+        "base_figure_id": "employment_germany_levies_eur_bn",
+        "max_share": 1.0,
+        "max_yield_eur_bn": 38.0,
+        "published_max_eur_bn": 38
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": "Long run (2032 tab).",
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "none",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "L",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "employment_germany_levies_eur_bn",
+        "employment_germany_levies_headcount_eur_bn"
+      ],
+      "source_ids": [
+        "f08"
+      ],
+      "research_files": [
+        "08-revenue-cuts-since-2017-and-structural.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Linear interpolation flagged; the policies to get there are not costed. 2032 tab only.",
+      "notes_fr": "Interpolation linéaire signalée ; les politiques nécessaires ne sont pas chiffrées. Onglet 2032 uniquement."
+    },
+    {
+      "id": "G2",
+      "label_en": "Interest-rate shock",
+      "label_fr": "Choc de taux d'intérêt",
+      "category": "risk",
+      "menu_group": "growth_and_risk",
+      "side": "structural",
+      "type": "slider",
+      "unit": "basis_points",
+      "min": -100,
+      "max": 200,
+      "default": 0,
+      "step": 25,
+      "positions": null,
+      "options": null,
+      "yield_low": -8.1,
+      "yield_central": null,
+      "yield_high": -3.4,
+      "yield_static": {
+        "low": -8.1,
+        "central": null,
+        "high": -3.4,
+        "central_is_midpoint": false,
+        "computed_by_us": false,
+        "at_setting": "+100 bp",
+        "note": "+3.4 bn in year 1, +8.1 bn in year 2 per +100 bp (a cost)"
+      },
+      "yield_behavioral": null,
+      "yield_model": {
+        "kind": "linear_per_unit",
+        "per_unit_eur_bn": {
+          "year1": -3.4,
+          "year2": -8.1
+        },
+        "unit": "+100 bp on all maturities"
+      },
+      "ramp_up_years": null,
+      "ramp_up_note": null,
+      "behavioral_toggle": {
+        "available": false,
+        "effect_en": "No behavioral estimate available (shown as such)."
+      },
+      "multiplier_class": "none",
+      "multiplier_note": null,
+      "legal_feasibility": {
+        "flag": "none",
+        "note_en": null
+      },
+      "confidence": "H",
+      "claim_status": "independent_estimate",
+      "political_origin": {
+        "proposed_by": [],
+        "opposite_direction_by": [],
+        "note_en": null
+      },
+      "figure_ids": [
+        "interest_shock_100bp_y1_eur_bn",
+        "interest_shock_100bp_y2_eur_bn"
+      ],
+      "source_ids": [
+        "f17:S1",
+        "f06"
+      ],
+      "research_files": [
+        "06-deficit-and-debt.md",
+        "20-pedagogical-approach.md"
+      ],
+      "related_proposal_ids": [],
+      "disabled": false,
+      "notes_en": "Shown as a risk, not as a choice.",
+      "notes_fr": "Présenté comme un risque, pas comme un choix."
+    }
+  ]
+}

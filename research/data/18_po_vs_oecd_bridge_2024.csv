@@ -1,0 +1,15 @@
+step,item,eur_bn,pct_gdp,gdp_basis_eur_bn,source
+1,Insee prelevements obligatoires 2024 (net of all refundable tax credits),1254.024,42.72,2935.236,Insee t_3217 (May 2026)
+2,+ refundable tax credits (IV) total,19.624,0.67,2935.236,Insee t_3217
+2a,   of which offset against tax due,10.868,0.37,2935.236,Insee t_3217
+2b,   of which paid out beyond tax due,8.756,0.30,2935.236,Insee t_3217
+3,= ESA taxes + actual social contributions net of D995 (current vintage),1273.648,43.39,2935.236,computed (I)+(II) less imputed (III)
+4,- voluntary social contributions D613V (excluded by OECD/Eurostat compulsory measure),-1.010,-0.03,2935.236,Eurostat gov_10a_taxag
+5,= compulsory measure on May-2026 vintage,1272.638,43.36,2935.236,computed
+6,- numerator revision between Eurostat/OECD vintage and Insee May-2026 vintage,-3.404,-0.12,2935.236,computed vs Eurostat 1269.234
+7,= Eurostat compulsory measure as stored (old numerator) at current GDP,1269.234,43.24,2935.236,Eurostat gov_10a_taxag (21 Oct 2026)
+8,+ GDP vintage effect (OECD/Eurostat use GDP 2919.9 bn),0,0.23,2919.9,OECD RS 2025 Table 3.19
+9,= Eurostat/OECD published tax-to-GDP 2024,1269.2,43.47,2919.9,OECD RS 2025 Table 3.1 (43.5); Eurostat PC_GDP 43.5
+memo,imputed social contributions D612 (excluded by both),51.242,1.75,2935.236,Insee t_3217
+memo,taxes and contributions assessed but unlikely to be collected D995 (deducted by both),4.627,0.16,2935.236,Insee t_3217
+memo,taxes paid to EU institutions (included by both),2.600,0.09,2935.236,Insee t_3217; Eurostat S212

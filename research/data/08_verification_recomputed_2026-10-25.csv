@@ -1,0 +1,20 @@
+indicator,unit,year,FR,EU27_agg,EU27_mean,EU27_median,FR_rank_EU27,EA20_agg,EA20_mean,EA20_median,FR_rank_EA20,source_dataset,source_updated,status
+Total expenditure TE S13,% of GDP,2025,57.3,49.4,46.41,47.3,2/27,49.8,46.46,47.55,2/20,gov_10a_main,2026-10-21,confirmed
+Total revenue TR S13,% of GDP,2025,52.2,46.3,43.77,43.6,2/26,46.8,44.45,44.95,2/20,gov_10a_main,2026-10-21,confirmed (DK missing)
+Net lending B9 S13,% of GDP,2025,-5.1,-3.1,-2.6,-2.5,4th worst of 26,-3.0,,,,gov_10a_main,2026-10-21,confirmed
+GFCF P51G S13,% of GDP,2025,4.4,3.9,4.44,4.4,14/27,3.7,4.26,4.15,9/20,gov_10a_main,2026-10-21,confirmed
+Net investment P51G-P51C S13,% of GDP,2025,0.6,1.0,1.53,1.3,23/27,0.8,,,,gov_10a_main,2026-10-21,confirmed
+Local gov expenditure TE S1313,% of GDP,2025,11.2,11.3,10.5,9.4,10/27,10.2,8.93,9.2,6/20,gov_10a_main,2026-10-21,confirmed
+Local gov GFCF S1313,% of GDP,2025,2.4,1.6,1.57,1.5,5/27,1.5,1.44,1.3,3/20,gov_10a_main,2026-10-21,confirmed
+Local gov EDP debt S1313,% of GDP,2025,9.3,5.2,3.88,2.4,3/27,5.2,3.67,3.1,2/20,gov_10dd_edpt1,2026-10-21,confirmed
+Employment rate 15-64,% of pop,2025,69.3,71.0,72.5,72.9,21/27,70.7,72.33,72.6,15/20,lfsi_emp_a,2026-09-10,confirmed
+Employment rate 55-64,% of pop,2025,61.7,66.4,66.77,69.4,17/27,66.5,65.56,64.5,12/20,lfsi_emp_a,2026-09-10,confirmed
+Employment rate 20-64,% of pop,2025,75.4,76.1,77.68,78.3,20/27,75.6,77.34,78.15,14/20,lfsi_emp_a,2026-09-10,confirmed
+Hours worked per inhabitant HW_HAB,hours,2025,666.0,783.0,852.27,843.7,27/27,759.1,,,,nama_10_lp_ulc,2026-10-22,confirmed
+Real productivity per hour change 2019-2025,%,2019-2025,-0.8,3.4,,,,1.9,,,,nama_10_lp_ulc RLPR_HW I20,2026-10-22,confirmed
+Nominal productivity per hour PPS EU=100,index,2025,114.6,100,,,8/27,107.1,,,,nama_10_lp_ulc NLPR_HW,2026-10-22,confirmed
+Old-age dependency OLDDEP1 observed,%,2025,35.5,34.5,32.77,32.7,8/27,,,,,demo_pjanind,2026-09-25,confirmed
+Old-age dependency projected BSL,%,2025/2040/2070,35.7/45.3/52.3,34.4/45.4/54.1,,,,,,,,proj_23ndbi,2026-05-13,confirmed
+TFR,children per woman,2024,1.61,1.34,1.35,1.38,2/27,,1.32,1.33,1/20,demo_find,2026-09-30,confirmed
+OECD employment rate 15-64 (38 members),% of pop,2024,68.8,OECD agg 70.19,72.06,72.97,29/38,,,,,OECD DF_IALFS_EMP_WAP_Q,accessed 2026-10-25,confirmed
+NATO core defence share of GDP,%,2025e/2026e,2.04/2.22,NATO Europe+Canada 2.31/2.53,,,,,,,,NATO July 2026 release,2026-07-07,corrected (was 2.05)

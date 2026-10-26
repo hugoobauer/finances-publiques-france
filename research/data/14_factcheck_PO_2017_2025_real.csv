@@ -1,0 +1,5 @@
+indicator,unit,2017,2025,change_pct,source,url,retrieved
+PO_total_S13_S212,EUR bn,1038.1268,1305.067,25.72,"Insee table 3.216 (base 2020, 28 Aug 2026)",https://www.insee.fr/fr/statistiques/fichier/8988845/t_3216_fr.xlsx,2026-10-25
+PO_rate,% of GDP,45.2998,43.6323,-1.67 (pts),"Insee table 3.216 / series 2381412",https://www.insee.fr/fr/statistiques/2381412,2026-10-25
+HICP_FR_all_items,index 2015=100 (annual avg),101.47,124.43,22.63,"Eurostat prc_hicp_aind (updated 6 Feb 2026)",https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_aind?format=JSON&geo=FR&coicop=CP00&unit=INX_A_AVG,2026-10-25
+PO_total_deflated_by_HICP,EUR bn (2017 prices),1038.1,1064.3,2.52,computed = 1305.067 / (124.43/101.47),,2026-10-25

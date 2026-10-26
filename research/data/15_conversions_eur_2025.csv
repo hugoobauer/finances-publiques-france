@@ -1,0 +1,27 @@
+item,pct_of_GDP,EUR_bn_or_value
+OECD A: individual items only (FB),1.02,30.5
+OECD B: + congestible public goods per capita (FB),0.253,7.6
+OECD: + pure public goods except defence and debt (FB),-0.299,-8.9
+OECD: + pure public goods except debt (FB),-0.53,-15.9
+OECD C2: all public goods per capita (FB),-0.846,-25.3
+OECD C2: native-born,-3.252,-97.3
+OECD Table 4.2 A: FB + native-born children,0.459,13.7
+OECD Table 4.2 B: FB + children,-0.308,-9.2
+OECD Table 4.2 C2: FB + children,-1.406,-42.1
+OECD Table 4.6: closing the employment gap (prime-aged),0.223,6.7
+CEPII 2018 lower bound,-0.5,-15.0
+CEPII 2018 upper bound,0.05,1.5
+"FB per capita, C2 (% of GDP pc) -> EUR per person",-6.535,-2839
+"NB per capita, C2 -> EUR per person",-3.735,-1623
+"Gap FB - NB per capita, C2 -> EUR per person",-2.8,-1217
+GDP 2025 (EUR bn),,2991.4
+GDP per capita 2025 (EUR),,43448
+"RN immigration 2027 15.1 bn, % of 2027 GDP",,0.48
+"RN immigration 2031 29.0 bn, % of 2032 GDP",,0.81
+"RN reserved benefits 18.1 bn (2031), % of 2032 GDP",,0.51
+"RN 2026 immigration 11.9 bn, % of 2025 GDP",,0.4
+AME->AMU 1.3 bn / PLF 2027 AME credits 1.2083 bn (%),,108
+AME->AMU 1.3 bn / AME spending 2025 1.340 bn (%),,97
+AME spending 2025 % of GDP 2025,,0.045
+AME spending 2025 % of TE 2025,,0.078
+Cour 2019 DPT 6.57 bn as % of 2019-scope (reported 1.41% of general budget gross spending),,

@@ -1,0 +1,6 @@
+# Raw downloads (about 2 GB, regenerable from the cited sources)
+research/data/raw/
+
+__pycache__/
+*.pyc
+.DS_Store

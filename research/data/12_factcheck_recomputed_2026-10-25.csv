@@ -1,0 +1,24 @@
+claim,file_value,recomputed_value,status,source,raw_file
+CHE % GDP FR 2024 (rank EU27; EU agg; EA20 agg; mean; median),11.33 (3/27; 10.16; 10.46; 8.87; 8.54),11.33 (3/27; 10.16; 10.46; 8.87; 8.54),confirmed,Eurostat hlth_sha11_hf updated 2026-10-23,raw/12_factcheck/hf.json
+CHE % GDP FR 2025 provisional; MIO_EUR,11.48 p; 343.4 bn,11.48 p; 343444 MEUR,confirmed,Eurostat hlth_sha11_hf,raw/12_factcheck/hf.json
+CHE PPS/hab FR 2024 (EU rank; panel rank; EU agg; EA20; DE),4491 (8/27; 5/8; 4075; 4342; 5791),4490.89 (8/27; 5/8; 4074.88; 4342.17; 5790.77),confirmed,Eurostat hlth_sha11_hf,raw/12_factcheck/hf.json
+HF1 % GDP FR 2024 (rank; EA20; EU27); HF122 % GDP,9.44 (3/27; 8.40; 8.17); 0.76,9.44 (3/27; 8.40; 8.17); 0.76 (22176 MEUR),confirmed,Eurostat hlth_sha11_hf,raw/12_factcheck/hf.json
+HC7 FR 2024 % CHE; % GDP; MEUR; rank; EU agg,5.09; 0.58; 16905; 1/27; 3.50 / 0.36,5.09; 0.58; 16904.71; 1/27; 3.50 / 0.36,confirmed,Eurostat hlth_sha11_hc/hchf updated 2026-10-23,raw/12_factcheck/hc.json; hchf.json
+HP1 FR 2024 % CHE (rank; EU mean); % GDP (rank),37.0 (20/27; 40.0); 4.19 (5/27),37.0 (20/27; 40.03); 4.19 (5-6/27 tied with ES 4.19),corrected (tie),Eurostat hlth_sha11_hp updated 2026-10-16,raw/12_factcheck/hp.json
+WHO GHED FR - EU27 unweighted mean,+2.52 (2005) +3.28 (2015) +2.89 (2019) +2.89 (2023),+2.52 +3.28 +2.89 +2.89,confirmed,WHO GHED GHED_CHEGDP_SHA2011,raw/12_factcheck/ghed.json
+Drees DCSi 2025; % GDP; mgmt costs; OC share of mgmt; OC share of DCSi,353.2 bn; 11.8; ~18 bn; 52%; 12.3%,353.2 bn; 11.8; 17.6 bn (5.0% DCSi); 52%; 12.3%,confirmed (18 bn rounded -> 17.6),Drees Les depenses de sante en 2025 ed. 2026 vue d'ensemble,raw/12/drees/cns2026/cns2025_vue_ensemble.pdf
+OECD Fig 7.4 per capita USD PPP FR; OECD38; rank,7367; 5967; 12/38,7367.08; 5967.20; 12/38,confirmed,stat.link/rkae5h,raw/12_factcheck/haag/rkae5h.xlsx
+OECD Fig 7.1 CHE % GDP FR 2024; rank,11.54; 5/38,11.541; 5/38,confirmed,stat.link/15fht6,raw/12_factcheck/haag/15fht6.xlsx
+OECD Fig 7.5 real growth FR 2014-19; 2019-24; OECD38,0.68; 0.87; 2.69/2.53,0.680; 0.874; 2.695/2.533,confirmed,stat.link/nwmzh5,raw/12_factcheck/haag/nwmzh5.xlsx
+OECD Figs 7.6-7.8 health PLI; economy PLI; volume (rank),68.1; 96.1; 127.7 (4/37),68.12; 96.12; 127.67 (4/37),confirmed,stat.link/zw0b9d lmb3wn tfnguq,raw/12_factcheck/haag/
+OECD Fig 8.17 hospital workforce per 1000 FR (rank); OECD34; other staff,20.2 (7/32); 15.5; 6.93 vs 3.43,20.17 (5/32 behind CH UK NO DK); 15.46; 6.93 vs 3.43,corrected (rank),stat.link/9ari8w,raw/12_factcheck/haag/9ari8w.xlsx
+OECD Fig 5.8 OOP % household consumption FR (rank lowest),2.0 (5th lowest/38; OECD 3.2),2.035 (5th lowest after TUR LUX COL POL; OECD38 3.18),confirmed,stat.link/v23mqi,raw/12_factcheck/haag/v23mqi.xlsx
+OECD Fig 5.13 specialist wait >=1 month; >=2 months; OECD10,65.4; 45.5 (2nd worst after CAN 47.9); 52.3 / 30.5,65.36; 45.51 (2nd after CAN 47.95); 52.26 / 30.44,confirmed (OECD10 2m+ = 30.4),stat.link/fcx732,raw/12_factcheck/haag/fcx732.xlsx
+COFOG GF0703 D1 share of GG D1 FR 2024 (rank; mean; median); % GDP,17.6 (8/27; 13.2; 12.9); 2.2,17.6 (8/27; 13.2; 12.9); 2.2,confirmed,Eurostat gov_10a_exp updated 2026-10-21,raw/12_factcheck/cofog.json
+Beds per 100000 FR 2024 (2005; rank; EU agg),534 (722; 12/27; 507),533.8 (722.49; 12/27; 507.35),confirmed,Eurostat hlth_rs_bds1 updated 2026-07-13,raw/12_factcheck/bds.json
+Practising physicians per 100000 FR 2024 (rank; median); 2020 break,394 (17/26; 420); b 2020,393.85 (17/26; 420); 374.05 flag b 2020,confirmed,Eurostat hlth_rs_prs2,raw/12_factcheck/prs2.json
+Treatable mortality FR 2023 Eurostat (rank; EU agg); OECD (rank),58.8 (3/27; 86.8); 46 (4/30),58.76 (3/27; 86.81); 46 (4/30),confirmed,Eurostat hlth_cd_apr; OECD DF_AM,raw/12_factcheck/apr.json; oecd/am.csv
+CONCORD-3 FR breast colon lung rectum (rank/34),86.7 (12) 63.7 (16) 17.3 (17) 60.9 (21),86.7 (12 tied) 63.7 (16 tied) 17.3 (17 tied) 60.9 (21),confirmed (ties),OECD DF_CC (OBS only),raw/12_factcheck/oecd/cc.csv
+OECD waiting-time DB France records,0,0 of 7185 records (25 countries incl. NLD),confirmed,OECD DF_WAITING,raw/12_factcheck/oecd/waiting.csv
+APL<2.5 GPs<=65 FR 2024; 2022,19.6 m (29.0%); 25.0%,19620523 (28.96%); 24.99%,confirmed,Drees APL dataset modified 2026-07-22,raw/12/drees/apl_mg.xlsx
+EU-SILC unmet needs FR 2019..2025; rank 2025,1.2/2.7b/3.2b/4.1/3.7; 23/27,1.2/2.7b/3.2b/4.1/3.7; 23/27,confirmed,Eurostat hlth_silc_08 updated 2026-10-20,raw/12_factcheck/silc.json

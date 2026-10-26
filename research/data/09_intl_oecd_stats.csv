@@ -1,0 +1,27 @@
+indicator,year,FRA,OECD_mean_computed,OECD_median,n,FRA_rank,OECD_REP_published,top5,missing
+total_tax_revenue_pc_gdp,2005,43.14,32.64,32.66,38,4,32.64,DNK 47.9; SWE 47.4; BEL 43.4; FRA 43.1; NOR 42.6,
+total_tax_revenue_pc_gdp,2015,45.36,32.92,32.88,38,2,32.92,DNK 46.5; FRA 45.4; BEL 44.2; FIN 43.8; AUT 43.7,
+total_tax_revenue_pc_gdp,2019,45.02,33.35,34.32,38,2,33.35,DNK 47.1; FRA 45.0; SWE 43.1; AUT 42.9; FIN 42.5,
+total_tax_revenue_pc_gdp,2020,45.24,33.46,34.45,38,2,33.46,DNK 47.2; FRA 45.2; ITA 42.7; SWE 42.6; AUT 42.4,
+total_tax_revenue_pc_gdp,2021,45.06,34.02,34.42,38,2,34.02,DNK 47.5; FRA 45.1; FIN 43.5; AUT 43.5; SWE 43.1,
+total_tax_revenue_pc_gdp,2022,45.86,33.96,34.74,38,1,33.96,FRA 45.9; FIN 43.4; NOR 43.3; AUT 43.0; SWE 42.9,
+total_tax_revenue_pc_gdp,2023,43.85,33.73,34.96,38,2,33.73,DNK 44.0; FRA 43.9; FIN 42.8; AUT 42.6; BEL 41.9,
+total_tax_revenue_pc_gdp,2024,43.46,34.17,35.18,36,2,34.06,DNK 45.2; FRA 43.5; AUT 43.4; ITA 42.8; BEL 42.6,AUS JPN
+gg_total_expenditure_pc_gdp,2005,54.26,41.1,42.24,36,1,,FRA 54.3; SWE 52.3; BEL 51.9; AUT 51.7; DNK 51.1,CHL TUR
+gg_total_expenditure_pc_gdp,2015,57.6,42.29,41.7,37,1,,FRA 57.6; FIN 55.7; GRC 54.8; DNK 54.4; BEL 53.9,TUR
+gg_total_expenditure_pc_gdp,2019,55.35,41.31,41.42,37,1,,FRA 55.3; FIN 52.6; BEL 51.8; SWE 49.8; DNK 49.8,TUR
+gg_total_expenditure_pc_gdp,2020,61.7,47.26,47.75,37,1,,FRA 61.7; GRC 59.3; BEL 58.5; AUT 57.3; ITA 56.9,TUR
+gg_total_expenditure_pc_gdp,2021,59.46,44.79,45.46,37,1,,FRA 59.5; GRC 56.6; ITA 56.2; AUT 56.0; FIN 55.1,TUR
+gg_total_expenditure_pc_gdp,2022,58.41,42.47,43.27,37,1,,FRA 58.4; ITA 54.9; GRC 53.2; AUT 53.0; FIN 52.7,TUR
+gg_total_expenditure_pc_gdp,2023,56.75,43.52,44.48,37,1,,FRA 56.8; FIN 56.1; ITA 53.6; BEL 52.7; AUT 52.1,TUR
+gg_total_expenditure_pc_gdp,2024,56.99,43.91,45.25,37,2,,FIN 57.9; FRA 57.0; AUT 54.6; BEL 54.1; ITA 50.3,TUR
+gg_total_expenditure_pc_gdp,2025,57.31,46.39,47.29,28,2,,FIN 57.5; FRA 57.3; AUT 54.6; BEL 54.4; ITA 51.1,AUS CHL COL CRI ISR JPN MEX NZL TUR USA
+gg_compensation_employees_pc_gdp,2005,13.04,10.44,10.29,35,5,,DNK 15.6; ISL 14.6; PRT 14.5; FIN 13.3; FRA 13.0,AUS CHL TUR
+gg_compensation_employees_pc_gdp,2015,12.95,10.32,10.33,36,6,,DNK 16.0; NOR 14.0; CRI 13.9; FIN 13.9; ISL 13.4,AUS TUR
+gg_compensation_employees_pc_gdp,2019,12.36,10.34,10.34,36,8,,DNK 15.1; NOR 14.5; ISL 14.1; CRI 13.3; SWE 12.7,AUS TUR
+gg_compensation_employees_pc_gdp,2020,13.27,11.09,10.95,36,7,,ISL 15.8; NOR 15.4; DNK 15.3; CRI 14.0; CAN 13.4,AUS TUR
+gg_compensation_employees_pc_gdp,2021,12.64,10.56,10.72,36,7,,ISL 15.3; DNK 14.6; NOR 13.0; FIN 12.9; CRI 12.8,AUS TUR
+gg_compensation_employees_pc_gdp,2022,12.48,9.96,10.37,36,4,,ISL 14.4; DNK 13.6; FIN 12.6; FRA 12.5; BEL 12.1,AUS TUR
+gg_compensation_employees_pc_gdp,2023,12.22,10.14,10.32,36,7,,DNK 14.3; ISL 13.8; FIN 13.2; SWE 12.5; NOR 12.4,AUS TUR
+gg_compensation_employees_pc_gdp,2024,12.37,10.43,10.88,36,9,,ISL 14.2; DNK 14.0; FIN 13.4; NOR 13.0; LVA 12.9,AUS TUR
+gg_compensation_employees_pc_gdp,2025,12.37,11.07,11.51,28,8,,ISL 14.4; DNK 14.2; FIN 13.5; NOR 13.4; LVA 12.8,AUS CHL COL CRI ISR JPN MEX NZL TUR USA

@@ -1,0 +1,41 @@
+country,oecd,eu27,panel,eag2026_total_spend_per_student_prim_to_postsec_2023_usd_ppp,eag2026_gov_spend_per_student_prim_to_postsec_2023_usd_ppp,pisa2025_math,pisa2025_reading,pisa2025_science,pisa2025_avg3
+Australia,True,False,False,16697,13875,477.5,490.9,509.1,492.5
+Austria,True,True,False,19508,18580,477.2,467.2,496.9,480.4
+Belgium,True,True,True,19027,18168,479.7,466.3,489.7,478.6
+Bulgaria,False,True,False,8471,8212,405.1,386.6,420.8,404.2
+Canada,True,False,False,16003,14523,485.3,489.8,510.1,495.1
+Chile,True,False,False,7809,6227,402.6,435.7,442.4,426.9
+Colombia,True,False,False,3506,3498,380.5,399.3,413.7,397.8
+Croatia,False,True,False,7949,7477,455.3,453.4,476.3,461.7
+Czechia,True,True,False,13061,11843,477.1,468.4,490.3,478.6
+Denmark,True,True,True,17055,15934,470.6,460.0,477.5,469.4
+Estonia,True,True,False,11418,10983,507.9,499.2,527.1,511.4
+Finland,True,True,False,14717,14677,468.7,474.3,504.4,482.5
+France,True,True,True,14932,13400,457.7,456.3,483.4,465.8
+Germany,True,True,True,17123,14918,463.8,465.3,485.5,471.5
+Greece,True,True,False,8790,6975,423.9,422.7,434.3,426.9
+Hungary,True,True,False,8660,7762,459.5,452.3,479.9,463.9
+Iceland,True,False,False,19876,19308,449.7,422.3,441.4,437.8
+Ireland,True,True,False,15496,12751,479.9,500.4,499.6,493.3
+Israel,True,False,False,13333,12064,433.4,435.8,442.0,437.1
+Italy,True,True,True,14848,13970,467.8,474.3,483.0,475.0
+Japan,True,False,False,12013,11085,525.4,502.7,537.6,521.9
+Korea,True,False,False,19179,18017,522.3,500.6,526.1,516.3
+Latvia,True,True,False,9519,8909,460.5,429.7,468.4,452.8
+Lithuania,True,True,False,10802,10164,470.5,464.1,487.7,474.1
+Luxembourg,True,True,False,32766,31046,458.1,443.2,473.8,458.4
+Netherlands,True,True,True,18363,16248,483.3,441.3,485.4,470.0
+New Zealand,True,False,False,11852,10220,479.6,497.0,509.4,495.4
+Norway,True,False,False,20528,19932,451.8,452.8,470.2,458.3
+OECD average,False,False,False,14436,13231,463.0,460.9,481.9,468.6
+Peru,False,False,False,2308,1989,382.4,390.1,405.6,392.7
+Poland,True,True,False,11056,9725,484.1,481.5,495.1,486.9
+Portugal,True,True,False,13893,12352,459.9,462.0,481.7,467.9
+Romania,False,True,False,7365,6477,419.1,412.9,424.7,418.9
+Slovak Republic,True,True,False,11270,10439,469.1,448.0,474.9,464.0
+Slovenia,True,True,False,13655,12192,459.8,444.8,483.7,462.8
+Spain,True,True,True,14009,11963,457.4,451.4,477.1,462.0
+Sweden,True,True,True,16353,16323,464.2,466.4,485.1,471.9
+Türkiye,True,False,False,5118,4377,461.6,472.1,494.3,476.0
+United Kingdom,True,False,False,15879,13491,487.6,494.2,511.4,497.7
+United States,True,False,False,17164,15847,462.9,489.5,501.6,484.7

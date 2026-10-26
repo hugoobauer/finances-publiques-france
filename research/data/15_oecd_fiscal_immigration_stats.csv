@@ -1,0 +1,41 @@
+measure,group,n,France,mean_unweighted,median,France_rank
+FB_A_items_individual_pctGDP,OECD25,25,1.02,1.561,1.338,15/25 (1 = most favorable)
+FB_A_items_individual_pctGDP,EU27_members_in_sample,19,1.02,1.362,1.02,10/19 (1 = most favorable)
+FB_A_items_individual_pctGDP,euro_area_in_sample,16,1.02,1.478,1.309,10/16 (1 = most favorable)
+FB_A_items_individual_pctGDP,panel_FR+7,8,1.02,1.277,1.198,5/8 (1 = most favorable)
+FB_A_items_individual_pctGDP,panel values,,FRA 1.02; DEU 1.54; ITA 1.87; ESP 1.70; NLD 0.85; BEL 1.38; SWE 1.00; DNK 0.87,,,
+FB_B_congestible_pctGDP,OECD25,25,0.253,0.902,0.732,18/25 (1 = most favorable)
+FB_B_congestible_pctGDP,EU27_members_in_sample,19,0.253,0.723,0.621,12/19 (1 = most favorable)
+FB_B_congestible_pctGDP,euro_area_in_sample,16,0.253,0.764,0.498,10/16 (1 = most favorable)
+FB_B_congestible_pctGDP,panel_FR+7,8,0.253,0.667,0.693,7/8 (1 = most favorable)
+FB_B_congestible_pctGDP,panel values,,FRA 0.25; DEU 0.93; ITA 1.48; ESP 0.79; NLD 0.38; BEL 0.12; SWE 0.68; DNK 0.71,,,
+FB_C2_all_public_goods_pctGDP,OECD25,25,-0.846,-0.168,-0.278,21/25 (1 = most favorable)
+FB_C2_all_public_goods_pctGDP,EU27_members_in_sample,19,-0.846,-0.222,-0.278,16/19 (1 = most favorable)
+FB_C2_all_public_goods_pctGDP,euro_area_in_sample,16,-0.846,-0.204,-0.293,13/16 (1 = most favorable)
+FB_C2_all_public_goods_pctGDP,panel_FR+7,8,-0.846,-0.407,-0.317,7/8 (1 = most favorable)
+FB_C2_all_public_goods_pctGDP,panel values,,FRA -0.85; DEU -0.28; ITA 0.57; ESP -0.15; NLD -0.36; BEL -1.28; SWE -0.83; DNK -0.08,,,
+NB_C2_all_public_goods_pctGDP,OECD25,25,-3.252,-1.914,-1.598,17/25 (1 = most favorable)
+NB_C2_all_public_goods_pctGDP,EU27_members_in_sample,19,-3.252,-2.271,-1.598,13/19 (1 = most favorable)
+NB_C2_all_public_goods_pctGDP,euro_area_in_sample,16,-3.252,-2.688,-1.905,10/16 (1 = most favorable)
+NB_C2_all_public_goods_pctGDP,panel_FR+7,8,-3.252,-1.658,-1.288,6/8 (1 = most favorable)
+NB_C2_all_public_goods_pctGDP,panel values,,FRA -3.25; DEU 0.02; ITA -3.63; ESP -5.29; NLD -1.42; BEL -1.16; SWE 1.21; DNK 0.25,,,
+FB_ex_defence_debt_pctGDP,OECD25,25,-0.299,0.294,0.187,21/25 (1 = most favorable)
+FB_ex_defence_debt_pctGDP,EU27_members_in_sample,19,-0.299,0.168,0.021,15/19 (1 = most favorable)
+FB_ex_defence_debt_pctGDP,euro_area_in_sample,16,-0.299,0.213,0.034,13/16 (1 = most favorable)
+FB_ex_defence_debt_pctGDP,panel_FR+7,8,-0.299,0.058,0.085,6/8 (1 = most favorable)
+FB_ex_defence_debt_pctGDP,panel values,,FRA -0.30; DEU 0.22; ITA 1.09; ESP 0.32; NLD -0.02; BEL -0.62; SWE -0.42; DNK 0.19,,,
+FB_ex_debt_pctGDP,OECD25,25,-0.53,0.092,-0.029,21/25 (1 = most favorable)
+FB_ex_debt_pctGDP,EU27_members_in_sample,19,-0.53,0.031,-0.029,15/19 (1 = most favorable)
+FB_ex_debt_pctGDP,euro_area_in_sample,16,-0.53,0.074,-0.078,13/16 (1 = most favorable)
+FB_ex_debt_pctGDP,panel_FR+7,8,-0.53,-0.101,-0.047,6/8 (1 = most favorable)
+FB_ex_debt_pctGDP,panel values,,FRA -0.53; DEU 0.06; ITA 0.98; ESP 0.19; NLD -0.15; BEL -0.76; SWE -0.66; DNK 0.07,,,
+FBminusNB_percap_C2_pctGDPpc,OECD25,25,-2.8,0.796,-0.935,18/25 (1 = most favorable)
+FBminusNB_percap_C2_pctGDPpc,EU27_members_in_sample,19,-2.8,0.39,-1.16,13/19 (1 = most favorable)
+FBminusNB_percap_C2_pctGDPpc,euro_area_in_sample,16,-2.8,0.91,-1.243,11/16 (1 = most favorable)
+FBminusNB_percap_C2_pctGDPpc,panel_FR+7,8,-2.8,-0.636,-1.608,6/8 (1 = most favorable)
+FBminusNB_percap_C2_pctGDPpc,panel values,,FRA -2.80; DEU -1.71; ITA 10.37; ESP 5.01; NLD -1.50; BEL -7.00; SWE -6.29; DNK -1.16,,,
+FB_percap_C2_pctGDPpc,OECD25,25,-6.535,-1.448,-1.683,22/25 (1 = most favorable)
+FB_percap_C2_pctGDPpc,EU27_members_in_sample,19,-6.535,-2.2,-2.872,16/19 (1 = most favorable)
+FB_percap_C2_pctGDPpc,euro_area_in_sample,16,-6.535,-2.17,-2.988,13/16 (1 = most favorable)
+FB_percap_C2_pctGDPpc,panel_FR+7,8,-6.535,-2.516,-2.393,7/8 (1 = most favorable)
+FB_percap_C2_pctGDPpc,panel values,,FRA -6.54; DEU -1.68; ITA 6.39; ESP -1.10; NLD -3.10; BEL -8.37; SWE -4.84; DNK -0.88,,,

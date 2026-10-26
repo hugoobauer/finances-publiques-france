@@ -1,0 +1,1010 @@
+{
+  "meta": {
+    "dataset": "yardsticks",
+    "schema": "schemas/yardsticks.schema.json",
+    "as_of": "2026-10-25",
+    "version": "1.0.0",
+    "description": "Site-wide yardsticks (file 20 §3, §5.2): formula over figure ids, recomputed value, and the value published in file 20.",
+    "conventions": "Decimal points and no thousands separators in JSON numbers; French formatting (comma decimal, narrow no-break space) is applied at render time. EUR bn = billions of euros, current prices. Every share says % of GDP or % of total public expenditure."
+  },
+  "parameters": [
+    {
+      "id": "days_in_year",
+      "value": 365,
+      "label_en": "Days in the reference year (2025)",
+      "label_fr": "Jours dans l'année de référence (2025)",
+      "notes": "File 20 §3.1 divides by 365."
+    },
+    {
+      "id": "seconds_per_day",
+      "value": 86400,
+      "label_en": "Seconds per day",
+      "label_fr": "Secondes par jour",
+      "notes": null
+    },
+    {
+      "id": "household_monthly_income_eur",
+      "value": 3000,
+      "label_en": "Monthly income of the reference household (design choice)",
+      "label_fr": "Revenu mensuel du ménage de référence (choix éditorial)",
+      "notes": "File 20 §3.2: scale factor = EUR 36,000 / EUR 1,562.5 bn of revenue. Chip [[yard:household_monthly_income_eur]] resolves to this parameter: chips resolve against yardsticks[] first, then parameters[] (validate.py checks it). Mention: illustratif (editorial choice, not a statistic)."
+    },
+    {
+      "id": "months_per_year",
+      "value": 12,
+      "label_en": "Months per year",
+      "label_fr": "Mois par an",
+      "notes": null
+    },
+    {
+      "id": "maastricht_deficit_limit_pct",
+      "value": 3,
+      "label_en": "Maastricht deficit reference value",
+      "label_fr": "Valeur de référence du déficit (Maastricht)",
+      "notes": "Treaty reference value, % of GDP (file 20 §5.2 goal B)."
+    },
+    {
+      "id": "example_cut_eur_bn",
+      "value": 30,
+      "label_en": "Illustrative cut used in the macro-feedback explainer",
+      "label_fr": "Baisse illustrative utilisée dans l'explication du bouclage macroéconomique",
+      "notes": "File 20 §4.18 ('about 1 point of GDP')."
+    }
+  ],
+  "conversions": {
+    "one_day_spending_eur_bn": "te_2025_eur_bn / 365",
+    "deficit_eur_bn": "deficit_2025_eur_bn",
+    "population_m": "population_2025_m",
+    "te_eur_bn": "te_2025_eur_bn",
+    "gdp_eur_bn": "gdp_2025_eur_bn",
+    "formulas_note": "days_of_spending = EUR bn / one_day_spending_eur_bn; pct_of_deficit = EUR bn / deficit_eur_bn x 100; eur_per_inhabitant = EUR bn x 1000 / population_m; pct_of_total_spending = EUR bn / te_eur_bn x 100; pct_of_gdp = EUR bn / gdp_eur_bn x 100. 2026-2027 amounts are set against 2025 denominators: orders of magnitude (file 16 header)."
+  },
+  "yardsticks": [
+    {
+      "id": "one_day_spending_eur_bn",
+      "label_en": "One day of public spending (2025)",
+      "label_fr": "Une journée de dépense publique (2025)",
+      "formula": "te_2025_eur_bn / days_in_year",
+      "value": 4.6962,
+      "unit": "EUR bn per day",
+      "display_decimals": 2,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 4.7,
+        "text": "EUR 4.70 bn",
+        "section": "§3.1"
+      },
+      "figure_ids": [
+        "te_2025_eur_bn"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Proposal conversions divide by the unrounded value (4.696)."
+    },
+    {
+      "id": "te_per_capita_eur",
+      "label_en": "Public spending per inhabitant (2025)",
+      "label_fr": "Dépense publique par habitant (2025)",
+      "formula": "te_2025_eur_bn * 1000 / population_2025_m",
+      "value": 24842.7491,
+      "unit": "EUR per inhabitant per year",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 24843,
+        "text": "EUR 24,843 per year",
+        "section": "§3.1"
+      },
+      "figure_ids": [
+        "te_2025_eur_bn",
+        "population_2025_m"
+      ],
+      "checks_figure_id": "te_per_capita_2025_eur",
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "te_per_capita_per_day_eur",
+      "label_en": "Public spending per inhabitant per day (2025)",
+      "label_fr": "Dépense publique par habitant et par jour (2025)",
+      "formula": "te_per_capita_eur / days_in_year",
+      "value": 68.0623,
+      "unit": "EUR per inhabitant per day",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 68.1,
+        "text": "EUR 68.1 per day",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "deficit_days",
+      "label_en": "The 2025 deficit in days of public spending",
+      "label_fr": "Le déficit 2025 en jours de dépense publique",
+      "formula": "deficit_2025_eur_bn / one_day_spending_eur_bn",
+      "value": 32.2817,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 32.3,
+        "text": "32.3 days",
+        "section": "§3.1"
+      },
+      "figure_ids": [
+        "deficit_2025_eur_bn"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "borrowing_starts_day",
+      "label_en": "Day of the year from which spending is financed by borrowing (calendar overlay)",
+      "label_fr": "Jour de l'année à partir duquel la dépense est financée par l'emprunt (calendrier)",
+      "formula": "days_in_year - deficit_days",
+      "value": 332.7183,
+      "unit": "days elapsed since 1 January",
+      "display_decimals": null,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": null,
+        "text": "from about 29 November",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": 2025,
+      "notes": "value_date = 1 January 2025 + floor(value) days.",
+      "value_date": "2025-11-29"
+    },
+    {
+      "id": "deficit_per_second_eur",
+      "label_en": "Deficit per second (illustrative)",
+      "label_fr": "Déficit par seconde (illustratif)",
+      "formula": "deficit_2025_eur_bn * 1000000000 / (days_in_year * seconds_per_day)",
+      "value": 4807.2045,
+      "unit": "EUR per second",
+      "display_decimals": -2,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 4800,
+        "text": "about EUR 4,800 per second",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Caveat: the deficit is not the change in debt (stock-flow adjustments)."
+    },
+    {
+      "id": "share_te_borrowed_pct",
+      "label_en": "Share of public spending financed by borrowing (2025)",
+      "label_fr": "Part de la dépense publique financée par l'emprunt (2025)",
+      "formula": "deficit_2025_eur_bn / te_2025_eur_bn * 100",
+      "value": 8.8443,
+      "unit": "% of total public expenditure",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 8.8,
+        "text": "8.8%, about 1 euro in 11",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": "share_te_borrowed_2025_pct",
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "borrowed_one_euro_in",
+      "label_en": "Borrowed euros: '1 euro in N'",
+      "label_fr": "Euros empruntés : « 1 euro sur N »",
+      "formula": "te_2025_eur_bn / deficit_2025_eur_bn",
+      "value": 11.3067,
+      "unit": "N",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 11,
+        "text": "about 1 euro in 11",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "debt_per_capita_eur",
+      "label_en": "Public debt per inhabitant (end-2025)",
+      "label_fr": "Dette publique par habitant (fin 2025)",
+      "formula": "debt_2025_eur_bn * 1000 / population_2026_01_01_m",
+      "value": 50064.8879,
+      "unit": "EUR per inhabitant",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 50065,
+        "text": "EUR 50,065",
+        "section": "§3.1"
+      },
+      "figure_ids": [
+        "debt_2025_eur_bn",
+        "population_2026_01_01_m"
+      ],
+      "checks_figure_id": "debt_per_capita_2025_eur",
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "debt_to_revenue_years",
+      "label_en": "Debt in years of total revenue",
+      "label_fr": "Dette en années de recettes publiques",
+      "formula": "debt_2025_eur_bn / total_revenue_2025_eur_bn",
+      "value": 2.2145,
+      "unit": "years",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 2.2,
+        "text": "2.2 years of revenue",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "interest_to_revenue_pct",
+      "label_en": "Interest as a share of total revenue (2025)",
+      "label_fr": "Intérêts en part des recettes publiques (2025)",
+      "formula": "interest_2025_eur_bn / total_revenue_2025_eur_bn * 100",
+      "value": 4.2048,
+      "unit": "% of total revenue",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 4.2,
+        "text": "4.2%",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "po_per_capita_eur",
+      "label_en": "Compulsory levies per inhabitant (2025)",
+      "label_fr": "Prélèvements obligatoires par habitant (2025)",
+      "formula": "po_2025_eur_bn * 1000 / population_2025_m",
+      "value": 18913.5917,
+      "unit": "EUR per inhabitant",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 18915,
+        "text": "EUR 18,915",
+        "section": "§3.1"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 computes on 1,305.1 bn (file 05); file 00 rounds to 1,305 bn. Difference 0.01%."
+    },
+    {
+      "id": "one_point_gdp_eur_bn",
+      "label_en": "One point of GDP (2025)",
+      "label_fr": "Un point de PIB (2025)",
+      "formula": "gdp_2025_eur_bn / 100",
+      "value": 29.911,
+      "unit": "EUR bn",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 29.9,
+        "text": "about EUR 30 bn (EUR 29.9 bn)",
+        "section": "§3.1"
+      },
+      "figure_ids": [
+        "gdp_2025_eur_bn"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "te_pct_gdp_check",
+      "label_en": "Consistency check: TE / GDP (2025)",
+      "label_fr": "Contrôle de cohérence : dépense / PIB (2025)",
+      "formula": "te_2025_eur_bn / gdp_2025_eur_bn * 100",
+      "value": 57.3067,
+      "unit": "% of GDP",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [],
+      "checks_figure_id": "te_2025_pct_gdp",
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "deficit_pct_gdp_check",
+      "label_en": "Consistency check: deficit / GDP (2025)",
+      "label_fr": "Contrôle de cohérence : déficit / PIB (2025)",
+      "formula": "deficit_2025_eur_bn / gdp_2025_eur_bn * 100",
+      "value": 5.0684,
+      "unit": "% of GDP",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [],
+      "checks_figure_id": "deficit_2025_pct_gdp",
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "debt_pct_gdp_check",
+      "label_en": "Consistency check: debt / GDP (end-2025)",
+      "label_fr": "Contrôle de cohérence : dette / PIB (fin 2025)",
+      "formula": "debt_2025_eur_bn / gdp_2025_eur_bn * 100",
+      "value": 115.6799,
+      "unit": "% of GDP",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [],
+      "checks_figure_id": "debt_2025_pct_gdp",
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "macro_feedback_factor_mixed",
+      "label_en": "Macro-feedback factor, year 1, mixed package (1 - m x 0.57)",
+      "label_fr": "Facteur de bouclage macroéconomique, année 1, paquet mixte (1 - m x 0,57)",
+      "formula": "1 - multiplier_mixed_y1 * deficit_semi_elasticity",
+      "value": 0.658,
+      "unit": "net deficit improvement per EUR of measures",
+      "display_decimals": 2,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 0.658,
+        "text": "x 0.66 (1 - 0.6 x 0.57 = 0.658)",
+        "section": "§3.1"
+      },
+      "figure_ids": [
+        "multiplier_mixed_y1",
+        "deficit_semi_elasticity"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "interest_rise_2025_2027_eur_bn",
+      "label_en": "Rise in interest, 2025 to 2027",
+      "label_fr": "Hausse des intérêts, 2025 à 2027",
+      "formula": "interest_2027f_eur_bn - interest_2025_eur_bn",
+      "value": 25.3,
+      "unit": "EUR bn",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 25.3,
+        "text": "+EUR 25 bn (25.3)",
+        "section": "§3.4 / §5.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "interest_vs_education_pct",
+      "label_en": "Interest 2025 as a share of 2024 education spending",
+      "label_fr": "Intérêts 2025 rapportés aux dépenses d'enseignement 2024",
+      "formula": "interest_2025_eur_bn / cofog_education_2024_eur_bn * 100",
+      "value": 44.2127,
+      "unit": "%",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 44,
+        "text": "44%",
+        "section": "§4.2 / §4.9"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "state_interest_minus_lpm_2027_eur_bn",
+      "label_en": "State interest (budget accounting) minus LPM envelope, 2027",
+      "label_fr": "Charge d'intérêts de l'État moins enveloppe LPM, 2027",
+      "formula": "state_debt_charge_2027_eur_bn - lpm_2027_eur_bn",
+      "value": 9.9,
+      "unit": "EUR bn",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": null,
+        "text": "72.9 > 63",
+        "section": "§4.9"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "interest_concepts_gap_2025_eur_bn",
+      "label_en": "Interest: general government (D.41) minus State budget debt charge, 2025",
+      "label_fr": "Intérêts : APU (D.41) moins charge de la dette de l'État, 2025",
+      "formula": "interest_2025_eur_bn - state_debt_charge_2025_eur_bn",
+      "value": 14.1,
+      "unit": "EUR bn",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 14.1,
+        "text": "EUR 14.1 bn",
+        "section": "§3.4 / §4.9"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_scale_eur_per_month_per_bn",
+      "label_en": "Household scale factor: EUR per month per EUR bn of national value",
+      "label_fr": "Facteur d'échelle du ménage : EUR par mois par Md EUR national",
+      "formula": "household_monthly_income_eur / total_revenue_2025_eur_bn",
+      "value": 1.92,
+      "unit": "EUR per month per EUR bn",
+      "display_decimals": 3,
+      "store_decimals": 6,
+      "published_in_file20": {
+        "value": null,
+        "text": "EUR 36,000 / EUR 1,562.5 bn",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_spending_month_eur",
+      "label_en": "Household view: spending per month",
+      "label_fr": "Vue ménage : dépenses par mois",
+      "formula": "te_2025_eur_bn * household_scale_eur_per_month_per_bn",
+      "value": 3291.072,
+      "unit": "EUR per month",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 3291,
+        "text": "3,291 / month",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_borrowing_month_eur",
+      "label_en": "Household view: borrowing per month",
+      "label_fr": "Vue ménage : emprunt par mois",
+      "formula": "deficit_2025_eur_bn * household_scale_eur_per_month_per_bn",
+      "value": 291.072,
+      "unit": "EUR per month",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 291,
+        "text": "291 / month",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_debt_eur",
+      "label_en": "Household view: stock of debt",
+      "label_fr": "Vue ménage : stock de dette",
+      "formula": "debt_2025_eur_bn * household_scale_eur_per_month_per_bn * months_per_year",
+      "value": 79720.704,
+      "unit": "EUR",
+      "display_decimals": -2,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 79700,
+        "text": "79,700",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_interest_month_eur",
+      "label_en": "Household view: interest per month",
+      "label_fr": "Vue ménage : intérêts par mois",
+      "formula": "interest_2025_eur_bn * household_scale_eur_per_month_per_bn",
+      "value": 126.144,
+      "unit": "EUR per month",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 126,
+        "text": "126 / month",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_pensions_month_eur",
+      "label_en": "Household view: pensions (COR scope) per month",
+      "label_fr": "Vue ménage : retraites (périmètre COR) par mois",
+      "formula": "pensions_cor_2025_eur_bn * household_scale_eur_per_month_per_bn",
+      "value": 810.624,
+      "unit": "EUR per month",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 811,
+        "text": "811 / month",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_health_month_eur",
+      "label_en": "Household view: health insurance (ONDAM executed) per month",
+      "label_fr": "Vue ménage : assurance maladie (ONDAM exécuté) par mois",
+      "formula": "ondam_2025_eur_bn * household_scale_eur_per_month_per_bn",
+      "value": 509.568,
+      "unit": "EUR per month",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 510,
+        "text": "510 / month",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "household_defense_month_eur",
+      "label_en": "Household view: defense (LPM, budget accounting) per month",
+      "label_fr": "Vue ménage : défense (LPM, comptabilité budgétaire) par mois",
+      "formula": "lpm_2025_eur_bn * household_scale_eur_per_month_per_bn",
+      "value": 97.92,
+      "unit": "EUR per month",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 98,
+        "text": "98 / month",
+        "section": "§3.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "calendar_days_social_protection",
+      "label_en": "Budget calendar: days of the year paid for social protection (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à protection sociale (COFOG 2024)",
+      "formula": "cofog_social_protection_2024_pct_te / 100 * days_in_year",
+      "value": 151.475,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 151.5,
+        "text": "151.5 days",
+        "section": "§3.3"
+      },
+      "figure_ids": [
+        "cofog_social_protection_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 §3.3's footnote says 'computed on 366 days (2024)', but its figures (and the CSV) use 365."
+    },
+    {
+      "id": "calendar_days_old_age",
+      "label_en": "Budget calendar: days of the year paid for old age (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à vieillesse (COFOG 2024)",
+      "formula": "cofog_old_age_2024_pct_te / 100 * days_in_year",
+      "value": 85.41,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 85.4,
+        "text": "85.4 days",
+        "section": "§3.3"
+      },
+      "figure_ids": [
+        "cofog_old_age_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 §3.3's footnote says 'computed on 366 days (2024)', but its figures (and the CSV) use 365."
+    },
+    {
+      "id": "calendar_days_health",
+      "label_en": "Budget calendar: days of the year paid for health (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à santé (COFOG 2024)",
+      "formula": "cofog_health_2024_pct_te / 100 * days_in_year",
+      "value": 56.94,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 56.9,
+        "text": "56.9 days",
+        "section": "§3.3"
+      },
+      "figure_ids": [
+        "cofog_health_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 §3.3's footnote says 'computed on 366 days (2024)', but its figures (and the CSV) use 365."
+    },
+    {
+      "id": "calendar_days_education",
+      "label_en": "Budget calendar: days of the year paid for education (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à enseignement (COFOG 2024)",
+      "formula": "cofog_education_2024_pct_te / 100 * days_in_year",
+      "value": 32.485,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 32.5,
+        "text": "32.5 days",
+        "section": "§3.3"
+      },
+      "figure_ids": [
+        "cofog_education_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 §3.3's footnote says 'computed on 366 days (2024)', but its figures (and the CSV) use 365."
+    },
+    {
+      "id": "calendar_days_defense",
+      "label_en": "Budget calendar: days of the year paid for defense (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à défense (COFOG 2024)",
+      "formula": "cofog_defense_2024_pct_te / 100 * days_in_year",
+      "value": 11.68,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 11.7,
+        "text": "11.7 days",
+        "section": "§3.3"
+      },
+      "figure_ids": [
+        "cofog_defense_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 §3.3's footnote says 'computed on 366 days (2024)', but its figures (and the CSV) use 365."
+    },
+    {
+      "id": "gap_to_3pct_eur_bn",
+      "label_en": "Goal B: EUR bn to reach the 3% Maastricht limit (2025 base, static)",
+      "label_fr": "Objectif B : Md EUR pour atteindre 3 % (base 2025, statique)",
+      "formula": "deficit_2025_eur_bn - maastricht_deficit_limit_pct / 100 * gdp_2025_eur_bn",
+      "value": 61.867,
+      "unit": "EUR bn",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 61.9,
+        "text": "≈ 62 (151.6 - 89.7)",
+        "section": "§5.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "gross_measures_goal_b_eur_bn",
+      "label_en": "Goal B with macro feedback: gross measures needed at m = 0.6",
+      "label_fr": "Objectif B avec bouclage : mesures brutes nécessaires à m = 0,6",
+      "formula": "gap_to_3pct_eur_bn / macro_feedback_factor_mixed",
+      "value": 94.0228,
+      "unit": "EUR bn",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 94.1,
+        "text": "≈ 94 (61.9 / 0.658)",
+        "section": "§5.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "gross_measures_goal_a_eur_bn",
+      "label_en": "Goal A with macro feedback: gross measures to net the debt-stabilizing gap",
+      "label_fr": "Objectif A avec bouclage : mesures brutes pour combler l'écart au solde stabilisant",
+      "formula": "debt_stabilizing_gap_2025_eur_bn / macro_feedback_factor_mixed",
+      "value": 136.1702,
+      "unit": "EUR bn",
+      "display_decimals": 0,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 136.8,
+        "text": "≈ 137 (90 / 0.658)",
+        "section": "§5.2"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "File 20 rounds the gap to 90 bn; the canonical Cour value is 89.6 bn."
+    },
+    {
+      "id": "example_cut_net_y1_eur_bn",
+      "label_en": "EUR 30 bn of operating-spending cuts: net deficit gain in year 1 (m = 0.8)",
+      "label_fr": "30 Md EUR de baisse des dépenses de fonctionnement : gain net sur le déficit en année 1 (m = 0,8)",
+      "formula": "example_cut_eur_bn * (1 - mult_operating_spending_wages_y1 * deficit_semi_elasticity)",
+      "value": 16.32,
+      "unit": "EUR bn",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": {
+        "value": 16.3,
+        "text": "about EUR 16 bn (16.3)",
+        "section": "§4.18 / §5.4"
+      },
+      "figure_ids": [],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": null
+    },
+    {
+      "id": "calendar_days_general_public_services",
+      "label_en": "Budget calendar: days of the year paid for general public services (incl. debt interest) (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à services publics généraux (intérêts de la dette compris) (COFOG 2024)",
+      "formula": "cofog_general_public_services_2024_pct_te / 100 * days_in_year",
+      "value": 39.42,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_general_public_services_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_interest_cofog",
+      "label_en": "Budget calendar: days of the year paid for debt interest (COFOG GF0107) (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à intérêts de la dette (COFOG GF0107) (COFOG 2024)",
+      "formula": "cofog_interest_2024_pct_te / 100 * days_in_year",
+      "value": 12.775,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_interest_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_economic_affairs",
+      "label_en": "Budget calendar: days of the year paid for economic affairs (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à affaires économiques (COFOG 2024)",
+      "formula": "cofog_economic_affairs_2024_pct_te / 100 * days_in_year",
+      "value": 36.135,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_economic_affairs_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_public_order",
+      "label_en": "Budget calendar: days of the year paid for public order and safety (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à ordre et sécurité publics (COFOG 2024)",
+      "formula": "cofog_public_order_2024_pct_te / 100 * days_in_year",
+      "value": 11.315,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_public_order_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_recreation_culture",
+      "label_en": "Budget calendar: days of the year paid for recreation, culture and religion (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à loisirs, culture et culte (COFOG 2024)",
+      "formula": "cofog_recreation_culture_2024_pct_te / 100 * days_in_year",
+      "value": 9.49,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_recreation_culture_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_housing_amenities",
+      "label_en": "Budget calendar: days of the year paid for housing and community amenities (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à logement et équipements collectifs (COFOG 2024)",
+      "formula": "cofog_housing_amenities_2024_pct_te / 100 * days_in_year",
+      "value": 9.125,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_housing_amenities_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_environment",
+      "label_en": "Budget calendar: days of the year paid for environmental protection (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours de l'année consacrés à protection de l'environnement (COFOG 2024)",
+      "formula": "cofog_environment_2024_pct_te / 100 * days_in_year",
+      "value": 6.57,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_environment_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 budget calendar (365-day convention, like the other calendar_days_* yardsticks). Illustrative."
+    },
+    {
+      "id": "calendar_days_gps_excl_interest",
+      "label_en": "Budget calendar: days for general public services excluding debt interest (COFOG 2024)",
+      "label_fr": "Calendrier budgétaire : jours consacrés aux services publics généraux hors intérêts de la dette (COFOG 2024)",
+      "formula": "(cofog_general_public_services_2024_pct_te - cofog_interest_2024_pct_te) / 100 * days_in_year",
+      "value": 26.645,
+      "unit": "days",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "cofog_general_public_services_2024_pct_te",
+        "cofog_interest_2024_pct_te"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 2 step 9. Still includes basic research and foreign aid; administrative staff of hospitals and schools are counted in health and education. Do not label it 'running costs of the State' without this caveat. Illustrative."
+    },
+    {
+      "id": "deficit_state_share_pct",
+      "label_en": "State share of the 2025 public deficit",
+      "label_fr": "Part de l'État dans le déficit public de 2025",
+      "formula": "deficit_state_2025_eur_bn / deficit_2025_eur_bn * 100",
+      "value": 84.4987,
+      "unit": "% of the 2025 public deficit",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "deficit_state_2025_eur_bn",
+        "deficit_2025_eur_bn"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 4 step on subsectors ('about 85%'). National accounts; the subsectors add up to 151.7 against 151.6 (rounding). Illustrative."
+    },
+    {
+      "id": "te_change_2019_2025_days",
+      "label_en": "Rise in public spending 2019-2025 (2.0 points of GDP) in days of 2025 spending",
+      "label_fr": "Hausse des dépenses publiques de 2019 à 2025 (2,0 points de PIB) en jours de dépense de 2025",
+      "formula": "te_change_2019_2025_pp * one_point_gdp_eur_bn / one_day_spending_eur_bn",
+      "value": 12.7385,
+      "unit": "days of 2025 public spending",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "te_change_2019_2025_pp",
+        "gdp_2025_eur_bn",
+        "te_2025_eur_bn"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 4 step 1 comparison (12.7 days). Points of GDP converted on 2025 GDP: order of magnitude, illustrative."
+    },
+    {
+      "id": "rexecode_levies_2024_2026_days",
+      "label_en": "New levies 2024-2026 (Rexecode) in days of 2025 spending",
+      "label_fr": "Prélèvements nouveaux de 2024 à 2026 (Rexecode) en jours de dépense de 2025",
+      "formula": "rexecode_levies_2024_2026_eur_bn / one_day_spending_eur_bn",
+      "value": 7.8149,
+      "unit": "days of 2025 public spending",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "rexecode_levies_2024_2026_eur_bn",
+        "te_2025_eur_bn"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 4 (about 7.8 days). Multi-year amount over 2025 denominators: order of magnitude, illustrative."
+    },
+    {
+      "id": "r_minus_g_2025_pp",
+      "label_en": "Interest-growth differential (r - g), 2025",
+      "label_fr": "Écart entre taux d'intérêt et taux de croissance (r - g), 2025",
+      "formula": "apparent_interest_rate_2025_pct - nominal_gdp_growth_2025_pct",
+      "value": 0.1,
+      "unit": "percentage points",
+      "display_decimals": 1,
+      "store_decimals": 4,
+      "published_in_file20": null,
+      "figure_ids": [
+        "apparent_interest_rate_2025_pct",
+        "nominal_gdp_growth_2025_pct"
+      ],
+      "checks_figure_id": null,
+      "date_from_day_of_year": null,
+      "notes": "Chapter 5 snowball sliders: default r = 2.0, g = 1.9, primary balance -2.9 (primary_balance_2025_pct_gdp). Positive = snowball effect (Cour des comptes, June 2026)."
+    }
+  ]
+}

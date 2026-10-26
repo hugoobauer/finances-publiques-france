@@ -1,0 +1,2510 @@
+{
+  "meta": {
+    "dataset": "quiz",
+    "schema": "schemas/quiz.schema.json",
+    "as_of": "2026-10-25",
+    "version": "1.0.0",
+    "description": "Perception-gap quiz (file 20 §6): documented misperceptions and the 41-item bank (25 core + 16 rotation; Q36-Q40 added 2026-10-25 to balance left- and right-coded items; Q40 recoded 'both' and Q41 added the same day to keep the balance). French wording is a draft for editorial review.",
+    "conventions": "Decimal points and no thousands separators in JSON numbers; French formatting (comma decimal, narrow no-break space) is applied at render time. EUR bn = billions of euros, current prices. Every share says % of GDP or % of total public expenditure."
+  },
+  "design": {
+    "modes": [
+      "teaser (3 questions)",
+      "full (25)",
+      "classroom (anonymous group aggregate)",
+      "by electorate (optional, consent)"
+    ],
+    "scoring": "Log-distance score; a guess within x1.25 of the true value scores full points.",
+    "symmetry_rule": "Every draw contains exactly as many left-coded as right-coded items (file 20 §6.3, tightened 2026-10-25: never more right- than left-coded items, and vice versa). See draw_rule.",
+    "options_note": "Distractor options are editorial drafts (orders of magnitude for the guess), not figures.",
+    "data_collection": "Answers stored anonymously with GDPR consent (CNIL); results published quarterly; respondents self-selected.",
+    "draw_rule": {
+      "constraint": "count(camp_coding == 'right') == count(camp_coding == 'left') in every draw",
+      "coded_camps": [
+        "left",
+        "right"
+      ],
+      "neutral_codings": [
+        "general",
+        "both",
+        "pessimism",
+        "anti_tax"
+      ],
+      "draw_sizes": {
+        "teaser": 3,
+        "full": 25,
+        "classroom": 25,
+        "by_electorate": 25
+      },
+      "procedure": "For a draw of n items: k_min = max(0, ceil((n - N_neutral) / 2)), k_max = min(N_left, N_right, floor(n / 2)); pick k uniformly in [k_min, k_max]; draw k left-coded, k right-coded and n - 2k neutral items at random without replacement; shuffle.",
+      "bank_requirement": "The bank holds the same number of left- and right-coded items, so that both camps rotate at the same rate.",
+      "checked_by": "validate.py (bank balance, feasibility for each draw size, and 500 seeded draws of the reference procedure)"
+    }
+  },
+  "misperceptions": [
+    {
+      "id": "M1",
+      "belief_en": "Debt estimated at 76% of GDP on average; 37% 'don't know'; only 25% say 'above 100%'.",
+      "belief_fr": "Dette estimée en moyenne à 76 % du PIB ; 37 % « ne savent pas » ; seuls 25 % disent « plus de 100 % ».",
+      "survey": {
+        "pollster": "Ipsos",
+        "sponsor": "MINEFI, for the Commission sur l'avenir des finances publiques (Arthuis)",
+        "fieldwork": "18-21 Jan 2021",
+        "n": 1000,
+        "mode": "online access panel, quotas"
+      },
+      "true_value_en": "98.2% (end-2019); 114.9% (end-2020, current vintage); 115.7% end-2025",
+      "true_value_figure_ids": [
+        "debt_2025_pct_gdp"
+      ],
+      "gap_en": "Underestimated by about 22-39 points",
+      "orientation_flag": null,
+      "source_ids": [
+        "f20:ipsos21"
+      ]
+    },
+    {
+      "id": "M2",
+      "belief_en": "73% feel poorly informed about the level and cost of the debt.",
+      "belief_fr": "73 % se sentent mal informés sur le niveau et le coût de la dette.",
+      "survey": {
+        "pollster": "Ipsos",
+        "sponsor": "MINEFI",
+        "fieldwork": "18-21 Jan 2021",
+        "n": 1000,
+        "mode": "online access panel, quotas"
+      },
+      "true_value_en": null,
+      "true_value_figure_ids": [],
+      "gap_en": null,
+      "orientation_flag": null,
+      "source_ids": [
+        "f20:ipsos21"
+      ]
+    },
+    {
+      "id": "M3",
+      "belief_en": "Causes of the debt: 'high social protection' cited by 30%, 'lost revenue from certain reforms' by 21%.",
+      "belief_fr": "Causes de la dette : « protection sociale élevée » citée par 30 %, « recettes perdues à cause de certaines réformes » par 21 %.",
+      "survey": {
+        "pollster": "Ipsos",
+        "sponsor": "MINEFI",
+        "fieldwork": "18-21 Jan 2021",
+        "n": 1000,
+        "mode": "online access panel, quotas"
+      },
+      "true_value_en": "Social protection + health = 57% of TE; tax cuts 2018-2023 = EUR 62 bn a year",
+      "true_value_figure_ids": [
+        "cofog_social_protection_2024_pct_te",
+        "cofog_health_2024_pct_te",
+        "tax_cuts_2018_2023_eur_bn"
+      ],
+      "gap_en": "Both structural explanations (social spending and tax cuts) are under-cited",
+      "orientation_flag": null,
+      "source_ids": [
+        "f20:ipsos21",
+        "f00:row28"
+      ]
+    },
+    {
+      "id": "M4",
+      "belief_en": "Main source of the debt: State 55%, social security 22%, local authorities 8%.",
+      "belief_fr": "Principale source de la dette : État 55 %, sécurité sociale 22 %, collectivités 8 %.",
+      "survey": {
+        "pollster": "Ipsos",
+        "sponsor": "MINEFI",
+        "fieldwork": "18-21 Jan 2021",
+        "n": 1000,
+        "mode": "online access panel, quotas"
+      },
+      "true_value_en": "Share of Maastricht debt at end-2020: State 78%, social security 10%, local authorities 8.5%",
+      "true_value_figure_ids": [],
+      "gap_en": "The public is broadly right here: a 'you got it right' moment",
+      "orientation_flag": null,
+      "source_ids": [
+        "f20:ipsos21"
+      ]
+    },
+    {
+      "id": "M5",
+      "belief_en": "Spending to cut first: running costs of the State and public services 67%, social benefits incl. pensions 14%.",
+      "belief_fr": "Dépenses à réduire en priorité : train de vie de l'État et des services publics 67 %, prestations sociales y compris retraites 14 %.",
+      "survey": {
+        "pollster": "Ipsos",
+        "sponsor": "MINEFI",
+        "fieldwork": "18-21 Jan 2021",
+        "n": 1000,
+        "mode": "online access panel, quotas"
+      },
+      "true_value_en": "Social protection 41.5% + health 15.6% of TE",
+      "true_value_figure_ids": [
+        "cofog_social_protection_2024_pct_te",
+        "cofog_health_2024_pct_te"
+      ],
+      "gap_en": "Cut preferences fall on the smaller items",
+      "orientation_flag": null,
+      "source_ids": [
+        "f20:ipsos21"
+      ]
+    },
+    {
+      "id": "M6",
+      "belief_en": "Cut ranking: family 34%, business aid 33%, unemployment 30% ... pensions 7%, health 6%, education 5%.",
+      "belief_fr": "Classement des coupes : famille 34 %, aides aux entreprises 33 %, chômage 30 % ... retraites 7 %, santé 6 %, éducation 5 %.",
+      "survey": {
+        "pollster": "Elabe",
+        "sponsor": "Les Echos",
+        "fieldwork": "1-2 Sep 2026",
+        "n": 1005,
+        "mode": null
+      },
+      "true_value_en": "Family 4.0%, unemployment 2.9%, old age 23.4%, health 15.6%, education 8.9% of TE (COFOG 2024)",
+      "true_value_figure_ids": [
+        "cofog_old_age_2024_pct_te",
+        "cofog_health_2024_pct_te",
+        "cofog_education_2024_pct_te"
+      ],
+      "gap_en": "Most-cited items (family + unemployment) ≈ 7% of TE; protected items (old age + health + education) ≈ 48% of TE. Name the items whenever either number is shown.",
+      "orientation_flag": null,
+      "source_ids": [
+        "f20:elabe26",
+        "f14"
+      ]
+    },
+    {
+      "id": "M7",
+      "belief_en": "79% / 74% find taxing big firms / the wealthiest 'effective' against the debt.",
+      "belief_fr": "79 % / 74 % jugent « efficace » contre la dette de taxer les grandes entreprises / les plus riches.",
+      "survey": {
+        "pollster": "Elabe",
+        "sponsor": "Les Echos and Institut Montaigne",
+        "fieldwork": "1-2 Oct 2024",
+        "n": 1007,
+        "mode": null
+      },
+      "true_value_en": "Wealth taxes: 0.1-0.8 pt of GDP vs an adjustment need of 4.4 pts",
+      "true_value_figure_ids": [
+        "tax_rich_package_eur_bn"
+      ],
+      "gap_en": "Overstated weight",
+      "orientation_flag": null,
+      "source_ids": [
+        "f14"
+      ]
+    },
+    {
+      "id": "M8",
+      "belief_en": "47% think retirees' living standard is below the population average; 18% think the system is funded; 50% think current contributions will pay pensions at least as high as today's.",
+      "belief_fr": "47 % pensent que le niveau de vie des retraités est inférieur à la moyenne ; 18 % croient le système par capitalisation ; 50 % pensent que les cotisations actuelles paieront des pensions au moins aussi élevées.",
+      "survey": {
+        "pollster": "Toluna-Harris Interactive",
+        "sponsor": "Observatoire Hexagone (favors a funded pillar: orientation flagged)",
+        "fieldwork": "21-24 Feb 2025",
+        "n": 1101,
+        "mode": "online, quotas and weighting"
+      },
+      "true_value_en": "100.2% (COR, 2023); pay-as-you-go system; projected about 90% by 2070",
+      "true_value_figure_ids": [
+        "retirees_relative_living_standard_pct"
+      ],
+      "gap_en": "Pessimism about current retirees; optimism about future pensions",
+      "orientation_flag": "Sponsor favors adding a funded pension pillar.",
+      "source_ids": [
+        "f20:hexagone",
+        "f03"
+      ]
+    },
+    {
+      "id": "M9",
+      "belief_en": "44% think retirees are worse off.",
+      "belief_fr": "44 % pensent que les retraités sont moins bien lotis.",
+      "survey": {
+        "pollster": "Drees Baromètre",
+        "sponsor": "Drees",
+        "fieldwork": "Oct-Dec 2025",
+        "n": 4000,
+        "mode": "face to face"
+      },
+      "true_value_en": "100.2%",
+      "true_value_figure_ids": [
+        "retirees_relative_living_standard_pct"
+      ],
+      "gap_en": null,
+      "orientation_flag": null,
+      "source_ids": [
+        "f14"
+      ]
+    },
+    {
+      "id": "M10",
+      "belief_en": "72% think taxes have risen since 2017.",
+      "belief_fr": "72 % pensent que les impôts ont augmenté depuis 2017.",
+      "survey": {
+        "pollster": "Elabe",
+        "sponsor": "BFMTV",
+        "fieldwork": "4-5 Nov 2025",
+        "n": 1000,
+        "mode": null
+      },
+      "true_value_en": "PO ratio 45.3 → 43.6% of GDP; +25.7% in nominal euros; +2.5% after inflation",
+      "true_value_figure_ids": [
+        "po_2017_pct_gdp",
+        "po_2025_pct_gdp"
+      ],
+      "gap_en": "Wrong as a ratio, right in euros",
+      "orientation_flag": null,
+      "source_ids": [
+        "f14"
+      ]
+    },
+    {
+      "id": "M11",
+      "belief_en": "59% feel they contribute more than they receive.",
+      "belief_fr": "59 % estiment contribuer plus qu'ils ne reçoivent.",
+      "survey": {
+        "pollster": "Elabe",
+        "sponsor": "BFMTV",
+        "fieldwork": "2-3 Dec 2025",
+        "n": 1000,
+        "mode": null
+      },
+      "true_value_en": "56% are net beneficiaries (Insee, 2023)",
+      "true_value_figure_ids": [
+        "net_beneficiaries_2023_pct"
+      ],
+      "gap_en": "Perception vs accounting",
+      "orientation_flag": null,
+      "source_ids": [
+        "f14"
+      ]
+    },
+    {
+      "id": "M12",
+      "belief_en": "60% think France is 'close to bankruptcy'.",
+      "belief_fr": "60 % pensent que la France est « proche de la faillite ».",
+      "survey": {
+        "pollster": "Odoxa",
+        "sponsor": "iFRAP (free-market)",
+        "fieldwork": "3-4 Sep 2025",
+        "n": null,
+        "mode": null
+      },
+      "true_value_en": "Spread 97 bp (Sep 2026 average); ratings A+/Aa3",
+      "true_value_figure_ids": [
+        "oat_bund_spread_sep2026_bp"
+      ],
+      "gap_en": "Overestimated immediacy",
+      "orientation_flag": "Sponsor is a free-market think tank.",
+      "source_ids": [
+        "f14"
+      ]
+    },
+    {
+      "id": "M13",
+      "belief_en": "84% / 82% say social / tax fraud is not fought enough.",
+      "belief_fr": "84 % / 82 % jugent que la fraude sociale / fiscale n'est pas assez combattue.",
+      "survey": {
+        "pollster": "Elabe",
+        "sponsor": "BFMTV",
+        "fieldwork": "Nov 2025",
+        "n": null,
+        "mode": null
+      },
+      "true_value_en": "Realistic marginal yield of a new plan EUR 1-3 bn",
+      "true_value_figure_ids": [
+        "antifraud_marginal_yield_eur_bn"
+      ],
+      "gap_en": "Overestimated recoverable pot",
+      "orientation_flag": null,
+      "source_ids": [
+        "f14"
+      ]
+    },
+    {
+      "id": "M14",
+      "belief_en": "Perceived immigrant share 28.8% vs actual 12.2%.",
+      "belief_fr": "Part perçue des immigrés 28,8 % contre 12,2 % en réalité.",
+      "survey": {
+        "pollster": "Alesina-Miano-Stantcheva (academic)",
+        "sponsor": null,
+        "fieldwork": "2018",
+        "n": 4000,
+        "mode": null
+      },
+      "true_value_en": "12.2% (study year)",
+      "true_value_figure_ids": [],
+      "gap_en": "x 2.4",
+      "orientation_flag": null,
+      "source_ids": [
+        "f14"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "number": 1,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to pensions (old age)?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont aux retraites (vieillesse) ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.5,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 23.4,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "EUR 23.40 (COFOG 2024); EUR 24.30 on the COR concept (2025)",
+        "text_fr": "23,40 € (COFOG 2024) ; 24,30 € au sens du COR (2025)"
+      },
+      "figure_ids": [
+        "cofog_old_age_2024_pct_te",
+        "pensions_cor_2025_pct_te"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Old age is the largest single function of public spending (COFOG 2024, % of total public expenditure).",
+      "explanation_fr": "La vieillesse est la première fonction de la dépense publique (COFOG 2024, en % de la dépense publique totale).",
+      "steelman_en": "Pensions are also partly financed by contributions linked to past work.",
+      "steelman_fr": "Les retraites sont aussi en partie financées par des cotisations liées au travail passé.",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [
+        "M5",
+        "M6"
+      ],
+      "source_ids": [
+        "f00:row12",
+        "f00:row16"
+      ]
+    },
+    {
+      "id": "Q02",
+      "number": 2,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to health?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont à la santé ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.5,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 15.6,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "15.6 (COFOG 2024)",
+        "text_fr": "15,6 (COFOG 2024)"
+      },
+      "figure_ids": [
+        "cofog_health_2024_pct_te"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Health is the second-largest function (% of total public expenditure, COFOG 2024).",
+      "explanation_fr": "La santé est la deuxième fonction (en % de la dépense publique totale, COFOG 2024).",
+      "steelman_en": "Health outcomes are good (treatable mortality among the lowest in the EU).",
+      "steelman_fr": "Les résultats de santé sont bons (mortalité évitable par traitement parmi les plus basses de l'UE).",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [
+        "M6"
+      ],
+      "source_ids": [
+        "f00:row13"
+      ]
+    },
+    {
+      "id": "Q03",
+      "number": 3,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to education?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont à l'éducation ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.5,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 8.9,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "8.9 (COFOG 2024)",
+        "text_fr": "8,9 (COFOG 2024)"
+      },
+      "figure_ids": [
+        "cofog_education_2024_pct_te"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Education is 8.9% of total public expenditure (COFOG 2024).",
+      "explanation_fr": "L'éducation représente 8,9 % de la dépense publique totale (COFOG 2024).",
+      "steelman_en": null,
+      "steelman_fr": null,
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [
+        "M6"
+      ],
+      "source_ids": [
+        "f00:row14"
+      ]
+    },
+    {
+      "id": "Q04",
+      "number": 4,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to defense?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont à la défense ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.5,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 3.2,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "3.2 (COFOG 2024)",
+        "text_fr": "3,2 (COFOG 2024)"
+      },
+      "figure_ids": [
+        "cofog_defense_2024_pct_te"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Defense is 3.2% of total public expenditure (COFOG 2024).",
+      "explanation_fr": "La défense représente 3,2 % de la dépense publique totale (COFOG 2024).",
+      "steelman_en": "It must rise (NATO 3.5% core target: about +EUR 44 bn a year at 2025 GDP).",
+      "steelman_fr": "Elle doit augmenter (cible OTAN de 3,5 % : environ +44 Md EUR par an au PIB 2025).",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row15"
+      ]
+    },
+    {
+      "id": "Q05",
+      "number": 5,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to interest on the debt?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont aux intérêts de la dette ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.5,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 3.8,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "3.8 (2025, ESA D.41)",
+        "text_fr": "3,8 (2025, SEC D.41)"
+      },
+      "figure_ids": [
+        "interest_2025_pct_te"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Interest payable by general government was EUR 65.7 bn in 2025, 3.8% of total public expenditure.",
+      "explanation_fr": "Les intérêts versés par les administrations publiques ont atteint 65,7 Md EUR en 2025, soit 3,8 % de la dépense publique totale.",
+      "steelman_en": "Not yet exceptional in the EU (2.2% of GDP, 8th of 27); the risk is the trajectory.",
+      "steelman_fr": "Pas encore exceptionnel dans l'UE (2,2 % du PIB, 8e sur 27) ; le risque est la trajectoire.",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row39"
+      ]
+    },
+    {
+      "id": "Q06",
+      "number": 6,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to foreign economic aid?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont à l'aide économique extérieure ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.1,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 0.3,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "0.3 (COFOG GF0102, EUR 4.9 bn, 2024)",
+        "text_fr": "0,3 (COFOG GF0102, 4,9 Md EUR, 2024)"
+      },
+      "figure_ids": [
+        "cofog_foreign_econ_aid_2024_pct_te",
+        "cofog_foreign_econ_aid_2024_eur_bn",
+        "oda_2025_eur_bn",
+        "oda_2025_pct_gni"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "COFOG foreign economic aid is EUR 4.9 bn (2024), 0.3% of total public expenditure.",
+      "explanation_fr": "L'aide économique extérieure (COFOG) représente 4,9 Md EUR (2024), soit 0,3 % de la dépense publique totale.",
+      "steelman_en": "Not the same as OECD ODA, a broader concept: EUR 12.9 bn = 0.42% of GNI in 2025 (OECD-DAC).",
+      "steelman_fr": "À ne pas confondre avec l'APD au sens de l'OCDE, plus large : 12,9 Md EUR = 0,42 % du RNB en 2025 (CAD-OCDE).",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f14",
+        "f00:row53"
+      ]
+    },
+    {
+      "id": "Q07",
+      "number": 7,
+      "pool": "core",
+      "question_en": "Out of EUR 100 of public spending, how much goes to the RSA and the prime d'activité (in-work benefit)?",
+      "question_fr": "Sur 100 EUR de dépense publique, combien vont au RSA et à la prime d'activité ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.1,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 2.2,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 100 of total public expenditure",
+        "text_en": "2.2 (COFOG GF1007, 2024)",
+        "text_fr": "2,2 (COFOG GF1007, 2024)"
+      },
+      "figure_ids": [
+        "cofog_rsa_prime_activite_2024_pct_te"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Social exclusion n.e.c. (RSA, prime d'activité) is 2.2% of total public expenditure (COFOG 2024).",
+      "explanation_fr": "L'exclusion sociale n.c.a. (RSA, prime d'activité) représente 2,2 % de la dépense publique totale (COFOG 2024).",
+      "steelman_en": "Child poverty is high (22.8%, rank 22-23 of 27).",
+      "steelman_fr": "La pauvreté des enfants est élevée (22,8 %, 22e-23e sur 27).",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f14",
+        "f01"
+      ]
+    },
+    {
+      "id": "Q08",
+      "number": 8,
+      "pool": "core",
+      "question_en": "How many days of public spending does the 2025 deficit represent?",
+      "question_fr": "Combien de jours de dépense publique le déficit de 2025 représente-t-il ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 120,
+        "step": 1,
+        "unit": "days"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 32,
+        "low": null,
+        "high": null,
+        "unit": "days",
+        "text_en": "32 days: from about 29 November, spending runs on borrowed money",
+        "text_fr": "32 jours : à partir du 29 novembre environ, la dépense est financée à crédit"
+      },
+      "figure_ids": [
+        "deficit_days",
+        "deficit_2025_eur_bn",
+        "te_2025_eur_bn"
+      ],
+      "formula": "deficit_days",
+      "range_formulas": null,
+      "explanation_en": "EUR 151.6 bn of deficit / EUR 4.70 bn of spending per day = 32 days.",
+      "explanation_fr": "151,6 Md EUR de déficit / 4,70 Md EUR de dépense par jour = 32 jours.",
+      "steelman_en": "The deficit is not the same as the change in debt (stock-flow adjustments).",
+      "steelman_fr": "Le déficit n'est pas exactement la variation de la dette (ajustements stock-flux).",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f20:conv",
+        "f00:row31"
+      ]
+    },
+    {
+      "id": "Q09",
+      "number": 9,
+      "pool": "core",
+      "question_en": "Public debt as % of GDP?",
+      "question_fr": "La dette publique en % du PIB ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 200,
+        "step": 1,
+        "unit": "% of GDP"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 115.7,
+        "low": null,
+        "high": null,
+        "unit": "% of GDP",
+        "text_en": "115.7% (end-2025); 119.0% (end-Q2 2026)",
+        "text_fr": "115,7 % (fin 2025) ; 119,0 % (fin T2 2026)"
+      },
+      "figure_ids": [
+        "debt_2025_pct_gdp",
+        "debt_2026q2_pct_gdp"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Maastricht debt was EUR 3,460.1 bn at end-2025, 115.7% of GDP.",
+      "explanation_fr": "La dette Maastricht atteignait 3 460,1 Md EUR fin 2025, soit 115,7 % du PIB.",
+      "steelman_en": "Ipsos 2021: the average guess was 76% (the last time anyone asked).",
+      "steelman_fr": "Ipsos 2021 : l'estimation moyenne était de 76 % (dernière fois que la question a été posée).",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [
+        "M1"
+      ],
+      "source_ids": [
+        "f00:row35",
+        "f00:row36",
+        "f20:ipsos21"
+      ]
+    },
+    {
+      "id": "Q10",
+      "number": 10,
+      "pool": "core",
+      "question_en": "Public debt per inhabitant?",
+      "question_fr": "La dette publique par habitant ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 5,000",
+          "label_fr": "Environ 5 000 EUR",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 20,000",
+          "label_fr": "Environ 20 000 EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 50,000",
+          "label_fr": "Environ 50 000 EUR",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "label_en": "About EUR 150,000",
+          "label_fr": "Environ 150 000 EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 50000,
+        "low": null,
+        "high": null,
+        "unit": "EUR per inhabitant",
+        "text_en": "≈ EUR 50,000 (50,065)",
+        "text_fr": "≈ 50 000 EUR (50 065)"
+      },
+      "figure_ids": [
+        "debt_per_capita_2025_eur",
+        "debt_per_capita_eur"
+      ],
+      "formula": "debt_per_capita_eur",
+      "range_formulas": null,
+      "explanation_en": "EUR 3,460.1 bn / 69.11 m inhabitants = about EUR 50,000.",
+      "explanation_fr": "3 460,1 Md EUR / 69,11 M d'habitants = environ 50 000 EUR.",
+      "steelman_en": "Net worth is positive (+EUR 750 bn): the State also owns assets.",
+      "steelman_fr": "La valeur nette est positive (+750 Md EUR) : l'État détient aussi des actifs.",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row35"
+      ]
+    },
+    {
+      "id": "Q11",
+      "number": 11,
+      "pool": "core",
+      "question_en": "The Zucman tax would pay for how many days of public spending?",
+      "question_fr": "La taxe Zucman financerait combien de jours de dépense publique ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 60,
+        "step": 0.1,
+        "unit": "days"
+      },
+      "options": null,
+      "correct_value": {
+        "value": null,
+        "low": 0.4,
+        "high": 4.3,
+        "unit": "days",
+        "text_en": "0.4 to 4.3 days, depending on whose estimate you take",
+        "text_fr": "0,4 à 4,3 jours selon l'estimation retenue"
+      },
+      "figure_ids": [
+        "zucman_critics_eur_bn",
+        "zucman_proponents_eur_bn",
+        "one_day_spending_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": {
+        "low": "zucman_critics_eur_bn__low / one_day_spending_eur_bn",
+        "high": "zucman_proponents_eur_bn / one_day_spending_eur_bn"
+      },
+      "explanation_en": "Critics' low (EUR 2 bn) to the author's central (EUR 20 bn), divided by EUR 4.70 bn per day.",
+      "explanation_fr": "De l'estimation basse des critiques (2 Md EUR) à l'estimation centrale de l'auteur (20 Md EUR), divisées par 4,70 Md EUR par jour.",
+      "steelman_en": "Fairness is a separate question; the very top pays lower effective rates (IPP).",
+      "steelman_fr": "L'équité est une autre question ; les tout plus riches paient des taux effectifs plus faibles (IPP).",
+      "camp_challenged": "left",
+      "camp_coding": "left",
+      "misperception_ids": [
+        "M7"
+      ],
+      "source_ids": [
+        "f00:row45",
+        "f20:conv"
+      ]
+    },
+    {
+      "id": "Q12",
+      "number": 12,
+      "pool": "core",
+      "question_en": "What share of the deficit would a 'tax the rich' package close?",
+      "question_fr": "Quelle part du déficit un paquet « taxer les riches » comblerait-il ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Less than 2%",
+          "label_fr": "Moins de 2 %",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "7-16%",
+          "label_fr": "7-16 %",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "About half",
+          "label_fr": "Environ la moitié",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "All of it",
+          "label_fr": "La totalité",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 7,
+        "high": 16,
+        "unit": "% of the 2025 deficit",
+        "text_en": "7-16% (EUR 10-25 bn after behavior)",
+        "text_fr": "7-16 % (10-25 Md EUR après comportements)"
+      },
+      "figure_ids": [
+        "tax_rich_package_eur_bn",
+        "deficit_2025_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": {
+        "low": "tax_rich_package_eur_bn__low / deficit_2025_eur_bn * 100",
+        "high": "tax_rich_package_eur_bn__high / deficit_2025_eur_bn * 100"
+      },
+      "explanation_en": "A plausible post-behavior package raises EUR 10-25 bn against a EUR 151.6 bn deficit.",
+      "explanation_fr": "Un paquet plausible après comportements rapporte 10-25 Md EUR pour un déficit de 151,6 Md EUR.",
+      "steelman_en": "Not negligible: 2-6 times an année blanche.",
+      "steelman_fr": "Pas négligeable : 2 à 6 fois une année blanche.",
+      "camp_challenged": "left",
+      "camp_coding": "left",
+      "misperception_ids": [
+        "M7"
+      ],
+      "source_ids": [
+        "f07"
+      ]
+    },
+    {
+      "id": "Q13",
+      "number": 13,
+      "pool": "core",
+      "question_en": "What does a general return to retirement at 60 cost each year?",
+      "question_fr": "Combien coûte chaque année un retour général de la retraite à 60 ans ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 2 bn",
+          "label_fr": "Environ 2 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 10 bn",
+          "label_fr": "Environ 10 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "EUR 43-58 bn",
+          "label_fr": "De 43 à 58 milliards d'euros",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "label_en": "More than EUR 150 bn",
+          "label_fr": "Plus de 150 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 43,
+        "high": 58,
+        "unit": "EUR bn per year",
+        "text_en": "EUR 43-58 bn",
+        "text_fr": "de 43 à 58 milliards d'euros"
+      },
+      "figure_ids": [
+        "return_60_general_cost_eur_bn",
+        "return_60_partial_cost_eur_bn",
+        "rn_2026_pension_plan_cost_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Institut Montaigne (NFP package: 58) and Fipeco (about 43) bracket the cost; no official 2026 costing.",
+      "explanation_fr": "L'Institut Montaigne (paquet NFP : 58) et Fipeco (environ 43) encadrent le coût ; pas de chiffrage officiel en 2026.",
+      "steelman_en": "Partial versions cost 26-35 bn; the RN's own plan about 9.",
+      "steelman_fr": "Les versions partielles coûtent 26-35 Md ; le plan du RN environ 9 selon lui.",
+      "camp_challenged": "left/RN",
+      "camp_coding": "left",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row44",
+        "f03"
+      ]
+    },
+    {
+      "id": "Q14",
+      "number": 14,
+      "pool": "core",
+      "question_en": "What is France's rank in the EU for public spending / GDP?",
+      "question_fr": "Quel est le rang de la France dans l'UE pour la dépense publique / PIB ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "1st",
+          "label_fr": "1re",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "2nd",
+          "label_fr": "2e",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "5th",
+          "label_fr": "5e",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "10th",
+          "label_fr": "10e",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 2,
+        "low": null,
+        "high": null,
+        "unit": "rank of 27",
+        "text_en": "2nd (1st every year 2014-2023)",
+        "text_fr": "2e (1re chaque année de 2014 à 2023)"
+      },
+      "figure_ids": [
+        "te_pct_gdp_eu_rank_2025",
+        "te_per_capita_pps_2025_rank"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Finland passed France in 2024 and 2025 (57.5% vs 57.3% of GDP in 2025).",
+      "explanation_fr": "La Finlande a dépassé la France en 2024 et 2025 (57,5 % contre 57,3 % du PIB en 2025).",
+      "steelman_en": "8th per inhabitant in purchasing power (PPS).",
+      "steelman_fr": "8e par habitant en parité de pouvoir d'achat (SPA).",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row6",
+        "f00:row5"
+      ]
+    },
+    {
+      "id": "Q15",
+      "number": 15,
+      "pool": "core",
+      "question_en": "Since 2017, have compulsory levies (% of GDP) risen or fallen?",
+      "question_fr": "Depuis 2017, les prélèvements obligatoires (en % du PIB) ont-ils augmenté ou baissé ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Risen",
+          "label_fr": "Augmenté",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "Fallen",
+          "label_fr": "Baissé",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "Unchanged",
+          "label_fr": "Inchangé",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 43.6,
+        "high": 45.3,
+        "unit": "% of GDP",
+        "text_en": "Fallen (45.3 → 43.6)",
+        "text_fr": "Baissé (45,3 → 43,6)"
+      },
+      "figure_ids": [
+        "po_2017_pct_gdp",
+        "po_2025_pct_gdp"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "The ratio fell from 45.3% of GDP (2017) to 43.6% (2025).",
+      "explanation_fr": "Le taux est passé de 45,3 % du PIB (2017) à 43,6 % (2025).",
+      "steelman_en": "Risen in euros (+25.7%), roughly flat after inflation (+2.5%).",
+      "steelman_fr": "En hausse en euros (+25,7 %), quasi stable après inflation (+2,5 %).",
+      "camp_challenged": "anti-tax",
+      "camp_coding": "anti_tax",
+      "misperception_ids": [
+        "M10"
+      ],
+      "source_ids": [
+        "f00:row26",
+        "f00:row25",
+        "f14"
+      ]
+    },
+    {
+      "id": "Q16",
+      "number": 16,
+      "pool": "core",
+      "question_en": "What share of tax households pay net income tax?",
+      "question_fr": "Quelle part des foyers fiscaux paie effectivement l'impôt sur le revenu (impôt net positif) ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 47.2,
+        "low": null,
+        "high": null,
+        "unit": "% of tax households",
+        "text_en": "47.2%",
+        "text_fr": "47,2 %"
+      },
+      "figure_ids": [
+        "ir_households_paying_pct"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "19.6 m of 41.5 m tax households pay net income tax (income 2024).",
+      "explanation_fr": "19,6 M des 41,5 M de foyers fiscaux paient un impôt sur le revenu net positif (revenus 2024).",
+      "steelman_en": "Everyone pays CSG (about 1.7 times income tax) and VAT.",
+      "steelman_fr": "Tout le monde paie la CSG (environ 1,7 fois l'IR) et la TVA.",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f05"
+      ]
+    },
+    {
+      "id": "Q17",
+      "number": 17,
+      "pool": "core",
+      "question_en": "What share of all levies is paid by the top 10%?",
+      "question_fr": "Quelle part de l'ensemble des prélèvements est payée par les 10 % les plus aisés ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 33.3,
+        "low": null,
+        "high": null,
+        "unit": "% of all levies",
+        "text_en": "33.3% (2023)",
+        "text_fr": "33,3 % (2023)"
+      },
+      "figure_ids": [
+        "top10_share_levies_2023_pct"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Insee distributed accounts, 2023 (revised method).",
+      "explanation_fr": "Comptes distributionnels de l'Insee, 2023 (méthode révisée).",
+      "steelman_en": "Indirect taxes weigh more on the poorest (64% vs 48% of income, 2022).",
+      "steelman_fr": "Les impôts indirects pèsent davantage sur les plus modestes (64 % contre 48 % du revenu, 2022).",
+      "camp_challenged": "both",
+      "camp_coding": "both",
+      "misperception_ids": [],
+      "source_ids": [
+        "f05"
+      ]
+    },
+    {
+      "id": "Q18",
+      "number": 18,
+      "pool": "core",
+      "question_en": "What share of people receive more than they pay (including public services)?",
+      "question_fr": "Quelle part des personnes reçoit plus qu'elle ne paie (services publics compris) ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 56,
+        "low": null,
+        "high": null,
+        "unit": "% of persons",
+        "text_en": "56%",
+        "text_fr": "56 %"
+      },
+      "figure_ids": [
+        "net_beneficiaries_2023_pct"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Insee extended redistribution, 2023.",
+      "explanation_fr": "Redistribution élargie de l'Insee, 2023.",
+      "steelman_en": "The gap is partly about concepts: Insee counts health and education at their cost, and many people see their pension as deferred pay rather than a benefit. It also depends on age: 96% of people in households aged 65 or over are net beneficiaries, against 43% of the rest of the population (Insee, 2023).",
+      "steelman_fr": "L'écart tient en partie aux notions : l'Insee compte la santé et l'éducation à leur coût, et beaucoup voient leur pension comme un salaire différé plutôt que comme une prestation. Il dépend aussi de l'âge : 96 % des personnes des ménages de 65 ans ou plus sont bénéficiaires nettes, contre 43 % du reste de la population (Insee, 2023).",
+      "camp_challenged": "anti-tax",
+      "camp_coding": "anti_tax",
+      "misperception_ids": [
+        "M11"
+      ],
+      "source_ids": [
+        "f05",
+        "f14"
+      ]
+    },
+    {
+      "id": "Q19",
+      "number": 19,
+      "pool": "core",
+      "question_en": "How does retirees' living standard compare with the population average?",
+      "question_fr": "Comment le niveau de vie des retraités se compare-t-il à la moyenne de la population ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Much lower (about 70%)",
+          "label_fr": "Bien inférieur (environ 70 %)",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About equal",
+          "label_fr": "Environ égal",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "Much higher (about 130%)",
+          "label_fr": "Bien supérieur (environ 130 %)",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 100.2,
+        "low": null,
+        "high": null,
+        "unit": "% of population average",
+        "text_en": "About equal (100.2%)",
+        "text_fr": "Environ égal (100,2 %)"
+      },
+      "figure_ids": [
+        "retirees_relative_living_standard_pct"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "COR: retirees' living standard is 100.2% of the whole population's.",
+      "explanation_fr": "COR : le niveau de vie des retraités est à 100,2 % de celui de l'ensemble de la population.",
+      "steelman_en": "Projected to fall to about 90% by 2070.",
+      "steelman_fr": "Il devrait baisser à environ 90 % d'ici 2070.",
+      "camp_challenged": "pessimism",
+      "camp_coding": "pessimism",
+      "misperception_ids": [
+        "M8",
+        "M9"
+      ],
+      "source_ids": [
+        "f03"
+      ]
+    },
+    {
+      "id": "Q20",
+      "number": 20,
+      "pool": "core",
+      "question_en": "What share of jobs are in the civil service?",
+      "question_fr": "Quelle part des emplois relève de la fonction publique ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "%"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 20,
+        "low": 19.8,
+        "high": 20.7,
+        "unit": "% of total employment",
+        "text_en": "≈ 20% (19.8%, DGAFP/Insee, civil service; 20.7%, OECD general-government definition)",
+        "text_fr": "≈ 20 % (19,8 %, DGAFP/Insee, fonction publique ; 20,7 %, définition OCDE des administrations publiques)"
+      },
+      "figure_ids": [
+        "civil_service_share_employment_2024_pct",
+        "gg_employment_share_oecd_pct"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "About one job in five, depending on the perimeter.",
+      "explanation_fr": "Environ un emploi sur cinq, selon le périmètre.",
+      "steelman_en": "Sweden 28%, Germany 11.5% (definitions differ).",
+      "steelman_fr": "Suède 28 %, Allemagne 11,5 % (définitions différentes).",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f04"
+      ]
+    },
+    {
+      "id": "Q21",
+      "number": 21,
+      "pool": "core",
+      "question_en": "What is the realistic extra yield of a new anti-fraud plan per year?",
+      "question_fr": "Quel est le rendement supplémentaire réaliste d'un nouveau plan antifraude par an ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "EUR 1-3 bn",
+          "label_fr": "1-3 Md EUR",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "label_en": "EUR 10-15 bn",
+          "label_fr": "10-15 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "EUR 30-50 bn",
+          "label_fr": "30-50 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "More than EUR 100 bn",
+          "label_fr": "Plus de 100 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 1,
+        "high": 3,
+        "unit": "EUR bn per year",
+        "text_en": "EUR 1-3 bn",
+        "text_fr": "1-3 Md EUR"
+      },
+      "figure_ids": [
+        "antifraud_marginal_yield_eur_bn",
+        "social_fraud_hcfips_2024_eur_bn",
+        "social_fraud_hcfips_dec2025_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "The HCFP called the government's 1.5 bn figure 'not credible'.",
+      "explanation_fr": "Le HCFP a jugé « non crédible » le chiffre de 1,5 Md du gouvernement.",
+      "steelman_en": "Social fraud is estimated at about 13 bn (12.98, HCFiPS 2024), about 14 bn in the Dec 2025 update; the recoverable share is small.",
+      "steelman_fr": "La fraude sociale est estimée à environ 13 Md (12,98, HCFiPS 2024), environ 14 Md dans l'actualisation de déc. 2025 ; la part récupérable est faible.",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [
+        "M13"
+      ],
+      "source_ids": [
+        "f07",
+        "f00:row59"
+      ]
+    },
+    {
+      "id": "Q22",
+      "number": 22,
+      "pool": "core",
+      "question_en": "How much is 'aid to business'?",
+      "question_fr": "À combien s'élèvent les « aides aux entreprises » ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 10 bn",
+          "label_fr": "Environ 10 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 211 bn",
+          "label_fr": "Environ 211 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "It depends on the definition: 45 to 211 bn",
+          "label_fr": "Cela dépend de la définition : 45 à 211 Md",
+          "correct": true
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 45,
+        "high": 211,
+        "unit": "EUR bn",
+        "text_en": "'It depends': 45 to 211 bn",
+        "text_fr": "« Cela dépend » : de 45 à 211 Md"
+      },
+      "figure_ids": [
+        "business_aid_range_eur_bn",
+        "business_aid_hcsp_perimeter1_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "The number is a definition: EU State aid (45), HCSP perimeters (82, 187), Senate inquiry (211).",
+      "explanation_fr": "Le chiffre dépend de la définition : aides d'État UE (45), périmètres du HCSP (82, 187), commission d'enquête du Sénat (211).",
+      "steelman_en": "Definitions: whether the general contribution relief (about 75 bn) and Bpifrance loans at face value count.",
+      "steelman_fr": "Définitions : selon que l'on compte ou non les allègements généraux (environ 75 Md) et les prêts de Bpifrance à leur valeur faciale.",
+      "camp_challenged": "left",
+      "camp_coding": "left",
+      "misperception_ids": [],
+      "source_ids": [
+        "f08"
+      ]
+    },
+    {
+      "id": "Q23",
+      "number": 23,
+      "pool": "core",
+      "question_en": "Where does France rank in the EU for hours worked per inhabitant?",
+      "question_fr": "Où se classe la France dans l'UE pour les heures travaillées par habitant ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "In the top 5",
+          "label_fr": "Dans les 5 premiers",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "Around the middle",
+          "label_fr": "Vers le milieu",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "Last of 27",
+          "label_fr": "Dernière sur 27",
+          "correct": true
+        }
+      ],
+      "correct_value": {
+        "value": 27,
+        "low": null,
+        "high": null,
+        "unit": "rank of 27",
+        "text_en": "Last of 27 (666 hours per inhabitant per year)",
+        "text_fr": "Dernière sur 27 (666 heures par habitant et par an)"
+      },
+      "figure_ids": [
+        "hours_per_inhabitant_2025_rank",
+        "hours_per_inhabitant_2025"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Low employment among the young and seniors drives the result.",
+      "explanation_fr": "Le faible emploi des jeunes et des seniors explique ce résultat.",
+      "steelman_en": "Hours per worker are higher than in Germany and the Netherlands.",
+      "steelman_fr": "Les heures par actif occupé sont plus élevées qu'en Allemagne et aux Pays-Bas.",
+      "camp_challenged": "pessimism/left",
+      "camp_coding": "pessimism",
+      "misperception_ids": [],
+      "source_ids": [
+        "f08"
+      ]
+    },
+    {
+      "id": "Q24",
+      "number": 24,
+      "pool": "core",
+      "question_en": "In 2027, which is larger: State interest or the defense programming budget?",
+      "question_fr": "En 2027, lequel est le plus élevé : la charge de la dette de l'État ou l'enveloppe de la loi de programmation militaire (LPM) ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "State interest",
+          "label_fr": "La charge de la dette de l'État",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "label_en": "The defense programming budget",
+          "label_fr": "L'enveloppe de la LPM",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "About the same",
+          "label_fr": "À peu près égal",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 63,
+        "high": 72.9,
+        "unit": "EUR bn",
+        "text_en": "Interest (72.9 vs 63)",
+        "text_fr": "La charge de la dette (72,9 Md contre 63 Md)"
+      },
+      "figure_ids": [
+        "state_debt_charge_2027_eur_bn",
+        "lpm_2027_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Same accounting basis (State budget, PLF 2027): interest 72.9 bn vs LPM 63 bn.",
+      "explanation_fr": "Même base comptable (budget de l'État, PLF 2027) : intérêts 72,9 Md contre LPM 63 Md.",
+      "steelman_en": "Budget accounting, State only; never compare with all-government national-accounts interest.",
+      "steelman_fr": "Comptabilité budgétaire, État seul ; ne jamais comparer avec les intérêts de l'ensemble des APU en comptabilité nationale.",
+      "camp_challenged": "general",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row41",
+        "f06"
+      ]
+    },
+    {
+      "id": "Q25",
+      "number": 25,
+      "pool": "core",
+      "question_en": "What explains most of France's spending gap with the euro area?",
+      "question_fr": "Qu'est-ce qui explique l'essentiel de l'écart de dépense de la France avec la zone euro ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "State operating expenditure",
+          "label_fr": "Les dépenses de fonctionnement de l'État",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "Social protection + health",
+          "label_fr": "Protection sociale + santé",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "Defense",
+          "label_fr": "La défense",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "Education",
+          "label_fr": "L'éducation",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 65,
+        "low": null,
+        "high": null,
+        "unit": "% of the 2024 gap",
+        "text_en": "Social protection + health (about two-thirds)",
+        "text_fr": "Protection sociale + santé (environ deux tiers)"
+      },
+      "figure_ids": [
+        "gap2024_sp_plus_health_pp",
+        "spending_gap_ea21_2024_pp"
+      ],
+      "formula": "gap2024_sp_plus_health_pp / spending_gap_ea21_2024_pp * 100",
+      "range_formulas": null,
+      "explanation_en": "5.1 of 7.8 points of GDP (COFOG 2024, vs EA21).",
+      "explanation_fr": "5,1 des 7,8 points de PIB (COFOG 2024, par rapport à la ZE21).",
+      "steelman_en": "Per inhabitant in purchasing power, the gap is smaller (France 8th of 27).",
+      "steelman_fr": "Par habitant en parité de pouvoir d'achat, l'écart est plus faible (France 8e sur 27).",
+      "camp_challenged": "right ('bureaucracy')",
+      "camp_coding": "right",
+      "misperception_ids": [
+        "M5"
+      ],
+      "source_ids": [
+        "f00:row9"
+      ]
+    },
+    {
+      "id": "Q26",
+      "number": 26,
+      "pool": "rotation",
+      "question_en": "How much does France pay the EU budget, net of what it gets back (2025)?",
+      "question_fr": "Combien la France verse-t-elle au budget de l'UE, déduction faite de ce qu'elle reçoit (2025) ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 1 bn",
+          "label_fr": "Environ 1 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 9.5 bn",
+          "label_fr": "Environ 9,5 Md EUR",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 30 bn",
+          "label_fr": "Environ 30 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "About EUR 60 bn",
+          "label_fr": "Environ 60 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 9.5,
+        "low": null,
+        "high": null,
+        "unit": "EUR bn",
+        "text_en": "EUR 9.5 bn (accounting method); 6.4 bn (Commission method)",
+        "text_fr": "9,5 Md EUR (méthode comptable) ; 6,4 Md (méthode de la Commission)"
+      },
+      "figure_ids": [
+        "eu_net_contribution_2025_accounting_eur_bn",
+        "eu_net_contribution_2025_operating_eur_bn",
+        "eu_gross_levy_2025_eur_bn",
+        "eu_gross_levy_2027f_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Own resources 25.9 bn minus EU spending in France 16.4 bn (Budget Directorate).",
+      "explanation_fr": "Ressources propres 25,9 Md moins dépenses de l'UE en France 16,4 Md (Direction du Budget).",
+      "steelman_en": "2nd-largest net contributor in euros; the gross levy is 23.0 bn (2025) and 30.9 bn (PLF 2027). A 5 bn cap would save at most 1.4-4.5 bn, even if legal.",
+      "steelman_fr": "2e contributeur net en euros ; le prélèvement brut est de 23,0 Md (2025) et 30,9 Md (PLF 2027). Un plafond à 5 Md économiserait au plus 1,4-4,5 Md, même s'il était légal.",
+      "camp_challenged": "right (sovereigntist)",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row52",
+        "f16:S3"
+      ]
+    },
+    {
+      "id": "Q27",
+      "number": 27,
+      "pool": "rotation",
+      "question_en": "Out of EUR 1,000 of public spending, how much goes to State medical aid for undocumented migrants (AME)?",
+      "question_fr": "Sur 1 000 EUR de dépense publique, combien vont à l'aide médicale de l'État (AME) ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 50,
+        "step": 0.1,
+        "unit": "EUR"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 0.8,
+        "low": null,
+        "high": null,
+        "unit": "EUR per EUR 1,000 of total public expenditure",
+        "text_en": "About EUR 0.8 (1.34 bn = 0.08% of TE, 2025)",
+        "text_fr": "Environ 0,8 EUR (1,34 Md = 0,08 % de la dépense, 2025)"
+      },
+      "figure_ids": [
+        "ame_2025_eur_bn",
+        "ame_2025_pct_te",
+        "ame_action_plf2027_eur_bn",
+        "ame_beneficiaries_2025"
+      ],
+      "formula": "ame_2025_eur_bn / te_2025_eur_bn * 1000",
+      "range_formulas": null,
+      "explanation_en": "Standard AME spending was EUR 1.34 bn in 2025.",
+      "explanation_fr": "Les dépenses d'AME de droit commun ont atteint 1,34 Md EUR en 2025.",
+      "steelman_en": "Credits are under-budgeted (1.208 bn in PLF 2027 vs 1.34 bn spent); beneficiaries 454,111.",
+      "steelman_fr": "Les crédits sont sous-budgétés (1,208 Md au PLF 2027 contre 1,34 Md dépensés) ; 454 111 bénéficiaires.",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row54",
+        "f15"
+      ]
+    },
+    {
+      "id": "Q28",
+      "number": 28,
+      "pool": "rotation",
+      "question_en": "What do the Presidency, Parliament and all ministerial cabinets cost per year?",
+      "question_fr": "Combien coûtent par an la Présidence, le Parlement et l'ensemble des cabinets ministériels ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 0.1 bn",
+          "label_fr": "Environ 0,1 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 1.3 bn",
+          "label_fr": "Environ 1,3 Md EUR",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 10 bn",
+          "label_fr": "Environ 10 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "About EUR 30 bn",
+          "label_fr": "Environ 30 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 1.3,
+        "low": null,
+        "high": null,
+        "unit": "EUR bn",
+        "text_en": "About EUR 1.3 bn (0.08% of TE; EUR 19 per inhabitant)",
+        "text_fr": "Environ 1,3 Md EUR (0,08 % de la dépense ; 19 EUR par habitant)"
+      },
+      "figure_ids": [
+        "pouvoirs_publics_mission_eur_bn",
+        "ministerial_cabinets_gross_pay_eur_bn"
+      ],
+      "formula": "pouvoirs_publics_mission_eur_bn + ministerial_cabinets_gross_pay_eur_bn",
+      "range_formulas": null,
+      "explanation_en": "Mission 'Pouvoirs publics' 1.16 bn + cabinet gross pay 0.155 bn.",
+      "explanation_fr": "Mission « Pouvoirs publics » 1,16 Md + rémunération brute des cabinets 0,155 Md.",
+      "steelman_en": "Gross pay only; no official full-cost figure exists.",
+      "steelman_fr": "Rémunération brute seulement ; il n'existe pas de chiffre officiel en coût complet.",
+      "camp_challenged": "populist (both)",
+      "camp_coding": "both",
+      "misperception_ids": [],
+      "source_ids": [
+        "f16:S2",
+        "f16:S8"
+      ]
+    },
+    {
+      "id": "Q29",
+      "number": 29,
+      "pool": "rotation",
+      "question_en": "What could reorganizing State agencies save each year, according to the Senate's inquiry?",
+      "question_fr": "Combien la réorganisation des agences de l'État pourrait-elle faire économiser chaque année, selon la commission d'enquête du Sénat ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 0.5 bn",
+          "label_fr": "Environ 0,5 Md EUR",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 10 bn",
+          "label_fr": "Environ 10 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 50 bn",
+          "label_fr": "Environ 50 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 0.54,
+        "low": null,
+        "high": null,
+        "unit": "EUR bn per year",
+        "text_en": "About EUR 0.54 bn (government 2025 claim: 2-3 bn, method not shown)",
+        "text_fr": "Environ 0,54 Md EUR (annonce du gouvernement en 2025 : 2-3 Md, méthode non publiée)"
+      },
+      "figure_ids": [
+        "agencies_senate_saving_eur_bn",
+        "operators_public_funding_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Senate report no. 807 (2025).",
+      "explanation_fr": "Rapport du Sénat n° 807 (2025).",
+      "steelman_en": "Operators receive 72.6 bn, but mostly for universities, research, training and housing.",
+      "steelman_fr": "Les opérateurs reçoivent 72,6 Md, mais surtout pour les universités, la recherche, la formation et le logement.",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f16:S5",
+        "f16:S4"
+      ]
+    },
+    {
+      "id": "Q30",
+      "number": 30,
+      "pool": "rotation",
+      "question_en": "France's development aid as % of national income, and its rank among 33 donors?",
+      "question_fr": "L'aide au développement de la France en % du revenu national, et son rang parmi 33 donateurs ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "slider",
+      "slider": {
+        "min": 0,
+        "max": 2,
+        "step": 0.01,
+        "unit": "% of GNI"
+      },
+      "options": null,
+      "correct_value": {
+        "value": 0.42,
+        "low": null,
+        "high": null,
+        "unit": "% of GNI",
+        "text_en": "0.42% of GNI, 11th of 33 (2025, OECD-DAC)",
+        "text_fr": "0,42 % du RNB, 11e sur 33 (2025, CAD-OCDE)"
+      },
+      "figure_ids": [
+        "oda_2025_pct_gni",
+        "oda_2025_rank",
+        "oda_mission_plf2027_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "OECD-DAC preliminary 2025 data.",
+      "explanation_fr": "Données préliminaires 2025 du CAD-OCDE.",
+      "steelman_en": "The budget mission is only 3.17 bn; ODA includes loans, the EU share and refugee costs.",
+      "steelman_fr": "La mission budgétaire ne pèse que 3,17 Md ; l'APD inclut des prêts, la part de l'UE et les coûts des réfugiés.",
+      "camp_challenged": "right",
+      "camp_coding": "right",
+      "misperception_ids": [],
+      "source_ids": [
+        "f00:row53",
+        "f16:S1"
+      ]
+    },
+    {
+      "id": "Q31",
+      "number": 31,
+      "pool": "rotation",
+      "question_en": "Do immigrants cost or contribute to French public finances?",
+      "question_fr": "Les immigrés coûtent-ils ou contribuent-ils aux finances publiques françaises ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "A large cost (several % of GDP)",
+          "label_fr": "Un coût important (plusieurs % du PIB)",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "A large surplus (several % of GDP)",
+          "label_fr": "Un excédent important (plusieurs % du PIB)",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "It depends on the convention: between about +1% and -1% of GDP",
+          "label_fr": "Cela dépend de la convention : entre environ +1 % et -1 % du PIB",
+          "correct": true
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": -0.85,
+        "high": 1.02,
+        "unit": "% of GDP per year",
+        "text_en": "It depends on the convention: +1.02% to -0.85% of GDP a year (OECD, 2006-18)",
+        "text_fr": "Cela dépend de la convention : de +1,02 % à -0,85 % du PIB par an (OCDE, 2006-2018)"
+      },
+      "figure_ids": [
+        "immig_net_contrib_individual_pct_gdp",
+        "immig_net_contrib_all_public_goods_pct_gdp",
+        "immig_net_contrib_rank"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "The sign depends on whether defense and debt interest are charged per head.",
+      "explanation_fr": "Le signe dépend de l'imputation par tête de la défense et des intérêts de la dette.",
+      "steelman_en": "Per head, the foreign-born contribute less than natives; on the least favorable convention natives look worse in total (deficit years).",
+      "steelman_fr": "Par tête, les personnes nées à l'étranger contribuent moins que les natifs ; selon la convention la moins favorable, les natifs apparaissent plus déficitaires au total (années de déficit).",
+      "camp_challenged": "right (and pro-immigration claims of a large surplus)",
+      "camp_coding": "right",
+      "misperception_ids": [
+        "M14"
+      ],
+      "source_ids": [
+        "f00:row55",
+        "f15:O1"
+      ]
+    },
+    {
+      "id": "Q32",
+      "number": 32,
+      "pool": "rotation",
+      "question_en": "Is France's tax burden 42.7%, 43.5% or 44.3% of GDP?",
+      "question_fr": "Le taux de prélèvement de la France est-il de 42,7 %, 43,5 % ou 44,3 % du PIB ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "42.7%",
+          "label_fr": "42,7 %",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "43.5%",
+          "label_fr": "43,5 %",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "44.3%",
+          "label_fr": "44,3 %",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "All three, by definition",
+          "label_fr": "Les trois, selon la définition",
+          "correct": true
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 42.7,
+        "high": 44.3,
+        "unit": "% of GDP",
+        "text_en": "All three, by definition (Insee PO 2024 / OECD 2024 / ESA-OECD concept 2025, Cour)",
+        "text_fr": "Les trois, selon la définition (PO Insee 2024 / OCDE 2024 / concept SEC-OCDE 2025, Cour)"
+      },
+      "figure_ids": [
+        "po_2024_pct_gdp",
+        "oecd_tax_to_gdp_2024_pct_gdp",
+        "po_2025_esa_concept_pct_gdp"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "+0.7 pt = refundable tax credits counted as spending by ESA/OECD.",
+      "explanation_fr": "+0,7 point = crédits d'impôt restituables comptés en dépense par le SEC/l'OCDE.",
+      "steelman_en": "Never rank Insee's figure against OECD figures.",
+      "steelman_fr": "Ne jamais classer le chiffre de l'Insee parmi des chiffres OCDE.",
+      "camp_challenged": "general (methodology)",
+      "camp_coding": "general",
+      "misperception_ids": [],
+      "source_ids": [
+        "f18",
+        "f00:row26",
+        "f00:row30"
+      ]
+    },
+    {
+      "id": "Q33",
+      "number": 33,
+      "pool": "rotation",
+      "question_en": "How much did the State spend on strategy consulting in 2025?",
+      "question_fr": "Combien l'État a-t-il dépensé en conseil en stratégie en 2025 ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 60 m",
+          "label_fr": "Environ 60 M EUR",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 1 bn",
+          "label_fr": "Environ 1 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 5 bn",
+          "label_fr": "Environ 5 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 0.06,
+        "low": null,
+        "high": null,
+        "unit": "EUR bn",
+        "text_en": "About EUR 60 m (271.5 m in 2021)",
+        "text_fr": "Environ 60 M EUR (271,5 M en 2021)"
+      },
+      "figure_ids": [
+        "strategy_consulting_2025_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Jaune 'Recours aux cabinets de conseil' (PLF 2027).",
+      "explanation_fr": "Jaune « Recours aux cabinets de conseil » (PLF 2027).",
+      "steelman_en": "The Senate's 'over EUR 1 bn' (2021) covered all intellectual services.",
+      "steelman_fr": "Le « plus d'1 Md EUR » du Sénat (2021) couvrait l'ensemble des prestations intellectuelles.",
+      "camp_challenged": "left (the 2022 consultancy controversy)",
+      "camp_coding": "left",
+      "misperception_ids": [],
+      "source_ids": [
+        "f16:S7"
+      ]
+    },
+    {
+      "id": "Q34",
+      "number": 34,
+      "pool": "rotation",
+      "question_en": "The 20% minimum tax on top incomes (CDHR) was announced at about EUR 2 bn. How much did it raise in 2025?",
+      "question_fr": "La contribution différentielle sur les hauts revenus (CDHR) était annoncée à environ 2 Md EUR. Combien a-t-elle rapporté en 2025 ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Under EUR 0.4 bn",
+          "label_fr": "Moins de 0,4 Md EUR",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 2 bn",
+          "label_fr": "Environ 2 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 4 bn",
+          "label_fr": "Environ 4 Md EUR",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 0.4,
+        "low": null,
+        "high": null,
+        "unit": "EUR bn",
+        "text_en": "Under EUR 0.4 bn",
+        "text_fr": "Moins de 0,4 Md EUR"
+      },
+      "figure_ids": [
+        "cdhr_observed_2025_eur_bn",
+        "cdhr_announced_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": null,
+      "explanation_en": "Observed yield was about a quarter to a third of the announcement.",
+      "explanation_fr": "Le rendement observé a été d'environ un quart à un tiers de l'annonce.",
+      "steelman_en": "Timing effects may raise later yields (IPP).",
+      "steelman_fr": "Des effets de calendrier pourraient relever les rendements ultérieurs (IPP).",
+      "camp_challenged": "left",
+      "camp_coding": "left",
+      "misperception_ids": [],
+      "source_ids": [
+        "f07:S7"
+      ]
+    },
+    {
+      "id": "Q35",
+      "number": 35,
+      "pool": "rotation",
+      "question_en": "A EUR 30 bn cut in operating spending: how much does the deficit fall in year 1?",
+      "question_fr": "Une baisse de 30 Md EUR des dépenses de fonctionnement : de combien le déficit baisse-t-il la première année ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "EUR 30 bn",
+          "label_fr": "30 Md EUR",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 16 bn",
+          "label_fr": "Environ 16 Md EUR",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "Nothing: cuts pay for themselves",
+          "label_fr": "Rien : les économies s'autofinancent",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 16,
+        "low": 11,
+        "high": 21,
+        "unit": "EUR bn",
+        "text_en": "About EUR 16 bn (multiplier 0.8, band 11-21)",
+        "text_fr": "Environ 16 Md EUR (multiplicateur 0,8, fourchette 11-21)"
+      },
+      "figure_ids": [
+        "example_cut_net_y1_eur_bn",
+        "deficit_semi_elasticity"
+      ],
+      "formula": "example_cut_net_y1_eur_bn",
+      "range_formulas": {
+        "low": "example_cut_eur_bn * (1 - mult_operating_spending_wages_y1_high * deficit_semi_elasticity)",
+        "high": "example_cut_eur_bn * (1 - mult_operating_spending_wages_y1_low * deficit_semi_elasticity)"
+      },
+      "explanation_en": "Net gain = 30 x (1 - 0.8 x 0.57) = 16.3.",
+      "explanation_fr": "Gain net = 30 x (1 - 0,8 x 0,57) = 16,3.",
+      "steelman_en": "Tax rises also slow growth; French models and narrative studies disagree on which costs more.",
+      "steelman_fr": "Les hausses d'impôts ralentissent aussi la croissance ; modèles français et études narratives divergent sur ce qui coûte le plus.",
+      "camp_challenged": "both ('cuts are painless' and 'tax rises are painless')",
+      "camp_coding": "both",
+      "misperception_ids": [],
+      "source_ids": [
+        "f17",
+        "f00:row62"
+      ]
+    },
+    {
+      "id": "Q36",
+      "number": 36,
+      "pool": "rotation",
+      "question_en": "The tax and contribution cuts decided from 2018 to 2023 (EUR 62 bn a year, valued in 2023): what share of the 2025 deficit do they represent?",
+      "question_fr": "Les baisses d'impôts et de cotisations décidées de 2018 à 2023 (62 milliards d'euros par an, valorisées en 2023) : quelle part du déficit de 2025 représentent-elles ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About 10%",
+          "label_fr": "Environ 10 %",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About 40%",
+          "label_fr": "Environ 40 %",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "About 80%",
+          "label_fr": "Environ 80 %",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "More than the whole deficit",
+          "label_fr": "Plus que la totalité du déficit",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 40.9,
+        "low": null,
+        "high": null,
+        "unit": "% of the 2025 deficit",
+        "text_en": "About 41% (EUR 62 bn against a EUR 151.6 bn deficit)",
+        "text_fr": "Environ 41 % (62 milliards d'euros pour un déficit de 151,6 milliards)"
+      },
+      "figure_ids": [
+        "tax_cuts_2018_2023_eur_bn",
+        "deficit_2025_eur_bn",
+        "rexecode_levies_2024_2026_eur_bn",
+        "balance_change_2017_2024_pp",
+        "total_revenue_change_2017_2024_pp"
+      ],
+      "formula": "tax_cuts_2018_2023_eur_bn / deficit_2025_eur_bn * 100",
+      "range_formulas": null,
+      "explanation_en": "The Cour des comptes values the 2018-2023 cuts at EUR 62 bn (2.2 points of GDP). That is about 41% of the 2025 deficit: a large share, but not all of it. Part of the cuts has since been reversed: Rexecode (a business-cycle institute close to employers' organizations) counts EUR 36.7 bn of new levies decided in 2024-2026. Order of magnitude: a 2023 valuation compared with the 2025 deficit.",
+      "explanation_fr": "La Cour des comptes chiffre les baisses de 2018 à 2023 à 62 milliards d'euros (2,2 points de PIB). Cela représente environ 41 % du déficit de 2025 : une part importante, mais pas la totalité. Une partie a depuis été compensée : Rexecode (institut de conjoncture proche des organisations patronales) compte 36,7 milliards d'euros de prélèvements nouveaux décidés de 2024 à 2026. Ordre de grandeur : un montant valorisé en 2023 comparé au déficit de 2025.",
+      "steelman_en": "Measured from 2017, lower revenue explains the whole rise in the deficit: revenue fell by 3.1 points of GDP while the deficit grew by 2.4 points (Eurostat, 2017-2024). All sources agree that the cuts were not financed by the announced spending savings.",
+      "steelman_fr": "Si l'on part de 2017, la baisse des recettes explique toute la hausse du déficit : les recettes ont reculé de 3,1 points de PIB et le déficit a augmenté de 2,4 points (Eurostat, 2017-2024). Toutes les sources s'accordent : les baisses n'ont pas été financées par les économies de dépenses annoncées.",
+      "camp_challenged": "left ('the tax cuts since 2017 explain the whole deficit')",
+      "camp_coding": "left",
+      "misperception_ids": [
+        "M3"
+      ],
+      "source_ids": [
+        "f00:row28",
+        "f00:row31",
+        "f08",
+        "f10"
+      ]
+    },
+    {
+      "id": "Q37",
+      "number": 37,
+      "pool": "rotation",
+      "question_en": "Between 2019 and 2025, did public spending rise or fall as a share of GDP?",
+      "question_fr": "De 2019 à 2025, les dépenses publiques ont-elles augmenté ou baissé en proportion du PIB ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Fallen by more than 1 point of GDP",
+          "label_fr": "Baissé de plus de 1 point de PIB",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "Roughly stable",
+          "label_fr": "À peu près stables",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "Risen by about 2 points of GDP",
+          "label_fr": "Augmenté d'environ 2 points de PIB",
+          "correct": true
+        }
+      ],
+      "correct_value": {
+        "value": 2.0,
+        "low": null,
+        "high": null,
+        "unit": "percentage points of GDP",
+        "text_en": "Risen by 2.0 points of GDP",
+        "text_fr": "Augmenté de 2,0 points de PIB"
+      },
+      "figure_ids": [
+        "te_change_2019_2025_pp",
+        "total_revenue_change_2019_2025_pp",
+        "te_change_2019_2024_pp",
+        "total_revenue_change_2019_2024_pp",
+        "te_change_2017_2024_pp",
+        "total_revenue_change_2017_2024_pp"
+      ],
+      "formula": "te_change_2019_2025_pp",
+      "range_formulas": null,
+      "explanation_en": "From 2019 to 2025, public spending rose by 2.0 points of GDP and revenue fell by 0.8 point (Eurostat). Crisis measures (Covid, energy) were not fully withdrawn. The end year matters: from 2019 to 2024, spending rose by 1.7 points and revenue fell by 1.8 points, both effects in roughly equal parts.",
+      "explanation_fr": "De 2019 à 2025, les dépenses publiques ont augmenté de 2,0 points de PIB et les recettes ont reculé de 0,8 point (Eurostat). Les mesures de crise (Covid, énergie) n'ont pas été entièrement retirées. L'année d'arrivée compte aussi : de 2019 à 2024, les dépenses ont augmenté de 1,7 point et les recettes ont reculé de 1,8 point, les deux effets à parts à peu près égales.",
+      "steelman_en": "The answer depends on the starting year: from 2017 to 2024, spending fell by 0.7 point of GDP while revenue fell by 3.1 points. A ratio to GDP also moves with GDP: slower growth raises it even when spending does not change.",
+      "steelman_fr": "La réponse dépend de l'année de départ : de 2017 à 2024, les dépenses ont baissé de 0,7 point de PIB et les recettes de 3,1 points. Un ratio au PIB dépend aussi du PIB : une croissance plus faible le fait monter, même à dépense inchangée.",
+      "camp_challenged": "left ('public spending has been cut in recent years')",
+      "camp_coding": "left",
+      "misperception_ids": [],
+      "source_ids": [
+        "f10"
+      ]
+    },
+    {
+      "id": "Q38",
+      "number": 38,
+      "pool": "rotation",
+      "question_en": "Restoring the wealth tax (ISF) as it was in 2017: how many days of public spending would it finance each year?",
+      "question_fr": "Rétablir l'impôt de solidarité sur la fortune (ISF) tel qu'il était en 2017 : combien de jours de dépense publique financerait-il chaque année ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Less than 1 day",
+          "label_fr": "Moins de 1 jour",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "label_en": "About 1 week",
+          "label_fr": "Environ 1 semaine",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "About 1 month",
+          "label_fr": "Environ 1 mois",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "More than 2 months",
+          "label_fr": "Plus de 2 mois",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 0.64,
+        "high": 0.96,
+        "unit": "days of 2025 public spending",
+        "text_en": "Less than 1 day (EUR 3-4.5 bn a year, before behavioral responses)",
+        "text_fr": "Moins de 1 jour (3 à 4,5 milliards d'euros par an, avant réactions comportementales)"
+      },
+      "figure_ids": [
+        "isf_repeal_mechanical_loss_eur_bn",
+        "one_day_spending_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": {
+        "low": "isf_repeal_mechanical_loss_eur_bn__low / one_day_spending_eur_bn",
+        "high": "isf_repeal_mechanical_loss_eur_bn__high / one_day_spending_eur_bn"
+      },
+      "explanation_en": "The Conseil d'analyse économique puts the mechanical revenue loss of the ISF repeal at EUR 3-4.5 bn a year, against EUR 4.7 bn for one day of public spending. The range is gross: the current real-estate wealth tax (IFI) already raises part of it.",
+      "explanation_fr": "Le Conseil d'analyse économique chiffre la perte de recettes mécanique de la suppression de l'ISF à 3 à 4,5 milliards d'euros par an, pour 4,7 milliards d'euros par jour de dépense publique. La fourchette est brute : l'impôt sur la fortune immobilière (IFI) actuel en rapporte déjà une partie.",
+      "steelman_en": "Yield is not the only argument: supporters also invoke tax fairness at the very top. They also note that the CAE finds tax-motivated departures limited after the 2013 capital-tax increase (at most 0.09 point more net departures).",
+      "steelman_fr": "Le rendement n'est pas le seul argument : ses partisans invoquent aussi l'équité fiscale au sommet de la distribution. Ils rappellent aussi que le CAE trouve des départs pour motif fiscal limités après la hausse de la fiscalité du capital de 2013 (au plus 0,09 point de départs nets supplémentaires).",
+      "camp_challenged": "left ('restoring the ISF would bring in a large share of the money needed to cut the deficit')",
+      "camp_coding": "left",
+      "misperception_ids": [
+        "M7"
+      ],
+      "source_ids": [
+        "f07:S5",
+        "f07"
+      ]
+    },
+    {
+      "id": "Q39",
+      "number": 39,
+      "pool": "rotation",
+      "question_en": "Since 2024, how much in tax and contribution increases has been decided?",
+      "question_fr": "Depuis 2024, quel montant de hausses d'impôts et de cotisations a été décidé ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "Almost nothing",
+          "label_fr": "Presque rien",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 5 bn",
+          "label_fr": "Environ 5 milliards d'euros",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "label_en": "Between about EUR 23 bn and 37 bn",
+          "label_fr": "Entre 23 et 37 milliards d'euros environ",
+          "correct": true
+        },
+        {
+          "id": "d",
+          "label_en": "More than EUR 100 bn",
+          "label_fr": "Plus de 100 milliards d'euros",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": null,
+        "low": 23.0,
+        "high": 36.7,
+        "unit": "EUR bn",
+        "text_en": "EUR 23.0 bn for 2025 alone (Cour des comptes); EUR 36.7 bn over 2024-2026, or 1.2 points of GDP (Rexecode)",
+        "text_fr": "23,0 milliards d'euros pour la seule année 2025 (Cour des comptes) ; 36,7 milliards d'euros de 2024 à 2026, soit 1,2 point de PIB (Rexecode)"
+      },
+      "figure_ids": [
+        "cour_2025_tax_increases_eur_bn",
+        "rexecode_levies_2024_2026_eur_bn",
+        "rexecode_levies_2024_2026_pts",
+        "tax_cuts_2018_2023_eur_bn"
+      ],
+      "formula": null,
+      "range_formulas": {
+        "low": "cour_2025_tax_increases_eur_bn",
+        "high": "rexecode_levies_2024_2026_eur_bn"
+      },
+      "explanation_en": "Two counts, two windows. For 2025 alone, the Cour des comptes counts EUR 23.0 bn of tax and contribution increases. Over 2024-2026, Rexecode (a business-cycle institute close to employers' organizations) counts EUR 36.7 bn of new levies, or 1.2 points of GDP.",
+      "explanation_fr": "Deux décomptes, deux périodes. Pour la seule année 2025, la Cour des comptes compte 23,0 milliards d'euros de hausses d'impôts et de cotisations. De 2024 à 2026, Rexecode (institut de conjoncture proche des organisations patronales) compte 36,7 milliards d'euros de prélèvements nouveaux, soit 1,2 point de PIB.",
+      "steelman_en": "The reversal is partial: by the same count, 1.2 of the 2.7 points of GDP of cuts since 2014 have been erased, and the Cour's EUR 62 bn of 2018-2023 cuts is larger.",
+      "steelman_fr": "Le mouvement inverse reste partiel : selon le même décompte, 1,2 des 2,7 points de PIB de baisses depuis 2014 ont été effacés, et les baisses de 2018 à 2023 chiffrées par la Cour (62 milliards d'euros) sont plus importantes.",
+      "camp_challenged": "left ('the tax cuts since 2017 have never been reversed')",
+      "camp_coding": "left",
+      "misperception_ids": [],
+      "source_ids": [
+        "f08",
+        "f20:cour26"
+      ]
+    },
+    {
+      "id": "Q40",
+      "number": 40,
+      "pool": "rotation",
+      "question_en": "Counting all direct taxes (including corporate tax on the firms they own), what effective tax rate did the roughly 75 richest tax households (the 'billionaires') pay in 2016?",
+      "question_fr": "En comptant tous les impôts directs (y compris l'impôt sur les sociétés des entreprises qu'ils détiennent), quel taux d'imposition effectif payaient en 2016 les quelque 75 foyers les plus riches (les « milliardaires ») ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About 10%",
+          "label_fr": "Environ 10 %",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About 26%",
+          "label_fr": "Environ 26 %",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "About 46%",
+          "label_fr": "Environ 46 %",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "About 70%",
+          "label_fr": "Environ 70 %",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 26,
+        "low": null,
+        "high": null,
+        "unit": "% of economic income",
+        "text_en": "About 26% (IPP, 2016 data)",
+        "text_fr": "Environ 26 % (IPP, données 2016)"
+      },
+      "figure_ids": [
+        "ipp_effective_rate_billionaires_2016_pct",
+        "ipp_effective_rate_top01_2016_pct",
+        "geerolf_rate_billionaires_homogeneous_pct",
+        "geerolf_rate_top10_threshold_pct"
+      ],
+      "formula": "ipp_effective_rate_billionaires_2016_pct",
+      "range_formulas": null,
+      "explanation_en": "The Institut des politiques publiques finds about 26% for the roughly 75 richest households, against about 46% for the top 0.1%, the highest rate in the distribution. The fall at the very top comes mostly from profits kept inside their companies, which pay only corporate tax.",
+      "explanation_fr": "L'Institut des politiques publiques trouve environ 26 % pour les quelque 75 foyers les plus riches, contre environ 46 % pour les 0,1 % les plus aisés, le taux le plus élevé de la distribution. La baisse tout en haut vient surtout des bénéfices conservés dans leurs sociétés, qui ne paient que l'impôt sur les sociétés.",
+      "steelman_en": "Both readings hold part of the answer. Left: at the very top, the richest pay a lower rate than the top 0.1% as a whole. Right: F. Geerolf (OFCE economist; critique not peer-reviewed) finds 25.1% for billionaires against 26.8% at the top-10% threshold on a homogeneous base, so the drop largely disappears; retained profits are taxed when they are paid out, a question of timing as much as of rate.",
+      "steelman_fr": "Chaque lecture a sa part de vérité. À gauche : tout en haut, les plus riches paient un taux plus faible que les 0,1 % les plus aisés. À droite : F. Geerolf (économiste de l'OFCE ; critique non évaluée par des pairs) trouve, sur une base homogène, 25,1 % pour les milliardaires contre 26,8 % au seuil des 10 % les plus aisés : la baisse disparaît en grande partie ; les bénéfices conservés sont taxés quand ils sont distribués, une question de calendrier autant que de taux.",
+      "camp_challenged": "both ('the very richest pay little tax' on the left; 'the richest pay the highest rates' on the right)",
+      "camp_coding": "both",
+      "misperception_ids": [],
+      "source_ids": [
+        "f05"
+      ]
+    },
+    {
+      "id": "Q41",
+      "number": 41,
+      "pool": "rotation",
+      "question_en": "In 2024, tax audits assessed EUR 20.1 bn of back taxes and penalties. How much was actually collected?",
+      "question_fr": "En 2024, le contrôle fiscal a notifié 20,1 milliards d'euros de droits et de pénalités. Combien a été effectivement encaissé ?",
+      "fr_status": "draft_for_review",
+      "answer_type": "choice",
+      "slider": null,
+      "options": [
+        {
+          "id": "a",
+          "label_en": "About EUR 3 bn",
+          "label_fr": "Environ 3 milliards d'euros",
+          "correct": false
+        },
+        {
+          "id": "b",
+          "label_en": "About EUR 11 bn",
+          "label_fr": "Environ 11 milliards d'euros",
+          "correct": true
+        },
+        {
+          "id": "c",
+          "label_en": "About EUR 40 bn",
+          "label_fr": "Environ 40 milliards d'euros",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "label_en": "About EUR 100 bn",
+          "label_fr": "Environ 100 milliards d'euros",
+          "correct": false
+        }
+      ],
+      "correct_value": {
+        "value": 11.4,
+        "low": null,
+        "high": null,
+        "unit": "EUR bn",
+        "text_en": "EUR 11.4 bn (2024)",
+        "text_fr": "11,4 milliards d'euros (2024)"
+      },
+      "figure_ids": [
+        "tax_audit_collected_2024_eur_bn",
+        "tax_audit_assessed_2024_eur_bn",
+        "tax_gap_cour_range_eur_bn"
+      ],
+      "formula": "tax_audit_collected_2024_eur_bn",
+      "range_formulas": null,
+      "explanation_en": "The Cour des comptes reports EUR 20.1 bn assessed and EUR 11.4 bn collected in 2024, against EUR 12.2 bn collected in 2015 (current euros). Tax audits already bring in about EUR 11 bn a year: the order of magnitude is ten billion, not a hundred.",
+      "explanation_fr": "La Cour des comptes relève 20,1 milliards d'euros notifiés et 11,4 milliards encaissés en 2024, contre 12,2 milliards encaissés en 2015 (euros courants). Le contrôle fiscal rapporte déjà environ 11 milliards par an : l'ordre de grandeur est la dizaine de milliards, pas la centaine.",
+      "steelman_en": "Nobody knows how large tax fraud is: the Cour des comptes says it cannot tell whether it is closer to EUR 30 bn or 130 bn a year. Collections have not risen in ten years in current euros.",
+      "steelman_fr": "Personne ne connaît l'ampleur de la fraude fiscale : la Cour des comptes dit ne pas savoir si elle est plus proche de 30 ou de 130 milliards d'euros par an. Les encaissements n'ont pas augmenté en dix ans en euros courants.",
+      "camp_challenged": "left ('fighting tax fraud harder would easily bring in tens of billions more each year')",
+      "camp_coding": "left",
+      "misperception_ids": [
+        "M13"
+      ],
+      "source_ids": [
+        "f07:S10",
+        "f07"
+      ]
+    }
+  ]
+}

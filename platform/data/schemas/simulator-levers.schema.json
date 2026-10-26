@@ -1,0 +1,598 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://platform.local/schemas/simulator-levers.schema.json",
+  "title": "Simulator levers",
+  "type": "object",
+  "required": [
+    "meta",
+    "sign_convention",
+    "menu_groups",
+    "multiplier_classes",
+    "toggles",
+    "anti_double_counting",
+    "levers"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "dataset",
+        "schema",
+        "as_of",
+        "version",
+        "description",
+        "conventions"
+      ],
+      "properties": {
+        "dataset": {
+          "type": "string"
+        },
+        "schema": {
+          "type": "string"
+        },
+        "as_of": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "version": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "conventions": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "sign_convention": {
+      "type": "string"
+    },
+    "menu_groups": {
+      "type": "array"
+    },
+    "multiplier_classes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mclass"
+      }
+    },
+    "toggles": {
+      "type": "array"
+    },
+    "anti_double_counting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "levers",
+          "rule_en"
+        ]
+      }
+    },
+    "levers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/lever"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "band": {
+      "type": "object",
+      "required": [
+        "low",
+        "central",
+        "high"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "low": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "central": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "high": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "central_is_midpoint": {
+          "type": "boolean"
+        },
+        "computed_by_us": {
+          "type": "boolean"
+        },
+        "at_setting": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "mclass": {
+      "type": "object",
+      "required": [
+        "id",
+        "label_en",
+        "label_fr",
+        "y1",
+        "y3_5",
+        "kind",
+        "basis",
+        "source_ids"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "label_en": {
+          "type": "string"
+        },
+        "label_fr": {
+          "type": "string"
+        },
+        "y1": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "default",
+                "low",
+                "high"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "default": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "low": {
+                  "type": "number"
+                },
+                "high": {
+                  "type": "number"
+                }
+              }
+            }
+          ]
+        },
+        "y3_5": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "default",
+                "low",
+                "high"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "default": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "low": {
+                  "type": "number"
+                },
+                "high": {
+                  "type": "number"
+                }
+              }
+            }
+          ]
+        },
+        "kind": {
+          "enum": [
+            "demand",
+            "supply",
+            "none"
+          ]
+        },
+        "basis": {
+          "type": "string"
+        },
+        "flag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^f\\d{2}(:[A-Za-z0-9_^-]+)?$"
+          }
+        },
+        "long_run": {
+          "type": "object"
+        }
+      }
+    },
+    "lever": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label_en",
+        "label_fr",
+        "category",
+        "menu_group",
+        "side",
+        "type",
+        "unit",
+        "min",
+        "max",
+        "default",
+        "yield_low",
+        "yield_central",
+        "yield_high",
+        "yield_static",
+        "yield_behavioral",
+        "yield_model",
+        "ramp_up_years",
+        "behavioral_toggle",
+        "multiplier_class",
+        "legal_feasibility",
+        "confidence",
+        "claim_status",
+        "political_origin",
+        "figure_ids",
+        "source_ids",
+        "research_files",
+        "notes_en",
+        "notes_fr",
+        "disabled"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[RSG]\\d{1,2}$"
+        },
+        "label_en": {
+          "type": "string"
+        },
+        "label_fr": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "menu_group": {
+          "type": "string"
+        },
+        "side": {
+          "enum": [
+            "revenue",
+            "spending",
+            "structural"
+          ]
+        },
+        "type": {
+          "enum": [
+            "slider",
+            "toggle",
+            "stepper",
+            "select",
+            "custom"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "default": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "step": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "positions": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "options": {
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "yield_low": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "yield_central": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "yield_high": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "yield_static": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/band"
+            }
+          ]
+        },
+        "yield_behavioral": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/band"
+            }
+          ]
+        },
+        "yield_model": {
+          "type": "object",
+          "required": [
+            "kind"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "toggle",
+                "linear_per_unit",
+                "share_of_base",
+                "positions",
+                "options",
+                "custom",
+                "pool_not_yield",
+                "none"
+              ]
+            },
+            "base_figure_id": {
+              "type": "string"
+            },
+            "extra_base_figure_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "max_share": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "max_yield_eur_bn": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "published_max_eur_bn": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          }
+        },
+        "ramp_up_years": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "min",
+                "max"
+              ],
+              "properties": {
+                "min": {
+                  "type": "number"
+                },
+                "max": {
+                  "type": "number"
+                }
+              }
+            }
+          ]
+        },
+        "ramp_up_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "behavioral_toggle": {
+          "type": "object",
+          "required": [
+            "available",
+            "effect_en"
+          ],
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "effect_en": {
+              "type": "string"
+            }
+          }
+        },
+        "multiplier_class": {
+          "type": "string"
+        },
+        "multiplier_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "legal_feasibility": {
+          "type": "object",
+          "required": [
+            "flag",
+            "note_en"
+          ],
+          "properties": {
+            "flag": {
+              "enum": [
+                "none",
+                "constitutional_risk",
+                "legal_fragility",
+                "treaty_conflict",
+                "feasibility_uncertain",
+                "international_commitments",
+                "institutional_autonomy",
+                "public_health"
+              ]
+            },
+            "note_en": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "confidence": {
+          "type": "string"
+        },
+        "claim_status": {
+          "enum": [
+            "independent_estimate",
+            "range_across_estimates",
+            "party_claim",
+            "computed",
+            "pool_not_yield",
+            "not_costed",
+            "observed"
+          ]
+        },
+        "political_origin": {
+          "type": "object",
+          "required": [
+            "proposed_by",
+            "opposite_direction_by"
+          ],
+          "properties": {
+            "proposed_by": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "opposite_direction_by": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "note_en": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "figure_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          }
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^f\\d{2}(:[A-Za-z0-9_^-]+)?$"
+          }
+        },
+        "research_files": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "related_proposal_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          }
+        },
+        "disabled": {
+          "type": "boolean"
+        },
+        "notes_en": {
+          "type": "string",
+          "minLength": 5
+        },
+        "notes_fr": {
+          "type": "string",
+          "minLength": 5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+indicator,unit,year,france,group,mean,median,fr_rank,n,source_file,note
+OECD tax-to-GDP total,% GDP,2024,43.46,OECD,34.17 (published OECD avg 34.06),35.18,2,36,raw/05_verify/oecd_rs.csv,AUS JPN missing 2024
+OECD tax-to-GDP total,% GDP,2024,43.46,panel8,41.08,42.00,2,8,raw/05_verify/oecd_rs.csv,
+OECD SSC 2000,% GDP,2024,14.68,OECD,9.14,10.28,6,36,raw/05_verify/oecd_rs.csv,gap +5.54
+OECD employer SSC 2200,% GDP,2024,9.98,OECD,5.12,5.15,2,32,raw/05_verify/oecd_rs.csv,gap +4.86
+OECD payroll 3000,% GDP,2024,1.98,OECD,0.44,0.01,3,37,raw/05_verify/oecd_rs.csv,gap +1.54
+OECD property 4000,% GDP,2024,3.40,OECD,1.65,1.34,2,37,raw/05_verify/oecd_rs.csv,gap +1.75
+OECD excises 5120,% GDP,2024,3.36,OECD,2.54,2.51,7,37,raw/05_verify/oecd_rs.csv,gap +0.82
+OECD CIT 1200,% GDP,2024,2.25,OECD,3.62,3.47,31,36,raw/05_verify/oecd_rs.csv,gap -1.36
+Eurostat taxes+actual SSC incl voluntary (D2_D5_D91_D61_M_D612_M_D614_M_D995),% GDP,2024,43.5,EU27,37.0,36.8,2,27,raw/05_verify/taxag_pc.json,EU27 aggregate 39.3
+Eurostat taxes+compulsory actual SSC (D2_D5_D91_D61_M_D611V_D612_M_M_D613V_D614_M_D995),% GDP,2024,43.5,EU27,36.9,36.7,2,27,raw/05_verify/taxag_pc.json,EU27 aggregate 39.2; EA20 37.3/38.1 rank 1/20; panel 41.1/41.5 rank 2/8
+Eurostat taxes+all SSC incl imputed (D2_D5_D91_D61_M_D995),% GDP,2024,45.3,EU27,37.7,37.6,2,27,raw/05_verify/taxag_pc.json,EU27 aggregate 40.2
+Eurostat D29 other taxes on production,% GDP,2024,4.4,EU27,2.0,1.4,2,27,raw/05_verify/taxag_pc.json,Sweden 1st at 10.1; EU27 aggregate 2.4
+Tax per capita incl imputed SSC,PPS per inhabitant,2024,17800,EU27,15759,13577,9,27,raw/05_verify/taxag_pc.json + nama_pc.json,EU27 aggregate 16157
+Tax wedge single 100% AW,% labour cost,2025,47.2,OECD,35.1,37.9,3,38,raw/05_verify/tw_all.csv,
+Gini disposable income,0-100,2025,30.4,EU27,29.1,29.2,11,27,raw/05_verify/ilc_di12.json,age TOTAL
+Gini before all transfers,0-100,2025,53.7,EU27,46.3,46.7,1,27,raw/05_verify/ilc_di12b.json,
+Insee distributed accounts top 10% share of levies,% of levies,2023,33.3 (422.8/1270.9),,,,,raw/05_verify/IA118.xlsx,Insee Analyses 118 (16 Apr 2026)

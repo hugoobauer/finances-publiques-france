@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "dataset": "lint-exemptions",
+    "as_of": "2026-10-25",
+    "description": "Documented exemptions for chapter lints of validate.py. Each entry silences one finding only when it matches exactly (number, unit and the full set of ids). A new id showing the same number is still reported, and an entry that no longer matches any finding is reported as stale. Add an entry only after checking that the two ids are different quantities that happen to round to the same displayed number.",
+    "format": "same_number_ids[]: number (as displayed, French format, e.g. \"47,2\"), unit (as printed by the warning: \"Md€\", \"%\", ...), ids (chip keys kind:id, at least 2), reason_en, decided_by, date (YYYY-MM-DD)."
+  },
+  "same_number_ids": [
+    {
+      "number": "25",
+      "unit": "Md€",
+      "ids": [
+        "fig:tax_rich_package_eur_bn",
+        "fig:zucman_proponents_eur_bn"
+      ],
+      "reason_en": "Coincidence of two different upper bounds: the top of the proponents' Zucman-tax range (15-25 bn, bill no. 768) and the top of the platform's 'tax the rich' package range (about 10-25 bn). Different measures, different sources; both legitimately display « 25 milliards ».",
+      "decided_by": "data owner (D-data-pass, open item 1 of fr/LISEZMOI-site.md §5.1)",
+      "date": "2026-10-25"
+    },
+    {
+      "number": "47,2",
+      "unit": "%",
+      "ids": [
+        "fig:ir_households_paying_pct",
+        "fig:oecd_tax_wedge_single_2025_pct"
+      ],
+      "reason_en": "Coincidence of two unrelated shares: the share of tax households paying net income tax (chapter 3) and the OECD tax wedge for a single worker at the average wage (chapter 7). Different denominators, both 47.2%.",
+      "decided_by": "data owner (D-data-pass, open item 1 of fr/LISEZMOI-site.md §5.1)",
+      "date": "2026-10-25"
+    }
+  ]
+}

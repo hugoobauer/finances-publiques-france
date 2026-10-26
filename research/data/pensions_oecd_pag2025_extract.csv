@@ -1,0 +1,17 @@
+indicator,unit,data_year,FR,DE,IT,ES,NL,BE,SE,DK,OECD,EU27,source
+effective_exit_age_men,years,2024,61.9,64.2,64.0,62.4,65.0,62.4,65.1,66.3,64.7,63.7,OECD Pensions at a Glance 2025 Fig 6.13 (p.203)
+effective_exit_age_women,years,2024,62.4,63.9,62.6,63.0,64.7,60.6,65.0,63.5,63.6,62.8,OECD Pensions at a Glance 2025 Fig 6.13 (p.203)
+net_replacement_rate_avg_earner,% of individual net earnings,future entrant 2024,70.0,53.3,79.0,86.3,96.0,61.1,66.3,77.1,63.2,68.3,OECD PaG 2025 Table 4.4 (p.169)
+gross_replacement_rate_avg_earner,% of individual gross earnings,future entrant 2024,56.6,42.1,70.6,80.4,74.7,43.5,,72.7,,,OECD PaG 2025 Table 4.1 (p.163) (SE and averages not captured in extraction)
+normal_retirement_age_future_entrant22,years,future,65,67,70,65,70,67,70,74,66.4,66.7,OECD PaG 2025 Table 4.4 'pension age' column
+old_age_poverty_65plus_50pct_median,%,2022 or latest,6.1,12.6,12.0,13.1,4.6,7.7,7.3,5.0,14.8,,OECD PaG 2025 Table 7.2 (p.211)
+total_population_poverty_50pct_median,%,2022 or latest,8.3,11.8,12.2,13.7,7.0,6.9,8.0,6.3,11.5,,OECD PaG 2025 Table 7.2 (p.211)
+public_cash_oldage_survivor_spending,% of GDP,latest (FR 2022; others 2021),13.4,10.8,16.1,12.3,6.4,10.7,8.0,7.5,8.1,,OECD PaG 2025 Table 8.2 (p.223) from SOCX
+public_cash_oldage_survivor_spending,% of total government spending,latest,22.9,21.3,28.7,24.8,14.0,19.5,16.0,15.2,17.7,,OECD PaG 2025 Table 8.2 (p.223)
+public_cash_oldage_survivor_spending_net,% of GDP,latest,12.0,10.2,13.0,11.7,5.9,9.3,6.3,5.4,7.4,,OECD PaG 2025 Table 8.2 (p.223)
+private_pension_benefit_spending,% of GDP,latest,0.3,0.7,0.5,0.4,3.7,1.2,2.0,,1.3,,OECD PaG 2025 Table 8.3 (p.225) (DK value ambiguous in extraction)
+public_plus_private_pension_spending,% of GDP,latest,13.7,11.5,16.6,12.7,10.2,11.9,10.0,9.5,9.4,,OECD PaG 2025 Table 8.3 (p.225)
+projected_public_pension_spending_2060,% of GDP,2060 (AR2024),13.5,11.2,13.7,16.9,8.0,15.4,7.3,6.9,10.3,11.0,OECD PaG 2025 Table 8.4 (p.227) from EC 2024 Ageing Report
+projected_public_pension_spending_2023_24,% of GDP,2023-24 (AR2024),14.1,10.2,15.5,13.6,6.6,12.8,8.0,8.7,8.8,9.9,OECD PaG 2025 Table 8.4 (p.227)
+old_age_to_working_age_ratio_65plus_per_100_20_64,ratio x100,2024,40.2,39.8,42.0,34.9,,35.7,,36.2,,,OECD PaG 2025 Table 6.2 (p.197)
+old_age_to_working_age_ratio_65plus_per_100_20_64,ratio x100,2054 proj,53.4,59.7,76.6,76.2,,53.3,,47.4,,,OECD PaG 2025 Table 6.2 (p.197)

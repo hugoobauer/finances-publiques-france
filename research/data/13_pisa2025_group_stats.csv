@@ -1,0 +1,100 @@
+variable,group,n,mean_unweighted,median,france,fr_rank,rank_convention
+science_2025,OECD38,38,481.9,485.3,483.4,22,higher=better
+science_2025,EU27,27,475.9,483.0,483.4,13,higher=better
+science_2025,Panel8,8,483.4,484.3,483.4,5,higher=better
+science_2022,OECD38,37,484.6,491.3,487.2,22,higher=better
+science_2022,EU27,26,480.6,487.8,487.2,14,higher=better
+science_2022,Panel8,8,488.5,489.4,487.2,6,higher=better
+science_2015,OECD38,38,488.8,495.6,495.0,21,higher=better
+science_2015,EU27,27,487.0,492.8,495.0,12,higher=better
+science_2015,Panel8,8,497.9,498.5,495.0,5,higher=better
+science_2006,OECD38,37,494.8,497.8,495.2,21,higher=better
+science_2006,EU27,25,496.1,495.9,495.2,14,higher=better
+science_2006,Panel8,8,501.1,499.6,495.2,6,higher=better
+science_low_2025,OECD38,38,25.7,24.1,25.8,25,lower=better (rank 1 = lowest)
+science_low_2025,EU27,27,27.3,24.9,25.8,17,lower=better (rank 1 = lowest)
+science_low_2025,Panel8,8,25.0,25.3,25.8,6,lower=better (rank 1 = lowest)
+science_top_2025,OECD38,38,7.2,7.1,6.7,21,higher=better
+science_top_2025,EU27,27,6.1,5.7,6.7,12,higher=better
+science_top_2025,Panel8,8,6.8,7.0,6.7,5,higher=better
+science_low_2015,OECD38,38,22.7,19.2,22.1,25,lower=better (rank 1 = lowest)
+science_low_2015,EU27,27,22.8,20.8,22.1,16,lower=better (rank 1 = lowest)
+science_low_2015,Panel8,8,19.5,19.2,22.1,7,lower=better (rank 1 = lowest)
+science_top_2015,OECD38,38,7.2,7.4,8.0,16,higher=better
+science_top_2015,EU27,27,6.7,7.1,8.0,8,higher=better
+science_top_2015,Panel8,8,7.9,8.2,8.0,5,higher=better
+science_ses_r2,OECD38,37,11.6,11.0,13.5,27,lower=better (rank 1 = lowest)
+science_ses_r2,EU27,27,12.5,11.9,13.5,17,lower=better (rank 1 = lowest)
+science_ses_r2,Panel8,8,12.9,12.8,13.5,5,lower=better (rank 1 = lowest)
+science_ses_slope,OECD38,37,35.6,36.4,39.3,27,lower=better (rank 1 = lowest)
+science_ses_slope,EU27,27,36.9,37.9,39.3,16,lower=better (rank 1 = lowest)
+science_ses_slope,Panel8,8,37.7,38.6,39.3,5,lower=better (rank 1 = lowest)
+science_ses_gap_q4q1,OECD38,37,84.7,80.0,100.0,31,lower=better (rank 1 = lowest)
+science_ses_gap_q4q1,EU27,27,88.5,83.5,100.0,20,lower=better (rank 1 = lowest)
+science_ses_gap_q4q1,Panel8,8,92.4,95.0,100.0,6,lower=better (rank 1 = lowest)
+reading_2025,OECD38,38,460.9,464.7,456.3,23,higher=better
+reading_2025,EU27,27,451.3,456.3,456.3,14,higher=better
+reading_2025,Panel8,8,460.2,462.6,456.3,6,higher=better
+reading_2022,OECD38,37,475.6,478.9,473.9,24,higher=better
+reading_2022,EU27,26,468.6,475.0,473.9,16,higher=better
+reading_2022,Panel8,8,477.9,479.3,473.9,7,higher=better
+reading_2015,OECD38,38,488.5,497.5,499.3,16,higher=better
+reading_2015,EU27,27,485.6,487.8,499.3,10,higher=better
+reading_2015,Panel8,8,498.8,499.6,499.3,5,higher=better
+reading_2006,OECD38,36,485.4,489.0,487.7,19,higher=better
+reading_2006,EU27,25,481.8,482.7,487.7,12,higher=better
+reading_2006,Panel8,8,490.2,494.7,487.7,6,higher=better
+reading_low_2025,OECD38,38,31.0,29.1,32.7,25,lower=better (rank 1 = lowest)
+reading_low_2025,EU27,27,33.9,31.5,32.7,17,lower=better (rank 1 = lowest)
+reading_low_2025,Panel8,8,31.0,31.2,32.7,7,lower=better (rank 1 = lowest)
+reading_top_2025,OECD38,38,5.5,4.6,4.5,20,higher=better
+reading_top_2025,EU27,27,4.2,3.8,4.5,10,higher=better
+reading_top_2025,Panel8,8,5.1,4.5,4.5,4,higher=better
+reading_low_2015,OECD38,38,21.3,18.7,21.5,24,lower=better (rank 1 = lowest)
+reading_low_2015,EU27,27,22.1,19.9,21.5,16,lower=better (rank 1 = lowest)
+reading_low_2015,Panel8,8,18.2,18.2,21.5,8,lower=better (rank 1 = lowest)
+reading_top_2015,OECD38,38,7.8,8.2,12.5,5,higher=better
+reading_top_2015,EU27,27,7.3,7.2,12.5,2,higher=better
+reading_top_2015,Panel8,8,9.0,9.6,12.5,1,higher=better
+reading_ses_r2,OECD38,37,9.2,9.0,10.8,31,lower=better (rank 1 = lowest)
+reading_ses_r2,EU27,27,9.9,10.1,10.8,22,lower=better (rank 1 = lowest)
+reading_ses_r2,Panel8,8,10.2,10.4,10.8,7,lower=better (rank 1 = lowest)
+reading_ses_slope,OECD38,37,32.4,33.2,35.6,28,lower=better (rank 1 = lowest)
+reading_ses_slope,EU27,27,32.9,33.5,35.6,18,lower=better (rank 1 = lowest)
+reading_ses_slope,Panel8,8,34.3,34.1,35.6,5,lower=better (rank 1 = lowest)
+reading_ses_gap_q4q1,OECD38,37,77.2,73.8,90.9,31,lower=better (rank 1 = lowest)
+reading_ses_gap_q4q1,EU27,27,79.1,79.1,90.9,21,lower=better (rank 1 = lowest)
+reading_ses_gap_q4q1,Panel8,8,84.1,87.4,90.9,5,lower=better (rank 1 = lowest)
+math_2025,OECD38,38,463.0,466.0,457.7,29,higher=better
+math_2025,EU27,27,460.4,463.8,457.7,20,higher=better
+math_2025,Panel8,8,468.1,466.0,457.7,7,higher=better
+math_2022,OECD38,37,472.4,479.1,473.9,22,higher=better
+math_2022,EU27,26,471.9,475.0,473.9,15,higher=better
+math_2022,Panel8,8,480.8,478.3,473.9,6,higher=better
+math_2015,OECD38,38,484.9,492.7,492.9,19,higher=better
+math_2015,EU27,27,486.9,491.6,492.9,12,higher=better
+math_2015,Panel8,8,499.8,499.9,492.9,6,higher=better
+math_2006,OECD38,37,490.4,495.5,495.5,19,higher=better
+math_2006,EU27,25,490.1,495.4,495.5,12,higher=better
+math_2006,Panel8,8,500.9,503.1,495.5,6,higher=better
+math_low_2025,OECD38,38,34.9,32.5,35.7,28,lower=better (rank 1 = lowest)
+math_low_2025,EU27,27,34.8,33.4,35.7,20,lower=better (rank 1 = lowest)
+math_low_2025,Panel8,8,31.9,32.3,35.7,8,lower=better (rank 1 = lowest)
+math_top_2025,OECD38,38,7.8,6.9,5.2,28,higher=better
+math_top_2025,EU27,27,6.7,6.0,5.2,20,higher=better
+math_top_2025,Panel8,8,7.4,7.3,5.2,7,higher=better
+math_low_2015,OECD38,38,25.6,21.8,23.5,24,lower=better (rank 1 = lowest)
+math_low_2015,EU27,27,24.0,22.2,23.5,16,lower=better (rank 1 = lowest)
+math_low_2015,Panel8,8,19.7,20.5,23.5,8,lower=better (rank 1 = lowest)
+math_top_2015,OECD38,38,10.0,10.6,11.4,14,higher=better
+math_top_2015,EU27,27,9.7,10.4,11.4,11,higher=better
+math_top_2015,Panel8,8,11.9,11.6,11.4,5,higher=better
+math_ses_r2,OECD38,37,12.0,10.9,14.8,29,lower=better (rank 1 = lowest)
+math_ses_r2,EU27,27,12.9,11.5,14.8,19,lower=better (rank 1 = lowest)
+math_ses_r2,Panel8,8,12.8,12.3,14.8,6,lower=better (rank 1 = lowest)
+math_ses_slope,OECD38,37,34.7,34.2,37.1,25,lower=better (rank 1 = lowest)
+math_ses_slope,EU27,27,35.7,35.7,37.1,18,lower=better (rank 1 = lowest)
+math_ses_slope,Panel8,8,35.0,36.4,37.1,5,lower=better (rank 1 = lowest)
+math_ses_gap_q4q1,OECD38,37,82.9,81.4,94.5,27,lower=better (rank 1 = lowest)
+math_ses_gap_q4q1,EU27,27,86.0,81.4,94.5,18,lower=better (rank 1 = lowest)
+math_ses_gap_q4q1,Panel8,8,86.8,87.3,94.5,5,lower=better (rank 1 = lowest)

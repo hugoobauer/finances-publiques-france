@@ -1,0 +1,357 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://platform.local/schemas/quiz.schema.json",
+  "title": "Perception-gap quiz",
+  "type": "object",
+  "required": [
+    "meta",
+    "design",
+    "misperceptions",
+    "questions"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "dataset",
+        "schema",
+        "as_of",
+        "version",
+        "description",
+        "conventions"
+      ],
+      "properties": {
+        "dataset": {
+          "type": "string"
+        },
+        "schema": {
+          "type": "string"
+        },
+        "as_of": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "version": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "conventions": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "design": {
+      "type": "object"
+    },
+    "misperceptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/misp"
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/question"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "option": {
+      "type": "object",
+      "required": [
+        "id",
+        "label_en",
+        "label_fr",
+        "correct"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label_en": {
+          "type": "string"
+        },
+        "label_fr": {
+          "type": "string"
+        },
+        "correct": {
+          "type": "boolean"
+        }
+      }
+    },
+    "cv": {
+      "type": "object",
+      "required": [
+        "value",
+        "low",
+        "high",
+        "unit",
+        "text_en",
+        "text_fr"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "low": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "high": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string"
+        },
+        "text_en": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text_fr": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "question": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "number",
+        "pool",
+        "question_en",
+        "question_fr",
+        "fr_status",
+        "answer_type",
+        "correct_value",
+        "figure_ids",
+        "explanation_en",
+        "explanation_fr",
+        "camp_challenged",
+        "camp_coding",
+        "misperception_ids",
+        "source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^Q\\d{2}$"
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pool": {
+          "enum": [
+            "core",
+            "rotation"
+          ]
+        },
+        "question_en": {
+          "type": "string"
+        },
+        "question_fr": {
+          "type": "string"
+        },
+        "fr_status": {
+          "enum": [
+            "draft_for_review",
+            "reviewed"
+          ]
+        },
+        "answer_type": {
+          "enum": [
+            "slider",
+            "choice"
+          ]
+        },
+        "slider": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "required": [
+                "min",
+                "max",
+                "step",
+                "unit"
+              ]
+            }
+          ]
+        },
+        "options": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "$ref": "#/$defs/option"
+              }
+            }
+          ]
+        },
+        "correct_value": {
+          "$ref": "#/$defs/cv"
+        },
+        "figure_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          }
+        },
+        "formula": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "range_formulas": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "explanation_en": {
+          "type": "string"
+        },
+        "explanation_fr": {
+          "type": "string"
+        },
+        "steelman_en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "steelman_fr": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "camp_challenged": {
+          "type": "string"
+        },
+        "camp_coding": {
+          "enum": [
+            "general",
+            "left",
+            "right",
+            "both",
+            "pessimism",
+            "anti_tax"
+          ]
+        },
+        "misperception_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^M\\d{1,2}$"
+          }
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^f\\d{2}(:[A-Za-z0-9_^-]+)?$"
+          }
+        }
+      }
+    },
+    "misp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "belief_en",
+        "belief_fr",
+        "survey",
+        "true_value_en",
+        "true_value_figure_ids",
+        "gap_en",
+        "orientation_flag",
+        "source_ids"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^M\\d{1,2}$"
+        },
+        "belief_en": {
+          "type": "string"
+        },
+        "belief_fr": {
+          "type": "string"
+        },
+        "survey": {
+          "type": "object",
+          "required": [
+            "pollster",
+            "sponsor",
+            "fieldwork",
+            "n",
+            "mode"
+          ]
+        },
+        "true_value_en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "true_value_figure_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          }
+        },
+        "gap_en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "orientation_flag": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^f\\d{2}(:[A-Za-z0-9_^-]+)?$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3094 @@
+{
+  "meta": {
+    "dataset": "sources",
+    "schema": "schemas/sources.schema.json",
+    "as_of": "2026-10-25",
+    "version": "1.0.0",
+    "description": "Registry of every source id cited by the other datasets, parsed from the research files (file 00 table, topic-file source tables, file 20 footnotes).",
+    "conventions": "Decimal points and no thousands separators in JSON numbers; French formatting (comma decimal, narrow no-break space) is applied at render time. EUR bn = billions of euros, current prices. Every share says % of GDP or % of total public expenditure."
+  },
+  "sources": {
+    "f00": {
+      "id": "f00",
+      "type": "research_file",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "00-reference-figures.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f01": {
+      "id": "f01",
+      "type": "research_file",
+      "research_file": "01-spending-overview.md",
+      "institution": null,
+      "title": "01-spending-overview.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f02": {
+      "id": "f02",
+      "type": "research_file",
+      "research_file": "02-social-protection.md",
+      "institution": null,
+      "title": "02-social-protection.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f03": {
+      "id": "f03",
+      "type": "research_file",
+      "research_file": "03-pensions.md",
+      "institution": null,
+      "title": "03-pensions.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f04": {
+      "id": "f04",
+      "type": "research_file",
+      "research_file": "04-civil-service-and-outcomes.md",
+      "institution": null,
+      "title": "04-civil-service-and-outcomes.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f05": {
+      "id": "f05",
+      "type": "research_file",
+      "research_file": "05-taxation.md",
+      "institution": null,
+      "title": "05-taxation.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f06": {
+      "id": "f06",
+      "type": "research_file",
+      "research_file": "06-deficit-and-debt.md",
+      "institution": null,
+      "title": "06-deficit-and-debt.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f07": {
+      "id": "f07",
+      "type": "research_file",
+      "research_file": "07-proposals-costing.md",
+      "institution": null,
+      "title": "07-proposals-costing.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f08": {
+      "id": "f08",
+      "type": "research_file",
+      "research_file": "08-revenue-cuts-since-2017-and-structural.md",
+      "institution": null,
+      "title": "08-revenue-cuts-since-2017-and-structural.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f09": {
+      "id": "f09",
+      "type": "research_file",
+      "research_file": "09-international-comparison-tables.md",
+      "institution": null,
+      "title": "09-international-comparison-tables.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f10": {
+      "id": "f10",
+      "type": "research_file",
+      "research_file": "10-counterarguments-and-debates.md",
+      "institution": null,
+      "title": "10-counterarguments-and-debates.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f11": {
+      "id": "f11",
+      "type": "research_file",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": null,
+      "title": "11-2027-candidate-programs-costing.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f12": {
+      "id": "f12",
+      "type": "research_file",
+      "research_file": "12-health-hospital-outcomes-international.md",
+      "institution": null,
+      "title": "12-health-hospital-outcomes-international.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f13": {
+      "id": "f13",
+      "type": "research_file",
+      "research_file": "13-civil-service-and-education-intl-completion.md",
+      "institution": null,
+      "title": "13-civil-service-and-education-intl-completion.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f14": {
+      "id": "f14",
+      "type": "research_file",
+      "research_file": "14-public-perception-orders-of-magnitude.md",
+      "institution": null,
+      "title": "14-public-perception-orders-of-magnitude.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f15": {
+      "id": "f15",
+      "type": "research_file",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": null,
+      "title": "15-immigration-and-public-finances.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f16": {
+      "id": "f16",
+      "type": "research_file",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": null,
+      "title": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f17": {
+      "id": "f17",
+      "type": "research_file",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": null,
+      "title": "17-fiscal-multipliers-for-simulator.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f18": {
+      "id": "f18",
+      "type": "research_file",
+      "research_file": "18-po-vs-oecd-and-interest-bridges.md",
+      "institution": null,
+      "title": "18-po-vs-oecd-and-interest-bridges.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f20": {
+      "id": "f20",
+      "type": "research_file",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "20-pedagogical-approach.md",
+      "date": "2026-10-25",
+      "urls": []
+    },
+    "f00:row1": {
+      "id": "f00:row1",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_main (21 Oct 2026); Insee Insee Première 2106 (29 May 2026)",
+      "date": "21 Oct 2026; 29 May 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table",
+        "https://www.insee.fr/fr/statistiques/8997691"
+      ]
+    },
+    "f00:row2": {
+      "id": "f00:row2",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_main (21 Oct 2026)",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row3": {
+      "id": "f00:row3",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "HCFP opinion HCFP-2026-5 (25 Sep 2026), PLF 2027. The concept is in law at least since the LPFP 2018-2022 (law 2018-32, art. 5)",
+      "date": "25 Sep 2026",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f00:row4": {
+      "id": "f00:row4",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed: TE / population (file 01)",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row5": {
+      "id": "f00:row5",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed: TE/GDP x GDP per capita in PPS, Eurostat nama_10_pc (22 Oct 2026); files 01, 09, 13",
+      "date": "22 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/nama_10_pc/default/table"
+      ]
+    },
+    "f00:row6": {
+      "id": "f00:row6",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed from Eurostat gov_10a_main (21 Oct 2026)",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row7": {
+      "id": "f00:row7",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed from Eurostat gov_10a_main, nama_10_gdp",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row8": {
+      "id": "f00:row8",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed from Eurostat gov_10a_main, nama_10_gdp",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row9": {
+      "id": "f00:row9",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed from Eurostat gov_10a_exp EUR amounts / current GDP; data/00_reconcile_cofog_gap_2024_EA20_EA21.csv",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row10": {
+      "id": "f00:row10",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "File 09, data/09_intl_fr_gap_timeseries.csv",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row11": {
+      "id": "f00:row11",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_exp (21 Oct 2026), computed at current GDP",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row12": {
+      "id": "f00:row12",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_exp (21 Oct 2026), computed at current GDP",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row13": {
+      "id": "f00:row13",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_exp (21 Oct 2026), computed at current GDP",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row14": {
+      "id": "f00:row14",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_exp (21 Oct 2026), computed at current GDP",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row15": {
+      "id": "f00:row15",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_exp (21 Oct 2026), computed at current GDP",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f00:row16": {
+      "id": "f00:row16",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "COR annual report (June 2026), Figure 2.1 and data file Données_RA2026_P2.xlsx",
+      "date": "June 2026",
+      "urls": [
+        "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_2026_def.pdf"
+      ]
+    },
+    "f00:row17": {
+      "id": "f00:row17",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "COR (June 2026)",
+      "date": "June 2026",
+      "urls": [
+        "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_2026_def.pdf"
+      ]
+    },
+    "f00:row18": {
+      "id": "f00:row18",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_main (21 Oct 2026)",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row19": {
+      "id": "f00:row19",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_main (21 Oct 2026)",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row20": {
+      "id": "f00:row20",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Drees, La protection sociale en France et en Europe en 2024 (17 Dec 2025; 2026 edition not yet published); Eurostat spr_exp_type (7 Oct 2026)",
+      "date": "17 Dec 2025; 7 Oct 2026",
+      "urls": [
+        "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/251217-protection-sociale-france-europe-2024"
+      ]
+    },
+    "f00:row21": {
+      "id": "f00:row21",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat spr_exp_func (23 Oct 2026)",
+      "date": "23 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/spr_exp_func/default/table"
+      ]
+    },
+    "f00:row22": {
+      "id": "f00:row22",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat spr_exp_func (23 Oct 2026)",
+      "date": "23 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/spr_exp_func/default/table"
+      ]
+    },
+    "f00:row23": {
+      "id": "f00:row23",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat spr_exp_pens (7 Oct 2026); COR (June 2026)",
+      "date": "7 Oct 2026; June 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/spr_exp_pens/default/table"
+      ]
+    },
+    "f00:row24": {
+      "id": "f00:row24",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "OECD SOCX DF_NET_GDP (accessed 25 Oct 2026)",
+      "date": "25 Oct 2026",
+      "urls": [
+        "https://www.oecd.org/en/data/datasets/social-expenditure-database-socx.html"
+      ]
+    },
+    "f00:row25": {
+      "id": "f00:row25",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Insee Insee Première 2106 (29 May 2026); Insee PO series",
+      "date": "29 May 2026",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/8997691",
+        "https://www.insee.fr/fr/statistiques/2381412"
+      ]
+    },
+    "f00:row26": {
+      "id": "f00:row26",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Insee (29 May 2026)",
+      "date": "29 May 2026",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/8997691",
+        "https://www.insee.fr/fr/statistiques/2381412"
+      ]
+    },
+    "f00:row27": {
+      "id": "f00:row27",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed from Insee series (OFCE PB 146 gives -2.5 on the earlier vintage)",
+      "date": null,
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/2381412"
+      ]
+    },
+    "f00:row28": {
+      "id": "f00:row28",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Cour des comptes RSPFP (15 Jul 2024)",
+      "date": "15 Jul 2024",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2024-09/20240715-RSPFP-2024.pdf"
+      ]
+    },
+    "f00:row29": {
+      "id": "f00:row29",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_main (21 Oct 2026)",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row30": {
+      "id": "f00:row30",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "OECD Revenue Statistics 2025 (Dec 2025)",
+      "date": "Dec 2025",
+      "urls": [
+        "https://www.oecd.org/en/publications/2025/12/revenue-statistics-2025_07ca0a8e.html"
+      ]
+    },
+    "f00:row31": {
+      "id": "f00:row31",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10dd_edpt1, Oct 2026 EDP notification; PLF 2027; Insee update of 28 Aug 2026 (-151.592 bn; the 0.9 bn revision is entirely in social security, ASSO -6.7 → -5.8 bn)",
+      "date": "Oct 2026; 28 Aug 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+        "https://www.insee.fr/fr/statistiques/2381402"
+      ]
+    },
+    "f00:row32": {
+      "id": "f00:row32",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+        "https://www.insee.fr/fr/statistiques/2381402"
+      ]
+    },
+    "f00:row33": {
+      "id": "f00:row33",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed: B.9 + D.41, Eurostat EDP data (file 06)",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+        "https://www.insee.fr/fr/statistiques/2381402"
+      ]
+    },
+    "f00:row34": {
+      "id": "f00:row34",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "PLF 2027 (1 Oct 2026), via HCFP-2026-5",
+      "date": "1 Oct 2026",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f00:row35": {
+      "id": "f00:row35",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Insee (28 Aug 2026); Eurostat EDP notification (21 Oct 2026)",
+      "date": "28 Aug 2026; 21 Oct 2026",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/2830192"
+      ]
+    },
+    "f00:row36": {
+      "id": "f00:row36",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Insee",
+      "date": null,
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/2830192"
+      ]
+    },
+    "f00:row37": {
+      "id": "f00:row37",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "PLF 2027",
+      "date": null,
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f00:row38": {
+      "id": "f00:row38",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Computed from Eurostat gov_10dd_edpt1",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table"
+      ]
+    },
+    "f00:row39": {
+      "id": "f00:row39",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_main and gov_10dd_edpt1 (21 Oct 2026); Cour des comptes RSPFP (25 Jun 2026)",
+      "date": "21 Oct 2026; 25 Jun 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f00:row40": {
+      "id": "f00:row40",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Government forecast, PLF 2027, in HCFP-2026-5 §115 and Table 10 (25 Sep 2026)",
+      "date": "25 Sep 2026",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f00:row41": {
+      "id": "f00:row41",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "PLF 2027 (1 Oct 2026), file 06",
+      "date": "1 Oct 2026",
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf"
+      ]
+    },
+    "f00:row42": {
+      "id": "f00:row42",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "AFT Monthly Bulletin no. 437 (Oct 2026), p. 3, market value, Banque de France data; Banque de France (13 Oct 2026). The AFT 57.5% (Mar 2026) is unverified: do not use",
+      "date": "Oct 2026; 13 Oct 2026; Mar 2026",
+      "urls": [
+        "https://www.aft.gouv.fr/files/medias-aft/7_Publications/7.2_BM/437_Monthly%20Bulletin%20October%202026.pdf",
+        "https://www.banque-france.fr/fr/statistiques/credit/emission-et-detention-de-titres-francais-2026-q2"
+      ]
+    },
+    "f00:row43": {
+      "id": "f00:row43",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat irt_lt_mcby_m; Banque de France TEC 10; Bundesbank 10-year yield (file 06)",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/irt_lt_mcby_m",
+        "https://api.statistiken.bundesbank.de/rest/data/BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A?startPeriod=2026-09-01&format=csv&lang=en"
+      ]
+    },
+    "f00:row44": {
+      "id": "f00:row44",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Institut Montaigne (3 Jul 2024; business-funded, liberal-centrist think tank): NFP 58 bn, RN 34.7 bn; Fipeco (June 2024): about 43 bn. No official 2026 costing exists",
+      "date": "3 Jul 2024; June 2024",
+      "urls": [
+        "https://institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrages-retraites-et-fiscalite"
+      ]
+    },
+    "f00:row45": {
+      "id": "f00:row45",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Proponents: AN bill no. 768 (7 Jan 2025), exposé des motifs (\"15 to 25 bn\"). Critics: study by P. Andrews for the business collective Trop, c'est trop ! (June 2026; commissioned, labeled as such): 5.5 bn central, 1.25-5.5 bn static with corporate-tax imputation, 24 bn with none; CAE Focus 118 (July 2025). CPO alternative (0.5% above EUR 5 m): EUR 1.4 bn before behavior",
+      "date": "7 Jan 2025; June 2026; July 2025",
+      "urls": [
+        "https://www.assemblee-nationale.fr/17/pdf/propositions/pion0768.pdf",
+        "https://www.institut-entreprise.fr/wp-content/uploads/2026/06/TCT_Taxe-Zucman-2026.pdf",
+        "https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf"
+      ]
+    },
+    "f00:row46": {
+      "id": "f00:row46",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat ilc_li02 (20 Oct 2026)",
+      "date": "20 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table"
+      ]
+    },
+    "f00:row47": {
+      "id": "f00:row47",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Insee Insee Première 2117 (9 Jul 2026)",
+      "date": "9 Jul 2026",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/9019316"
+      ]
+    },
+    "f00:row48": {
+      "id": "f00:row48",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat ilc_li02; OECD Pensions at a Glance 2025",
+      "date": null,
+      "urls": [
+        "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/11/pensions-at-a-glance-2025_76510fe4/e40274c1-en.pdf"
+      ]
+    },
+    "f00:row49": {
+      "id": "f00:row49",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "OECD PISA 2025 Results, Volume I (8 Sep 2026); file 13",
+      "date": "8 Sep 2026",
+      "urls": [
+        "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html"
+      ]
+    },
+    "f00:row50": {
+      "id": "f00:row50",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat lfsi_emp_a (10 Sep 2026). Use OECD's 68.8% (2024, 29th of 38) only for OECD rankings",
+      "date": "10 Sep 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table"
+      ]
+    },
+    "f00:row51": {
+      "id": "f00:row51",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Eurostat demo_mlexpec (25 Sep 2026)",
+      "date": "25 Sep 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table"
+      ]
+    },
+    "f00:row52": {
+      "id": "f00:row52",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Direction du Budget, PLF 2027 Jaune \"Relations financières avec l'Union européenne\", pp. 157-158 (posted 12 Oct 2026); file 16 §3",
+      "date": "12 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34459"
+      ]
+    },
+    "f00:row53": {
+      "id": "f00:row53",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "OECD-DAC (9 Apr 2026); PLF 2027 État B; file 16 §2",
+      "date": "9 Apr 2026",
+      "urls": [
+        "https://www.oecd.org/en/about/news/press-releases/2026/04/international-aid-fell-sharply-in-2025-says-oecd.html"
+      ]
+    },
+    "f00:row54": {
+      "id": "f00:row54",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "PLF 2027 (PAP programme 183); files 15 §0 and 16 §8",
+      "date": null,
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf"
+      ]
+    },
+    "f00:row55": {
+      "id": "f00:row55",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "OECD International Migration Outlook 2021, ch. 4, Table 4.1; file 15",
+      "date": null,
+      "urls": [
+        "https://www.oecd.org/en/publications/international-migration-outlook-2021_29f23e9d-en/full-report/component-8.html"
+      ]
+    },
+    "f00:row56": {
+      "id": "f00:row56",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Cour des comptes, NEB Dépenses fiscales (Apr 2026); files 05, 07",
+      "date": "Apr 2026",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2026-04/NEB-2026-Depenses-fiscales.pdf"
+      ]
+    },
+    "f00:row57": {
+      "id": "f00:row57",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "PLFSS 2027 annex 4 (Oct 2026); file 05 §7.2",
+      "date": "Oct 2026",
+      "urls": [
+        "https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/PLFSS/2027/PLFSS2027-Annexe4-VDEF.pdf"
+      ]
+    },
+    "f00:row58": {
+      "id": "f00:row58",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Cour des comptes (10 Sep 2026); PLF 2027 État A, line 1797; files 07, 11",
+      "date": "10 Sep 2026",
+      "urls": [
+        "https://www.ccomptes.fr/fr/publications/la-taxe-sur-les-transactions-financieres"
+      ]
+    },
+    "f00:row59": {
+      "id": "f00:row59",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "HCFiPS (July 2024), Table 1; HCFiPS annual note (adopted 4 Dec 2025, published 13 Jan 2026); files 07, 14",
+      "date": "July 2024; 4 Dec 2025; 13 Jan 2026",
+      "urls": [
+        "https://www.vie-publique.fr/files/rapport/pdf/295536.pdf"
+      ]
+    },
+    "f00:row60": {
+      "id": "f00:row60",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Insee long series (28 Aug 2026); file 06",
+      "date": "28 Aug 2026",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/2381402"
+      ]
+    },
+    "f00:row61": {
+      "id": "f00:row61",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "Cour des comptes, structural note (deliberated 10 Jun 2026, published 21 Sep 2026); file 04 §8",
+      "date": "10 Jun 2026; 21 Sep 2026",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2026-09/20260921-note-structurelle-Masse-salariale.pdf"
+      ]
+    },
+    "f00:row62": {
+      "id": "f00:row62",
+      "type": "canonical_row",
+      "research_file": "00-reference-figures.md",
+      "institution": null,
+      "title": "HCFP-2026-5 §36 (25 Sep 2026); CAE Focus 108 (24 Jul 2024); file 17",
+      "date": "25 Sep 2026; 24 Jul 2024",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f07:S1": {
+      "id": "f07:S1",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Insee",
+      "title": "Le compte des administrations publiques en 2025, Insee Première n° 2106",
+      "date": "2026-05-29",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/8997691"
+      ]
+    },
+    "f07:S2": {
+      "id": "f07:S2",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Insee",
+      "title": "En 2025, le déficit public s'élève à 5,1 % du PIB, la dette publique à 115,6 % du PIB, Informations rapides n° 78 (+ annex PDF)",
+      "date": "2026-03-26",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/8956575",
+        "https://www.insee.fr/fr/statistiques/documentation/annexe_ir_prov_apu--20260326.pdf"
+      ]
+    },
+    "f07:S3": {
+      "id": "f07:S3",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Haut Conseil des finances publiques",
+      "title": "Avis n° HCFP-2026-5 relatif aux PLF et PLFSS pour 2027",
+      "date": "2026-09-25",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f07:S4": {
+      "id": "f07:S4",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Sénat, commission des finances (rapporteur E. Capus)",
+      "title": "Rapport n° 689 (2024-2025) sur la PPL instaurant un impôt plancher de 2 % sur le patrimoine des ultrariches",
+      "date": "2025-06-04",
+      "urls": [
+        "https://www.senat.fr/rap/l24-689/l24-6891.pdf"
+      ]
+    },
+    "f07:S5": {
+      "id": "f07:S5",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Conseil d'analyse économique",
+      "title": "Focus n° 118, Fiscalité du capital : quels sont les effets de l'exil fiscal sur l'économie ? (Bach, Bozio, Grimprel, Guillouzouic, Landais, Malgouyres); press release 2025-09-02",
+      "date": "July 2025",
+      "urls": [
+        "https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf",
+        "https://cae-eco.fr/fiscalite-du-capital-quels-sont-les-effets-de-lexil-fiscal-sur-leconomie-communique-de-presse"
+      ]
+    },
+    "f07:S6": {
+      "id": "f07:S6",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut des politiques publiques",
+      "title": "Perspectives budgétaires, ch. 2 \"Effets budgétaires et redistributifs des mesures socio-fiscales\" (Darricau, Duchesne, Garbinti, Josseran, Reutzel)",
+      "date": "June 2025 (file posted 2026-04)",
+      "urls": [
+        "https://www.ipp.eu/wp-content/uploads/2026/04/chapitre_2_fiscalite_web.pdf"
+      ]
+    },
+    "f07:S7": {
+      "id": "f07:S7",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut des politiques publiques",
+      "title": "Perspectives budgétaires, ch. 2 \"Effets budgétaires et redistributifs des mesures socio-fiscales 2026\" (Duchesne, Garbinti, Josseran)",
+      "date": "June 2026",
+      "urls": [
+        "https://www.ipp.eu/wp-content/uploads/2026/06/chapitre_fiscalite_2026-2.pdf"
+      ]
+    },
+    "f07:S8": {
+      "id": "f07:S8",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut des politiques publiques",
+      "title": "Actualisation de l'estimation de rendement de l'année blanche",
+      "date": "Oct. 2025",
+      "urls": [
+        "https://www.ipp.eu/actualisation-de-lestimation-de-rendement-de-lannee-blanche/"
+      ]
+    },
+    "f07:S9": {
+      "id": "f07:S9",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut des politiques publiques (L. Bach)",
+      "title": "Taxe sur les holdings patrimoniales : innovation, gadget ou usine à gaz ? (blog n° 44)",
+      "date": "Oct. 2025",
+      "urls": [
+        "https://www.ipp.eu/publication/taxe-sur-les-holdings-patrimoniales-innovation-gadget-ou-usine-a-gaz/"
+      ]
+    },
+    "f07:S10": {
+      "id": "f07:S10",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Cour des comptes",
+      "title": "La lutte contre la fraude fiscale, rapport public thématique",
+      "date": "2025-12-16",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2025-12/20251216-Lutte-contre-la-fraude-fiscale.pdf"
+      ]
+    },
+    "f07:S11": {
+      "id": "f07:S11",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Cour des comptes",
+      "title": "La situation et les perspectives des finances publiques",
+      "date": "2024-07-15",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2024-09/20240715-RSPFP-2024.pdf"
+      ]
+    },
+    "f07:S12": {
+      "id": "f07:S12",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Cour des comptes",
+      "title": "Les mesures exceptionnelles de lutte contre la hausse des prix de l'énergie",
+      "date": "2024-03-15",
+      "urls": [
+        "https://www.ccomptes.fr/fr/publications/les-mesures-exceptionnelles-de-lutte-contre-la-hausse-des-prix-de-lenergie"
+      ]
+    },
+    "f07:S13": {
+      "id": "f07:S13",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut Montaigne (think tank, business-funded, liberal-centrist)",
+      "title": "Législatives 2024 – Chiffrage global des programmes",
+      "date": "2024-07-05",
+      "urls": [
+        "https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrage-global-des-programmes"
+      ]
+    },
+    "f07:S14": {
+      "id": "f07:S14",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut Montaigne",
+      "title": "Législatives 2024 – Chiffrages \"retraites\" et \"fiscalité\"",
+      "date": "2024-07-03",
+      "urls": [
+        "https://institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrages-retraites-et-fiscalite"
+      ]
+    },
+    "f07:S15": {
+      "id": "f07:S15",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut Montaigne",
+      "title": "Synthèses des micro-chiffrages \"Dépenses\" – Nouveau Front populaire",
+      "date": "June-July 2024",
+      "urls": [
+        "https://www.institutmontaigne.org/ressources/documents/synthese-legislatives-2024-micro-chiffrages-institut-montaigne-nfp.pdf"
+      ]
+    },
+    "f07:S16": {
+      "id": "f07:S16",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut Montaigne",
+      "title": "Législatives 2024 – Chiffrages \"Services publics\"",
+      "date": "2024-06-27",
+      "urls": [
+        "https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrages-services-publics"
+      ]
+    },
+    "f07:S17": {
+      "id": "f07:S17",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Le Journal des Entreprises (reporting Institut Montaigne)",
+      "title": "Législatives : l'Institut Montaigne chiffre les propositions pour le pouvoir d'achat",
+      "date": "2024-06-20",
+      "urls": [
+        "https://www.lejournaldesentreprises.com/breve/legislatives-linstitut-montaigne-chiffre-les-propositions-pour-le-pouvoir-dachat-du-nfp-densemble-et-2098663"
+      ]
+    },
+    "f07:S18": {
+      "id": "f07:S18",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Présidentielle 2027 : Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles",
+      "date": "2026-10-14",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027"
+      ]
+    },
+    "f07:S19": {
+      "id": "f07:S19",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Contre-budget du RN : « des propositions qui manquent de crédibilité économique… »",
+      "date": "2025-10-24",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale"
+      ]
+    },
+    "f07:S20": {
+      "id": "f07:S20",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Planète Grandes Écoles (press, secondary; cites the Institut de l'Entreprise note of 2026-10-06); francebudget.fr (non-institutional)",
+      "title": "Budget de Marine Le Pen pour 2027 : les mesures du contre-budget du RN passées au crible",
+      "date": "Oct. 2026",
+      "urls": [
+        "https://www.planetegrandesecoles.com/budget-marine-le-pen-2027-mesures-contre-budget-rn",
+        "https://francebudget.fr/scenarios/rn-2027"
+      ]
+    },
+    "f07:S21": {
+      "id": "f07:S21",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Présidentielle 2027 : Bruno Retailleau s'engage sur un plan d'économies de près de 200 milliards d'euros",
+      "date": "2026-10-12",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu"
+      ]
+    },
+    "f07:S22": {
+      "id": "f07:S22",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Moneyvox; Euronews (press)",
+      "title": "Budget 2027 : Horizons propose un budget alternatif…; Présidentielle 2027 : Édouard Philippe mise sur le travail…",
+      "date": "Oct. 2026",
+      "urls": [
+        "https://www.moneyvox.fr/actu/110762/budget-2027-horizons-propose-un-budget-alternatif-avec-10-milliards-economies-supplementaires",
+        "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+      ]
+    },
+    "f07:S23": {
+      "id": "f07:S23",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "France 24 / AFP",
+      "title": "Budget : la taxe Zucman enflamme les débats à l'Assemblée…",
+      "date": "2026-10-16",
+      "urls": [
+        "https://www.france24.com/fr/info-en-continu/20261016-budget-la-taxe-zucman-enflamme-les-d%C3%A9bats-%C3%A0-l-assembl%C3%A9e-d%C3%A9j%C3%A0-tourn%C3%A9s-vers-la-pr%C3%A9sidentielle"
+      ]
+    },
+    "f07:S24": {
+      "id": "f07:S24",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "LCP (Assemblée nationale channel)",
+      "title": "Budget 2026 : la taxe Zucman rejetée par l'Assemblée nationale",
+      "date": "2025-10-31",
+      "urls": [
+        "https://lcp.fr/actualites/budget-2026-la-taxe-zucman-rejetee-par-l-assemblee-nationale-413632"
+      ]
+    },
+    "f07:S25": {
+      "id": "f07:S25",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Budget 2026 : le Sénat rejette (à nouveau) la taxe Zucman",
+      "date": "2025-11-28",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/parlementaire/budget-2026-le-senat-rejette-a-nouveau-la-taxe-zucman"
+      ]
+    },
+    "f07:S26": {
+      "id": "f07:S26",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Wikipedia (secondary; used only for dates and signatories of op-eds)",
+      "title": "Taxe Zucman",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://fr.wikipedia.org/wiki/Taxe_Zucman"
+      ]
+    },
+    "f07:S27": {
+      "id": "f07:S27",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Public Sénat (press, government figures); Franceinfo (pre-extension figures)",
+      "title": "Retraites : le gouvernement veut élargir le nombre de bénéficiaires de la suspension de la réforme de 2023 (0.3 / 1.9 bn); La suspension de la réforme des retraites coûtera 1,4 milliard d'euros en 2027 (0.1 / 1.4 bn, lettre rectificative)",
+      "date": "2025-11-12; 2025-10",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/retraites-le-gouvernement-veut-elargir-le-nombre-de-beneficiaires-de-la-suspension-de-la-reforme-de-2023",
+        "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/la-suspension-de-la-reforme-des-retraites-coutera-1-4-milliard-d-euros-en-2027-les-complementaires-sante-et-les-retraites-mis-a-contribution_7570171.html"
+      ]
+    },
+    "f07:S28": {
+      "id": "f07:S28",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Conseil d'orientation des retraites",
+      "title": "Rapport annuel 2026 (synthesis)",
+      "date": "June 2026",
+      "urls": [
+        "https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se_RA_2026.pdf"
+      ]
+    },
+    "f07:S29": {
+      "id": "f07:S29",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Government (info.gouv.fr); Euronews (press)",
+      "title": "Dette et hausse de la production : les annonces de François Bayrou (with press kit \"Le moment de vérité\"); 43,8 milliards d'euros d'effort budgétaire : les annonces de François Bayrou",
+      "date": "2025-07-15 (updated 2025-07-17)",
+      "urls": [
+        "https://www.info.gouv.fr/actualite/dette-et-hausse-de-la-production-les-annonces-de-francois-bayrou",
+        "https://fr.euronews.com/2025/07/15/438-milliards-deuros-deffort-budgetaire-les-annonces-de-francois-bayrou"
+      ]
+    },
+    "f07:S30": {
+      "id": "f07:S30",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Eurostat",
+      "title": "gov_10dd_edpt1 – Government deficit/surplus, debt and associated data (dataset updated 2026-10-21)",
+      "date": "2026-10-21",
+      "urls": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&unit=PC_GDP&sector=S13&na_item=B9&na_item=GD&sinceTimePeriod=2005"
+      ]
+    },
+    "f07:S31": {
+      "id": "f07:S31",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "OECD",
+      "title": "Revenue Statistics – comparative tables (DF_RSOECD), codes 4000, 4200, 4300, total",
+      "date": "2025-2026 release",
+      "urls": [
+        "https://sdmx.oecd.org/public/rest/data/OECD.CTP.TPS,DSD_REV_COMP_OECD@DF_RSOECD,/.TAX_REV.S13.T_4200+T_4000+T_4300+_T._T.PT_B1GQ.A?startPeriod=2004"
+      ]
+    },
+    "f07:S32": {
+      "id": "f07:S32",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Government (info.gouv.fr)",
+      "title": "Le SMIC revalorisé au 1er janvier 2026; Le SMIC revalorisé le 1er juin 2026",
+      "date": "2025-12-15; 2026-05-18",
+      "urls": [
+        "https://www.info.gouv.fr/actualite/le-smic-revalorise-au-1er-janvier-2026",
+        "https://www.info.gouv.fr/actualite/le-smic-revalorise-le-1er-juin-2026"
+      ]
+    },
+    "f07:S33": {
+      "id": "f07:S33",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Selectra; Acteurs publics (press)",
+      "title": "Point d'indice: gel 2027; facture de la hausse du point d'indice par versant",
+      "date": "2026 / undated",
+      "urls": [
+        "https://selectra.info/finance/actualites/marche/point-indice-gel-2027-fonctionnaires-salaire",
+        "https://acteurspublics.fr/articles/la-facture-de-la-hausse-du-point-dindice-pour-chacun-des-3-versants-de-la-fonction-publique"
+      ]
+    },
+    "f07:S34": {
+      "id": "f07:S34",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Haut Conseil du financement de la protection sociale (HCFiPS) (primary); Politis / IFRAP (secondary)",
+      "title": "Lutte contre la fraude sociale : état des lieux et enjeux (report); Note annuelle de suivi et d'évaluation des fraudes sociales, synthesis",
+      "date": "July 2024 (released Sept. 2024); adopted 4 Dec 2025, published 13 Jan 2026",
+      "urls": [
+        "https://www.vie-publique.fr/files/rapport/pdf/295536.pdf",
+        "https://www.securite-sociale.fr/home/hcfips/zone-main-content/rapports-et-avis-du-hcfips/rapport.html",
+        "https://www.securite-sociale.fr/files/live/sites/SSFR/files/medias/HCFIPS/2026/HCFIPS%20-%20Synth%C3%A8se%20Fraude%20sociale%202025%20-%20Version%20finalis%C3%A9e.pdf",
+        "https://www.politis.fr/articles/2024/09/securite-sociale-fraude-sociale-le-rapport-hcfips-qui-contredit-des-annees-de-discours-stigmatisants",
+        "https://www.ifrap.org/emploi-et-politiques-sociales/la-fraude-sociale-en-2024-175-mdeu-estimes-seulement-12-mdeu-recouvre-ou-evite"
+      ]
+    },
+    "f07:S35": {
+      "id": "f07:S35",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Legifiscal (tax press)",
+      "title": "Contribution différentielle sur les hauts revenus : 0,4 Md€ de recettes au lieu de 1,9 prévu",
+      "date": "2026",
+      "urls": [
+        "https://www.legifiscal.fr/actualites-fiscales/4455-contribution-differentielle-hauts-revenus-04-md-recettes-lieu-19-prevu.html"
+      ]
+    },
+    "f07:S36": {
+      "id": "f07:S36",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Legifiscal (reporting DGFiP)",
+      "title": "IFI : recettes en hausse de 8 %",
+      "date": "April 2026",
+      "urls": [
+        "https://www.legifiscal.fr/actualites-fiscales/4486-impot-fortune-immobiliere-ifi-recettes-hausse-8.html"
+      ]
+    },
+    "f07:S37": {
+      "id": "f07:S37",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Moneyvox (press)",
+      "title": "L'IFI rapporte plus que prévu mais 2 fois moins que l'ISF",
+      "date": "2019-2020",
+      "urls": [
+        "https://www.moneyvox.fr/immobilier/actualites/77919/impots-ifi-rapporte-plus-que-prevu-mais-2-fois-moins-que-isf"
+      ]
+    },
+    "f07:S38": {
+      "id": "f07:S38",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "L'info durable (reporting CRE)",
+      "title": "Les boucliers gaz/électricité ont coûté 20,4 milliards d'euros en deux ans",
+      "date": "2024",
+      "urls": [
+        "https://www.linfodurable.fr/les-boucliers-gazelectricite-ont-coute-204-milliards-deuros-en-deux-ans-gendarme-de-lenergie-46321"
+      ]
+    },
+    "f07:S39": {
+      "id": "f07:S39",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Économie Matin (press, citing Bercy)",
+      "title": "Carburants : Bercy n'a pas profité de la hausse des prix",
+      "date": "2023",
+      "urls": [
+        "https://www.economiematin.fr/?p=121567"
+      ]
+    },
+    "f07:S40": {
+      "id": "f07:S40",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Government (info.gouv.fr)",
+      "title": "Guerre en Iran : le Gouvernement annonce des mesures de soutien à l'activité économique",
+      "date": "2026-05-21",
+      "urls": [
+        "https://www.info.gouv.fr/actualite/guerre-en-iran-le-gouvernement-annonce-des-mesures-de-soutien-a-l-activite-economique"
+      ]
+    },
+    "f07:S41": {
+      "id": "f07:S41",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "LCP (press); IFRAP (think tank, liberal/right-leaning)",
+      "title": "Le NFP chiffre son programme à 150 milliards d'ici à 2027; pourquoi le chiffrage IFRAP diffère",
+      "date": "June 2024",
+      "urls": [
+        "https://lcp.fr/actualites/le-nouveau-front-populaire-chiffre-son-programme-a-150-milliards-d-ici-a-2027-assurant",
+        "https://www.ifrap.org/budget-et-fiscalite/nouveau-front-populaire-pourquoi-le-chiffrage-du-programme-par-la-fondation-ifrap-differe-de-celui-du-parti"
+      ]
+    },
+    "f07:S42": {
+      "id": "f07:S42",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Olivier Blanchard (X post)",
+      "title": "On the Catherine-Lévy debate about the Zucman tax",
+      "date": "June 2025",
+      "urls": [
+        "https://x.com/ojblanchard1/status/1935291018347225413"
+      ]
+    },
+    "f07:S43": {
+      "id": "f07:S43",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Cour des comptes",
+      "title": "Analyse de l'exécution budgétaire 2025, mission Dépenses fiscales",
+      "date": "April 2026",
+      "urls": []
+    },
+    "f07:S44": {
+      "id": "f07:S44",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Government (PLF 2027)",
+      "title": "Projet de loi de finances pour 2027, n° 3210: État A (p. 232, line 1797) and \"Présentation générale de l'évolution des recettes de l'État\"",
+      "date": "2026-10-01",
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf"
+      ]
+    },
+    "f07:S45": {
+      "id": "f07:S45",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Institut Montaigne (business-funded, liberal-centrist)",
+      "title": "Présidentielle 2022, Marine Le Pen: \"Restaurer la retraite à 60 ans à taux plein avec 40 annuités et revaloriser le minimum vieillesse\"",
+      "date": "2022 (undated page)",
+      "urls": [
+        "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/restaurer-la-retraite-a-60-ans-a-taux-plein-avec-40-annuites-et-revaloriser-le-minimum-vieillesse/"
+      ]
+    },
+    "f07:S46": {
+      "id": "f07:S46",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Assemblée nationale",
+      "title": "Question écrite n° 8218 (V. Catteau) and government answer, \"Compensation perte de recette TICPE\"",
+      "date": "answer JO 2023-09-05",
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/16/questions/QANR5L16QE8218"
+      ]
+    },
+    "f07:S47": {
+      "id": "f07:S47",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Sénat, commission des lois (C. Di Folco)",
+      "title": "Avis n° 134 (2023-2024) on PLF 2024, Fonction publique",
+      "date": "Nov. 2023",
+      "urls": [
+        "https://www.senat.fr/rap/a23-134-5/a23-134-56.html"
+      ]
+    },
+    "f07:S48": {
+      "id": "f07:S48",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Cour des comptes",
+      "title": "Les mesures exceptionnelles de lutte contre la hausse des prix de l'énergie, full report (rendered as HTML on the Cour's document page)",
+      "date": "March 2024",
+      "urls": [
+        "https://www.ccomptes.fr/fr/documents/68956"
+      ]
+    },
+    "f07:S49": {
+      "id": "f07:S49",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Rexecode (employer-linked institute)",
+      "title": "Bilan des prélèvements obligatoires 2026 : le choc fiscal s'installe, Document de travail n° 105",
+      "date": "Sept. 2026",
+      "urls": []
+    },
+    "f07:S50": {
+      "id": "f07:S50",
+      "type": "publication",
+      "research_file": "07-proposals-costing.md",
+      "institution": "Assemblée nationale",
+      "title": "Question écrite n° 1212 (E. Sas) and government answer (IPP note 92)",
+      "date": "17th legislature",
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE1212"
+      ]
+    },
+    "f11:S1": {
+      "id": "f11:S1",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "La France insoumise (party)",
+      "title": "Comment nous allons remettre de l'ordre dans les comptes publics (PDF, 22 pp.)",
+      "date": "2026-10-14",
+      "urls": [
+        "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf"
+      ]
+    },
+    "f11:S1b": {
+      "id": "f11:S1b",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "LFI",
+      "title": "Program pages (L'Avenir en commun)",
+      "date": "2026",
+      "urls": [
+        "https://melenchon2027.fr/programme/decouvrir/",
+        "https://lafranceinsoumise.fr/"
+      ]
+    },
+    "f11:S2": {
+      "id": "f11:S2",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ?",
+      "date": "2026-10-14",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque"
+      ]
+    },
+    "f11:S3": {
+      "id": "f11:S3",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "HCFP",
+      "title": "Avis n° HCFP-2026-5 (PLF/PLFSS 2027)",
+      "date": "2026-09-25",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f11:S3b": {
+      "id": "f11:S3b",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Franceinfo (press)",
+      "title": "Portraits : qui sont les candidats déclarés… (34 at 22/10/2026)",
+      "date": "2026-10-22",
+      "urls": [
+        "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+      ]
+    },
+    "f11:S4": {
+      "id": "f11:S4",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Moneyvox; LCP (press)",
+      "title": "LFI promet 106 milliards…; Contre-budget : LFI propose 106,4 milliards…",
+      "date": "2026-10-14",
+      "urls": [
+        "https://www.moneyvox.fr/votre-argent/actualites/110808/presidentielle-lfi-promet-106-milliards-de-recettes-supplementaires-pour-2027-et-se-dit-raisonnable",
+        "https://lcp.fr/actualites/contre-budget-lfi-propose-1064-milliards-d-euros-de-recettes-supplementaires-et-817"
+      ]
+    },
+    "f11:S5": {
+      "id": "f11:S5",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen",
+      "date": "2026-10-06",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      ]
+    },
+    "f11:S6": {
+      "id": "f11:S6",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Euronews (press)",
+      "title": "Le gouvernement tire à boulets rouges sur le contre-budget de Marine Le Pen",
+      "date": "2026-10-07",
+      "urls": [
+        "https://fr.euronews.com/2026/10/07/france-le-gouvernement-tire-a-boulets-rouges-sur-le-contre-budget-de-marine-le-pen"
+      ]
+    },
+    "f11:S4b": {
+      "id": "f11:S4b",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Public Sénat / AFP (press)",
+      "title": "Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027",
+      "date": "2026-10-14",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027"
+      ]
+    },
+    "f11:S7": {
+      "id": "f11:S7",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Planète Grandes Écoles (press, secondary), reporting the Institut de l'Entreprise note (business-funded)",
+      "title": "Budget de Marine Le Pen pour 2027 : les mesures… passées au crible",
+      "date": "2026-10-08 (note 2026-10-06)",
+      "urls": [
+        "https://www.planetegrandesecoles.com/budget-marine-le-pen-2027-mesures-contre-budget-rn"
+      ]
+    },
+    "f11:S7a": {
+      "id": "f11:S7a",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Institut de l'Entreprise (think tank of company executives, business-funded)",
+      "title": "Contre-budget du RN : 140 milliards affichés, moins de 10 milliards crédibles, note de contexte (9 pp.)",
+      "date": "2026-10-06",
+      "urls": [
+        "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf"
+      ]
+    },
+    "f11:S8": {
+      "id": "f11:S8",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Bruno Retailleau s'engage sur un plan d'économies de près de 200 milliards",
+      "date": "2026-10-12",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu"
+      ]
+    },
+    "f11:S8b": {
+      "id": "f11:S8b",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "LR campaign",
+      "title": "avecretailleau.fr (home, FAQ)",
+      "date": "2026",
+      "urls": [
+        "https://avecretailleau.fr/projet/faq"
+      ]
+    },
+    "f11:S9": {
+      "id": "f11:S9",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Moneyvox / AFP (press)",
+      "title": "Budget 2027 : Horizons propose un budget alternatif avec 10 milliards d'économies",
+      "date": "2026-10-13",
+      "urls": [
+        "https://www.moneyvox.fr/actu/110762/budget-2027-horizons-propose-un-budget-alternatif-avec-10-milliards-economies-supplementaires"
+      ]
+    },
+    "f11:S9b": {
+      "id": "f11:S9b",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Euronews (press)",
+      "title": "Édouard Philippe mise sur le travail et la réduction des dépenses publiques",
+      "date": "2026-10-09",
+      "urls": [
+        "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ"
+      ]
+    },
+    "f11:S10": {
+      "id": "f11:S10",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Public Sénat (press)",
+      "title": "Condamnation de Marine Le Pen : malgré son pourvoi en cassation, est-elle toujours inéligible ?",
+      "date": "2026-07-08",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-malgre-son-pourvoi-en-cassation-est-elle-toujours-ineligible-comme-laffirment-plusieurs-juristes"
+      ]
+    },
+    "f11:S11": {
+      "id": "f11:S11",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Fondation iFRAP (think tank, liberal; favors spending cuts)",
+      "title": "Comparateur Présidentielles 2027",
+      "date": "accessed 2026-10-25 (images dated 2026-10)",
+      "urls": [
+        "https://www.ifrap.org/comparateurs/presidentielles-2027"
+      ]
+    },
+    "f11:S12": {
+      "id": "f11:S12",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Parlons-politique (press)",
+      "title": "Glucksmann mise sur le salaire net…",
+      "date": "2026-08-24",
+      "urls": [
+        "https://www.parlons-politique.fr/elections/presidentielle-2027-glucksmann-mise-sur-le-salaire-net-pour-rassembler-une-gauche-sans-accord-avec-la-france-insoumise_25614/"
+      ]
+    },
+    "f11:S13": {
+      "id": "f11:S13",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Franceinfo (press)",
+      "title": "Changement de système, passage à 60 ou à 65 ans, capitalisation… retraites",
+      "date": "2026-09-30",
+      "urls": [
+        "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html"
+      ]
+    },
+    "f11:S14": {
+      "id": "f11:S14",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "francebudget.fr (non-institutional citizen simulator)",
+      "title": "Scénario RN 2027; Scénario LFI 2027",
+      "date": "engine v0.6.8, 2026-10-07",
+      "urls": [
+        "https://francebudget.fr/scenarios/rn-2027",
+        "https://francebudget.fr/scenarios/lfi-2027"
+      ]
+    },
+    "f11:S14b": {
+      "id": "f11:S14b",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "francebudget.fr",
+      "title": "Scénario LR 2027",
+      "date": "page dated 2026-06-01, content to 2026-10-21",
+      "urls": [
+        "https://francebudget.fr/scenarios/lr-2027"
+      ]
+    },
+    "f11:S15": {
+      "id": "f11:S15",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Institut Montaigne (business-funded, liberal)",
+      "title": "Présidentielle 2022: LFI \"retraite à 60 ans\" (85.8 bn); RN \"retraite à 60 ans\" (26.5 bn, 23.5-38.5)",
+      "date": "2022",
+      "urls": [
+        "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/retablir-la-retraite-a-60-ans-apres-40-ans-annees-de-cotisation/",
+        "https://www.institutmontaigne.org/presidentielle-2022/legislatives-2022/rassemblement-national/restaurer-la-retraite-a-60-ans-a-taux-plein-avec-40-annuites-et-revaloriser-le-minimum-vieillesse-2"
+      ]
+    },
+    "f11:S16": {
+      "id": "f11:S16",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Conseil d'analyse économique",
+      "title": "Note n° 69, Repenser l'héritage (Dherbécourt, Fack, Landais, Stantcheva)",
+      "date": "Dec. 2021",
+      "urls": [
+        "https://www.cae-eco.fr/staticfiles/pdf/cae-note069.pdf"
+      ]
+    },
+    "f11:S17": {
+      "id": "f11:S17",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Cour des comptes",
+      "title": "Analyse de l'exécution budgétaire 2025 – Dépenses fiscales (NEB)",
+      "date": "April 2026",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2026-04/NEB-2026-Depenses-fiscales.pdf"
+      ]
+    },
+    "f11:S18": {
+      "id": "f11:S18",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Institut des politiques publiques",
+      "title": "Note n° 125, L'encadrement des loyers : quels effets redistributifs ? (G. Chapelle, G. Fack)",
+      "date": "May 2026",
+      "urls": [
+        "https://www.ipp.eu/wp-content/uploads/2026/06/Note_IPP_Encadrement_des_loyers.pdf"
+      ]
+    },
+    "f11:S19": {
+      "id": "f11:S19",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Cour des comptes",
+      "title": "Les mesures exceptionnelles de lutte contre la hausse des prix de l'énergie",
+      "date": "2024-03-15",
+      "urls": [
+        "https://www.ccomptes.fr/fr/publications/les-mesures-exceptionnelles-de-lutte-contre-la-hausse-des-prix-de-lenergie"
+      ]
+    },
+    "f11:S20": {
+      "id": "f11:S20",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Ministère de la Transition écologique (DGEC)",
+      "title": "Weekly oil bulletin NPG 2026-10-16; database Prix HTT et TTC depuis janvier 2020",
+      "date": "2026-10-16",
+      "urls": [
+        "https://www.ecologie.gouv.fr/sites/default/files/documents/NPG-2026.10.16.pdf",
+        "https://www.ecologie.gouv.fr/sites/default/files/documents/Prix%20HTT%20et%20TTC%20depuis%20janvier%202020_0.xlsx"
+      ]
+    },
+    "f11:S21": {
+      "id": "f11:S21",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "OFCE (academic, Keynesian-leaning)",
+      "title": "Allègre and Timbeau, \"Pour mieux taxer les plus riches…\" (blog); homepage listing",
+      "date": "2026-10-19",
+      "urls": [
+        "https://www.ofce.fr/blog2024/fr/2026/20261019_GAXT/index.html",
+        "https://www.ofce.fr/"
+      ]
+    },
+    "f11:S22": {
+      "id": "f11:S22",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Diamond, McQuade and Qian",
+      "title": "The Effects of Rent Control Expansion on Tenants, Landlords, and Inequality: Evidence from San Francisco, AER 109(9): 3365-94",
+      "date": "2019",
+      "urls": [
+        "https://www.aeaweb.org/articles?id=10.1257/aer.20181289"
+      ]
+    },
+    "f11:S23": {
+      "id": "f11:S23",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Autor, Palmer and Pathak",
+      "title": "Housing Market Spillovers: Evidence from the End of Rent Control in Cambridge, MA, JPE 122(3) (NBER WP 18125)",
+      "date": "2014",
+      "urls": [
+        "https://www.nber.org/papers/w18125"
+      ]
+    },
+    "f11:S24": {
+      "id": "f11:S24",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Kholodilin",
+      "title": "Rent control effects through the lens of empirical research: An almost complete review of the literature, J. Housing Econ. 63",
+      "date": "2024",
+      "urls": [
+        "https://ideas.repec.org/a/eee/jhouse/v63y2024ics1051137724000020.html"
+      ]
+    },
+    "f11:S25": {
+      "id": "f11:S25",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Francetvinfo (press, secondary)",
+      "title": "Paris : les prix des locations s'envolent depuis la fin de l'encadrement des loyers",
+      "date": "2018-07-18",
+      "urls": [
+        "https://www.francetvinfo.fr/economie/immobilier/encadrement-des-loyers/paris-les-prix-des-locations-s-envolent-depuis-la-fin-de-l-encadrement-des-loyers_2854739.html"
+      ]
+    },
+    "f11:S26": {
+      "id": "f11:S26",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Institut Montaigne",
+      "title": "Présidentielle 2027 hub → Les Repères de Montaigne",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://institutmontaigne.org/presidentielle-2027/les-reperes-de-montaigne/"
+      ]
+    },
+    "f11:S27": {
+      "id": "f11:S27",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "IPP",
+      "title": "Homepage and search (no 2027 program evaluation)",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://www.ipp.eu/"
+      ]
+    },
+    "f11:S28": {
+      "id": "f11:S28",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Cour des comptes",
+      "title": "La situation et les perspectives des finances publiques (RSPFP)",
+      "date": "2026-06-25",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf"
+      ]
+    },
+    "f11:S29": {
+      "id": "f11:S29",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "IGF mission (Jaravel, Ragot, Tavernier, Valla)",
+      "title": "Transparence des finances publiques",
+      "date": "July 2026",
+      "urls": [
+        "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf"
+      ]
+    },
+    "f11:S30": {
+      "id": "f11:S30",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Terra Nova (center-left)",
+      "title": "Homepage",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://tnova.fr/"
+      ]
+    },
+    "f11:S31": {
+      "id": "f11:S31",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Rexecode (employer-funded)",
+      "title": "Homepage; Bilan des prélèvements obligatoires 2026",
+      "date": "2026-09-29",
+      "urls": [
+        "https://www.rexecode.fr/"
+      ]
+    },
+    "f11:S32": {
+      "id": "f11:S32",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Fipeco (F. Ecalle)",
+      "title": "Homepage",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://www.fipeco.fr/"
+      ]
+    },
+    "f11:S33": {
+      "id": "f11:S33",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Cour des comptes",
+      "title": "La taxe sur les transactions financières : un équilibre délicat entre rendement et régulation (citizen-initiative thematic report; press release, synthesis)",
+      "date": "2026-09-10",
+      "urls": [
+        "https://www.ccomptes.fr/fr/publications/la-taxe-sur-les-transactions-financieres",
+        "https://www.ccomptes.fr/sites/default/files/2026-09/20260910-communique-Taxe-sur-les-transactions-financieres.pdf"
+      ]
+    },
+    "f11:S34": {
+      "id": "f11:S34",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Assemblée nationale",
+      "title": "Amendment n° 728 (MoDem group) to PPL n° 613 Abrogation de la retraite à 64 ans, citing the CNAV estimate (3.4 bn in 2025, 16 bn in 2032)",
+      "date": "2024-11-25",
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/amendements/0613/AN/728.pdf"
+      ]
+    },
+    "f11:S35": {
+      "id": "f11:S35",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "European Commission (DG BUDG)",
+      "title": "EU spending and revenue 2000-2025 (xlsx; France sheet 2024-2025: expenditure, NGEU, own resources, balances)",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://commission.europa.eu/strategy-and-policy/eu-budget/long-term-eu-budget/2021-2027/spending-and-revenue_en"
+      ]
+    },
+    "f11:S36": {
+      "id": "f11:S36",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Sénat",
+      "title": "Rapport général n° 111 (2010-2011), tome III, annexe 14 (PLF 2011, Gestion des finances publiques et des ressources humaines): RGPP 50% return rule, 2009 outturn",
+      "date": "2010-11-18",
+      "urls": [
+        "https://www.senat.fr/rap/l10-111-314/l10-111-3143.html"
+      ]
+    },
+    "f11:S37": {
+      "id": "f11:S37",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "IGF and IGAS",
+      "title": "Revue de dépenses relative à la réduction des absences dans la fonction publique (IGF 2024-M-013-03, IGAS 2024-026R; supervised by A. Triolle)",
+      "date": "July 2024",
+      "urls": [
+        "https://vie-publique.fr/files/rapport/pdf/295386.pdf"
+      ]
+    },
+    "f11:S38": {
+      "id": "f11:S38",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Insee (A. Cazenave-Lacroutz, A. Godzinski)",
+      "title": "Le jour de carence dans la fonction publique de l'État : moins d'absences courtes, plus d'absences longues, Insee Analyses n° 36",
+      "date": "2017-11",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/3181789"
+      ]
+    },
+    "f11:S39": {
+      "id": "f11:S39",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Public Sénat; Acteurs publics (press)",
+      "title": "Réduction du nombre de fonctionnaires : le virage à 180 degrés de Gabriel Attal; Gabriel Attal propose 100 000 fonctionnaires en moins…",
+      "date": "2026-07-03",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/reduction-de-nombre-de-fonctionnaires-le-virage-a-180-degres-de-gabriel-attal",
+        "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/"
+      ]
+    },
+    "f11:S40": {
+      "id": "f11:S40",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Insee",
+      "title": "Les naissances en 2025 et en séries longues, Insee Résultats (definitive: 643,905 births)",
+      "date": "2026-07-06",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/9000195"
+      ]
+    },
+    "f11:S41": {
+      "id": "f11:S41",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Fondation iFRAP (liberal)",
+      "title": "Macron, Le Pen, Zemmour, Mélenchon : le coût de leur programme pour les finances publiques",
+      "date": "2022-04-07",
+      "urls": [
+        "https://www.ifrap.org/budget-et-fiscalite/macron-le-pen-zemmour-melenchon-le-cout-de-leur-programme-pour-les-finances-publiques"
+      ]
+    },
+    "f11:S42": {
+      "id": "f11:S42",
+      "type": "publication",
+      "research_file": "11-2027-candidate-programs-costing.md",
+      "institution": "Insee",
+      "title": "La flambée des prix de l'énergie : un effet sur l'inflation réduit de moitié par le « bouclier tarifaire », Insee Analyses n° 75",
+      "date": "2022-09",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/6524161"
+      ]
+    },
+    "f15:O1": {
+      "id": "f15:O1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "OECD",
+      "title": "International Migration Outlook 2021, ch. 4 \"The fiscal impact of immigration in OECD countries since the mid-2000s\" (Damas de Matos)",
+      "date": "Oct 2021",
+      "urls": [
+        "https://www.oecd.org/en/publications/international-migration-outlook-2021_29f23e9d-en/full-report/component-8.html"
+      ]
+    },
+    "f15:O2": {
+      "id": "f15:O2",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "OECD StatLinks (xlsx, v1 28 Oct 2021)",
+      "title": "Table 4.1; 4.2; 4.3; 4.6; Annex 4.A.3; 4.A.4; 4.A.7",
+      "date": "Oct 2021",
+      "urls": [
+        "https://stat.link/1jovf5",
+        "https://stat.link/hsu5gq",
+        "https://stat.link/xtnvok",
+        "https://stat.link/v56fn7",
+        "https://stat.link/riasgf",
+        "https://stat.link/d7pb0g",
+        "https://stat.link/rxs4jb"
+      ]
+    },
+    "f15:C1": {
+      "id": "f15:C1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "CEPII (public research center)",
+      "title": "Chojnicki, Ragot, Sokhna, L'impact budgétaire de 30 ans d'immigration en France : (I) une approche comptable, WP 2018-04",
+      "date": "Apr 2018",
+      "urls": [
+        "http://www.cepii.fr/PDF_PUB/wp/2018/wp2018-04.pdf"
+      ]
+    },
+    "f15:C2": {
+      "id": "f15:C2",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "CEPII",
+      "title": "La Lettre du CEPII no. 394, L'impact sur les finances publiques de 30 ans d'immigration en France",
+      "date": "Dec 2018",
+      "urls": [
+        "http://www.cepii.fr/PDF_PUB/lettre/2018/let394.pdf"
+      ]
+    },
+    "f15:C3": {
+      "id": "f15:C3",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "CEPII",
+      "title": "Chojnicki & Ragot, La Lettre du CEPII no. 311, L'immigration peut-elle sauver notre système de protection sociale ?",
+      "date": "15 Jun 2011",
+      "urls": [
+        "http://www.cepii.fr/PDF_PUB/lettre/2011/let311.pdf"
+      ]
+    },
+    "f15:A1": {
+      "id": "f15:A1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Academic",
+      "title": "d'Albis, Boubtane, Coulibaly, \"Macroeconomic evidence suggests that asylum seekers are not a 'burden' for Western European countries\", Science Advances 4(6) eaaq0883",
+      "date": "Jun 2018",
+      "urls": [
+        "https://www.science.org/doi/10.1126/sciadv.aaq0883",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6010334/"
+      ]
+    },
+    "f15:I1": {
+      "id": "f15:I1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Insee",
+      "title": "L'essentiel sur... les immigrés et les étrangers",
+      "date": "25 Jun 2026",
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/3633212"
+      ]
+    },
+    "f15:E1": {
+      "id": "f15:E1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Eurostat",
+      "title": "migr_pop3ctb, population by country of birth, 1 Jan",
+      "date": "updated 25 Sep 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/migr_pop3ctb/default/table"
+      ]
+    },
+    "f15:B1": {
+      "id": "f15:B1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Direction du Budget / DSS",
+      "title": "PLF 2027, Projet annuel de performances, programme 183 \"Protection maladie\"",
+      "date": "1 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/33907"
+      ]
+    },
+    "f15:S1": {
+      "id": "f15:S1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Senate, finance committee",
+      "title": "Rapport général no. 139 (2025-2026), t. III annex 27 \"Santé\" (V. Delahaye)",
+      "date": "24 Nov 2025",
+      "urls": [
+        "https://www.senat.fr/rap/l25-139-327/l25-139-3272.html"
+      ]
+    },
+    "f15:CC1": {
+      "id": "f15:CC1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Cour des comptes",
+      "title": "L'entrée, le séjour et le premier accueil des personnes étrangères (report and synthesis)",
+      "date": "5 May 2020",
+      "urls": [
+        "https://www.ccomptes.fr/fr/publications/lentree-le-sejour-et-le-premier-accueil-des-personnes-etrangeres",
+        "https://www.ccomptes.fr/sites/default/files/2023-10/20200505-synthese-entree-sejour-premier-accueil-personnes-etrangeres_0.pdf"
+      ]
+    },
+    "f15:CC2": {
+      "id": "f15:CC2",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Cour des comptes",
+      "title": "La politique de lutte contre l'immigration irrégulière",
+      "date": "4 Jan 2024",
+      "urls": [
+        "https://www.ccomptes.fr/fr/publications/la-politique-de-lutte-contre-limmigration-irreguliere"
+      ]
+    },
+    "f15:CO1": {
+      "id": "f15:CO1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Conseil constitutionnel",
+      "title": "Decision 2024-6 RIP",
+      "date": "11 Apr 2024",
+      "urls": [
+        "https://www.conseil-constitutionnel.fr/decision/2024/20246RIP.htm"
+      ]
+    },
+    "f15:CO2": {
+      "id": "f15:CO2",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Conseil constitutionnel",
+      "title": "Decision 2023-863 DC (immigration law)",
+      "date": "25 Jan 2024",
+      "urls": [
+        "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm"
+      ]
+    },
+    "f15:P1": {
+      "id": "f15:P1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Rassemblement national (party)",
+      "title": "Contre-budget 2026",
+      "date": "24 Oct 2025 (PDF metadata)",
+      "urls": [
+        "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf"
+      ]
+    },
+    "f15:T1": {
+      "id": "f15:T1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Institut de l'Entreprise (business-funded think tank)",
+      "title": "Contre-budget du RN : 140 milliards affichés, moins de 10 milliards crédibles, note de contexte",
+      "date": "6 Oct 2026",
+      "urls": [
+        "https://www.institut-entreprise.fr/wp-content/uploads/2026/10/Analyse-primaire-contre-budget-RN-Note-de-contexte-IDEP.pdf"
+      ]
+    },
+    "f15:T2": {
+      "id": "f15:T2",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Institut Montaigne (business-funded, liberal-centrist)",
+      "title": "Législatives 2024 – Chiffrage global des programmes",
+      "date": "5 Jul 2024",
+      "urls": [
+        "https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrage-global-des-programmes"
+      ]
+    },
+    "f15:N1": {
+      "id": "f15:N1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Public Sénat (press)",
+      "title": "\"140 milliards d'euros d'économies d'ici 2032...\"",
+      "date": "6 Oct 2026",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f"
+      ]
+    },
+    "f15:N2": {
+      "id": "f15:N2",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Public Sénat (press)",
+      "title": "Retailleau, plan of about 200 bn of savings",
+      "date": "12 Oct 2026",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu"
+      ]
+    },
+    "f15:N3": {
+      "id": "f15:N3",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "Banque des Territoires (press, ⚠)",
+      "title": "\"Aide médicale d'État : adaptable mais pas condamnable, selon le rapport Évin-Stefanini\"",
+      "date": "Dec 2023",
+      "urls": [
+        "https://www.banquedesterritoires.fr/aide-medicale-detat-adaptable-mais-pas-condamnable-selon-le-rapport-evin-stefanini"
+      ]
+    },
+    "f15:L1": {
+      "id": "f15:L1",
+      "type": "publication",
+      "research_file": "15-immigration-and-public-finances.md",
+      "institution": "EU",
+      "title": "Council Directive 2003/109/EC (long-term residents), as cited by T1 (not opened)",
+      "date": "25 Nov 2003",
+      "urls": [
+        "https://eur-lex.europa.eu/eli/dir/2003/109/oj"
+      ]
+    },
+    "f16:S1": {
+      "id": "f16:S1",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "OECD Development Assistance Committee",
+      "title": "ODA in 2025 - preliminary data (xlsx, sheet ADV) and DAC exchange rates; press release International aid fell sharply in 2025",
+      "date": "9 Apr 2026",
+      "urls": [
+        "https://webfs.oecd.org/oda/DataCollection/Resources/2025-preliminary-data.xlsx",
+        "https://webfs.oecd.org/oda/DataCollection/Resources/Exchange-rates.xlsx",
+        "https://www.oecd.org/en/about/news/press-releases/2026/04/international-aid-fell-sharply-in-2025-says-oecd.html"
+      ]
+    },
+    "f16:S2": {
+      "id": "f16:S2",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Ministère de l'Économie / Assemblée nationale",
+      "title": "Projet de loi de finances pour 2027 (AN no. 3210): art. 42 VI B (VAT fraction for public broadcasting), art. 55 (PSR-UE), exposé général, État B (p. 275 ff.), État D, comparison tables",
+      "date": "1 Oct 2026",
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf"
+      ]
+    },
+    "f16:S3": {
+      "id": "f16:S3",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Direction du Budget",
+      "title": "PLF 2027 annex (Jaune) Relations financières avec l'Union européenne, p. 82, 149-151, 156-160, 176, 181",
+      "date": "posted 12 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34459",
+        "https://www.budget.gouv.fr/documentation/documents-budgetaires/exercice-2027/projet-loi-finances-les/plf-2027-jaunes-budgetaires"
+      ]
+    },
+    "f16:S4": {
+      "id": "f16:S4",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Direction du Budget",
+      "title": "PLF 2027 Jaune Opérateurs de l'État, p. 12, 17, 22, 24",
+      "date": "12 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34432"
+      ]
+    },
+    "f16:S5": {
+      "id": "f16:S5",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Sénat, commission d'enquête sur les missions des agences, opérateurs et organismes consultatifs de l'État (rapporteure C. Lavarde, LR)",
+      "title": "Report no. 807 (2024-2025), synthesis L'essentiel",
+      "date": "1 Jul 2025 (filed)",
+      "urls": [
+        "https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf",
+        "https://www.senat.fr/rap/r24-807-1/r24-807-10.html"
+      ]
+    },
+    "f16:S6": {
+      "id": "f16:S6",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Sénat, commission d'enquête sur les cabinets de conseil (rapporteure É. Assassi)",
+      "title": "Report no. 578 (2021-2022), synthesis",
+      "date": "16 Mar 2022",
+      "urls": [
+        "https://www.senat.fr/rap/r21-578-1/r21-578-1-syn.pdf"
+      ]
+    },
+    "f16:S7": {
+      "id": "f16:S7",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Direction du Budget",
+      "title": "PLF 2027 Jaune Recours aux cabinets de conseil, p. 8, 15",
+      "date": "13 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34513"
+      ]
+    },
+    "f16:S8": {
+      "id": "f16:S8",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Direction du Budget",
+      "title": "PLF 2027 Jaune Personnels affectés dans les cabinets ministériels (PDF p. 6-8, 12) and xlsx annexes 1 and 2",
+      "date": "13 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34507",
+        "https://www.budget.gouv.fr/documentation/fid-download/85513",
+        "https://www.budget.gouv.fr/documentation/fid-download/85516"
+      ]
+    },
+    "f16:S9": {
+      "id": "f16:S9",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Direction du Budget",
+      "title": "PLF 2027 Jaune Effort financier de l'État en faveur des associations, p. 9-12, 18",
+      "date": "12 Oct 2026",
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34417"
+      ]
+    },
+    "f16:S10": {
+      "id": "f16:S10",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "European Commission (DG BUDG)",
+      "title": "EU spending and revenue 2000-2025 (xlsx, sheet 2025)",
+      "date": "accessed 2026-10-25",
+      "urls": [
+        "https://commission.europa.eu/strategy-and-policy/eu-budget/long-term-eu-budget/2021-2027/spending-and-revenue_en"
+      ]
+    },
+    "f16:S11": {
+      "id": "f16:S11",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Eurostat",
+      "title": "gov_10a_exp (COFOG 01.02, 08.3), nama_10_gdp",
+      "date": "Oct 2026 extraction",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f16:S12": {
+      "id": "f16:S12",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Institut Montaigne (business-funded, liberal-centrist)",
+      "title": "Législatives 2024 - Chiffrage global des programmes",
+      "date": "5 Jul 2024",
+      "urls": [
+        "https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrage-global-des-programmes"
+      ]
+    },
+    "f16:S13": {
+      "id": "f16:S13",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "iFRAP (liberal think tank)",
+      "title": "Réduire les subventions aux associations pour 1,6 milliard d'euros d'économies",
+      "date": "11 Jun 2024",
+      "urls": [
+        "https://www.ifrap.org/budget-et-fiscalite/reduire-les-subventions-aux-associations-pour-16-milliard-deuros-deconomies"
+      ]
+    },
+    "f16:S14": {
+      "id": "f16:S14",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "C. Évin and P. Stefanini, with IGA and IGAS (government-commissioned)",
+      "title": "Rapport sur l'aide médicale de l'État (primary, 106 p.), https://www.vie-publique.fr/files/rapport/pdf/292122.pdf (local: data/raw/16_factcheck/evin_stefanini_292122.pdf, added 2026-10-25); press coverage: LCP, Aide médicale d'État : un dispositif utile et globalement maîtrisé; Le Quotidien du Médecin; iFRAP",
+      "date": "Dec 2023",
+      "urls": [
+        "https://lcp.fr/actualites/aide-medicale-d-etat-un-dispositif-utile-et-globalement-maitrise-qui-merite-d-etre",
+        "https://diabetologie-endocrinologie.lequotidiendumedecin.fr/liberal-soins-de-ville/exercice/lame-un-dispositif-sanitaire-utile-mais-adaptable-selon-le-rapport-evin-stefanini",
+        "https://www.ifrap.org/emploi-et-politiques-sociales/ame-388-dallocataires-et-604-dayants-droits-depuis-2015"
+      ]
+    },
+    "f16:S15": {
+      "id": "f16:S15",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Carenews (reporting Coordination SUD, NGO platform)",
+      "title": "Ce que prévoit le projet de loi de finances de 2027 pour les associations…",
+      "date": "2 Oct 2026",
+      "urls": [
+        "https://www.carenews.com/carenews-info/news/ce-que-prevoit-le-projet-de-loi-de-finances-de-2027-pour-les-associations-et-l"
+      ]
+    },
+    "f16:S16": {
+      "id": "f16:S16",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Public Sénat; Acteurs publics (press)",
+      "title": "Lavarde quote on agencies; Effectifs, dotations : les cabinets du gouvernement Lecornu ont réduit la voilure en 2026",
+      "date": "Jul 2025; 13 Oct 2026",
+      "urls": [
+        "https://www.publicsenat.fr/actualites/parlementaire/tous-ceux-qui-annoncent-des-milliards-deuros-deconomies-en-parlant-des-agences-mentent-un-peu-aux-francais-pointe-la-senatrice-christine-lavarde",
+        "https://acteurspublics.fr/articles/effectifs-dotations-les-cabinets-du-gouvernement-lecornu-ont-reduit-la-voilure-en-2026/"
+      ]
+    },
+    "f16:S17": {
+      "id": "f16:S17",
+      "type": "publication",
+      "research_file": "16-oda-eu-contribution-and-other-popular-targets.md",
+      "institution": "Assemblée nationale, commission des finances (rapporteur J.-P. Mattei)",
+      "title": "Minutes, examination of bill no. 2445 on the oversight of State agencies and operators",
+      "date": "25 Feb 2026",
+      "urls": [
+        "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion_fin/l17cion_fin2526071_compte-rendu.pdf"
+      ]
+    },
+    "f17:S1": {
+      "id": "f17:S1",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Haut Conseil des finances publiques (HCFP)",
+      "title": "Avis n° HCFP-2026-5 relatif aux projets de lois de finances et de financement de la sécurité sociale pour l'année 2027, §36 and fn. 9",
+      "date": "25 Sep 2026",
+      "urls": [
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf"
+      ]
+    },
+    "f17:S2": {
+      "id": "f17:S2",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Blanchard, O. & Leigh, D. (IMF)",
+      "title": "Growth Forecast Errors and Fiscal Multipliers, NBER WP 18779 / IMF WP 13/1; AER 103(3): 117-120",
+      "date": "Jan-May 2013",
+      "urls": [
+        "https://www.nber.org/papers/w18779"
+      ]
+    },
+    "f17:S2b": {
+      "id": "f17:S2b",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "IMF",
+      "title": "World Economic Outlook, Oct 2012, Box 1.1 \"Are We Underestimating Short-Term Fiscal Multipliers?\"",
+      "date": "Oct 2012",
+      "urls": [
+        "https://www.imf.org/en/Publications/WEO/Issues/2016/12/31/World-Economic-Outlook-October-2012-Coping-with-High-Debt-and-Sluggish-Growth-25845"
+      ]
+    },
+    "f17:S3": {
+      "id": "f17:S3",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Guajardo, J., Leigh, D. & Pescatori, A. (IMF)",
+      "title": "Expansionary Austerity: New International Evidence, IMF WP 11/158; published as Expansionary Austerity? International Evidence, JEEA 12(4): 949-968",
+      "date": "Jul 2011; Aug 2014",
+      "urls": [
+        "https://www.imf.org/external/pubs/ft/wp/2011/wp11158.pdf",
+        "https://ideas.repec.org/a/bla/jeurec/v12y2014i4p949-968.html"
+      ]
+    },
+    "f17:S4": {
+      "id": "f17:S4",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Alesina, A., Favero, C. & Giavazzi, F. (Bocconi/Harvard; \"expansionary austerity\" school)",
+      "title": "What Do We Know About the Effects of Austerity?, NBER WP 24246 (AEA P&P 108, 2018); book Austerity: When It Works and When It Doesn't, Princeton UP",
+      "date": "Jan 2018; 2019",
+      "urls": [
+        "https://www.nber.org/papers/w24246"
+      ]
+    },
+    "f17:S5": {
+      "id": "f17:S5",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Cour des comptes",
+      "title": "La situation et les perspectives des finances publiques (RSPFP), ch. 3, pp. 96-140",
+      "date": "25 Jun 2026",
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf"
+      ]
+    },
+    "f17:S6": {
+      "id": "f17:S6",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "DG Trésor & Insee (Dufernez, Elezaar, Leblanc, Masson, Partouche; Bardaji, Campagne, Khder, Lafféter, Simon) (corrected 2026-10-25: was \"Bardaji et al.\"; Dufernez is listed first on the DG Trésor edition)",
+      "title": "Le modèle macroéconométrique Mésange : réestimation et nouveautés, Document de travail DG Trésor n° 2017/04 (Insee G2017/04), Ch. 4",
+      "date": "May 2017",
+      "urls": [
+        "https://www.tresor.economie.gouv.fr/Articles/2017/05/12/le-modele-macroeconometrique-mesange-reestimation-et-nouveautes",
+        "https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62"
+      ]
+    },
+    "f17:S8": {
+      "id": "f17:S8",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "OFCE (Madec, Plane, Sampognaro)",
+      "title": "Budget 2026 : un déficit de compromis, Policy Brief n° 154, Table 4",
+      "date": "26 Feb 2026 (modified 1 Mar 2026)",
+      "urls": [
+        "https://ofce.github.io/budget2026/"
+      ]
+    },
+    "f17:S9": {
+      "id": "f17:S9",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "OFCE for the HCFiPS (reproduced by the COR)",
+      "title": "Les effets macroéconomiques de leviers possibles de redressement des comptes sociaux - 10 variantes à partir du modèle e-mod.fr de l'OFCE (HCFiPS report Pour des finances sociales soutenables, adaptées aux nouveaux défis, vol. 2)",
+      "date": "OFCE report Oct 2021; HCFiPS report Jan 2022; COR session 27 Jan 2022",
+      "urls": [
+        "https://www.cor-retraites.fr/sites/default/files/2022-01/Doc13_Effets%20macro_OFCE.pdf"
+      ]
+    },
+    "f17:S10": {
+      "id": "f17:S10",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Cour des comptes",
+      "title": "Situation financière et perspectives du système de retraites, Table 4, pp. 65-67",
+      "date": "20 Feb 2025",
+      "urls": [
+        "https://www.vie-publique.fr/files/rapport/pdf/297428.pdf"
+      ]
+    },
+    "f17:S11": {
+      "id": "f17:S11",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "ECB / ESCB (Kilponen, Pisani, Schmidt et al.; Banque de France: Lemoine)",
+      "title": "Comparing Fiscal Multipliers across Models and Countries in Europe, ECB WP 1760, Tables 1-6 and A1 (published as Comparing Fiscal Consolidation Multipliers across Models in Europe, IJCB 15(3): 285-320, 2019; journal reference confirmed via the bibliography of S12)",
+      "date": "Mar 2015",
+      "urls": [
+        "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf"
+      ]
+    },
+    "f17:S12": {
+      "id": "f17:S12",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Banque de France (Aldama, Gaulier, Lemoine, Robert, Turunen, Zhutova)",
+      "title": "The EA-BDF Model and Government Spending Multipliers in a Monetary Union, WP 883, section 5",
+      "date": "Sep 2022",
+      "urls": [
+        "https://www.banque-france.fr/system/files/2023-01/wp883.pdf"
+      ]
+    },
+    "f17:S13": {
+      "id": "f17:S13",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "CAE (Auclert, Philippon, Ragot)",
+      "title": "Fiscal Consolidation: An Optimal Control Approach (Consolider les finances publiques : quelques enseignements simples de la théorie du contrôle optimal, consolidating public finances: some simple lessons from optimal control theory), Focus n° 108, companion to CAE Note n° 82. X. Ragot is also president of the OFCE",
+      "date": "24 Jul 2024",
+      "urls": [
+        "https://www.cae-eco.fr/static/pdf/focus-108-240712-en.pdf"
+      ]
+    },
+    "f17:S14": {
+      "id": "f17:S14",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Banque de France",
+      "title": "Projections macroéconomiques - France, interim projections",
+      "date": "25 Mar 2026",
+      "urls": [
+        "https://www.banque-france.fr/system/files/2026-03/Projections-macroeconomiques_mars-2026_web2.pdf"
+      ]
+    },
+    "f17:S15": {
+      "id": "f17:S15",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Mission on public-finance transparency (Jaravel, Ragot, Tavernier, Valla), hosted by the IGF",
+      "title": "Mission sur la transparence des finances publiques : situation tendancielle à horizon 2030",
+      "date": "Jul 2026",
+      "urls": [
+        "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf"
+      ]
+    },
+    "f17:S16": {
+      "id": "f17:S16",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Gechert, S. (IMK, Hans-Böckler Foundation, trade-union funded)",
+      "title": "What Fiscal Policy Is Most Effective? A Meta Regression Analysis, IMK WP 117 (published in Oxford Economic Papers 67(3), 2015)",
+      "date": "Sep 2013",
+      "urls": [
+        "https://www.imk-boeckler.de/fpdf/HBS-005632/p_imk_wp_117_2013.pdf"
+      ]
+    },
+    "f17:S17": {
+      "id": "f17:S17",
+      "type": "publication",
+      "research_file": "17-fiscal-multipliers-for-simulator.md",
+      "institution": "Ramey, V.",
+      "title": "Ten Years After the Financial Crisis: What Have We Learned from the Renaissance in Fiscal Research?, Journal of Economic Perspectives 33(2): 89-114",
+      "date": "Spring 2019",
+      "urls": [
+        "https://www.aeaweb.org/articles?id=10.1257/jep.33.2.89"
+      ]
+    },
+    "f20:ref": {
+      "id": "f20:ref",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "00-reference-figures.md (canonical values, 2026-10-25), and the sources listed in its table: Eurostat gov_10a_main and gov_10dd_edpt1 (21 Oct 2026) https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table ; Insee, Insee Première 2106 (29 May 2026) https://www.insee.fr/fr/statistique",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table",
+        "https://www.insee.fr/fr/statistiques/8997691",
+        "https://www.insee.fr/fr/statistiques/2381412",
+        "https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf",
+        "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_2026_def.pdf"
+      ]
+    },
+    "f20:cofog": {
+      "id": "f20:cofog",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Eurostat gov_10a_exp, COFOG, general government, 2024 provisional (21 Oct 2026). https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table ; files data/eurostat_gov_10a_exp_pctot.csv, data/eurostat_gov_10a_exp_mioeur.csv; file 01 §4.1.",
+      "date": null,
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table"
+      ]
+    },
+    "f20:conv": {
+      "id": "f20:conv",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Own computation, data/20_pedagogical_conversions.csv (2026-10-25), from canonical values in file 00.",
+      "date": null,
+      "urls": []
+    },
+    "f20:f01": {
+      "id": "f20:f01",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "01-spending-overview.md (Insee Insee Première 2093, Feb 2026; Eurostat COFOG).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f02": {
+      "id": "f20:f02",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "02-social-protection.md (Drees, La protection sociale en France et en Europe en 2024, 17 Dec 2025, https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/251217-protection-sociale-france-europe-2024 ; Drees health accounts 2026 edition; CCSS Oct 2026).",
+      "date": null,
+      "urls": [
+        "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/panoramas-de-la-drees/251217-protection-sociale-france-europe-2024"
+      ]
+    },
+    "f20:f03": {
+      "id": "f20:f03",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "03-pensions.md (COR June 2026; Cour des comptes Feb 2025; Fipeco June 2024; Institut Montaigne 3 Jul 2024).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f04": {
+      "id": "f20:f04",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "04-civil-service-and-outcomes.md (DGAFP RAEFP 2026; Eurostat gov_10a_main, crim_just_job; OECD Government at a Glance 2025; OECD Education at a Glance 2026).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f05": {
+      "id": "f20:f05",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "05-taxation.md (Insee tables 3.216/3.217, 28 Aug 2026; OECD Revenue Statistics 2025; OECD Taxing Wages 2026; DGFiP Statistiques n°41; Insee Analyses n°118, 16 Apr 2026; IPP Note n°92; Cour des comptes NEB 2025).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f06": {
+      "id": "f20:f06",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "06-deficit-and-debt.md (Insee; Eurostat EDP; Cour des comptes RSPFP June 2026; PLF 2027 https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf ; HCFP 2026-5; EC Debt Sustainability Monitor 2025).",
+      "date": null,
+      "urls": [
+        "https://www.assemblee-nationale.fr/dyn/17/textes/l17b3210_projet-loi.pdf"
+      ]
+    },
+    "f20:f07": {
+      "id": "f20:f07",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "07-proposals-costing.md (Senate report n° 689, 4 Jun 2025; IPP June 2026; Institut Montaigne 2024; CAE Focus 118; Cour des comptes 15 Jul 2024 and 15 Mar 2024).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f08": {
+      "id": "f20:f08",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "08-revenue-cuts-since-2017-and-structural.md (OFCE PB 146; Rexecode DT 105; Senate report 808; HCSP July 2026; Bozio-Wasmer 2024; DG Trésor note for HCFiPS Aug 2024; Eurostat lfsi_emp_a, nama_10_lp_ulc; Insee national balance sheet 30 Jul 2026; NATO July 2026; Pisani-Ferry and Mahfouz 2023).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f09": {
+      "id": "f20:f09",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "09-international-comparison-tables.md (Eurostat, OECD; computed group statistics).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f10": {
+      "id": "f20:f10",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "10-counterarguments-and-debates.md (HCSP July 2026; OFCE; Cour des comptes; IMF; Eurostat computed series).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f11": {
+      "id": "f20:f11",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "11-2027-candidate-programs-costing.md (LFI 14 Oct 2026; RN 6 Oct 2026; LR 12 Oct 2026; Institut de l'Entreprise via PGE; IPP Note 125; DGEC weekly fuel bulletin 16 Oct 2026).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f12": {
+      "id": "f20:f12",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "12-health-hospital-outcomes-international.md (Eurostat SHA hlth_sha11_; OECD Health at a Glance 2025; WHO GHED; Drees; Cour des comptes April 2026).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f13": {
+      "id": "f20:f13",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "13-civil-service-and-education-intl-completion.md (OECD PISA 2025 Results, Volume I, 8 Sep 2026, https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html ; IEA TIMSS 2023, PIRLS 2021; PLF 2027 staffing plan).",
+      "date": null,
+      "urls": [
+        "https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en/full-report.html"
+      ]
+    },
+    "f20:f14": {
+      "id": "f20:f14",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "14-public-perception-orders-of-magnitude.md (Elabe, Ifop, Odoxa, Drees Baromètre, Cevipof; academic literature).",
+      "date": null,
+      "urls": []
+    },
+    "f20:f15": {
+      "id": "f20:f15",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "15-immigration-and-public-finances.md (OECD International Migration Outlook 2021, ch. 4, https://www.oecd.org/en/publications/international-migration-outlook-2021_29f23e9d-en/full-report/component-8.html ; CEPII Lettres 311 and 394; PAP 2027 programme 183, https://www.budget.gouv.fr/documentation/fi",
+      "date": null,
+      "urls": [
+        "https://www.oecd.org/en/publications/international-migration-outlook-2021_29f23e9d-en/full-report/component-8.html",
+        "https://www.budget.gouv.fr/documentation/file-download/33907",
+        "https://www.vie-publique.fr/files/rapport/pdf/292122.pdf"
+      ]
+    },
+    "f20:f16": {
+      "id": "f20:f16",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "16-oda-eu-contribution-and-other-popular-targets.md (OECD-DAC preliminary 2025 data, 9 Apr 2026; PLF 2027 and its Jaunes, incl. Relations financières avec l'Union européenne, https://www.budget.gouv.fr/documentation/file-download/34459 ; Senate reports 578 (2022) and 807 (2025); European Commission ",
+      "date": null,
+      "urls": [
+        "https://www.budget.gouv.fr/documentation/file-download/34459"
+      ]
+    },
+    "f20:f17": {
+      "id": "f20:f17",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "17-fiscal-multipliers-for-simulator.md (HCFP-2026-5 §36, 25 Sep 2026; CAE Focus 108, 24 Jul 2024, https://www.cae-eco.fr/static/pdf/focus-108-240712-en.pdf ; DG Trésor/Insee Mésange 2017; OFCE e-mod.fr for the HCFiPS, 2021, and Policy Brief 154, 2026; ECB WP 1760; Banque de France WP 883; Cour des c",
+      "date": null,
+      "urls": [
+        "https://www.cae-eco.fr/static/pdf/focus-108-240712-en.pdf"
+      ]
+    },
+    "f20:f18": {
+      "id": "f20:f18",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "18-po-vs-oecd-and-interest-bridges.md (Insee national accounts tables 3.201-3.217, May 2026, https://www.insee.fr/fr/statistiques/8988845 ; Eurostat gov_10a_taxag, gov_10a_main, hlth_sha11_hf; OECD Revenue Statistics 2025; Cour des comptes RSPFP June 2026; PLF 2027).",
+      "date": null,
+      "urls": [
+        "https://www.insee.fr/fr/statistiques/8988845"
+      ]
+    },
+    "f20:cour24": {
+      "id": "f20:cour24",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Cour des comptes, La situation et les perspectives des finances publiques (15 Jul 2024). https://www.ccomptes.fr/sites/default/files/2024-09/20240715-RSPFP-2024.pdf",
+      "date": null,
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2024-09/20240715-RSPFP-2024.pdf"
+      ]
+    },
+    "f20:cour26": {
+      "id": "f20:cour26",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Cour des comptes, La situation et les perspectives des finances publiques (25 Jun 2026). https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf",
+      "date": null,
+      "urls": [
+        "https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf"
+      ]
+    },
+    "f20:cour-bouclier": {
+      "id": "f20:cour-bouclier",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Cour des comptes, energy price shields report (15 Mar 2024), via file 07 [S12] and file 11 [S19].",
+      "date": null,
+      "urls": []
+    },
+    "f20:igf": {
+      "id": "f20:igf",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Mission on public-finance transparency (Jaravel, Ragot, Tavernier, Valla), IGF, July 2026. https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf",
+      "date": null,
+      "urls": [
+        "https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf"
+      ]
+    },
+    "f20:hcsp-aides": {
+      "id": "f20:hcsp-aides",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "HCSP report to the Prime Minister on aid to business (July 2026), via file 08.",
+      "date": null,
+      "urls": []
+    },
+    "f20:cae118": {
+      "id": "f20:cae118",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "CAE, Focus n°118 (July 2025). https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf",
+      "date": null,
+      "urls": [
+        "https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf"
+      ]
+    },
+    "f20:ipp125": {
+      "id": "f20:ipp125",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "IPP Note n°125, Chapelle and Fack (May 2026), via file 11 [S18].",
+      "date": null,
+      "urls": []
+    },
+    "f20:elabe26": {
+      "id": "f20:elabe26",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Elabe for Les Echos, Les Français et la dette publique (fieldwork 1-2 Sep 2026, n = 1,005). https://elabe.fr/fichier-pdf/13231-20260903_elabe_les-echos_les-francais-et-la-dette-publique/",
+      "date": null,
+      "urls": [
+        "https://elabe.fr/fichier-pdf/13231-20260903_elabe_les-echos_les-francais-et-la-dette-publique/"
+      ]
+    },
+    "f20:ipsos21": {
+      "id": "f20:ipsos21",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Ipsos (M. Gallard, L. Boisson), Enquête sur la perception de la dette publique par les Français, fieldwork 18-21 Jan 2021, n = 1,000 adults 18+, online access panel, quotas. Published as attachment 4 to vie-publique report 279092: https://www.vie-publique.fr/files/rapports/fichiers_joints/279092-pi%",
+      "date": null,
+      "urls": [
+        "https://www.vie-publique.fr/files/rapports/fichiers_joints/279092-pi%C3%A8ce%20jointe%204.pdf",
+        "https://www.vie-publique.fr/rapport/279092-commission-sur-lavenir-des-finances-publiques"
+      ]
+    },
+    "f20:hexagone": {
+      "id": "f20:hexagone",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Observatoire Hexagone, Système de retraites : les Français divisés mais réformistes (24 Mar 2025), Harris Interactive poll, n = 1,101. https://observatoire-hexagone.org/wp-content/uploads/2025/03/20250224_Hexagone_Retraites-2.pdf (downloaded to data/raw/20_perception/hexagone_retraites_2025-02.pdf).",
+      "date": null,
+      "urls": [
+        "https://observatoire-hexagone.org/wp-content/uploads/2025/03/20250224_Hexagone_Retraites-2.pdf",
+        "https://observatoire-hexagone.org/wp-content/uploads/2025/03/Rapport-Toluna-Harris-Les-Francais-et-le-systeme-de-retraite-Hexagone.pdf"
+      ]
+    },
+    "f20:kns": {
+      "id": "f20:kns",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Kuziemko, Norton, Saez, Stantcheva (2015), \"How Elastic Are Preferences for Redistribution?\", American Economic Review 105(4): 1478-1508 (via file 14).",
+      "date": null,
+      "urls": []
+    },
+    "f20:stantcheva": {
+      "id": "f20:stantcheva",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Stantcheva (2021), \"Understanding Tax Policy: How do People Reason?\", Quarterly Journal of Economics 136(4): 2309-2369 (via file 14).",
+      "date": null,
+      "urls": []
+    },
+    "f20:douenne": {
+      "id": "f20:douenne",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Douenne and Fabre (2022), \"Yellow Vests, Pessimistic Beliefs, and Carbon Tax Aversion\", AEJ: Economic Policy 14(1): 81-110 (via file 14).",
+      "date": null,
+      "urls": []
+    },
+    "f20:ciani": {
+      "id": "f20:ciani",
+      "type": "footnote",
+      "research_file": "20-pedagogical-approach.md",
+      "institution": null,
+      "title": "Ciani, Fréget, Manfredi (2021), OECD Papers on Well-being and Inequalities, meta-analysis of informational experiments (via file 14).",
+      "date": null,
+      "urls": []
+    },
+    "f03:cor26": {
+      "id": "f03:cor26",
+      "type": "publication",
+      "research_file": "03-pensions.md",
+      "institution": "Conseil d'orientation des retraites (COR)",
+      "title": "Évolutions et perspectives des retraites en France - Rapport annuel",
+      "date": "June 2026",
+      "urls": [
+        "https://www.cor-retraites.fr/sites/default/files/2026-06/RA_2026_def.pdf"
+      ]
+    },
+    "f08:ipp81": {
+      "id": "f08:ipp81",
+      "type": "publication",
+      "research_file": "08-revenue-cuts-since-2017-and-structural.md",
+      "institution": "Institut des politiques publiques (IPP)",
+      "title": "Redistributive effects of the socio-fiscal measures implemented during the 2017-2022 five-year term, Note 81",
+      "date": "March 2022",
+      "urls": [
+        "https://www.ipp.eu/en/publication/redistributive-effects-of-the-socio-fiscal-measures-implemented-during-the-2017-2022-five-year-term/"
+      ]
+    },
+    "f08:bw2024": {
+      "id": "f08:bw2024",
+      "type": "publication",
+      "research_file": "08-revenue-cuts-since-2017-and-structural.md",
+      "institution": "A. Bozio and É. Wasmer (report to the Prime Minister)",
+      "title": "Les politiques d'exonérations de cotisations sociales : une inflexion nécessaire",
+      "date": "Oct 2024",
+      "urls": [
+        "https://vie-publique.fr/files/rapport/pdf/295596.pdf"
+      ]
+    },
+    "f08:es-lp": {
+      "id": "f08:es-lp",
+      "type": "publication",
+      "research_file": "08-revenue-cuts-since-2017-and-structural.md",
+      "institution": "Eurostat",
+      "title": "nama_10_lp_ulc, labour productivity and unit labour costs",
+      "date": "22 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/nama_10_lp_ulc/default/table"
+      ]
+    },
+    "f08:es-gov": {
+      "id": "f08:es-gov",
+      "type": "publication",
+      "research_file": "08-revenue-cuts-since-2017-and-structural.md",
+      "institution": "Eurostat",
+      "title": "gov_10a_main, government revenue, expenditure and main aggregates",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table"
+      ]
+    },
+    "f01:es-silc": {
+      "id": "f01:es-silc",
+      "type": "publication",
+      "research_file": "01-spending-overview.md",
+      "institution": "Eurostat",
+      "title": "EU-SILC ilc_li02, ilc_li10, ilc_li09",
+      "date": "20 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table",
+        "https://ec.europa.eu/eurostat/databrowser/view/ilc_li10/default/table",
+        "https://ec.europa.eu/eurostat/databrowser/view/ilc_li09/default/table"
+      ]
+    },
+    "f10:S33": {
+      "id": "f10:S33",
+      "type": "publication",
+      "research_file": "10-counterarguments-and-debates.md",
+      "institution": "Eurostat",
+      "title": "EU-SILC ilc_li02, ilc_li09, ilc_li10, ilc_di11, ilc_di12",
+      "date": "20 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_li02"
+      ]
+    },
+    "f06:imf_aiv2026": {
+      "id": "f06:imf_aiv2026",
+      "type": "publication",
+      "research_file": "06-deficit-and-debt.md",
+      "institution": "International Monetary Fund (IMF)",
+      "title": "Press Release 26/255: IMF Executive Board concludes 2026 Article IV consultation with France (Board 17 Jul 2026; primary balance -1.7% and gross debt 121.1% of GDP in 2028)",
+      "date": "22 Jul 2026",
+      "urls": [
+        "https://www.imf.org/en/news/articles/2026/07/22/pr26255-france-imf-executive-board-concludes-2026-article-iv-consultation",
+        "https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission"
+      ]
+    },
+    "f10:S8": {
+      "id": "f10:S8",
+      "type": "publication",
+      "research_file": "10-counterarguments-and-debates.md",
+      "institution": "Haut-commissariat à la Stratégie et au Plan (HCSP)",
+      "title": "Focus Finances publiques : Faire des choix budgétaires à la hauteur des défis des 10 et 25 prochaines années",
+      "date": "17 Jul 2026",
+      "urls": [
+        "https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-07-17%20-%20Focus%20Finances%20publiques/HCSP-2026-FRANCE%202035-2050_Focus-Finances%20publiques_0.pdf"
+      ]
+    },
+    "f10:S30": {
+      "id": "f10:S30",
+      "type": "publication",
+      "research_file": "10-counterarguments-and-debates.md",
+      "institution": "Eurostat",
+      "title": "gov_10a_main, gov_10dd_edpt1, gov_10a_taxag",
+      "date": "21 Oct 2026",
+      "urls": [
+        "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main"
+      ]
+    },
+    "f10:S35": {
+      "id": "f10:S35",
+      "type": "publication",
+      "research_file": "10-counterarguments-and-debates.md",
+      "institution": "Agence France Trésor / Banque de France",
+      "title": "Encours de la dette négociable au 30 septembre 2026 (durée de vie moyenne)",
+      "date": "1 Oct 2026",
+      "urls": [
+        "https://www.aft.gouv.fr/fr/node/452",
+        "https://www.aft.gouv.fr/fr/principaux-chiffres-dette"
+      ]
+    }
+  }
+}

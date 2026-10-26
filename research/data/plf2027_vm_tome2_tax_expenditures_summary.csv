@@ -1,0 +1,13 @@
+# Source: PLF 2027 - Evaluation des voies et moyens Tome II - Annexe 1 Depenses fiscales (xls), budget.gouv.fr fid-download/84340, accessed 2026-10-25 via browser; sums computed by us from the 'Chiffrages' sheet (459 itemized measures; 'nc' and 'epsilon' entries counted as 0). Not the official total.
+category,n_measures,2025_realised_MEUR,2026_forecast_MEUR,2027_forecast_MEUR
+Impot sur le revenu,171,44550,44300,42008
+Impot sur le revenu et impot sur les societes,54,13894,14119,13250
+Taxe sur la valeur ajoutee,39,10950,11150,11768
+Accise sur les energies,37,9275,8472,8287
+Impot sur les societes,37,4399,3570,2707
+Droits d'enregistrement et de timbre,50,4323,4327,4327
+Autres droits,24,2643,4746,237
+Impots locaux,41,1411,1103,1101
+Autres impots directs,6,219,232,234
+TOTAL (sum of items),459,91664,92019,83919
+# Largest items (MEUR 2025/2026/2027): 200302 Credit d'impot recherche 7273/7067/7382; 110246 Credit d'impot emploi salarie a domicile 6879/7107/7117; 120401 Abattement 10% pensions 5347/5598/4715; 520110 Pacte Dutreil (DMTG) 3800/3800/3800; 120108 Exoneration epargne salariale 3077/3077/3077; 730602 TVA 10% restauration 2335/2360/2510; 730502 TVA 10% travaux 2250/2300/2470; 120146 Exoneration heures supplementaires 2212/2219/2273; 110201 Reduction d'impot dons 2171/2249/2249
