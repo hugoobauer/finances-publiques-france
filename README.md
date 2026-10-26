@@ -4,6 +4,8 @@ Base documentaire sourcée, données et contenus pédagogiques pour une platefor
 
 L'objectif : rendre concrets les ordres de grandeur de la dépense publique, des prélèvements, du déficit et de la dette, et confronter les principales propositions des programmes à ces ordres de grandeur. Chaque chiffre est sourcé, daté et rattaché à une source officielle ou reconnue (Insee, Drees, Cour des comptes, COR, HCFP, Eurostat, OCDE…). Les points de désaccord entre économistes et les meilleurs contre-arguments sont présentés de façon symétrique.
 
+> **Suivi du projet :** demande initiale, décisions, travail fait et reste à faire dans [`STATUS.md`](STATUS.md).
+
 > **Statut (octobre 2026) :** travail en cours. La base documentaire est vérifiée ; les chapitres du site sont des brouillons relus, pas encore publiés. Quelques passages attendent encore des données (voir `fr/LISEZMOI-site.md`).
 
 ## Contenu
@@ -12,7 +14,7 @@ L'objectif : rendre concrets les ordres de grandeur de la dépense publique, des
 |---|---|---|
 | [`research/`](research/) | Base documentaire : 18 dossiers thématiques (dépense, protection sociale, retraites, fonction publique et résultats, fiscalité, déficit et dette, chiffrage des propositions, comparaisons internationales, controverses…), chiffres de référence (`00-reference-figures.md`), approche pédagogique (`20-pedagogical-approach.md`), données dérivées (`data/`) et scripts (`scripts/`). Commencer par [`research/README.md`](research/README.md). | anglais |
 | [`platform/data/`](platform/data/) | Source unique de vérité du site : chiffres, étalons (« jours de dépense », € par habitant…), leviers du simulateur, quiz, propositions chiffrées, sources ; schémas JSON et script de validation. | JSON |
-| [`fr/`](fr/) | Traductions (chiffres de référence, approche pédagogique, index), glossaire et conventions éditoriales, et les 7 chapitres du récit grand public (`fr/site/chapitres/`). Commencer par [`fr/LISEZMOI-site.md`](fr/LISEZMOI-site.md). | français |
+| [`fr/`](fr/) | Traductions (chiffres de référence, approche pédagogique, index), glossaire et conventions éditoriales, et les 7 chapitres du récit grand public (`fr/site/chapitres/`).  Commencer par [`fr/LISEZMOI-site.md`](fr/LISEZMOI-site.md). | français |
 
 ## Vérifier les données
 
