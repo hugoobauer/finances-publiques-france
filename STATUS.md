@@ -2,7 +2,7 @@
 
 Ce fichier retrace le projet depuis le début : la demande initiale, les décisions prises, ce qui a été fait et ce qu'il reste à faire. Il sert de point d'entrée pour reprendre le travail.
 
-*Dernière mise à jour : 26 octobre 2026.*
+*Dernière mise à jour : 30 octobre 2026.*
 
 ---
 
@@ -58,6 +58,12 @@ Le texte original de la demande figure en annexe.
 5. **Version française.** Glossaire et conventions, traduction des chiffres de référence, de l'approche pédagogique et de l'index, et rédaction des 7 chapitres du récit grand public (`fr/site/chapitres/`).
 6. **Audits des chapitres.** Quatre relectures croisées (économiste de gauche, économiste de droite, contrôle des chiffres, éditeur grand public) : 102 remarques, appliquées en plusieurs passes, avec un plan d'ensemble pour les doublons, les arrondis et l'équilibre des contre-arguments. `validate.py --strict` : 0 erreur, 0 avertissement.
 7. **Publication.** Dépôt public créé et poussé : https://github.com/hugoobauer/finances-publiques-france
+8. **Confrontation aux sources publiques (30 octobre 2026).** Aucun relecteur sollicité : chaque point contesté des chapitres 1 à 7 et des données (`proposals.json`, `simulator-levers.json`) a été confronté aux positions publiées d'économistes et d'institutions d'orientations différentes (gauche, droite, institutions), à partir de textes ouverts et datés ; les sources et les dates figurent dans les notes de relecture de chaque chapitre. Bilan, d'après les rapports de relecture par chapitre :
+   - **Points corrigés** (non soutenus ou partiellement soutenus par une source publiée) : ch. 1 : 9 ; ch. 2 : 10 ; ch. 3 : 11 ; ch. 4 : 8 ; ch. 5 : 12 ; ch. 6 : 10 (3 maintenus avec justification) ; ch. 7 : 8 ; données : 9 points (propositions et leviers).
+   - **Contre-arguments publiés ajoutés** : 32 dans les chapitres (ch. 1 : 4 ; ch. 2 : 7 ; ch. 3 : 4 ; ch. 4 : 4 ; ch. 5 : 2 ; ch. 6 : 6 ; ch. 7 : 5) et 9 dans les données.
+   - **Critiques** : les critiques de gauche et de droite ont été traitées, presque toutes appliquées en totalité ou en partie ; les refus partiels sont motivés dans les notes de relecture (par exemple, l'absence d'identifiant chiffré pour certaines valeurs).
+   - **Validateur** : `validate.py --strict` et `validate.py` affichent 0 erreur, 2 avertissements (étiquette « Cour des comptes », voir §4.1) ; code de sortie 0 dans les deux modes.
+   - **Page « Débats »** (`fr/site/debats.md`) : rédigée, couvre les sept chapitres et huit thèmes (103 points).
 
 ---
 
@@ -69,6 +75,9 @@ Le texte original de la demande figure en annexe.
 - **Investissement (chapitre 5, étape 6) :** l'investissement public net et la comparaison avec la zone euro manquent.
 - **Notations 2023-2024** (Fitch, S&P, Moody's) : confirmées seulement par la presse ; à vérifier sur les communiqués des agences avant affichage.
 - **Chapitre 7 :** à 2 198 mots affichés pour un plafond de 2 200 ; tout ajout demande une coupe.
+- **Libellé « Cour des comptes » :** le chapitre 1 (ligne 86) doit employer « Cour des comptes (juridiction financière) » à sa première mention ; les chapitres 2 à 7 écrivent « juridiction financière » seul. Avertissements du validateur, non corrigés dans cette passe.
+- **Chiffres manquants (confrontation) :** investissement public net 2025 (ch. 5, étape 6) ; répartition de la charge d'intérêts et PIB potentiel de l'OFCE (ch. 4, critiques G2 et G8) ; écart de recettes avec la ZE21 (ch. 4, G11) ; ligne 2010 du tableau du chapitre 4 (rejetée faute d'identifiant) ; chiffrage de cinq critiques de gauche du chapitre 2 (n° 1, 5, 6, 8, 10), traitées sans identifiant chiffré.
+- **Sources non ouvertes :** Banque de France et FMI (accès refusé ; rien n'est cité) ; Institut Montaigne, Rexecode et Observatoire des inégalités non rouverts pour le chapitre 1 ; Observatoire des inégalités non cité au chapitre 4 (pas d'étiquette au glossaire §1.13), de même que la CGT.
 - **Divers :** régénérer `research/data/20_pedagogical_conversions.csv` ; séries de données pour les graphiques ; vérification juridique de l'étape 10 du chapitre 6 ; étiquette de Fipeco à revoir ; liens « Pour aller plus loin » à poser quand les fiches thématiques auront leurs URL.
 
 Le détail est dans `fr/LISEZMOI-site.md` §5.1.
@@ -76,7 +85,9 @@ Le détail est dans `fr/LISEZMOI-site.md` §5.1.
 ### 4.2 Étapes suivantes, par priorité
 
 1. **Prototypes** du calendrier budgétaire (« à partir du 29 novembre, tout est emprunté »), du simulateur et du quiz, construits sur `platform/data/` ; test auprès de quelques lecteurs non spécialistes.
-2. **Relecture par les sources publiques** (pas de relecteurs sollicités, décision du 30 octobre 2026) : pour chaque point contesté (encadrés « Le meilleur contre-argument », chiffrages de propositions, multiplicateurs, choix d'années de référence), confronter le texte du site aux positions publiées d'économistes et d'institutions d'orientations différentes (OFCE, IPP, Zucman, Attac ; Fipeco, Institut Montaigne, iFRAP, Rexecode ; Cour des comptes, HCFP, CAE, FMI, OCDE). Corriger ce qu'aucune source publiée ne soutient, ajouter les contre-arguments publiés manquants, et publier sur le site une page « Débats » qui cite, pour chaque point, qui soutient quoi.
+2. **Relecture par les sources publiques : faite le 30 octobre 2026** (§3, étape 8). Reste à faire :
+   - page « Débats » complète (103 points, 8 thèmes, 116 sources), mais trop longue pour une seule page (environ 41 000 mots, 2 h 50 de lecture) : la découper en une page par thème, et vérifier que chaque « Ce que dit le site » reprend bien la formulation corrigée des chapitres ;
+   - relire les chapitres touchés une fois ces compléments ajoutés, puis relancer `validate.py --strict`.
 3. **Enquête de perception :** aucun sondage récent ne demande aux Français d'estimer un chiffre budgétaire ; la prémisse d'une mauvaise perception repose donc sur des indices indirects. Questions à reprendre de `quiz.json`.
 4. **Mises à jour des données :**
 

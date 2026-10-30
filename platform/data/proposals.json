@@ -2,7 +2,7 @@
   "meta": {
     "dataset": "proposals",
     "schema": "schemas/proposals.schema.json",
-    "as_of": "2026-10-25",
+    "as_of": "2026-10-30",
     "version": "1.0.0",
     "description": "Costed proposals of files 07, 11, 15 and 16 with claimed and independent amounts and conversions into the site yardsticks (computed from figures.json).",
     "conventions": "Decimal points and no thousands separators in JSON numbers; French formatting (comma decimal, narrow no-break space) is applied at render time. EUR bn = billions of euros, current prices. Every share says % of GDP or % of total public expenditure."
@@ -135,7 +135,7 @@
           "low": 2,
           "central": null,
           "high": 3,
-          "note": null,
+          "note": "Assumes corporate tax is credited against the floor tax (a design choice).",
           "source_ids": [
             "f07:S4"
           ],
@@ -172,15 +172,15 @@
         "high": 20,
         "year": null,
         "text_en": null,
-        "label_en": "Senate low (2) / critics after behavior (5) / author's static central (20)",
+        "label_en": "Senate low (2, if corporate tax is credited) / independent and critical estimates after behavior (5) / author's static central (20)",
         "central_is_midpoint": false,
         "computed_by_us": false
       },
       "status": "independently_costed",
       "confidence": "L",
       "legal_flag": "constitutional_risk",
-      "counter_argument_en": "Fairness: the IPP finds the ~75 richest households pay about 26% vs 46% for the top 0.1%. Exile is small in absolute terms (CAE: fewer than 350 extra departures a year after 2013). Blanchard and Pisani-Ferry support the principle.",
-      "caveats_en": "Constitutional risk is a genuine uncertainty; the base is concentrated (three departures would halve it).",
+      "counter_argument_en": "Fairness: the IPP (academic research institute), Note 92 (June 2023, https://www.ipp.eu/publication/note-ipp-n92-quels-impots-les-milliardaires-paient-ils/), finds an effective direct tax rate of about 46% for the top 0.1% but about 26% for the top 0.0002%: taxation becomes regressive at the very top. Exile: the CAE (public advisory body), Focus 118 (July 2025, https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf), finds that the 2013 reform raised the departure rate by only 0.04-0.09 point (elasticity 0.02-0.18%). Blanchard and Pisani-Ferry support the principle.",
+      "caveats_en": "The 26% vs 46% baseline is disputed. Fondation iFRAP (liberal), Revue 270 (Sept 2025, https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf): the top decile already pays a direct rate of 42.1%. F. Geerolf (economist at the OFCE), 'Les mensonges de la taxe Zucman' (rev. Oct 2026, https://fgeerolf.com/mensonges-taxe-zucman.pdf): the comparison is fragile (company profits imputed to billionaires) and gives 25.1% vs 26.8% at the top-10% threshold on a homogeneous base. iFRAP reads the same CAE study as showing a significant loss of wealth over 20-40 years. Legal risk: the Senate report 689 (majority rapporteur E. Capus) calls the tax 'probably unconstitutional' (the Constitutional Council accepted 0.5% uncapped, 1.8% only with a cap); the minority rapporteur (E. Sas) sets out counter-arguments in the same report; the CPO (public body attached to the Cour des comptes, 1 Dec 2025, https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf) says a cap is required above about 1.8%, so the yield depends on the design. The base is concentrated (Senate: three departures would halve it). The low estimates are not one camp's view: Terra Nova (center-left, about 5, https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/) and Geerolf (2-6) land in the same range as the Senate (2-3, if corporate tax is credited) and iFRAP.",
       "source_ids": [
         "f00:row45",
         "f07:S4",
@@ -353,8 +353,8 @@
       "status": "independently_costed",
       "confidence": "M",
       "legal_flag": null,
-      "counter_argument_en": "The ISF → IFI reform cost about 4.5 bn (France Stratégie evaluation committee); no effect of the flat tax on investment or wages was found.",
-      "caveats_en": "Overlaps the Zucman base: the two cannot be added in full. PCF proposes to 'triple the ISF' (not costed).",
+      "counter_argument_en": "The ISF repeal cost 3-4.5 bn, mechanical effect only (CAE Focus 118, July 2025). Fipeco (independent site, former Cour des comptes magistrate, budget orthodoxy), Jan 2022 (https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf): about 3 bn (ISF 5.1 in 2017 vs IFI 2.1 in 2019), with no clear effect on firms' investment.",
+      "caveats_en": "The range measures the cost of the 2018 repeal, not the yield of a new tax. The CPO (public body attached to the Cour des comptes, 1 Dec 2025, https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf): recurrent taxation of professional assets is likely to weigh on investment and competitiveness; taxation at transmission has more limited effects. Overlaps the Zucman base: the two cannot be added in full. PCF proposes to 'triple the ISF' (not costed).",
       "source_ids": [
         "f07:S4",
         "f07:S5",
@@ -484,12 +484,13 @@
       "status": "independently_costed",
       "confidence": "L",
       "legal_flag": null,
-      "counter_argument_en": null,
-      "caveats_en": "Overlaps the Zucman base, so the two cannot be added in full.",
+      "counter_argument_en": "Institut Montaigne (liberal-centrist), NFP micro-costings (July 2024): an ISF with a climate component yields about 3.5 bn a year, against 15 claimed by the NFP.",
+      "caveats_en": "The CAE range (3-4.5) measures the cost of the 2018 repeal; a climate ISF would have a different base. Overlaps the Zucman base, so the two cannot be added in full.",
       "source_ids": [
         "f11:S1",
         "f07:S18",
-        "f07:S5"
+        "f07:S5",
+        "f07:S15"
       ],
       "research_files": [
         "07-proposals-costing.md",
@@ -570,8 +571,8 @@
       },
       "estimates": [
         {
-          "author": "Institut Montaigne 2024 (incl. exit tax)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "author": "Institut Montaigne 2024 (PFU abolition plus exit-tax restoration, as one package)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": 3.2,
           "high": null,
@@ -588,15 +589,15 @@
         "high": null,
         "year": null,
         "text_en": null,
-        "label_en": "Montaigne 3.2; France Stratégie: repeal could yield little",
+        "label_en": "Montaigne 3.2 (PFU abolition plus exit tax); repeal could yield little (Fipeco)",
         "central_is_midpoint": false,
         "computed_by_us": false
       },
       "status": "independently_costed",
       "confidence": "M/L",
       "legal_flag": null,
-      "counter_argument_en": "France Stratégie found no investment effect of the 2018 reform.",
-      "caveats_en": "The PFU's static cost (about 1) was offset by higher dividends, so repeal could yield little.",
+      "counter_argument_en": "No significant effect of the 2018 PFU on investment has been found: Fipeco (independent site, former Cour des comptes magistrate, budget orthodoxy), Jan 2022 (https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf), and France Stratégie, as cited by Terra Nova (center-left), Sept 2024 (https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/). Terra Nova proposes another design: keep the PFU at 30-34% but end the erasure of latent capital gains at death.",
+      "caveats_en": "Fipeco puts the PFU's static cost at 1.5-1.8 bn, but dividends rose from 14 to 23 bn in 2018, so the ex post cost was probably nil: the base may shrink if the PFU is abolished, and repeal could yield little. Fipeco adds that long-run effects depend on the credibility of the policy.",
       "source_ids": [
         "f11:S1",
         "f07:S14",
@@ -710,8 +711,8 @@
       "status": "independently_costed",
       "confidence": "L",
       "legal_flag": null,
-      "counter_argument_en": null,
-      "caveats_en": "Current inheritance and gift duties yield 21.1 (2025), so LFI's figure implies nearly doubling them in year one; first-year cash is lower because duties are paid within 6 months of death.",
+      "counter_argument_en": "Only partial costings of narrower designs exist, and they land below the claim: Terra Nova (center-left), Sept 2024 (https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/): about 4 bn, phased in, for ending the erasure of latent gains at transmission, plus 1.4 bn for Dutreil stacking. The CPO (public body attached to the Cour des comptes, 1 Dec 2025, https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf) recommends a differential contribution on estates and gifts and a tighter Dutreil pact rather than a rate rise.",
+      "caveats_en": "The CAE 9-19 is the steady-state yield of a broad base-broadening reform; the 14 central is a midpoint. Current inheritance and gift duties yield 21.1 (2025), so LFI's figure implies nearly doubling them in year one; first-year cash is lower because duties are paid within 6 months of death. (Both figures to be re-checked in a primary text: review of 2026-10-30.)",
       "source_ids": [
         "f11:S1",
         "f11:S16"
@@ -823,7 +824,7 @@
       "confidence": "L",
       "legal_flag": null,
       "counter_argument_en": null,
-      "caveats_en": "No estimate exists for taxing unrealized gains at death; the OFCE argues for the principle without a yield.",
+      "caveats_en": "No estimate of the PS design exists. For a related measure, Terra Nova (center-left), Sept 2024 (https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/), counts about 4 bn, phased in, for ending the erasure of latent gains at transmission (PS claims 10). The OFCE (Sciences Po, Keynesian leaning) argues for the principle without a yield.",
       "source_ids": [
         "f11:S11",
         "f11:S12",
@@ -893,11 +894,11 @@
           "computed_by_us": false
         },
         {
-          "author": "Forecast 2026",
-          "orientation": "IPP",
-          "low": 0.65,
-          "central": 0.7,
-          "high": 0.7,
+          "author": "Expected 2026 (2026 Finance Act: 650 M)",
+          "orientation": "Legifiscal (tax press)",
+          "low": null,
+          "central": 0.65,
+          "high": null,
           "note": null,
           "source_ids": [
             "f07:S35"
@@ -908,21 +909,22 @@
       "range": {
         "low": 0.4,
         "central": 0.4,
-        "high": 0.7,
+        "high": 0.65,
         "year": null,
         "text_en": null,
-        "label_en": "Observed 2025 to forecast 2026",
+        "label_en": "Observed 2025 to expected 2026 (0.65)",
         "central_is_midpoint": false,
         "computed_by_us": false
       },
       "status": "observed",
       "confidence": "H",
       "legal_flag": null,
-      "counter_argument_en": "Timing effects may raise later yields (IPP).",
-      "caveats_en": "The real-world test: observed yield was about a quarter to a third of the announcement.",
+      "counter_argument_en": "The Cour des comptes (financial court), RSPFP 2026 (25 June 2026), attributes the shortfall partly to income that is easy to defer (dividends, capital gains) and says the 2025 yield was still subject to adjustment; timing effects may raise later yields (IPP). It is a minimum tax on income: its shortfall shows a design weakness, not that any tax on top incomes or wealth must fail.",
+      "caveats_en": "The real-world test: observed yield about 0.4 vs 2.0 forecast, a forecast the Cour calls 'trop optimiste'. The CDHR is extended until the deficit is below 3%.",
       "source_ids": [
         "f07:S7",
-        "f07:S35"
+        "f07:S35",
+        "f17:S5"
       ],
       "research_files": [
         "07-proposals-costing.md",
@@ -976,27 +978,27 @@
           "days_of_spending": {
             "low": 0.09,
             "central": 0.09,
-            "high": 0.15
+            "high": 0.14
           },
           "pct_of_deficit": {
             "low": 0.26,
             "central": 0.26,
-            "high": 0.46
+            "high": 0.43
           },
           "eur_per_inhabitant": {
             "low": 5.8,
             "central": 5.8,
-            "high": 10.1
+            "high": 9.4
           },
           "pct_of_total_spending": {
             "low": 0.023,
             "central": 0.023,
-            "high": 0.041
+            "high": 0.038
           },
           "pct_of_gdp": {
             "low": 0.013,
             "central": 0.013,
-            "high": 0.023
+            "high": 0.022
           }
         }
       }
@@ -1149,7 +1151,7 @@
           "low": 10,
           "central": null,
           "high": 25,
-          "note": "Platform synthesis; the inheritance component has no independent costing. CDHR (0.5-1) removed on 2026-10-25: already in force, so not new revenue.",
+          "note": "Platform synthesis; the inheritance component rests only on partial costings of different designs (CAE Note 69, Terra Nova). CDHR (0.5-1) removed on 2026-10-25: already in force, so not new revenue.",
           "source_ids": [
             "f07"
           ],
@@ -1169,8 +1171,8 @@
       "status": "own_computation",
       "confidence": "M",
       "legal_flag": null,
-      "counter_argument_en": "Tax justice is a valid goal regardless of yield; the cuts decided in 2018-2023 cost 62 bn a year.",
-      "caveats_en": "Between one-fifteenth and one-sixth of the deficit; of the same order as the 25 bn rise in interest 2025-2027.",
+      "counter_argument_en": "Tax justice is a valid goal regardless of yield; the tax cuts decided in 2018-2023 were worth 62 bn in 2023 (Cour des comptes).",
+      "caveats_en": "The 17.5 central is the midpoint of our synthesis, not a measurement. It sits above the most favorable independent center-left costing: Terra Nova (center-left), Sept 2024 (https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/), puts a five-measure package at 10-15 bn at cruising speed (about 10 in the short run). Institut Montaigne (liberal-centrist) costs each NFP measure well below the claim (ISF 3.5 vs 15). Between one-fifteenth and one-sixth of the deficit; the one-sixth bound (25) rests on the upper estimate of each component. Of the same order as the 25 bn rise in interest 2025-2027.",
       "source_ids": [
         "f07"
       ],
@@ -1933,7 +1935,7 @@
         },
         {
           "author": "Institut Montaigne 2024 (+10%)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -20,
           "high": null,
@@ -2193,7 +2195,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne 2024 (NFP version; design may differ)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -12.3,
           "high": null,
@@ -2291,7 +2293,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne (2027)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -6,
           "high": null,
@@ -2419,7 +2421,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne 2022 (LFI 2022 version, pension schemes only, 2027)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": -112.8,
           "central": -85.8,
           "high": -36,
@@ -2636,7 +2638,7 @@
           "source_ids": [
             "f11:S20"
           ],
-          "computed_by_us": false
+          "computed_by_us": true
         },
         {
           "author": "Own scenario at the PLF's Brent 80.3 $/b",
@@ -2648,7 +2650,7 @@
           "source_ids": [
             "f11:S3"
           ],
-          "computed_by_us": false
+          "computed_by_us": true
         },
         {
           "author": "Own scenario at the 105.8 $/b futures price",
@@ -2660,7 +2662,7 @@
           "source_ids": [
             "f11:S20"
           ],
-          "computed_by_us": false
+          "computed_by_us": true
         }
       ],
       "range": {
@@ -2671,16 +2673,17 @@
         "text_en": null,
         "label_en": "0 at 2025 prices; -12 at PLF Brent; -26.5 at Oct 2026 spot",
         "central_is_midpoint": false,
-        "computed_by_us": false
+        "computed_by_us": true
       },
       "status": "own_computation",
       "confidence": "M",
       "legal_flag": null,
       "counter_argument_en": "At 2025 average prices the cost is about 0.",
-      "caveats_en": "The cost is open-ended: it is set by the oil market. Rule of thumb: 4.6 bn per EUR 0.10/l above 1.70.",
+      "caveats_en": "The cost is open-ended: it is set by the oil market. Rule of thumb (our computation): 4.6 bn per EUR 0.10/l above 1.70. No published independent costing of the freeze was found (review of 2026-10-30); the HCFP (avis 2026-5, 25 Sep 2026) lists energy prices among the main uncertainties.",
       "source_ids": [
         "f11:S20",
-        "f11:S3"
+        "f11:S3",
+        "f07:S3"
       ],
       "research_files": [
         "11-2027-candidate-programs-costing.md",
@@ -2949,7 +2952,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne (NFP package incl. a general return)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -58,
           "high": null,
@@ -3085,7 +3088,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne (2024)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -34.7,
           "high": null,
@@ -3179,7 +3182,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne 2022 (60 with 40 years)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": -38.5,
           "central": null,
           "high": -23.5,
@@ -3661,7 +3664,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne 2024",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -11,
           "high": null,
@@ -3698,11 +3701,12 @@
       "confidence": "M",
       "legal_flag": null,
       "counter_argument_en": "The energy shields kept French inflation below its neighbors'.",
-      "caveats_en": "'Largely untargeted support' (Cour des comptes). At Oct-2026 fuel prices the fuel share of the cut is larger. File 20 (§3.4, §5.3 S9) still shows -11 to -17.4; file 07 says the 17.4 figure should not be used as a reference.",
+      "caveats_en": "'Largely untargeted support' (Cour des comptes). At Oct-2026 fuel prices the fuel share of the cut is larger. File 20 (§3.4, §5.3 S9) still shows -11 to -17.4; file 07 says the 17.4 figure should not be used as a reference. Public Sénat (24 Oct 2025) reports that such VAT cuts may conflict with EU rules.",
       "source_ids": [
         "f07:S13",
         "f07:S20",
-        "f11:S14"
+        "f11:S14",
+        "f07:S19"
       ],
       "research_files": [
         "07-proposals-costing.md",
@@ -4041,7 +4045,7 @@
       "estimates": [
         {
           "author": "Institut Montaigne 2024 (public finances only)",
-          "orientation": "Institut Montaigne (business-funded, liberal-centrist)",
+          "orientation": "Institut Montaigne (liberal-centrist)",
           "low": null,
           "central": -3.5,
           "high": null,
@@ -4852,11 +4856,12 @@
       "status": "observed",
       "confidence": "H",
       "legal_flag": null,
-      "counter_argument_en": "Rexecode (employer-linked): about 1.2 pts of the 2014-2024 cuts already erased by increases since 2024; 2017 was a revenue peak after 2010-2014 hikes.",
-      "caveats_en": "This is the steelman figure and appears on the same page as spending-side figures.",
+      "counter_argument_en": "The figure is a 2023 level, and part of it has since been reversed: Rexecode (economic research institute close to employers' organizations), Working Paper 97 (June 2025, https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025), counts 66 bn of cuts cumulated over 2018-2023, then 25 bn of increases in 2024-2025 (a 'partial resorption'); the Cour des comptes (RSPFP 2026) counts 23 bn of increases in 2025. 2017 was a revenue peak after the 2010-2014 hikes.",
+      "caveats_en": "Left readings give larger figures: Attac (alter-globalization association), 'La dette de l'injustice fiscale' (26 Mar 2025, https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale): at least 308.6 bn cumulated since 2017, of which 207 bn for rich households and large firms; the OFCE (Sciences Po, Keynesian leaning), blog of 11 July 2025 (https://www.ofce.sciences-po.fr/blog2024/fr/2025/20250711_PSMT/blog.fr.pdf): the 2.5-point fall in the tax-to-GDP ratio explains the 2.4-point rise in the deficit since 2017. Cumulated totals and a one-year level cannot be compared directly. This is the steelman figure and appears on the same page as spending-side figures.",
       "source_ids": [
         "f07:S11",
-        "f00:row28"
+        "f00:row28",
+        "f17:S5"
       ],
       "research_files": [
         "07-proposals-costing.md",
@@ -5073,8 +5078,8 @@
       },
       "estimates": [
         {
-          "author": "Institut de l'Entreprise (business-funded)",
-          "orientation": "business-funded",
+          "author": "Institut de l'Entreprise (close to business)",
+          "orientation": "close to business",
           "low": null,
           "central": null,
           "high": null,
@@ -6133,8 +6138,8 @@
       },
       "estimates": [
         {
-          "author": "Institut de l'Entreprise (business-funded): credible net improvement",
-          "orientation": "business-funded",
+          "author": "Institut de l'Entreprise (close to business): credible net improvement",
+          "orientation": "close to business",
           "low": null,
           "central": 2.9,
           "high": null,
@@ -6231,8 +6236,8 @@
       },
       "estimates": [
         {
-          "author": "Institut de l'Entreprise (business-funded): credible net improvement in 2031",
-          "orientation": "business-funded",
+          "author": "Institut de l'Entreprise (close to business): credible net improvement in 2031",
+          "orientation": "close to business",
           "low": -25,
           "central": 7.5,
           "high": 50,
@@ -7181,9 +7186,10 @@
       "confidence": "L",
       "legal_flag": null,
       "counter_argument_en": null,
-      "caveats_en": "No independent estimate.",
+      "caveats_en": "No independent estimate. Public Sénat (12 Oct 2026) reports 56 bn of tax cuts returned in the LR plan, against 51 (30 + 21) here: to reconcile with the plan document.",
       "source_ids": [
-        "f11:S8"
+        "f11:S8",
+        "f07:S21"
       ],
       "research_files": [
         "11-2027-candidate-programs-costing.md"

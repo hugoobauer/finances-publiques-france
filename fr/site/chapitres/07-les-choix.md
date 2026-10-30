@@ -3,9 +3,9 @@ chapitre: 7
 titre: « Les choix »
 sous-titre: Vieillissement, emploi, taille de l’effort et poids des promesses
 statut: projet pour relecture éditoriale et relecture contradictoire (passe de finalisation)
-date: 2026-10-25
+date: 2026-10-30
 données: platform/data/figures.json, yardsticks.json et proposals.json (passe de données du 25 octobre 2026, D-data-pass et D-return60 appliquées)
-durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par validate.py ; 240 mots par minute)
+durée de lecture visée: environ 9 minutes (2 198 mots affichés mesurés par validate.py ; 240 mots par minute)
 ---
 
 # Chapitre 7. Les choix
@@ -24,7 +24,7 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 **Texte affiché**
 
-> Le chapitre 5 l’a montré. Pour que la dette cesse d’augmenter par rapport au produit intérieur brut (PIB), il faudrait trouver **89,6 milliards d’euros par an** [[fig:debt_stabilizing_gap_2025_eur_bn]]. C’est 3,0 points de PIB selon la Cour des comptes (juridiction financière), base 2025 [[fig:debt_stabilizing_gap_2025_pts]]. C’est la mesure d’un effort, pas l’annonce d’une faillite. Reste la question de la campagne : comment ?
+> Pour que la dette cesse d’augmenter par rapport au produit intérieur brut (PIB), il faudrait un effort de **89,6 milliards d’euros** [[fig:debt_stabilizing_gap_2025_eur_bn]]. C’est 3,0 points de PIB selon la Cour des comptes (juridiction financière), base 2025 [[fig:debt_stabilizing_gap_2025_pts]]. Ce chiffre dépend des hypothèses de croissance et d’inflation. Reste à savoir comment.
 >
 > Durée de lecture : environ 9 minutes.
 
@@ -40,11 +40,11 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 > Trois objectifs sont possibles (base 2025, avant effets sur la croissance) :
 >
-> - **Revenir à un déficit de 3 % du PIB** (la règle européenne) [[yard:maastricht_deficit_limit_pct]] : **61,9 milliards d’euros** [[yard:gap_to_3pct_eur_bn]]. Par coïncidence, c’est aussi l’ordre de grandeur des baisses d’impôts de 2018 à 2023 (chapitre 4), qui mesurent autre chose.
+> - **Revenir à un déficit de 3 % du PIB** (la règle européenne) [[yard:maastricht_deficit_limit_pct]] : **61,9 milliards d’euros** [[yard:gap_to_3pct_eur_bn]]. Par coïncidence, c’est aussi l’ordre de grandeur des baisses d’impôts de 2018 à 2023 (chapitre 4).
 > - **Stabiliser la dette** par rapport au PIB : **89,6 milliards** [[fig:debt_stabilizing_gap_2025_eur_bn]].
 > - **Équilibrer le budget** : tout le déficit, soit **151,6 milliards** [[fig:deficit_2025_eur_bn]].
 >
-> Stabiliser la dette, c’est **19,1 jours de dépense publique** [[calc:debt_stabilizing_gap_2025_eur_bn / one_day_spending_eur_bn = 19,1]] et **59 % du déficit 2025** [[calc:debt_stabilizing_gap_2025_eur_bn / deficit_2025_eur_bn × 100 = 59,1]].
+> Stabiliser la dette, c’est **19,1 jours de dépense publique** [[calc:debt_stabilizing_gap_2025_eur_bn / one_day_spending_eur_bn = 19,1]], en une fois ou par étapes (étape 4).
 >
 > **Si la France était un ménage** gagnant 3 000 € par mois [[yard:household_monthly_income_eur]], il devrait trouver environ **172 € par mois** pour stabiliser sa dette [[calc:debt_stabilizing_gap_2025_eur_bn × household_scale_eur_per_month_per_bn = 172,0]]. (image illustrative, voir ses limites au chapitre 1)
 
@@ -64,7 +64,7 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 > - **La défense** : la nouvelle cible de l’Organisation du traité de l’Atlantique nord (OTAN) coûterait environ **44 milliards par an** de plus d’ici 2035 [[fig:nato_35_gap_eur_bn]].
 > - **Le climat** : de **25 à 34 milliards par an** d’investissement public supplémentaire d’ici 2030, selon Jean Pisani-Ferry et Selma Mahfouz (rapport remis au gouvernement) [[fig:climate_public_need_eur_bn]].
 >
-> Ces montants n’ont pas le même horizon : nous ne les additionnons pas.
+> Horizons différents : nous ne les additionnons pas.
 
 **Visuel** : « jauge de pression », trois barres séparées (pas empilées), chacune avec son horizon (2027, 2035, 2030) et sa certitude (prévu, estimé, estimé) ; barre de fourchette pour le climat. Données : `interest_2025_eur_bn`, `interest_2027f_eur_bn`, `interest_rise_2025_2027_eur_bn`, `nato_35_gap_eur_bn`, `climate_public_need_eur_bn`.
 
@@ -78,28 +78,30 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 > Baisser une dépense ou augmenter un impôt freine l’activité la première année, donc les recettes.
 >
-> Le Haut Conseil des finances publiques (HCFP) retient un **multiplicateur budgétaire d’environ 0,6** la première année pour un ensemble de mesures mixte [[fig:multiplier_mixed_y1]]. Avec les recettes perdues [[fig:deficit_semi_elasticity|contexte]], **1 € de mesures réduit le déficit d’environ 0,66 €** la première année [[yard:macro_feedback_factor_mixed]].
+> Pour des mesures mixtes, le **multiplicateur budgétaire** vaut **environ 0,6** la première année [[fig:multiplier_mixed_y1]]. La plateforme le déduit d’un avis du Haut Conseil des finances publiques (HCFP). Avec les recettes perdues [[fig:deficit_semi_elasticity|contexte]], **1 € de mesures réduit le déficit d’environ 0,66 €** la première année [[yard:macro_feedback_factor_mixed]].
 >
-> Avec cette règle moyenne, revenir à 3 % du PIB [[yard:maastricht_deficit_limit_pct]] demande environ **94 milliards d’euros de mesures** [[yard:gross_measures_goal_b_eur_bn]], et non le seul écart de l’étape 2. Couper 1 point de PIB (environ 30 milliards) [[yard:one_point_gdp_eur_bn]] dans les dépenses de fonctionnement pèse plus sur l’activité : le multiplicateur est d’environ 0,8 [[fig:multiplier_operating_spending_y1]]. Le déficit ne baisse alors que d’environ **16 milliards** la première année [[yard:example_cut_net_y1_eur_bn]].
+> Avec cette règle moyenne, revenir à 3 % du PIB [[yard:maastricht_deficit_limit_pct]] demande environ **94 milliards d’euros de mesures** (calcul de la plateforme, première année) [[yard:gross_measures_goal_b_eur_bn]]. Couper 1 point de PIB (environ 30 milliards) [[yard:one_point_gdp_eur_bn]] dans les dépenses de fonctionnement pèse plus : le multiplicateur est d’environ 0,8 [[fig:multiplier_operating_spending_y1]]. Le déficit ne baisse alors que d’environ **16 milliards** la première année [[yard:example_cut_net_y1_eur_bn]].
 >
-> La Cour des comptes juge « comparables » les coûts des différents types de mesures (juin 2026) [[src:f17:S5]] : aucun n’est indolore.
+> L’effet varie selon la mesure : plus fort pour les baisses de dépenses publiques, plus faible pour certaines hausses d’impôts [[src:f17:S1]]. Aucune n’est indolore.
 
 <!-- box-side: droite -->
 > **Le meilleur contre-argument**
 >
-> **« Un plan crédible, annoncé à l’avance, peut coûter très peu en croissance. »**
+> **« Un effort engagé tôt et de façon crédible coûte moins cher. »**
 >
-> Il rassure ménages, entreprises et prêteurs. Le gouvernement a retenu un multiplicateur nul en octobre 2024. Quand les marchés doutent de la dette, la Cour des comptes juge préférable de concentrer l’effort au début [[src:f17:S5]].
+> Le FMI (Fonds monétaire international ; organisation internationale) recommande de concentrer l’effort au début, comme la Cour des comptes quand les marchés doutent [[src:f17:S5]]. Pour la Fondation iFRAP (libérale), mieux vaut un effort massif d’emblée qu’un ajustement imposé par une crise.
 >
-> *Sources : gouvernement, plan budgétaire et structurel à moyen terme, octobre 2024, cité par une mission de l’Inspection générale des finances (corps d’inspection du ministère de l’Économie), juillet 2026 ; Cour des comptes (juridiction financière), juin 2026.*
+> *Sources : FMI (organisation internationale), déclaration de fin de mission, 21 mai 2026 ; Cour des comptes (juridiction financière), juin 2026 ; Fondation iFRAP (libérale), juillet 2026.*
 >
 > **Ce qu’on peut répondre**
 >
-> La mission accueillie par l’Inspection générale des finances (corps d’inspection du ministère de l’Économie) parle d’une « hypothèse extrême » [[src:f17:S15]]. Le HCFP (organisme indépendant placé auprès de la Cour des comptes) retient environ 0,6 [[fig:multiplier_mixed_y1]]. Personne ne sait quelle valeur se réalisera : le simulateur montre une fourchette.
+> L’objection tient quand les taux montent. Mais si les multiplicateurs sont élevés, étaler l’effort limite la perte d’activité, ajoute la Cour [[src:f17:S5]].
+>
+> L’OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne) propose ainsi une trajectoire progressive jusqu’en 2029. Le plan de 2024 supposait un effet nul : une « hypothèse extrême » pour une mission de l’Inspection générale des finances (corps d’inspection du ministère de l’Économie) [[src:f17:S15]].
 
-**Visuel** : curseur « multiplicateur » de 0 à 1,5 à côté d’une barre fixe de 30 Md€ d’économies (1 point de PIB) ; le gain net se recalcule en direct. Repères : 0 (hypothèse de 2024), 0,3-0,4 (« TVA, IR/CSG, 1re année, modèles français », classes `vat` et `income_tax_csg`), 0,6 (HCFP), 0,8 (dépenses de fonctionnement, `multiplier_operating_spending_y1`, fourchette 0,5-1,1), zone grisée à partir de 1,5 « valeurs de crise, pas 2027 ». Ne jamais afficher de « mesure qui s’autofinance ». Données : `multiplier_mixed_y1`, `multiplier_operating_spending_y1`, `deficit_semi_elasticity`, `macro_feedback_factor_mixed`, `one_point_gdp_eur_bn`, `example_cut_eur_bn`, `example_cut_net_y1_eur_bn`, `gross_measures_goal_b_eur_bn` ; classes de multiplicateurs de `simulator-levers.json`.
+**Visuel** : curseur « multiplicateur » de 0 à 1,5 à côté d’une barre fixe de 30 Md€ d’économies (1 point de PIB) ; le gain net se recalcule en direct. Repères : 0 (hypothèse de 2024), 0,3-0,4 (« TVA, IR/CSG, 1re année, modèles français », classes `vat` et `income_tax_csg`), 0,6 (« moyenne déduite de l’avis du HCFP »), 0,8 (dépenses de fonctionnement, `multiplier_operating_spending_y1`, fourchette 0,5-1,1), zone grisée à partir de 1,5 « valeurs de crise, pas 2027 ». Ne jamais afficher de « mesure qui s’autofinance ». Données : `multiplier_mixed_y1`, `multiplier_operating_spending_y1`, `deficit_semi_elasticity`, `macro_feedback_factor_mixed`, `one_point_gdp_eur_bn`, `example_cut_eur_bn`, `example_cut_net_y1_eur_bn`, `gross_measures_goal_b_eur_bn` ; classes de multiplicateurs de `simulator-levers.json`.
 
-**Pastilles source :** HCFP, avis n° HCFP-2026-5, 25 septembre 2026, §36 [[fig:multiplier_mixed_y1]] ; CAE, *Focus* n° 108, 24 juillet 2024 [[fig:deficit_semi_elasticity]] ; OFCE, *Policy Brief* n° 154, et modèle Mésange (valeur par défaut du simulateur) [[fig:multiplier_operating_spending_y1]] ; Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026, p. 139-140 [[src:f17:S5]] ; mission sur la transparence des finances publiques accueillie par l’Inspection générale des finances, juillet 2026 [[src:f17:S15]] ; calculs de la plateforme [[yard:example_cut_net_y1_eur_bn]] [[yard:gross_measures_goal_b_eur_bn]].
+**Pastilles source :** HCFP, avis n° HCFP-2026-5, 25 septembre 2026, §36 [[fig:multiplier_mixed_y1]] ; CAE, *Focus* n° 108, 24 juillet 2024 [[fig:deficit_semi_elasticity]] ; OFCE, *Policy Brief* n° 154, et modèle Mésange (valeur par défaut du simulateur) [[fig:multiplier_operating_spending_y1]] ; Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026, p. 139-140 [[src:f17:S5]] ; mission sur la transparence des finances publiques accueillie par l’Inspection générale des finances, juillet 2026 [[src:f17:S15]] ; HCFP, avis n° HCFP-2026-5, §36 (multiplicateur « proche de 1 » pour les baisses de demande publique, « modéré » pour certaines hausses de recettes) [[src:f17:S1]] ; FMI, *France: Staff Concluding Statement of the 2026 Article IV Mission*, 21 mai 2026 (https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission) ; Fondation iFRAP, « Croissance à 0,7 % en 2026 : la boule de neige de la dette est en route », juillet 2026 (https://www.ifrap.org/budget-et-fiscalite/croissance-07-en-2026-la-boule-de-neige-de-la-dette-est-en-route) ; OFCE, « Quelles trajectoires pour les finances publiques de la France ? », 11 juillet 2025 (https://www.ofce.sciences-po.fr/blog2024/fr/2025/20250711_PSMT/blog.fr.pdf) ; calculs de la plateforme [[yard:example_cut_net_y1_eur_bn]] [[yard:gross_measures_goal_b_eur_bn]].
 
 ---
 
@@ -116,19 +118,19 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 >
 > **« Les retraites pèsent trop lourd : il faut ajuster la dépense, pas seulement les ressources. »**
 >
-> La vieillesse explique environ un tiers de l’écart de dépense avec la zone euro à 21 pays (ZE21, Bulgarie comprise) en 2024 [[fig:gap2024_old_age_share]]. Par habitant, en standards de pouvoir d’achat (SPA), la France est 5e sur 27 dans l’UE pour la dépense de retraite [[fig:pension_exp_per_capita_pps_2024_rank]]. Le FMI (Fonds monétaire international ; organisation internationale) recommande un mécanisme d’ajustement automatique des retraites.
+> La vieillesse explique environ un tiers de l’écart de dépense avec la zone euro à 21 pays (ZE21, Bulgarie comprise) en 2024 [[fig:gap2024_old_age_share]]. Par habitant, en standards de pouvoir d’achat (SPA), la France est 5e sur 27 dans l’UE pour la dépense de retraite [[fig:pension_exp_per_capita_pps_2024_rank]]. Le FMI recommande un mécanisme d’ajustement automatique des retraites.
 >
 > *Sources : FMI (organisation internationale), déclaration de fin de mission au titre de l’article IV, 21 mai 2026 (notre traduction) ; calcul de la plateforme d’après Eurostat (office statistique de l’Union européenne).* [[src:f20:f10]]
 >
 > **Ce qu’on peut répondre**
 >
-> Le COR (instance d’études et de concertation sur les retraites) projette une dépense stable en % du PIB jusqu’en 2045. Le déficit projeté viendrait d’abord de la baisse des ressources [[src:f07:S28]].
+> Pour le COR (instance d’études et de concertation sur les retraites), les ressources passent de 13,9 % du PIB (2025) à 12,9 % en 2070 [[fig:pension_resources_2025_pct_gdp]] [[fig:pension_resources_2070f_pct_gdp]]. Jusqu’en 2045, le déficit vient surtout de cette baisse ; ensuite, la hausse de la dépense pèse un peu plus [[src:f07:S28]].
 >
-> Cette dépense achète aussi un résultat (chapitre 6). La pauvreté des personnes âgées est parmi les plus basses de l’OCDE (Organisation de coopération et de développement économiques ; organisation internationale). La plateforme ne dit pas s’il faut dépenser moins pour les retraites.
+> L’objection tient en partie. Selon la Fondation iFRAP (libérale), cette stabilité vient d’une baisse de la pension moyenne par rapport aux revenus du travail. Cette dépense achète aussi un résultat (chapitre 6). La plateforme ne dit pas s’il faut dépenser moins pour les retraites.
 
 **Visuel** : (a) le calendrier se remplit de bleu jusqu’au 26 mars (COFOG 2024) ; (b) pyramide des âges animée 2005 → 2025 → 2070, sans valeur chiffrée tant que les données manquent ; (c) barre empilée de l’écart de 7,8 points avec la ZE21 (vieillesse 2,5, santé 1,5, autre protection sociale, reste), axe « en points de PIB ». Données : `pensions_cor_2025_*`, `calendar_days_old_age`, `household_pensions_month_eur`, `spending_gap_ea21_2024_pp`, `gap2024_old_age_pp`, `gap2024_old_age_share`, `gap2024_health_pp`, `pension_exp_per_capita_pps_2024_rank`, `cofog_old_age_2024_pct_te`. Projections du COR (2045, 2070) : aucune valeur affichée tant qu’elles ne sont pas dans `figures.json`. La contribution d’équilibre de l’État (`pension_state_balancing_contribution_2025_eur_bn`) et la convention de solde appartiennent au chapitre 2, étape 7.
 
-**Pastilles source :** COR, rapport annuel, juin 2026 [[fig:pensions_cor_2025_eur_bn]] [[fig:pensions_cor_2045f_pct_gdp]] [[fig:pensions_cor_2070f_pct_gdp]] (projections, scénario de référence) ; Eurostat, `gov_10a_exp` (COFOG 2024) [[fig:gap2024_old_age_pp]] ; Eurostat, `spr_exp_pens`, 7 octobre 2026 [[fig:pension_exp_per_capita_pps_2024_rank]] ; FMI, déclaration de fin de mission au titre de l’article IV, 21 mai 2026 [[src:f20:f10]] ; COR, synthèse du rapport annuel, juin 2026 [[src:f07:S28]].
+**Pastilles source :** COR, rapport annuel, juin 2026 [[fig:pensions_cor_2025_eur_bn]] [[fig:pensions_cor_2045f_pct_gdp]] [[fig:pensions_cor_2070f_pct_gdp]] (projections, scénario de référence) ; Eurostat, `gov_10a_exp` (COFOG 2024) [[fig:gap2024_old_age_pp]] ; Eurostat, `spr_exp_pens`, 7 octobre 2026 [[fig:pension_exp_per_capita_pps_2024_rank]] ; FMI, déclaration de fin de mission au titre de l’article IV, 21 mai 2026 [[src:f20:f10]] ; COR, synthèse du rapport annuel, juin 2026 [[src:f07:S28]] [[fig:pension_resources_2025_pct_gdp]] [[fig:pension_resources_2070f_pct_gdp]] ; Fondation iFRAP, « Les six angles morts du rapport du COR », juin 2026 (https://www.ifrap.org/retraite/les-six-angles-morts-du-rapport-du-cor ; pension moyenne relative de 54,6 % à 45,3 % du revenu d’activité moyen, chiffre non affiché faute d’id).
 
 ---
 
@@ -136,17 +138,19 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 **Texte affiché**
 
-> La réforme de 2023 relève progressivement l’âge légal de départ à 64 ans. La loi de financement de la sécurité sociale pour 2026 a suspendu cette hausse jusqu’en janvier 2028 [[prop:pension_suspension|contexte]] [[src:f03]].
+> La réforme de 2023 relève l’âge légal de départ à 64 ans. La loi de financement de la sécurité sociale pour 2026 suspend cette hausse jusqu’en janvier 2028 [[prop:pension_suspension|contexte]] [[src:f03]].
 >
-> Le retour général à 60 ans figurait dans le programme du Nouveau Front populaire en 2024 [[prop:retirement_60_general_nfp|contexte]]. La France insoumise propose la retraite à 60 ans avec 40 années de cotisation, comme objectif du mandat [[prop:lfi_retirement_60_40|contexte]].
+> Le Nouveau Front populaire (2024) [[prop:retirement_60_general_nfp|contexte]] et La France insoumise (avec 40 années de cotisation) [[prop:lfi_retirement_60_40|contexte]] proposent la retraite à 60 ans.
 >
-> Un retour général à 60 ans coûterait **de 43 à 58 milliards d’euros par an** [[fig:return_60_general_cost_eur_bn]]. Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire) l’estime à environ 43 milliards [[fig:return_60_general_cost_eur_bn]]. L’Institut Montaigne (libéral-centriste) chiffre à 58 milliards le programme de retraite du Nouveau Front populaire [[fig:return_60_general_cost_eur_bn]]. Aucun chiffrage officiel récent n’existe.
+> Les chiffrages publiés vont **de 43 à 58 milliards d’euros par an**, sur des périmètres différents [[fig:return_60_general_cost_eur_bn]]. Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire) déconseille ces choix. Abandonner la réforme de 2023 puis revenir à 60 ans coûterait selon lui jusqu’à environ 43 milliards à terme [[fig:return_60_general_cost_eur_bn]].
 >
-> C’est de 9,2 à 12,4 jours de dépense publique [[calc:return_60_general_cost_eur_bn / one_day_spending_eur_bn = 9,2 à 12,4]] et de 28 % à 38 % du déficit 2025 [[calc:return_60_general_cost_eur_bn / deficit_2025_eur_bn × 100 = 28,4 à 38,3]]. Pour le ménage à 3 000 € par mois [[yard:household_monthly_income_eur]], c’est de 83 € à 111 € par mois [[calc:return_60_general_cost_eur_bn × household_scale_eur_per_month_per_bn = 83 à 111]] (image illustrative, voir ses limites au chapitre 1).
+> L’Institut Montaigne (libéral-centriste) chiffre à 58 milliards tout le programme de retraite du Nouveau Front populaire [[fig:return_60_general_cost_eur_bn]]. Aucun chiffrage officiel récent n’existe.
 >
-> Un retour réservé aux carrières longues coûterait **de 26 à 35 milliards** [[fig:return_60_partial_cost_eur_bn]]. Le Rassemblement national annonce environ **9 milliards** pour son plan (62 ans, 60 ans pour les carrières longues) [[fig:rn_2026_pension_plan_cost_eur_bn]] : un chiffre annoncé.
+> C’est de 9,2 à 12,4 jours de dépense publique [[calc:return_60_general_cost_eur_bn / one_day_spending_eur_bn = 9,2 à 12,4]].
 >
-> À l’inverse, Les Républicains annoncent environ **42 milliards** d’économies [[prop:lr_pensions]] et Horizons environ **30 milliards** (45 annuités, 65 ans) [[prop:horizons_pensions_45y_65]] : des chiffres annoncés, eux aussi.
+> Le Rassemblement national annonce environ **9 milliards** pour son plan (62 ans, 60 ans pour les carrières longues) [[fig:rn_2026_pension_plan_cost_eur_bn]]. C’est un chiffre annoncé ; l’Institut Montaigne jugeait la mesure bien plus coûteuse [[src:f11:S13]].
+>
+> À l’inverse, Les Républicains annoncent environ **42 milliards** d’économies, au total sur cinq ans [[prop:lr_pensions]]. Horizons en annonce environ **30 milliards** par an (45 annuités, 65 ans) [[prop:horizons_pensions_45y_65]]. Ce sont aussi des chiffres annoncés.
 
 <!-- box-side: gauche -->
 > **Le meilleur contre-argument**
@@ -159,11 +163,11 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 >
 > **Ce qu’on peut répondre**
 >
-> C’est exact : la plateforme ne dit pas quel âge choisir. Mais financer ce coût par des cotisations relèverait le coût du travail. Pour un salarié célibataire au salaire moyen, les prélèvements atteignent 47,2 % du coût du travail, le 3e niveau de l’OCDE (organisation internationale) [[fig:oecd_tax_wedge_single_2025_pct]] [[fig:oecd_tax_wedge_single_2025_rank]].
+> C’est exact : la plateforme ne dit pas quel âge choisir. Mais des cotisations plus élevées relèveraient le coût du travail. Pour un salarié célibataire au salaire moyen, les prélèvements atteignent 47,2 % de ce coût [[fig:oecd_tax_wedge_single_2025_pct]]. C’est le 3e niveau de l’OCDE (Organisation de coopération et de développement économiques ; organisation internationale), derrière la Belgique et l’Allemagne [[fig:oecd_tax_wedge_single_2025_rank]].
 
-**Visuel** : barre de fourchette 43–58 Md€ (sources nommées dessous : Fipeco, 25 juin 2024, environ 43 ; Institut Montaigne, 3 juillet 2024, 58), barre 26–35 Md€ (retour partiel), points gris « annoncé » à 9 Md€ (RN, coût), 42 Md€ (LR, économie) et 30 Md€ (Horizons, économie), et, même style, étiquettes grises « programme » pour le Nouveau Front populaire (2024) et La France insoumise (sans montant annoncé dans `proposals.json` : étiquette sans point chiffré), même échelle, coûts à gauche et économies à droite de l’axe ; le calendrier se recolore (9,2 à 12,4 jours). Données : `return_60_general_cost_eur_bn`, `return_60_general_cost_pct_gdp`, `return_60_partial_cost_eur_bn`, `rn_2026_pension_plan_cost_eur_bn`, `one_day_spending_eur_bn`, `household_scale_eur_per_month_per_bn` ; `proposals.json` : `lr_pensions`, `horizons_pensions_45y_65`, `retirement_60_general_nfp`, `lfi_retirement_60_40`, `pension_suspension`.
+**Visuel** : barre de fourchette 43–58 Md€ étiquetée « périmètres différents » (sources nommées dessous : Fipeco, 25 juin 2024, jusqu’à environ 43 à terme, abandon de la réforme de 2023 puis 60 ans ; Institut Montaigne, 3 juillet 2024, 58, tout le programme de retraite du NFP) ; plus de barre 26–35 Md€ (borne basse sans source, revue du 30 octobre 2026) ; points gris « annoncé » à 9 Md€ (RN, coût) et 30 Md€ par an (Horizons, économie) ; LR (42 Md€) en point gris séparé, étiqueté « cumulé sur cinq ans », hors de l’échelle annuelle, et, même style, étiquettes grises « programme » pour le Nouveau Front populaire (2024) et La France insoumise (sans montant annoncé dans `proposals.json` : étiquette sans point chiffré), même échelle, coûts à gauche et économies à droite de l’axe ; le calendrier se recolore (9,2 à 12,4 jours). Données : `return_60_general_cost_eur_bn`, `return_60_general_cost_pct_gdp`, `return_60_partial_cost_eur_bn`, `rn_2026_pension_plan_cost_eur_bn`, `one_day_spending_eur_bn`, `household_scale_eur_per_month_per_bn` ; `proposals.json` : `lr_pensions`, `horizons_pensions_45y_65`, `retirement_60_general_nfp`, `lfi_retirement_60_40`, `pension_suspension`.
 
-**Pastilles source :** Institut Montaigne, 3 juillet 2024 (financé par des contributions privées de plus de 200 entreprises, chacune à moins de 1,2 % du budget, selon le site de l’Institut Montaigne) ; Fipeco, 25 juin 2024 [[fig:return_60_general_cost_eur_bn]] ; chiffre annoncé par le RN [[fig:rn_2026_pension_plan_cost_eur_bn]] ; chiffres annoncés par LR et Horizons (presse) [[prop:lr_pensions]] [[prop:horizons_pensions_45y_65]] ; programmes du Nouveau Front populaire (2024) et de La France insoumise [[prop:retirement_60_general_nfp]] [[prop:lfi_retirement_60_40]] ; loi de financement de la sécurité sociale pour 2026 [[prop:pension_suspension]] ; Cour des comptes, *Situation financière et perspectives du système de retraites*, 20 février 2025, p. 65-67 [[src:f17:S10]] ; OCDE, *Les impôts sur les salaires* [[fig:oecd_tax_wedge_single_2025_pct]].
+**Pastilles source :** Institut Montaigne, 3 juillet 2024 (financé par des contributions privées de plus de 200 entreprises, chacune à moins de 1,2 % du budget, selon le site de l’Institut Montaigne) ; Fipeco, « Avancer ou reculer l’âge de départ en retraite », 25 juin 2024 (https://fipeco.fr/pdf/Retraites%202024.pdf ; environ 17 milliards d’ici 2030 pour l’abandon de la réforme de 2023, plus un coût « pouvant atteindre » 26 milliards à terme pour l’âge minimal à 60 ans) [[fig:return_60_general_cost_eur_bn]] ; Franceinfo, 30 septembre 2026 (chiffrage de la mesure du RN par l’Institut Montaigne ; LR : « 40 milliards d’économies en cumulé sur cinq ans ») [[src:f11:S13]] ; chiffre annoncé par le RN [[fig:rn_2026_pension_plan_cost_eur_bn]] ; chiffres annoncés par LR et Horizons (presse) [[prop:lr_pensions]] [[prop:horizons_pensions_45y_65]] ; programmes du Nouveau Front populaire (2024) et de La France insoumise [[prop:retirement_60_general_nfp]] [[prop:lfi_retirement_60_40]] ; loi de financement de la sécurité sociale pour 2026 [[prop:pension_suspension]] ; Cour des comptes, *Situation financière et perspectives du système de retraites*, 20 février 2025, p. 65-67 [[src:f17:S10]] ; OCDE, *Les impôts sur les salaires* [[fig:oecd_tax_wedge_single_2025_pct]].
 
 ---
 
@@ -171,26 +175,30 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 **Texte affiché**
 
-> La France compte peu d’heures travaillées par habitant, surtout parce que les jeunes et les seniors ont moins souvent un emploi (chapitre 6).
+> La France compte peu d’heures travaillées par habitant, surtout faute d’emploi chez les jeunes et les seniors (chapitre 6).
 >
-> La direction générale du Trésor (administration économique) a fait un calcul « purement illustratif », sur la base de 2022. Si la France avait le taux d’emploi de l’Allemagne, les prélèvements obligatoires rapporteraient environ **38 milliards de plus par an** [[fig:employment_germany_levies_eur_bn]]. C’est **8,1 jours de dépense publique** [[calc:employment_germany_levies_eur_bn / one_day_spending_eur_bn = 8,1]] et **un quart du déficit 2025** [[calc:employment_germany_levies_eur_bn / deficit_2025_eur_bn × 100 = 25,1]].
+> Avec le taux d’emploi de l’Allemagne, les prélèvements obligatoires rapporteraient **de 38 à 84 milliards de plus par an** [[fig:employment_germany_levies_eur_bn]] [[fig:employment_germany_levies_headcount_eur_bn]]. C’est un calcul « purement illustratif » de la direction générale du Trésor (administration économique), base 2022. Le bas de la fourchette tient compte des heures travaillées.
+>
+> C’est de **8,1 à 17,9 jours de dépense publique** [[calc:employment_germany_levies_eur_bn / one_day_spending_eur_bn = 8,1]] [[calc:employment_germany_levies_headcount_eur_bn / one_day_spending_eur_bn = 17,9]]. Le calcul ne compte ni le coût des politiques d’emploi ni la hausse ultérieure des pensions.
 
 <!-- box-side: gauche -->
 > **Le meilleur contre-argument**
 >
 > **« Ceux qui ont un emploi en France travaillent plus d’heures qu’en Allemagne ou aux Pays-Bas. »**
 >
-> Dans ces pays, le temps partiel est fréquent. Les nouveaux entrants dans l’emploi seraient en moyenne moins productifs. Par heure travaillée, la France est 8e sur 27 dans l’UE, à l’indice 114,6 en SPA (moyenne de l’UE = 100) [[fig:productivity_per_hour_pps_2025]] [[fig:productivity_per_hour_pps_2025_rank]].
+> Dans ces pays, le temps partiel est fréquent. Par heure travaillée, la France est 8e sur 27 dans l’UE, à l’indice 114,6 en SPA (moyenne de l’UE = 100) [[fig:productivity_per_hour_pps_2025]] [[fig:productivity_per_hour_pps_2025_rank]].
 >
 > *Sources : DG Trésor (administration économique), note d’août 2024 ; Eurostat (office statistique de l’Union européenne), `nama_10_lp_ulc`, 22 octobre 2026.* [[src:f08:es-lp]]
 >
 > **Ce qu’on peut répondre**
 >
-> Le calcul de la DG Trésor (administration économique) compte déjà en postes à temps plein, avec des nouveaux emplois moins productifs. La productivité horaire est aussi élevée parce que les moins productifs sont plus souvent sans emploi. Elle a d’ailleurs reculé depuis 2019 [[src:f20:f08]]. C’est un ordre de grandeur, pas une prévision.
+> Par personne en emploi, la France travaille plus que l’Allemagne (OCDE). Pour les salariés à temps plein, elle travaille moins, selon Rexecode (institut de conjoncture proche des organisations patronales). Par habitant, l’écart vient surtout du taux d’emploi : c’est lui que mesure la DG Trésor (administration économique).
+>
+> La productivité horaire est aussi élevée parce que les moins productifs sont plus souvent sans emploi [[src:f20:f08]].
 
-**Visuel** : (les points du taux d’emploi appartiennent au chapitre 6 et ne sont plus repris ici) ; curseur « réduire de X % l’écart d’emploi avec l’Allemagne » (approximation linéaire, « illustratif »). Données : `employment_germany_levies_eur_bn`, `employment_germany_levies_headcount_eur_bn`, `productivity_per_hour_pps_2025`, `productivity_per_hour_pps_2025_rank`.
+**Visuel** : (les points du taux d’emploi appartiennent au chapitre 6 et ne sont plus repris ici) ; curseur « réduire de X % l’écart d’emploi avec l’Allemagne » (approximation linéaire, « illustratif »). Le curseur part des deux scénarios (38 et 84 Md€). Données : `employment_germany_levies_eur_bn`, `employment_germany_levies_headcount_eur_bn`, `productivity_per_hour_pps_2025`, `productivity_per_hour_pps_2025_rank`.
 
-**Pastilles source :** DG Trésor, note pour le Haut Conseil du financement de la protection sociale, août 2024 [[fig:employment_germany_levies_eur_bn]] ; Eurostat, `nama_10_lp_ulc`, 22 octobre 2026 [[fig:productivity_per_hour_pps_2025]] [[fig:productivity_per_hour_pps_2025_rank]] ; recul depuis 2019 [[src:f20:f08]].
+**Pastilles source :** DG Trésor, note pour le Haut Conseil du financement de la protection sociale, août 2024 [[fig:employment_germany_levies_eur_bn]] ; Eurostat, `nama_10_lp_ulc`, 22 octobre 2026 [[fig:productivity_per_hour_pps_2025]] [[fig:productivity_per_hour_pps_2025_rank]] ; recul depuis 2019 [[src:f20:f08]] ; scénario en effectifs [[fig:employment_germany_levies_headcount_eur_bn]] ; heures par personne en emploi : données de l’OCDE rapportées par Public Sénat, 17 juillet 2025 (https://www.publicsenat.fr/actualites/emploi/budget-2026-les-francais-travaillent-ils-vraiment-100-heures-de-moins-que-les-allemands-comme-laffirme-amelie-de-montchalin) ; salariés à temps plein : Rexecode, *Durée effective du travail en France et en Europe en 2023*, document de travail n° 92, décembre 2024 (financé par ses adhérents, une soixantaine d’entreprises et d’organisations professionnelles, dont le Medef, l’UIMM et France Industrie, selon le site de Rexecode).
 
 ---
 
@@ -204,19 +212,19 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 **Texte affiché (après la réponse)**
 
-> - **Taxe Zucman.** Selon ses promoteurs (députées écologistes, proposition de loi n° 768), de 15 à 25 milliards par an avant effets de comportement [[fig:zucman_proponents_eur_bn]]. Selon ses critiques, de 2 à 6 milliards après ces effets [[fig:zucman_critics_eur_bn]]. Ces critiques : le Sénat (commission des finances), sept économistes dont Philippe Aghion, une étude commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! ».
-> - **Un test réel.** La contribution différentielle sur les hauts revenus, annoncée à environ 2 milliards, a rapporté moins de 0,4 milliard à son premier acompte (chapitre 3) [[fig:cdhr_announced_eur_bn]] [[fig:cdhr_observed_2025_eur_bn]].
-> - **Fraude fiscale.** Selon la Cour des comptes, personne ne sait si elle est plus proche de 30 ou de 130 milliards par an [[fig:tax_gap_cour_range_eur_bn]] : aucune estimation robuste n’existe. En 2024, le contrôle fiscal a notifié 20,1 milliards et encaissé 11,4 milliards [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]]. Le rendement d’un nouveau plan de lutte est à l’étape 9.
-> - **Aides aux entreprises.** Elles vont de 45 à 211 milliards selon la définition (chapitre 2) [[fig:business_aid_range_eur_bn]] : c’est une assiette, pas un rendement. Supprimer les allègements généraux de cotisations rapporterait environ 48 milliards net [[fig:contribution_relief_abolition_net_eur_bn]], au prix de nombreux emplois (chapitre 3). Selon le rapport Bozio-Wasmer (rapport remis au gouvernement), un recentrage sur les bas salaires en coûterait beaucoup moins [[src:f08:bw2024]].
+> - **Taxe Zucman.** Selon ses promoteurs, dont Gabriel Zucman (économiste, directeur de l’Observatoire européen de la fiscalité), de 15 à 25 milliards par an [[fig:zucman_proponents_eur_bn]]. Selon ses critiques, de 2 à 6 milliards [[fig:zucman_critics_eur_bn]]. Le Sénat déduit l’impôt sur les sociétés payé. Une étude commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! » ajoute les départs de contribuables : perte nette possible.
+> - **Un test réel.** La contribution différentielle sur les hauts revenus taxe le revenu, pas le patrimoine. Annoncée à environ 2 milliards, elle a rapporté moins de 0,4 milliard à son premier acompte (chapitre 3) [[fig:cdhr_announced_eur_bn]] [[fig:cdhr_observed_2025_eur_bn]].
+> - **Fraude fiscale.** Selon la Cour des comptes, personne ne sait si elle est plus proche de 30 ou de 130 milliards par an [[fig:tax_gap_cour_range_eur_bn]]. En 2024, le contrôle fiscal a notifié 20,1 milliards et encaissé 11,4 milliards [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]]. Rendement d’un nouveau plan : étape 9.
+> - **Aides aux entreprises.** Elles vont de 45 à 211 milliards selon la définition (chapitre 2) [[fig:business_aid_range_eur_bn]] : c’est une assiette, pas un rendement. Supprimer les allègements généraux de cotisations rapporterait environ 48 milliards net dans un scénario avec de nombreuses pertes d’emplois (chapitre 3) [[fig:contribution_relief_abolition_net_eur_bn]]. Selon le rapport Bozio-Wasmer (rapport remis au gouvernement), un recentrage sur les bas salaires en coûterait beaucoup moins [[src:f08:bw2024]].
 > - **Niches fiscales.** Elles coûtent 91,8 milliards en 2025 (chapitre 3) [[fig:tax_expenditures_2025_eur_bn]] : c’est aussi une assiette, pas un rendement.
 >
 > **Au total**, un ensemble de hausses d’impôts sur les plus aisés rapporterait de 10 à 25 milliards, selon notre synthèse (chapitre 3) [[fig:tax_rich_package_eur_bn]] : une estimation, pas une recette garantie.
 >
-> **Juste, ou suffisant ?** C’est une question de valeurs. La plateforme dit seulement si cela suffit.
+> **Juste, ou suffisant ?** La justice relève des valeurs ; la plateforme dit seulement si cela suffit.
 
 **Visuel** : barres de fourchette horizontales, échelle commune de 0 à 100 Md€, ligne verticale à 89,6 Md€ (« dette stable ») ; auteur et orientation à chaque bout de barre ; aides aux entreprises et niches fiscales en barres grisées « assiette, pas un rendement » (45-211 ; 91,8), avec lien vers « Construisez votre définition », et, séparée, la barre de rendement « suppression des allègements généraux : 48 Md€ net » avec renvoi « emplois : chapitre 3 » ; fraude fiscale en barre grisée « incertitude : 30 ou 130 ? » (sans valeur centrale), à côté de la barre « contrôle fiscal 2024 : 20,1 notifiés, 11,4 encaissés » ; même gabarit que la fraude sociale à l’étape 9. Données : `zucman_proponents_eur_bn`, `zucman_critics_eur_bn`, `zucman_andrews_central_eur_bn`, `tax_rich_package_eur_bn`, `cdhr_announced_eur_bn`, `cdhr_observed_2025_eur_bn`, `tax_gap_cour_range_eur_bn`, `tax_audit_assessed_2024_eur_bn`, `tax_audit_collected_2024_eur_bn`, `business_aid_range_eur_bn`, `contribution_relief_abolition_net_eur_bn`, `tax_expenditures_2025_eur_bn`, `debt_stabilizing_gap_2025_eur_bn` ; montants des partis dans `proposals.json` (`zucman_tax`, `tax_rich_package`, `cdhr`).
 
-**Pastilles source :** proposition de loi n° 768 déposée par des députées de gauche (Écologistes), 7 janvier 2025 [[fig:zucman_proponents_eur_bn]] ; étude de P. Andrews commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! », juin 2026, et autres estimations publiées [[fig:zucman_critics_eur_bn]] ; synthèse de la plateforme ; composante succession sans chiffrage indépendant [[fig:tax_rich_package_eur_bn]] ; IPP et Cour des comptes, juin 2026 [[fig:cdhr_observed_2025_eur_bn]] ; Cour des comptes, *La lutte contre la fraude fiscale*, 16 décembre 2025 [[fig:tax_gap_cour_range_eur_bn]] [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]] ; A. Bozio et É. Wasmer, *Les politiques d’exonérations de cotisations sociales : une inflexion nécessaire*, octobre 2024 [[src:f08:bw2024]] [[fig:contribution_relief_abolition_net_eur_bn]] ; Haut-commissariat à la Stratégie et au Plan, juillet 2026, et Sénat [[fig:business_aid_range_eur_bn]] ; Cour des comptes et PLF 2027, *Voies et moyens* [[fig:tax_expenditures_2025_eur_bn]].
+**Pastilles source :** proposition de loi n° 768 déposée par des députées de gauche (Écologistes), 7 janvier 2025 [[fig:zucman_proponents_eur_bn]] ; étude de P. Andrews commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! », juin 2026 (https://www.institut-entreprise.fr/wp-content/uploads/2026/06/TCT_Taxe-Zucman-2026.pdf ; perte nette possible avec les réactions des contribuables), et autres estimations publiées [[fig:zucman_critics_eur_bn]] ; Sénat, commission des finances (rapporteur E. Capus), rapport n° 689, 4 juin 2025 [[src:f07:S4]] ; synthèse de la plateforme ; composante succession sans chiffrage indépendant [[fig:tax_rich_package_eur_bn]] ; IPP et Cour des comptes, juin 2026 [[fig:cdhr_observed_2025_eur_bn]] ; Cour des comptes, *La lutte contre la fraude fiscale*, 16 décembre 2025 [[fig:tax_gap_cour_range_eur_bn]] [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]] ; A. Bozio et É. Wasmer, *Les politiques d’exonérations de cotisations sociales : une inflexion nécessaire*, octobre 2024 [[src:f08:bw2024]] [[fig:contribution_relief_abolition_net_eur_bn]] ; Haut-commissariat à la Stratégie et au Plan, juillet 2026, et Sénat [[fig:business_aid_range_eur_bn]] ; Cour des comptes et PLF 2027, *Voies et moyens* [[fig:tax_expenditures_2025_eur_bn]].
 
 ---
 
@@ -230,15 +238,15 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 **Texte affiché (après la réponse)**
 
-> - **Fraude sociale.** Les pertes estimées sont d’environ 14 milliards par an (chapitre 2) [[fig:social_fraud_hcfips_dec2025_eur_bn]]. Un nouveau plan de lutte, fiscal et social, rapporterait de façon réaliste **de 1 à 3 milliards** de plus par an [[fig:antifraud_marginal_yield_eur_bn]].
+> - **Fraude sociale.** Les pertes estimées sont d’environ 14 milliards par an (chapitre 2) [[fig:social_fraud_hcfips_dec2025_eur_bn]]. Un nouveau plan de lutte, fiscal et social (répartition inconnue), rapporterait de façon réaliste **de 1 à 3 milliards** de plus par an [[fig:antifraud_marginal_yield_eur_bn]].
 > - **Un test réel.** Le HCFP avait jugé non crédible la mesure antifraude de **1,5 milliard** du budget 2026 [[fig:antifraud_2026_announced_eur_bn]], qui a disparu de la prévision. Le projet de budget 2027 en attend 1 milliard [[prop:antifraud_plan]].
-> - **Immigration et aide médicale de l’État (AME).** Le solde budgétaire des personnes nées à l’étranger dépend de la convention (OCDE, moyenne de 2006 à 2018). Il va d’un gain de 1,02 % du PIB par an à un coût de 0,85 % du PIB [[fig:immig_net_contrib_individual_pct_gdp]] [[fig:immig_net_contrib_all_public_goods_pct_gdp]]. L’AME a coûté 1,34 milliard en 2025 (chapitre 2) [[fig:ame_2025_eur_bn]].
-> - **Contribution à l’Union européenne.** Elle atteint 9,5 milliards net en 2025 selon la méthode comptable, 6,4 milliards selon la Commission européenne (chapitre 2) [[fig:eu_net_contribution_2025_accounting_eur_bn]] [[fig:eu_net_contribution_2025_operating_eur_bn]]. La plafonner à 5 milliards économiserait **de 1,4 à 4,5 milliards au plus** [[calc:eu_net_contribution_2025_operating_eur_bn − 5 = 1,4 ; eu_net_contribution_2025_accounting_eur_bn − 5 = 4,5]]. Il faudrait changer la règle de financement du budget de l’UE, qui exige l’accord des 27 pays.
+> - **Immigration et aide médicale de l’État (AME).** Le solde budgétaire des personnes nées à l’étranger dépend de la convention (OCDE, de 2006 à 2018). Il va d’un gain de 1,02 % du PIB par an à un coût de 0,85 % [[fig:immig_net_contrib_individual_pct_gdp]] [[fig:immig_net_contrib_all_public_goods_pct_gdp]]. L’AME a coûté 1,34 milliard en 2025 (chapitre 2) [[fig:ame_2025_eur_bn]].
+> - **Contribution à l’Union européenne.** Elle atteint 9,5 milliards net en 2025 selon la méthode comptable, 6,4 milliards selon la Commission européenne (chapitre 2) [[fig:eu_net_contribution_2025_accounting_eur_bn]] [[fig:eu_net_contribution_2025_operating_eur_bn]]. La plafonner à 5 milliards économiserait **de 1,4 à 4,5 milliards au plus** [[calc:eu_net_contribution_2025_operating_eur_bn − 5 = 1,4 ; eu_net_contribution_2025_accounting_eur_bn − 5 = 4,5]]. Il faudrait l’accord des 27 pays.
 > - **État et agences.** Le Sénat estime l’économie réaliste d’une réorganisation des agences à **0,54 milliard par an** [[fig:agencies_senate_saving_eur_bn]]. Les Républicains annoncent 25 milliards du non-remplacement de 400 000 agents publics [[prop:lr_non_replacement_400k]]. Notre calcul (illustratif) donne de 12,6 à 25,3 milliards [[prop:lr_non_replacement_400k]].
 >
-> **Au total**, les cibles d’« économies faciles » pèsent environ **29 milliards**, même supprimées entièrement [[calc:eu_net_contribution_2025_accounting_eur_bn + oda_mission_plf2027_eur_bn + pouvoirs_publics_mission_eur_bn + public_broadcasting_plf2027_eur_bn + state_payments_associations_2025_eur_bn + ame_action_plf2027_eur_bn + strategy_consulting_2025_eur_bn = 29,4]]. Elle additionne la contribution à l’UE, l’aide au développement, la mission *Pouvoirs publics*, l’audiovisuel public, les associations, l’AME et les cabinets de conseil.
+> **Au total**, les cibles d’« économies faciles » pèsent environ **29 milliards**, même supprimées entièrement [[calc:eu_net_contribution_2025_accounting_eur_bn + oda_mission_plf2027_eur_bn + pouvoirs_publics_mission_eur_bn + public_broadcasting_plf2027_eur_bn + state_payments_associations_2025_eur_bn + ame_action_plf2027_eur_bn + strategy_consulting_2025_eur_bn = 29,4]] : contribution à l’UE, aide au développement, mission *Pouvoirs publics*, audiovisuel public, associations, AME et cabinets de conseil. C’est un plafond théorique, pas un rendement.
 >
-> **Juste, ou suffisant ?** C’est une question de valeurs. La plateforme dit seulement si cela suffit.
+> **Juste, ou suffisant ?** La justice relève des valeurs ; la plateforme dit seulement si cela suffit.
 
 **Visuel** : mêmes barres, même échelle (0 à 100 Md€), même ligne à 89,6 Md€ qu’à l’étape 8. Bascule « Choisissez la convention » pour l’immigration (+1,02 %, +0,25 %, −0,85 % du PIB, équivalent en Md€ au PIB 2025 « illustratif », rang OCDE). Cascade UE : ressources propres 25,9 → dépenses de l’UE en France 16,4 → solde net 9,5 ; option « méthode de la Commission » (6,4) ; pastille juridique « décision relative aux ressources propres, adoptée à l’unanimité ». Données : `social_fraud_hcfips_dec2025_eur_bn`, `antifraud_marginal_yield_eur_bn`, `immig_net_contrib_*`, `gdp_2025_eur_bn`, `ame_2025_eur_bn`, `eu_net_contribution_2025_*`, `eu_own_resources_2025_eur_bn`, `eu_spending_in_france_2025_eur_bn`, `operators_public_funding_eur_bn`, `agencies_senate_saving_eur_bn` ; montants des partis dans `proposals.json` (`lr_non_replacement_400k` en point gris « annoncé » à 25 et barre « notre calcul » 12,6-25,3 ; `antifraud_plan` ; `rn_immigration_2027`, `lr_immigration`, `rn_ame_to_amu`, `rn_eu_cap`, `rn_fraud`, `lr_fraud`, `rn_agencies`, `lr_agencies`, `agencies_reform`).
 - Somme des cibles (pastille `calc` ci-dessus) = `eu_net_contribution_2025_accounting_eur_bn` + `oda_mission_plf2027_eur_bn` + `pouvoirs_publics_mission_eur_bn` + `public_broadcasting_plf2027_eur_bn` + `state_payments_associations_2025_eur_bn` + `ame_action_plf2027_eur_bn` + `strategy_consulting_2025_eur_bn` = 29,4 Md€ (montants 2025 et PLF 2027 rapportés aux dénominateurs 2025 : ordre de grandeur ; l’AME y est comptée au PLF 2027).
@@ -253,7 +261,7 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 > Face à l’objectif de stabiliser la dette (89,6 milliards [[fig:debt_stabilizing_gap_2025_eur_bn]]), aucune promesse d’« argent facile », à gauche comme à droite, ne comble seule l’écart.
 >
-> Seuls les grands postes s’en approchent : retraites, masse salariale et fonctionnement, emploi, prestations sociales, impôts payés par tous. S’y ajoute le retour sur une partie des baisses d’impôts et de cotisations décidées depuis 2018, ou sur les dépenses fiscales.
+> Seuls les grands postes s’en approchent : retraites, masse salariale, emploi, prestations sociales, impôts payés par tous, dépenses fiscales, baisses d’impôts et de cotisations depuis 2018. L’Institut Montaigne et la Fondation iFRAP visent d’abord la dépense ; l’OFCE insiste aussi sur les recettes.
 >
 > Le choix porte donc aussi sur **qui fait l’effort** : retraités, actifs, ménages les plus aisés, entreprises, consommateurs, usagers des services publics.
 
@@ -270,11 +278,11 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 >
 > Les prélèvements obligatoires représentent **43,6 % du PIB** en 2025 [[fig:po_2025_pct_gdp]] : la France est 2e de l’OCDE (organisation internationale) en 2024 (chapitre 3) [[fig:oecd_tax_to_gdp_2024_rank]]. Mais par habitant en SPA, elle est 9e sur 27 dans l’UE pour les recettes fiscales et 8e sur 27 pour la dépense (rangs estimés) [[fig:tax_revenue_per_capita_pps_2024_rank]] [[fig:te_per_capita_pps_2025_rank]].
 >
-> Sa dépense sociale nette, public et privé additionnés, est proche de celle des États-Unis (chapitre 2) [[fig:socx_net_total_2021_pct_gdp|contexte]] [[fig:us_socx_net_total_2021_pct_gdp|contexte]]. Sur le remède, la Cour des comptes (juridiction financière) et les économistes qui attribuent le déficit aux baisses d’impôts divergent (chapitre 4).
+> Sa dépense sociale nette, public et privé additionnés, est proche de celle des États-Unis (chapitre 2) [[fig:socx_net_total_2021_pct_gdp|contexte]] [[fig:us_socx_net_total_2021_pct_gdp|contexte]]. Sur le remède, la Cour des comptes (juridiction financière) et l’OFCE (Sciences Po, sensibilité keynésienne) divergent (chapitre 4). L’OFCE relie la hausse du déficit depuis 2017 à la baisse des prélèvements.
 
 **Visuel** : toutes les barres des étapes 6 à 9 sur une seule échelle (0 à 160 Md€), en trois familles de même visibilité (« Grands postes », « Plus aisés et entreprises », « Fraude, immigration, Europe, agences ») ; « Grands postes » comprend, avec la même visibilité que les retraites et l’emploi : `tax_cuts_2018_2023_eur_bn` (62, « coût en 2023, plafond brut »), `tax_expenditures_2025_eur_bn` (91,8, « pas une recette disponible telle quelle »), `contribution_relief_abolition_net_eur_bn` (48, « emplois : chapitre 3 »), `annee_blanche_eur_bn` (4,4-5,7) et `pension_indexation_plfss2027_eur_bn` (4,1) ; trois lignes verticales : 61,9 Md€ (3 %), 89,6 Md€ (dette stable), 151,6 Md€ (équilibre). Légende : « Les lignes 61,9 Md€ (3 %) et la barre 62 Md€ (baisses d’impôts) ont la même taille par coïncidence. » Barres de coût vers la gauche d’un axe central, barres de rendement vers la droite ; couleurs neutres (aucune couleur associée à un camp). Données : ids des étapes 6 à 9, plus `tax_cuts_2018_2023_eur_bn`, `te_2025_pct_gdp`, `spending_gap_ea21_2025_pp`, `po_2025_pct_gdp`, `oecd_tax_to_gdp_2024_rank`, `tax_revenue_per_capita_pps_2024_rank`, `te_per_capita_pps_2025_rank`, `socx_net_total_2021_pct_gdp`, `us_socx_net_total_2021_pct_gdp`, `annee_blanche_eur_bn`, `pension_indexation_plfss2027_eur_bn`, `gap_to_3pct_eur_bn`, `deficit_2025_eur_bn`.
 
-**Pastilles source :** Cour des comptes, *La situation et les perspectives des finances publiques*, 15 juillet 2024 [[fig:tax_cuts_2018_2023_eur_bn]] ; Eurostat, `gov_10a_main`, 21 octobre 2026 [[fig:spending_gap_ea21_2025_pp]] ; Insee, *Insee Première* n° 2106, 29 mai 2026 [[fig:po_2025_pct_gdp]] ; OCDE, *Statistiques des recettes publiques 2025* [[fig:oecd_tax_to_gdp_2024_rank]] ; Eurostat, calculs de la plateforme en SPA [[fig:te_per_capita_pps_2025_rank]] [[fig:tax_revenue_per_capita_pps_2024_rank]] ; OCDE, SOCX [[fig:socx_net_total_2021_pct_gdp]].
+**Pastilles source :** Cour des comptes, *La situation et les perspectives des finances publiques*, 15 juillet 2024 [[fig:tax_cuts_2018_2023_eur_bn]] ; Eurostat, `gov_10a_main`, 21 octobre 2026 [[fig:spending_gap_ea21_2025_pp]] ; Insee, *Insee Première* n° 2106, 29 mai 2026 [[fig:po_2025_pct_gdp]] ; OCDE, *Statistiques des recettes publiques 2025* [[fig:oecd_tax_to_gdp_2024_rank]] ; Eurostat, calculs de la plateforme en SPA [[fig:te_per_capita_pps_2025_rank]] [[fig:tax_revenue_per_capita_pps_2024_rank]] ; OCDE, SOCX [[fig:socx_net_total_2021_pct_gdp]] ; Institut Montaigne, *Budget base zéro : décider sous la contrainte*, novembre 2025 (https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf) ; Fondation iFRAP, juillet 2026 (étape 4) ; OFCE, « Quelles trajectoires pour les finances publiques de la France ? », 11 juillet 2025 (hausse du déficit depuis 2017 expliquée par une baisse de 2,5 points du taux de prélèvement ; chiffre non affiché faute d’id) [[src:f20:f10]].
 
 ---
 
@@ -282,15 +290,13 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 
 **Texte affiché**
 
-> Vous avez les ordres de grandeur. À vous de choisir.
+> Dans le simulateur **« Équilibrez vous-même le budget »**, choisissez un objectif : 3 % du PIB [[yard:maastricht_deficit_limit_pct]], dette stable ou budget équilibré. Combinez ensuite les leviers. Chaque montant y figure en fourchette, effets sur la croissance compris.
 >
-> Dans le simulateur **« Équilibrez vous-même le budget »**, choisissez un objectif : 3 % du PIB [[yard:maastricht_deficit_limit_pct]], dette stable ou budget équilibré. Combinez ensuite les leviers : retraites, impôts, dépenses, emploi, cibles d’« économies faciles ». Chaque montant y figure en fourchette, effets sur la croissance compris.
->
-> Pour vérifier une promesse de la campagne, utilisez le **vérificateur de promesses**.
+> Pour vérifier une promesse, utilisez le **vérificateur de promesses**.
 
 **Boutons** : « Ouvrir le simulateur » (objectif « dette stable » présélectionné, effets de bouclage macroéconomique activés) ; « Vérifier une promesse » ; « Tester mes ordres de grandeur » (quiz).
 
-**Visuel** : le graphique de l’étape 10 se réduit et devient la jauge du simulateur (« écart comblé : 0 sur 89,6 Md€ ») ; rappel en petit : « Avec les effets sur la croissance, il faut environ 136 Md€ de mesures pour gagner 89,6 Md€ net la 1re année » [[yard:gross_measures_goal_a_eur_bn]]. Carte de partage : « J’avais estimé X milliards. La Cour des comptes dit 89,6 milliards, soit 19,1 jours de dépense publique. »
+**Visuel** : le graphique de l’étape 10 se réduit et devient la jauge du simulateur (« écart comblé : 0 sur 89,6 Md€ ») ; rappel en petit : « Avec les effets sur la croissance, il faut environ 136 Md€ de mesures pour gagner 89,6 Md€ net la 1re année (calcul de la plateforme, règle moyenne de la 1re année appliquée à un objectif pluriannuel : simplification) » [[yard:gross_measures_goal_a_eur_bn]]. Carte de partage : « J’avais estimé X milliards. La Cour des comptes dit 89,6 milliards, soit 19,1 jours de dépense publique. »
 
 **Pastilles source :** calculs de la plateforme [[yard:gross_measures_goal_a_eur_bn]].
 
@@ -307,6 +313,79 @@ durée de lecture visée: environ 9 minutes (2 189 mots affichés mesurés par v
 ---
 
 ## Notes de relecture (non affichées)
+
+### Confrontation aux sources publiques (2026-10-30)
+
+Règle : seules les positions publiées listées par la revue (texte ouvert, URL et date) sont utilisées ; aucune citation nouvelle ; aucun nombre sans pastille résolue dans `platform/data` (les chiffres sans id sont décrits en mots et listés plus bas). Je ne possède que ce chapitre : aucune donnée modifiée. `python3 -I platform/data/validate.py --strict` : 0 erreur sur ce chapitre (2 198 mots affichés, aucune alerte propre au chapitre ; l’alerte « Cour des comptes » restante vient du chapitre 1). Coupes compensatoires : 59 % du déficit (étape 2), ménage et part du déficit du retour à 60 ans (étape 6), « un quart du déficit » (étape 7), pauvreté des personnes âgées (étape 5), « Le chapitre 5 l’a montré », « Vous avez les ordres de grandeur », « Il rassure les prêteurs », « Tout dépend de la mesure », « aucune estimation robuste n’existe » (le « 30 ou 130 » le dit), liste de leviers de l’étape 11, phrases resserrées.
+
+**Points vérifiés (verdicts)**
+
+1. **07-01 et 07-02 (appuyés) : précisés.** « trouver 89,6 milliards par an » devient « un effort de 89,6 milliards » (niveau, pas un montant à retrouver chaque année) ; « pas l’annonce d’une faillite » (non sourcé) remplacé par « Ce chiffre dépend des hypothèses de croissance et d’inflation » (Cour, environ 2,1 % du PIB, et iFRAP, environ 2,5 %, retiennent des soldes stabilisants différents) ; étape 2 : « en une fois ou par étapes (étape 4) ».
+2. **07-03 (partiellement appuyé) : inchangé.** Mention « image illustrative » conservée. L’objection standard (un État n’a pas d’horizon fini) n’a pas de texte sourcé dans cette passe : non ajoutée.
+3. **07-04 (partiellement appuyé) : corrigé.** 0,6 présenté comme « déduit par la plateforme » de l’avis du HCFP (§36 : 0,5 point de croissance pour 0,8 point d’effort primaire), plus comme une valeur « retenue » par le HCFP ; l’écart par type de mesure est dit en mots (« plus fort pour les baisses de dépenses publiques, plus faible pour certaines hausses d’impôts ») [[src:f17:S1]], à la place de « la Cour juge comparables… ». Repère du visuel renommé « moyenne déduite de l’avis du HCFP ».
+4. **07-05 (partiellement appuyé) : corrigé.** 94 milliards : « calcul de la plateforme, première année » ; même précision pour les 136 milliards du visuel de l’étape 11 (règle de première année appliquée à un objectif pluriannuel : simplification).
+5. **07-06 (partiellement appuyé) : conservé.** 0,8 reste dans les fourchettes publiées (OFCE 0,7-0,8 ; HCFP « proche de 1 » pour la demande publique) ; ces bornes sont dans la pastille, pas affichées (pas d’id).
+6. **07-07 (contesté, présenté loyalement) : renforcé.** Encadré de l’étape 4 réécrit sur la thèse publiée la plus forte (engager l’effort tôt) : FMI (21 mai 2026), Cour (p. 138-140, tensions sur les taux), Fondation iFRAP (juillet 2026). Réponse : concession (« L’objection tient quand les taux montent »), phrase symétrique de la Cour (multiplicateurs élevés : étaler), trajectoire progressive de l’OFCE jusqu’en 2029, multiplicateur nul de 2024 « hypothèse extrême » (mission accueillie par l’Inspection générale des finances). La phrase « Le HCFP retient environ 0,6 » est retirée de la réponse (valeur implicite, point 3).
+7. **07-08 (appuyé) : complété.** Réponse de l’étape 5 : ressources de 13,9 % du PIB (2025) à 12,9 % en 2070 [[fig:pension_resources_2025_pct_gdp]] [[fig:pension_resources_2070f_pct_gdp]] ; lecture de la Fondation iFRAP (stabilité obtenue par la baisse de la pension moyenne relative), en mots.
+8. **07-09 (partiellement appuyé) : corrigé.** « Le déficit viendrait d’abord de la baisse des ressources » devient « Jusqu’en 2045, le déficit vient surtout de cette baisse ; ensuite, la hausse de la dépense pèse un peu plus » (COR : dépense +1,2 point contre ressources −1,0 point de 2025 à 2070).
+9. **07-10 (partiellement appuyé) : corrigé.** « 43 à 58 » présenté comme « chiffrages publiés … sur des périmètres différents » ; Fipeco : abandon de la réforme de 2023 puis 60 ans, « jusqu’à environ 43 milliards à terme », et Fipeco déconseille les deux ; Institut Montaigne : 58 milliards pour « tout le programme de retraite du Nouveau Front populaire ». Le détail 17 + 26 est dans la pastille (pas d’id). La pastille `fig` garde la fourchette 43-58 tant que le propriétaire des données ne la change pas.
+10. **07-11 (partiellement appuyé) : corrigé.** « 26 à 35 milliards » retiré du texte et du visuel (borne basse sans source ; 34,7 de l’Institut Montaigne couvre tout le programme du RN de 2024).
+11. **07-12 (partiellement appuyé) : corrigé.** LR : « au total sur cinq ans » (Franceinfo, 30 septembre 2026 : 40 milliards « en cumulé sur cinq ans ») et point LR séparé de l’échelle annuelle au visuel ; Horizons « par an » ; RN : contre-estimation de l’Institut Montaigne ajoutée en mots (« bien plus coûteuse ») [[src:f11:S13]].
+12. **07-13 (contesté, présenté loyalement) : précisé.** Réponse de l’étape 6 : « derrière la Belgique et l’Allemagne » (même tableau de l’OCDE), pour ne pas laisser croire qu’un coin fiscal élevé suffit à expliquer l’emploi.
+13. **07-14 (partiellement appuyé) : corrigé.** « environ 38 milliards » devient « de 38 à 84 milliards » [[fig:employment_germany_levies_eur_bn]] [[fig:employment_germany_levies_headcount_eur_bn]], bas de fourchette « corrigé des heures travaillées », 8,1 à 17,9 jours (84 / 4,6962 = 17,89), et « Le calcul ne compte ni le coût des politiques d’emploi ni la hausse ultérieure des pensions ». « Un quart du déficit » retiré.
+14. **07-15 (contre-argument manquant) : ajouté.** Réponse de l’étape 7 réécrite sur la mesure : par personne en emploi, la France travaille plus que l’Allemagne (OCDE, via Public Sénat, 17 juillet 2025) ; pour les salariés à temps plein, moins (Rexecode, DT n° 92, décembre 2024, avec son étiquette) ; par habitant, l’écart vient surtout du taux d’emploi, que mesure la DG Trésor. Productivité horaire gardée en second. « Les nouveaux entrants seraient moins productifs » (non sourcé) retiré de l’appui.
+
+**Critiques de gauche (13) : 4 appliquées, 8 appliquées en partie, 1 rejetée**
+
+1. « par an », trajectoire progressive, sensibilité (élevée) : **appliquée en partie** (voir points 1 et 6). Non affiché : 2,8 points de PIB / environ 80 milliards de l’OFCE (pas d’id). L’écart 62,0 / 62,9 (millésime du déficit) relève du propriétaire des données.
+2. « Par coïncidence … qui mesurent autre chose » (élevée) : **appliquée en partie.** « qui mesurent autre chose » supprimé ; l’OFCE est nommé à l’étape 10 avec sa thèse (hausse du déficit depuis 2017 liée à la baisse des prélèvements). Attac non ajouté : pas d’entrée dans `sources.json`, 308,62 milliards sans id, plafond de mots.
+3. Attribution inégale (moyenne) : **appliquée.** « les économistes qui attribuent le déficit aux baisses d’impôts » remplacé par l’OFCE avec son étiquette (§1.13), comme la Cour.
+4. Multiplicateur 0,6, écart par type, 94 / 136 (élevée) : **appliquée** (points 3 et 4), sans les valeurs 0,7-0,8 et « proche de 1 » dans le texte (pas d’id ; elles sont dans la pastille).
+5. Encadré de l’étape 4 (moyenne) : **appliquée** (point 6).
+6. Ressources des retraites (moyenne) : **appliquée en partie.** Ressources 13,9 → 12,9 affichées avec pastilles et date « jusqu’en 2045 ». Rejeté : « certains syndicats » / Union syndicale Solidaires, faute d’étiquette dans le glossaire (§1.13, règle 7). Conflit avec la critique de droite n° 4 : le rang Eurostat (appui de la thèse) est gardé ; la phrase sur la pauvreté des personnes âgées est retirée à la place, pour que la réponse ne donne pas seulement la statistique favorable au statu quo.
+7. Chiffrage du retour à 60 ans (élevée) : **appliquée en partie** (points 9 à 12). Rejeté : les autres financements de Solidaires (fin des exonérations, égalité salariale, emploi), faute d’étiquette ; la thèse dit déjà « financé autrement ».
+8. Étape 7, 38 milliards et heures (moyenne) : **appliquée** (points 13 et 14).
+9. Taxe Zucman (moyenne) : **appliquée en partie.** Gabriel Zucman nommé avec son étiquette ; « avant effets de comportement » retiré ; critiques séparées par mécanisme (le Sénat déduit l’impôt sur les sociétés ; l’étude « Trop, c’est trop ! » ajoute les départs). « qui retient déjà une part d’évasion » non ajouté : affirmation connue par la note de F. Geerolf, non ouverte ici, et contraire à la note de `zucman_proponents_eur_bn` (« static estimate ») ; à trancher par le propriétaire des données.
+10. CDHR (moyenne) : **appliquée en partie.** « taxe le revenu, pas le patrimoine ». Causes du manque (Legifiscal) non ajoutées : la CDHR appartient au chapitre 3 (D-ownership), Legifiscal n’est ni dans `sources.json` ni dans le glossaire.
+11. Fraude fiscale (élevée) : **appliquée en partie.** « (répartition inconnue) » pour le 1 à 3 milliards fiscal et social. Rejeté ici : 80 à 100 milliards des syndicats de la DGFiP (pas d’id, pas d’étiquette, et la Cour juge ces estimations fragiles : il faudrait afficher les deux) et rapport n° 3072 de l’Assemblée nationale (non ouvert, absent des positions vérifiées et de `sources.json`). Rapprochement des notes : 20,1 et 11,4 sont affichés depuis la passe de données (notes antérieures historiques).
+12. Aides aux entreprises, CGT (faible) : **appliquée en partie.** « dans un scénario avec de nombreuses pertes d’emplois » (les 48 milliards dépendent de cette hypothèse). CGT non ajoutée : texte sans URL, non ouvert.
+13. Ménage et récit d’Attac (faible) : **rejetée ici.** Les limites de l’image du ménage appartiennent au chapitre 1 (D-ownership) ; à proposer au propriétaire du chapitre 1, avec Attac (étiquette existante). Mention « illustratif » conservée.
+
+**Critiques de droite (10) : 6 appliquées, 4 appliquées en partie, aucune rejetée en entier**
+
+1. Encadré de l’étape 4, thèse la plus forte (élevée) : **appliquée** (point 6). Conflit avec la critique de gauche n° 5 réglé par les deux phrases de la Cour (taux tendus : concentrer ; multiplicateurs élevés : étaler), acceptables par les deux camps.
+2. Périmètres du 43-58 (élevée) : **appliquée** (point 9), y compris « Fipeco déconseille les deux ».
+3. 26-35, RN, LR (élevée) : **appliquée en partie** (points 10 et 11). 23 à 38 milliards de l’Institut Montaigne non affichés (pas d’id) : dit en mots.
+4. Encadré des retraites (élevée) : **appliquée en partie** (points 7 et 8). Rejeté : « niveau de vie des retraités 3 % au-dessus de la moyenne » de l’Institut Montaigne (pas d’id) ; l’équilibre est obtenu en retirant la statistique de pauvreté (voir gauche n° 6).
+5. Heures travaillées (moyenne) : **appliquée** (point 14).
+6. 38 à 84 milliards (moyenne) : **appliquée** (point 13), jours sur les deux bornes.
+7. « Argent facile » et 29 milliards (moyenne) : **appliquée en partie.** « C’est un plafond théorique, pas un rendement » ; étape 10 : « L’Institut Montaigne et la Fondation iFRAP visent d’abord la dépense ; l’OFCE insiste aussi sur les recettes ». Rejeté : renommer la section ; « promesses d’“argent facile” » est le vocabulaire du glossaire (§1.13) et s’applique aux deux camps (étapes 8 et 9).
+8. Critiques de la taxe Zucman (moyenne) : **appliquée** (gauche n° 9) ; perte nette possible dite en mots (22,75 milliards de l’étude Andrews sans id).
+9. Sensibilité de 89,6 et « faillite » (moyenne) : **appliquée en partie** (point 1). Rejeté : « entre 90 et 125 milliards » ; la conversion en milliards du solde stabilisant d’iFRAP n’existe dans aucune source ouverte (la critique elle-même le conditionne).
+10. Exemple du multiplicateur (faible) : **appliquée** (points 3 et 4) ; cas à faible multiplicateur dit dans le texte, repère 0,3-0,4 au visuel.
+
+**Chiffres nécessaires, absents de `platform/data` (non affichés)**
+
+- OFCE (11 juillet 2025) : ajustement de 2,8 points de PIB, un peu plus de 80 milliards d’ici 2029 ; baisse de 2,5 points du taux de prélèvement depuis 2017 (l’id `po_change_2017_2024_pts`, −2,6, existe mais n’a pas été affiché, plafond de mots).
+- Solde stabilisant en % du PIB selon la Cour (environ 2,1) et la Fondation iFRAP (environ 2,5), et l’écart correspondant en milliards.
+- FMI (21 mai 2026) : environ 0,8 point de PIB d’effort par an de 2027 à 2029.
+- Multiplicateurs par type : HCFP « proche de 1 » (demande publique) ; OFCE 0,7-0,8 (économies structurelles).
+- COR : solde −0,9 point (2045) et −2,4 points (2070) ; pension moyenne relative 54,6 % → 45,3 % (Fondation iFRAP, d’après le COR).
+- Fipeco : 17 milliards d’ici 2030 (abandon de la réforme) et jusqu’à 26 milliards à terme (60 ans) ; Institut Montaigne : 34,7 milliards (programme du RN de 2024) et 23 à 38 milliards (mesure du RN, selon Franceinfo).
+- Heures : OCDE par personne en emploi (France 1 489, Allemagne 1 335) et par habitant (Allemagne 724) ; Rexecode temps plein (France 1 673, Allemagne 1 790).
+- OCDE, coin fiscal 2025 : Belgique 52,5 %, Allemagne 49,3 %.
+- Étude Andrews : perte nette jusqu’à environ 22,75 milliards.
+
+**Pour le propriétaire des données (hors de mon périmètre)**
+
+- `multiplier_mixed_y1` : la note « 'About 0.6' (HCFP-2026-5 §36) » est inexacte ; le HCFP ne donne pas 0,6, c’est 0,5 / 0,8.
+- `return_60_general_cost_eur_bn` : 43 = 17 (2030) + jusqu’à 26 (à terme) chez Fipeco ; 58 = tout le programme du NFP chez l’Institut Montaigne ; périmètres et horizons différents.
+- `return_60_partial_cost_eur_bn` : borne basse 26 sans source ; remplacer par la fourchette de l’Institut Montaigne (23 à 38) ou supprimer.
+- `lr_pensions` : 42 (Public Sénat, non ouvert) contre 40 « en cumulé sur cinq ans » (Franceinfo) ; confirmer le montant et l’horizon.
+- `zucman_critics_eur_bn` : le libellé « after behavioral and legal effects » mélange effet de conception (Sénat) et effet de comportement (Andrews).
+- `debt_stabilizing_gap_2025_eur_bn` : 89,6 calculé sur un déficit d’environ 152,5 milliards ; 151,6 − 89,6 = 62,0 contre 62,9 chez la Cour.
+
+**Glossaire (§1.13)** : étiquettes à créer avant toute citation : Union syndicale Solidaires, syndicats de la DGFiP, Legifiscal.
 
 ### Passe du 25 octobre 2026 : ids de données créés
 

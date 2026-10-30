@@ -1794,6 +1794,12 @@ def check_chapter_lints(data):
                     m = re.search(r"(?<![\w-])" + re.escape(body) + r"(?![\w-])", nv)
                     if not m:
                         continue
+                    # a mention inside another body's label (e.g. "ancien magistrat de la Cour des comptes")
+                    # is not a first mention of this body
+                    # ("Observatoire … (OFCE ; label)" is still a first mention)
+                    if nv[:m.start()].count("(") - nv[:m.start()].count(")") > 0 \
+                            and not re.match(r"\s*;", nv[m.end():]):
+                        continue
                     first_body.add(body)
                     used = re.search(re.escape(body) + r"\s*;\s*([^)]*)\)", nv) or \
                         re.search(re.escape(body) + r"[^()]{0,60}?\(([^)]*)\)", nv)

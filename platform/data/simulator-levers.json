@@ -2,7 +2,7 @@
   "meta": {
     "dataset": "simulator-levers",
     "schema": "schemas/simulator-levers.schema.json",
-    "as_of": "2026-10-25",
+    "as_of": "2026-10-30",
     "version": "1.0.0",
     "description": "Levers of the 'Balance the budget yourself' simulator (file 20 §5.3 after the 15-18 sync), multiplier classes (file 17 §8), toggles and anti-double-counting rules. Sign: positive = improves the balance.",
     "conventions": "Decimal points and no thousands separators in JSON numbers; French formatting (comma decimal, narrow no-break space) is applied at render time. EUR bn = billions of euros, current prices. Every share says % of GDP or % of total public expenditure."
@@ -256,7 +256,7 @@
       },
       "kind": "demand",
       "basis": "OFCE PB 154 (large-firm surtax 0.29, CDHR ≈ 0); ESCB",
-      "flag": "Long-run warning for permanent capital-tax rises.",
+      "flag": "Long-run warning for permanent capital-tax rises: investment and competitiveness effects are not captured (Rexecode, WP 97, 2025; Cour des comptes, RSPFP 2026, on stacked exceptional levies). OFCE PB 154 class values to be re-checked (review of 2026-10-30).",
       "source_ids": [
         "f17",
         "f17:S8"
@@ -278,7 +278,7 @@
       },
       "kind": "demand",
       "basis": "Expert proxy (OFCE CDHR ≈ 0; ESCB capital tax): no direct French estimate",
-      "flag": "Expert proxy, labeled as such; revenue uncertainty dominates.",
+      "flag": "Expert proxy, labeled as such; revenue uncertainty dominates. Demand effect only: excludes the long-run supply effect on investment. CPO (1 Dec 2025, https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf): recurrent taxation of professional assets is likely to weigh on investment and competitiveness; taxation at transmission has more limited effects.",
       "source_ids": [
         "f17"
       ]
@@ -561,9 +561,9 @@
       "step": null,
       "positions": null,
       "options": null,
-      "yield_low": 15,
-      "yield_central": 20,
-      "yield_high": 25,
+      "yield_low": 2,
+      "yield_central": 5,
+      "yield_high": 6,
       "yield_static": {
         "low": 15,
         "central": 20,
@@ -571,7 +571,7 @@
         "central_is_midpoint": false,
         "computed_by_us": false,
         "at_setting": null,
-        "note": "Proponents' static range (AN bill no. 768)"
+        "note": "Proponents' static range (AN bill no. 768); no independent source endorses it"
       },
       "yield_behavioral": {
         "low": 2,
@@ -580,7 +580,7 @@
         "central_is_midpoint": false,
         "computed_by_us": false,
         "at_setting": null,
-        "note": "Critics after behavioral and legal effects"
+        "note": "Independent and critical estimates after behavioral and legal effects: Senate report 689 (2-3, if corporate tax is credited), Terra Nova (center-left, about 5), F. Geerolf (economist at the OFCE, 2-6), Fondation iFRAP (liberal: about ten times less than 15-25)"
       },
       "yield_model": {
         "kind": "toggle"
@@ -589,13 +589,13 @@
       "ramp_up_note": null,
       "behavioral_toggle": {
         "available": true,
-        "effect_en": "Switches to the post-behavior value."
+        "effect_en": "Both values are shown side by side. The headline and the total use the independent estimates (2-6) whatever the toggle; the proponents' static figure (15-25) is shown next to them."
       },
       "multiplier_class": "wealth_tax",
       "multiplier_note": null,
       "legal_feasibility": {
         "flag": "constitutional_risk",
-        "note_en": "A 2% uncapped wealth tax may be struck down (Senate report 689)."
+        "note_en": "Senate report 689 (majority rapporteur E. Capus): 'probably unconstitutional'; the Constitutional Council accepted 0.5% uncapped and 1.8% only with a cap. The minority rapporteur (E. Sas) sets out counter-arguments in the same report. CPO (Dec 2025): a cap is required above about 1.8%, so the yield depends on the design."
       },
       "confidence": "L",
       "claim_status": "range_across_estimates",
@@ -625,8 +625,8 @@
         "zucman_tax"
       ],
       "disabled": false,
-      "notes_en": "Constitutional risk flag; the base is concentrated (three departures would halve it). Cannot be stacked in full with R2.",
-      "notes_fr": "Risque constitutionnel ; l'assiette est concentrée (trois départs la réduiraient de moitié). Non cumulable en totalité avec R2."
+      "notes_en": "Constitutional risk flag; the base is concentrated (three departures would halve it). Low estimates come from both sides (Senate, Terra Nova, OFCE economist, iFRAP). Cannot be stacked in full with R2.",
+      "notes_fr": "Risque constitutionnel ; l'assiette est concentrée (trois départs la réduiraient de moitié). Les estimations basses viennent des deux bords (Sénat, Terra Nova, un économiste de l'OFCE, Fondation iFRAP). Non cumulable en totalité avec R2."
     },
     {
       "id": "R2",
@@ -653,7 +653,7 @@
         "central_is_midpoint": true,
         "computed_by_us": false,
         "at_setting": null,
-        "note": "Net of the IFI it replaces; gross 3-4.5"
+        "note": "Net of the IFI it replaces; gross 3-4.5 (CAE, mechanical effect of the 2018 repeal only)"
       },
       "yield_behavioral": null,
       "yield_model": {
@@ -667,7 +667,7 @@
       "ramp_up_note": null,
       "behavioral_toggle": {
         "available": false,
-        "effect_en": "Behavioral response 'lower (not quantified)': the toggle shows the static value with a 'not quantified' label."
+        "effect_en": "Behavioral response 'lower (not quantified)': the toggle shows the static value with a 'not quantified' label. CPO (Dec 2025): recurrent taxation of professional assets is likely to weigh on investment."
       },
       "multiplier_class": "wealth_tax",
       "multiplier_note": null,
@@ -698,8 +698,8 @@
         "isf_restoration"
       ],
       "disabled": false,
-      "notes_en": "Cannot be stacked in full with R1 (overlapping bases): the tool caps the R1 + R2 combination at the file 07 §5 band (3-10).",
-      "notes_fr": "Non cumulable en totalité avec R1 (assiettes qui se recoupent) : l'outil plafonne R1 + R2 à la fourchette du fichier 07 §5 (3-10)."
+      "notes_en": "Gross (mechanical) 3-4.5 is shown next to the net value. Cannot be stacked in full with R1 (overlapping bases): the tool caps the R1 + R2 combination at the file 07 §5 band (3-10).",
+      "notes_fr": "Le montant brut (effet mécanique, 3 à 4,5) est affiché à côté du montant net. Non cumulable en totalité avec R1 (assiettes qui se recoupent) : l'outil plafonne R1 + R2 à la fourchette du fichier 07 §5 (3-10)."
     },
     {
       "id": "R3",
@@ -726,7 +726,7 @@
         "central_is_midpoint": false,
         "computed_by_us": false,
         "at_setting": null,
-        "note": "3.2 Institut Montaigne (default); 9 = LFI claim"
+        "note": "3.2 Institut Montaigne (default): PFU abolition plus exit-tax restoration, as one package; 9 = LFI claim"
       },
       "yield_behavioral": null,
       "yield_model": {
@@ -736,7 +736,7 @@
       "ramp_up_note": null,
       "behavioral_toggle": {
         "available": false,
-        "effect_en": "No behavioral estimate available (shown as such)."
+        "effect_en": "No quantified behavioral estimate. Fipeco: dividends rose from 14 to 23 bn in 2018 after the PFU, so the base may shrink if it is abolished."
       },
       "multiplier_class": "corporate_capital",
       "multiplier_note": null,
@@ -766,8 +766,8 @@
         "pfu_abolition_lfi"
       ],
       "disabled": false,
-      "notes_en": "Show both values; default 3.2 (Montaigne). France Stratégie found no investment effect of the 2018 reform.",
-      "notes_fr": "Afficher les deux valeurs ; 3,2 par défaut (Montaigne). France Stratégie n'a pas trouvé d'effet de la réforme de 2018 sur l'investissement."
+      "notes_en": "Show both values; default 3.2 (Montaigne, PFU plus exit tax). Fipeco: static cost of the PFU 1.5-1.8, probably nil ex post. No significant investment effect of the 2018 reform was found (Fipeco; France Stratégie as cited by Terra Nova).",
+      "notes_fr": "Afficher les deux valeurs ; 3,2 par défaut (Montaigne, PFU et exit tax ensemble). Fipeco : coût statique du PFU de 1,5 à 1,8, probablement nul après coup. Aucun effet notable de la réforme de 2018 sur l'investissement n'a été trouvé (Fipeco ; France Stratégie citée par Terra Nova)."
     },
     {
       "id": "R4",
@@ -794,7 +794,7 @@
         "central_is_midpoint": true,
         "computed_by_us": false,
         "at_setting": null,
-        "note": "File 07 §5 plausible range; no independent costing found"
+        "note": "File 07 §5 plausible range; 6.5 is the midpoint of an editorial range, not a measurement. Only partial costings of different designs exist"
       },
       "yield_behavioral": null,
       "yield_model": {
@@ -839,8 +839,8 @@
         "inheritance_package_ps"
       ],
       "disabled": false,
-      "notes_en": "'No independent costing found.' Mapped to the wealth-tax multiplier by us (flagged).",
-      "notes_fr": "« Aucun chiffrage indépendant trouvé. » Rattaché au multiplicateur de l'impôt sur la fortune par nos soins (signalé)."
+      "notes_en": "Only partial costings of different designs: CAE Note 69, 9-19 in steady state for a broad reform; Terra Nova, about 4 (phased in) for ending the erasure of latent gains at transmission plus 1.4 for Dutreil. The CPO's option (a differential contribution on estates and gifts, a tighter Dutreil pact) is not modeled. Mapped to the wealth-tax multiplier by us (flagged).",
+      "notes_fr": "Seuls des chiffrages partiels de dispositifs différents existent : CAE (note 69), 9 à 19 à terme pour une réforme large ; Terra Nova, environ 4 (progressivement) pour mettre fin à l'effacement des plus-values latentes à la transmission, plus 1,4 pour le pacte Dutreil. L'option du CPO (contribution différentielle sur les successions et donations, pacte Dutreil resserré) n'est pas modélisée. Rattaché au multiplicateur de l'impôt sur la fortune par nos soins (signalé)."
     },
     {
       "id": "R5",
@@ -916,8 +916,8 @@
         "cdhr"
       ],
       "disabled": false,
-      "notes_en": "The real-world test of top-income taxation: the 2025 yield was about a quarter to a third of the announcement.",
-      "notes_fr": "Le test grandeur nature de la taxation des hauts revenus : le rendement 2025 a été d'environ un quart à un tiers de l'annonce."
+      "notes_en": "The real-world test of top-income taxation: the 2025 yield was about a quarter to a third of the announcement. The Cour des comptes links the gap to income that is easy to defer (a design issue); the lesson does not transfer as is to a wealth tax.",
+      "notes_fr": "Le test grandeur nature de la taxation des hauts revenus : le rendement 2025 a été d'environ un quart à un tiers de l'annonce. La Cour des comptes relie l'écart à des revenus faciles à reporter (un problème de conception) ; la leçon ne vaut pas telle quelle pour un impôt sur la fortune."
     },
     {
       "id": "R6",
@@ -1829,8 +1829,8 @@
         "rn_posts_not_filled"
       ],
       "disabled": true,
-      "notes_en": "Disabled in v1: not costed in the research base.",
-      "notes_fr": "Désactivé en v1 : non chiffré dans la base de recherche."
+      "notes_en": "Disabled in v1: not costed in the research base. Rule applied to both sides: a lever is enabled with a range only when at least one independent estimate exists (R1: Senate, Terra Nova; R4: CAE Note 69); S4 has only party claims and our own conversion.",
+      "notes_fr": "Désactivé en v1 : non chiffré dans la base de recherche. Règle commune aux deux bords : un levier n'est activé avec une fourchette que s'il existe au moins une estimation indépendante (R1 : Sénat, Terra Nova ; R4 : CAE) ; S4 n'a que des annonces de partis et notre propre conversion."
     },
     {
       "id": "S5",

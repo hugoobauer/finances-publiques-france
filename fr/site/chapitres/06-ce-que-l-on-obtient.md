@@ -1,6 +1,6 @@
 # Chapitre 6. Qu’obtient-on en échange ?
 
-*Script de récit défilant (scrollytelling) pour le site public. Version de travail du 25 octobre 2026, à relire par l’équipe éditoriale.*
+*Script de récit défilant (scrollytelling) pour le site public. Version de travail du 30 octobre 2026 (après confrontation aux sources publiques).*
 
 <!--
 NOTES POUR L’ÉQUIPE (non affichées)
@@ -28,7 +28,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > Ce chapitre compare cinq résultats : pauvreté, santé, école, justice, emploi. Ils ne dépendent pas seulement de l’argent public, mais ils montrent où la dépense « rapporte » et où elle rapporte moins.
 >
-> Durée de lecture : environ 8 minutes.
+> Durée de lecture : environ 9 minutes.
 
 **Visuel et animation**
 - Plein écran : cinq pictogrammes (pauvreté, santé, école, justice, emploi) apparaissent l’un après l’autre, chacun avec un point d’interrogation.
@@ -74,7 +74,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 > - La **santé** : 15,6 % des dépenses publiques [[fig:cofog_health_2024_pct_te]], soit 8,9 % du PIB [[fig:cofog_health_2024_pct_gdp]].
 > - L'**enseignement** : 8,9 % des dépenses publiques [[fig:cofog_education_2024_pct_te]], soit 5,1 % du PIB [[fig:cofog_education_2024_pct_gdp]].
 >
-> Dans le calendrier de la dépense publique, ces trois postes occupent environ 241 jours sur 365 [[calc:(cofog_social_protection_2024_pct_te + cofog_health_2024_pct_te + cofog_education_2024_pct_te) / 100 × days_in_year = 240,9]].
+> Dans le calendrier de la dépense publique, ces trois postes occupent environ 241 jours sur 365 [[calc:(cofog_social_protection_2024_pct_te + cofog_health_2024_pct_te + cofog_education_2024_pct_te) / 100 × days_in_year = 240,9]]. Ordre de grandeur, d’après notre calcul : parts de 2024, dépense de 2025.
 >
 > Ramené à une personne, la dépense publique représente 68 € par habitant et par jour [[yard:te_per_capita_per_day_eur]]. Sur cette somme, environ 28 € vont à la protection sociale [[calc:te_per_capita_per_day_eur × cofog_social_protection_2024_pct_te / 100 = 28,2]], 11 € à la santé [[calc:te_per_capita_per_day_eur × cofog_health_2024_pct_te / 100 = 10,6]] et 6 € à l’enseignement [[calc:te_per_capita_per_day_eur × cofog_education_2024_pct_te / 100 = 6,1]].
 
@@ -105,13 +105,15 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Texte affiché**
 
-> En 2025, 16,3 % des personnes vivant en France sont sous le seuil de risque de pauvreté, après impôts et prestations sociales [[fig:arop_2025_pct]]. Eurostat parle de « taux de risque de pauvreté après transferts sociaux ». C’est exactement le niveau de l’Union européenne dans son ensemble [[fig:eu27_arop_2025_pct|contexte]].
+> En 2025, 16,3 % des personnes vivant en France sont sous le seuil de risque de pauvreté, après impôts et prestations sociales [[fig:arop_2025_pct]]. C’est exactement le niveau de l’Union européenne dans son ensemble [[fig:eu27_arop_2025_pct|contexte]].
 >
 > La France a le 11e taux le plus élevé des 27 pays de l’UE [[fig:arop_2025_rank]].
 >
-> Le taux était de 13,6 % de la population en 2015 [[fig:arop_2015_pct]]. L’enquête a changé de méthode en 2020 et en 2022 : une partie de la hausse peut venir de ces changements [[src:f10]].
+> Le taux était de 13,6 % de la population en 2015 [[fig:arop_2015_pct]]. Eurostat signale des ruptures de série en 2020 et en 2022, dont l’effet n’est pas chiffré [[src:f10]].
 >
-> Mais la mesure nationale de l’Institut national de la statistique et des études économiques (Insee) est calculée autrement, et elle confirme la hausse. Elle atteint 15,4 % de la population sur les revenus de 2024 [[fig:poverty_national_2024_pct]], son plus haut niveau depuis 1996 [[src:f10]].
+> Pour Pierre Madec, de l’OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), la hausse a aussi des causes économiques. Il cite l’inflation, la fin des aides exceptionnelles et des emplois peu payés.
+>
+> La mesure nationale de l’Insee (Institut national de la statistique et des études économiques) atteint 15,4 % de la population en 2024, comme en 2023 [[fig:poverty_national_2024_pct]]. C’est son plus haut niveau depuis 1996. Elle couvre la France métropolitaine, sans les sans-abri ni les personnes en institution [[src:f00:row47]].
 
 **Visuel et animation**
 - Graphique en points (dot plot) des 27 pays de l’UE, triés du taux le plus bas au plus élevé. Point de la France en couleur d’accent, ligne verticale pour l’UE-27.
@@ -123,8 +125,9 @@ NOTES POUR L’ÉQUIPE (non affichées)
 **Pastilles**
 - 16,3 % [[fig:arop_2025_pct]] ; UE-27 16,3 % [[fig:eu27_arop_2025_pct]]
 - 11e taux le plus élevé sur 27 [[fig:arop_2025_rank]] (rang 1 = taux le plus élevé)
-- 13,6 % en 2015 [[fig:arop_2015_pct]] (mention « rupture de série » obligatoire, note de la figure) ; changements de méthode 2020 et 2022 [[src:f10]]
-- 15,4 % [[fig:poverty_national_2024_pct]] ; « plus haut depuis 1996 » [[src:f10]]
+- 13,6 % en 2015 [[fig:arop_2015_pct]] (mention « rupture de série » obligatoire, note de la figure) ; ruptures de série 2020 et 2022 [[src:f10]] (relevé de la plateforme dans les métadonnées Eurostat ilc_li02, 25 octobre 2026 ; ne pas les présenter comme l’explication de la hausse)
+- OFCE : Pierre Madec, « Lutte contre la pauvreté : le décrochage français ? », blog de l’OFCE, 26 novembre 2025, https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/ (consulté le 30 octobre 2026 par la confrontation aux sources publiques ; **entrée à ajouter à sources.json**, pas de pastille tant qu’elle n’existe pas)
+- 15,4 % [[fig:poverty_national_2024_pct]] ; « plus haut depuis 1996 », France métropolitaine, stable par rapport à 2023, hors personnes en institution et sans domicile, ruptures de la série ERFS en 2010, 2012 et 2020 [[src:f00:row47]] (Insee, *Insee Première* n° 2117, 9 juillet 2026, https://www.insee.fr/fr/statistiques/9019316)
 
 ---
 
@@ -138,7 +141,9 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > La mesure européenne place le seuil plus haut, aux trois cinquièmes du revenu médian. Avec elle, 11,6 % des 65 ans et plus sont sous le seuil de risque de pauvreté en 2025 [[fig:old_age_poverty_eu_2025_pct]]. C’est nettement moins que pour l’ensemble de la population (16,3 %) [[fig:arop_2025_pct]].
 >
-> Selon le Conseil d’orientation des retraites (COR), le niveau de vie moyen des retraités égale celui de l’ensemble de la population. Il en représente 100,2 % en 2023 [[fig:retirees_relative_living_standard_pct]].
+> Selon le Conseil d’orientation des retraites (COR), le niveau de vie moyen des retraités égale celui de l’ensemble de la population. Il en représente 100,2 % en 2023 [[fig:retirees_relative_living_standard_pct]]. Si l’on compte le loyer que les propriétaires n’ont pas à payer, les retraités passent au-dessus [[src:f03:cor26]].
+>
+> L’Institut Montaigne (libéral-centriste) y voit en partie la générosité du système, en partie la forte hausse du nombre de retraités [[src:f10]].
 >
 > Ce résultat a un coût : les retraites sont le premier poste de la dépense publique (chapitre 2).
 
@@ -150,7 +155,8 @@ NOTES POUR L’ÉQUIPE (non affichées)
 **Pastilles**
 - 6,1 % [[fig:old_age_poverty_oecd_2022_pct]] ; 14,8 % [[fig:oecd_old_age_poverty_2022_pct]]
 - 11,6 % [[fig:old_age_poverty_eu_2025_pct]] ; 16,3 % [[fig:arop_2025_pct]]
-- 100,2 % [[fig:retirees_relative_living_standard_pct]]
+- 100,2 % [[fig:retirees_relative_living_standard_pct]] (hors loyers imputés) ; variante avec loyers imputés, retraités 6,5 % au-dessus de l’ensemble de la population (COR, *Rapport annuel* 2026, partie 3, chapitre 2, https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part3_Chap2.pdf ; fichier 03, l. 129) [[src:f03:cor26]] : **figure à créer** (`retirees_relative_living_standard_imputed_rent_pct`, 106,5) avant d’afficher le chiffre
+- Institut Montaigne, *Budget base zéro : décider sous la contrainte*, novembre 2025 (« la générosité de notre système » ; hausse du nombre de retraités ; niveau de vie global des retraités au-dessus de celui de l’ensemble de la population), https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf [[src:f10]] (fichier 10, [S44])
 
 ---
 
@@ -164,17 +170,17 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 > La santé est le 2e poste de la dépense publique : 8,9 % du PIB en 2024 [[fig:cofog_health_2024_pct_gdp]]. C’est 1,5 point de PIB de plus que la zone euro à 21 pays (ZE21, Bulgarie comprise) dans son ensemble [[fig:gap2024_health_pp]]. Ce calcul suit la classification des fonctions des administrations publiques (COFOG). L’écart est plus faible avec d’autres définitions [[src:f12]].
 >
-> Par habitant et à coût de la vie égal, la France dépense moins pour sa santé que l’Allemagne, les Pays-Bas, la Belgique ou la Suède. Ce calcul compte la dépense publique et la dépense privée [[src:f12]].
+> Par habitant, à coût de la vie égal et dépense privée comprise, la France dépense moins que l’Allemagne, les Pays-Bas, la Belgique ou la Suède [[src:f12]]. C’est le coût total, pas la seule charge publique (étape 8).
 >
 > **Ce qui va bien.** L’espérance de vie à la naissance atteint 83,0 ans en 2024 [[fig:life_expectancy_2024_years]], contre 81,5 ans dans l’Union européenne à 27 pays (UE-27) [[fig:eu27_life_expectancy_2024_years]]. La France est 7e sur 27 [[fig:life_expectancy_2024_rank]].
 >
 > Six pays de l’UE font mieux [[calc:life_expectancy_2024_rank - 1 = 6]], dont l’Espagne, la Suède et l’Italie. Ces trois pays consacrent moins de dépense publique à la santé et à la protection sociale [[src:f10]].
 >
-> Autres points forts : la mortalité qui aurait pu être évitée par des soins est parmi les plus basses d’Europe. Le reste à charge des ménages (la part des soins qu’ils paient eux-mêmes) est parmi les plus faibles d’Europe [[src:f12]].
+> Autres points forts : la mortalité évitable par des soins et le reste à charge des ménages sont parmi les plus bas d’Europe [[src:f12]].
 >
-> **Ce qui va moins bien.** Le renoncement aux soins pour cause de délais augmente depuis 2021, en partie à cause d’un changement de méthode de l’enquête. La France est dans le tiers le moins bien placé de l’UE. La survie après un cancer est dans la moyenne de l’OCDE, pas en tête [[src:f12]].
+> **Ce qui va moins bien.** Le renoncement aux soins pour délais augmente depuis 2021, en partie à cause d’un changement de méthode. La France est dans le tiers le moins bien placé de l’UE. La survie après un cancer est dans la moyenne de l’OCDE, pas en tête [[src:f12]].
 >
-> **Où sont les marges ?** Les frais de gestion sont les plus élevés de l’UE. C’est surtout parce que deux assurances se superposent : l’Assurance maladie et les complémentaires santé [[src:f12]]. Le chapitre 2 chiffre ce réservoir et celui des soins de faible valeur.
+> **Où sont les marges ?** Les frais de gestion sont élevés, surtout parce que deux assurances se superposent : l’Assurance maladie et les complémentaires santé [[src:f12]]. La Fondation iFRAP (libérale) les juge bien plus bas aux Pays-Bas, tout en disant la comparaison imparfaite. Le chapitre 2 chiffre ce réservoir.
 
 **Visuel et animation**
 - Graphique 1 : barres de l’espérance de vie à la naissance, 2024, pays de l’UE-27 triés. France en couleur d’accent, ligne UE-27. Axe : « en années ».
@@ -183,7 +189,9 @@ NOTES POUR L’ÉQUIPE (non affichées)
 **Pastilles**
 - 8,9 % du PIB [[fig:cofog_health_2024_pct_gdp]] ; +1,5 point [[fig:gap2024_health_pp]] (comparaison : zone euro ZE21, 2024) ; « plus faible avec d’autres définitions » et dépense par habitant en standard de pouvoir d’achat [[src:f12]]
 - 83,0 ans [[fig:life_expectancy_2024_years]] ; 81,5 ans [[fig:eu27_life_expectancy_2024_years]] ; 7e sur 27 [[fig:life_expectancy_2024_rank]] ; six pays devant [[calc:life_expectancy_2024_rank - 1 = 6]] ; Espagne, Suède et Italie devant la France avec une dépense publique de santé et de protection sociale plus faible [[src:f10]] (fichier 10, §8.2 ; valeurs pays à ajouter à figures.json avant de les afficher, voir note 1)
-- Mortalité évitable, reste à charge, délais (et rupture de série), survie après un cancer, frais de gestion « les plus élevés de l’UE » [[src:f12]]
+- Fipeco (François Ecalle), *L’efficience des dépenses d’assurance maladie*, fiche encyclopédie, 30 janvier 2026, https://fipeco.fr/pdf/EfficienceD%C3%A9pensesSant%C3%A9.pdf : France 3e de l’OCDE pour la dépense de santé publique ou obligatoire (9,7 % du PIB en 2023, à égalité avec la Suède, derrière les États-Unis et l’Allemagne), 9e pour l’espérance de vie (2023), 10e pour la mortalité évitable (2022) ; « pourrait être nettement améliorée ». Chiffres non affichés : **figures à créer** (`health_public_compulsory_2023_pct_gdp`, `health_public_compulsory_2023_oecd_rank`, `life_expectancy_2023_oecd_rank`) et **entrée à ajouter à sources.json**.
+- Fipeco, *Les montants laissés à la charge des ménages par l’assurance maladie*, 30 janvier 2024, https://fipeco.fr/pdf/Bouclier2024.pdf (« duplication des frais de gestion ») ; Fondation iFRAP (Iphigénie Betolaud), « 17 Md€ de coûts de gestion de la santé », 7 juin 2026, https://www.ifrap.org/emploi-et-politiques-sociales/17-mdeu-de-couts-de-gestion-de-la-sante (0,57 % du PIB contre 0,3 % aux Pays-Bas, Eurostat 2023 ; comparaison « imparfaite » selon l’auteure) : **entrées à ajouter à sources.json** ; montants réservés au chapitre 2.
+- Mortalité évitable, reste à charge, délais (et rupture de série), survie après un cancer, frais de gestion [[src:f12]] (« les plus élevés de l’UE » retiré le 30 octobre 2026 : non confirmé par les textes publiés consultés)
 - Renvoi au chapitre 2 (étape 8) pour le chiffrage des réservoirs (frais de gestion, soins de faible valeur) : aucun montant affiché ici.
 
 ---
@@ -198,9 +206,15 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 > **L’école.** Selon l’enquête 2025 du Programme international pour le suivi des acquis des élèves (PISA), les élèves de 15 ans obtiennent 458 points en mathématiques [[fig:pisa_math_2025]]. La moyenne de l’OCDE est de 463 points [[fig:oecd_pisa_math_2025]]. La France est 29e sur 38 pays de l’OCDE [[fig:pisa_math_2025_rank]]. Sa baisse depuis 2015 est l’une des plus fortes, même si la moyenne de l’OCDE a aussi baissé [[src:f13]].
 >
-> L’argent n’explique qu’une petite partie de ces écarts. Parmi les pays riches, ceux qui dépensent le plus par élève n’ont pas toujours les meilleurs scores [[src:f13]]. La France dépense à peu près autant par élève que la moyenne de l’OCDE, mais paie ses enseignants moins que cette moyenne [[src:f04]].
+> Parmi les pays riches, ceux qui dépensent le plus par élève n’ont pas toujours les meilleurs scores [[src:f13]]. Le Conseil d’analyse économique (CAE ; instance d’économistes placée auprès du Premier ministre) nuance. En 2021, la France dépensait un peu plus par élève que la moyenne de l’OCDE : moins en primaire, plus dans le secondaire.
 >
-> **La justice.** Les comparaisons européennes montrent moins de juges par habitant en France que dans la plupart des pays européens. Les procès civils y sont aussi plus longs. Deux nuances : le budget de la justice par habitant est au-dessus de la médiane européenne, mais sous la moyenne. Et l’organisation des tribunaux diffère d’un pays à l’autre [[src:f04]] [[src:f10]].
+> Le Canada, l’Estonie ou le Japon font mieux pour une dépense comparable ou plus faible. Mais le CAE juge efficaces les dépenses ciblées : petites classes en primaire, tutorat.
+>
+> Les enseignants sont moins payés que la moyenne de l’OCDE [[src:f04]]. Pour la Fondation iFRAP, l’école manque moins de moyens que d’organisation : elle propose notamment une part de salaire variable.
+>
+> **La justice.** La France a moins de juges par habitant que la plupart des pays européens, et des procès civils plus longs [[src:f04]] [[src:f10]]. Ces données de 2022 viennent surtout de l’Union syndicale des magistrats (syndicat de magistrats), qui juge la situation « critique ».
+>
+> La Cour des comptes (juridiction financière) notait en 2021 un budget en nette hausse depuis 2011, sans baisse des délais civils. Elle demandait de mieux répartir les effectifs.
 
 **Visuel et animation**
 - Graphique 1 : nuage de points « dépense par élève / score PISA 2025 », pays de l’OCDE, France en couleur d’accent, droite de tendance (fichier 20, §4.2, GF09 ; données `data/13_pisa2025_country_values.csv`). Les valeurs des autres pays sont dans le fichier de données ; le texte n’en cite aucune.
@@ -209,8 +223,12 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Pastilles**
 - 458 [[fig:pisa_math_2025]] ; 463 [[fig:oecd_pisa_math_2025]] ; 29e sur 38 [[fig:pisa_math_2025_rank]]
-- Baisse depuis 2015, lien dépense-score [[src:f13]] ; dépense par élève et salaire des enseignants [[src:f04]]
-- Justice (juges, durée des procès, budget par habitant, limites de la comparaison) [[src:f04]] [[src:f10]]
+- Baisse depuis 2015, lien dépense-score [[src:f13]] ; salaire des enseignants [[src:f04]]
+- CAE (Greneta, Landais), *Éducation : comment mieux orienter la dépense publique*, Note du CAE n° 84, mai 2025, https://cae-eco.fr/static/pdf/cae084-education-250514.pdf : dépense par élève 2021 (OCDE, *Regards sur l’éducation* 2024) 9 352 € contre 8 838 € pour l’OCDE ; primaire 11 % sous la moyenne, secondaire 13 % au-dessus ; enseignant du primaire à dix ans d’ancienneté payé 17 % de moins ; pays plus efficaces ; dépenses ciblées efficaces. Chiffres non affichés : **figures à créer** (`spending_per_pupil_2021_eur`, `oecd_spending_per_pupil_2021_eur`, `primary_spending_gap_2021_pct`, `secondary_spending_gap_2021_pct`) et **entrée à ajouter à sources.json**.
+- Fondation iFRAP, *Société Civile* n° 227, octobre 2021, https://www.ifrap.org/education-et-culture/eduquer-mieux-en-reallouant-et-en-baissant-les-depenses (constat de la Cour des comptes de 2013 : l’Éducation nationale « ne souffre pas d’un manque de moyens » ; part variable de rémunération) : **entrée à ajouter à sources.json**.
+- Justice (juges, durée des procès) [[src:f04]] [[src:f10]] ; Union syndicale des magistrats, *Note sur le rapport CEPEJ 2024*, 18 octobre 2024 (données 2022, source syndicale), https://union-syndicale-magistrats.org/wp-content/uploads/2024/10/2024.10.18_note-USM-sur-rapport-CEPEJ-2024.pdf (fichier 10, [S38])
+- Cour des comptes, note *Améliorer la gestion du service public de la justice*, 21 octobre 2021, lue seulement dans le résumé du Monde du Droit (25 octobre 2021), https://www.lemondedudroit.fr/judiciaire/324-organisation-judiciaire/78080-cour-des-comptes-ameliorer-la-gestion-du-service-public-de-la-justice.html (budget + 22 % de 2011 à 2021, délais civils en hausse) : **ouvrir la note primaire et ajouter l’entrée à sources.json** avant publication ; « nettement » remplace le chiffre en attendant.
+- Budget de la justice par habitant (au-dessus de la médiane européenne, sous la moyenne) : retiré du texte affiché le 30 octobre 2026 (voir notes de relecture), à rétablir avec les chiffres CEPEJ primaires.
 
 ---
 
@@ -222,23 +240,27 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > En 2025, 69,3 % des personnes de 15 à 64 ans ont un emploi en France [[fig:employment_rate_2025_pct]], contre 71,0 % dans l’UE-27 [[fig:eu27_employment_rate_2025_pct]]. La France est 21e sur 27 [[fig:employment_rate_2025_rank]].
 >
-> Rapporté à toute la population, le nombre d’heures travaillées est le plus faible de l’UE. Il est de 666 par habitant et par an [[fig:hours_per_inhabitant_2025]], au 27e rang sur 27 [[fig:hours_per_inhabitant_2025_rank]]. Cet indicateur divise les heures par toute la population, élèves, étudiants et retraités compris : il dépend donc aussi de la démographie.
+> Le taux d’emploi a pourtant progressé depuis 2014, comme la pauvreté, à l’inverse de la plupart des pays de l’UE. Pour l’OFCE, beaucoup d’emplois nouveaux étaient peu payés.
 >
-> Le chapitre 7 chiffre ce que rapporterait un taux d’emploi plus élevé.
+> Rapporté à toute la population, le nombre d’heures travaillées est le plus faible de l’UE : 666 par habitant et par an [[fig:hours_per_inhabitant_2025]], 27e sur 27 [[fig:hours_per_inhabitant_2025_rank]]. Cet indicateur compte toute la population, élèves et retraités compris : il dépend aussi de la démographie.
 >
-> Nuance : ceux qui ont un emploi travaillent plus d’heures qu’en Allemagne ou aux Pays-Bas (mais moins que la moyenne de l’UE). Le retard vient surtout du faible taux d’emploi des jeunes et des seniors [[src:f08]].
+> Le chapitre 7 chiffre ce que rapporterait un taux d’emploi plus élevé. Le CAE prévient : la production augmenterait moins vite que l’emploi.
 >
-> Et par heure travaillée, la productivité française reste au-dessus de la moyenne de l’UE. En 2025, elle atteint l’indice 114,6 en standards de pouvoir d’achat (SPA), pour une moyenne de l’UE à 100 [[fig:productivity_per_hour_pps_2025]]. La France est 8e sur 27 [[fig:productivity_per_hour_pps_2025_rank]]. C’est en partie parce que les moins qualifiés sont plus souvent sans emploi. Elle a toutefois reculé depuis 2019 [[src:f08]].
+> Nuance : ceux qui ont un emploi travaillent un peu moins que la moyenne de l’UE, sans être les derniers [[src:f08]]. Rexecode (institut de conjoncture proche des organisations patronales) le note aussi. Le retard vient surtout du faible emploi des jeunes et des seniors [[src:f08]]. Ces comparaisons d’heures restent fragiles, prévient l’Insee.
+>
+> Par heure travaillée, la productivité française dépasse la moyenne de l’UE. En 2025, elle atteint l’indice 114,6 en standards de pouvoir d’achat (SPA), UE = 100 [[fig:productivity_per_hour_pps_2025]]. La France est 8e sur 27 [[fig:productivity_per_hour_pps_2025_rank]]. Une hypothèse : les moins qualifiés sont plus souvent sans emploi. D’après notre calcul, elle a reculé depuis 2019 [[src:f08]].
 
 **Visuel et animation**
-- Graphique en pente (slope chart) 2009 → 2025 : taux d’emploi France vs UE-27 (fichier 20, §4.13 ; `data/08_eurostat_lfsi_emp_a.csv`). Le texte ne cite que 2025.
+- Graphique en pente (slope chart) 2009 → 2025 : taux d’emploi France vs UE-27 (fichier 20, §4.13 ; `data/08_eurostat_lfsi_emp_a.csv`). Le texte ne cite que 2025. Ajout du 30 octobre 2026 : sous le graphique, une seconde ligne « taux de risque de pauvreté, France » sur la même période (Eurostat ilc_li02, ruptures 2020 et 2022 marquées), pour montrer que l’emploi et la pauvreté ont monté ensemble depuis 2014. Pas de valeur dans le texte tant que les figures de variation n’existent pas.
 
 **Pastilles**
 - 69,3 % [[fig:employment_rate_2025_pct]] ; 71,0 % [[fig:eu27_employment_rate_2025_pct]] ; 21e sur 27 [[fig:employment_rate_2025_rank]]
 - 666 heures [[fig:hours_per_inhabitant_2025]] ; 27e sur 27 [[fig:hours_per_inhabitant_2025_rank]]
-- Heures par personne en emploi : plus élevées qu’en Allemagne et aux Pays-Bas, plus basses que la moyenne UE-27 ; rôle de l’emploi des jeunes et des seniors [[src:f08]] ; renvoi au chapitre 7 (étape 7) pour le levier emploi chiffré par la DG Trésor
+- Emploi et pauvreté 2014-2024 (+5,3 points d’emploi, +2,6 points de pauvreté, Eurostat ; emplois peu payés en micro-entreprise et en apprentissage) : OFCE, Pierre Madec, 26 novembre 2025, https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/ (**entrée à ajouter à sources.json** ; chiffres non affichés, **figures à créer** `employment_rate_change_2014_2024_pp` et `arop_change_2014_2024_pp`, à vérifier dans Eurostat lfsi_emp_a et ilc_li02)
+- CAE (Bozio, Ferreira, Landais, Lapeyre, Modena), *Objectif plein emploi : pourquoi et comment ?*, diapositives, 4 mars 2025, https://cae-eco.fr/static/pdf/pleinemploislides.pdf (« Elasticité du PIB aux heures travaillées ≤ 1 » ; productivité horaire « reste élevée », ralentissement relatif depuis les années 2000 face aux États-Unis) : **entrée à ajouter à sources.json** ; la réserve chiffrée relève du chapitre 7.
+- Heures par personne en emploi : un peu sous la moyenne UE-27, pas les plus basses ; rôle de l’emploi des jeunes et des seniors [[src:f08]] ; Rexecode (Gancel, Redoulès), *La durée effective du travail et sa quantité en France et en Europe en 2024*, document de travail n° 98, décembre 2025, https://www.rexecode.fr/media/documents/document-de-travail/2025/la-duree-effective-du-travail-et-sa-quantite-en-france-et-en-europe-en-2024-document-de-travail-n.98-dec.-2025 (1 603 heures, ni la durée ni le taux d’emploi les plus bas) ; comparabilité : Insee et Destatis (Körner, Wolff), *La fragile comparabilité des durées de travail en France et en Allemagne*, *Insee Analyses* n° 26, juin 2016, https://www.insee.fr/fr/statistiques/fichier/version-html/2019603/IA26.pdf (**entrées à ajouter à sources.json**). Comparaison avec l’Allemagne et les Pays-Bas retirée le 30 octobre 2026 (non confirmée par les textes publiés consultés). Renvoi au chapitre 7 (étape 7) pour le levier emploi chiffré par la DG Trésor.
 - 114,6 (SPA, UE-27 = 100) [[fig:productivity_per_hour_pps_2025]] ; 8e sur 27 [[fig:productivity_per_hour_pps_2025_rank]] (Eurostat nama_10_lp_ulc, 22 octobre 2026, source [[src:f08:es-lp]])
-- Effet de sélection, recul depuis 2019 [[src:f08]] (fichier 08, l. 261-268 : −0,8 % en volume sur 2019-2025, non affiché faute de figure)
+- Effet de sélection (présenté comme une hypothèse), recul depuis 2019 (calcul de la plateforme) [[src:f08]] (fichier 08, l. 261-268 : −0,8 % en volume sur 2019-2025, non affiché faute de figure ; aucun texte publié consulté ne donne ce recul ni l’effet de sélection)
 
 ---
 
@@ -248,21 +270,25 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 > Voici le bilan, comparé à vos pronostics de départ.
 >
-> **Mieux que la moyenne :** espérance de vie, pauvreté des personnes âgées, mortalité évitable par les soins, reste à charge des ménages.
+> **Mieux que la moyenne :** espérance de vie (UE-27, 2024), pauvreté des personnes âgées (OCDE, 2022), mortalité évitable par les soins, reste à charge des ménages.
 >
-> **Dans la moyenne :** pauvreté de l’ensemble de la population, survie après un cancer.
+> **Dans la moyenne :** pauvreté de l’ensemble de la population (UE-27, 2025), survie après un cancer (OCDE).
 >
-> **Moins bien que la moyenne :** mathématiques à 15 ans, taux d’emploi, heures travaillées par habitant, juges par habitant, renoncement aux soins pour délais.
+> **Moins bien que la moyenne :** mathématiques à 15 ans (OCDE, 2025), taux d’emploi et heures travaillées par habitant (UE-27, 2025), juges par habitant, renoncement aux soins pour délais.
+>
+> Notre règle : « dans la moyenne » veut dire un écart nul ou jugé non significatif par la source. Tout autre écart compte, même petit.
+>
+> Le groupe compte aussi, selon Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire). Dans l’OCDE, sa dépense de santé publique ou obligatoire est parmi les plus élevées. Son espérance de vie y est moins bien classée.
 >
 > Un résultat se lit à part : la redistribution. Avant prestations sociales (retraites comprises), 46,8 % de la population serait sous le seuil de risque de pauvreté en 2025 [[fig:arop_before_transfers_2025_pct]]. C’est l’un des taux les plus élevés de l’UE. Après prestations, la France revient dans la moyenne [[fig:arop_2025_pct|contexte]].
 >
-> Les prestations font donc baisser ce taux de 30,5 points [[fig:poverty_reduction_transfers_2025_pp]], la 3e baisse de l’UE [[fig:poverty_reduction_transfers_2025_rank]]. Les retraites en font la plus grande part. Or elles remplacent en partie un revenu d’activité passé, ce qui grossit cet effet [[src:f10:S33]].
+> Les prestations font donc baisser ce taux de 30,5 points [[fig:poverty_reduction_transfers_2025_pp]], la 3e baisse de l’UE [[fig:poverty_reduction_transfers_2025_rank]]. Les retraites en font la plus grande part, alors qu’elles remplacent en partie un revenu passé [[src:f10:S33]]. Hors retraites, sur la mesure de l’Insee, l’OFCE constate que les prestations sortent de la pauvreté moins de ménages pauvres qu’en 2017.
 >
-> Selon l’Insee, 56 % des personnes reçoivent plus qu’elles ne paient en 2023 (chapitre 3) [[fig:net_beneficiaries_2023_pct]]. Ce calcul compte aussi les services publics comme l’école et l’hôpital.
+> Selon l’Insee, 56 % des personnes reçoivent plus qu’elles ne paient en 2023 (chapitre 3) [[fig:net_beneficiaries_2023_pct]]. Ce calcul compte l’école et l’hôpital, mais aussi la défense, la police et la justice, partagées à parts égales par convention. Les comptes étant en déficit, ce gain est en partie financé par l’emprunt [[src:f10]].
 >
-> Les meilleurs résultats se trouvent là où la France dépense le plus : retraites et santé. Mais d’autres pays obtiennent des résultats proches ou meilleurs en dépensant moins [[src:f10]].
+> Les meilleurs résultats se trouvent là où la France dépense le plus : retraites et santé. Mais d’autres pays font aussi bien ou mieux en dépensant moins [[src:f10]].
 >
-> Ailleurs, ils sont moyens ou faibles, y compris là où la dépense est proche de la moyenne, comme à l’école. Ces rapprochements ne prouvent pas que la dépense soit la seule cause des résultats, dans un sens ou dans l’autre.
+> Ailleurs, ils sont moyens ou faibles, même à l’école, où la dépense par élève dépasse un peu la moyenne. Ces rapprochements ne prouvent pas que la dépense soit la seule cause des résultats.
 
 **Visuel et animation**
 - Tableau de bord à trois colonnes (Mieux / Pareil / Moins bien). Les cartes de l’utilisateur (étape 1) se placent à gauche de chaque ligne, les bonnes réponses à droite ; une coche ou une croix s’affiche.
@@ -271,7 +297,9 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Pastilles**
 - Celles des étapes 3 à 7, reprises au survol de chaque ligne.
-- Redistribution : avant et après prestations sociales [[src:f10]] ; 56 % [[fig:net_beneficiaries_2023_pct]] (Insee, *Insee Analyses* n° 118, 16 avril 2026 ; même valeur qu’au chapitre 3).
+- Redistribution : avant et après prestations sociales [[src:f10]] ; 56 % [[fig:net_beneficiaries_2023_pct]] (Insee, *Insee Analyses* n° 118, 16 avril 2026, https://www.insee.fr/fr/statistiques/8974371 ; même valeur qu’au chapitre 3) ; services collectifs régaliens « répartis uniformément » ; environ 66 Md€ de déficit, environ 1 400 € par unité de consommation financés par la dette (non affichés : **figures à créer** `insee_broad_redistribution_deficit_2023_eur_bn` et `insee_broad_redistribution_debt_per_cu_2023_eur`).
+- Règle des trois colonnes (ajout du 30 octobre 2026) : « dans la moyenne » = écart nul ou jugé non significatif par la source ; tout autre écart compte. Groupe et année affichés dans le texte. Classement OCDE de l’espérance de vie (9e, Fipeco, 2023) : non affiché, figure à créer (voir étape 5).
+- OFCE (Madec, 26 novembre 2025) : effet des transferts hors retraites, mesure nationale, 7,7 points en 2013 contre 6,1 en 2023 ; part des ménages pauvres sortis de la pauvreté par les prestations, 37 % en 2017 contre 28 % en 2023. Non affichés : **figures à créer** (`ofce_transfers_poverty_effect_2013_pp`, `ofce_transfers_poverty_effect_2023_pp`, `ofce_poor_lifted_share_2017_pct`, `ofce_poor_lifted_share_2023_pct`), à ne pas mélanger avec la mesure Eurostat avant/après transferts.
 - 46,8 % avant prestations, retraites comprises [[fig:arop_before_transfers_2025_pct]] (source [[src:f01:es-silc]], Eurostat ilc_li09) ; 30,5 points [[fig:poverty_reduction_transfers_2025_pp]] (statut « réserve » : surtout les retraites, en partie revenu différé) ; 3e sur 27 [[fig:poverty_reduction_transfers_2025_rank]] (source [[src:f10:S33]], calcul de la plateforme d’après Eurostat ilc_li09 et ilc_li02).
 
 ---
@@ -285,19 +313,21 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > **« Les résultats ne justifient plus le niveau de la dépense : l’argent est mal utilisé. »**
 >
-> Pour le Fonds monétaire international (FMI ; organisation internationale), la France doit « rationaliser les dépenses inefficaces » (traduit de l’anglais) [[src:f06:imf_aiv2026]]. La Cour des comptes (juridiction financière) regrette l’absence d’effort global d’économies en 2025 [[src:f20:cour26]].
+> Pour Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), l’efficience de la dépense de santé « pourrait être nettement améliorée ». Le Fonds monétaire international (FMI ; organisation internationale) veut « rationaliser les dépenses inefficaces et réorienter les dépenses courantes et sociales vers les priorités » (traduit de l’anglais). Il demande aussi de protéger les plus vulnérables [[src:f06:imf_aiv2026]].
 >
 > Les chiffres de la pauvreté vont dans ce sens. Le taux après transferts est aujourd’hui exactement dans la moyenne européenne [[fig:arop_2025_pct|contexte]] [[fig:eu27_arop_2025_pct|contexte]]. Il était de 13,6 % de la population en 2015 [[fig:arop_2015_pct]]. La Belgique obtient une baisse comparable et arrive à un taux plus bas [[src:f10:S33]].
 >
-> Sans les retraites, les transferts ne font plus baisser le taux que de 10,2 points [[fig:poverty_reduction_excl_pensions_2025_pp]]. La France n’est alors que 6e de l’UE [[fig:poverty_reduction_excl_pensions_2025_rank]]. Et les comptes publics étant en déficit, l’Insee (institut public de statistique) note que l’ensemble est en partie financé par l’emprunt [[src:f10]].
+> Sans les retraites, les transferts ne font plus baisser le taux que de 10,2 points [[fig:poverty_reduction_excl_pensions_2025_pp]]. La France n’est alors que 6e de l’UE [[fig:poverty_reduction_excl_pensions_2025_rank]].
 >
-> *Sources : FMI (organisation internationale), déclaration de fin de mission au titre de l’article IV, 21 mai 2026 ; Cour des comptes (juridiction financière),* *La situation et les perspectives des finances publiques*, *25 juin 2026 ; Eurostat (office statistique de l’Union européenne), statistiques de l’Union européenne sur le revenu et les conditions de vie (EU-SILC), 2025.*
+> *Sources : Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire),* L’efficience des dépenses d’assurance maladie, *30 janvier 2026 ; FMI (organisation internationale), déclaration de fin de mission au titre de l’article IV, 21 mai 2026 ; Eurostat (office statistique de l’Union européenne), statistiques de l’Union européenne sur le revenu et les conditions de vie (EU-SILC), 2025.*
 >
 > **Ce qu’on peut répondre**
 >
-> La redistribution fait un travail réel. Retraites comprises, la baisse du taux de pauvreté est la 3e de l’UE (étape 8) [[fig:poverty_reduction_transfers_2025_rank]]. Une partie de la hausse depuis 2015 peut aussi tenir aux changements de méthode de l’enquête [[src:f10]].
+> La redistribution fait un travail réel : retraites comprises, la baisse de la pauvreté est la 3e de l’UE [[fig:poverty_reduction_transfers_2025_rank]]. Ce rang tient surtout aux retraites.
 >
-> Certains services manquent de moyens plutôt que d’efficacité. La France a moins de juges par habitant que la plupart des pays européens. Elle paie ses enseignants moins que la moyenne des pays de l’OCDE [[src:f04]] [[src:f10]]. Les résultats dépendent aussi d’autres facteurs que le budget : inégalités sociales, démographie, modes de vie [[src:f04]].
+> La hausse de la pauvreté a aussi d’autres causes selon l’OFCE (Sciences Po, sensibilité keynésienne) : inflation, fin des aides exceptionnelles, emplois peu payés.
+>
+> Certains services manquent de moyens, mais le diagnostic est discuté. La France a moins de juges par habitant que la plupart des pays européens [[src:f04]] [[src:f10]]. La Cour des comptes (juridiction financière) y voit aussi un problème de gestion.
 >
 > Sur un point, l’objection tient : hors retraites, l’effet des transferts français est bon, sans être exceptionnel [[src:f01:es-silc]].
 
@@ -307,30 +337,37 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Pastilles**
 - « exactement dans la moyenne européenne » [[fig:arop_2025_pct|contexte]] [[fig:eu27_arop_2025_pct|contexte]] (16,3 % chacun, affiché à l’étape 3) ; 13,6 % en 2015 [[fig:arop_2015_pct]] (mention « rupture de série »)
-- Belgique (baisse de 30,7 points, taux plus bas) [[src:f10:S33]] ; « l’ensemble est en partie financé par l’emprunt » [[src:f10]]
+- Belgique (baisse de 30,7 points, taux plus bas) [[src:f10:S33]] ; « financé par l’emprunt » déplacé à l’étape 8 le 30 octobre 2026 (la remarque de l’Insee porte sur l’ensemble des services publics et des transferts, pas sur l’efficience)
 - 10,2 points [[fig:poverty_reduction_excl_pensions_2025_pp]] (statut « réserve » : retraites comptées comme revenu ; moyenne UE-27 8,1, non affichée) ; 6e sur 27 [[fig:poverty_reduction_excl_pensions_2025_rank]] [[src:f01:es-silc]]
-- FMI, déclaration de fin de mission au titre de l’article IV, 21 mai 2026 (citation traduite de l’anglais) [[src:f06:imf_aiv2026]] ; Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026 [[src:f20:cour26]]
-- Réponse : 3e baisse de l’UE retraites comprises [[fig:poverty_reduction_transfers_2025_rank]] ; changements de méthode [[src:f10]] ; juges et salaires des enseignants [[src:f04]] [[src:f10]] ; facteurs hors budget [[src:f04]] ; « l’objection tient » hors retraites [[src:f01:es-silc]]
+- Fipeco, *L’efficience des dépenses d’assurance maladie*, 30 janvier 2026, https://fipeco.fr/pdf/EfficienceD%C3%A9pensesSant%C3%A9.pdf (« pourrait être nettement améliorée » ; « certainement pas le seul déterminant ») : **entrée à ajouter à sources.json**
+- FMI, déclaration de fin de mission au titre de l’article IV, 21 mai 2026, https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission (citation complète traduite de l’anglais : « rationalize inefficient spending and reallocate current and social spending toward priority areas » ; « preserve equity and protect the most vulnerable if measures are well targeted and carefully sequenced ») [[src:f06:imf_aiv2026]]
+- Réponse : 3e baisse de l’UE retraites comprises [[fig:poverty_reduction_transfers_2025_rank]] ; causes de la hausse (OFCE, Madec, 26 novembre 2025, voir étape 3) ; juges [[src:f04]] [[src:f10]] ; Cour des comptes 2021 (justice, voir étape 6) ; CAE note n° 84 (voir étape 6) ; Fipeco ; « l’objection tient » hors retraites [[src:f01:es-silc]]. Le « changement de méthode » ne sert plus de réponse (30 octobre 2026).
 
 ---
 
-## Étape 10. Deux lectures du même bilan
+## Étape 10. Trois lectures du même bilan
 
 **Texte affiché**
 
-> Le même bilan nourrit donc deux lectures. Pour l’Union syndicale des magistrats (syndicat de magistrats), notamment, il manque des moyens. Couper partout aggraverait les difficultés de la justice, de l’école et de l’accès aux soins [[src:f10]] [[src:f04]] [[src:f12]].
+> Le même bilan nourrit donc plusieurs lectures.
 >
-> Pour la Cour des comptes, le FMI, l’Institut Montaigne (libéral-centriste) et la Fondation iFRAP (libérale), l’argent est mal utilisé [[src:f10]].
+> Pour les uns, des services manquent de moyens. L’Union syndicale des magistrats (syndicat de magistrats) le dit pour la justice [[src:f10]]. L’OFCE (Sciences Po, sensibilité keynésienne) note que les prestations sortent moins de ménages de la pauvreté qu’avant.
 >
-> Selon les domaines, les données donnent raison à l’une ou à l’autre. Le débat ne se résume donc pas à « dépenser plus ou moins » : il porte aussi sur **où** dépenser.
+> Pour d’autres, l’argent est mal utilisé : Fipeco pour la santé, la Fondation iFRAP (libérale) pour l’école et les frais de gestion. Le FMI (organisation internationale) veut réorienter la dépense vers les priorités [[src:f06:imf_aiv2026]].
+>
+> Pour d’autres encore, la première question est le niveau de la dépense. L’Institut Montaigne (libéral-centriste) veut d’abord décider ce que l’État doit faire [[src:f10]]. La Cour des comptes (juridiction financière) constate que, faute d’économies, la dépense hors intérêts croît un peu plus vite que l’économie [[src:f20:cour26]].
+>
+> Selon les domaines, les données donnent raison à l’une ou à l’autre. Le débat porte à la fois sur **combien** et sur **où** dépenser.
 
 **Visuel et animation**
-- Bloc de texte simple, sur le même écran que l’encadré de l’étape 9. Les deux lectures ont la même typographie et la même couleur neutre (règle de symétrie, fichier 20, P7).
+- Bloc de texte simple, sur le même écran que l’encadré de l’étape 9. Les trois lectures ont la même typographie et la même couleur neutre (règle de symétrie, fichier 20, P7).
 - Sous le texte, liens vers les fiches thématiques (fonction publique et résultats ; santé ; éducation).
 
 **Pastilles**
-- Union syndicale des magistrats, justice, salaires des enseignants [[src:f10]] [[src:f04]] ; accès aux soins [[src:f12]] (CEPEJ, cycle 2024, données 2022, transcrite par l’USM, fichier 10, §8.1)
-- Cour des comptes, FMI, Institut Montaigne (*Budget base zéro*, novembre 2025), Fondation iFRAP (*Revue* n° 270, septembre 2025) [[src:f10]] (fichier 10, §4.1 et §5.4)
+- Union syndicale des magistrats, justice seulement [[src:f10]] (CEPEJ, cycle 2024, données 2022, transcrite par l’USM, fichier 10, §8.1). Aucun texte publié de gauche sur les moyens de la santé ou de l’école n’a été ouvert par la confrontation du 30 octobre 2026 : ne pas étendre la position de l’USM à ces domaines.
+- OFCE (Madec, 26 novembre 2025, voir étape 8) : **entrée à ajouter à sources.json**
+- Lecture « mal utilisé » : Fipeco (santé, 30 janvier 2026), Fondation iFRAP (école, octobre 2021 ; frais de gestion, 7 juin 2026), FMI [[src:f06:imf_aiv2026]] (URL aux étapes 5, 6 et 9)
+- Lecture « niveau » : Institut Montaigne, *Budget base zéro*, novembre 2025 (les revues de dépenses ne sont que « le dernier maillon d’une recherche d’économies ») [[src:f10]] ; Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026, page de présentation https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17 (dépense primaire « à un rythme légèrement supérieur à la croissance économique », « faute d’économies ») [[src:f20:cour26]]
 - Étiquettes d’orientation : glossaire §1.13 après la décision D-labels (Institut Montaigne « libéral-centriste », financement dans la pastille source).
 
 ---
@@ -343,15 +380,13 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > Reste la question la plus difficile : que faire ? Le vieillissement, l’emploi et la hausse des intérêts imposent des choix. Le chapitre 7, « Les choix », en présente l’ampleur.
 >
-> Vous pouvez aussi comparer vous-même la France à ses voisins, indicateur par indicateur.
->
 > **Pour aller plus loin**
 >
-> - Fiche « Santé » : volumes et prix des soins, mortalité évitable, reste à charge, survie après un cancer.
-> - Fiche « Fonction publique et résultats » : juges par habitant, salaires des enseignants, scores PISA en lecture et en sciences.
-> - Fiche « Retraites » : niveau de vie des retraités et coût du système.
-> - Fiche « Taux d’emploi, heures travaillées et productivité » : emploi des jeunes et des seniors, scénarios du Trésor.
-> - Fiche « Protection sociale par risque » : pauvreté avant et après transferts, effet des retraites.
+> - Fiche « Santé » : mortalité évitable, reste à charge, cancer.
+> - Fiche « Fonction publique et résultats » : juges, enseignants, PISA.
+> - Fiche « Retraites » : niveau de vie des retraités.
+> - Fiche « Taux d’emploi, heures travaillées et productivité ».
+> - Fiche « Protection sociale par risque » : effet des retraites.
 >
 > **→ Chapitre 7 : Les choix**
 
@@ -375,7 +410,9 @@ NOTES POUR L’ÉQUIPE (non affichées), suite
    - Santé : mortalité évitable par les soins et rang UE, reste à charge, part des frais de gestion dans la dépense de santé, survie au cancer, besoins non satisfaits pour délai (fichier 12, §0 et §5-6).
    - Éducation : évolution PISA depuis 2015, scores en lecture et en sciences, salaire des enseignants (fichier 13, §0 ; fichier 04, §6.1).
    - Ajouts demandés par l’audit du 25 octobre 2026 : `eu27_arop_2015_pct` (Eurostat ilc_li02, avec note de rupture de série ; fichier 10, §9.2) pour rétablir à l’étape 9 la comparaison « 13,6 % contre … pour l’UE en 2015 » ; espérance de vie 2024 de l’Espagne, de la Suède et de l’Italie (Eurostat demo_mlexpec, https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec ; fichier 10, §8.2) pour l’étape 5 ; ~~`productivity_per_hour_pps_2025` et son rang~~ (ajoutés le 25 octobre 2026, affichés à l’étape 7).
-   Une fois ajoutés, remplacer les formulations qualitatives des étapes 5 et 6 par les chiffres avec leurs pastilles [[fig:...]].
+   - Ajouts demandés par la confrontation aux sources publiques du 30 octobre 2026 (voir notes de relecture et listes « Pastilles ») : niveau de vie des retraités avec loyers imputés (COR) ; dépense de santé publique ou obligatoire et rangs OCDE (Fipeco) ; dépense par élève 2021 et écarts primaire / secondaire (CAE n° 84) ; variations 2014-2024 du taux d’emploi et du taux de pauvreté, effet des transferts sur la mesure nationale (OFCE, Madec) ; déficit et dette par unité de consommation de la redistribution élargie (Insee Analyses n° 118) ; frais de gestion AMO + AMC (iFRAP, avec sa réserve) pour le chapitre 2.
+   - Sources à ajouter à sources.json (aucune pastille possible avant) : OFCE (Madec, 26 novembre 2025) ; CAE n° 84 (mai 2025) ; CAE *Objectif plein emploi* (4 mars 2025) ; Fipeco *L’efficience des dépenses d’assurance maladie* (30 janvier 2026) et *Les montants laissés à la charge des ménages* (30 janvier 2024) ; Fondation iFRAP (7 juin 2026 ; *Société Civile* n° 227, octobre 2021) ; Rexecode DT n° 98 (décembre 2025) ; Insee Analyses n° 26 (juin 2016) ; Cour des comptes, note justice (21 octobre 2021, note primaire à ouvrir). URL dans les listes « Pastilles » des étapes concernées.
+   Une fois ajoutés, remplacer les formulations qualitatives des étapes 5 à 8 par les chiffres avec leurs pastilles [[fig:...]].
 2. Année et groupe de chaque comparaison internationale : pauvreté UE-27, EU-SILC 2025 ; espérance de vie UE-27, 2024 ; pauvreté des 65 ans et plus OCDE, 2022 (seuil 50 %) ; PISA OCDE, 2025 ; emploi et heures UE-27, 2025 ; santé zone euro ZE21, COFOG 2024.
 3. Calculs « illustratif » (étape 2) : formules du convertisseur d’yardsticks.json (`conversions`). Les montants de 2024 ou de 2022 rapportés à la dépense 2025 sont des ordres de grandeur.
 4. Étapes 9 et 10 : vérifier avec l’équipe juridique l’attribution de chaque lecture à ses défenseurs (Union syndicale des magistrats ; Cour des comptes, FMI, Institut Montaigne, Fondation iFRAP) et les citations exactes (fichier 10, §4.1, §5.4, §8.1, §8.2 ; fichier 04, §8). Les syndicats d’enseignants ne sont plus cités : aucune prise de position de leur part n’a été retrouvée dans la base.
@@ -384,6 +421,42 @@ NOTES POUR L’ÉQUIPE (non affichées), suite
 ---
 
 ## Notes de relecture
+
+**Confrontation aux sources publiques (2026-10-30)**
+
+*Décision : pas de relecteurs humains ; le texte est confronté aux positions publiées d’économistes et d’institutions de sensibilités différentes. Seuls les textes effectivement ouverts par la confrontation (URL et date dans les listes « Pastilles ») sont cités. Aucun chiffre nouveau n’est affiché : faute d’identifiant dans `platform/data`, les apports chiffrés sont écrits en qualitatif et listés en note 1 (figures et sources à créer).*
+
+*Points corrigés (verdicts « partly_supported » et « not_supported »)*
+1. *01 et 18, classement en trois colonnes* : **appliqué**. Étape 8 : groupe et année écrits à côté de chaque indicateur ; règle affichée (« dans la moyenne » = écart nul ou jugé non significatif par la source ; tout autre écart compte) ; effet du groupe signalé avec l’exemple OCDE de Fipeco (espérance de vie moins bien classée que dans l’UE-27).
+2. *02 et 03, calendrier et 68 € par jour* : **appliqué**. Étape 2 : « ordre de grandeur, d’après notre calcul : parts de 2024, dépense de 2025 » dans le texte affiché ; pastilles `calc` (illustratif) inchangées. Aucun texte publié ne donne ni ne conteste ces calculs (Insee Analyses n° 118 rappelle seulement que les montants par personne dépendent de conventions).
+3. *04, « exactement dans la moyenne »* : **conservé** (16,3 % contre 16,3 %), avec le 11e taux le plus élevé juste après, qui montre que seize pays font mieux. La sensibilité au seuil et au groupe passe par la règle de l’étape 8.
+4. *07, seuils de 50 % et 60 %* : **conservé** (séparation des seuils déjà faite) ; direction confirmée par le COR (*Rapport annuel* 2026, partie 3, chapitre 2).
+5. *10, espérance de vie* : **appliqué**. Lecture de Fipeco (rang OCDE moins bon que le rang de dépense) ajoutée à l’étape 8 ; « pourrait être nettement améliorée » dans l’encadré. Valeurs de l’Espagne, de la Suède et de l’Italie toujours non affichées (note 1).
+6. *11, frais de gestion* : **appliqué**. « Les plus élevés de l’UE » retiré (non confirmé : iFRAP ne compare qu’aux Pays-Bas). Explication par la superposition des deux assurances conservée ; iFRAP et sa propre réserve ajoutés. Aucun montant ici (chapitre 2 propriétaire) ; recommandation pour le chapitre 2 : présenter l’économie de 7,6 Md€ de l’iFRAP comme un plafond, avec sa réserve.
+7. *13, dépense par élève* : **appliqué**. « À peu près autant » remplacé par la lecture du CAE (un peu plus que la moyenne de l’OCDE en 2021, moins en primaire, plus dans le secondaire), sans chiffre faute de figure.
+8. *15, 16 et 17, emploi, heures, productivité* : **appliqué**. Comparaison « plus d’heures qu’en Allemagne ou aux Pays-Bas » retirée (non confirmée) ; Rexecode cité pour « pas la durée la plus courte » ; fragilité des comparaisons d’heures (Insee et Destatis, 2016) ; effet de sélection présenté comme une hypothèse et recul depuis 2019 comme notre calcul ; réserve du CAE (la production augmente moins vite que l’emploi) ajoutée, son chiffrage reste au chapitre 7.
+9. *22, attributions de l’encadré* : **appliqué**. Citation du FMI complétée (« réorienter les dépenses courantes et sociales vers les priorités » ; protéger les plus vulnérables). La Cour des comptes sort de l’encadré : la page ouverte dit « faute d’économies », pas « argent mal utilisé ». Elle est citée à l’étape 10 dans la lecture « niveau de la dépense ». La thèse « mal utilisé » est portée par Fipeco (santé) et le FMI.
+10. *06, mesure Insee* : **appliqué**. France métropolitaine, stable par rapport à 2023, hors sans-abri et personnes en institution ; pastille vers l’*Insee Première* n° 2117 ([[src:f00:row47]]). « Elle confirme la hausse » retiré.
+11. *12 et 21* (« soutenu » et « présenté équitablement ») : nuance du CAE ajoutée (les dépenses ciblées sont efficaces) à l’étape 6 ; « ces rapprochements ne prouvent pas » conservé à l’étape 8.
+
+*Contre-arguments ajoutés (verdict « missing_counterargument »)*
+12. *05 et 23, hausse de la pauvreté* : explication causale de l’OFCE (Pierre Madec, 26 novembre 2025 : inflation, fin des aides exceptionnelles, emplois peu payés) à l’étape 3 et dans la réponse de l’étape 9. Les ruptures de série 2020 et 2022 sont présentées comme un relevé des métadonnées Eurostat (fichier 10), non chiffré, et ne servent plus de réponse dans l’encadré.
+13. *08, niveau de vie des retraités* : variante du COR avec loyers imputés (retraités au-dessus de l’ensemble de la population) et lecture de l’Institut Montaigne (générosité du système, mais aussi forte hausse du nombre de retraités), à l’étape 4. Chiffre de 6,5 % non affiché (figure à créer).
+14. *19, effet des transferts* : constat de l’OFCE (mesure nationale, hors retraites : moins de ménages pauvres sortis de la pauvreté qu’en 2017) à l’étape 8, sans mélange avec la mesure Eurostat ; chiffres non affichés (figures à créer).
+15. *09, deux mesures de la dépense de santé* : mesure publique ou obligatoire (Fipeco, OCDE) à l’étape 8 ; à l’étape 5, la mesure par habitant est présentée comme « le coût total, pas la seule charge publique ».
+16. *14, justice* : constat de la Cour des comptes (2021 : budget en nette hausse depuis 2011, délais civils non réduits, meilleure répartition des effectifs) ajouté à côté des données de l’Union syndicale des magistrats, présentées comme « données de 2022 » d’un syndicat. Graphique justice toujours bloqué. **Réserve** : la note de la Cour n’a été lue que dans un résumé de presse (Le Monde du Droit) ; ouvrir la note primaire avant publication.
+
+*Critiques de gauche*
+- **Appliquées (8)** : (1) cause de la hausse de la pauvreté (OFCE) et ruptures de série présentées comme un relevé de métadonnées ; (2) position de l’Union syndicale des magistrats limitée à la justice, lecture de l’OFCE sur l’effet des transferts ajoutée à l’étape 10, « couper partout » retiré ; (3) citation complète du FMI, Cour des comptes limitée à « faute d’économies » et séparée de la lecture « mal utilisé » ; (4) emploi et pauvreté en hausse ensemble depuis 2014, emplois peu payés (OFCE), et consigne de visuel ajoutée ; (6) dépense par élève par niveau et dépenses ciblées efficaces (CAE, étiqueté comme organisme public) ; (8) glose des 56 % corrigée (défense, police, justice, répartition par convention) et remarque sur l’emprunt déplacée de l’encadré vers l’étape 8 ; (9) limites de la mesure Insee ; (10) fragilité des comparaisons d’heures, recul depuis 2019 et effet de sélection requalifiés.
+- **Appliquée en partie (2)** : (5) groupe, année et règle de classement affichés ; la mention de l’Observatoire des inégalités (2022) est **rejetée** : l’organisme n’a pas d’étiquette au glossaire §1.13 (règle 7), et son édition de 2022 repose sur des données plus anciennes et un autre seuil ; le recul relatif est déjà porté par l’OFCE. (7) justice : le paragraphe qualitatif est rééquilibré (données syndicales et constat de la Cour), le budget par habitant « au-dessus de la médiane, sous la moyenne » est retiré du texte affiché en attendant les chiffres CEPEJ primaires ; les chiffres de l’Union syndicale des magistrats (37,3 agents non juges pour 100 000 habitants ; 72,50 € par habitant contre 140,73 € en Allemagne) ne sont pas affichés : aucune figure, source secondaire et intéressée.
+- Phrase demandée « aucune source de gauche publiée n’a été trouvée sur la santé et l’école » : écrite dans la pastille de l’étape 10, pas dans le texte affiché (règle §4.6 : aucune référence interne affichée).
+
+*Critiques de droite*
+- **Appliquées (9)** : (1) thèse séparée en efficience (Fipeco, iFRAP, FMI) et niveau de la dépense (Institut Montaigne, Cour des comptes) ; conclusion « combien et où » au lieu de « aussi où » ; (2) « couper partout » retiré, deux lectures formulées sans caricature, seconde moitié de la citation du FMI reproduite ; (3) justice : constat de la Cour à côté des données syndicales, source et année des données indiquées ; (4) variante du COR avec loyers imputés et lecture de l’Institut Montaigne ; (5) deux mesures de la dépense de santé, chacune avec la question à laquelle elle répond ; (6) rang OCDE et lecture de Fipeco sur l’efficience ; (8) école : « un peu au-dessus de la moyenne de l’OCDE », pays plus efficaces, lecture de l’iFRAP (organisation et part variable de la paie) ; (9) changement de méthode retiré de la réponse de l’encadré, limites de la mesure Insee ajoutées ; (10) Allemagne et Pays-Bas retirés, Rexecode cité, effet de sélection en hypothèse, réserve du CAE.
+- **Appliquées en partie (3)** : (7) frais de gestion : superposition des assurances et comparaison néerlandaise de l’iFRAP ajoutées, mais le montant de 17 Md€ n’est pas affiché : aucune figure, et le chapitre 2 est propriétaire des montants de santé (décision D-ownership) ; (11) les deux mesures de l’effet des transferts sont dans le même encadré et la réserve suit le 3e rang (« ce rang tient surtout aux retraites ») ; le 3e rang reste la première réponse, car c’est le constat que conteste l’encadré, désormais accompagné de sa réserve ; (12) règle des colonnes affichée et réserve du calendrier dans le texte. **Rejeté** : la suppression du calendrier de 241 jours. C’est un étalon de la plateforme (glossaire §1.13), affiché comme calcul illustratif avec sa formule ; il ne prétend pas être une position publiée.
+- **Rejetée** : la nuance « plusieurs pays du Benelux et du Nord sont plus bas » (critique 9, fin). Le 11e taux le plus élevé, affiché juste après, dit déjà que seize pays font mieux ; les valeurs pays restent dans le graphique, sans chiffre dans le texte.
+
+*Contrôles* : `python3 -I platform/data/validate.py --strict` : 0 erreur et 0 avertissement propres à ce fichier ; 2 192 mots visibles (plafond 2 200), durée de lecture portée à 9 minutes. Coupes faites pour rester sous le plafond : définition Eurostat répétée (étape 3), détail de la liste « Pour aller plus loin » et phrase sur le comparateur (étape 11, le bouton reste), resserrement des étapes 5 à 9 ; la mention de Fipeco dans la réponse de l’encadré (« pas le seul déterminant ») est retirée, l’idée restant à l’étape 8. Reste un avertissement transversal qui ne vient pas de ce fichier : étiquette de la Cour des comptes absente au chapitre 1.
 
 **Passe de finalisation du 25 octobre 2026 (pass : finalisation)**
 1. *Chiffres de la passe de données (D-data-pass)* : **appliqué**. Étape 7 : productivité horaire 114,6 en SPA (UE = 100) [[fig:productivity_per_hour_pps_2025]], 8e sur 27 [[fig:productivity_per_hour_pps_2025_rank]]. Étape 8 : 46,8 % avant prestations, retraites comprises [[fig:arop_before_transfers_2025_pct]] ; baisse de 30,5 points [[fig:poverty_reduction_transfers_2025_pp]], 3e de l’UE [[fig:poverty_reduction_transfers_2025_rank]], avec la réserve de la figure (retraites en partie revenu différé). Étape 9 : 10,2 points hors retraites [[fig:poverty_reduction_excl_pensions_2025_pp]], 6e de l’UE [[fig:poverty_reduction_excl_pensions_2025_rank]]. Pastille FMI remplacée par [[src:f06:imf_aiv2026]] (l’entrée contient l’URL de la déclaration du 21 mai 2026), pastille Cour par [[src:f20:cour26]], Belgique par [[src:f10:S33]]. Retour à 60 ans : non affiché dans ce chapitre, rien à changer.

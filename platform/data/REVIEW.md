@@ -269,3 +269,41 @@ Every value below was checked against its research file **and** its primary sour
   - The ch. 6 symmetry gate stays open.
 - **2017-2025 windows** (`te_change_2017_2025_pp` -0.4, `total_revenue_change_2017_2025_pp` -2.1, `balance_change_2017_2025_pp` -1.7), requested by chapter 4: the Eurostat API confirms these values, but file 10 does not state them, so they would fail check 4. File 10 §4.2 needs a 2017-2025 row first.
 - **Not in this task:** the remaining items of open item 4 (chart series, the `year` of `finland_te_2025_pct_gdp`, the note of `cdhr_observed_2025_eur_bn`, the `source` of `zucman_critics_eur_bn`), `te_volume_growth_2025_pct` and `po_2022_pct_gdp`.
+
+## Confrontation aux sources publiques (2026-10-30)
+
+Scope: `proposals.json` and `simulator-levers.json` only, checked against published positions (left, right, institutions). Every new citation below names a text the reviewer opened (URL + date). Sources not yet in `sources.json` are cited in the text fields with their URL; they need `sources.json` entries (owner of that file): Terra Nova (G. Hannezo, 2024-09-20), F. Geerolf "Les mensonges de la taxe Zucman" (rev. 2026-10), Fondation iFRAP Revue 270 (2025-09), Fipeco "Mesures fiscales" (2022-01-27), CPO "Corriger les principales distorsions de l'imposition du patrimoine" (2025-12-01), Rexecode WP 97 (2025-06/07), Attac "La dette de l'injustice fiscale" (2025-03-26), OFCE blog (2025-07-11), IPP Note 92 (2023-06; today only reachable through f07:S50). Glossary §1.13 also needs labels for the CPO (public body) and F. Geerolf (person: "économiste à l'OFCE") before they appear on the site.
+
+### Changes
+
+1. `zucman_tax` (points 01, 03, 05; left and right critiques): "~75 richest households" replaced by the IPP wording (top 0.0002%); "fewer than 350 departures" (not in the CAE text) replaced by the CAE metrics (+0.04-0.09 pt, elasticity 0.02-0.18%); added the disputed baseline (iFRAP 42.1%; Geerolf/OFCE 25.1% vs 26.8%), iFRAP's reading of the CAE study, both sides of the legal argument (Capus majority, Sas minority, CPO cap at about 1.8%), and the convergence of Terra Nova and Geerolf with the Senate and iFRAP; the Senate 2-3 now states its design assumption; range label relabeled "independent and critical estimates".
+2. `isf_restoration` (point 06): unconfirmed "4.5 bn France Stratégie" replaced by CAE 3-4.5 (mechanical) and Fipeco about 3; stated that the range is the cost of the 2018 repeal; CPO supply-side warning added.
+3. `isf_climate_lfi` (point 06): counter-argument added (Institut Montaigne 3.5 vs 15 claimed, f07:S15); different base from the repeal cost.
+4. `pfu_abolition_lfi` (point 07): Montaigne 3.2 = PFU plus exit tax; static cost "about 1" replaced by Fipeco 1.5-1.8 (probably nil ex post, dividends 14 to 23 bn); no investment effect (Fipeco; France Stratégie via Terra Nova); Terra Nova variant added.
+5. `inheritance_reform_lfi`, `inheritance_package_ps` (points 08, 12): Terra Nova (4 + 1.4) and CPO design added; "no estimate exists for taxing unrealized gains at death" corrected (Terra Nova about 4, phased in); CAE 9-19 described as a broad-reform steady state, 14 as a midpoint.
+6. `cdhr` (points 09, 16): 2026 expectation 0.7 -> 0.65 (Legifiscal, f07:S35; derived conversions recomputed); Cour des comptes reading (deferrable income, yield still subject to adjustment, extended until deficit < 3%) and the caveat that the lesson is about design, not taxation in principle.
+7. `tax_rich_package` (point 11): "62 bn a year" -> "62 bn in 2023"; Terra Nova 10-15 benchmark; 17.5 flagged as a midpoint above it; one-sixth bound tied to upper estimates.
+8. `tax_cuts_2018_2023` (point 10): unverified Rexecode "1.2 pts erased" removed; Rexecode WP 97 (66 bn cumulated cuts, 25 bn of increases 2024-2025) and Cour 2026 (23 bn in 2025) added; left readings added (Attac 308.6 bn cumulated, 207 bn; OFCE 2.5 pt vs 2.4 pt).
+9. `fuel_freeze_lfi` (point 18): estimates and range marked `computed_by_us`; no published costing found; HCFP energy-price uncertainty.
+10. `energy_vat_rn` (point 19): EU-rules risk (Public Sénat, f07:S19).
+11. `lr_tax_cuts` (right critique): 56 vs 51 bn discrepancy flagged (f07:S21), not resolved.
+12. Labels: "business-funded" removed from orientation fields (Institut Montaigne -> "liberal-centrist"; Institut de l'Entreprise -> "close to business"); Rexecode no longer "employer-linked" but carries its glossary label, like every source cited in these fields (glossary §1.13 rules 2 and 4).
+13. Levers: R1 headline (yield_low/central/high) is now the independent band 2/5/6, with the static 15-25 shown next to it; behavioral note relabeled; legal note gives both sides. R2: gross mechanical shown next to net; CPO warning. R3: 3.2 = package; Fipeco behavior note. R4: "no independent costing" -> partial costings of different designs; CPO option not modeled; 6.5 flagged as midpoint. R5: design caveat. S4: rule for "enabled with a range" stated for both sides. Classes `wealth_tax` (demand only, CPO supply warning) and `corporate_capital` (Rexecode, Cour 2026; OFCE PB 154 values to re-check).
+
+### Rejected or not applied (with reason)
+
+- Left, PFU: "IPP/CAE note a rise in the returns of high-wealth people after 2018": no opened text with URL supports it in the critique; not added.
+- Left, multiplier classes: "low multipliers make top-income taxes cheap in growth terms": a reading of the site's own numbers, no published source; not added.
+- Right, S4 vs R1/R4 asymmetry: rejected as stated; the rule is the same on both sides (R1 and R4 have independent estimates, S4 has none). The rule is now written in S4's note.
+- Right, R4 "Montaigne about 9": not used; the reviewer flagged the PDF layout as ambiguous.
+- Point 15 (R11 "-980,000 FTE", "rule 0.89 vs model 0.72"): kept. The figures are attributed to Bozio-Wasmer and to Mésange documentation the reviewer did not open; not shown to be wrong. To re-check.
+- Point 20: the verdict text was truncated in the task input; nothing applied.
+- Changing the global `behavioral_responses` default: not done (it would also move R11); the R1 fix is lever-level.
+
+### Figures still needed (not available from opened sources)
+
+- IPP Note 92 as its own `sources.json` entry; Rexecode WP 97 URL in `sources.json` (f07:S49 is a different, Sept 2026 paper with no URL).
+- Inheritance and gift duties 2025 (21.1 bn) and the six-month payment rule: primary source to re-open.
+- OFCE PB 154 class values (surtax 0.29, CDHR about 0): to re-open.
+- LR tax cuts: 51 or 56 bn, from the LR plan document.
+- A published costing of the LFI fuel freeze (none found).

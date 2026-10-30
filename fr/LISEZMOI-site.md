@@ -41,6 +41,8 @@ Forme commune vérifiée au contrôle final : titre « # Chapitre N. Titre » (t
 | 6 | [`06-ce-que-l-on-obtient.md`](site/chapitres/06-ce-que-l-on-obtient.md) | « Qu’obtient-on en échange ? » : résultats forts, moyens et faibles (santé, pauvreté, éducation, emploi, justice), pistes d’efficacité présentées comme plafonds ou scénarios. | 1 903 | 8 min | 8 206 |
 | 7 | [`07-les-choix.md`](site/chapitres/07-les-choix.md) | « Les choix » : trois objectifs, multiplicateurs, retraites et âge de départ, emploi, rendements des promesses d’« argent facile » de gauche (étape 8) et de droite (étape 9), transition vers le simulateur. | 2 189 | 9 min | 9 919 |
 
+Page transverse : [`debats.md`](site/debats.md), « Débats », qui confronte chaque point contesté des chapitres aux positions publiées d’économistes et d’institutions d’orientations différentes (méthode, liens, où le site se place). Chapitres 1 à 4 couverts ; chapitres 5 à 7 à compléter.
+
 Total : 14 088 mots affichés (environ 59 minutes de lecture pour le parcours complet) ; 57 216 mots en comptant les notes et spécifications.
 
 ## 4. Données de la plateforme (`platform/data/`)
@@ -100,7 +102,7 @@ Aucune correction de forme n’a été nécessaire dans les chapitres au contrô
 6. **Notations 2023-2024** (Fitch, S&P, Moody’s) : non vérifiées sur une source primaire ; ne pas les afficher avant vérification. L’affirmation de Moody’s du 23 octobre 2026 reste « caveat » tant que la page de l’AFT n’est pas à jour.
 7. **Décisions éditoriales** : vérification juridique de l’étape 10 du chapitre 6 ; message de partage du chapitre 6 généré à partir du score réel ; étiquette de Fipeco (« site indépendant » n’est pas son auto-description) à revoir par le propriétaire du glossaire.
 8. **Liens « Pour aller plus loin »** : à poser quand les fiches thématiques auront leurs URL.
-9. **Audit de symétrie et relecture contradictoire** (fichier 20 §7.1) : les décomptes ci-dessus sont équilibrés ; il reste la confrontation de chaque chapitre aux positions publiées (§5.3).
+9. **Audit de symétrie et relecture contradictoire** (fichier 20 §7.1) : les décomptes ci-dessus sont équilibrés ; la confrontation aux positions publiées est faite (§5.3) et la page « Débats » couvre les sept chapitres.
 
 ### 5.2 Prototypes (prochaine étape)
 
@@ -111,7 +113,12 @@ Aucune correction de forme n’a été nécessaire dans les chapitres au contrô
 
 ### 5.3 Relecture par les sources publiques
 
-- Décision du 30 octobre 2026 : pas de relecteurs sollicités. Chaque point contesté (encadrés des deux côtés, listes des étapes 8 et 9 du chapitre 7, fourchettes de `proposals.json`, multiplicateurs, années de référence) est confronté aux positions publiées d’économistes et d’institutions d’orientations différentes ; ce que le site affirme sans appui publié est corrigé, les contre-arguments publiés manquants sont ajoutés, et une page « Débats » cite, pour chaque point, qui soutient quoi.
+- **Fait le 30 octobre 2026** (pas de relecteurs sollicités). Chaque point contesté des chapitres 1 à 7 et des données a été confronté aux positions publiées d’économistes et d’institutions d’orientations différentes. Points corrigés par chapitre : 9, 10, 11, 8, 12, 10 (3 maintenus avec justification) et 8 ; 9 points corrigés dans les données. Contre-arguments publiés ajoutés : 32 dans les chapitres et 9 dans les données. Validateur : 0 erreur, 2 avertissements. Détail : `STATUS.md` §3, étape 8.
+- **Reste à faire :**
+  - page « Débats » (`fr/site/debats.md`) : complète (103 points, 8 thèmes, 116 sources) mais trop longue (environ 41 000 mots) ; à découper en une page par thème, et à recouper avec la formulation corrigée des chapitres ;
+  - libellé « Cour des comptes » : chapitre 1 (ligne 86) à corriger, chapitres 2 à 7 à harmoniser avec le glossaire ;
+  - chiffres manquants : investissement public net 2025 (chapitre 5, étape 6) ; répartition des intérêts et PIB potentiel de l’OFCE, écart de recettes avec la ZE21 (chapitre 4) ;
+  - sources non ouvertes : Banque de France et FMI (accès refusé, rien n’est cité), Observatoire des inégalités et CGT (pas d’étiquette au glossaire §1.13).
 
 ### 5.4 Enquête de perception
 

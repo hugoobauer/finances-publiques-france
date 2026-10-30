@@ -3,7 +3,7 @@
 <!--
 NOTES POUR L’ÉQUIPE ÉDITORIALE (non affichées sur le site)
 
-Statut : version finalisée, 25 octobre 2026 (passe « finalisation » ; voir Notes de relecture). À relire (relecture contradictoire et audit de symétrie, fichier 20 §7.1).
+Statut : version finalisée, 25 octobre 2026 ; confrontation aux sources publiques le 30 octobre 2026 (voir Notes de relecture). À relire (relecture contradictoire et audit de symétrie, fichier 20 §7.1).
 Plan suivi : research/20-pedagogical-approach.md §2.1 (Ch. 4), §1 P1-P10, §3 (étalons), §4.11 (baisses d’impôts depuis 2017), §4.8 (déficit). Termes, typographie et ton : fr/glossaire-et-conventions.md.
 Seuls les blocs « Texte affiché », les fiches chiffre, les encadrés et la liste « Pour aller plus loin » sont publics ; le reste est de la spécification.
 
@@ -33,9 +33,9 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 >
 > Pourquoi le déficit s’est-il creusé ces dernières années ? Deux récits s’opposent. Pour le premier, il vient surtout des baisses d’impôts. Pour le second, surtout de la hausse des dépenses.
 >
-> Ce chapitre montre que les deux s’appuient sur des chiffres exacts. Ce qui les sépare, c’est surtout la période choisie : l’année de départ, mais aussi l’année d’arrivée.
+> Ce chapitre montre que les deux s’appuient sur des chiffres exacts. La période choisie pèse beaucoup : l’année de départ, mais aussi l’année d’arrivée. Les deux camps divergent aussi sur ce qui aurait dû financer les baisses d’impôts, et sur le remède.
 >
-> Durée de lecture : environ 8 minutes.
+> Durée de lecture : environ 9 minutes.
 
 **Visuel / animation.** « Recettes » à gauche, « Dépenses » à droite, même taille, deux couleurs neutres (aucune couleur de parti), un point d’interrogation entre les deux.
 
@@ -57,9 +57,9 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 **Texte affiché après validation**
 
-> **Réponse : 13,2 jours** [[prop:tax_cuts_2018_2023]]. La Cour des comptes (juridiction financière) chiffre ces baisses à 62 milliards d’euros par an, en 2023 [[fig:tax_cuts_2018_2023_eur_bn]]. Une journée de dépense publique représente 4,70 milliards d’euros en 2025 [[yard:one_day_spending_eur_bn]].
+> **Réponse : 13,2 jours** [[prop:tax_cuts_2018_2023]]. La Cour des comptes (juridiction financière) chiffre ces baisses à 62 milliards d’euros par an, en 2023 [[fig:tax_cuts_2018_2023_eur_bn]]. Cela fait 2,2 points de produit intérieur brut (PIB) [[fig:tax_cuts_2018_2023_pts]]. C’est le coût des mesures décidées, pas leur effet total sur le déficit.
 >
-> À titre de comparaison, la hausse des dépenses depuis 2019 représente 2,0 points de produit intérieur brut (PIB), soit 12,7 jours (notre calcul) [[fig:te_change_2019_2025_pp]] [[yard:te_change_2019_2025_days]]. Nous revenons sur les deux chiffres aux étapes 4 et 5.
+> Les jours de dépense publique sont une unité propre à ce site : une journée représente 4,70 milliards d’euros en 2025 [[yard:one_day_spending_eur_bn]]. Nous rapportons donc un coût de 2023 à une journée de 2025. L’autre récit, celui de la hausse des dépenses, est présenté à l’étape 5.
 >
 > Votre estimation : {X} jours. Estimation moyenne des participants : {Y} jours.
 
@@ -75,7 +75,7 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 **Visuel / animation.** Frise de 365 jours (calendrier du chapitre 2). À la validation, un bloc de 13,2 jours se colore à côté de l’estimation de l’utilisateur, puis de la moyenne des participants.
 
-**Pastilles source.** [[fig:tax_cuts_2018_2023_eur_bn]] (Cour des comptes, *La situation et les perspectives des finances publiques*, 15 juillet 2024) ; [[yard:one_day_spending_eur_bn]] (calcul de la plateforme d’après Eurostat, 21 octobre 2026) ; [[prop:tax_cuts_2018_2023]] ; [[fig:te_change_2019_2025_pp]] [[yard:te_change_2019_2025_days]] (calcul de la plateforme, illustratif).
+**Pastilles source.** [[fig:tax_cuts_2018_2023_eur_bn]] (Cour des comptes, *La situation et les perspectives des finances publiques*, 15 juillet 2024) ; [[yard:one_day_spending_eur_bn]] (calcul de la plateforme d’après Eurostat, 21 octobre 2026) ; [[prop:tax_cuts_2018_2023]] ; [[fig:tax_cuts_2018_2023_pts]] (Cour des comptes, 15 juillet 2024).
 
 ---
 
@@ -111,7 +111,9 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 **Texte affiché**
 
-> Ce récit est défendu notamment par des instituts de recherche et des associations. Parmi eux, l’OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne) et Attac (association altermondialiste) [[src:f10]]. Son point de départ : 2017.
+> Ce récit est défendu notamment par des instituts de recherche et des associations. Parmi eux, l’OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), Terra Nova (centre gauche) et Attac (association altermondialiste) [[src:f10]]. Son point de départ : 2017. Ses chiffres de coût viennent surtout de la Cour des comptes elle-même.
+>
+> Terra Nova attribue aux baisses d’impôts une large part de la dégradation du déficit, en précisant que ce calcul est « essentiellement comptable » [[src:f10]].
 >
 > De 2017 à 2024, les recettes publiques passent de 54,3 % à 51,2 % du PIB [[fig:total_revenue_2017_pct_gdp]] [[fig:total_revenue_2024_pct_gdp]]. C’est une baisse de 3,1 points de PIB [[fig:total_revenue_change_2017_2024_pp]]. Après des hausses d’impôts (étape 7), elles remontent à 52,2 % du PIB en 2025 [[fig:total_revenue_2025_pct_gdp]]. C’est encore 2,1 points de moins qu’en 2017 [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]].
 >
@@ -119,11 +121,11 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 >
 > Ce recul vient en partie de choix politiques [[src:f20:cour24]]. L’impôt sur les sociétés, les impôts de production et les cotisations sociales ont baissé ; la taxe d’habitation a été supprimée [[src:f20:cour24]].
 >
-> La Cour des comptes chiffre les baisses décidées de 2018 à 2023 à 62 milliards d’euros par an, en 2023 [[fig:tax_cuts_2018_2023_eur_bn]]. Cela représente 2,2 points de PIB [[fig:tax_cuts_2018_2023_pts]]. Selon elle, ces baisses ont été « non compensées par des économies en dépenses » [[src:f20:cour24]]. Elles ont donc été financées par l’emprunt.
+> La Cour des comptes chiffre ces baisses à 62 milliards d’euros par an en 2023 [[fig:tax_cuts_2018_2023_eur_bn]]. Cela fait 2,2 points de PIB [[fig:tax_cuts_2018_2023_pts]]. Elles ont été « non compensées par des économies en dépenses » [[src:f20:cour24]].
 >
-> La Cour ne chiffre pas à part les mesures de 2018 sur le capital. Remplacer l’impôt de solidarité sur la fortune (ISF) par l’impôt sur la fortune immobilière (IFI) coûte de 3 à 4,5 milliards d’euros par an [[fig:isf_repeal_mechanical_loss_eur_bn]]. C’est l’estimation du Conseil d’analyse économique, avant effets de comportement.
+> C’est la mesure de la Cour ; d’autres existent. L’Institut Montaigne (libéral-centriste) retient un ordre de grandeur voisin et souligne qu’une grande part a profité aux classes moyennes. Attac additionne les pertes de 2018 à 2023. Ce total cumulé, bien plus élevé, ne se compare pas à un coût annuel [[src:f10]].
 >
-> Pour le prélèvement forfaitaire unique (PFU), le comité d’évaluation de France Stratégie (2023) n’a pas détecté d’effet sur l’investissement ou les salaires [[src:f08]]. Il juge ce résultat fragile. Selon lui, la hausse des dividendes a autofinancé la mesure ses premières années [[src:f08]].
+> Sur le capital, l’impôt sur la fortune immobilière a remplacé l’impôt de solidarité sur la fortune (ISF). Ce changement coûte de 3 à 4,5 milliards d’euros par an [[fig:isf_repeal_mechanical_loss_eur_bn]]. C’est l’estimation du Conseil d’analyse économique, avant effets de comportement. Pour le prélèvement forfaitaire unique, France Stratégie n’a pas détecté d’effet sur l’investissement ou les salaires. Ce résultat est jugé fragile [[src:f08]].
 
 **Fiche chiffre « 62 milliards d’euros, en ordres de grandeur »** (estimé, Cour des comptes, coût en 2023)
 
@@ -144,15 +146,19 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 >
 > En 2017, les recettes publiques atteignent 54,3 % du PIB, leur plus haut niveau de la série [[fig:total_revenue_2017_pct_gdp]] [[src:f10]]. Selon la Cour des comptes (juridiction financière), ce pic suit les hausses d’impôts de 2010 à 2014 : 3,8 points de PIB [[fig:tax_hikes_2010_2014_pts]].
 >
-> De plus, une partie de la baisse est comptable. Le crédit d’impôt pour la compétitivité et l’emploi (CICE) était compté comme une dépense jusqu’en 2018. En 2019, il a été remplacé par une baisse de cotisations, qui réduit les recettes. Ce n’est pas une baisse d’impôt nouvelle [[src:f09]] [[src:f01]].
+> Pour Rexecode (institut de conjoncture proche des organisations patronales), les baisses de 2014 à 2023 n’ont pas effacé ce choc fiscal [[src:f07:S49]]. L’Institut Montaigne note que les prélèvements restent plus élevés qu’en 2010 [[src:f10]].
 >
-> Enfin, selon la Cour des comptes, des recettes plus dynamiques que l’économie ont compensé ces baisses jusqu’en 2022. Le taux de prélèvements obligatoires est ainsi resté proche de celui de 2017. Il n’a nettement baissé qu’en 2023, surtout parce que ce dynamisme s’est retourné [[src:f20:cour24]].
+> De plus, le crédit d’impôt pour la compétitivité et l’emploi (CICE) était compté comme une dépense. En 2019, une baisse de cotisations l’a remplacé, ce qui réduit les recettes. Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire) y voit surtout un changement comptable. Il reste un petit coût net durable, après un double coût en 2019 [[src:f10]] [[src:f08]].
 >
-> *Sources :* Cour des comptes (juridiction financière), *La situation et les perspectives des finances publiques*, 15 juillet 2024 et 25 juin 2026 ; Insee (institut public de statistique), *Le blog de l’Insee*, 24 octobre 2025. [[src:f10]] [[src:f20:cour24]] [[src:f20:cour26]] [[src:f09]]
+> Enfin, selon la Cour des comptes, des recettes plus dynamiques que l’économie ont compensé ces baisses jusqu’en 2022. Le taux de prélèvements obligatoires n’a nettement baissé qu’en 2023, quand ce dynamisme s’est retourné [[src:f20:cour24]].
+>
+> *Sources :* Cour des comptes (juridiction financière), *La situation et les perspectives des finances publiques*, 15 juillet 2024 et 25 juin 2026 ; Rexecode (institut de conjoncture proche des organisations patronales), *Bilan des prélèvements obligatoires*, septembre 2026 ; Institut Montaigne (libéral-centriste), *Budget base zéro*, novembre 2025 ; Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *Mesures fiscales*, janvier 2022. [[src:f10]] [[src:f20:cour24]] [[src:f20:cour26]] [[src:f07:S49]] [[src:f09]] [[src:f01]]
 >
 > **Ce qu’on peut répondre**
 >
-> Même en partant d’un sommet, les baisses décidées depuis 2018 n’ont pas été financées par des économies de dépense (point d’accord, étape 7) [[src:f10]]. Et le CICE n’explique pas tout. Les prélèvements obligatoires mesurés par l’Insee (institut public de statistique) retirent déjà les crédits d’impôt. Ils ont eux aussi baissé de 2,6 points de PIB de 2017 à 2024 [[fig:po_change_2017_2024_pts]].
+> Même en partant d’un sommet, les baisses décidées depuis 2018 n’ont pas été financées (point d’accord, étape 7) [[src:f10]]. Pour le solde, le CICE pèse peu : son remplacement réduit recettes et dépenses de montants voisins.
+>
+> Les prélèvements obligatoires mesurés par l’Insee (institut public de statistique) ont baissé de 2,6 points de PIB de 2017 à 2024 [[fig:po_change_2017_2024_pts]]. Selon la Cour des comptes (juridiction financière), cette baisse mêle des décisions et l’évolution spontanée des recettes, qui a joué dans les deux sens [[src:f20:cour24]]. Sur ce point, l’objection tient.
 
 **Pastilles source.** [[fig:total_revenue_2017_pct_gdp]] [[fig:total_revenue_2024_pct_gdp]] [[fig:total_revenue_change_2017_2024_pp]] (Eurostat gov_10a_main, 21 octobre 2026) ; [[fig:total_revenue_2025_pct_gdp]] [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]] (calcul de la plateforme d’après Eurostat gov_10a_main) ; [[fig:po_2017_pct_gdp]] [[fig:po_2024_pct_gdp]] [[fig:po_2025_pct_gdp]] [[fig:po_change_2017_2024_pts]] (Insee) ; [[fig:isf_repeal_mechanical_loss_eur_bn]] (Conseil d’analyse économique, *Focus* n° 118, juillet 2025 ; estimation mécanique) ; [[src:f08]] (comité d’évaluation des réformes de la fiscalité du capital, France Stratégie, octobre 2023) ; [[fig:tax_cuts_2018_2023_eur_bn]] [[fig:tax_cuts_2018_2023_pts]] [[src:f20:cour24]] ; [[fig:tax_hikes_2010_2014_pts]] (Cour des comptes, 25 juin 2026) ; [[src:f20:cour24]] (taux de prélèvements obligatoires 2017-2023, Cour des comptes, 15 juillet 2024) ; [[src:f01]] [[src:f09]] [[src:f10]]. Financement de l’OFCE : « Financé par une subvention publique versée par l’État à la Fondation nationale des sciences politiques (site de l’OFCE). » (https://www.ofce.fr/ofce/statuts.html).
 
@@ -162,13 +168,13 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 **Texte affiché**
 
-> Ce récit est défendu notamment par des institutions publiques et internationales chargées de la surveillance budgétaire. Parmi elles, la Cour des comptes, le FMI (Fonds monétaire international ; organisation internationale) et l’OCDE (Organisation de coopération et de développement économiques ; organisation internationale).
+> Ce récit est défendu notamment par des institutions publiques et internationales chargées de la surveillance budgétaire. Parmi elles, la Cour des comptes, le FMI (Fonds monétaire international ; organisation internationale) et l’OCDE (Organisation de coopération et de développement économiques ; organisation internationale). *La Cour compte aussi pour le premier récit, dont elle fournit le chiffre de coût.*
 >
-> L’Institut Montaigne (libéral-centriste) et la Fondation iFRAP (libérale) le défendent aussi [[src:f10]]. Son point de départ : 2019, la dernière année avant la crise du Covid.
+> La Fondation iFRAP (libérale) défend aussi ce récit. L’Institut Montaigne souligne la hausse des dépenses en dehors des crises [[src:f10]]. La Cour des comptes, elle, part de 2019, la dernière année avant la crise du Covid [[src:f20:cour26]].
 >
-> De 2019 à 2025, les dépenses publiques augmentent de 2,0 points de PIB [[fig:te_change_2019_2025_pp]]. Les recettes reculent de 0,8 point de PIB [[fig:total_revenue_change_2019_2025_pp]].
+> De 2019 à 2025, les dépenses publiques augmentent de 2,0 points de PIB [[fig:te_change_2019_2025_pp]]. Les recettes reculent de 0,8 point de PIB [[fig:total_revenue_change_2019_2025_pp]]. Cette hausse des dépenses comprend les intérêts de la dette, qui ont augmenté avec les taux.
 >
-> La Cour des comptes parle d’un « effet de cliquet » [[src:f20:cour26]]. Gonflées par les crises (Covid, puis énergie), les dépenses ne sont jamais revenues à leur niveau d’avant, en part du PIB. *La même Cour chiffre aussi le coût des baisses d’impôts : les deux récits ne s’excluent pas.*
+> La Cour des comptes parle d’un « effet de cliquet » [[src:f20:cour26]]. Gonflées par les crises (Covid, puis énergie), les dépenses ne sont jamais revenues à leur niveau d’avant, en part du PIB. La plupart des mesures exceptionnelles ont pourtant pris fin. Pour la Cour, c’est un problème durable.
 
 **Fiche chiffre « 2,0 points de PIB, en ordres de grandeur »** (calcul de la plateforme, illustratif, au PIB de 2025)
 
@@ -188,9 +194,9 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 >
 > **« Partir de 2019, c’est partir juste avant les crises. »**
 >
-> Si l’on part de 2017, les dépenses publiques ont même un peu baissé : de 0,4 point de PIB entre 2017 et 2025 [[calc:te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp = −0,4]]. La baisse atteint 0,7 point si l’on s’arrête en 2024 [[fig:te_change_2017_2024_pp]]. Dans le même temps, les recettes ont reculé de 2,1 points de PIB [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]].
+> Si l’on part de 2017, les dépenses publiques ont même un peu baissé (notre calcul, d’après Eurostat). Elles reculent de 0,4 point de PIB entre 2017 et 2025 [[calc:te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp = −0,4]]. La baisse atteint 0,7 point si l’on s’arrête en 2024 [[fig:te_change_2017_2024_pp]]. Dans le même temps, les recettes ont reculé de 2,1 points de PIB [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]].
 >
-> L’OFCE (Sciences Po, sensibilité keynésienne) étudie la période de 2017 à 2024. Pour lui, la hausse du déficit vient donc de la baisse des prélèvements. Celle-ci n’a pas été accompagnée des économies annoncées.
+> L’OFCE (Sciences Po, sensibilité keynésienne) étudie la période de 2017 à 2024, en points de PIB potentiel. Pour lui, les dépenses totales sont stables. La hausse du déficit vient de « la baisse non financée » des prélèvements. Elle ne vient pas d’une dérive des dépenses hors intérêts.
 >
 > *Source :* OFCE (Sciences Po, sensibilité keynésienne), « Quelles trajectoires pour les finances publiques de la France ? », *Policy Brief* n° 146, 11 juillet 2025. [[src:f10]] [[src:f08]]
 >
@@ -210,20 +216,19 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 | Période | Dépenses publiques | Recettes publiques | Solde public | Lecture |
 |---|---|---|---|---|
-| De 2017 à 2025 | −0,4 pt de PIB [[calc:te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp = −0,4]] | −2,1 pts de PIB [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]] | −1,7 pt de PIB [[calc:(total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp) − (te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp) = −1,7]] | Surtout les recettes |
-| De 2019 à 2025 | +2,0 pts de PIB [[fig:te_change_2019_2025_pp]] | −0,8 pt de PIB [[fig:total_revenue_change_2019_2025_pp]] | −2,7 pts de PIB [[fig:balance_change_2019_2025_pp]] | Surtout les dépenses |
+| De 2017 à 2025 | −0,4 pt de PIB [[calc:te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp = −0,4]] | −2,1 pts de PIB [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]] | −1,7 pt de PIB [[calc:(total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp) − (te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp) = −1,7]] | Les recettes pèsent plus |
+| De 2019 à 2025 | +2,0 pts de PIB [[fig:te_change_2019_2025_pp]] | −0,8 pt de PIB [[fig:total_revenue_change_2019_2025_pp]] | −2,7 pts de PIB [[fig:balance_change_2019_2025_pp]] | Les dépenses pèsent plus |
 
-*En points de PIB. Un solde en baisse signifie un déficit plus grand. Arrondis à 0,1 point près.*
+*En points de PIB, intérêts compris. Un solde en baisse signifie un déficit plus grand. Arrondis à 0,1 point près. La colonne « Lecture » est notre lecture, pas celle d’une source.*
 
 > **Depuis 2017 : surtout les recettes. Depuis 2019 : surtout les dépenses.**
 >
-> L’année d’arrivée compte aussi. De 2019 à 2024, les deux effets sont à peu près égaux. Les dépenses augmentent de 1,7 point de PIB [[calc:te_change_2019_2025_pp − (te_2025_pct_gdp − te_2024_pct_gdp) = 1,7]], les recettes baissent de 1,8 point [[calc:total_revenue_change_2019_2025_pp − (total_revenue_2025_pct_gdp − total_revenue_2024_pct_gdp) = −1,8]].
+> L’année d’arrivée compte aussi. De 2019 à 2024, les deux effets sont proches. Les dépenses augmentent de 1,7 point de PIB [[fig:te_change_2019_2024_pp]], les recettes baissent de 1,8 point [[fig:total_revenue_change_2019_2024_pp]].
 >
 > La hausse des impôts de 2025 réduit la baisse des recettes mesurée depuis 2019. Depuis 2005, dépenses et recettes ont toutes deux augmenté en points de PIB, les dépenses nettement plus [[src:f10]].
+
 >
-> Selon la période choisie, on ne voit qu’une partie de l’histoire.
->
-> À l’étape 1, vous avez répondu : {réponse}. Les deux récits sont exacts : ils ne répondent pas à la même question.
+> À l’étape 1, vous avez répondu : {réponse}. Les deux récits s’appuient sur des chiffres exacts. La période choisie explique une partie de leur désaccord, pas tout (étape 7).
 
 **Interaction : curseur d’année de référence** (composant de la fiche « Les baisses d’impôts depuis 2017 », spécification research/20 §4.11).
 
@@ -231,10 +236,10 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 - Poignées : départ 2005-2019, arrivée jusqu’à 2025 ; par défaut 2017 → 2025.
 - Cascade « en points de PIB » : dépenses hors intérêts, intérêts, recettes (signe de l’effet sur le solde), solde.
-- Titre dynamique : « Depuis {année} : surtout les recettes » / « surtout les dépenses » / « les deux, à parts à peu près égales » (écart des deux effets inférieur à 0,3 point).
+- Titre dynamique : « Depuis {année} : surtout les recettes » / « surtout les dépenses » / « les deux, à parts à peu près égales » (écart des deux effets inférieur à 0,3 point), toujours suivi des deux nombres. Mention affichée sous le curseur : « Libellés et seuil de 0,3 point : convention de ce site, pas d’une source. »
 - Données : `computed_fr_vs_eu27_fiscal_series.csv` ; tests de non-régression : les deux lignes du tableau, 2017 → 2024 (« surtout les recettes ») et 2019 → 2024 (« les deux, à parts à peu près égales », écart de 0,1 point).
 
-**Pastilles source.** [[calc:te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp = −0,4]] [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]] [[calc:(total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp) − (te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp) = −1,7]] [[calc:te_change_2019_2025_pp − (te_2025_pct_gdp − te_2024_pct_gdp) = 1,7]] [[calc:total_revenue_change_2019_2025_pp − (total_revenue_2025_pct_gdp − total_revenue_2024_pct_gdp) = −1,8]] (calcul de la plateforme à partir des pastilles existantes, recoupé avec `computed_fr_vs_eu27_fiscal_series.csv`) ; [[fig:te_change_2017_2024_pp]] [[fig:total_revenue_change_2017_2024_pp]] [[fig:te_change_2019_2025_pp]] [[fig:total_revenue_change_2019_2025_pp]] [[fig:balance_change_2019_2025_pp]] (calcul de la plateforme d’après Eurostat gov_10a_main, 21 octobre 2026) ; [[src:f10]].
+**Pastilles source.** [[calc:te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp = −0,4]] [[calc:total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp = −2,1]] [[calc:(total_revenue_2025_pct_gdp − total_revenue_2017_pct_gdp) − (te_change_2017_2024_pp + te_2025_pct_gdp − te_2024_pct_gdp) = −1,7]] [[fig:te_change_2019_2024_pp]] [[fig:total_revenue_change_2019_2024_pp]] (calcul de la plateforme à partir des pastilles existantes, recoupé avec `computed_fr_vs_eu27_fiscal_series.csv`) ; [[fig:te_change_2017_2024_pp]] [[fig:total_revenue_change_2017_2024_pp]] [[fig:te_change_2019_2025_pp]] [[fig:total_revenue_change_2019_2025_pp]] [[fig:balance_change_2019_2025_pp]] (calcul de la plateforme d’après Eurostat gov_10a_main, 21 octobre 2026) ; [[src:f10]].
 
 ---
 
@@ -242,21 +247,23 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 **Texte affiché**
 
-> Les deux lectures partagent un constat : les baisses d’impôts de 2018 à 2023 n’ont pas été financées par les économies de dépense annoncées. L’OFCE, la Cour des comptes et Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire) l’écrivent tous trois [[src:f10]].
+> Les deux lectures partagent un constat : les baisses d’impôts de 2018 à 2023 n’ont pas été financées. Pour la Cour des comptes et Fipeco, elles n’ont pas été compensées par des économies de dépense. Pour l’OFCE, c’est une baisse des prélèvements « non financée » [[src:f10]] [[src:f20:cour24]].
 >
 > Depuis 2024, le mouvement s’est en partie inversé. Rexecode (institut de conjoncture proche des organisations patronales) compte 36,7 milliards d’euros de prélèvements nouveaux de 2024 à 2026 [[fig:rexecode_levies_2024_2026_eur_bn]]. C’est 1,2 point de PIB [[fig:rexecode_levies_2024_2026_pts]], soit 7,8 jours de dépense publique (notre calcul) [[yard:rexecode_levies_2024_2026_days]].
 >
+> Pour Rexecode, ces hausses n’ont pas réduit le déficit, qui serait en 2026 proche de 2023. La raison : la dépense augmente plus vite que l’activité [[src:f07:S49]].
+>
 > En 2025, selon la Cour des comptes, la baisse du déficit s’explique « exclusivement » par des hausses d’impôts et de cotisations de 23,0 milliards d’euros [[fig:cour_2025_tax_increases_eur_bn]]. Les dépenses, elles, ont continué d’augmenter un peu plus vite que l’économie [[src:f20:cour26]].
 >
-> Sur le remède, les avis divergent. Pour la Cour des comptes et le FMI, le niveau déjà élevé des prélèvements réduit les marges du côté des recettes [[src:f20:cour26]] [[src:f10]]. Ils orientent donc l’ajustement plutôt vers la dépense. Les économistes du premier récit jugent naturel de revenir sur une partie des baisses décidées depuis 2017.
+> Sur le remède, les avis divergent. Pour la Cour des comptes et le FMI, le niveau déjà élevé des prélèvements réduit les marges du côté des recettes [[src:f20:cour26]] [[src:f10]]. Ils orientent l’ajustement principalement vers la dépense. Le FMI recommande aussi de supprimer les niches fiscales inefficaces [[src:f10]].
 >
-> Terra Nova (centre gauche) juge justifié de taxer davantage les plus fortunés, mais pour une petite partie seulement de l’ajustement [[src:f10]].
+> L’Institut Montaigne juge qu’un ajustement par les seuls impôts demanderait plusieurs nouvelles « taxes Zucman » chaque année. Terra Nova juge justifié de taxer davantage les plus fortunés, mais pour une petite partie seulement de l’ajustement. Attac relie ces baisses à la hausse de la dette et propose d’autres choix fiscaux [[src:f10]].
 >
 > Revenir sur les baisses d’impôts, réduire les dépenses, ou les deux ? C’est un choix politique, que nous ne tranchons pas. Le chapitre 7 chiffre chaque option.
 
-**Visuel / animation.** Balance à deux plateaux : « baisses décidées de 2018 à 2023 » (13,2 jours) ; « prélèvements nouveaux 2024-2026 (Rexecode) » (7,8 jours). Elle ne revient pas à l’équilibre. Légende : « Ordres de grandeur ; sources et méthodes différentes (Cour des comptes, coût en 2023 ; Rexecode, mesures nouvelles cumulées). »
+**Visuel / animation.** Balance à deux plateaux : « baisses décidées de 2018 à 2023 » (13,2 jours) ; « prélèvements nouveaux 2024-2026 (Rexecode) » (7,8 jours). Elle ne revient pas à l’équilibre. Légende : « Ordres de grandeur ; sources et méthodes différentes (Cour des comptes, coût en 2023 ; Rexecode, mesures nouvelles cumulées). Rexecode en tire une conclusion côté dépense : ces hausses n’ont pas réduit le déficit. »
 
-**Pastilles source.** [[src:f10]] ; [[fig:rexecode_levies_2024_2026_eur_bn]] [[fig:rexecode_levies_2024_2026_pts]] (Rexecode, document de travail n° 105, septembre 2026) ; [[yard:rexecode_levies_2024_2026_days]] ; [[fig:cour_2025_tax_increases_eur_bn]] [[src:f20:cour26]] (Cour des comptes, 25 juin 2026) ; FMI, déclaration de fin de mission au titre de l’article IV, 21 mai 2026 (notre traduction, via [[src:f10]]) ; Terra Nova, note de G. Hannezo, 20 septembre 2024 (via [[src:f10]]). Financement : « Financé par ses adhérents, une soixantaine d’entreprises et d’organisations professionnelles, dont le Medef, l’UIMM et France Industrie (site de Rexecode). » (https://www.rexecode.fr/l-institut/nos-adherents) ; « Financé par du mécénat, des adhésions et des dons (site de Terra Nova). » (https://tnova.fr/qui-sommes-nous/).
+**Pastilles source.** [[src:f10]] ; [[fig:rexecode_levies_2024_2026_eur_bn]] [[fig:rexecode_levies_2024_2026_pts]] (Rexecode, document de travail n° 105, septembre 2026) ; [[yard:rexecode_levies_2024_2026_days]] ; [[fig:cour_2025_tax_increases_eur_bn]] [[src:f20:cour26]] (Cour des comptes, 25 juin 2026) ; FMI, déclaration de fin de mission au titre de l’article IV, 21 mai 2026 (notre traduction, via [[src:f10]]) ; Terra Nova, note de G. Hannezo, 20 septembre 2024 (via [[src:f10]]) ; Institut Montaigne, *Budget base zéro*, novembre 2025 (via [[src:f10]]) ; Attac, *La dette de l’injustice fiscale*, 26 mars 2025 (https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale, consulté le 30 octobre 2026) ; [[src:f07:S49]] (conclusion de Rexecode sur le déficit) ; [[src:f20:cour24]]. Financement : « Financé par ses adhérents, une soixantaine d’entreprises et d’organisations professionnelles, dont le Medef, l’UIMM et France Industrie (site de Rexecode). » (https://www.rexecode.fr/l-institut/nos-adherents) ; « Financé par du mécénat, des adhésions et des dons (site de Terra Nova). » (https://tnova.fr/qui-sommes-nous/).
 
 ---
 
@@ -294,7 +301,9 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 > La France dépense 7,6 points de PIB de plus que la zone euro à 21 pays (ZE21, Bulgarie comprise) [[fig:spending_gap_ea21_2025_pp]] (chapitre 1). Elle prélève aussi davantage : 2e sur 36 pays de l’OCDE en 2024 [[fig:oecd_tax_to_gdp_2024_rank]] (chapitre 3).
 >
-> La France dépense beaucoup plus que la moyenne de ses voisins, et prélève aussi beaucoup plus. Son déficit, c’est l’écart entre les deux : il n’a pas été comblé depuis 1974 [[fig:last_surplus_year]].
+> Ces deux comparaisons n’utilisent ni le même groupe de pays ni la même mesure : on ne peut pas soustraire l’une de l’autre.
+>
+> La France dépense beaucoup plus que la moyenne de ses voisins, et prélève aussi beaucoup plus. Mais ses dépenses dépassent ses recettes chaque année depuis 1974 [[fig:last_surplus_year]].
 
 **Visuel / animation.** Deux panneaux côte à côte, même style, sans couleur d’alerte et sans nouveau chiffre : « Dépenses : France plus haut que la ZE21 (chapitre 1) » ; « Prélèvements : France 2e de l’OCDE (chapitre 3) ». Chaque panneau affiche l’année et le groupe de pays.
 
@@ -308,9 +317,9 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 > **À retenir**
 > - En 2025, le déficit public atteint 151,6 milliards d’euros, soit 32,3 jours de dépense publique [[fig:deficit_2025_eur_bn]] [[yard:deficit_days]].
-> - En points de PIB, le creusement vient surtout des recettes de 2017 à 2025. Il vient surtout des dépenses de 2019 à 2025, et des deux à parts à peu près égales de 2019 à 2024.
-> - Les baisses d’impôts décidées de 2018 à 2023 coûtent 62 milliards d’euros par an, soit 13,2 jours de dépense publique [[fig:tax_cuts_2018_2023_eur_bn]] [[prop:tax_cuts_2018_2023]]. Les économies annoncées pour les financer n’ont pas été réalisées, selon la Cour des comptes, l’OFCE et Fipeco (point d’accord).
-> - La hausse des dépenses de 2019 à 2025 atteint 2,0 points de PIB [[fig:te_change_2019_2025_pp]]. C’est environ 60 milliards d’euros au PIB de 2025, soit 12,7 jours de dépense publique [[calc:te_change_2019_2025_pp × one_point_gdp_eur_bn = 59,8]] [[yard:te_change_2019_2025_days]].
+> - En points de PIB, les recettes pèsent plus de 2017 à 2025, les dépenses de 2019 à 2025. De 2019 à 2024, les deux pèsent à peu près autant.
+> - Les baisses d’impôts décidées de 2018 à 2023 coûtent 62 milliards d’euros par an en 2023, selon la Cour des comptes [[fig:tax_cuts_2018_2023_eur_bn]]. C’est 13,2 jours de dépense publique [[prop:tax_cuts_2018_2023]]. Elles n’ont pas été financées (point d’accord).
+> - La hausse des dépenses de 2019 à 2025 atteint 2,0 points de PIB, intérêts compris [[fig:te_change_2019_2025_pp]]. Cette variation d’un ratio ne s’oppose pas terme à terme à ce coût.
 > - Depuis 2024, les prélèvements remontent en partie, mais les dépenses augmentent encore un peu plus vite que l’économie [[src:f20:cour26]].
 > - L’État porte l’essentiel du déficit, en partie parce qu’il finance les autres administrations.
 >
@@ -333,11 +342,60 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 
 **Visuel / animation.** La bande rouge de 32,3 jours se transforme en un trait qui monte : la courbe de la dette, qui ouvre le chapitre 5.
 
-**Pastilles source.** [[fig:deficit_2025_eur_bn]] [[yard:deficit_days]] [[fig:tax_cuts_2018_2023_eur_bn]] [[prop:tax_cuts_2018_2023]] [[fig:te_change_2019_2025_pp]] [[yard:one_point_gdp_eur_bn]] [[yard:te_change_2019_2025_days]] [[src:f20:cour26]].
+**Pastilles source.** [[fig:deficit_2025_eur_bn]] [[yard:deficit_days]] [[fig:tax_cuts_2018_2023_eur_bn]] [[prop:tax_cuts_2018_2023]] [[fig:te_change_2019_2025_pp]] [[fig:tax_cuts_2018_2023_pts]] [[src:f20:cour26]].
 
 ---
 
 ## Notes de relecture
+
+### Confrontation aux sources publiques (2026-10-30)
+
+Base : verdicts et critiques gauche / droite de la confrontation aux textes publiés (Cour des comptes RSPFP 15 juillet 2024 et 25 juin 2026 ; OFCE *Policy Brief* 146, 11 juillet 2025 ; Rexecode DT 105, septembre 2026 ; Institut Montaigne, *Budget base zéro*, novembre 2025 ; Fipeco, *Mesures fiscales*, 27 janvier 2022 ; Terra Nova, 20 septembre 2024 ; Attac, 26 mars 2025 ; FMI, déclaration de fin de mission, 21 mai 2026 ; CAE *Focus* 118 ; France Stratégie, 17 octobre 2023). Seule page ouverte par moi : Attac (https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale, consultée le 30 octobre 2026) ; la page ne formule pas de demande explicite d’annuler les baisses, d’où la formulation prudente de l’étape 7. Aucun chiffre ajouté hors de `platform/data` : les chiffres publiés non disponibles sont rendus qualitativement (liste en fin d’entrée). Validateur (`python3 -I validate.py --strict --details`) : 0 erreur et 0 avertissement propres au chapitre 4 (l’avertissement transversal sur l’étiquette de la Cour vient des chapitres 1, 3 et 6 ; les erreurs de longueur des chapitres 1, 3 et 6 ne sont pas les miennes). Texte visible : **1 918 → 2 186 mots** ; durée « environ 9 minutes » (2 186 / 240 = 9,1).
+
+**Verdicts traités**
+1. *02, 03, 04 (rapprochement 62 milliards / +2,0 points ; unité « jours »).* **Corrigé.** Étape 1 : la comparaison 13,2 / 12,7 jours est retirée de l’écran de réponse ; les 62 milliards sont donnés avec les 2,2 points de PIB de la Cour (`tax_cuts_2018_2023_pts`) ; ajout « coût des mesures décidées, pas leur effet total sur le déficit » ; les jours sont présentés comme une unité propre au site, avec la convention « coût de 2023 rapporté à une journée de 2025 ». La fiche chiffre de l’étape 5 garde 12,7 jours avec sa mise en garde. Étape 10 : 12,7 jours et 60 milliards retirés de la puce dépenses, remplacés par la mise en garde ; puce baisses d’impôts avec 2,2 points de PIB.
+2. *06 (2019 attribué à Montaigne et à l’iFRAP).* **Corrigé.** Étape 5 : le point de départ 2019 est attribué à la Cour seule ; Montaigne « souligne la hausse des dépenses en dehors des crises » ; iFRAP nommé sans année.
+3. *07, 18 (libellés « surtout… » et seuil de 0,3 point, non sourcés).* **Corrigé.** Colonne « Lecture » : « Les recettes / dépenses pèsent plus », note « notre lecture, pas celle d’une source » ; spécification du curseur : mention affichée « convention de ce site, pas d’une source », nombres toujours affichés.
+4. *08, 13 (indicateurs ; part spontanée de la baisse des prélèvements obligatoires).* **Contre-argument ajouté** dans « Ce qu’on peut répondre » (étape 4) : selon la Cour, la baisse de 2,6 points mêle décisions et évolution spontanée ; « Sur ce point, l’objection tient ». Chiffres −1,6 / −0,2 (2023) et 45,0 % (2022) non affichés (absents de `figures.json`).
+5. *09 (« financées par l’emprunt »).* **Corrigé.** Phrase supprimée : c’était notre inférence placée juste après la citation de la Cour ; la citation « ont creusé le déficit de l’État et accru sa dette » reste à l’étape 8.
+6. *12 (CICE « pas une baisse nouvelle »).* **Corrigé.** Encadré : « surtout un changement comptable » selon Fipeco, petit coût net durable après un double coût en 2019 ; réponse : effet faible sur le solde (recettes et dépenses baissent de montants voisins).
+7. *14 (chiffres Eurostat lus comme ceux de l’OFCE).* **Corrigé.** Encadré de l’étape 5 : −0,4 marqué « notre calcul, d’après Eurostat » ; position propre de l’OFCE (dépenses totales stables, PIB potentiel, « la baisse non financée », pas de dérive des dépenses hors intérêts).
+8. *16 (nuance intérêts).* **Contre-argument ajouté** : la hausse de 2,0 points comprend les intérêts (étape 5, tableau et étape 10).
+9. *17 (« les deux récits ne répondent pas à la même question »).* **Corrigé** (voir critiques G4 / D1).
+10. *01, 05, 10, 11, 15.* Soutenus : sans changement de fond. Pour 01 et 10, nuance ajoutée (62 milliards = « la mesure de la Cour » ; autres mesures, étape 4).
+11. *Nouveaux identifiants disponibles.* `te_change_2019_2024_pp` et `total_revenue_change_2019_2024_pp` remplacent les deux `[[calc:]]` de l’étape 6.
+
+**Critiques de gauche**
+- G1 (élevé, juxtaposition étape 1 / étape 10) : **appliquée** (verdict 1).
+- G2 (+2,0 points intérêts compris ; OFCE hors intérêts et en PIB potentiel) : **appliquée en partie** : mention qualitative ; ventilation non chiffrée faute d’identifiant.
+- G3 (OFCE rangé sous « économies annoncées ») : **appliquée.** Étape 7 : constat commun « n’ont pas été financées », puis lecture de chaque source (Cour et Fipeco : non compensées par des économies ; OFCE : « non financée ») ; « annoncées » retiré de l’encadré de l’étape 5 et de l’étape 10.
+- G4 (« surtout la période choisie ») : **appliquée**, formulation commune avec D1 (étape 0 et fin de l’étape 6).
+- G5 (asymétrie d’autorité ; Terra Nova absent du diagnostic) : **appliquée.** Étape 4 : « Ses chiffres de coût viennent surtout de la Cour des comptes elle-même » ; Terra Nova cité sur le diagnostic, avec sa réserve « essentiellement comptable » (60 % non affiché, pas d’identifiant). Étape 5 : « La Cour compte aussi pour le premier récit ».
+- G6 (62 milliards comme seule mesure ; Attac) : **appliquée** qualitativement (« C’est la mesure de la Cour ; d’autres existent », total cumulé d’Attac non comparable à un coût annuel). Le chiffre de 308,6 milliards n’est pas affiché (pas d’identifiant).
+- G7 (CICE neutre pour le solde) : **appliquée** (verdict 6).
+- G8 (chiffres propres de l’OFCE) : **appliquée** (verdict 7) ; −0,8 / −0,2 point de PIB potentiel non affichés.
+- G9 (FMI et niches fiscales) : **appliquée** (« principalement vers la dépense » ; « Le FMI recommande aussi de supprimer les niches fiscales inefficaces »).
+- G10 (« les économistes du premier récit » au collectif) : **appliquée.** Formule collective retirée ; chaque position nommée (Montaigne, Terra Nova, Attac). La demande de « récupérer » les baisses n’est pas attribuée à Attac (non trouvée sur la page consultée) ; la CGT n’est pas citée (pas d’étiquette au glossaire §1.13, règle 7). La « trajectoire progressive » de l’OFCE n’est pas ajoutée : non vérifiée dans la base.
+- G11 (étape 9, rang contre écart en points) : **appliquée en partie.** Phrase ajoutée : les deux comparaisons n’utilisent ni le même groupe ni la même mesure ; « son déficit, c’est l’écart entre les deux » retiré. Écart de recettes avec la ZE21 non affiché (pas d’identifiant). La phrase sur la comparaison de l’OFCE à son propre passé a été coupée pour la longueur.
+
+**Critiques de droite**
+- D1 (élevé, « fenêtre seulement ») : **appliquée**, avec G4. Effet de cliquet : « la plupart des mesures exceptionnelles ont pourtant pris fin. Pour la Cour, c’est un problème durable. »
+- D2 (élevé, conclusion de Rexecode omise) : **appliquée.** Étape 7 : ces hausses n’ont pas réduit le déficit, qui serait en 2026 proche de 2023, car la dépense augmente plus vite que l’activité (`f07:S49`) ; légende de la balance complétée. 5,4 % non affiché (pas d’identifiant).
+- D3 (élevé, 2019 attribué au camp entier) : **appliquée** (verdict 2). iFRAP Revue 258 non ouverte : aucune année attribuée à l’iFRAP.
+- D4 (révélation de l’étape 1) : **appliquée** (verdict 1). Montaigne (ordre de grandeur voisin) cité qualitativement ; 65 milliards non affichés.
+- D5 (part spontanée de la baisse des prélèvements obligatoires) : **appliquée** (verdict 4).
+- D6 (référence 2010) : **appliquée** dans l’encadré de l’étape 4 (Rexecode : les baisses de 2014 à 2023 n’ont pas effacé le choc fiscal ; Montaigne : prélèvements encore plus élevés qu’en 2010), sans chiffre. Ligne 2010 du tableau **rejetée** : aucun identifiant 2010.
+- D7 (remède libéral absent) : **appliquée** qualitativement (Montaigne : « plusieurs nouvelles taxes Zucman chaque année » ; TVA à 32,5 % non affichée) ; niches du FMI ajoutées.
+- D8 (étape 9) : **appliquée en partie**, avec G11.
+- D9 (Montaigne : baisses ayant profité aux classes moyennes) : **appliquée**, en paraphrase sans guillemets (texte exact non revérifié).
+- D10 (CICE trop absolu) : **appliquée** (verdict 6).
+- D11 (seuil de 0,3 point) : **appliquée** (verdict 3).
+
+**Critiques rejetées** : aucune entièrement ; rejets partiels motivés ci-dessus (ligne 2010, écarts chiffrés non disponibles, demande d’Attac non vérifiée, CGT sans étiquette).
+
+**Coupes pour tenir la longueur** : étape 1 (comparaison 12,7 jours) ; étape 4 (phrase « financées par l’emprunt », paragraphes ISF et PFU resserrés, autofinancement du PFU et sigle IFI retirés) ; encadré de l’étape 4 (ligne *Le blog de l’Insee* retirée, phrase « une partie de la baisse est comptable ») ; étape 6 (« on ne voit qu’une partie de l’histoire ») ; étape 10 (60 milliards et 12,7 jours).
+
+**Chiffres à créer dans `platform/data` (puis afficher avec pastille)** : variation des intérêts 2019 → 2025 et des dépenses hors intérêts (points de PIB) ; total cumulé d’Attac 2018-2023 (308,6 milliards d’euros, environ 35 % de la hausse de la dette) ; 65 milliards de baisses depuis 2017 (Institut Montaigne) ; prélèvements obligatoires 2,2 points au-dessus de 2010 (Montaigne) ; TVA à 32,5 % / trois taxes Zucman par an (Montaigne) ; cumul des mesures depuis 2010 (Rexecode DT 105) ; déficit d’environ 5,4 % du PIB en 2023 et 2026 (Rexecode DT 105) ; coût net permanent d’environ 3 milliards et double coût d’environ 20 milliards en 2019 du CICE (Fipeco) ; dépenses hors intérêts et hors investissement −0,8 / −0,2 point de PIB potentiel (OFCE PB 146) ; part d’environ 60 % des baisses d’impôts dans la dégradation (Terra Nova) ; `po_2022_pct_gdp` (45,0) et décomposition 2023 −1,6 / −0,2 (Cour 2024) ; écart de recettes publiques avec la ZE21 en 2025 (points de PIB) ; variations 2010 → 2025 des dépenses et des recettes.
 
 ### Passe « finalisation » du 25 octobre 2026
 

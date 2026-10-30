@@ -3,13 +3,13 @@
 <!--
 NOTE ÉDITORIALE (non affichée sur le site)
 
-- Statut : brouillon pour relecture éditoriale et contradictoire. Rédigé le 25 octobre 2026 ; passe « chapitres » (intégration des nouvelles entrées et réduction) le même jour ; passe de finalisation le même jour.
+- Statut : brouillon pour relecture éditoriale et contradictoire. Rédigé le 25 octobre 2026 ; passe « chapitres » (intégration des nouvelles entrées et réduction) le même jour ; passe de finalisation le même jour ; confrontation aux sources publiques le 30 octobre 2026.
 - Place dans le récit : chapitre 3 sur 7 (fichier 20, §2.1). Précédent : ch. 2 « Où va l’argent ? ». Suivant : ch. 4 « Pourquoi le déficit ? ».
 - Sources des chiffres : uniquement `platform/data/figures.json`, `yardsticks.json` et `quiz.json` (millésime du 25 octobre 2026, seconde passe de données). Aucun chiffre ajouté de mémoire.
 - Pastilles : `[[fig:id]]` = figures.json ; `[[yard:id]]` = étalon ou paramètre de yardsticks.json ; `[[quiz:id]]` = idée reçue de quiz.json ; `[[calc:formule]]` = calcul de la plateforme (mention « illustratif »).
 - Libellé de l’interaction : « Estimez d’abord » (glossaire, §1.13).
 - Fiche thématique suivie : fichier 20, §4.7 ; nuances : fichiers 05, 14 (§7.1), 18 (§1).
-- Volume du texte visible : 2 129 mots après la passe de finalisation du 25 octobre 2026 (2 065 avant, mesure de `validate.py`), mesuré par script (titre, blocs affichés, questions ; hors spécifications, pastilles, notes). Durée de lecture affichée : environ 9 minutes (2 129 / 240 mots par minute). Voir les notes de relecture.
+- Volume du texte visible : 2 195 mots après la confrontation aux sources publiques du 30 octobre 2026 (2 129 avant, mesure de `validate.py`), mesuré par script (titre, blocs affichés, questions ; hors spécifications, pastilles, notes). Durée de lecture affichée : environ 9 minutes (2 195 / 240 mots par minute). Voir les notes de relecture.
 -->
 
 ---
@@ -42,7 +42,7 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 > En 2025, les prélèvements obligatoires représentent **43,6 % du PIB** [[fig:po_2025_pct_gdp]], soit **1 305 milliards d’euros** [[fig:po_2025_eur_bn]]. Sur 100 € de richesse produite, 43,6 € passent par les impôts ou les cotisations sociales [[fig:po_2025_pct_gdp]].
 >
-> Ce chiffre de l’Institut national de la statistique et des études économiques (Insee) compte les impôts et les cotisations sociales, **après déduction des crédits d’impôt**.
+> Ce chiffre de l’Institut national de la statistique et des études économiques (Insee) compte les impôts et les cotisations sociales, **après déduction des crédits d’impôt**. Eurostat, qui ne les déduit pas, mesure un taux plus élevé (étape 4).
 
 **Visuel** : les pièces se colorent jusqu’à 43,6 ; repère « Votre estimation : X % du PIB » et écart en points. Axe « en % du PIB ».
 
@@ -78,24 +78,25 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 > En 2017, les prélèvements obligatoires atteignaient **45,3 % du PIB**, le niveau le plus haut de la série [[fig:po_2017_pct_gdp]]. En 2024, ils étaient à **42,7 % du PIB** [[fig:po_2024_pct_gdp]], soit **2,6 points de PIB de moins** [[fig:po_change_2017_2024_pts]]. En 2025, ils remontent à 43,6 % du PIB [[fig:po_2025_pct_gdp]].
 >
-> Pourtant, **72 % des personnes interrogées** pensent que les impôts ont augmenté depuis 2017 [[quiz:M10]]. Ce n’est pas faux en euros. De 2017 à 2025, les prélèvements sont passés de 1 038,1 [[fig:po_2017_eur_bn]] à 1 305 milliards d’euros [[fig:po_2025_eur_bn]], soit **+25,7 %** [[fig:po_change_2017_2025_nominal_pct]]. Après inflation, la hausse n’est plus que de **+2,5 %** [[fig:po_change_2017_2025_real_pct]] : moins vite que l’économie, à peine plus vite que les prix.
+> Ce recul est propre à la France. Selon l’OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), les recettes sont restées stables dans la zone euro. Pour Rexecode (institut de conjoncture proche des organisations patronales), ces baisses n’ont pas effacé « le choc fiscal des années 2010 ».
 >
-> Côté dépenses, la même correction joue dans l’autre sens. Hors inflation, la dépense publique a augmenté chaque année en moyenne de 2005 à 2025, et encore en 2025.
+> Pourtant, **72 % des personnes interrogées** pensent que les impôts ont augmenté depuis 2017 [[quiz:M10]]. En euros, c’est vrai : de 2017 à 2025, les prélèvements passent de 1 038,1 [[fig:po_2017_eur_bn]] à 1 305 milliards d’euros [[fig:po_2025_eur_bn]], soit **+25,7 %** [[fig:po_change_2017_2025_nominal_pct]]. Après inflation, la hausse n’est que de **+2,5 %** [[fig:po_change_2017_2025_real_pct]] : moins vite que l’économie.
+>
+> Côté dépenses, la même correction joue. Hors inflation, la dépense publique a augmenté de **1,4 % par an** en moyenne de 2005 à 2025 [[fig:te_volume_growth_avg_2005_2025_pct]], au même rythme que les recettes. Son poids dans le PIB est au chapitre 4.
 >
 > **En part de la richesse nationale, les prélèvements ont baissé ; en euros, ils ont augmenté.**
 >
-> Ces baisses n’ont pas profité à tous de la même façon. L’Institut des politiques publiques (IPP ; institut de recherche académique) a mesuré l’effet des mesures de 2017 à 2022 sur le niveau de vie.
+> Ces baisses n’ont pas profité à tous de la même façon. L’Institut des politiques publiques (IPP ; institut de recherche académique) a mesuré leur effet sur le niveau de vie.
 >
 > Le niveau de vie des 1 % les plus aisés augmente de **3,3 %** [[fig:ipp81_gain_top1_pct]]. Celui des 5 % les plus modestes augmente de **0,8 %** [[fig:ipp81_gain_bottom5_pct]]. Les chômeurs, eux, perdent **1,1 %** de leur niveau de vie [[fig:ipp81_gain_unemployed_pct]].
->
-> Les deux affirmations sont vraies, selon ce que l’on mesure.
+
 
 **Visuel**
 
 - Courbe 2017 → 2025, « en % du PIB », points annotés 2017 (45,3), 2024 (42,7), 2025 (43,6).
 - Interrupteur « en % du PIB / en milliards d’euros » : en euros, deux points seulement (2017 : 1 038,1 ; 2025 : 1 305), la série annuelle en euros n’étant pas dans figures.json.
 
-**Pastilles source** : [[fig:po_2017_pct_gdp]] [[fig:po_2024_pct_gdp]] [[fig:po_change_2017_2024_pts]] – Insee, série des taux de prélèvements obligatoires 1959-2025, 28 août 2026. Mention : mesuré. [[fig:po_2017_eur_bn]] [[fig:po_change_2017_2025_nominal_pct]] – Insee, tableau 3.216, 28 août 2026. Mention : mesuré. [[fig:po_change_2017_2025_real_pct]] – calcul du fichier 14 (§7.1) d’après Insee et Eurostat (`prc_hicp_aind`), déflaté par l’IPCH. Mention : estimé. [[quiz:M10]] – sondage Elabe pour BFMTV, 4-5 novembre 2025. Dépenses hors inflation : Cour des comptes, synthèse du rapport *La situation et les perspectives des finances publiques*, 25 juin 2026 (https://www.ccomptes.fr/sites/default/files/2026-06/20260625-synthese-RSPFP-2026.pdf) ; Haut-commissariat à la Stratégie et au Plan, *Focus Finances publiques*, 17 juillet 2026 (https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-07-17%20-%20Focus%20Finances%20publiques/HCSP-2026-FRANCE%202035-2050_Focus-Finances%20publiques_0.pdf). Mention : mesuré. Taux de croissance en volume à afficher dès que `te_volume_growth_2025_pct` et `te_volume_growth_avg_2005_2025_pct` existeront dans figures.json. Effets par niveau de vie : IPP, *Note IPP* n° 81, mars 2022 (https://www.ipp.eu/en/publication/redistributive-effects-of-the-socio-fiscal-measures-implemented-during-the-2017-2022-five-year-term-aimed-at-households/), via [[src:f08]] ; [[fig:ipp81_gain_top1_pct]] [[fig:ipp81_gain_bottom5_pct]] [[fig:ipp81_gain_unemployed_pct]] – microsimulation des seules mesures « ménages » décidées pendant le quinquennat (variation du revenu disponible). Mention : estimé. Financement : « Financé surtout par des contrats de recherche ; pas de subvention publique pérenne directe (site de l’IPP). » (https://www.ipp.eu/decouvrir-lipp/budget-et-financements/).
+**Pastilles source** : [[fig:po_2017_pct_gdp]] [[fig:po_2024_pct_gdp]] [[fig:po_change_2017_2024_pts]] – Insee, série des taux de prélèvements obligatoires 1959-2025, 28 août 2026. Mention : mesuré. [[fig:po_2017_eur_bn]] [[fig:po_change_2017_2025_nominal_pct]] – Insee, tableau 3.216, 28 août 2026. Mention : mesuré. [[fig:po_change_2017_2025_real_pct]] – calcul du fichier 14 (§7.1) d’après Insee et Eurostat (`prc_hicp_aind`), déflaté par l’IPCH. Mention : estimé. [[quiz:M10]] – sondage Elabe pour BFMTV, 4-5 novembre 2025. Zone euro : Fipeco, *Les prélèvements sur le travail, le capital et la consommation de 2016 à 2024*, 16 avril 2026 (https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf ; taux en baisse de 2,2 points de PIB en France contre 0,3 point dans la zone euro). Base 2010 : Rexecode, *Bilan des prélèvements obligatoires 2026*, document de travail n° 105, septembre 2026 (https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026 ; 41,4 % en 2010 contre 42,7 % en 2024). Mention : position d’un institut. [[fig:te_volume_growth_avg_2005_2025_pct]] – Haut-commissariat à la Stratégie et au Plan, *Focus Finances publiques*, 17 juillet 2026 (https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-07-17%20-%20Focus%20Finances%20publiques/HCSP-2026-FRANCE%202035-2050_Focus-Finances%20publiques_0.pdf ; même rythme de 1,4 % par an pour les recettes sur 2005-2025). Mention : mesuré. Dépense de 2025 : 56,6 % du PIB hors crédits d’impôt, 2,0 points au-dessus de l’avant-crise (Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026), traitée au chapitre 4. Effets par niveau de vie : IPP, *Note IPP* n° 81, mars 2022 (https://www.ipp.eu/en/publication/redistributive-effects-of-the-socio-fiscal-measures-implemented-during-the-2017-2022-five-year-term-aimed-at-households/), via [[src:f08]] ; [[fig:ipp81_gain_top1_pct]] [[fig:ipp81_gain_bottom5_pct]] [[fig:ipp81_gain_unemployed_pct]] – microsimulation des seules mesures « ménages » décidées pendant le quinquennat, hors mesures visant les entreprises (variation du revenu disponible ; gain moyen de 1,9 %). Valeurs revérifiées sur la page de l’IPP le 30 octobre 2026. Mention : estimé. Financement : « Financé surtout par des contrats de recherche ; pas de subvention publique pérenne directe (site de l’IPP). » (https://www.ipp.eu/decouvrir-lipp/budget-et-financements/).
 
 ---
 
@@ -107,11 +108,11 @@ NOTE ÉDITORIALE (non affichée sur le site)
 >
 > Selon cette mesure, les recettes fiscales totales, cotisations sociales comprises, représentent **43,5 % du PIB** en France en 2024 [[fig:oecd_tax_to_gdp_2024_pct_gdp]]. La France est **2e sur les 36 pays de l’OCDE** ayant publié leurs données 2024 [[fig:oecd_tax_to_gdp_2024_rank]], derrière le Danemark (**45,2 % du PIB**) [[fig:denmark_tax_to_gdp_2024_pct_gdp]]. La moyenne de l’OCDE est de **34,1 % du PIB** [[fig:oecd_avg_tax_to_gdp_2024_pct_gdp]].
 >
-> Rapporté au nombre d’habitants plutôt qu’au PIB, l’écart se réduit. En recettes fiscales par habitant, mesurées en standards de pouvoir d’achat (estimation), la France est **9e sur 27** dans l’Union européenne en 2024 [[fig:tax_revenue_per_capita_pps_2024_rank]].
+> Par habitant, en standards de pouvoir d’achat, notre calcul place la France **9e sur 27** dans l’Union européenne en 2024 [[fig:tax_revenue_per_capita_pps_2024_rank]].
 >
 > **Pourquoi 43,5 % du PIB et pas 42,7 %, le taux de l’Insee pour 2024 [[fig:po_2024_pct_gdp]] ?** Surtout à cause des crédits d’impôt versés même à ceux qui ne paient pas d’impôt (crédits d’impôt remboursables : **19,6 milliards d’euros** en 2024 [[fig:refundable_tax_credits_2024_eur_bn]]). L’OCDE et Eurostat les comptent comme une dépense publique, et non comme une baisse d’impôt.
 >
-> Sur la définition européenne, proche de celle de l’OCDE, la Cour des comptes (juridiction financière) estime 2025 à **44,2 à 44,3 % du PIB** [[fig:po_2025_esa_concept_pct_gdp]].
+> Sur la définition d’Eurostat, la Cour des comptes (juridiction financière) mesure **44,3 % du PIB** en 2025 [[fig:po_2025_esa_concept_pct_gdp]]. C’est le niveau le plus élevé de la zone euro.
 
 **Visuel**
 
@@ -119,7 +120,7 @@ NOTE ÉDITORIALE (non affichée sur le site)
 - Valeurs des autres pays : série graphique à intégrer comme fichier de données (`research/data/oecd_revenue_statistics_2025_pct_gdp.csv`), pas comme figures isolées. Le 42,7 % de l’Insee n’apparaît jamais sur le graphique.
 - Ouvre le comparateur de pays avec l’indicateur déjà choisi.
 
-**Pastilles source** : [[fig:oecd_tax_to_gdp_2024_pct_gdp]] [[fig:oecd_tax_to_gdp_2024_rank]] [[fig:denmark_tax_to_gdp_2024_pct_gdp]] [[fig:oecd_avg_tax_to_gdp_2024_pct_gdp]] – OCDE, *Statistiques des recettes publiques 2025*, décembre 2025. Mention : mesuré. [[fig:refundable_tax_credits_2024_eur_bn]] – Insee, tableau 3.217, d’après le fichier 18, §1.3. Mention : mesuré. [[fig:po_2025_esa_concept_pct_gdp]] – Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026. Mention : estimé. [[fig:tax_revenue_per_capita_pps_2024_rank]] – calcul du fichier 05 (§5.1C) d’après Eurostat (`gov_10a_taxag`, `nama_10_pc`), en standards de pouvoir d’achat. Mention : estimé.
+**Pastilles source** : [[fig:oecd_tax_to_gdp_2024_pct_gdp]] [[fig:oecd_tax_to_gdp_2024_rank]] [[fig:denmark_tax_to_gdp_2024_pct_gdp]] [[fig:oecd_avg_tax_to_gdp_2024_pct_gdp]] – OCDE, *Statistiques des recettes publiques 2025*, décembre 2025. Mention : mesuré. [[fig:refundable_tax_credits_2024_eur_bn]] – Insee, tableau 3.217, d’après le fichier 18, §1.3. Mention : mesuré. [[fig:po_2025_esa_concept_pct_gdp]] – Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026 (https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf : « 44,3 points de PIB tel que mesuré par Eurostat », « le plus élevé de la zone euro » ; Eurostat ne déduit pas les crédits d’impôt). Mention : mesuré (selon la Cour). Écart de 0,8 point entre 43,5 % et 42,7 % : les crédits d’impôt remboursables (environ 0,7 point de PIB) en expliquent l’essentiel, le reste tient à d’autres écarts de définition et de millésime. Pour Rexecode (DT n° 105, septembre 2026), l’écart avec les partenaires européens est de 3,4 à 4,1 points de PIB, soit 100 à 120 milliards d’euros par an (chiffre à créer dans figures.json avant tout affichage). [[fig:tax_revenue_per_capita_pps_2024_rank]] – calcul du fichier 05 (§5.1C) d’après Eurostat (`gov_10a_taxag`, `nama_10_pc`), en standards de pouvoir d’achat. Mention : estimé.
 
 ---
 
@@ -132,21 +133,23 @@ NOTE ÉDITORIALE (non affichée sur le site)
 >
 > **« À ce niveau, les prélèvements freinent l’emploi et l’activité : l’effort doit venir de la dépense. »**
 >
-> La France prélève déjà plus que presque tous les pays de l’OCDE (étape 4). Le travail y est particulièrement taxé. Pour un célibataire au salaire moyen, impôts et cotisations prennent **près de la moitié du coût du travail** [[fig:oecd_tax_wedge_single_2025_pct]]. C’est le 3e niveau sur 38 pays de l’OCDE [[fig:oecd_tax_wedge_single_2025_rank]].
+> La France prélève déjà plus que presque tous les pays de l’OCDE (étape 4). Pour Rexecode (institut de conjoncture proche des organisations patronales), ce niveau va avec des comptes publics plus fragiles. Il a des « effets désincitatifs croissants pour l’investissement et pour le travail ».
 >
-> Pour l’Institut Montaigne (libéral-centriste), l’ajustement doit donc venir surtout de la dépense. Le faire par les seules recettes demanderait des hausses d’impôts sans précédent.
+> Le travail y est particulièrement taxé. Pour un célibataire au salaire moyen, impôts et cotisations prennent **près de la moitié du coût du travail** [[fig:oecd_tax_wedge_single_2025_pct]]. C’est le 3e niveau sur 38 pays de l’OCDE [[fig:oecd_tax_wedge_single_2025_rank]].
 >
-> *Sources : Institut Montaigne (libéral-centriste), *Budget base zéro*, novembre 2025 ; OCDE (organisation internationale), *Les impôts sur les salaires 2026*, avril 2026.* [[src:f10]]
+> Pour l’Institut Montaigne (libéral-centriste), l’ajustement doit donc venir surtout de la dépense. Le faire par les seules recettes imposerait « un choc fiscal massif ».
+>
+> *Sources : Institut Montaigne (libéral-centriste), *Budget base zéro*, novembre 2025 ; Rexecode (institut de conjoncture proche des organisations patronales), *Bilan des prélèvements obligatoires 2026*, septembre 2026 ; OCDE (organisation internationale), *Les impôts sur les salaires 2026*, avril 2026.* [[src:f10]]
 >
 > **Ce qu’on peut répondre**
 >
-> Un taux élevé ne veut pas dire que les Français perdent cet argent. Une grande partie leur revient en retraites, en soins remboursés et en services publics. L’Insee (institut public de statistique) compte une majorité de bénéficiaires nets (étape 8).
+> Un taux élevé ne veut pas dire que les Français perdent cet argent : une grande partie leur revient en retraites, soins et services publics. L’Insee (institut public de statistique) compte une majorité de bénéficiaires nets, surtout parmi les retraités (étape 8). Les cotisations ouvrent aussi des droits : retraite, chômage, santé.
 >
-> La France finance aussi par des cotisations publiques ce que d’autres pays financent par des assurances privées obligatoires. Celles-ci ne comptent pas comme des impôts (chapitre 2). Ces cotisations ouvrent aussi des droits : retraite, chômage, santé. Sur un point, l’objection tient : le travail reste parmi les plus taxés.
+> Sur un point, l’objection tient : le travail reste parmi les plus taxés. Selon Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), son rang dans l’Union européenne a reculé depuis 2016. Mais les prélèvements à la charge des employeurs y restent les plus élevés.
 
 **Visuel** : encadré fixe, sur le même écran que l’étape 4, jamais replié (glossaire, §4.6).
 
-**Pastilles source** : Institut Montaigne, *Budget base zéro*, novembre 2025, via [[src:f10]] (fichier 10, §4.1 et §5.4, réf. S44) ; étiquette d’orientation du glossaire, §1.13. Financement : « Financé par des contributions privées de plus de 200 entreprises, chacune à moins de 1,2 % du budget (site de l’Institut Montaigne). » (https://www.institutmontaigne.org/qui-sommes-nous). Mention : position d’un institut. [[fig:oecd_tax_wedge_single_2025_pct]] [[fig:oecd_tax_wedge_single_2025_rank]] – OCDE, *Les impôts sur les salaires 2026*, avril 2026 (dénominateur : coût total du travail, pas le PIB ; valeur 47,2 %, affichée « près de la moitié » pour ne pas la confondre avec les 47,2 % de foyers imposables de l’étape 7). Mention : mesuré. Réponse : Insee, « Revenus des ménages élargis à l’ensemble de l’économie en 2023 », *Insee Analyses* n° 118, 16 avril 2026 (bénéficiaires nets, étape 8) ; méthode des *Statistiques des recettes publiques* de l’OCDE (chapitre 2, encadré SOCX).
+**Pastilles source** : Institut Montaigne, *Budget base zéro*, novembre 2025, via [[src:f10]] (fichier 10, §4.1 et §5.4, réf. S44) ; étiquette d’orientation du glossaire, §1.13. Financement : « Financé par des contributions privées de plus de 200 entreprises, chacune à moins de 1,2 % du budget (site de l’Institut Montaigne). » (https://www.institutmontaigne.org/qui-sommes-nous). Mention : position d’un institut. [[fig:oecd_tax_wedge_single_2025_pct]] [[fig:oecd_tax_wedge_single_2025_rank]] – OCDE, *Les impôts sur les salaires 2026*, avril 2026 (dénominateur : coût total du travail, pas le PIB ; valeur 47,2 %, affichée « près de la moitié » pour ne pas la confondre avec les 47,2 % de foyers imposables de l’étape 7). Mention : mesuré. Montaigne : « Un ajustement seulement par les recettes impliquerait un choc fiscal massif » (https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf). Rexecode, *Bilan des prélèvements obligatoires 2026*, document de travail n° 105, septembre 2026 (https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026). Mention : position d’un institut. Réponse : Insee, « Revenus des ménages élargis à l’ensemble de l’économie en 2023 », *Insee Analyses* n° 118, 16 avril 2026 (https://www.insee.fr/fr/statistiques/8974371 ; bénéficiaires nets : 96 % des personnes des ménages de 65 ans et plus, 43 % des autres). Fipeco, *Les prélèvements sur le travail, le capital et la consommation de 2016 à 2024*, 16 avril 2026 (https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf ; prélèvements sur le travail : 2e rang de l’UE en 2016, 5e en 2024 ; 1er rang pour ceux à la charge des employeurs). Mention : mesuré.
 
 ---
 
@@ -159,7 +162,7 @@ NOTE ÉDITORIALE (non affichée sur le site)
 > - les **cotisations sociales**, payées sur les salaires, rapportent **446,3 milliards d’euros** [[fig:social_contributions_2025_eur_bn]] ; elles financent surtout les retraites et l’assurance maladie ;
 > - la **TVA**, payée par tous les consommateurs, **208,8 milliards** [[fig:vat_2025_eur_bn]] ;
 > - la **CSG et la contribution au remboursement de la dette sociale (CRDS)**, prélevées sur presque tous les revenus, **165,9 milliards** [[fig:csg_crds_2025_eur_bn]] ;
-> - l'**impôt sur le revenu**, celui de la déclaration annuelle, **94,3 milliards** [[fig:ir_net_2025_eur_bn]] ;
+> - l'**impôt sur le revenu**, **94,3 milliards** [[fig:ir_net_2025_eur_bn]] ;
 > - l'**impôt sur les sociétés**, **59,3 milliards** [[fig:corporate_tax_net_2025_eur_bn]].
 >
 > Le reste vient des impôts locaux et d’autres taxes.
@@ -189,7 +192,7 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 > Pour les revenus de 2024, **47,2 % des foyers fiscaux** paient un impôt sur le revenu [[fig:ir_households_paying_pct]]. Un peu plus de la moitié, 52,8 % des foyers fiscaux, n’en paie donc pas [[calc:100 − ir_households_paying_pct = 52,8]].
 >
-> Mais ne pas payer l’impôt sur le revenu ne veut pas dire ne payer aucun impôt. **Tout le monde paie la TVA** sur ses achats. **Presque tous les revenus supportent la CSG** : salaires, pensions, allocations chômage, revenus du capital, avec des taux réduits ou des exonérations pour les plus modestes.
+> Mais ne pas payer l’impôt sur le revenu ne veut pas dire ne payer aucun impôt. **Tout le monde paie la TVA** sur ses achats. **Presque tous les revenus supportent la CSG**, avec des taux réduits ou des exonérations pour les plus modestes.
 
 **Visuel** : 100 maisons, 47 colorées (« paient un impôt sur le revenu net ») ; puis toutes reçoivent les étiquettes « TVA » et « CSG ». Repère : réponse de l’utilisateur contre 47,2 %.
 
@@ -207,19 +210,21 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 **Texte affiché (après la réponse)**
 
-> En 2023, les 10 % les plus aisés de la population paient **33,3 % de l’ensemble des prélèvements** [[fig:top10_share_levies_2023_pct]], pas seulement de l’impôt sur le revenu.
+> En 2023, les 10 % les plus aisés de la population paient **33,3 % de l’ensemble des prélèvements** [[fig:top10_share_levies_2023_pct]], pas seulement de l’impôt sur le revenu. Cette part dépend de ce que l’on compte, par exemple avec ou sans la TVA.
 >
 > En bas de l’échelle, c’est différent, à cause du poids de la TVA et des autres taxes indirectes. En 2022, les prélèvements représentaient **64 % du revenu avant transferts** des 10 % les plus modestes [[fig:levies_share_income_d1_2022_pct]], contre **48 %** pour les 10 % les plus aisés [[fig:levies_share_income_d10_2022_pct]].
 >
-> Ce ratio se lit avec prudence. Il rapporte des taxes payées sur une consommation financée en partie par les prestations sociales. Or le revenu est mesuré avant la plupart de ces prestations : il est donc très faible pour les plus modestes.
+> Ce ratio se lit avec prudence : le revenu est mesuré avant la plupart des prestations, qui financent pourtant une partie de la consommation taxée.
 >
-> Le système réduit surtout les inégalités par ce qu’il **verse** : prestations sociales, retraites, services publics gratuits. En comptant ces services, **56 % des personnes reçoivent plus qu’elles ne paient** en 2023 [[fig:net_beneficiaries_2023_pct]].
+> Sur une autre base (impôts directs rapportés au revenu disponible, hors TVA), la Fondation iFRAP (libérale) trouve un système nettement progressif.
+>
+> Le système réduit surtout les inégalités par ce qu’il **verse** : prestations sociales, retraites, services publics gratuits. En comptant ces services, **56 % des personnes reçoivent plus qu’elles ne paient** en 2023 [[fig:net_beneficiaries_2023_pct]]. Ce chiffre tient beaucoup à l’âge : les ménages de retraités sont très majoritairement bénéficiaires nets.
 
 **Visuel**
 
 - Barres par dixième de la population : prélèvements payés / prestations et services reçus. Les séries par dixième sont des données de graphique (fichier de données à créer depuis l'*Insee Analyses* n° 118) ; en attendant, n’afficher que « 10 % les plus aisés : 33,3 % », le couple « 64 % / 48 % du revenu avant transferts (2022) » et le compteur « 56 % de bénéficiaires nets ».
 
-**Pastilles source** : [[fig:top10_share_levies_2023_pct]] [[fig:net_beneficiaries_2023_pct]] – Insee, « Revenus des ménages élargis à l’ensemble de l’économie en 2023 », *Insee Analyses* n° 118, 16 avril 2026. Mention : estimé. [[fig:levies_share_income_d1_2022_pct]] [[fig:levies_share_income_d10_2022_pct]] – Insee, *Insee Première* n° 2022, novembre 2024 (données 2022 ; l’édition 2023 ne reprend pas ce ratio ; revenu avant transferts augmenté des pensions et allocations chômage). Mention : estimé.
+**Pastilles source** : [[fig:top10_share_levies_2023_pct]] [[fig:net_beneficiaries_2023_pct]] – Insee, « Revenus des ménages élargis à l’ensemble de l’économie en 2023 », *Insee Analyses* n° 118, 16 avril 2026 (https://www.insee.fr/fr/statistiques/8974371 ; bénéficiaires nets : 96 % des personnes des ménages de 65 ans et plus, 43 % des autres). Mention : estimé. Autre base : une étude Insee de septembre 2023 (données 2019), citée par la Fondation iFRAP, donne 30,46 % des prélèvements hors TVA pour les 10 % les plus aisés (https://www.ifrap.org/budget-et-fiscalite/les-10-les-plus-aises-paient-plus-de-30-des-prelevements-obligatoires, 26 septembre 2023). Lecture progressive : Fondation iFRAP, *Fiscalité des riches : le mirage des milliards de recettes*, revue n° 270, septembre 2025 (https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf ; en 2022, impôts directs : 18,5 % du revenu disponible en moyenne, 42,1 % pour le dixième le plus aisé ; hors TVA). Mention : position d’un institut. Financement : « Financée intégralement par des dons privés ; n’accepte ni subvention publique ni financement de parti (site de la Fondation iFRAP). » (https://www.ifrap.org/qui-sommes-nous). [[fig:levies_share_income_d1_2022_pct]] [[fig:levies_share_income_d10_2022_pct]] – Insee, *Insee Première* n° 2022, novembre 2024 (données 2022 ; l’édition 2023 ne reprend pas ce ratio ; revenu avant transferts augmenté des pensions et allocations chômage). Mention : estimé.
 
 ---
 
@@ -236,23 +241,25 @@ NOTE ÉDITORIALE (non affichée sur le site)
 >
 > La raison : une grande partie des revenus des milliardaires reste dans les sociétés qui détiennent leurs entreprises (holdings). Ces revenus ne paient alors que l’impôt sur les sociétés.
 >
-> *Source : IPP (institut de recherche académique), L. Bach, A. Bozio, A. Guillouzouic et C. Malgouyres, « Quels impôts les milliardaires paient-ils ? », *Note IPP* n° 92, juin 2023, mise à jour en mai 2025 (données 2016).*
+> L’Observatoire européen de la fiscalité (centre de recherche de l’École d’économie de Paris) fait le même constat dans tous les pays où des données existent.
+>
+> *Sources : IPP (institut de recherche académique), *Note IPP* n° 92, juin 2023, mise à jour en mai 2025 (données 2016) ; Observatoire européen de la fiscalité (centre de recherche de l’École d’économie de Paris), juin 2025.*
 >
 > **Ce qu’on peut répondre**
 >
-> La méthode est discutée. Le gouvernement juge « non consensuel » de compter comme un revenu les bénéfices non distribués.
+> François Geerolf, économiste à l’OFCE (Sciences Po, sensibilité keynésienne), qui écrit à titre personnel, discute la méthode.
 >
-> François Geerolf a publié une note critique en octobre 2026. Il est économiste à l’Observatoire français des conjonctures économiques (OFCE ; Sciences Po, sensibilité keynésienne) et écrit à titre personnel. Sur une base de revenu homogène, il trouve **25,1 %** pour les milliardaires [[fig:geerolf_rate_billionaires_homogeneous_pct]], contre **26,8 %** au seuil des 10 % les plus aisés [[fig:geerolf_rate_top10_threshold_pct]].
+> Il compare les milliardaires au seuil d’entrée du dixième le plus aisé, et non au tout sommet. Il trouve **25,1 % de leur revenu** [[fig:geerolf_rate_billionaires_homogeneous_pct]], contre **26,8 %** à ce seuil [[fig:geerolf_rate_top10_threshold_pct]].
 >
-> Selon lui, l’écart devient faible. À notre connaissance, les auteurs de l’étude n’ont pas encore répondu publiquement.
+> Selon lui, l’écart devient faible ; il était plus grand avec la première version de la note de l’IPP. Il ajoute que les bénéfices gardés dans les holdings seront imposés s’ils sont distribués.
 >
-> Une partie de l’écart tient aussi au calendrier : les bénéfices gardés dans la holding seront imposés s’ils sont distribués. Depuis 2025, un impôt minimum vise aussi ces très hauts revenus : la contribution différentielle sur les hauts revenus (CDHR). Son rendement est discuté au chapitre 7.
+> La Fondation iFRAP (libérale) trouve aussi un taux à peine plus bas au tout sommet. Depuis 2025, un impôt minimum vise ces très hauts revenus (chapitre 7).
 
 <!-- coïncidence : les 26 % de l’IPP (taux d’imposition des milliardaires, données 2016) et les +25,7 % de l’étape 3 (hausse des prélèvements en euros de 2017 à 2025) sont deux chiffres sans rapport. -->
 
 **Visuel** : encadré fixe, sur le même écran que l’étape 8, jamais replié.
 
-**Pastilles source** : [[fig:ipp_effective_rate_billionaires_2016_pct]] [[fig:ipp_effective_rate_top01_2016_pct]] – IPP, Note n° 92 (données 2016). Mention : estimé. [[fig:geerolf_rate_billionaires_homogeneous_pct]] [[fig:geerolf_rate_top10_threshold_pct]] – F. Geerolf, *Les mensonges de la taxe Zucman : un vrai sujet, un faux diagnostic, un mauvais remède*, octobre 2026 (https://fgeerolf.com/mensonges-taxe-zucman.pdf). Mention : estimé. Ni la note de l’IPP ni celle de F. Geerolf ne sont publiées dans une revue à comité de lecture. Réponse du gouvernement à la question écrite n° 1212 (fichier 07, réf. S50). Financement : IPP, « Financé surtout par des contrats de recherche ; pas de subvention publique pérenne directe (site de l’IPP). » (https://www.ipp.eu/decouvrir-lipp/budget-et-financements/) ; OFCE, « Financé par une subvention publique versée par l’État à la Fondation nationale des sciences politiques (site de l’OFCE). » (https://www.ofce.fr/ofce/statuts.html). CDHR : rendement annoncé et observé au chapitre 7, étape 8 (propriétaire des rendements).
+**Pastilles source** : [[fig:ipp_effective_rate_billionaires_2016_pct]] [[fig:ipp_effective_rate_top01_2016_pct]] – IPP, Note n° 92 (données 2016). Mention : estimé. [[fig:geerolf_rate_billionaires_homogeneous_pct]] [[fig:geerolf_rate_top10_threshold_pct]] – F. Geerolf, *Les mensonges de la taxe Zucman : un vrai sujet, un faux diagnostic, un mauvais remède*, octobre 2026 (https://fgeerolf.com/mensonges-taxe-zucman.pdf). Mention : estimé. F. Geerolf, version révisée d’octobre 2026 : la note de 2023 donnait 26,2 % au sommet contre environ 30 % au 9e dixième ; il juge aussi que la base mêle holdings et sociétés d’exploitation. Ni la note de l’IPP ni celle de F. Geerolf ne sont publiées dans une revue à comité de lecture. Observatoire européen de la fiscalité : Q. Parrinello, entretien à *Reporterre*, « Taxer les milliardaires rapporterait 20 milliards d’euros », 11 juin 2025 (https://reporterre.net/Taxer-les-milliardaires-rapporterait-20-milliards-d-euros : « dans tous les pays pour lesquels on dispose de données, le taux d’effort fiscal des milliardaires est inférieur à celui du reste de la population ») ; financement : « Financé par l’Union européenne (site de l’Observatoire). » (https://www.taxobservatory.eu/about/). Fondation iFRAP, revue n° 270, septembre 2025 (https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf ; impôts directs et cotisations rapportés au revenu disponible : 55,8 % pour les 1 % les plus aisés, 55,2 % pour les 0,1 %, « très légèrement régressif »). Mention : position d’un institut. Financement : IPP, « Financé surtout par des contrats de recherche ; pas de subvention publique pérenne directe (site de l’IPP). » (https://www.ipp.eu/decouvrir-lipp/budget-et-financements/) ; OFCE, « Financé par une subvention publique versée par l’État à la Fondation nationale des sciences politiques (site de l’OFCE). » (https://www.ofce.fr/ofce/statuts.html). CDHR : rendement annoncé et observé au chapitre 7, étape 8 (propriétaire des rendements).
 
 ---
 
@@ -260,13 +267,13 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 **Texte affiché**
 
-> **« Il suffit de faire payer les plus riches. »** Ce qui est plausible : de nouvelles taxes sur les très hauts revenus et patrimoines pourraient rapporter **de 10 à 25 milliards d’euros par an** [[fig:tax_rich_package_eur_bn]]. Ce montant tient compte des réactions des contribuables.
+> **« Il suffit de faire payer les plus riches. »** Ce qui est exact : de nouvelles taxes sur les très hauts revenus et patrimoines rapporteraient de l’argent. Les chiffrages publiés varient beaucoup selon les auteurs (chapitre 7).
 >
-> C’est notre propre synthèse des chiffrages publiés : aucun organisme n’a chiffré cet ensemble. Une part notable repose sur une réforme des droits de succession qu’aucune estimation indépendante n’a chiffrée.
+> Notre propre synthèse, après réactions des contribuables, donne **de 10 à 25 milliards d’euros par an** [[fig:tax_rich_package_eur_bn]]. Personne d’autre n’a chiffré cet ensemble, ni sa part « succession ».
 >
-> C’est **de 2,1 à 5,3 jours de dépense publique** et **de 6,6 % à 16,5 % du déficit** de 2025 [[calc:tax_rich_package_eur_bn / one_day_spending_eur_bn = 2,1 à 5,3 ; tax_rich_package_eur_bn / deficit_2025_eur_bn × 100 = 6,6 à 16,5]]. Ce sont des ordres de grandeur. Ce qui ne tient pas : « il suffit ». C’est une estimation, pas une recette garantie, et elle ne comble pas le déficit.
+> C’est **de 2,1 à 5,3 jours de dépense publique** et **de 6,6 % à 16,5 % du déficit** de 2025 [[calc:tax_rich_package_eur_bn / one_day_spending_eur_bn = 2,1 à 5,3 ; tax_rich_package_eur_bn / deficit_2025_eur_bn × 100 = 6,6 à 16,5]]. Ce qui ne tient pas : « il suffit ». C’est une estimation, pas une recette garantie, et elle ne comble pas le déficit.
 >
-> **« Une minorité paie pour tout le monde. »** Ce qui est exact : moins de la moitié des foyers paie l’impôt sur le revenu [[fig:ir_households_paying_pct]]. Les 10 % les plus aisés paient un tiers de l’ensemble des prélèvements [[fig:top10_share_levies_2023_pct]], bien plus que leur poids dans la population.
+> **« Une minorité paie pour tout le monde. »** Ce qui est exact : moins de la moitié des foyers paie l’impôt sur le revenu [[fig:ir_households_paying_pct]]. Les 10 % les plus aisés paient un tiers de l’ensemble des prélèvements [[fig:top10_share_levies_2023_pct]], bien plus que leur poids dans la population. L’impôt sur le revenu, lui, est très concentré en haut de l’échelle.
 >
 > Ce qui ne tient pas : « pour tout le monde ». Tout le monde paie la TVA, et presque tous les revenus supportent la CSG. Les deux tiers des prélèvements viennent des 90 % restants [[calc:100 − top10_share_levies_2023_pct = 66,7]].
 >
@@ -274,7 +281,7 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 **Visuel** : deux cartes de même gabarit, taille et couleur neutre, dans un ordre tiré au hasard à chaque visite. Gauche : fourchette 10–25 Md€ convertie en jours (2,1–5,3) et en % du déficit (6,6–16,5 %). Droite : pictogramme de l’étape 7 (47,2 %) + 33,3 %.
 
-**Pastilles source** : [[fig:tax_rich_package_eur_bn]] – synthèse de la plateforme (fichier 07, §5 ; composante « succession » sans chiffrage indépendant). Mention : estimé (montants visés pour 2027 rapportés aux dénominateurs de 2025 : ordre de grandeur). [[yard:one_day_spending_eur_bn]] [[fig:deficit_2025_eur_bn]] – calcul de la plateforme. Mention : illustratif. [[fig:ir_households_paying_pct]] – DGFiP, *Statistiques* n° 41, novembre 2025. [[fig:top10_share_levies_2023_pct]] – Insee, *Insee Analyses* n° 118, 16 avril 2026.
+**Pastilles source** : [[fig:tax_rich_package_eur_bn]] – synthèse de la plateforme (fichier 07, §5 ; composante « succession » sans chiffrage indépendant). Mention : estimé (montants visés pour 2027 rapportés aux dénominateurs de 2025 : ordre de grandeur). Chiffrages publiés, par auteur : Terra Nova (centre gauche), 10 à 15 milliards pour un ensemble à la limite de la jurisprudence constitutionnelle (G. Hannezo, 20 septembre 2024, https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/) ; Observatoire européen de la fiscalité, environ 20 milliards pour un impôt plancher de 2 % sur environ 1 800 foyers (*Reporterre*, 11 juin 2025) ; F. Geerolf, « plutôt 2 à 6 » milliards pour la taxe Zucman (octobre 2026) ; Fondation iFRAP (libérale), 2 ou 3 milliards selon un rapport du Sénat (revue n° 270, septembre 2025) ; Institut Montaigne (libéral-centriste), environ 15 milliards par an équivalant à « trois nouvelles taxes Zucman » (novembre 2025). Détail des rendements : chapitre 7, propriétaire. [[yard:one_day_spending_eur_bn]] [[fig:deficit_2025_eur_bn]] – calcul de la plateforme. Mention : illustratif. [[fig:ir_households_paying_pct]] – DGFiP, *Statistiques* n° 41, novembre 2025. [[fig:top10_share_levies_2023_pct]] – Insee, *Insee Analyses* n° 118, 16 avril 2026. Concentration de l’impôt sur le revenu : les très hauts revenus, 3,6 % du revenu, paient « près de 15 % de la recette d’IR » (Fondation iFRAP, revue n° 270, septembre 2025) ; part du dixième le plus aisé à créer dans figures.json (`ir_top10_share_pct`) avant tout affichage chiffré.
 
 ---
 
@@ -286,21 +293,21 @@ NOTE ÉDITORIALE (non affichée sur le site)
 >
 > En 2025, il y en a **474** [[fig:tax_expenditures_count]]. Elles coûtent **91,8 milliards d’euros**, soit **3,1 % du PIB** [[fig:tax_expenditures_2025_eur_bn]] [[fig:tax_expenditures_2025_pct_gdp]] : **environ 20 jours de dépense publique**, ou **1 331 € par habitant** [[calc:tax_expenditures_2025_eur_bn / one_day_spending_eur_bn = 19,6 ; tax_expenditures_2025_eur_bn × 1000 / population_2025_m = 1 331]].
 >
-> **Attention : ce coût n’est pas une recette disponible telle quelle.** Chaque niche a ses bénéficiaires et un objectif. Mais la Cour des comptes relève que le coût réel n’est connu que pour une partie de ces dispositifs. Ils sont peu évalués : leur utilité n’est pas toujours démontrée.
+> **Attention : ce coût n’est pas une recette disponible telle quelle.** Chaque niche a ses bénéficiaires et un objectif. Selon la Cour des comptes, leur coût n’est connu que pour une partie d’entre elles, et elles sont peu évaluées. Un changement de méthode sur la TVA, que la Cour conteste, a aussi réduit ce total.
 >
 > Exemple côté cotisations : la baisse des cotisations patronales sur les bas salaires. Selon le rapport Bozio-Wasmer (rapport remis au gouvernement, 2024), elle a des effets forts sur l’emploi près du salaire minimum interprofessionnel de croissance (SMIC).
 >
-> Ces effets sont faibles ou nuls au-delà d’environ 2,5 SMIC [[fig:bozio_wasmer_threshold_smic]]. Un recentrage coûterait donc beaucoup moins d’emplois qu’une suppression totale, dont le rendement et le coût en emplois sont au chapitre 7.
+> Son scénario central, à budget constant, arrête ces baisses vers 2,5 SMIC [[fig:bozio_wasmer_threshold_smic]], avec des effets sur l’emploi modestes mais positifs. D’autres chiffrages, cités au Sénat en 2024, prévoient des pertes d’emplois. La suppression totale est au chapitre 7.
 >
-> **Et la fraude fiscale ?** Selon la Cour des comptes, aucune estimation robuste de son montant n’existe. Personne ne peut dire si elle est plus proche de 30 ou de 130 milliards d’euros par an [[fig:tax_gap_cour_range_eur_bn]]. En 2024, le contrôle fiscal a notifié 20,1 milliards d’euros [[fig:tax_audit_assessed_2024_eur_bn]] et en a encaissé 11,4 [[fig:tax_audit_collected_2024_eur_bn]].
+> **Et la fraude fiscale ?** Selon la Cour des comptes, l’absence d’estimation robuste est une « carence regrettable ». Nul ne peut dire si la fraude est plus proche de 30 ou de 130 milliards d’euros par an [[fig:tax_gap_cour_range_eur_bn]]. En 2024, le contrôle fiscal a notifié 20,1 milliards d’euros [[fig:tax_audit_assessed_2024_eur_bn]] et en a encaissé 11,4 [[fig:tax_audit_collected_2024_eur_bn]], un peu moins qu’en 2015.
 >
-> Ce qui est encaissé est déjà compté dans les recettes. Ce qu’un nouveau plan contre la fraude rapporterait en plus est discuté au chapitre 7.
+> Ces montants encaissés sont déjà dans les recettes. Le rendement d’un plan antifraude est au chapitre 7.
 
 **Visuel** : sur le ruban du calendrier, un bloc de 20 jours « dépenses fiscales » en pointillés au-dessus du ruban (ce que l’État aurait pu prélever), pas dedans. Lien vers la fiche « Aides publiques aux entreprises ».
 
 - Calculs : 91,83 / 4,696 = 19,6 jours ; 91,83 × 1 000 / 68,998 = 1 331 €.
 
-**Pastilles source** : [[fig:tax_expenditures_2025_eur_bn]] [[fig:tax_expenditures_count]] [[fig:tax_expenditures_2025_pct_gdp]] – Cour des comptes, *Analyse de l’exécution budgétaire 2025 – Dépenses fiscales*, avril 2026. Mention : estimé. [[fig:bozio_wasmer_threshold_smic]] – A. Bozio et É. Wasmer, *Les politiques d’exonérations de cotisations sociales : une inflexion nécessaire*, octobre 2024 (https://vie-publique.fr/files/rapport/pdf/295596.pdf ; seuil de 2,5 SMIC : ancien seuil du CICE et point de sortie du scénario central du rapport ; un paramètre, pas une statistique mesurée). Mention : estimé. Suppression totale des allègements (48 milliards nets, environ 980 000 emplois) : chapitre 7, étape 8, propriétaire des rendements. [[fig:tax_gap_cour_range_eur_bn]] [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]] – Cour des comptes, *La lutte contre la fraude fiscale*, 16 décembre 2025 (https://www.ccomptes.fr/sites/default/files/2025-12/20251216-Lutte-contre-la-fraude-fiscale.pdf). Mentions : fourchette de 30 à 130 milliards = ce n’est pas une estimation, seulement l’ampleur de l’incertitude (sur 1 268 milliards de prélèvements obligatoires en 2024) ; montants notifiés et encaissés = mesuré. Rendement d’un nouveau plan antifraude : chapitre 7, étape 8.
+**Pastilles source** : [[fig:tax_expenditures_2025_eur_bn]] [[fig:tax_expenditures_count]] [[fig:tax_expenditures_2025_pct_gdp]] – Cour des comptes, *Analyse de l’exécution budgétaire 2025 – Dépenses fiscales*, avril 2026. Le nombre de 474 est celui recensé par l’annexe au projet de loi de finances (PLF) pour 2025, septembre 2024 ; le coût n’y est chiffré que pour 387 dépenses fiscales, et seulement en ordre de grandeur pour 125 (Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *Les dépenses fiscales*, 4 décembre 2024, https://fipeco.fr/pdf/Niches2024.pdf). Changement de convention sur la TVA : environ 10 milliards de moins ; avec l’ancienne méthode, Fipeco chiffre 95,0 milliards pour 2023, et la Cour recommande d’y revenir. Mention : estimé. [[fig:bozio_wasmer_threshold_smic]] – A. Bozio et É. Wasmer, *Les politiques d’exonérations de cotisations sociales : une inflexion nécessaire*, octobre 2024 (https://vie-publique.fr/files/rapport/pdf/295596.pdf ; seuil de 2,5 SMIC : point de sortie du scénario central à budget constant, « effets emploi modestes mais positifs, de l’ordre de 10 000 à 20 000 ETP » ; un paramètre de scénario, pas une statistique mesurée). Mention : estimé. Autres chiffrages : Public Sénat, 5 novembre 2024 (https://www.publicsenat.fr/actualites/economie/refonte-des-cotisations-patronales-la-ministre-defend-la-reforme-malgre-un-risque-de-destruction-de-15-000-a-40-000-emplois ; source secondaire : la ministre cite un risque de 15 000 à 40 000 emplois détruits ; une estimation de l’OFCE citée dans ce débat n’a pas été ouverte et n’est pas reprise). Suppression totale des allègements (48 milliards nets, environ 980 000 emplois) : chapitre 7, étape 8, propriétaire des rendements. [[fig:tax_gap_cour_range_eur_bn]] [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]] – Cour des comptes, *La lutte contre la fraude fiscale*, 16 décembre 2025 (https://www.ccomptes.fr/sites/default/files/2025-12/20251216-Lutte-contre-la-fraude-fiscale.pdf). Texte vérifié dans le rapport le 30 octobre 2026 : « Nul ne peut aujourd’hui se hasarder à affirmer que ce montant est proche de 30 ou de 130 Md€ sur un total de prélèvements obligatoires de 1 268 Md€ en 2024 » ; « une carence regrettable » ; recettes recouvrées « passées de 12,2 Md€ en 2015 à 11,4 Md€ en 2024 » ; résultats « 20,1 Md€ en 2024 contre 21,2 Md€ en 2015 ». Mentions : fourchette de 30 à 130 milliards = ce n’est pas une estimation, seulement l’ampleur de l’incertitude ; montants notifiés et encaissés = mesuré. Rendement d’un nouveau plan antifraude : chapitre 7, étape 8.
 
 ---
 
@@ -319,18 +326,18 @@ NOTE ÉDITORIALE (non affichée sur le site)
 > | Santé | environ 2 950 € [[calc:po_per_capita_eur × cofog_health_2024_pct_te / 100 = 2 951]] |
 > | Éducation | environ 1 680 € [[calc:po_per_capita_eur × cofog_education_2024_pct_te / 100 = 1 683]] |
 > | Défense | environ 610 € [[calc:po_per_capita_eur × cofog_defense_2024_pct_te / 100 = 605]] |
-> | Autres fonctions (services généraux et intérêts de la dette, économie et transports, sécurité, culture, logement et équipements collectifs, environnement) | le reste |
+> | Autres fonctions (intérêts de la dette, transports, sécurité, logement, culture, environnement…) | le reste |
 > | **En plus : 8,8 % des dépenses publiques financées par l’emprunt (2025)** [[fig:share_te_borrowed_2025_pct]] | |
 
-> Ce reçu est une convention : les cotisations et la CSG vont d’abord à la Sécurité sociale, l’impôt sur le revenu d’abord à l’État. Un second reçu montrera ce que vous recevez (prestations, soins, école, routes).
+> Ce reçu est une convention : les cotisations et la CSG vont d’abord à la Sécurité sociale, l’impôt sur le revenu d’abord à l’État.
 >
-> **Calculez votre propre reçu** à partir de votre impôt sur le revenu et, si vous le souhaitez, de votre salaire.
+> **Calculez votre propre reçu** à partir de votre impôt sur le revenu.
 
 **Visuel** : ticket de caisse imprimé ligne par ligne, dernière ligne (« emprunt ») en rouge ; bouton « Calculer mon reçu » → outil « Le reçu de vos impôts ».
 
 - Calculs (18 913,6 € × part des dépenses publiques totales) : 41,5 % → 7 849 € ; 23,4 % → 4 426 € ; 15,6 % → 2 951 € ; 8,9 % → 1 683 € ; 3,2 % → 605 €. Arrondis à la dizaine. Parts 2024 (COFOG, dernière année publiée) appliquées à des prélèvements 2025 : le préciser dans la pastille.
 
-**Pastilles source** : [[yard:po_per_capita_eur]] [[fig:cofog_social_protection_2024_pct_te]] [[fig:cofog_old_age_2024_pct_te]] [[fig:cofog_health_2024_pct_te]] [[fig:cofog_education_2024_pct_te]] [[fig:cofog_defense_2024_pct_te]] [[fig:share_te_borrowed_2025_pct]] – Calcul de la plateforme d’après Eurostat (COFOG 2024, `gov_10a_exp`) et Insee (2025). Mention : illustratif. Note : « Le site du ministère, “À quoi servent mes impôts ?”, propose un calcul proche avec des conventions un peu différentes. »
+**Pastilles source** : [[yard:po_per_capita_eur]] [[fig:cofog_social_protection_2024_pct_te]] [[fig:cofog_old_age_2024_pct_te]] [[fig:cofog_health_2024_pct_te]] [[fig:cofog_education_2024_pct_te]] [[fig:cofog_defense_2024_pct_te]] [[fig:share_te_borrowed_2025_pct]] – Calcul de la plateforme d’après Eurostat (COFOG 2024, `gov_10a_exp`) et Insee (2025). Dénominateur de la ligne « emprunt » : dépense publique totale, crédits d’impôt compris ; rapportée à la dépense hors crédits d’impôt (concept de la Cour des comptes), la part serait un peu plus élevée. Le déficit 2025 diffère aussi selon le millésime (151,6 ou 152,5 milliards d’euros). Mention : illustratif. Note : « Le site du ministère, “À quoi servent mes impôts ?”, propose un calcul proche avec des conventions un peu différentes. »
 
 ---
 
@@ -338,17 +345,18 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 **Texte affiché**
 
-> Les prélèvements ont baissé en part du PIB depuis 2017. Le déficit, lui, reste élevé. Les baisses d’impôts ont-elles creusé le déficit ? Ou les dépenses ont-elles trop augmenté ?
+> Les prélèvements ont baissé en part du PIB depuis 2017, mais le déficit reste élevé. Faute de recettes, ou par excès de dépenses ?
 >
-> Selon la Cour des comptes, les baisses d’impôts et de cotisations décidées de 2018 à 2023 ont un coût important. Elles n’ont pas été compensées par des économies de dépense. Dans l’autre sens, les dépenses publiques ont augmenté depuis 2019. Combien pèse chaque côté, et lequel explique le déficit ? Estimez-le au chapitre suivant.
+> Selon la Cour des comptes, les baisses de prélèvements décidées de 2018 à 2023, non compensées par des économies, ont creusé le déficit de l’État. Dans l’autre sens, les dépenses publiques ont augmenté depuis 2019.
+>
+> Pour l’OFCE, la dégradation récente vient surtout de la baisse des recettes. Pour Rexecode, les hausses d’impôts décidées depuis 2024 n’ont pas réduit le déficit. Combien pèse chaque côté ? Estimez-le au chapitre suivant.
 >
 > **→ Chapitre 4 : Pourquoi le déficit ?**
->
-> *Ou bien : calculez votre reçu, ou essayez d’équilibrer vous-même le budget.*
+
 
 **Visuel** : le ruban se replie. Trois boutons : « Chapitre 4 » (principal), « Le reçu de vos impôts », « Équilibrez vous-même le budget ».
 
-**Pastilles source** : Citation de la Cour des comptes (baisses « non compensées par des économies en dépenses ») : *La situation et les perspectives des finances publiques*, 15 juillet 2024, p. 35-36.
+**Pastilles source** : Citation de la Cour des comptes (« Ces baisses de prélèvements, non compensées par des économies en dépenses, ont creusé le déficit de l’État et accru sa dette ») : *La situation et les perspectives des finances publiques*, 15 juillet 2024, p. 35-36 (https://www.vie-publique.fr/files/rapport/pdf/294882.pdf). OFCE : É. Heyer, M. Plane, X. Ragot, R. Sampognaro, X. Timbeau, *Quelles trajectoires pour les finances publiques de la France ?*, Policy Brief n° 146, 11 juillet 2025 (https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf ; dégradation « pas attribuable à une augmentation plus marquée des dépenses publiques » mais à une baisse des recettes de 1,6 point de PIB). Rexecode, document de travail n° 105, septembre 2026 (hausses de prélèvements décidées de 2024 à 2026 : 36,7 milliards d’euros, entrée `rexecode_levies_2024_2026_eur_bn`). Mention : position d’un institut.
 
 ---
 
@@ -356,11 +364,10 @@ NOTE ÉDITORIALE (non affichée sur le site)
 
 **Texte affiché**
 
-> - **Fiscalité : niveau, structure, qui paie** (fiche thématique) : les cotisations patronales et les comparaisons par habitant.
+> - **Fiscalité : niveau, structure, qui paie**.
 > - **Aides publiques aux entreprises** : les « niches sociales » (**91,0 milliards d’euros** en 2025 [[fig:niches_sociales_2025_eur_bn]]) et les allègements de cotisations. Leurs périmètres ne s’additionnent pas.
-> - **Les baisses d’impôts depuis 2017** : le détail des mesures et les lectures opposées.
-> - **Page de méthode : trois passerelles de mesure** : du taux de l’Insee à celui de l’OCDE, poste par poste.
-> - **Propositions des partis** : chaque mesure fiscale chiffrée au même étalon.
+> - **Les baisses d’impôts depuis 2017**.
+> - **Page de méthode : trois passerelles de mesure** : du taux de l’Insee à celui de l’OCDE.
 
 **Pastilles source** : [[fig:niches_sociales_2025_eur_bn]] – annexe 4 au PLFSS 2027, octobre 2026. Mention : estimé.
 
@@ -387,6 +394,70 @@ ANNEXE B (non affichée) – Points de relecture
 ---
 
 ## Notes de relecture
+
+### Confrontation aux sources publiques (2026-10-30)
+
+*Pas de relecteurs humains : le texte est confronté aux positions publiées d’économistes et d’institutions de plusieurs orientations. Seuls les textes ouverts sont cités (URL dans les pastilles). Ouverts par ce passage le 30 octobre 2026 : Cour des comptes, *La lutte contre la fraude fiscale*, décembre 2025 (PDF) ; page de la *Note IPP* n° 81 ; Rexecode, DT n° 105 ; Institut Montaigne, *Budget base zéro* ; Fondation iFRAP, revue n° 270. Les autres sources sont celles ouvertes par la confrontation (URL et date dans le relevé). Volume du texte visible (mesure de `validate.py`) : 2 129 mots avant, 2 195 après (cible : 1 500 à 2 200). Durée affichée : environ 9 minutes, inchangée. `python3 -I validate.py --strict` : 0 erreur et 0 avertissement localisés dans ce chapitre (reste un avertissement inter-pages sur l’étiquette de la Cour des comptes, causé par le chapitre 1, l. 86, et l’erreur de volume du chapitre 7).*
+
+**Points corrigés (verdicts « non soutenu » ou « partiellement soutenu »)**
+
+1. **03-02, 03-03, 03-23 (calculs de la plateforme) : conservés.** Mention « illustratif » maintenue ; l’étape 2 dit déjà que la moyenne par habitant inclut les entreprises. Étape 12 : dénominateur de la ligne « emprunt » précisé dans la pastille (dépense totale, crédits d’impôt compris ; millésimes du déficit 151,6 ou 152,5 milliards).
+2. **03-05 (dépense « chaque année en moyenne », non vérifiée) : corrigé.** La phrase devient « 1,4 % par an en moyenne de 2005 à 2025, au même rythme que les recettes » avec `te_volume_growth_avg_2005_2025_pct` (HCSP, citation exacte dans l’entrée ; le même taux vaut pour les recettes selon la note de l’entrée). « Et encore en 2025 » est retiré (pas d’entrée `te_volume_growth_2025_pct`). Le poids de la dépense dans le PIB renvoie au chapitre 4 ; 56,6 % du PIB (Cour) cité en pastille.
+3. **03-06 (*Note IPP* n° 81) : vérifié et conservé.** La page de l’IPP (ouverte le 30 octobre 2026) donne bien 0,8 % pour les 5 % les plus modestes, 3,3 % pour les 1 % les plus aisés, une perte de 1,1 % pour les chômeurs et un gain moyen de 1,9 %. La contradiction des notes précédentes est levée. Pastille : mesures « ménages » seulement, hors entreprises.
+4. **03-08 (19,6 milliards « expliquent » l’écart 43,5/42,7) : nuancé.** Le texte disait déjà « Surtout » ; la pastille précise que les crédits remboursables (environ 0,7 point de PIB) expliquent l’essentiel des 0,8 point, le reste tenant à d’autres écarts de définition et de millésime.
+5. **03-09 (44,2 à 44,3 %) : corrigé.** « La Cour des comptes (juridiction financière) mesure 44,3 % du PIB en 2025 », « le niveau le plus élevé de la zone euro », sur la définition d’Eurostat (citation et URL en pastille ; mention « mesuré (selon la Cour) »). Étape 1 : une phrase signale qu’Eurostat, qui ne déduit pas les crédits d’impôt, mesure un taux plus élevé.
+6. **03-10 (« sans précédent ») : corrigé.** Remplacé par la citation exacte « un choc fiscal massif » (Institut Montaigne, vérifiée dans le PDF). Les « effets désincitatifs croissants pour l’investissement et pour le travail » sont attribués à Rexecode, qui les écrit, et non à Montaigne.
+7. **03-11 (« parmi les plus taxés ») : nuancé.** Réponse de l’étape 5 : selon Fipeco, le rang de la France dans l’UE pour les prélèvements sur le travail a reculé (2e en 2016, 5e en 2024), mais les prélèvements à la charge des employeurs restent les plus élevés de l’UE. Le coin socio-fiscal de l’OCDE (47,2 %, 3e sur 38) reste affiché : l’entrée est « verified » dans figures.json, mais la confrontation n’a pas pu ouvrir la page de l’OCDE ; à revérifier par le propriétaire des données.
+8. **03-13 (non-imposables) : conservé.** La mise en garde « foyer fiscal / ménage » et la phrase TVA/CSG suffisent ; aucun texte ouvert ne chiffre le contrepoids TVA/CSG.
+9. **03-14 (33,3 %) : nuancé.** Phrase ajoutée : la part dépend de ce que l’on compte (avec ou sans TVA). Pastille : Insee 2023 (données 2019), via la Fondation iFRAP, 30,46 % hors TVA.
+10. **03-20 (474 niches, 91,8 milliards) : sourcé et nuancé.** Pastille : le nombre de 474 est celui de l’annexe au PLF 2025 ; coût chiffré pour 387 seulement, ordre de grandeur pour 125 (Fipeco). Texte : « Un changement de méthode sur la TVA, que la Cour conteste, a aussi réduit ce total » (environ 10 milliards ; 95,0 milliards pour 2023 avec l’ancienne méthode, en pastille). « Leur utilité n’est pas toujours démontrée » retiré (réduction, redondant avec « peu évaluées »).
+11. **03-21 (Bozio-Wasmer, « faibles ou nuls au-delà de 2,5 SMIC ») : corrigé.** Le rapport ne dit pas que les effets sont nuls au-delà de 2,5 SMIC. Nouveau texte : « Son scénario central, à budget constant, arrête ces baisses vers 2,5 SMIC, avec des effets sur l’emploi modestes mais positifs. D’autres chiffrages, cités au Sénat en 2024, prévoient des pertes d’emplois. » La phrase « un recentrage coûterait donc beaucoup moins d’emplois » est retirée. Pastille : 10 000 à 20 000 ETP (rapport) ; 15 000 à 40 000 emplois détruits selon la ministre (Public Sénat, source secondaire). L’estimation de l’OFCE citée dans ce débat n’a pas été ouverte : non reprise.
+12. **03-22 (fraude : 30 à 130 milliards, non retrouvé par la confrontation) : vérifié et conservé.** Le rapport de la Cour (16 décembre 2025, PDF ouvert le 30 octobre 2026) écrit : « Nul ne peut aujourd’hui se hasarder à affirmer que ce montant est proche de 30 ou de 130 Md€ ». Ajouts : « carence regrettable » (citation exacte) et « un peu moins qu’en 2015 » (12,2 milliards encaissés en 2015, 11,4 en 2024 ; 20,1 notifiés contre 21,2 : chiffres en pastille). « Personne ne peut dire » devient « Nul ne peut dire », plus proche du texte.
+13. **03-24 (citation de la Cour, 2024) : précisé.** « ont creusé le déficit de l’État » (et non le déficit en général) ; citation complète en pastille avec l’URL.
+
+**Contre-arguments ajoutés (« missing_counterargument »)**
+
+14. **03-04 : base 2010.** Étape 3 : « Pour Rexecode (institut de conjoncture proche des organisations patronales), ces baisses n’ont pas effacé « le choc fiscal des années 2010 » » (41,4 % en 2010 contre 42,7 % en 2024, en pastille). Avec, en face, l’OFCE (recettes stables dans la zone euro) : voir critique gauche n° 2.
+15. **03-12 et 03-16 : composition par âge.** Étape 8 : « Ce chiffre tient beaucoup à l’âge : les ménages de retraités sont très majoritairement bénéficiaires nets » ; étape 5 : « surtout parmi les retraités ». Valeurs (96 % des personnes des ménages de 65 ans et plus, 43 % des autres) en pastille seulement : pas d’entrée dans figures.json. Réplique de Rexecode (niveau élevé et « comptes publics plus fragiles ») ajoutée dans l’encadré de l’étape 5, pas dans la réponse (§4.6 : pas de seconde objection dans la réponse).
+16. **03-15 : lecture progressive de la Fondation iFRAP.** Étape 8 : « Sur une autre base (impôts directs rapportés au revenu disponible, hors TVA), la Fondation iFRAP (libérale) trouve un système nettement progressif » ; valeurs 18,5 % / 42,1 % en pastille.
+17. **03-19 : estimations publiées basses et hautes.** Étape 10 : « Les chiffrages publiés varient beaucoup selon les auteurs (chapitre 7) » ; la pastille liste chaque estimation par auteur (Terra Nova 10 à 15 ; Observatoire européen de la fiscalité environ 20 ; F. Geerolf 2 à 6 ; rapport du Sénat 2 ou 3 selon la Fondation iFRAP ; Institut Montaigne, environ 15 par an pour « trois nouvelles taxes Zucman »). Les montants ne sont pas affichés dans le texte : ils n’ont pas d’entrée propre (sauf `zucman_proponents_eur_bn` et `zucman_critics_eur_bn`, propriété du chapitre 7).
+
+**Critiques « gauche » (11)**
+
+18. **Appliquée – dépense en volume sans la lecture « recettes » (haute).** Voir point 2 : même rythme que les recettes ; OFCE ajouté à l’étape 13 (« la dégradation récente vient surtout de la baisse des recettes »).
+19. **Appliquée – baisse propre à la France (moyenne).** Étape 3 : « Ce recul est propre à la France. Selon l’OFCE (…), les recettes sont restées stables dans la zone euro. » Fipeco (−2,2 points contre −0,3) en pastille.
+20. **Appliquée – « sans précédent » (moyenne).** Voir point 6. Ordre de grandeur de Montaigne en pastille de l’étape 10 seulement (pas d’entrée).
+21. **Appliquée en partie – coin socio-fiscal (moyenne).** Recul du rang dans l’UE ajouté (point 7). « Près de la moitié du coût du travail » conservé : arrondi décidé pour éviter la collision avec les 47,2 % de l’étape 7, valeur exacte en pastille.
+22. **Appliquée – groupe de comparaison de F. Geerolf (haute).** « Il compare les milliardaires au seuil d’entrée du dixième le plus aisé, et non au tout sommet » ; « il était plus grand avec la première version de la note de l’IPP » (26,2 % contre environ 30 %, en pastille).
+23. **Appliquée – preuves internationales (moyenne).** Encadré de l’étape 9 : l’Observatoire européen de la fiscalité (centre de recherche de l’École d’économie de Paris) « fait le même constat dans tous les pays où des données existent ». L’argument du calendrier est attribué à F. Geerolf (« Il ajoute que… »).
+24. **Appliquée en partie – attributions (moyenne).** Supprimés : « à notre connaissance, les auteurs n’ont pas encore répondu » et la citation « non consensuel » (non vérifiées). Réponses équilibrées : 106 mots pour celle de l’étape 9, 97 pour celle de l’étape 5 (contre environ 175 et 110 avant). **Rejetée :** retirer l’affiliation OFCE de F. Geerolf. Raison : le glossaire (§1.13) impose la forme complète « économiste à l’OFCE, qui écrit à titre personnel », qui dit déjà qu’il n’engage pas l’institution ; aucune source ouverte ne la contredit. À revérifier sur la page de l’OFCE par le propriétaire du glossaire.
+25. **Appliquée en partie – taux d’effort (moyenne).** Mise en garde ajoutée sur le 33,3 % (point 9), mise en garde du 64/48 % raccourcie, lecture iFRAP ajoutée. **Rejetée en partie :** afficher les taux d’effort par dixième. Raison : la série par dixième n’existe pas encore comme fichier de données (annexe A, A3) ; rien n’est inventé. Les 64 % / 48 % (*Insee Première* n° 2022) n’ont pas été rouverts : entrées « verified » dans figures.json.
+26. **Appliquée – estimations publiées et « il suffit » (moyenne).** Point 17 ; « Ce qui est plausible » devient « Ce qui est exact : (…) rapporteraient de l’argent », puis « notre propre synthèse ». La phrase sur les réactions des contribuables est rattachée à la synthèse (note de `tax_rich_package_eur_bn` : « after behaviors »). « Il suffit » reste une idée reçue en titre de carte, sans auteur nommé.
+27. **Appliquée – fraude (basse).** Point 12 (comparaison 2015, « carence regrettable », fourchette sourcée verbatim).
+28. **Appliquée – Bozio-Wasmer (basse).** Point 11.
+
+**Critiques « droite » (14)**
+
+29. **Appliquée – base 2010 (haute).** Point 14. L’écart résiduel avec la zone euro est déjà à l’étape 4 (2e de l’OCDE).
+30. **Appliquée en partie – asymétrie dépenses (haute).** Point 2 (taux de 1,4 % chiffré, vérifié dans l’entrée HCSP). Les chiffres de la Cour pour 2025 (56,6 % du PIB, 2,0 points au-dessus de l’avant-crise) vont en pastille et au chapitre 4, propriétaire des dépenses ; « a doublé depuis 2000 » (Institut Montaigne, en euros courants) n’est pas repris, faute de déflateur.
+31. **Appliquée en partie – rang par habitant (moyenne).** « L’écart se réduit » supprimé ; le rang devient « notre calcul ». **Rejeté pour le texte :** l’équivalent en euros de Rexecode (100 à 120 milliards). Raison : pas d’entrée dans figures.json ; cité en pastille, entrée demandée ci-dessous.
+32. **Appliquée – 44,3 % (moyenne).** Point 5.
+33. **Appliquée – encadré de droite (haute).** « Choc fiscal massif » ; Rexecode (comptes plus fragiles, effets désincitatifs) dans l’encadré ; Fipeco (1er rang de l’UE pour les prélèvements à la charge des employeurs) dans la réponse. La « baisse ciblée des prélèvements » de Montaigne n’est pas ajoutée (volume).
+34. **Appliquée – composition par âge (haute).** Point 15.
+35. **Appliquée – lecture progressive iFRAP (moyenne).** Point 16.
+36. **Appliquée – écart plus grand en 2023 et iFRAP sur les très riches (moyenne).** Points 22 et 23 : « La Fondation iFRAP (libérale) trouve aussi un taux à peine plus bas au tout sommet » (55,8 % / 55,2 % en pastille).
+37. **Appliquée – « plausible » et estimations basses (haute).** Points 17 et 26.
+38. **Appliquée en partie – concentration de l’IR (basse).** Carte 2 : « L’impôt sur le revenu, lui, est très concentré en haut de l’échelle. » Le chiffre iFRAP (près de 15 % de la recette pour 3,6 % du revenu) reste en pastille : pas d’entrée `ir_top10_share_pct`.
+39. **Appliquée – niches fiscales (moyenne).** Point 10. L’équivalent en jours (19,6) et par habitant est conservé : ce sont des étalons de la plateforme, sous la mise en garde « pas une recette disponible ».
+40. **Appliquée – Bozio-Wasmer (moyenne).** Point 11.
+41. **Rejetée – retirer la fourchette 30-130 (moyenne).** Raison : vérifiée mot pour mot dans le rapport de la Cour (point 12) ; elle reste présentée comme l’ampleur de l’incertitude, pas comme une estimation. La comparaison 2015 demandée est ajoutée.
+42. **Appliquée – transition (moyenne).** Point 13 ; OFCE et Rexecode cités côte à côte à l’étape 13 (« les hausses d’impôts décidées depuis 2024 n’ont pas réduit le déficit » ; 36,7 milliards en pastille).
+
+**Réduction pour tenir le volume** : phrase « Les deux affirmations sont vraies » (étape 3), description de trois liens de « Pour aller plus loin » et le lien « Propositions des partis », « celui de la déclaration annuelle » (étape 6), « Ce sont des ordres de grandeur » (étape 10), second reçu et salaire (étape 12), ligne « Ou bien » (étape 13), liste des revenus soumis à la CSG (étape 7), cotisations contre assurances privées (étape 5 ; allégation SOCX non vérifiée), libellé « Autres fonctions » du reçu raccourci.
+
+**Chiffres nécessaires, absents de figures.json (rien n’est affiché sans entrée)** : écart de prélèvements avec les partenaires européens selon Rexecode (3,4 à 4,1 points, 100 à 120 milliards) ; taux de 2010 (41,4 %, Rexecode) ; variation 2016-2024 France / zone euro (Fipeco : −2,2 / −0,3 point) et baisse des recettes selon l’OFCE (−1,6 point) ; bénéficiaires nets par âge (96 % / 43 %, Insee Analyses n° 118) ; rangs UE de Fipeco (travail : 2e puis 5e ; employeurs : 1er) ; taux d’impôts directs par dixième selon la Fondation iFRAP (18,5 % / 42,1 %) ; `ir_top10_share_pct` ; chiffrages Terra Nova (10 à 15) et Observatoire européen de la fiscalité (environ 20) ; recettes du contrôle fiscal 2015 (12,2 encaissés, 21,2 notifiés) ; `te_volume_growth_2025_pct` ; effet emploi du scénario Bozio-Wasmer (10 000 à 20 000 ETP).
+
+**Hors de ce fichier** : glossaire, ajouter l’Observatoire européen de la fiscalité à la ligne lue par `validate.py` (§1.13), maintenant qu’il est cité au chapitre 3 ; chapitre 1, l. 86, étiquette de la Cour des comptes manquante (avertissement inter-pages).
 
 ### Passe de finalisation du 25 octobre 2026
 

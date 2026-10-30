@@ -5,7 +5,7 @@ parcours: Le récit (chapitre 5 sur 7)
 duree_lecture: environ 9 minutes
 niveau: B1 (encadrés et notes de méthode : B2)
 donnees: platform/data/figures.json et yardsticks.json, version du 25 octobre 2026 (second passage de données)
-statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisation)
+statut: brouillon pour relecture éditoriale (30 octobre 2026, confrontation aux sources publiques)
 ---
 
 # Chapitre 5. La dette et ses intérêts
@@ -40,7 +40,7 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 **Texte affiché**
 
-> Fin 2025, la dette publique s’élevait à **3 460,1 milliards d’euros** [[fig:debt_2025_eur_bn]], soit **115,7 % du PIB** [[fig:debt_2025_pct_gdp]]. Cela fait **50 065 € par habitant** [[yard:debt_per_capita_eur]], ou **2,2 années** de recettes publiques (tous les impôts, cotisations et autres ressources publiques) [[yard:debt_to_revenue_years]].
+> Fin 2025, la dette publique s’élevait à **3 460,1 milliards d’euros** [[fig:debt_2025_eur_bn]], soit **115,7 % du PIB** [[fig:debt_2025_pct_gdp]]. Cela fait **50 065 € par habitant** [[yard:debt_per_capita_eur]], ou **2,2 années** de recettes publiques [[yard:debt_to_revenue_years]].
 >
 > Ne confondez pas deux mots. Le **déficit** est ce qui manque chaque année. La **dette** est ce qui reste dû : en gros, l’accumulation des déficits passés, diminuée des rares excédents.
 
@@ -55,10 +55,12 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 **Texte affiché**
 
 > Chaque année, le déficit remplit la baignoire : 151,6 milliards d’euros en 2025, soit 5,1 % du PIB [[fig:deficit_2025_eur_bn]] [[fig:deficit_2025_pct_gdp]] (chapitre 4). Le dernier excédent des administrations publiques remonte à 1974 [[fig:last_surplus_year]].
+>
+> Le déficit est l’écart entre les dépenses et les recettes. Les camps débattent de la part de chacune dans sa hausse (chapitre 4).
 
 **Visuel** : la baignoire de l’étape 2, robinet ouvert (pas de ruban calendrier : le bloc « 32,3 jours » appartient au chapitre 1). Compteur discret : « … € dépensés de plus que reçus pendant votre lecture (moyenne de 2025) », sur la base d’**environ 4 800 € par seconde** [[yard:deficit_per_second_eur]], mention « illustratif ».
 
-**Pastilles source** : [[fig:deficit_2025_eur_bn]] [[fig:deficit_2025_pct_gdp]] [[yard:deficit_per_second_eur]] (visuel seulement, « illustratif ») [[fig:last_surplus_year]]
+**Pastilles source** : [[fig:deficit_2025_eur_bn]] [[fig:deficit_2025_pct_gdp]] [[yard:deficit_per_second_eur]] (visuel seulement, « illustratif ») [[fig:last_surplus_year]] ; phrase sur dépenses et recettes : sans chiffre, renvoi au chapitre 4 (propriétaire du débat sur les baisses de recettes).
 
 ---
 
@@ -68,13 +70,17 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 > Fin juin 2026, la dette atteignait **3 595,5 milliards d’euros**, soit **119,0 % du PIB** [[fig:debt_2026q2_eur_bn]] [[fig:debt_2026q2_pct_gdp]]. Selon la prévision du gouvernement, elle serait de **119,3 % du PIB** fin 2026 et de **121,7 % du PIB** fin 2027 [[fig:debt_2026f_pct_gdp]] [[fig:debt_2027f_pct_gdp]].
 >
-> Le Haut Conseil des finances publiques (HCFP) estime que la prévision de croissance du gouvernement pour 2027 « apparaît comme optimiste ». Si la croissance est plus faible, la dette sera plus élevée que prévu. Le FMI (Fonds monétaire international ; organisation internationale) prévoit lui aussi une dette encore en hausse en 2028 [[src:f06:imf_aiv2026]].
+> La courbe le montre : la dette monte depuis la fin des années 1970.
+>
+> Le Haut Conseil des finances publiques (HCFP) estime que la prévision de croissance du gouvernement pour 2027 « apparaît comme optimiste ». Si la croissance est plus faible, la dette sera plus élevée que prévu.
+>
+> Or les économies freinent elles-mêmes la croissance, d’une ampleur incertaine, selon l’OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne) [[src:f17:S8]]. En juillet 2026, avant le projet de budget, le FMI (Fonds monétaire international ; organisation internationale) prévoyait lui aussi une dette encore en hausse en 2028 [[src:f06:imf_aiv2026]].
 >
 > Le gouvernement vise un déficit de **5,0 % du PIB** en 2027 [[fig:deficit_2027f_pct_gdp]]. Même atteint, ce déficit ne stabiliserait pas la dette (étape 11).
 
 **Visuel** : courbe « en % du PIB », 1978-2025 en trait plein, 2026-2027 en pointillé « prévu » ; annotations sans chiffre : 2008-2009, 2020, 2022. Données : `research/data/insee_dette_maastricht_1978_2025_by_subsector.csv`.
 
-**Pastilles source** : [[fig:debt_2026q2_eur_bn]] [[fig:debt_2026q2_pct_gdp]] [[fig:debt_2026f_pct_gdp]] [[fig:debt_2027f_pct_gdp]] [[fig:deficit_2027f_pct_gdp]] ; avis du HCFP sans chiffre : pastille texte « HCFP, avis n° HCFP-2026-5 relatif aux PLF et PLFSS pour 2027, 25 septembre 2026, synthèse » (https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf), même URL que [[fig:debt_2027f_pct_gdp]] ; prévision du FMI sans chiffre affiché : [[src:f06:imf_aiv2026]] (communiqué de presse 26/255 du 22 juillet 2026 : dette de 121,1 % du PIB en 2028 ; https://www.imf.org/en/news/articles/2026/07/22/pr26255-france-imf-executive-board-concludes-2026-article-iv-consultation). Afficher 121,1 % seulement après création d’une fiche dans `figures.json`.
+**Pastilles source** : [[fig:debt_2026q2_eur_bn]] [[fig:debt_2026q2_pct_gdp]] [[fig:debt_2026f_pct_gdp]] [[fig:debt_2027f_pct_gdp]] [[fig:deficit_2027f_pct_gdp]] ; avis du HCFP sans chiffre : pastille texte « HCFP, avis n° HCFP-2026-5 relatif aux PLF et PLFSS pour 2027, 25 septembre 2026, synthèse » (https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf), même URL que [[fig:debt_2027f_pct_gdp]] ; prévision du FMI sans chiffre affiché : [[src:f06:imf_aiv2026]] (communiqué de presse 26/255 du 22 juillet 2026 : dette de 121,1 % du PIB en 2028 ; https://www.imf.org/en/news/articles/2026/07/22/pr26255-france-imf-executive-board-concludes-2026-article-iv-consultation). Afficher 121,1 % seulement après création d’une fiche dans `figures.json`. Ajouts du 30 octobre 2026 : [[src:f17:S8]] (OFCE, *Policy Brief* n° 154, 26 février 2026, https://ofce.github.io/budget2026/ : effet récessif du budget 2026) ; tendance depuis la fin des années 1970 : courbe Insee de l’étape et Fipeco, « Les risques d’un endettement public hors de contrôle », 11 mars 2025 (https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le).
 
 ---
 
@@ -88,15 +94,15 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 >
 > Dans l’Union européenne, la France avait en 2025 le **3e** taux d’endettement le plus élevé **sur 27**, après la Grèce et l’Italie [[fig:debt_eu_rank_2025]]. Son déficit public a dépassé celui de l’ensemble de la zone euro chaque année de 2007 à 2025.
 >
-> Depuis 2019, la plupart des pays touchés par la crise de la zone euro de 2010 à 2012 ont stabilisé ou réduit leur taux d’endettement. Il s’agit de la Grèce, du Portugal, de l’Irlande et, dans une moindre mesure, de l’Italie et de l’Espagne.
+> Depuis 2019, la Grèce, le Portugal et l’Irlande, touchés par la crise de la zone euro de 2010 à 2012, ont réduit leur taux d’endettement. L’Italie et l’Espagne l’ont à peu près stabilisé. En 2025, tous sauf l’Espagne avaient un excédent primaire (solde positif hors intérêts).
 >
-> Ces pays ont dégagé des excédents primaires, c’est-à-dire un solde positif hors intérêts. Entre 2019 et 2025, seules la Roumanie et la Finlande ont vu leur taux d’endettement augmenter davantage que celui de la France.
+> Entre 2019 et 2025, seules la Roumanie et la Finlande ont vu leur taux d’endettement augmenter davantage que celui de la France.
 >
 > *Groupes de comparaison : ZE21, calcul de la plateforme d’après Eurostat, 2005 et 2025 ; Union européenne, Eurostat, 2025. Déficits de 2007 à 2025 et évolutions de 2019 à 2025 : même calcul, même résultat avec ou sans la Bulgarie.*
 
 **Visuel** : courbes France et ZE21, 2005-2025, axe « en % du PIB », zone d’écart colorée (« −2,0 pts » en 2005, « +28,4 pts » en 2025). Bouton vers le comparateur de pays (dette, % du PIB, 2025). Données : `research/data/derived_06_france_vs_ea_deficit_primary_debt_1995_2025.csv`.
 
-**Pastilles source** : [[fig:debt_gap_ea21_2005_pp]] [[fig:debt_gap_ea21_2025_pp]] [[fig:ea21_debt_2025_pct_gdp]] [[fig:debt_2025_pct_gdp]] [[fig:debt_eu_rank_2025]]. Les deux phrases ajoutées le 25 octobre 2026 (déficit 2007-2025, évolution 2019-2025) n’affichent aucun chiffre ; pastille texte « Eurostat `gov_10dd_edpt1`, calcul de la plateforme (fichier 06, §0 et §4.2) » (https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1). Afficher les valeurs (+17,5 points, 3e rang, 19 années sur 19, écart moyen) seulement après création des fiches listées dans les notes pour l’équipe.
+**Pastilles source** : [[fig:debt_gap_ea21_2005_pp]] [[fig:debt_gap_ea21_2025_pp]] [[fig:ea21_debt_2025_pct_gdp]] [[fig:debt_2025_pct_gdp]] [[fig:debt_eu_rank_2025]]. Les deux phrases ajoutées le 25 octobre 2026 (déficit 2007-2025, évolution 2019-2025) n’affichent aucun chiffre ; pastille texte « Eurostat `gov_10dd_edpt1`, calcul de la plateforme (fichier 06, §0 et §4.2) » (https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1). Afficher les valeurs (+17,5 points, 3e rang, 19 années sur 19, écart moyen) seulement après création des fiches listées dans les notes pour l’équipe. Phrase sur les pays touchés par la crise réécrite le 30 octobre 2026 après recalcul sur `research/data/eurostat_gov_10dd_edpt1_deficit_debt_interest.csv` (dette 2019 → 2025 : Grèce 183,2 → 145,4 ; Portugal 116,1 → 89,2 ; Irlande 55,8 → 34,8 ; Italie 134,2 → 136,7 ; Espagne 97,7 → 100,5 ; solde primaire 2025 = B9 + D41PAY : Grèce +5,1 ; Portugal +2,7 ; Irlande +2,3 ; Italie +0,7 ; Espagne 0,0 ; hausses 2019-2025 : Roumanie +23,5, Finlande +23,1, France +17,5).
 
 ---
 
@@ -111,7 +117,7 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 > - Il doit **79 700 €** au total [[yard:household_debt_eur]].
 > - Il paie **126 €** d’intérêts par mois [[yard:household_interest_month_eur]].
 >
-> *Autre périmètre, à ne pas comparer directement : défense, budget de l’État (loi de programmation militaire) : **98 €** par mois [[yard:household_defense_month_eur]]. Pour une comparaison sur le même périmètre, voir l’étape 8.*
+> *Autre périmètre, à ne pas comparer directement : défense, budget de l’État (loi de programmation militaire) : **98 €** par mois [[yard:household_defense_month_eur]].*
 
 **Visuel** : relevé de compte stylisé, lignes ajoutées une à une, mention « illustratif ». La ligne défense est placée **sous le relevé**, dans un cadre séparé, sans barre ni alignement avec la ligne « intérêts » (même règle qu’à l’étape 8 : deux périmètres jamais comparés visuellement). Note : « Défense : loi de programmation militaire, budget de l’État (comptabilité budgétaire). Intérêts : toutes administrations publiques (comptabilité nationale). Périmètres différents. »
 
@@ -120,18 +126,18 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 > **Les limites de l’image**
 >
 > - Un État ne part pas à la retraite. Il n’a pas besoin de rembourser toute sa dette : il la renouvelle en empruntant de nouveau.
-> - Ce renouvellement est lent : en moyenne, la dette négociable de l’État arrive à échéance en **8,4 ans** (30 septembre 2026) [[fig:avg_maturity_state_debt_2026_years]]. Une hausse des taux ne pèse donc que peu à peu sur les intérêts (étape 10).
+> - Ce renouvellement est lent : en moyenne, la dette négociable de l’État arrive à échéance en **8,4 ans** (30 septembre 2026) [[fig:avg_maturity_state_debt_2026_years]]. Une hausse des taux ne pèse donc que peu à peu sur les intérêts (étape 10). Mais la part à court terme, vite renouvelée, augmente depuis fin 2023, selon la Fondation iFRAP (libérale).
 > - Ses recettes augmentent avec la taille de l’économie. Le taux d’endettement peut rester stable malgré un déficit chaque année, si l’économie croît assez vite (étape 11).
-> - L’État possède aussi des biens : bâtiments, routes, réseaux, participations dans des entreprises. Une partie de la dette les a financés. En 2025, les administrations publiques ont investi **4,4 % du PIB** [[fig:public_gfcf_2025_pct_gdp]] (investissement brut, avant usure des équipements).
-> - Si l’on retire les actifs financiers les plus liquides des administrations publiques, la dette nette atteint **108,5 % du PIB** fin 2025 [[fig:net_debt_2025_pct_gdp]].
+> - L’État possède aussi des biens : bâtiments, routes, réseaux, participations dans des entreprises. Une partie de la dette les a financés. En 2025, les administrations publiques ont investi **4,4 % du PIB** [[fig:public_gfcf_2025_pct_gdp]]. C’est l’investissement brut : après usure des équipements, l’investissement net est bien plus faible.
+> - Si l’on retire les actifs financiers les plus liquides des administrations publiques, la dette nette atteint **108,5 % du PIB** fin 2025 [[fig:net_debt_2025_pct_gdp]]. D’autres définitions, qui comptent plus d’actifs, donnent un chiffre plus bas.
 >
-> *Sources :* Cour des comptes (juridiction financière), *La situation et les perspectives des finances publiques*, 25 juin 2026 ; Insee (Institut national de la statistique et des études économiques), comptes de patrimoine et comptes des administrations publiques, 29 mai 2026 ; Eurostat, comptes des administrations publiques, 21 octobre 2026 ; Agence France Trésor, *Encours de la dette négociable au 30 septembre 2026*.
+> *Sources :* Cour des comptes (juridiction financière), *La situation et les perspectives des finances publiques*, 25 juin 2026 ; Insee (Institut national de la statistique et des études économiques), comptes des administrations publiques, 29 mai 2026 ; Eurostat, 21 octobre 2026 ; Agence France Trésor, *Encours de la dette négociable au 30 septembre 2026* ; Fondation iFRAP (libérale), note du 29 septembre 2026.
 
 **Où l’image tient** (sous l’encadré)
 
 > Sur un point, l’image tient : les intérêts doivent être payés quoi qu’il arrive, et leur prix dépend des prêteurs (étape 10).
 
-**Pastilles source** : [[yard:household_monthly_income_eur]] [[yard:household_scale_eur_per_month_per_bn]] (dénominateur : [[fig:total_revenue_2025_eur_bn]]) [[yard:household_spending_month_eur]] [[yard:household_borrowing_month_eur]] [[yard:household_debt_eur]] [[yard:household_interest_month_eur]] [[yard:household_defense_month_eur]] (montant : [[fig:lpm_2025_eur_bn]]) ; encadré : [[fig:public_gfcf_2025_pct_gdp]] (Eurostat `gov_10a_main`, investissement brut ; comparateur ZE20 de 3,7 % sans fiche, non affiché) [[fig:net_debt_2025_pct_gdp]] (Insee, 29 mai 2026) [[fig:avg_maturity_state_debt_2026_years]] (AFT, 1er octobre 2026 ; « 8 ans et 158 jours »)
+**Pastilles source** : [[yard:household_monthly_income_eur]] [[yard:household_scale_eur_per_month_per_bn]] (dénominateur : [[fig:total_revenue_2025_eur_bn]]) [[yard:household_spending_month_eur]] [[yard:household_borrowing_month_eur]] [[yard:household_debt_eur]] [[yard:household_interest_month_eur]] [[yard:household_defense_month_eur]] (montant : [[fig:lpm_2025_eur_bn]]) ; encadré : [[fig:public_gfcf_2025_pct_gdp]] (Eurostat `gov_10a_main`, investissement brut ; comparateur ZE20 de 3,7 % sans fiche, non affiché) [[fig:net_debt_2025_pct_gdp]] (Insee, 29 mai 2026) [[fig:avg_maturity_state_debt_2026_years]] (AFT, 1er octobre 2026 ; « 8 ans et 158 jours ») ; dette à court terme en hausse depuis fin 2023 : pastille texte « Fondation iFRAP, *Dette publique au 2ème trimestre 2026*, 29 septembre 2026 » (https://www.ifrap.org/budget-et-fiscalite/dette-publique-au-2eme-trimestre-2026-un-record-119-du-pib) ; 312,3 milliards non affiché (pas de fiche) ; définitions de la dette nette : Fipeco, « Le montant et l’évolution de la dette publique », 15 mai 2026 (https://www.fipeco.fr/fiche/Le-montant-et-l%C3%A9volution-de-la-dette-publique) ; investissement net « bien plus faible » : fichier 08 (Eurostat), chiffre (0,6 % du PIB) non affiché tant que `net_investment_2025_pct_gdp` n’existe pas
 
 ---
 
@@ -147,7 +153,7 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 > En 2025, les administrations publiques ont payé **65,7 milliards d’euros** d’intérêts [[fig:interest_2025_eur_bn]] : **2,2 % du PIB** [[fig:interest_2025_pct_gdp]], ou **3,8 % des dépenses publiques** [[fig:interest_2025_pct_te]].
 >
-> Cela fait **14 jours** de dépense publique [[calc:interest_2025_eur_bn / yard:one_day_spending_eur_bn = 14,0]], environ **952 € par habitant** [[calc:interest_2025_eur_bn × 1000 / population_2025_m = 952]] et l’équivalent de **43 %** du déficit de 2025 [[calc:interest_2025_eur_bn / deficit_2025_eur_bn = 43 %]].
+> Cela fait **14 jours** de dépense publique [[calc:interest_2025_eur_bn / yard:one_day_spending_eur_bn = 14,0]] et environ **952 € par habitant** [[calc:interest_2025_eur_bn × 1000 / population_2025_m = 952]].
 
 **Note de méthode (repliable, B2)**
 
@@ -161,7 +167,7 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 **Texte affiché**
 
-> **En % du PIB**, les intérêts (**2,2 %** en 2025) [[fig:interest_2025_pct_gdp]] dépassent la défense (**1,8 %** en 2024) [[fig:cofog_defense_2024_pct_gdp]], mais restent inférieurs à l’éducation (**5,1 %** en 2024) [[fig:cofog_education_2024_pct_gdp]]. En montant, ils représentent **44 %** des dépenses d’éducation [[yard:interest_vs_education_pct]].
+> **En % du PIB**, les intérêts (**2,2 %** en 2025) [[fig:interest_2025_pct_gdp]] dépassent la défense (**1,8 %** en 2024) [[fig:cofog_defense_2024_pct_gdp]], mais restent inférieurs à l’éducation (**5,1 %** en 2024) [[fig:cofog_education_2024_pct_gdp]]. En montant, ils représentent **44 %** des dépenses d’éducation [[yard:interest_vs_education_pct]]. Ces postes n’ont pas le même effet sur l’activité : selon l’OFCE, payer des intérêts la soutient très peu, la défense davantage [[src:f17:S8]].
 >
 > Dans le seul budget de l’État, la charge de la dette est prévue à **72,9 milliards d’euros** en 2027 [[fig:state_debt_charge_2027_eur_bn]]. Les crédits de la loi de programmation militaire sont prévus à **63 milliards** [[fig:lpm_2027_eur_bn]].
 
@@ -169,7 +175,7 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 - **A : toutes administrations publiques, comptabilité nationale, en % du PIB** : intérêts 2025 (2,2), défense 2024 (1,8), éducation 2024 (5,1), étiquette d’année sur chaque barre. Bascule « % des dépenses publiques » : 3,8 [[fig:interest_2025_pct_te]], 3,2 [[fig:cofog_defense_2024_pct_te]], 8,9 [[fig:cofog_education_2024_pct_te]].
 - **B : budget de l’État, comptabilité budgétaire, Md€, prévision 2027** : 72,9 et 63 ; différence 9,9 [[yard:state_interest_minus_lpm_2027_eur_bn]].
 
-**Pastilles source** : [[fig:interest_2025_pct_gdp]] [[fig:cofog_defense_2024_pct_gdp]] [[fig:cofog_education_2024_pct_gdp]] [[yard:interest_vs_education_pct]] (montants : [[fig:interest_2025_eur_bn]] [[fig:cofog_education_2024_eur_bn]]) [[fig:state_debt_charge_2027_eur_bn]] [[fig:lpm_2027_eur_bn]]
+**Pastilles source** : [[fig:interest_2025_pct_gdp]] [[fig:cofog_defense_2024_pct_gdp]] [[fig:cofog_education_2024_pct_gdp]] [[yard:interest_vs_education_pct]] (montants : [[fig:interest_2025_eur_bn]] [[fig:cofog_education_2024_eur_bn]]) [[fig:state_debt_charge_2027_eur_bn]] [[fig:lpm_2027_eur_bn]] ; effet sur l’activité : [[src:f17:S8]] (OFCE, *Policy Brief* n° 154 : multiplicateur nul ou très faible pour la charge d’intérêts, proche de 1 pour la défense)
 
 ---
 
@@ -177,13 +183,15 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 **Texte affiché**
 
-> Selon la prévision du gouvernement, les intérêts passeraient de **65,7 milliards d’euros** en 2025 [[fig:interest_2025_eur_bn]] à **79,2 milliards** en 2026 [[fig:interest_2026f_eur_bn]]. Ils atteindraient **environ 91 milliards** en 2027 [[fig:interest_2027f_eur_bn]]. C’est **25,3 milliards d’euros** de plus en deux ans [[yard:interest_rise_2025_2027_eur_bn]], **5,4 jours** de dépense publique [[calc:interest_rise_2025_2027_eur_bn / yard:one_day_spending_eur_bn = 5,4]]. Pour notre ménage, de **126 €** à environ **175 €** par mois [[calc:interest_2027f_eur_bn × yard:household_scale_eur_per_month_per_bn = 175]].
+> Selon la prévision du gouvernement, les intérêts passeraient de **65,7 milliards d’euros** en 2025 [[fig:interest_2025_eur_bn]] à **79,2 milliards** en 2026 [[fig:interest_2026f_eur_bn]]. La Cour des comptes prévoyait en juin un peu moins [[src:f20:cour26]].
 >
-> Cette hausse sert d’étalon pour juger les promesses de tous les camps : le chapitre 7 les passe toutes à la même règle.
+> Ils atteindraient **environ 91 milliards** en 2027 [[fig:interest_2027f_eur_bn]]. C’est **25,3 milliards d’euros** de plus en deux ans [[yard:interest_rise_2025_2027_eur_bn]], **5,4 jours** de dépense publique [[calc:interest_rise_2025_2027_eur_bn / yard:one_day_spending_eur_bn = 5,4]]. Pour notre ménage, de **126 €** à environ **175 €** par mois [[calc:interest_2027f_eur_bn × yard:household_scale_eur_per_month_per_bn = 175]].
+>
+> Au chapitre 7, cette hausse sert d’étalon pour mesurer les promesses de tous les camps, avec la même règle. C’est un repère de taille, pas l’effort nécessaire : stabiliser la dette demande bien plus (étape 11).
 
 **Visuel** : barres 2025, 2026 (prév.), 2027 (prév.) en Md€ ; la hausse (25,3) devient une barre étalon (les promesses sont comparées à cet étalon au chapitre 7, pas ici). Mention : « 2026 et 2027 : prévisions du gouvernement (PLF 2027). Conversions avec les dénominateurs de 2025 : ordre de grandeur. »
 
-**Pastilles source** : [[fig:interest_2025_eur_bn]] [[fig:interest_2026f_eur_bn]] [[fig:interest_2027f_eur_bn]] [[yard:interest_rise_2025_2027_eur_bn]] [[yard:one_day_spending_eur_bn]] [[yard:household_scale_eur_per_month_per_bn]] [[yard:household_interest_month_eur]]
+**Pastilles source** : [[fig:interest_2025_eur_bn]] [[fig:interest_2026f_eur_bn]] [[fig:interest_2027f_eur_bn]] [[yard:interest_rise_2025_2027_eur_bn]] [[yard:one_day_spending_eur_bn]] [[yard:household_scale_eur_per_month_per_bn]] [[yard:household_interest_month_eur]] ; prévision de la Cour pour 2026 (« pourrait atteindre 77 Md€ », non affiché, pas de fiche) : [[src:f20:cour26]] (https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
 
 ---
 
@@ -191,24 +199,26 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 **Texte affiché**
 
-> En septembre 2026, l’État empruntait à 10 ans à **4,44 %** en moyenne [[fig:oat10y_sep2026_pct]]. L’écart avec l’Allemagne, l’emprunteur jugé le plus sûr de la zone euro, s’appelle l’**écart de taux** (*spread*). Il était de **97 points de base** ce mois-là, soit 0,97 point de pourcentage [[fig:oat_bund_spread_sep2026_bp]].
+> En septembre 2026, l’État empruntait à 10 ans à **4,44 %** en moyenne [[fig:oat10y_sep2026_pct]]. L’écart avec l’Allemagne, l’emprunteur jugé le plus sûr de la zone euro, s’appelle l’**écart de taux** (*spread*). Il était de **97 points de base** ce mois-là [[fig:oat_bund_spread_sep2026_bp]].
 >
-> Le 22 octobre 2026, le taux à 10 ans a clôturé à **5,13 %** [[fig:oat10y_22oct2026_pct]]. Ce jour-là, l’écart a atteint ponctuellement environ **169 points de base** [[fig:oat_bund_spread_22oct2026_bp]], contre **97 points** en moyenne en septembre [[fig:oat_bund_spread_sep2026_bp]]. C’est une valeur d’un jour, calculée de façon approximative par la plateforme à partir de deux séries.
+> Le 22 octobre 2026, le taux à 10 ans a clôturé à **5,13 %** [[fig:oat10y_22oct2026_pct]]. Ce jour-là, l’écart a atteint ponctuellement environ **169 points de base** [[fig:oat_bund_spread_22oct2026_bp]]. C’est une valeur d’un jour, calcul approximatif de la plateforme.
 >
 > En moyenne mensuelle, le maximum depuis 1993 reste celui de novembre 2011 : **154 points de base** [[fig:oat_bund_spread_peak_nov2011_bp]]. En septembre 2026, à la même échéance, la France empruntait un peu plus cher que l’Italie et plus cher que l’Espagne (moyennes mensuelles, Eurostat).
 >
-> Une hausse des taux touche d’abord les nouveaux emprunts, dont ceux qui remplacent la dette arrivée à échéance. Selon le gouvernement, 1 point de plus sur tous les taux coûterait **3,4 milliards d’euros** la première année [[fig:interest_shock_100bp_y1_eur_bn]] et **8,1 milliards** la deuxième [[fig:interest_shock_100bp_y2_eur_bn]].
+> La Banque centrale européenne peut freiner une hausse injustifiée de cet écart, sous conditions budgétaires. Le FMI et Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire) relient aussi la hausse des taux à l’incertitude politique. Selon eux, elle freine le redressement des comptes [[src:f06:imf_aiv2026]].
 >
-> Les agences de notation évaluent le risque qu’un emprunteur ne rembourse pas. En 2025, Fitch (12 septembre) et S&P (17 octobre) ont abaissé la note de la France d’un cran, de AA- à A+ [[fig:credit_ratings_oct2026]]. Le 24 octobre 2025, Moody’s a placé sa note sous perspective négative (l’agence envisage de l’abaisser) [[fig:credit_ratings_oct2026]].
+> Une hausse des taux touche d’abord les nouveaux emprunts, dont ceux qui remplacent la dette arrivée à échéance. Selon le gouvernement, 1 point de plus sur tous les taux coûterait **3,4 milliards d’euros** la première année [[fig:interest_shock_100bp_y1_eur_bn]] et **8,1 milliards** la deuxième [[fig:interest_shock_100bp_y2_eur_bn]]. L’effet continue de grandir les années suivantes, à mesure que la dette est renouvelée.
+>
+> Les agences de notation évaluent le risque qu’un emprunteur ne rembourse pas. En 2025, Fitch et S&P ont abaissé la note de la France d’un cran, de AA- à A+. Moody’s l’a placée sous perspective négative [[fig:credit_ratings_oct2026]].
 >
 > En octobre 2026, la France est notée **Aa3** par Moody’s, perspective négative, et **A+** par S&P et par Fitch, perspective stable [[fig:credit_ratings_oct2026]]. C’est **3 niveaux** sous la meilleure note chez Moody’s [[fig:rating_moodys_oct2026_notches]] et **4 niveaux** chez S&P [[fig:rating_sp_oct2026_notches]] et Fitch [[fig:rating_fitch_oct2026_notches]].
 
 **Visuel**
 - Courbe mensuelle de l’écart OAT-Bund (Eurostat, 1993 à septembre 2026), axe « en points de base », ligne pointillée à 154 ; le 22 octobre 2026 (169) en **losange distinct**, légende « valeur d’un jour (clôture), pas une moyenne mensuelle : comparaison indicative ». Le losange porte une barre d’incertitude seulement quand la marge (fichier 06, §3.4 : environ 5 points de base entre séries) aura une fiche dans `figures.json`. Données : `research/data/eurostat_irt_lt_mcby_m_10y_yields_monthly.csv`.
-- Mini-curseur « +0 à +2 points sur tous les taux », coût proportionnel aux deux valeurs du gouvernement, mention « approximation linéaire, illustratif ».
+- Mini-curseur « +0 à +2 points sur tous les taux », coût proportionnel aux deux valeurs du gouvernement, mention « approximation linéaire, illustratif ; années 1 et 2 seulement, l’effet grandit ensuite ». Afficher un profil à 5 et 10 ans seulement après création d’une fiche (voir notes de relecture du 30 octobre 2026).
 - Échelle de notation verticale (AAA/Aaa en haut, 0 cran) : un repère par agence (lettre, perspective, date de la dernière décision), alimenté par `credit_ratings_oct2026` ; la valeur numérique (crans) sert seulement à placer le repère.
 
-**Pastilles source** : [[fig:oat10y_sep2026_pct]] [[fig:oat_bund_spread_sep2026_bp]] [[fig:oat10y_22oct2026_pct]] [[fig:oat_bund_spread_22oct2026_bp]] [[fig:oat_bund_spread_peak_nov2011_bp]] [[fig:interest_shock_100bp_y1_eur_bn]] [[fig:interest_shock_100bp_y2_eur_bn]] [[fig:credit_ratings_oct2026]] [[fig:rating_moodys_oct2026_notches]] [[fig:rating_sp_oct2026_notches]] [[fig:rating_fitch_oct2026_notches]] ; comparaison avec l’Italie et l’Espagne (sans chiffre) : pastille texte « Eurostat `irt_lt_mcby_m`, septembre 2026 » (https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/irt_lt_mcby_m).
+**Pastilles source** : [[fig:oat10y_sep2026_pct]] [[fig:oat_bund_spread_sep2026_bp]] [[fig:oat10y_22oct2026_pct]] [[fig:oat_bund_spread_22oct2026_bp]] [[fig:oat_bund_spread_peak_nov2011_bp]] [[fig:interest_shock_100bp_y1_eur_bn]] [[fig:interest_shock_100bp_y2_eur_bn]] [[fig:credit_ratings_oct2026]] [[fig:rating_moodys_oct2026_notches]] [[fig:rating_sp_oct2026_notches]] [[fig:rating_fitch_oct2026_notches]] ; comparaison avec l’Italie et l’Espagne (sans chiffre) : pastille texte « Eurostat `irt_lt_mcby_m`, septembre 2026 » (https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/irt_lt_mcby_m). Ajouts du 30 octobre 2026 (sans chiffre) : instrument anti-fragmentation de la Banque centrale européenne, conditionnel, et lien entre incertitude politique et redressement des comptes : Fipeco, « Les risques d’un endettement public hors de contrôle », 11 mars 2025 (https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le) et [[src:f06:imf_aiv2026]] ; effet d’un choc de taux au-delà de la deuxième année : Fipeco, « Les enjeux de la hausse du taux d’intérêt de la dette publique », 2 mars 2017 (profil à 1, 2, 5 et 10 ans, non affiché : estimation ancienne, pas de fiche).
 
 ---
 
@@ -220,15 +230,17 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 >
 > Si r dépasse g, la dette grossit d’elle-même, comme une boule de neige : il faut alors un excédent primaire pour l’arrêter.
 >
-> En 2025, selon la Cour des comptes, r était de **2,0 %** [[fig:apparent_interest_rate_2025_pct]] et g de **1,9 %** [[fig:nominal_gdp_growth_2025_pct]]. Le taux r dépassait donc g de **0,1 point** [[yard:r_minus_g_2025_pp]], pour la première fois depuis la crise sanitaire. Pour stabiliser la dette, il aurait fallu un léger excédent primaire de **0,1 % du PIB** [[fig:debt_stabilizing_primary_balance_2025_pct_gdp]].
+> En 2025, selon la Cour des comptes, r était de **2,0 %** [[fig:apparent_interest_rate_2025_pct]] et g de **1,9 %** [[fig:nominal_gdp_growth_2025_pct]]. Les deux étaient donc à peu près égaux (écart estimé : **0,1 point** [[yard:r_minus_g_2025_pp]]). Les années précédentes, r était le plus souvent inférieur à g. Pour stabiliser la dette, il aurait fallu un léger excédent primaire de **0,1 % du PIB** [[fig:debt_stabilizing_primary_balance_2025_pct_gdp]].
 >
-> Or la France avait un **déficit primaire de 2,9 % du PIB** [[fig:primary_balance_2025_pct_gdp]]. L’écart est de **3,0 points de PIB** [[fig:debt_stabilizing_gap_2025_pts]], soit **89,6 milliards d’euros** [[fig:debt_stabilizing_gap_2025_eur_bn]], **19,1 jours** de dépense publique [[calc:debt_stabilizing_gap_2025_eur_bn / yard:one_day_spending_eur_bn = 19,1]]. D’ici 2032, une mission de l’Inspection générale des finances (IGF) estime l’ajustement nécessaire à **environ 125 milliards d’euros** par rapport à la tendance [[fig:igf_adjustment_2032_eur_bn]].
+> Or la France avait un **déficit primaire de 2,9 % du PIB** [[fig:primary_balance_2025_pct_gdp]]. L’écart est de **3,0 points de PIB** [[fig:debt_stabilizing_gap_2025_pts]], soit **89,6 milliards d’euros** [[fig:debt_stabilizing_gap_2025_eur_bn]], **19,1 jours** de dépense publique [[calc:debt_stabilizing_gap_2025_eur_bn / yard:one_day_spending_eur_bn = 19,1]].
 >
-> Attention : économiser 1 euro ne réduit pas le déficit de 1 euro la première année, car moins de dépense ou plus d’impôts freine l’activité. Le chapitre 7 explique pourquoi, et combien de mesures il faut vraiment.
+> D’ici 2032, une mission de l’Inspection générale des finances (IGF) estime l’ajustement nécessaire à **environ 125 milliards d’euros** par rapport à la tendance [[fig:igf_adjustment_2032_eur_bn]]. Elle suppose que ces économies ne freinent pas la croissance, une hypothèse qu’elle juge elle-même « très favorable » [[src:f20:igf]]. Terra Nova (centre gauche) et l’Institut Montaigne (libéral-centriste) publient des estimations du même ordre, à d’autres horizons.
+>
+> Le chapitre 7 explique pourquoi 1 euro d’économies ne réduit pas le déficit de 1 euro.
 
 **Interaction « Faites rouler la boule de neige »** : trois curseurs, r, g et solde primaire (% du PIB) ; sortie : dette en % du PIB sur 10 ans, à partir de **115,7 %** [[fig:debt_2025_pct_gdp]]. Valeurs de départ (2025, Cour des comptes, mention « mesuré ») : r **2,0** [[fig:apparent_interest_rate_2025_pct]], g **1,9** [[fig:nominal_gdp_growth_2025_pct]], solde primaire **−2,9** [[fig:primary_balance_2025_pct_gdp]]. Repère sur le curseur du solde : « stabilise la dette en 2025 : +0,1 » [[fig:debt_stabilizing_primary_balance_2025_pct_gdp]]. Formule dans « Comment est-ce calculé ? » : variation du ratio ≈ (r − g) / (1 + g) × dette − solde primaire, « illustratif, hors ajustements comptables ». Lien : « Trouvez ces 89,6 milliards d’euros vous-même » (simulateur, objectif A).
 
-**Pastilles source** : [[fig:apparent_interest_rate_2025_pct]] [[fig:nominal_gdp_growth_2025_pct]] [[yard:r_minus_g_2025_pp]] [[fig:debt_stabilizing_primary_balance_2025_pct_gdp]] [[fig:primary_balance_2025_pct_gdp]] [[fig:debt_stabilizing_gap_2025_pts]] [[fig:debt_stabilizing_gap_2025_eur_bn]] [[yard:one_day_spending_eur_bn]] [[fig:igf_adjustment_2032_eur_bn]]
+**Pastilles source** : [[fig:apparent_interest_rate_2025_pct]] [[fig:nominal_gdp_growth_2025_pct]] [[yard:r_minus_g_2025_pp]] [[fig:debt_stabilizing_primary_balance_2025_pct_gdp]] [[fig:primary_balance_2025_pct_gdp]] [[fig:debt_stabilizing_gap_2025_pts]] [[fig:debt_stabilizing_gap_2025_eur_bn]] [[yard:one_day_spending_eur_bn]] [[fig:igf_adjustment_2032_eur_bn]] [[src:f20:igf]] (hypothèse de multiplicateur nul, « très favorable ») ; estimations du même ordre, sans chiffre affiché : Terra Nova (G. Hannezo), 20 septembre 2024, environ 100 Md€ (https://tnova.fr/site/assets/files/67145/terra_nova_-_quel_rendement_peut-on_reellement_attendre_de_la_taxation_des_plus_fortunes.pdf?1kkund) ; Institut Montaigne, *Budget base zéro : décider sous la contrainte*, 26 novembre 2025, 140 Md€ d’ici 2029 (https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte) ; r et g des années précédentes : DG Trésor, *Trésor-Éco* n° 334, 17 octobre 2023 (https://www.tresor.economie.gouv.fr/Articles/2023/10/17/taux-d-interet-croissance-et-soutenabilite-de-la-dette-publique)
 
 ---
 
@@ -238,33 +250,31 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 > Le HCFP (organisme indépendant placé auprès de la Cour des comptes) parle d’un risque d’« effet boule de neige ». Nous décrivons la situation comme un **coût qui augmente**, pas comme une faillite imminente. Un État de la zone euro n’est pas liquidé comme une entreprise.
 >
-> Cela ne veut pas dire qu’il n’y a aucun risque. Le plus concret : plus la dette coûte cher, moins il reste pour le reste, et plus l’effort pour la stabiliser est grand.
+> Cela ne veut pas dire qu’il n’y a aucun risque. Le plus concret : plus la dette coûte cher, moins il reste pour le reste, et plus l’effort pour la stabiliser est grand. Autre risque, selon la Cour des comptes, qui cite le Portugal et l’Italie, et selon Fipeco : sans décision, un ajustement plus dur pourrait être imposé.
 
 **Encadré** (même écran, jamais replié)
 
 <!-- box-side: gauche -->
 > **Le meilleur contre-argument**
 >
-> **« Tant que la croissance dépasse le taux d’intérêt, la dette n’est pas un fardeau. »**
+> **« Tant que la croissance dépasse le taux d’intérêt, la dette peut ne rien coûter au budget. »**
 >
-> L’économiste Olivier Blanchard (ancien économiste en chef du FMI) l’a soutenu en 2019, dans son discours de président de l’American Economic Association. Quand le taux d’intérêt reste durablement plus bas que la croissance, le poids de la dette baisse tout seul, sans excédent. La France a connu cette situation pendant la plupart des années 2015 à 2024.
+> L’économiste Olivier Blanchard (ancien économiste en chef du FMI) l’a soutenu en 2019, dans son discours de président de l’American Economic Association. Quand le taux d’intérêt sans risque reste longtemps plus bas que la croissance, le poids de la dette baisse tout seul, sans excédent. La France a connu cette situation pendant la plupart des années 2015 à 2024.
 >
-> Deuxième argument : la hausse récente des taux français coïncide avec une période d’instabilité politique (dissolution de 2024, chutes de gouvernements, budgets difficiles à voter). L’agence de notation Moody’s cite elle-même la « fragmentation » du paysage politique (notre traduction). Selon cette lecture, la stabilité politique ferait plus baisser les taux qu’un plan d’économies.
+> Blanchard ajoute que la dette peut garder d’autres coûts pour l’économie, et que le résultat peut s’inverser si les prêteurs exigent une prime de risque.
 >
-> *Sources :* Olivier Blanchard (ancien économiste en chef du FMI), « Public Debt and Low Interest Rates », *American Economic Review*, 2019 ; Moody’s (agence de notation), communiqué du 24 octobre 2025 (via Reuters).
+> *Source :* Olivier Blanchard (ancien économiste en chef du FMI), « Public Debt and Low Interest Rates », *American Economic Review*, avril 2019.
 >
 > **Ce qu’on peut répondre**
-> En 2025, r a de nouveau dépassé g, de peu (étape 11). Sur les nouveaux emprunts, l’écart est plus net. En septembre 2026, l’État empruntait à 10 ans à **4,44 %** [[fig:oat10y_sep2026_pct]]. Pour 2026, la Cour des comptes (juridiction financière) prévoyait une croissance de **2,2 %** en valeur [[fig:nominal_gdp_growth_2026f_pct]].
+> Selon la DG Trésor (administration économique), avec un déficit primaire, un taux inférieur à la croissance ne suffit pas, en général, à maîtriser la dette. Il ralentit surtout sa hausse. Or la France a un déficit primaire, et en 2025 r était à peu près égal à g (étape 11).
 >
-> Blanchard précise que son raisonnement vaut pour des taux bas **et stables**. Sur ce point, l’objection tient à court terme pour la dette déjà émise. Elle s’affaiblit à mesure que cette dette est renouvelée aux taux actuels, sauf si la hausse de 2026 est passagère.
+> Notre lecture : le taux moyen devrait monter à mesure que la dette est renouvelée, car l’État emprunte aujourd’hui plus cher. En septembre 2026, il empruntait à 10 ans à **4,44 %** [[fig:oat10y_sep2026_pct]]. La Cour des comptes (juridiction financière) prévoit un taux moyen de **2,2 %** pour 2026 [[fig:apparent_interest_rate_2026f_pct]].
 >
-> La Cour des comptes (juridiction financière) ajoute qu’un ajustement choisi coûte moins cher qu’un ajustement imposé par les marchés. Elle cite les exemples du Portugal et de l’Italie.
->
-> Les deux lectures ne s’excluent pas : la politique peut faire monter les taux, et un déficit élevé rend le pays plus sensible à ces hausses.
+> Sur ce point, l’objection tient : à court terme, la dette déjà émise reste bon marché, et la hausse de 2026 peut être passagère.
 
 **Visuel** : aucun graphique ; texte et encadré tiennent sur un défilement court sur mobile.
 
-**Pastilles source** : sources nommées dans l’encadré (`sources.json`, fichier 06 §7). « Ce qu’on peut répondre » : [[fig:oat10y_sep2026_pct]] [[fig:nominal_gdp_growth_2026f_pct]] (statut « caveat », prévision : mention « prévu » sur la pastille) ; Cour des comptes, ajustement « choisi » contre ajustement « imposé par les marchés » (fichier 06 §7, point 2 ; fichier 10 §7.2), pastille texte à rattacher au rapport exact de la Cour (le fichier 06 ne précise pas lequel ; à vérifier avant publication).
+**Pastilles source** : encadré : Blanchard, *American Economic Review* 109(4), avril 2019 (https://www.aeaweb.org/articles?id=10.1257/aer.109.4.1197). « Ce qu’on peut répondre » : DG Trésor, *Trésor-Éco* n° 334, 17 octobre 2023 (https://www.tresor.economie.gouv.fr/Articles/2023/10/17/taux-d-interet-croissance-et-soutenabilite-de-la-dette-publique) ; [[fig:oat10y_sep2026_pct]] [[fig:apparent_interest_rate_2026f_pct]] (statut « caveat », prévision : mention « prévu » sur la pastille). Texte de l’étape : Cour des comptes, ajustement « choisi » contre ajustement « imposé » (fichier 06 §7, point 2 ; fichier 10 §7.2 ; rapport du 25 juin 2026, https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17, à confirmer sur la phrase exacte avant publication) ; Fipeco, 11 mars 2025 (« une politique budgétaire très dure pourrait donc nous être imposée », https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le).
 
 ---
 
@@ -274,15 +284,13 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 
 > - Fin 2025, la dette atteignait **115,7 % du PIB**, soit **50 065 € par habitant** [[fig:debt_2025_pct_gdp]] [[yard:debt_per_capita_eur]], et elle a continué de monter en 2026.
 > - Les intérêts coûtaient **14 jours** de dépense publique en 2025 [[calc:interest_2025_eur_bn / yard:one_day_spending_eur_bn = 14,0]] et pourraient augmenter de **25,3 milliards d’euros** d’ici 2027, selon la prévision du gouvernement [[yard:interest_rise_2025_2027_eur_bn]].
-> - Pour arrêter la hausse de la dette, il manquait **89,6 milliards d’euros** en 2025 (Cour des comptes) [[fig:debt_stabilizing_gap_2025_eur_bn]]. Les trouver en dépenses ou en impôts est un choix politique, que ce site ne fait pas à votre place.
+> - Pour arrêter la hausse de la dette, il manquait **89,6 milliards d’euros** en 2025 (Cour des comptes) [[fig:debt_stabilizing_gap_2025_eur_bn]]. Les trouver en dépenses ou en impôts est un choix politique, que ce site ne fait pas à votre place. Ne pas choisir expose à un ajustement imposé, plus coûteux selon la Cour des comptes.
 
 **Pour aller plus loin**
 
-> - Page thématique « Déficit et dette » : trajectoire depuis 1978, détail par administration, écarts avec la zone euro à 20 pays.
-> - Page thématique « La charge d’intérêts » : qui détient la dette de l’État, sensibilité aux taux, historique des notes souveraines.
-> - Méthode : « Les trois chiffres des intérêts ».
-> - Explication : « Pourquoi 1 euro d’économies ne réduit pas le déficit de 1 euro ».
-> - Page « Les économies faciles » : les cibles citées par tous les camps, traitées de la même façon (chapitre 7).
+> - Page thématique « Déficit et dette » : trajectoire et détail par administration.
+> - Page thématique « La charge d’intérêts » : détenteurs de la dette, sensibilité aux taux, notes.
+> - Page « Les économies faciles » (chapitre 7).
 
 ---
 
@@ -294,7 +302,7 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 >
 > **→ Chapitre 6 : Qu’obtient-on en échange ?** (pauvreté, santé, éducation, justice)
 >
-> **Ou passez à l’action → « Équilibrez vous-même le budget »** : trouvez les 89,6 milliards d’euros [[fig:debt_stabilizing_gap_2025_eur_bn]] qui auraient stabilisé la dette en 2025, avec vos propres choix.
+> **Ou passez à l’action → « Équilibrez vous-même le budget »** : trouvez vous-même les 89,6 milliards d’euros [[fig:debt_stabilizing_gap_2025_eur_bn]].
 
 **Visuel** : deux cartes (empilées sur mobile) ; le simulateur s’ouvre sur l’objectif A (« Stabiliser la dette »), option « hausse automatique des intérêts » activée.
 
@@ -317,6 +325,14 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 | `deficit_worse_than_ea_years_2007_2025` (19 sur 19 ; écart moyen −1,8 point) | Années où le déficit français dépasse celui de la zone euro (étape 5 : texte qualitatif en attendant) | fichier 06, résumé et §0 ; Eurostat `gov_10dd_edpt1` |
 | `debt_2035_hcsp_pct_gdp` | Dette à politique inchangée, projection du HCSP (Focus du 17 juillet 2026) ; à afficher avec la mention « projection à politique inchangée » | fichier 10, §7.2 (à vérifier dans le document primaire) |
 | marge du calcul de l’écart OAT-Bund journalier (environ ±5 pb) | Note de la fiche `oat_bund_spread_22oct2026_bp` | fichier 06, §3.4 |
+| `short_term_state_debt_2026_eur_bn` (312,3 ; +100 depuis fin 2023) | Dette de l’État à court terme (étape 6 : texte qualitatif en attendant) | Fondation iFRAP, 29 septembre 2026 ; à recouper avec l’AFT |
+| `net_financial_worth_2025_pct_gdp` (73,7, définition Eurostat/OCDE) | Seconde définition de la dette nette (étape 6 : « D’autres définitions… » sans chiffre) | Fipeco, 15 mai 2026 |
+| `interest_2026_cour_eur_bn` (environ 77) | Prévision de la Cour pour 2026 (étape 9 : « un peu moins », sans chiffre) | Cour des comptes, 25 juin 2026 |
+| `interest_shock_100bp_y5_eur_bn`, `interest_shock_100bp_y10_eur_bn` | Profil du choc de taux au-delà de la deuxième année (étape 10, mini-curseur) | annexe du PLF 2027 si elle existe ; sinon Fipeco, 2 mars 2017 (+10,3 et +15,8 Md€, base 2017, à dater) |
+| `terra_nova_debt_stabilization_eur_bn` (environ 100), `montaigne_savings_2029_eur_bn` (140) | Autres estimations de l’effort (étape 11 : « du même ordre », sans chiffre) | Terra Nova, 20 septembre 2024 ; Institut Montaigne, 26 novembre 2025 |
+| `debt_gap_ea21_2019_pp` | Point de départ 2019 à côté de 2005 (étape 5, choix de l’année de base) | Eurostat `gov_10dd_edpt1`, calcul de la plateforme |
+| `r_minus_g_2015_2024` (série) | Trajectoire de r − g (étape 11 : « le plus souvent inférieur », sans chiffre) | DG Trésor, *Trésor-Éco* n° 334 ; Insee |
+| `ofce_budget2026_growth_impact_pp` (−0,5) | Effet du budget 2026 sur la croissance (étape 4, sans chiffre) | OFCE, *Policy Brief* n° 154 |
 
 **2. Choix de rédaction.**
 - « Estimez d’abord » (glossaire §1.13), et non « Devinez d’abord ».
@@ -326,6 +342,57 @@ statut: brouillon pour relecture éditoriale (25 octobre 2026, passe de finalisa
 - Chiffres de marché et notation datés de la semaine du 22 octobre 2026 : à actualiser à chaque version des données (prochaine revue S&P : 27 novembre 2026, d’après l’AFT).
 
 ---
+
+## Notes de relecture (30 octobre 2026, non publiées)
+
+### Confrontation aux sources publiques (2026-10-30)
+
+Règle suivie : pas de relecteurs humains ; chaque point est confronté à des positions publiées (gauche, droite, institutions) et seuls les textes ouverts par la relecture (URL et date dans les pastilles) sont cités. Aucun chiffre nouveau sans fiche : les valeurs publiées sans id dans `platform/data` sont rendues en phrases qualitatives et ajoutées au tableau « Chiffres encore absents ». Texte visible : 2 094 mots avant, **2 176 après** (`validate.py`), durée de lecture inchangée (environ 9 minutes).
+
+**Points vérifiés (verdicts).**
+- 01 (stock, conversions) : **inchangé**. 115,7 % (Insee/Eurostat) contre 115,6 % chez Fipeco : écart de millésime. Les conversions par habitant et en années de recettes sont des étalons de la plateforme, déjà marqués comme tels par leurs pastilles `yard:`.
+- 02 (compteur par seconde) : **inchangé**. Déjà « illustratif » et « moyenne de 2025 » ; aucune source ne le contredit.
+- 03 (trajectoire, HCFP) : **précisé**. La prévision du FMI est datée « en juillet 2026, avant le projet de budget ».
+- 04 (année de base 2005) : **corrigé en partie**. Phrase « la dette monte depuis la fin des années 1970 » (courbe Insee ; Fipeco, 11 mars 2025), qui montre que 2005 n’est pas un point de départ choisi pour noircir le tableau. Le point de départ 2019 à côté de 2005 attend une fiche (`debt_gap_ea21_2019_pp`).
+- 05 (pays de la crise, Roumanie et Finlande) : **corrigé**. Recalcul sur le fichier Eurostat `gov_10dd_edpt1` de la base : Grèce, Portugal, Irlande en baisse ; Italie (+2,5 points) et Espagne (+2,8 points) « à peu près stabilisé » au lieu de « stabilisé ou réduit » ; l’Espagne n’a pas d’excédent primaire en 2025 (solde nul), d’où « tous sauf l’Espagne » au lieu de « ces pays ont dégagé des excédents primaires » ; classement Roumanie, Finlande, France confirmé. Énoncé de données, pas de position publiée : pastille texte Eurostat conservée, détail du recalcul dans les pastilles.
+- 06 (image du ménage) : **inchangé**. L’objection standard (l’État renouvelle sa dette) est déjà dans l’encadré ; la défense reste un périmètre séparé.
+- 07 (maturité, contre-argument manquant) : **ajouté**. « Mais la part à court terme, vite renouvelée, augmente depuis fin 2023, selon la Fondation iFRAP (libérale). » ; ligne de source de l’encadré complétée. Part indexée sur l’inflation (environ 10,7 %) non citée : page Fipeco non ouverte.
+- 08 (dette nette) : **corrigé**. « D’autres définitions, qui comptent plus d’actifs, donnent un chiffre plus bas » (Fipeco, 15 mai 2026 : 73,7 % au sens Eurostat/OCDE, sans fiche). 108,5 % (site) contre 108,4 % (Fipeco) : écart de millésime.
+- 09 (investissement net, contre-argument manquant) : **ajouté en partie**. « après usure des équipements, l’investissement net est bien plus faible » (fichier 08, Eurostat). **La porte de publication reste fermée** tant que `net_investment_2025_pct_gdp` (0,6 % du PIB) n’est pas créé et affiché dans la même puce.
+- 10 (65,7 Md€, deux périmètres) : **inchangé** (confirmé par la Cour).
+- 11 (intérêts, éducation, défense) : **corrigé**. Phrase OFCE sur l’effet différent des postes sur l’activité (voir critique gauche 6). La comparaison 72,9 / 63 Md€ n’a pas été revérifiée sur une page ouverte : statu quo, fiches existantes.
+- 12 (79,2 et 91 Md€) : **corrigé**. « La Cour des comptes prévoyait en juin un peu moins » pour 2026 (77 Md€, sans fiche) ; le texte disait déjà « selon la prévision du gouvernement ».
+- 13 (étalon de 25,3 Md€) : **corrigé**. Voir critique droite 3.
+- 14 (conversions 2027 en dénominateurs 2025) : **inchangé**. Mention « ordre de grandeur » déjà présente.
+- 15 (écart de taux) : **corrigé**. Phrase sur l’instrument de la Banque centrale européenne, conditionnel (Fipeco, 11 mars 2025). Voir critique droite 8.
+- 16 (choc de taux) : **corrigé**. « L’effet continue de grandir les années suivantes » ; consigne du mini-curseur complétée. Profil Fipeco 2017 (2,1 / 4,6 / 10,3 / 15,8 Md€) non affiché : estimation ancienne, sans fiche.
+- 17 (notation) : **inchangé sur le fond, raccourci**. Le texte dit déjà « 3 niveaux sous la meilleure note » (décompte depuis le sommet). Dates des décisions de 2025 retirées du texte (elles restent dans le visuel `credit_ratings_oct2026`). Confirmation de Moody’s du 23 octobre 2026 : toujours non mentionnée (aucune page primaire ouverte).
+- 18 (r et g) : **corrigé**. « Les deux étaient donc à peu près égaux (écart estimé : 0,1 point) » ; « pour la première fois depuis la crise sanitaire » supprimé (non confirmé ; iFRAP lit 1,9 contre 1,9) ; ajout « Les années précédentes, r était le plus souvent inférieur à g » (DG Trésor, 17 octobre 2023).
+- 19, 20 (écart de 89,6 Md€, ajustement IGF, multiplicateurs) : **précisé**. L’hypothèse de multiplicateur nul, que l’IGF juge « très favorable », est dite à côté des 125 Md€ ; l’OFCE est cité à l’étape 4.
+- 21, 22 (Blanchard) : **corrigé**. Thèse reformulée selon son texte (« peut ne rien coûter au budget »), taux « sans risque » et « longtemps », ses propres réserves (autres coûts, prime de risque) dans l’encadré ; « bas et stables » retiré de sa bouche ; le raisonnement sur le renouvellement est présenté comme « Notre lecture ».
+- 23 (instabilité politique) : **corrigé**. Voir critiques gauche 1 et droite 6.
+
+**Critiques de gauche (6) : 6 appliquées (dont 1 en partie), 0 rejetée.**
+1. Argument « instabilité politique » sous l’étiquette gauche : **appliqué**. Retiré de l’encadré (`box-side: gauche` garde seulement Blanchard) ; la phrase « la stabilité politique ferait plus baisser les taux qu’un plan d’économies » est supprimée (aucune source). Le lien politique-taux est présenté à l’étape 10 comme lecture partagée : « Le FMI et Fipeco relient aussi la hausse des taux à l’incertitude politique. Selon eux, elle freine le redressement des comptes. » Citation de Moody’s (« fragmentation ») retirée : lue seulement via Reuters.
+2. Réponse à Blanchard : **appliqué**. Thèse dans ses mots ; « bas et stables » retiré ; comparaison à même base : taux de marché à 10 ans (4,44 %) contre taux moyen apparent prévu par la Cour pour 2026 (2,2 %, `apparent_interest_rate_2026f_pct`), au lieu de taux de marché contre croissance d’une année ; `nominal_gdp_growth_2026f_pct` retiré de la page. Réponse raccourcie.
+3. Rétroaction macroéconomique : **appliqué**. Étape 4 : « Or les économies freinent elles-mêmes la croissance, d’une ampleur incertaine, selon l’OFCE » ; étape 11 : hypothèse « très favorable » de l’IGF. Valeurs 0,7-0,8 et −0,5 point non affichées (le multiplicateur appartient au chapitre 7).
+4. Côté recettes (Attac) : **appliqué en partie**. Étape 3 : « Le déficit est l’écart entre les dépenses et les recettes. Les camps débattent de la part de chacune dans sa hausse (chapitre 4). » Le chiffre d’Attac, de l’Observatoire de la justice fiscale et du CADTM (308,62 Md€, environ 35 % de la hausse de la dette) n’est **pas** affiché : estimation militante sans fiche, et le chapitre 4 porte déjà ce débat (baisses de 62 Md€ par an chiffrées par la Cour, Attac et l’OFCE cités, Terra Nova et l’IGF en regard au chapitre 7).
+5. r et g sur une seule année : **appliqué** (point 18).
+6. Intérêts et défense de nature différente : **appliqué**. Une phrase OFCE à l’étape 8, pastille `[[src:f17:S8]]`.
+
+**Critiques de droite (8) : 8 appliquées (dont 3 en partie), 0 rejetée en entier.**
+1. Dette à court terme : **appliqué** (point 07), sans le chiffre de 312,3 Md€ (pas de fiche) ni la part indexée (page non ouverte).
+2. Choc de taux limité aux années 1 et 2 : **appliqué en partie** (point 16). Rendre le curseur cumulatif est **rejeté pour l’instant** : il faut une fiche du profil pluriannuel.
+3. Étalon de 25,3 Md€ : **appliqué**. Étape 9 : « C’est un repère de taille, pas l’effort nécessaire : stabiliser la dette demande bien plus (étape 11). » ; étape 11 : Terra Nova (centre gauche) et Institut Montaigne (libéral-centriste) « publient des estimations du même ordre, à d’autres horizons » (sans chiffre). Le chapitre 7 (hors périmètre de ce fichier) doit lister ces fourchettes et appliquer l’étalon à tous les camps.
+4. Ajustement imposé : **appliqué**. Étape 12 : « Autre risque, selon la Cour des comptes, qui cite le Portugal et l’Italie, et selon Fipeco : sans décision, un ajustement plus dur pourrait être imposé. » (sorti de « Ce qu’on peut répondre ») ; étape 13 : « Ne pas choisir expose à un ajustement imposé, plus coûteux selon la Cour des comptes. » ; tendance depuis la fin des années 1970 à l’étape 4. « Pas une faillite imminente » conservé.
+5. r ≈ g, réponse du Trésor : **appliqué**. La DG Trésor (administration économique) devient la réponse principale ; « Notre lecture » pour le raisonnement sur le renouvellement. L’argument de prudence de Fipeco (solde primaire au moins nul) n’est pas ajouté à la réponse, faute de place ; il reste dans les sources.
+6. Encadré Blanchard : **appliqué** (points 21-23).
+7. Investissement net et définitions de la dette nette : **appliqué en partie** (points 08 et 09) ; porte de publication maintenue.
+8. Instrument de la Banque centrale européenne : **appliqué**. Les 70-80 points de base de Fipeco (mars 2025) ne sont pas affichés (lecture plus ancienne que les 97 points de septembre 2026, sans fiche) ; l’attribution à l’iFRAP du « risque à la hausse » est **rejetée** : le chapitre affiche déjà le taux de 5,13 % et la phrase aurait ajouté un jugement sans information nouvelle.
+
+**Coupes pour rester sous 2 200 mots (sans perte d’information sourcée).** Étape 2 : parenthèse sur la définition des recettes ; étape 6 : renvoi « voir l’étape 8 » de la ligne défense ; étape 7 : « 43 % du déficit » (conversion de plus du même chiffre) ; étape 10 : rappel des 97 points, « soit 0,97 point de pourcentage », dates des décisions de notation de 2025 ; étape 11 : phrase « Attention… » ramenée au renvoi vers le chapitre 7 ; étapes 13 et 14 : « Pour aller plus loin » et transition raccourcis.
+
+**Contrôles.** `python3 -I platform/data/validate.py --strict` : 0 erreur et 0 avertissement pour ce chapitre (2 176 mots visibles). Les deux erreurs restantes du passage complet concernent les chapitres 2 et 4 (nombre de mots), hors de ce fichier.
 
 ## Notes de relecture (25 octobre 2026, non publiées)
 
