@@ -71,7 +71,7 @@ Le texte original de la demande figure en annexe.
 
 ### 4.1 Avant de publier les chapitres
 
-- **Justice (chapitre 6, étape 6) :** le nombre de juges pour 100 000 habitants manque, le site de la CEPEJ ayant bloqué l'accès. Le passage reste qualitatif tant que le chiffre n'est pas ajouté.
+- **Justice (chapitre 6, étape 6) :** les juges pour 100 000 habitants (France 11,3 ; médiane du Conseil de l'Europe 17,6 ; 2022) sont ajoutés aux données le 31 octobre 2026, lus sur le tableau de bord public de la CEPEJ. Reste à les intégrer au texte du chapitre et à débloquer le graphique ; la médiane des délais civils n'est pas confirmée.
 - **Investissement (chapitre 5, étape 6) :** l'investissement public net et la comparaison avec la zone euro manquent.
 - **Notations 2023-2024** (Fitch, S&P, Moody's) : confirmées seulement par la presse ; à vérifier sur les communiqués des agences avant affichage.
 - **Chapitre 7 :** à 2 198 mots affichés pour un plafond de 2 200 ; tout ajout demande une coupe.
