@@ -76,7 +76,7 @@ Le détail est dans `fr/LISEZMOI-site.md` §5.1.
 ### 4.2 Étapes suivantes, par priorité
 
 1. **Prototypes** du calendrier budgétaire (« à partir du 29 novembre, tout est emprunté »), du simulateur et du quiz, construits sur `platform/data/` ; test auprès de quelques lecteurs non spécialistes.
-2. **Relecture externe** par deux ou trois économistes d'orientations différentes, sur les encadrés, les chiffrages de propositions et les multiplicateurs ; publier la liste des relecteurs et leurs désaccords.
+2. **Relecture par les sources publiques** (pas de relecteurs sollicités, décision du 30 octobre 2026) : pour chaque point contesté (encadrés « Le meilleur contre-argument », chiffrages de propositions, multiplicateurs, choix d'années de référence), confronter le texte du site aux positions publiées d'économistes et d'institutions d'orientations différentes (OFCE, IPP, Zucman, Attac ; Fipeco, Institut Montaigne, iFRAP, Rexecode ; Cour des comptes, HCFP, CAE, FMI, OCDE). Corriger ce qu'aucune source publiée ne soutient, ajouter les contre-arguments publiés manquants, et publier sur le site une page « Débats » qui cite, pour chaque point, qui soutient quoi.
 3. **Enquête de perception :** aucun sondage récent ne demande aux Français d'estimer un chiffre budgétaire ; la prémisse d'une mauvaise perception repose donc sur des indices indirects. Questions à reprendre de `quiz.json`.
 4. **Mises à jour des données :**
 

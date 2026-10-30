@@ -25,7 +25,7 @@ Mots : décompte `wc -w` du fichier entier, 25 octobre 2026 (contrôle final).
 
 ## 3. Les 7 chapitres du récit (`fr/site/chapitres/`)
 
-Scripts de récit défilant (scrollytelling), statut : **brouillon pour relecture externe**. La passe transversale du plan de site est appliquée aux sept chapitres (chaque chapitre le détaille dans ses notes de relecture). Seuls les blocs de texte affiché sont publics ; le reste est de la spécification. Chaque chiffre porte une pastille source (`[[fig:…]]`, `[[yard:…]]`, `[[prop:…]]`, `[[src:…]]`, `[[quiz:…]]`, `[[calc:…]]` « illustratif ») ; aucun espace réservé ni alias `[[yd:…]]` (contrôle final `validate.py` du 25 octobre 2026 : 1 094 pastilles dans les chapitres, 0 erreur).
+Scripts de récit défilant (scrollytelling), statut : **brouillon, avant confrontation aux sources publiques**. La passe transversale du plan de site est appliquée aux sept chapitres (chaque chapitre le détaille dans ses notes de relecture). Seuls les blocs de texte affiché sont publics ; le reste est de la spécification. Chaque chiffre porte une pastille source (`[[fig:…]]`, `[[yard:…]]`, `[[prop:…]]`, `[[src:…]]`, `[[quiz:…]]`, `[[calc:…]]` « illustratif ») ; aucun espace réservé ni alias `[[yd:…]]` (contrôle final `validate.py` du 25 octobre 2026 : 1 094 pastilles dans les chapitres, 0 erreur).
 
 Forme commune vérifiée au contrôle final : titre « # Chapitre N. Titre » (titres du fichier 20 §2.1) ; titres d’étape « ## Étape N. Titre » (88 au total) ; ligne affichée « Durée de lecture : environ N minutes. » cohérente avec le décompte (240 mots par minute) ; « Niveau : B1 » jamais affiché ; aucune apostrophe droite dans le texte affiché ; aucun « gisement », « crans » ou « Justice ou suffisance » dans le texte affiché.
 
@@ -100,7 +100,7 @@ Aucune correction de forme n’a été nécessaire dans les chapitres au contrô
 6. **Notations 2023-2024** (Fitch, S&P, Moody’s) : non vérifiées sur une source primaire ; ne pas les afficher avant vérification. L’affirmation de Moody’s du 23 octobre 2026 reste « caveat » tant que la page de l’AFT n’est pas à jour.
 7. **Décisions éditoriales** : vérification juridique de l’étape 10 du chapitre 6 ; message de partage du chapitre 6 généré à partir du score réel ; étiquette de Fipeco (« site indépendant » n’est pas son auto-description) à revoir par le propriétaire du glossaire.
 8. **Liens « Pour aller plus loin »** : à poser quand les fiches thématiques auront leurs URL.
-9. **Audit de symétrie et relecture contradictoire** (fichier 20 §7.1) : les décomptes ci-dessus sont équilibrés ; il reste la relecture humaine de chaque chapitre (§5.3).
+9. **Audit de symétrie et relecture contradictoire** (fichier 20 §7.1) : les décomptes ci-dessus sont équilibrés ; il reste la confrontation de chaque chapitre aux positions publiées (§5.3).
 
 ### 5.2 Prototypes (prochaine étape)
 
@@ -109,9 +109,9 @@ Aucune correction de forme n’a été nécessaire dans les chapitres au contrô
 - **Quiz de perception** : à partir de `quiz.json`, interaction « Estimez d’abord », tirage respectant la symétrie gauche = droite.
 - **Composants des chapitres** : pastilles source cliquables, encadrés « Le meilleur contre-argument », barres des « économies faciles » à échelle commune (chapitre 7, étape 10). Tester la lisibilité B1 et l’accessibilité sur un premier chapitre avant de généraliser.
 
-### 5.3 Relecture externe
+### 5.3 Relecture par les sources publiques
 
-- Relecture par des économistes d’orientations différentes (au moins un proche de chaque lecture du débat « problème de dépense / problème de recettes »), sur les chapitres, les leviers et les fourchettes de `proposals.json`. Publier la liste des relecteurs et leurs désaccords. Priorités : encadrés des deux côtés, listes des étapes 8 et 9 du chapitre 7, multiplicateurs.
+- Décision du 30 octobre 2026 : pas de relecteurs sollicités. Chaque point contesté (encadrés des deux côtés, listes des étapes 8 et 9 du chapitre 7, fourchettes de `proposals.json`, multiplicateurs, années de référence) est confronté aux positions publiées d’économistes et d’institutions d’orientations différentes ; ce que le site affirme sans appui publié est corrigé, les contre-arguments publiés manquants sont ajoutés, et une page « Débats » cite, pour chaque point, qui soutient quoi.
 
 ### 5.4 Enquête de perception
 
