@@ -122,7 +122,7 @@ Aucune correction de forme n’a été nécessaire dans les chapitres au contrô
 
 ### 5.4 Enquête de perception
 
-- Commander l’enquête d’estimation chiffrée prévue au fichier 20 §6.4 : aucun sondage français depuis 2023 ne demande d’estimer un chiffre budgétaire, la prémisse d’« erreur de perception » repose donc sur des indices indirects. Reprendre les questions de `quiz.json` pour mesurer l’écart avant et après lecture.
+- **Abandonnée (décision du 31 octobre 2026)** : pas d’enquête commandée, le projet s’appuie seulement sur les sources publiques existantes (fichier 14). Aucun sondage français depuis 2023 ne demande d’estimer un chiffre budgétaire : la prémisse d’« erreur de perception » repose donc sur des indices indirects, et le site doit la présenter comme telle.
 
 ### 5.5 Calendrier de mise à jour des données (décembre 2026 – juin 2027)
 

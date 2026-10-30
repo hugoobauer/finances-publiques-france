@@ -88,7 +88,7 @@ Le détail est dans `fr/LISEZMOI-site.md` §5.1.
 2. **Relecture par les sources publiques : faite le 30 octobre 2026** (§3, étape 8). Reste à faire :
    - page « Débats » complète (103 points, 8 thèmes, 116 sources), mais trop longue pour une seule page (environ 41 000 mots, 2 h 50 de lecture) : la découper en une page par thème, et vérifier que chaque « Ce que dit le site » reprend bien la formulation corrigée des chapitres ;
    - relire les chapitres touchés une fois ces compléments ajoutés, puis relancer `validate.py --strict`.
-3. **Enquête de perception :** aucun sondage récent ne demande aux Français d'estimer un chiffre budgétaire ; la prémisse d'une mauvaise perception repose donc sur des indices indirects. Questions à reprendre de `quiz.json`.
+3. **Enquête de perception : abandonnée (décision du 31 octobre 2026).** Le projet s'appuie seulement sur les sources publiques existantes (sondages publiés, fichier 14). Conséquence : la prémisse d'une mauvaise perception des ordres de grandeur repose sur des indices indirects, et le site doit le dire au lieu de l'affirmer comme un fait mesuré.
 4. **Mises à jour des données :**
 
    | Attendu | Publication | Ce qui change |
