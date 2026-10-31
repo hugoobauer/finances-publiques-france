@@ -141,10 +141,13 @@ Point à trancher : le % du PIB est l'unité des comparaisons internationales, m
 6. **Et ailleurs ?** avec le rang après la mesure.
 7. **Ajouter à mon budget** : ouvre le simulateur avec la mesure activée.
 
-## 8. Points ouverts pour l'étape suivante
+## 8. Décisions prises le 31 octobre 2026 (déléguées par le porteur du projet)
 
-1. **Étiquettes des organismes cités** (« Terra Nova, centre gauche ») : à confirmer.
-2. **Ordre des cartes** : tirage au sort ou ordre fixe par taille d'effet ? Le tirage protège la neutralité ; l'ordre par taille aide la compréhension.
-3. **Liste des 10 sujets** et des objections par sujet : à établir à partir des fichiers 07, 08, 16 et de la page « Débats ».
-4. **Unité des pages de réponse** : la part du déficit suppose un déficit de référence (2025 : 151,6 Md€). En 2027, il faudra choisir entre le déficit constaté et la prévision.
-5. **Étapes suivantes de la conception :** revue des sites existants (`02-revue-des-sites.md`), puis charte graphique et style des graphiques, puis maquettes à tester sur téléphone.
+1. **Étiquettes des organismes cités : conservées** (« Terra Nova, centre gauche », « Fondation iFRAP, libérale », glossaire §1.13). Elles disent *qui parle*, pas à quel camp appartient une idée ; elles permettent au lecteur de juger un chiffre quand son auteur a un intérêt. Les idées et les objections, elles, ne portent jamais d'étiquette.
+2. **Ordre des cartes « Oui, mais… » : par montant, du plus grand au plus petit**, et la règle est écrite sur la page (« classées par montant »). Un ordre fixé par une règle mesurable est vérifiable et ne dépend d'aucun choix éditorial ; le tirage au sort aurait gêné la comparaison. Les cartes sans montant (« le système est presque à l'équilibre ») viennent après, par ordre alphabétique. `validate.py` vérifiera l'ordre.
+3. **Déficit de référence des pages de réponse : le dernier déficit constaté**, notifié à Eurostat (aujourd'hui 2025 : 151,6 Md€). Il est mis à jour à chaque notification (avril et octobre). Les prévisions (2026, 2027) restent dans le simulateur, où leurs hypothèses sont affichées. Raison : un chiffre constaté se vérifie ; une prévision dépend d'hypothèses discutées.
+
+## 9. Points ouverts pour l'étape suivante
+
+1. **Liste des 10 sujets** et des objections par sujet : à établir à partir des fichiers 07, 08, 16 et de la page « Débats ».
+2. **Étapes suivantes de la conception :** revue des sites existants (`02-revue-des-sites.md`) à compléter dans un vrai navigateur, puis charte graphique et style des graphiques, puis maquettes à tester sur téléphone.
