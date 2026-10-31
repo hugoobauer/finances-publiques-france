@@ -421,7 +421,7 @@ Une page de réponse a une seule adresse (la page « principale »). Les autres 
 | 9 | « Coupons l'AME » (`ame`) | 1,34 Md€ | Immigration, Santé, Train de vie | rédigée le 31 octobre 2026 | S19 |
 | 10 | « Bloquons le prix du carburant » et « Baissons la TVA sur l'énergie » (`gel-prix-carburant`, `tva-energie`) | 12 à 26,5 ; 11 à 12,2 Md€ | Prix | rédigées le 31 octobre 2026 | S9 |
 | 11 | « Revenons à 3 % tout de suite » (`revenir-a-3-pct`) | 61,9 à 94 Md€ | Déficit, Intérêts | rédigée le 31 octobre 2026 | objectif B du simulateur |
-| 12 | « Les intérêts vont grimper de 25 milliards » (`interets-hausse`) | 25,3 Md€ (constat) | Intérêts, Déficit | rédigée le 31 octobre 2026 | G2 |
+| 12 | « Les intérêts de la dette vont fortement grimper » (`interets-hausse`) | 25,3 Md€ (constat) | Intérêts, Déficit | rédigée le 31 octobre 2026 | G2 |
 | 13 | « Supprimons les niches fiscales » (`niches-fiscales`) | 22 à 91,8 Md€ (réservoir) | Impôts, Aides aux entreprises | rédigée le 31 octobre 2026 | R9 |
 | 14 | « Traquons les soins inutiles » (`sante-soins-inutiles`, avec `sante-gestion`) | 22 et 6 Md€ (réservoirs) | Santé | rédigée le 31 octobre 2026 | S6 |
 | 15 | « Le système de retraite est presque à l'équilibre » (`retraites-equilibre`) | −5,1 Md€ ; jusqu'à 1,9 % du PIB | Retraites | rédigée le 31 octobre 2026 | aucun (constat) |

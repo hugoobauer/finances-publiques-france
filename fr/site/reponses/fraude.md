@@ -5,6 +5,7 @@ sujets: chomage-minima, impots, deficit-dette
 montant: antifraud_marginal_yield_eur_bn
 levier: R12
 debats: 8.4, 8.5, 8.6
+- 31 octobre 2026 : répartition de juillet 2024 (cotisations, prestations) retirée du texte affiché, comme au point 8.5 de la page « Débats ».
 -->
 
 <!--
@@ -27,7 +28,7 @@ NOTES POUR L’ÉQUIPE
 >
 > La fraude sociale est réelle. Le Haut Conseil du financement de la protection sociale (HCFiPS) est une instance de concertation sur le financement de la protection sociale. En décembre 2025, il l’estime à environ 14 milliards d’euros de pertes par an [[fig:social_fraud_hcfips_dec2025_eur_bn]]. C’est 9,2 % du déficit de référence [[calc:social_fraud_hcfips_dec2025_eur_bn / deficit_2025_eur_bn * 100 = 9,2]].
 >
-> Son estimation précédente, de juillet 2024, était de 12,98 milliards d’euros [[fig:social_fraud_hcfips_2024_eur_bn]]. Elle comptait 7,25 milliards d’euros de fraude aux cotisations [[fig:social_fraud_contributions_eur_bn]]. Elle comptait aussi 5,73 milliards d’euros de fraude aux prestations et des professionnels de santé [[fig:social_fraud_benefits_eur_bn]].
+> Son estimation précédente, de juillet 2024, était de 12,98 milliards d’euros [[fig:social_fraud_hcfips_2024_eur_bn]].
 >
 > La fraude fiscale existe aussi. Mais la Cour des comptes (juridiction financière) juge qu’on ne peut pas la chiffrer. Personne ne peut dire si elle est plus proche de 30 ou de 130 milliards d’euros par an [[fig:tax_gap_cour_range_eur_bn]].
 >

@@ -17,7 +17,7 @@ NOTES POUR L’ÉQUIPE
   - Panel pour les dépenses de vieillesse (DE 9,9, IT 13,9, ES 10,4, NL 6,1, BE 10,2, SE 10,9, DK 7,2) : seulement dans les notes de `eu_cofog_old_age_2024_pct_gdp_eu27`, sans identifiant par pays ; non affichés.
   - Rang de la France après le retour à 60 ans : aucun identifiant `rank_after_*` pour cette mesure (seuls existent les rangs après une baisse de 0,5 et de 1 point, qui ne s’appliquent pas).
   - Fondation iFRAP, juin 2026, « Les six angles morts du rapport du COR » : pas d’identifiant source ; position citée sans pastille (aucun chiffre).
-  - Union syndicale Solidaires : pas d’étiquette au glossaire §1.13, donc position non reprise (voir debats.md 2.8). Conséquence : la seule lecture favorable affichée est celle de La France insoumise (parti) ; aucun organisme étiqueté favorable à la mesure n’a été trouvé.
+  - Union syndicale Solidaires : étiquette « syndicat de salariés » ajoutée au glossaire §1.13 le 31 octobre 2026 ; position reprise dans « Qui dit quoi » (debats.md 2.8).
   - Fondation iFRAP : la pastille [[src:f03:cor26]] renvoie au rapport du COR qu’elle commente, pas à son article.
 - Vérification (31 octobre 2026) : retiré de « Ce qui est vrai » le niveau de vie des retraités (100,2 %, année 2023 non dite, et ce n’est pas une concession à la phrase) et « pèse lourd » ; Fipeco : « jusqu’à » (le 26 est un maximum) ; fourchette LFI 2022 attribuée à l’Institut Montaigne ; supprimé « Ces chiffres de partis sont annoncés » (aucun chiffre de parti affiché) ; « aucun chiffrage officiel » adouci (debats.md 2.6 : la collecte n’a pas pu l’exclure).
 - Choix faits : fourchette 43 à 58 (figures.json) ; versions partielles (26 à 35) et LFI 2022 (36 à 112,8) en fourchettes à part ; % du PIB en complément, une fois. Les 9 milliards d’euros de La France insoumise (retour à 62 ans, octobre 2026) n’ont pas d’identifiant : non affichés.
@@ -54,11 +54,10 @@ NOTES POUR L’ÉQUIPE
 > - **Fipeco**, 25 juin 2024 : abandonner la réforme de 2023, puis revenir à 60 ans, coûterait jusqu’à environ 43 milliards d’euros par an à terme [[fig:return_60_general_cost_eur_bn]]. Le texte argumente contre ces deux mesures.
 > - **Institut Montaigne (libéral-centriste)**, 3 juillet 2024 : le programme de retraite du Nouveau Front populaire coûterait 58 milliards d’euros par an d’ici 2027 [[prop:retirement_60_general_nfp]] [[src:f07:S14]]. Il ne donne pas de chiffre pour le seul âge. Pour le programme du Rassemblement national de 2024 (60 ans après 40 annuités), il retient 34,7 milliards d’euros par an [[prop:retirement_60_partial_rn_2024]].
 > - **Fondation iFRAP (libérale)**, juin 2026 : dans les simulations du COR, seule une hausse de l’âge de départ améliore le PIB, l’emploi et le solde public [[src:f03:cor26]]. Selon elle, les hausses de cotisations freinent l’activité.
+> - **Union syndicale Solidaires (syndicat de salariés)**, 15 juin 2026 : la dépense de retraite est stable, le problème vient d’un manque de recettes. Il demande la retraite à 60 ans, financée notamment par la fin d’exonérations de cotisations. Le texte ne donne pas de chiffrage.
 > - **La France insoumise**, octobre 2026 : la retraite à 60 ans est promise plus tard dans le mandat, sans coût indiqué [[src:f11:S4b]].
 >
 > Les chiffrages de Fipeco et de l’Institut Montaigne datent de 2024 et portent sur des programmes de 2024.
->
-> D’autres jugent qu’un départ à 60 ans peut se financer par de nouvelles recettes, par exemple la fin d’exonérations de cotisations. La page « Débats » donne leurs sources.
 >
 > ## Et ailleurs ?
 >

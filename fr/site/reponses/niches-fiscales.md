@@ -41,7 +41,7 @@ NOTES POUR L’ÉQUIPE
 > ## Qui dit quoi
 >
 > - **Fondation iFRAP (libérale)**, 25 juillet 2025 : la plupart des niches ne sont pas des aides ciblées aux entreprises. Elles « suivent le niveau global des prélèvements » et reflètent en partie le niveau d’imposition.
-> - **CGT**, 28 août 2025 : ce syndicat compte une part des niches parmi les aides aux entreprises. Elle dénonce des aides accordées « sans conditions ni contreparties ».
+> - **CGT (syndicat de salariés)**, 28 août 2025 : elle compte une part des niches parmi les aides aux entreprises. Elle dénonce des aides accordées « sans conditions ni contreparties ».
 > - **Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire)**, 4 décembre 2024 : le coût n’est chiffré que pour une partie des niches. Un changement de méthode sur la taxe sur la valeur ajoutée (TVA) a réduit le total.
 > - **FMI**, 21 mai 2026 : toute recette nouvelle doit viser les niches et les dépenses fiscales inefficaces.
 > - **La France insoumise**, programme 2027 : annonce 22 milliards d’euros en réduisant les niches fiscales et sociales « injustes » [[prop:tax_expenditures_trim_lfi]].

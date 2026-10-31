@@ -44,8 +44,8 @@ NOTES POUR L’ÉQUIPE
 > ## Qui dit quoi
 >
 > - **Sénat, commission d’enquête (rapporteur F. Gay, PCF)**, juillet 2025 : 211 milliards d’euros en 2023, « au moins », avec un large périmètre [[fig:business_aid_range_eur_bn]]. Son président, O. Rietmann (LR), juge que les allègements généraux compensent un coût du travail élevé et ne sont pas des aides.
-> - **CGT**, 28 août 2025 : ce syndicat reprend les 211 milliards d’euros du Sénat [[fig:business_aid_range_eur_bn]] et dénonce des aides versées « sans conditions ni contreparties ».
-> - **Force ouvrière**, avril 2026 : ce syndicat soutient le large périmètre du Sénat et demande une meilleure évaluation.
+> - **CGT (syndicat de salariés)**, 28 août 2025 : elle reprend les 211 milliards d’euros du Sénat [[fig:business_aid_range_eur_bn]] et dénonce des aides versées « sans conditions ni contreparties ».
+> - **Force ouvrière (syndicat de salariés)**, avril 2026 : elle soutient le large périmètre du Sénat et demande une meilleure évaluation.
 > - **Fondation iFRAP (libérale)**, 25 juillet 2025 : le chiffre du Sénat est trop élevé. Les baisses générales de cotisations et la plupart des niches ne sont pas des aides ciblées.
 > - **Haut-commissariat à la Stratégie et au Plan (organisme d’expertise placé auprès du Premier ministre)**, juillet 2026 : 82 milliards d’euros pour les aides directes et ciblées [[fig:business_aid_hcsp_perimeter1_eur_bn]]. Il cherche à fixer des définitions stables, pas à refaire un chiffrage.
 >
