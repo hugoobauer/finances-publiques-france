@@ -26,3 +26,14 @@ a.pastille::before { content: "["; } a.pastille::after { content: "]"; }
 .pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; }
 .toc { margin-bottom: 2rem; font-size: 0.95rem; }
 .toc ol { margin: 0.4rem 0 0; }
+
+/* Logo « Mille milliards » (fr/conception/03-identite-visuelle.md §2) */
+:root { --f-bleu: #0055A4; --f-blanc: #FFFFFF; --f-blanc-line: #A9A79F; --f-rouge: #EF4135; --empty: #E6E4DD; }
+@media (prefers-color-scheme: dark) { :root { --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A; --empty: #2A2D34; } }
+.lg-b{fill:var(--f-bleu)}
+.lg-r{fill:var(--f-rouge)}
+.lg-e{fill:var(--empty)}
+.lg-w{fill:var(--f-blanc);stroke:var(--f-blanc-line);stroke-width:.3}
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -0.02em; text-decoration: none; color: inherit; }
+.top { align-items: center; }
+.tagline { font-style: italic; margin-bottom: .25rem; }

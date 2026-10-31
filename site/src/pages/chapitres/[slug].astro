@@ -11,7 +11,7 @@ export function getStaticPaths() {
 }
 const { chapter, prev, next } = Astro.props;
 ---
-<Base title={`${chapter.title} · Finances publiques 2027`}>
+<Base title={`${chapter.title} · Mille milliards`}>
   <article class="prose" set:html={chapter.html} />
   <nav class="pager" aria-label="Chapitres">
     {prev ? <a href={`/chapitres/${prev.slug}/`}>← {prev.title}</a> : <span />}
