@@ -34,7 +34,7 @@
 - 81 cases, trois colonnes par couleur, qui **se remplissent par le bas** (ligne par ligne, de gauche à droite) ; les cases vides restent grises (choix du porteur du projet, 31 octobre 2026).
 - **Niveau du logo : 46 cases sur 81**, soit la dépense publique de 2025 en part du PIB (57,3 %, Insee, `te_2025_pct_gdp`). Le niveau reste à 46 cases tant que la dépense reste entre 56,2 % et 57,4 % du PIB ; à vérifier chaque printemps.
 - Sur fond clair, les cases blanches remplies sont blanches avec un filet gris fin ; les cases vides sont gris clair (`#E6E4DD`). Sur fond sombre : blanc cassé et `#2A2D34`.
-- **Motif (à choisir).** Règle du porteur du projet (31 octobre 2026) : la dernière ligne remplie est pleine, moins une ou deux cases ; ni case isolée, ni case à moitié remplie. Sur 9 × 9 ce dessin ferait 64 % : la taille de la grille change pour garder le vrai chiffre. Pistes : 9 × 10 moins 2 (52/90 = 57,8 % ; recommandé, mais 57,3 % est près du seuil de 57,2 %), même grille avec un vide à chaque bout, 9 × 12 moins 1 (62/108 = 57,4 % ; plage stable 56,9 à 57,9 %), 6 × 8 moins 2 (28/48 = 58,3 %). Sous 24 px : 3 × 3, 2 lignes moins 1 case.
+- **Motif retenu (31 octobre 2026) : grille 9 × 10, dernière ligne pleine moins 2 cases à droite.** 52 cases sur 90 = 57,8 % (arrondi de 90 × 57,3 % = 51,6). Pourquoi pas 9 × 9 : une case y vaut 1,23 point de PIB, et 57,3 % donne 46 cases, soit 5 lignes plus une case isolée ; les formes « ligne moins 2 » les plus proches font 53,1 % ou 64,2 %. Avec 10 lignes, une case vaut 1,11 point et 57,3 % tombe sur 6 lignes moins 2. Point de vigilance : le seuil bas de cette forme est 57,2 % ; si la dépense passe sous ce niveau, choisir entre mettre le logo à jour (6 lignes moins 3) et garder 2025 comme année de référence fixe. Sous 24 px : 3 × 3, 2 lignes moins 1 case.
 - Variantes : grille pleine (sans chiffre) et version une couleur. La variante « avec sabords » (cases ouvertes) est abandonnée.
 - Usage dans le site : une case = 1/81 du PIB (1,2 point). Même grille pour chaque page (retraites 11 cases, déficit 4 cases, dette : la grille déborde).
 - Le logo porte le tricolore : le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran, §6).
@@ -168,7 +168,7 @@ Le site suit le réglage du téléphone (`prefers-color-scheme`) et propose un b
 
 ## 12. Points à trancher
 
-1. **Nom et logo** : « Mille milliards » et grille 9 × 9 retenus (31 octobre 2026) ; jauge remplie à 57 % retenue ; reste à vérifier la marque (INPI), réserver domaine et comptes.
+1. **Nom et logo** : « Mille milliards » et grille 9 × 9 retenus (31 octobre 2026) ; jauge 9 × 10 remplie à 52 cases sur 90 retenue ; reste à vérifier la marque (INPI), réserver domaine et comptes.
 2. **Polices** : confirmer Instrument Sans après un test de lecture sur téléphone auprès de quelques lecteurs B1 ; repli possible, Atkinson Hyperlegible Next.
 3. **Indigo d'interaction** : il reste éloigné du bleu du drapeau, mais un lecteur pourrait y voir du bleu. Variante possible : liens en encre soulignés.
 4. **Calendrier** : il combine une part par fonction (COFOG 2024) et le déficit 2025 ; à aligner sur le même millésime quand l'Insee publiera la COFOG 2025 (décembre 2026).
