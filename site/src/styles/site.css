@@ -33,7 +33,7 @@ a.pastille::before { content: "["; } a.pastille::after { content: "]"; }
 .lg-b{fill:var(--f-bleu)}
 .lg-r{fill:var(--f-rouge)}
 .lg-e{fill:var(--empty)}
-.lg-w{fill:var(--f-blanc);stroke:var(--f-blanc-line);stroke-width:.3}
+.lg-w{fill:var(--f-blanc);stroke:var(--f-blanc-line);stroke-width:.45}
 .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; letter-spacing: -0.02em; text-decoration: none; color: inherit; }
 .top { align-items: center; }
 .tagline { font-style: italic; margin-bottom: .25rem; }

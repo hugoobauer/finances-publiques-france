@@ -29,12 +29,12 @@
 
 **Décision du 31 octobre 2026 : nom « Mille milliards ».** Le porteur du projet retient le nom et le clin d'œil au capitaine Haddock (« mille milliards de mille sabords » : un navire si percé qu'il devrait couler), « avec une certaine mesure ». **Signature retenue (31 octobre 2026) : « Mille milliards de mille sabords ! »** (juron du capitaine Haddock ; forme citée dans *Les 7 Boules de cristal*, Casterman, 1948, p. 6, d'après le Wiktionnaire, à vérifier sur l'album ; « mille » invariable). Écartées : « Ni naufrage, ni croisière », « On compte, vous jugez », etc. Précautions : **avis d'un juriste avant mise en ligne** (la signature reprend mot pour mot une réplique de Hergé ; recherche INPI du 31 octobre : aucune marque « mille sabords », recherche « mille milliards » bloquée) ; ne rien emprunter d'autre à l'univers de Tintin (dessin, personnage, navire) ; vérifier la marque à l'INPI avant de réserver `millemilliards.fr` et `.com` (libres le 31 octobre 2026).
 
-**Logo retenu : la grille, en 9 × 9 aux couleurs du drapeau** (demande du porteur du projet). Spécimen : `prototypes/logo-mille-milliards.html`.
+**Logo retenu : la grille aux couleurs du drapeau, en 6 × 6** (demande du porteur du projet). Spécimen : `prototypes/logo-mille-milliards.html`.
 
-- 81 cases, trois colonnes par couleur, qui **se remplissent par le bas** (ligne par ligne, de gauche à droite) ; les cases vides restent grises (choix du porteur du projet, 31 octobre 2026).
+- 36 cases, deux colonnes par couleur, qui **se remplissent par le bas** (ligne par ligne, de gauche à droite) ; les cases vides restent grises (choix du porteur du projet, 31 octobre 2026).
 - **Le logo est un dessin, pas un graphique** (décision du porteur du projet, 31 octobre 2026) : il ne représente aucun chiffre et n'a pas à être mis à jour.
 - Sur fond clair, les cases blanches remplies sont blanches avec un filet gris fin ; les cases vides sont gris clair (`#E6E4DD`). Sur fond sombre : blanc cassé et `#2A2D34`.
-- **Motif : grille 9 × 9, dernière ligne pleine moins 2 cases à droite** ; hauteur recommandée : 6 lignes moins 2 (variantes 5 et 7 dans le spécimen). Ni case isolée, ni case à moitié remplie. Sous 24 px : 3 × 3, 2 lignes moins 1 case.
+- **Motif retenu (31 octobre 2026) : grille 6 × 6 (deux colonnes par couleur), 4 lignes pleines moins 1 case à droite.** Préférée au 9 × 9, dont les cases faisaient moins de 2 px dans l'en-tête (24 px) ; en 6 × 6, environ 3,5 px. Ni case isolée, ni case à moitié remplie. Icône de 16 px : 3 × 3, 2 lignes moins 1 case. Générateur : `research/scripts/make_logo.py`.
 - Variantes : grille pleine (sans chiffre) et version une couleur. La variante « avec sabords » (cases ouvertes) est abandonnée.
 - Usage dans le site, distinct du logo : des grilles 9 × 9 chiffrées (une case = 1/81 du PIB, 1,2 point) avec légende et source (retraites 11 cases, déficit 4 cases, dette : la grille déborde).
 - Le logo porte le tricolore : le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran, §6).
@@ -113,12 +113,12 @@ Règles : texte aligné à gauche, jamais justifié ; 64 caractères par ligne a
 
 | Oui (il signe le site) | Jamais (il porterait un sens) |
 |---|---|
-| Le logotype (grille 9 × 9 remplie par le bas) et l'icône de l'onglet (grille 3 × 3). | Dans un graphique, une barre, une légende ou une carte de pays. |
+| Le logotype (grille 6 × 6 remplie par le bas) et l'icône de l'onglet (grille 3 × 3). | Dans un graphique, une barre, une légende ou une carte de pays. |
 | ~~Un filet de 2 px sous l'en-tête~~ : remplacé par un trait gris de 1 px, puisque le logo porte déjà le tricolore. | Sur un bouton, une carte « Oui, mais… » ou une réponse. |
 | Jamais la rubrique active de la navigation (retirée le 31 octobre 2026). | Pour opposer deux idées, deux camps, une hausse et une baisse. |
 | Un filet en bas de l'image de partage sur les réseaux sociaux. | En aplat, en drapeau dessiné, en cocarde, avec une Marianne. |
 
-**Le blanc.** Sur fond clair, le segment blanc reçoit un filet gris de 0,5 px (`#B9B7AF`) pour rester visible ; sur fond sombre, il est en blanc cassé sans filet. **Dosage (revu le 31 octobre 2026)** : un seul tricolore par écran. C'est le logo (grille 9 × 9) ; le filet d'en-tête est gris et la rubrique active est soulignée d'un filet d'encre de 1 px.
+**Le blanc.** Sur fond clair, le segment blanc reçoit un filet gris de 0,5 px (`#B9B7AF`) pour rester visible ; sur fond sombre, il est en blanc cassé sans filet. **Dosage (revu le 31 octobre 2026)** : un seul tricolore par écran. C'est le logo (grille 6 × 6) ; le filet d'en-tête est gris et la rubrique active est soulignée d'un filet d'encre de 1 px.
 
 ## 7. Graphiques
 
@@ -168,7 +168,7 @@ Le site suit le réglage du téléphone (`prefers-color-scheme`) et propose un b
 
 ## 12. Points à trancher
 
-1. **Nom et logo** : « Mille milliards » et grille 9 × 9 retenus (31 octobre 2026) ; grille 9 × 9, 6 lignes moins 2 (dessin, sans chiffre) ; reste à vérifier la marque (INPI), réserver domaine et comptes.
+1. **Nom et logo** : « Mille milliards » et grille 6 × 6, 4 lignes moins 1 (dessin, sans chiffre), retenus le 31 octobre 2026 ; reste à vérifier la marque (INPI), réserver domaine et comptes.
 2. **Polices** : confirmer Instrument Sans après un test de lecture sur téléphone auprès de quelques lecteurs B1 ; repli possible, Atkinson Hyperlegible Next.
 3. **Indigo d'interaction** : il reste éloigné du bleu du drapeau, mais un lecteur pourrait y voir du bleu. Variante possible : liens en encre soulignés.
 4. **Calendrier** : il combine une part par fonction (COFOG 2024) et le déficit 2025 ; à aligner sur le même millésime quand l'Insee publiera la COFOG 2025 (décembre 2026).

@@ -121,13 +121,13 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
 
   <section id="motifs">
     <div class="head"><span class="n">00</span><h2>Motif : une ligne pleine, moins deux cases</h2></div>
-    <p class="muted small">Le logo est un dessin, pas un graphique : il n'a plus à valoir un chiffre (décision du 31 octobre 2026). On garde donc la grille 9 × 9 et l'on choisit la hauteur qui rend le mieux. La dernière ligne est pleine, moins deux cases à droite. Le choix ci-dessous s'applique à toute la page.</p>
+    <p class="muted small">Le logo est un dessin, pas un graphique : il n'a pas à valoir un chiffre. Logo retenu : grille 6 × 6, 4 lignes pleines moins 1 case (plus bas) ; les variantes 9 × 9 restent pour mémoire. La dernière ligne est pleine, moins deux cases à droite. Le choix ci-dessous s'applique à toute la page.</p>
     <div class="patterns">
       <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="f5"></span></div>
         <div class="k"><b>1</b> · 5 lignes moins 2</div>
         <p class="small">Plus de vide au-dessus : le logo respire, le drapeau est plus bas.</p></article>
-      <article class="card fav"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="f6"></span></div>
-        <div class="k"><b>2</b> · 6 lignes moins 2 · ma préférence</div>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="f6"></span></div>
+        <div class="k"><b>2</b> · 6 lignes moins 2</div>
         <p class="small">Deux tiers de la hauteur : le drapeau domine, le vide reste lisible.</p></article>
       <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="f7"></span></div>
         <div class="k"><b>3</b> · 7 lignes moins 2</div>
@@ -138,11 +138,11 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
       <button type="button" data-p="f6">6 lignes moins 2</button>
       <button type="button" data-p="f7">7 lignes moins 2</button>
     </div>
-    <h3 style="margin-top:12px">Et en 6 × 6 ?</h3>
+    <h3 style="margin-top:12px">6 × 6 : le logo retenu (31 octobre 2026)</h3>
     <p class="muted small">Deux colonnes par couleur, des cases deux fois plus grandes : plus lisible en petit, moins « mille milliards de cases ». 4 lignes pleines sur 6, la dernière entamée.</p>
     <div class="patterns">
-      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="s1"></span></div>
-        <div class="k"><b>6 × 6</b> · 4 lignes moins 1</div>
+      <article class="card fav"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="s1"></span></div>
+        <div class="k"><b>6 × 6</b> · 4 lignes moins 1 · retenu</div>
         <p class="small">Il manque une case rouge : le drapeau reste lisible sur la dernière ligne.</p></article>
       <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="s2"></span></div>
         <div class="k"><b>6 × 6</b> · 4 lignes moins 2</div>
@@ -251,8 +251,8 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   // Since 31 Oct 2026 the logo is decorative (no longer tied to a figure): 9 × 9, N full rows minus 2 squares.
   var PATTERNS = { f5: [9, 9, 'end', 5, 2], f6: [9, 9, 'end', 6, 2], f7: [9, 9, 'end', 7, 2],
     s1: [6, 6, 'end', 4, 1], s2: [6, 6, 'end', 4, 2], s2s: [6, 6, 'sym', 4, 2] };
-  var PATTERN = 'f6';
-  try { var saved = localStorage.getItem('motif-mm3'); if (PATTERNS[saved]) PATTERN = saved; } catch (e) {}
+  var PATTERN = 's1';
+  try { var saved = localStorage.getItem('motif-mm4'); if (PATTERNS[saved]) PATTERN = saved; } catch (e) {}
 
   function geom(kind, pattern) {
     var small = kind === 'small', P = PATTERNS[pattern] || PATTERNS.g9x10;
@@ -335,12 +335,12 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   }
   document.getElementById('pattern-btns-6').addEventListener('click', function (e) {
     var b = e.target.closest('button[data-p]'); if (!b) return;
-    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm3', PATTERN); } catch (err) {}
+    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm4', PATTERN); } catch (err) {}
     syncPattern();
   });
   pb.addEventListener('click', function (e) {
     var b = e.target.closest('button[data-p]'); if (!b) return;
-    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm3', PATTERN); } catch (err) {}
+    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm4', PATTERN); } catch (err) {}
     syncPattern();
   });
   syncPattern();
