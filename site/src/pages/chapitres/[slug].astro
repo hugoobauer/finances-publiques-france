@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Pager from '../../components/Pager.astro';
 import { renderAll } from '../../lib/render.mjs';
 
 export function getStaticPaths() {
@@ -10,11 +11,24 @@ export function getStaticPaths() {
   }));
 }
 const { chapter, prev, next } = Astro.props;
+const steps = chapter.headings.filter((h) => h.depth === 2);
+const link = (c: typeof chapter | null) => (c ? { href: `/chapitres/${c.slug}/`, title: c.title } : null);
 ---
-<Base title={`${chapter.title} · Mille milliards`}>
-  <article class="prose" set:html={chapter.html} />
-  <nav class="pager" aria-label="Chapitres">
-    {prev ? <a href={`/chapitres/${prev.slug}/`}>← {prev.title}</a> : <span />}
-    {next ? <a href={`/chapitres/${next.slug}/`}>{next.title} →</a> : <span />}
-  </nav>
+<Base title={`${chapter.title} · Mille milliards`} section="chapitres">
+  <article class="chapter">
+    <header class="page-head">
+      <nav class="crumb" aria-label="Fil d’Ariane"><a href="/chapitres/">← Tous les chapitres</a></nav>
+      <h1 set:html={chapter.titleHtml || chapter.title} />
+      {chapter.minutes && <p class="meta"><span>Durée de lecture&nbsp;: environ {chapter.minutes}&nbsp;minutes</span><span>{steps.length} étapes</span></p>}
+    </header>
+    {steps.length > 1 && (
+      <details class="toc" id="sommaire">
+        <summary>Sommaire ({steps.length} étapes)</summary>
+        <ol>{steps.map((h) => <li><a href={`#${h.id}`}>{h.text}</a></li>)}</ol>
+      </details>
+    )}
+    <div class="prose chapter-body" set:html={chapter.html} />
+    <Fragment set:html={chapter.sourcesHtml} />
+  </article>
+  <Pager label="Chapitres" prev={link(prev)} next={link(next)} prevLabel="Chapitre précédent" nextLabel="Chapitre suivant" up={{ href: '/chapitres/', title: 'Tous les chapitres' }} />
 </Base>

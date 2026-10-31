@@ -1,0 +1,45 @@
+---
+// Bloc « Combien » (fr/conception/03-identite-visuelle.md §7 et §8) : le chiffre en grand, puis la barre de fourchette.
+// La piste est le déficit de référence ; la partie sûre en encre, le reste de la fourchette en gris (--bar), deux traits aux bornes.
+// Dessinée en HTML et CSS (largeurs en %), donc nette à toute largeur et lisible sans JavaScript.
+import type { Answer } from '../lib/render.mjs';
+import { rangeBar } from '../lib/site.mjs';
+
+interface Props { answer: Answer }
+const rb = rangeBar(Astro.props.answer)!;
+const g = rb.geom;
+const n = Astro.props.answer.montantN;
+---
+<figure class="chart">
+  <div class="big-fig">
+    <p class="num big">{rb.amountText}{!rb.negative && <span class="per"> par an</span>}</p>
+    <p class="big-sub">soit {rb.share} du déficit public de {rb.deficitYear}</p>
+  </div>
+  <div>
+    <p class="title">{rb.title}</p>
+    <p class="sub">{rb.sub}</p>
+  </div>
+  <div class="rb" role="img" aria-label={rb.aria}>
+    <div class="row" aria-hidden="true">
+      <span class="num">{rb.amountText}</span>
+      <span class="num r">{rb.overflow ? '' : rb.deficitText}</span>
+    </div>
+    <div class="plot" aria-hidden="true">
+      {rb.overflow && <span class="def-lbl" style={`left:${g.track.toFixed(2)}%`}>{rb.deficitLabel}</span>}
+      <span class="trk" style={`width:${g.track.toFixed(2)}%`}></span>
+      <span class="hi" style={`left:0;width:${g.hi.toFixed(2)}%`}></span>
+      <span class="lo" style={`left:0;width:${g.lo.toFixed(2)}%`}></span>
+      {!rb.single && <span class="tick" style={`left:${g.lo.toFixed(2)}%`}></span>}
+      <span class="tick" style={`left:calc(${g.hi.toFixed(2)}% - 1.5px)`}></span>
+      {rb.overflow && <span class="def" style={`left:${g.track.toFixed(2)}%`}></span>}
+    </div>
+    <div class="row" aria-hidden="true">
+      <span>{rb.share} du déficit</span>
+      {!rb.overflow && <span class="m r">Déficit {rb.deficitYear}</span>}
+    </div>
+  </div>
+  <figcaption>
+    <span><b>Lecture&nbsp;:</b> {rb.lecture}</span>
+    <span class="src">Source&nbsp;: montant, {rb.source.amountUrl ? <a href={rb.source.amountUrl} rel="noopener" target="_blank">{rb.source.amount}</a> : rb.source.amount}{n ? <> (renvoi <a href={`#pastille-${n}`}>n°&nbsp;{n}</a>)</> : null}&#8239;; déficit, {rb.source.deficitUrl ? <a href={rb.source.deficitUrl} rel="noopener" target="_blank">{rb.source.deficit}</a> : rb.source.deficit}&#8239;; part du déficit&nbsp;: calcul du site.</span>
+  </figcaption>
+</figure>

@@ -1,17 +1,74 @@
 ---
 import Base from '../../layouts/Base.astro';
+import RangeBar from '../../components/RangeBar.astro';
+import Pager from '../../components/Pager.astro';
 import { renderAll } from '../../lib/render.mjs';
+import { sortedAnswers } from '../../lib/site.mjs';
 
 export function getStaticPaths() {
-  const { answers } = renderAll();
-  return answers.map((a) => ({ params: { slug: a.slug }, props: { answer: a } }));
+  // Précédent / suivant dans l'ordre de la liste /reponses/ (par montant).
+  const list = sortedAnswers();
+  return list.map((a, i) => ({
+    params: { slug: a.slug },
+    props: { answer: a, prev: list[i - 1] ?? null, next: list[i + 1] ?? null },
+  }));
 }
-const { answer } = Astro.props;
+const { answer: a, prev, next } = Astro.props;
+const { debats } = renderAll();
+
+// Renvois vers la page « Débats » (métadonnée debats: « 3.7, 3.8 … » -> titres « 3.7 … »).
+const debatLinks = a.debats
+  .map((n) => debats.headings.find((h) => h.depth === 3 && h.text.startsWith(`${n} `)))
+  .filter((h): h is NonNullable<typeof h> => Boolean(h));
+const link = (x: typeof a | null) => (x ? { href: `/reponses/${x.slug}/`, title: x.title } : null);
 ---
-<Base title={`${answer.title} · Mille milliards`} description={answer.phrase ? `Réponse chiffrée : « ${answer.phrase} »` : undefined}>
-  <article class="prose" set:html={answer.html} />
-  <nav class="pager" aria-label="Réponses">
-    <a href="/reponses/">← Toutes les réponses</a>
-    <span />
-  </nav>
+<Base title={`${a.title} · Mille milliards`} description={a.summary || `Réponse chiffrée : ${a.title}`} section="reponses">
+  <article>
+    <header class="page-head">
+      <nav class="crumb" aria-label="Fil d’Ariane"><a href="/reponses/">← Toutes les réponses</a></nav>
+      <h1>{a.title}</h1>
+      {a.sujets.length > 0 && (
+        <ul class="tags" aria-label="Sujets">
+          {a.sujets.map((s) => <li class="tag">{s.label}</li>)}
+        </ul>
+      )}
+    </header>
+
+    <div class="answer">
+      {a.brief && (
+        <div class="brief" role="note" aria-label="En bref">
+          <span class="k">En bref</span>
+          <p set:html={a.brief} />
+        </div>
+      )}
+
+      {a.sections.map((s, i) => (
+        <section class:list={['ablock', { first: i === 0 }]} aria-labelledby={s.id}>
+          {s.title && <h2 id={s.id} data-n={String(i + 1)} set:html={s.titleHtml} />}
+          <div class="prose" set:html={s.html} />
+          {s.id === 'combien' && a.amount && <RangeBar answer={a} />}
+        </section>
+      ))}
+
+      {a.leviers.length > 0 && (
+        <div class="actions">
+          <button class="btn" type="button" disabled>Ajouter à mon budget (bientôt)</button>
+          <span class="note">Le simulateur budgétaire est en préparation.</span>
+        </div>
+      )}
+
+      {debatLinks.length > 0 && (
+        <aside class="further" aria-labelledby="plus-loin">
+          <h2 id="plus-loin" class="eyebrow">Pour aller plus loin, page « Débats »</h2>
+          <ul>
+            {debatLinks.map((h) => <li><a href={`/debats/#${h.id}`}>{h.text}</a></li>)}
+          </ul>
+        </aside>
+      )}
+    </div>
+
+    <Fragment set:html={a.sourcesHtml} />
+  </article>
+
+  <Pager label="Autres réponses" prev={link(prev)} next={link(next)} up={{ href: '/reponses/', title: 'Toutes les réponses' }} prevLabel="Réponse précédente" nextLabel="Réponse suivante" />
 </Base>

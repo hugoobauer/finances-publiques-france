@@ -1,20 +1,59 @@
 ---
 import Base from '../layouts/Base.astro';
+import AnswerCard from '../components/AnswerCard.astro';
 import { renderAll } from '../lib/render.mjs';
+import { figure, figureText, figureSource } from '../lib/data.mjs';
+import { sortedAnswers } from '../lib/site.mjs';
+import { typography } from '../lib/format.mjs';
+
 const { chapters } = renderAll();
+const answers = sortedAnswers();
+const top = answers.slice(0, 6);
+
+// Chiffre-clé : dépense publique 2025, en milliards d'euros et en % du PIB (figures.json).
+const te = figure('te_2025_eur_bn');
+const teText = figureText('te_2025_eur_bn');
+const tePct = figureText('te_2025_pct_gdp');
+const teSrc = figureSource('te_2025_eur_bn');
 ---
-<Base title="Mille milliards">
-  <h1>Mille milliards</h1>
-  <p class="lead">Les finances publiques de la France, chiffrées, comparées et sourcées.</p>
-  <h2>Les chapitres</h2>
-  <ol class="chapters">
-    {chapters.map((c) => (
-      <li>
-        <a href={`/chapitres/${c.slug}/`}>{c.title}</a>
-        {c.minutes && <span class="meta"> · {c.minutes}&nbsp;min</span>}
-      </li>
-    ))}
-  </ol>
-  <h2>Pour aller plus loin</h2>
-  <p><a href="/debats/">Débats : ce qui est contesté, et qui dit quoi</a></p>
+<Base title="Mille milliards · Les finances publiques, chiffrées et sourcées">
+  <section class="hero" aria-labelledby="titre">
+    <p class="eyebrow">Finances publiques de la France</p>
+    <h1 id="titre">Combien, pour quoi, et qui paie : chaque chiffre avec sa source.</h1>
+    <div class="keyfig">
+      <div class="pair">
+        <span class="num big">{teText}</span>
+        <span class="eqmid"><span class="eq" aria-hidden="true">= </span><span class="num mid">{tePct}</span></span>
+      </div>
+      <span class="lbl">de dépenses publiques en {te.year} : État, Sécurité sociale et collectivités locales.</span>
+    </div>
+    <p class="src-line">Source : {teSrc?.url ? <a href={teSrc.url} rel="noopener" target="_blank">{typography(teSrc.name)}</a> : typography(teSrc?.name ?? '')}{teSrc?.date ? `, ${teSrc.date}` : ''}. PIB : la richesse produite en un an en France.</p>
+  </section>
+
+  <section class="blk" aria-labelledby="reponses-titre">
+    <div class="blk-head">
+      <h2 id="reponses-titre">Ce que l’on entend, chiffré</h2>
+      <a class="more-link" href="/reponses/">Toutes les réponses ({answers.length}) →</a>
+    </div>
+    <p class="lede">Une phrase entendue, une réponse courte, et sa part du déficit. Les six plus gros montants :</p>
+    <ul class="cards">
+      {top.map((a) => <li><AnswerCard answer={a} /></li>)}
+    </ul>
+  </section>
+
+  <section class="blk col" aria-labelledby="chapitres-titre">
+    <div class="blk-head"><h2 id="chapitres-titre">Les chapitres</h2></div>
+    <p class="lede">Le récit, dans l’ordre : sept chapitres courts.</p>
+    <ol class="toc-list">
+      {chapters.map((c) => (
+        <li><a href={`/chapitres/${c.slug}/`}><span class="t">{c.title}</span>{c.minutes && <span class="m">{c.minutes}&nbsp;min</span>}</a></li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="blk col" aria-labelledby="debats-titre">
+    <div class="blk-head"><h2 id="debats-titre">Débats</h2></div>
+    <p>Ce qui est contesté, et qui dit quoi : pour chaque point, les positions publiées, leurs auteurs et les liens vers les textes.</p>
+    <p><a class="btn ghost" href="/debats/">Lire la page « Débats »</a></p>
+  </section>
 </Base>

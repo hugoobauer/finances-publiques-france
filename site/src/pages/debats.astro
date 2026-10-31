@@ -3,11 +3,25 @@ import Base from '../layouts/Base.astro';
 import { renderAll } from '../lib/render.mjs';
 const { debats } = renderAll();
 const toc = debats.headings.filter((h) => h.depth === 2);
+// Page longue : un lien « ↑ Sommaire » à la fin de chaque partie (avant le titre de niveau 2 suivant, puis avant les sources).
+const UP = '<p class="to-top"><a href="#sommaire">↑ Sommaire</a></p>';
+let first = true;
+const body = debats.html.replace(/<h2 id="/g, (m) => (first ? ((first = false), m) : UP + m)) + UP;
 ---
-<Base title="Débats · Mille milliards" description="Ce qui est contesté, et qui dit quoi.">
-  <nav class="toc" aria-label="Thèmes">
-    <strong>Thèmes</strong>
-    <ol>{toc.map((h) => <li><a href={`#${h.id}`}>{h.text}</a></li>)}</ol>
+<Base title="Débats · Mille milliards" description="Ce qui est contesté, et qui dit quoi : positions publiées, auteurs et liens." section="debats">
+  <article>
+    <header class="page-head">
+      <h1 set:html={debats.titleHtml || 'Débats'} />
+      <p class="meta"><span>{toc.length} parties</span><span>Positions publiées, auteurs et liens vers les textes</span></p>
+    </header>
+    <details class="toc" id="sommaire">
+      <summary>Sommaire ({toc.length} parties)</summary>
+      <ol>{toc.map((h) => <li><a href={`#${h.id}`}>{h.text}</a></li>)}</ol>
+    </details>
+    <div class="prose debats-body" set:html={body} />
+    <Fragment set:html={debats.sourcesHtml} />
+  </article>
+  <nav class="pager" aria-label="Suite">
+    <a class="up" href="/reponses/">Voir les réponses chiffrées</a>
   </nav>
-  <article class="prose" set:html={debats.html} />
 </Base>

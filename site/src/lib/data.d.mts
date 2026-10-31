@@ -1,0 +1,13 @@
+import type { Amount, Source } from './render.mjs';
+export function amountOf(id: string): Amount | null;
+export function referenceDeficit(): { id: string; value: number; year: string; text: string; source: Source };
+export function figureText(id: string): string | null;
+export function figureSource(id: string): Source | null;
+export function figure(id: string): any;
+export function frDate(s: string | null | undefined): string | null;
+export function subjectLabel(slug: string): string;
+export function amountFromShareCalcs(refs: string[], montantId?: string | null): Amount | null;
+export function textMentions(text: string, x: number): boolean;
+export function readableFormula(ref: string): string;
+export function otherUnits(raw: { lo: number; hi: number; unit: string } | null | undefined): string | null;
+export function frText(t: string): string;

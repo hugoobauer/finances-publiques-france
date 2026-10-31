@@ -1,0 +1,60 @@
+/* Jetons de la charte « Mille milliards » (fr/conception/03-identite-visuelle.md §3 à §5).
+   Aucun composant ne fixe de couleur en dur : tout passe par ces variables (thèmes clair et sombre, §10).
+   Les couleurs du drapeau (--f-*) ne servent qu'au logo : interdites dans les graphiques (§6, §7). */
+
+:root {
+  --paper: #F7F6F2;
+  --surface: #FFFFFF;
+  --ink: #16181D;
+  --muted: #5A5F69;
+  --line: #DEDCD5;
+  --accent: #3A3FB8;
+  --accent-soft: #E8E8F7;
+  --bar: #767B84;
+  --track: #E9E8E3;
+  --ochre: #8A5A00;
+  --ochre-bar: #9E6C0A;
+  /* Logo seulement */
+  --f-bleu: #0055A4;
+  --f-blanc: #FFFFFF;
+  --f-blanc-line: #A9A79F;
+  --f-rouge: #EF4135;
+  --empty: #E6E4DD;
+
+  --f-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --f-num: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Grille d'espacement : 4, 8, 12, 16, 24, 32, 48, 72 px */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 72px;
+  /* Deux rayons et la pilule */
+  --r-s: 4px; --r-m: 8px; --r-pill: 999px;
+
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --measure: 64ch;
+  --wide: 1040px;
+  --header-h: 56px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+    --accent: #A5A9FF; --accent-soft: #24264A;
+    --bar: #6C717B; --track: #25282E;
+    --ochre: #E8B04F; --ochre-bar: #D69B33;
+    --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A; --empty: #2A2D34;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+  --accent: #A5A9FF; --accent-soft: #24264A;
+  --bar: #6C717B; --track: #25282E;
+  --ochre: #E8B04F; --ochre-bar: #D69B33;
+  --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A; --empty: #2A2D34;
+  color-scheme: dark;
+}

@@ -11,7 +11,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "logo": "python3 scripts/gen_logo.py"
   },
   "dependencies": {
     "astro": "7.3.8",

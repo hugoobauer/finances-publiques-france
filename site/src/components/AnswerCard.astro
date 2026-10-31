@@ -1,0 +1,28 @@
+---
+// Carte « Oui, mais… » (fr/conception/03-identite-visuelle.md §8) : surtitre, phrase entendue, réponse en une ligne,
+// mini-barre (part du déficit de référence), lien. Aucune étiquette de camp.
+import type { Answer } from '../lib/render.mjs';
+import { deficit, deficitShare, shareWidths } from '../lib/site.mjs';
+
+interface Props { answer: Answer; headingLevel?: 2 | 3 }
+const { answer: a, headingLevel = 3 } = Astro.props;
+const H = `h${headingLevel}`;
+const share = a.amount ? deficitShare(a.amount) : null;
+const w = a.amount ? shareWidths(a.amount) : null;
+const kicker = a.amount ? `Oui, mais… · ${a.amount.textBare} par an` : 'Oui, mais… · sans montant chiffré';
+---
+<article class="card">
+  <span class="k">{kicker}</span>
+  <H><a href={`/reponses/${a.slug}/`}>{a.title}</a></H>
+  {a.summary && <p class="ans">{a.summary}</p>}
+  {a.amount && w && (
+    <div class="mini" role="img" aria-label={`${share} du déficit public de ${deficit.year}${w.overflow ? ', le haut de la fourchette dépasse le déficit' : ''}`}>
+      <div class="trk">
+        <b class="hi" style={`width:${w.hi.toFixed(2)}%`}></b><b style={`width:${w.lo.toFixed(2)}%`}></b>
+        {w.overflow && <i class="def" style={`left:${w.track.toFixed(2)}%`}></i>}
+      </div>
+      <div class="lg" aria-hidden="true"><span>{share} du déficit {deficit.year}{w.overflow && <b class="over"> · au-delà de 100 %</b>}</span><span class="num">{deficit.text}</span></div>
+    </div>
+  )}
+  <span class="go" aria-hidden="true">Lire la réponse →</span>
+</article>

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { renderAll } from '../../lib/render.mjs';
+const { chapters } = renderAll();
+---
+<Base title="Chapitres · Mille milliards" description="Le récit des finances publiques en sept chapitres courts." section="chapitres">
+  <header class="page-head">
+    <p class="eyebrow">Le récit</p>
+    <h1>Les chapitres</h1>
+    <p class="lede">Sept chapitres courts, à lire dans l’ordre : combien l’on dépense, où va l’argent, qui paie, pourquoi le déficit, la dette, ce que l’on obtient, et les choix.</p>
+  </header>
+  <section class="blk col" aria-label="Liste des chapitres">
+    <ol class="toc-list">
+      {chapters.map((c) => (
+        <li><a href={`/chapitres/${c.slug}/`}><span class="t">{c.title}</span>{c.minutes && <span class="m">{c.minutes}&nbsp;min</span>}</a></li>
+      ))}
+    </ol>
+  </section>
+</Base>
