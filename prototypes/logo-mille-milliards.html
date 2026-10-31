@@ -114,43 +114,44 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
       <span class="eyebrow">Identité · nom retenu le 31 octobre 2026</span>
       <h1>Mille milliards</h1>
       <p class="tag">Ni naufrage, ni croisière.</p>
-      <p class="lede">Une grille de 81 cases qui se remplit par le bas, aux couleurs du drapeau. Dans le logo, elle est remplie à 57 % : la dépense publique représente 57,3 % du PIB en 2025, soit 46 cases sur 81. Le logo est donc le chiffre central du site.</p>
+      <p class="lede">Une grille qui se remplit par le bas, aux couleurs du drapeau. Dans le logo, elle est remplie à 57 % : la dépense publique représente 57,3 % du PIB en 2025. Le logo est donc le chiffre central du site.</p>
     </div>
     <div class="mark"><span data-logo="gauge" data-size="168"></span></div>
   </div>
 
   <section id="motifs">
-    <div class="head"><span class="n">00</span><h2>Motifs : où mettre ce qui dépasse ?</h2></div>
-    <p class="muted small">57,3 % de 81 cases font 46,4 cases : 5 lignes pleines et un reste. Quatre façons de traiter ce reste. Le choix ci-dessous s'applique à toute la page.</p>
+    <div class="head"><span class="n">00</span><h2>Motifs : une ligne pleine, moins une ou deux cases</h2></div>
+    <p class="muted small">Ni case isolée, ni case à moitié remplie : la dernière ligne est pleine, moins une ou deux cases. Sur une grille 9 × 9, ce dessin ferait 52 cases sur 81, soit 64 % au lieu de 57,3 %. Pour que le logo reste le vrai chiffre, on change la taille de la grille. Le choix ci-dessous s'applique à toute la page.</p>
     <div class="patterns">
-      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="rows"></span></div>
-        <div class="k"><b>1</b> · lignes entières</div>
-        <p class="small">Arrondi à 5 lignes (45 cases, 55,6 %). Le plus net, mais le chiffre est arrondi de 1,7 point.</p></article>
-      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="center"></span></div>
-        <div class="k"><b>2</b> · reste centré</div>
-        <p class="small">46 cases exactes ; la case en trop est au milieu, dans le blanc. Symétrique, mais on la lit comme un détail.</p></article>
-      <article class="card fav"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="level"></span></div>
-        <div class="k"><b>3</b> · niveau exact · ma préférence</div>
-        <p class="small">La 6e ligne est remplie à 16 % de sa hauteur, comme un niveau d'eau. Le chiffre est exact et le dessin reste symétrique.</p></article>
-      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="grid97"></span></div>
-        <div class="k"><b>4</b> · grille 9 × 7</div>
-        <p class="small">Avec 7 lignes, 57,3 % tombe sur 4 lignes pleines (36 cases sur 63, 57,1 %). Exact et net, mais la grille n'est plus carrée et colle moins à « 81 ».</p></article>
+      <article class="card fav"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="g9x10"></span></div>
+        <div class="k"><b>1</b> · 9 × 10, moins 2 · ma préférence</div>
+        <p class="small">52 cases sur 90 (57,8 %) : 6 lignes moins 2 cases, à droite, comme une jauge qui se remplit. Garde les trois colonnes par couleur.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="g9x10s"></span></div>
+        <div class="k"><b>2</b> · 9 × 10, moins 2, symétrique</div>
+        <p class="small">Le même chiffre, une case vide à chaque bout : le bleu et le rouge sont entamés de la même façon.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="g9x12"></span></div>
+        <div class="k"><b>3</b> · 9 × 12, moins 1</div>
+        <p class="small">62 cases sur 108 (57,4 %) : le plus exact, 7 lignes moins une case. Grille haute (proportion 3 : 4) et 108 cases, plus chargée.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="g6x8"></span></div>
+        <div class="k"><b>4</b> · 6 × 8, moins 2</div>
+        <p class="small">28 cases sur 48 (58,3 %) : deux colonnes par couleur, des cases plus grosses, plus lisible en petit.</p></article>
     </div>
     <div class="slider" id="pattern-btns" role="group" aria-label="Motif appliqué à la page">
-      <button type="button" data-p="rows">1 · lignes entières</button>
-      <button type="button" data-p="center">2 · reste centré</button>
-      <button type="button" data-p="level">3 · niveau exact</button>
-      <button type="button" data-p="grid97">4 · grille 9 × 7</button>
+      <button type="button" data-p="g9x10">1 · 9 × 10, moins 2</button>
+      <button type="button" data-p="g9x10s">2 · symétrique</button>
+      <button type="button" data-p="g9x12">3 · 9 × 12, moins 1</button>
+      <button type="button" data-p="g6x8">4 · 6 × 8, moins 2</button>
     </div>
+    <p class="small muted">Écartés : la case isolée (46 = 5 lignes + 1), le reste centré, la ligne remplie à moitié de sa hauteur, la grille 9 × 7 (retours du 31 octobre 2026). En dessous de 24 px, la grille 3 × 3 suit la même règle : 5 cases sur 9, soit 2 lignes moins une case.</p>
   </section>
 
   <section id="variantes">
     <div class="head"><span class="n">01</span><h2>La grille qui se remplit</h2></div>
-    <p class="muted small">Neuf colonnes, trois par couleur. Les cases se remplissent ligne par ligne, de bas en haut et de gauche à droite ; les cases vides restent en gris clair. Comme le logo porte le tricolore, le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran).</p>
+    <p class="muted small">Les cases se remplissent ligne par ligne, de bas en haut et de gauche à droite ; les cases vides restent en gris clair. Comme le logo porte le tricolore, le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran).</p>
     <div class="grid3">
       <article class="card fav"><div class="stage"><span data-logo="gauge" data-size="120"></span></div>
-        <div class="k"><b>A</b> · jauge à 57 % · ma préférence</div>
-        <p class="small">46 cases sur 81 : la dépense publique de 2025 en part du PIB (57,3 %, Insee). Le drapeau apparaît en bas, le vide au-dessus montre l'ordre de grandeur.</p></article>
+        <div class="k"><b>A</b> · jauge à 57 %</div>
+        <p class="small">La dépense publique de 2025 en part du PIB (57,3 %, Insee). Le drapeau apparaît en bas, le vide au-dessus montre l'ordre de grandeur.</p></article>
       <article class="card"><div class="stage"><span data-logo="flag" data-size="120"></span></div>
         <div class="k"><b>B</b> · grille pleine</div>
         <p class="small">Le drapeau complet, sans chiffre. Pour les usages où le logo doit rester fixe (réseaux sociaux, impression).</p></article>
@@ -162,7 +163,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
 
   <section id="tailles">
     <div class="head"><span class="n">02</span><h2>Aux petites tailles</h2></div>
-    <p class="muted small">Sous 24 px, la grille passe à 3 × 3 : une case par couleur et par ligne. Elle reste remplie à 57 %, soit 5 cases sur 9.</p>
+    <p class="muted small">Sous 24 px, la grille passe à 3 × 3 : une case par couleur et par ligne. Elle est remplie à 5 cases sur 9 : deux lignes, moins une case.</p>
     <div class="sizes">
       <figure><span class="tab"><span data-logo="small" data-size="16"></span>Mille milliards</span><figcaption>onglet<br>16 px · 3 × 3</figcaption></figure>
       <figure><span data-logo="small" data-size="24"></span><figcaption>24 px<br>3 × 3</figcaption></figure>
@@ -175,7 +176,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
 
   <section id="simulateur">
     <div class="head"><span class="n">03</span><h2>La même grille dans tout le site</h2></div>
-    <p>La grille peut servir d'unité de mesure sur chaque page : une case vaut 1/81 du PIB. Sur la page des retraites, elle se remplit à 14 % ; sur celle du déficit, à 5 %. Le lecteur apprend une seule image et compare tout avec elle.</p>
+    <p>La grille peut servir d'unité de mesure sur chaque page : une case vaut une part fixe du PIB (1/90 avec la grille 9 × 10). Sur la page des retraites, elle se remplit à 14 % ; sur celle du déficit, à 5 %. Le lecteur apprend une seule image et compare tout avec elle.</p>
     <div class="card">
       <span class="eyebrow">Essai : remplir la grille</span>
       <div class="demo">
@@ -186,7 +187,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
           <div class="slider" id="demo-btns" role="group" aria-label="Chiffre affiché"></div>
         </div>
       </div>
-      <p class="small muted">Une case = 1/81 du PIB (1,2 point), ou 1/63 avec la grille 9 × 7 (1,6 point) ; nombre de cases arrondi, sauf en motif « niveau exact ». Sources : Insee (dépense, prélèvements, déficit, dette, 2025), Eurostat (zone euro, 2025), Drees (prestations sociales, 2024), COR (retraites, 2025).</p>
+      <p class="small muted">Une case = 1/90 du PIB avec la grille 9 × 10 (1,1 point) ; nombre de cases arrondi. Sources : Insee (dépense, prélèvements, déficit, dette, 2025), Eurostat (zone euro, 2025), Drees (prestations sociales, 2024), COR (retraites, 2025).</p>
     </div>
     <p class="small muted">Le clin d'œil à Haddock reste dans le nom et la signature : la dette, à 115,7 % du PIB, déborde de la grille, sans que le site annonce le naufrage.</p>
   </section>
@@ -205,7 +206,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
     <ul class="lines small">
       <li><b>Droits sur Tintin.</b> Le juron est cité, rien d'autre : pas de dessin, de nom ou de silhouette du capitaine, pas de navire inspiré d'Hergé. Les ayants droit (Moulinsart) défendent activement l'univers de Tintin.</li>
       <li><b>Marques.</b> Vérifier « Mille milliards » dans la base des marques de l'INPI avant de réserver <span class="mono">millemilliards.fr</span> et <span class="mono">.com</span> (libres le 31 octobre 2026).</li>
-      <li><b>Le chiffre du logo.</b> Le niveau de la jauge suit la dépense publique : 46 cases tant qu'elle reste entre 56,2 % et 57,4 % du PIB. À vérifier chaque printemps, à la publication des comptes par l'Insee.</li>
+      <li><b>Le chiffre du logo.</b> Le niveau de la jauge suit la dépense publique : avec la grille 9 × 10, 52 cases tant qu'elle reste entre 57,2 % et 58,3 % du PIB : 57,3 % est tout près du seuil, et à 57,1 % le logo passerait à 6 lignes moins 3. Avec la grille 9 × 12, la plage est 56,9 % à 57,9 %, et 57,3 % est au milieu. À vérifier chaque printemps, à la publication des comptes par l'Insee.</li>
       <li><b>Le blanc.</b> Sur fond clair, les cases blanches remplies sont blanches avec un filet gris fin ; les cases vides sont grises, sans filet. Sur fond sombre, le contraste vient tout seul.</li>
     </ul>
   </section>
@@ -219,46 +220,47 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   var COLS = ['var(--f-bleu)', 'var(--f-blanc)', 'var(--f-rouge)'];
   var LOGO_PCT = 57.3; // te_2025_pct_gdp (Insee) → 46 of 81 cells
 
-  // Fill patterns (see section « Motifs »):
-  //  rows   – 9 × 9, rounded to whole rows (57,3 % → 5 rows = 55,6 %)
-  //  center – 9 × 9, exact cell count, the leftover cells centred in the top row (46 = 45 + 1 in the middle)
-  //  level  – 9 × 9, exact level: the top row is filled to a fraction of its height, like a water line
-  //  grid97 – 9 columns × 7 rows: 57,3 % of 7 rows = 4,01, so the level falls on a whole row (36/63 = 57,1 %)
-  var PATTERN = 'level';
-  try { PATTERN = localStorage.getItem('motif-mm') || 'level'; } catch (e) {}
+  // Fill patterns (section « Motifs »): the grid fills from the bottom, row by row; the top filled row
+  // is a full row minus one or two squares (never a lone square, never a half square).
+  // The grid size is chosen so that this shape is the exact rounded figure:
+  //   g9x10  – 9 × 10: round(90 × 57,3 %) = 52 = 6 rows − 2 (57,8 %), gaps at the right end
+  //   g9x10s – same, one gap at each end (symmetric)
+  //   g9x12  – 9 × 12: round(108 × 57,3 %) = 62 = 7 rows − 1 (57,4 %)
+  //   g6x8   – 6 × 8: round(48 × 57,3 %) = 28 = 5 rows − 2 (58,3 %)
+  //   small  – 3 × 3: round(9 × 57,3 %) = 5 = 2 rows − 1 (55,6 %)
+  var PATTERNS = { g9x10: [9, 10, 'end'], g9x10s: [9, 10, 'sym'], g9x12: [9, 12, 'end'], g6x8: [6, 8, 'end'] };
+  var PATTERN = 'g9x10';
+  try { var saved = localStorage.getItem('motif-mm2'); if (PATTERNS[saved]) PATTERN = saved; } catch (e) {}
 
   function geom(kind, pattern) {
-    var small = kind === 'small';
-    var cols = small ? 3 : 9, rows = small ? 3 : (pattern === 'grid97' ? 7 : 9);
-    var cell = small ? 8.4 : 2.6, gap = small ? 1.4 : 0.6;
-    return { small: small, cols: cols, rows: rows, cell: cell, gap: gap,
+    var small = kind === 'small', P = PATTERNS[pattern] || PATTERNS.g9x10;
+    var cols = small ? 3 : P[0], rows = small ? 3 : P[1];
+    var n = Math.max(cols, rows);
+    var cell = small ? 8.4 : 28 / (n + (n - 1) * 0.2308), gap = small ? 1.4 : cell * 0.2308;
+    return { small: small, cols: cols, rows: rows, cell: cell, gap: gap, gaps: small ? 'end' : P[2],
       ox: (32 - (cols * cell + (cols - 1) * gap)) / 2, oy: (32 - (rows * cell + (rows - 1) * gap)) / 2 };
   }
-  // Returns, for each row counted from the bottom, an array of fill fractions (0…1) per column.
-  function fills(g, kind, p, pattern) {
-    var out = [], r, c;
+  // Returns, for each row counted from the bottom, 0/1 per column.
+  function fills(g, kind, p) {
+    var out = [], r, c, total = g.rows * g.cols;
     for (r = 0; r < g.rows; r++) { out.push([]); for (c = 0; c < g.cols; c++) out[r].push(kind === 'flag' ? 1 : 0); }
     if (kind === 'flag') return out;
-    var level = Math.min(g.rows, g.rows * p / 100);
-    var pat = g.small && (pattern === 'center' || pattern === 'grid97') ? 'level' : pattern;
-    if (pat === 'rows') level = Math.round(level);
-    if (pat === 'center') {
-      var count = Math.min(g.rows * g.cols, Math.round(g.rows * g.cols * p / 100));
-      var full = Math.floor(count / g.cols), rem = count % g.cols, start = Math.floor((g.cols - rem) / 2);
-      for (r = 0; r < full; r++) for (c = 0; c < g.cols; c++) out[r][c] = 1;
-      for (c = start; c < start + rem; c++) out[full][c] = 1;
-      return out;
+    var count = Math.min(total, Math.round(total * p / 100));
+    var full = Math.floor(count / g.cols), rem = count % g.cols;
+    for (r = 0; r < full; r++) for (c = 0; c < g.cols; c++) out[r][c] = 1;
+    if (rem) {
+      var miss = g.cols - rem, left = g.gaps === 'sym' ? Math.floor(miss / 2) : 0;
+      for (c = left; c < left + rem; c++) out[full][c] = 1;
     }
-    for (r = 0; r < g.rows; r++) for (c = 0; c < g.cols; c++) out[r][c] = Math.max(0, Math.min(1, level - r));
     return out;
   }
   function svgGrid(kind, size, pct, pattern) {
     pattern = pattern || PATTERN;
-    var g = geom(kind, pattern), p = pct == null ? LOGO_PCT : pct, F = fills(g, kind, p, pattern);
+    var g = geom(kind, pattern), p = pct == null ? LOGO_PCT : pct, F = fills(g, kind, p);
     var svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('viewBox', '0 0 32 32'); svg.setAttribute('width', size); svg.setAttribute('height', size);
     svg.setAttribute('aria-hidden', 'true');
-    var rx = g.small ? 1.2 : .45;
+    var rx = g.small ? 1.2 : g.cell * .17;
     function rect(x, y, w, h, st, r) {
       var e = document.createElementNS(NS, 'rect');
       e.setAttribute('x', x.toFixed(3)); e.setAttribute('y', y.toFixed(3)); e.setAttribute('width', w.toFixed(3)); e.setAttribute('height', h.toFixed(3));
@@ -271,7 +273,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
       if (f <= 0.02) continue;
       var white = kind !== 'mono' && band === 1;
       // A stroked cell is drawn inset by half its stroke so its outer edge matches the others (equal gaps).
-      var sw = white ? (g.small ? .7 : .3) : 0;
+      var sw = white ? (g.small ? .7 : g.cell * .115) : 0;
       var h = g.cell * f;
       var st = kind === 'mono' ? 'fill:currentColor' : 'fill:' + COLS[band] + (sw ? ';stroke:var(--f-blanc-line);stroke-width:' + sw : '');
       rect(x + sw / 2, y + g.cell - h + sw / 2, g.cell - sw, Math.max(0.01, h - sw), st, Math.min(rx, h / 2));
@@ -297,7 +299,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   box.addEventListener('click', function (e) {
     var b = e.target.closest('button[data-i]'); if (!b) return;
     box.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
-    var N = PATTERN === 'grid97' ? 63 : 81, it = ITEMS[+b.dataset.i], cells = Math.round(N * it.v / 100);
+    var N = PATTERNS[PATTERN][0] * PATTERNS[PATTERN][1], it = ITEMS[+b.dataset.i], cells = Math.round(N * it.v / 100);
     paint(demo, it.v);
     document.getElementById('demo-big').textContent = fmt(it.v) + ' % du PIB';
     document.getElementById('demo-text').textContent = it.t + ' : ' + (cells > N ? 'la grille déborde, ' + cells + ' cases pour ' + N + ' (' + (cells - N) + ' de trop).' : cells + ' case' + (cells > 1 ? 's' : '') + ' sur ' + N + '.');
@@ -311,7 +313,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   }
   pb.addEventListener('click', function (e) {
     var b = e.target.closest('button[data-p]'); if (!b) return;
-    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm', PATTERN); } catch (err) {}
+    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm2', PATTERN); } catch (err) {}
     syncPattern();
   });
   syncPattern();

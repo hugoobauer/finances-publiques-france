@@ -34,8 +34,7 @@
 - 81 cases, trois colonnes par couleur, qui **se remplissent par le bas** (ligne par ligne, de gauche à droite) ; les cases vides restent grises (choix du porteur du projet, 31 octobre 2026).
 - **Niveau du logo : 46 cases sur 81**, soit la dépense publique de 2025 en part du PIB (57,3 %, Insee, `te_2025_pct_gdp`). Le niveau reste à 46 cases tant que la dépense reste entre 56,2 % et 57,4 % du PIB ; à vérifier chaque printemps.
 - Sur fond clair, les cases blanches remplies sont blanches avec un filet gris fin ; les cases vides sont gris clair (`#E6E4DD`). Sur fond sombre : blanc cassé et `#2A2D34`.
-- **Motif du reste (à choisir).** 46 = 5 lignes + 1 case, et la case isolée gêne. Quatre motifs comparés dans le spécimen : lignes entières (arrondi à 45 cases, 55,6 %), reste centré, niveau exact (6e ligne remplie à 16 % de sa hauteur ; recommandé), grille 9 × 7 (4 lignes pleines = 57,1 %).
-- Sous 24 px : grille 3 × 3 au niveau exact.
+- **Motif (à choisir).** Règle du porteur du projet (31 octobre 2026) : la dernière ligne remplie est pleine, moins une ou deux cases ; ni case isolée, ni case à moitié remplie. Sur 9 × 9 ce dessin ferait 64 % : la taille de la grille change pour garder le vrai chiffre. Pistes : 9 × 10 moins 2 (52/90 = 57,8 % ; recommandé, mais 57,3 % est près du seuil de 57,2 %), même grille avec un vide à chaque bout, 9 × 12 moins 1 (62/108 = 57,4 % ; plage stable 56,9 à 57,9 %), 6 × 8 moins 2 (28/48 = 58,3 %). Sous 24 px : 3 × 3, 2 lignes moins 1 case.
 - Variantes : grille pleine (sans chiffre) et version une couleur. La variante « avec sabords » (cases ouvertes) est abandonnée.
 - Usage dans le site : une case = 1/81 du PIB (1,2 point). Même grille pour chaque page (retraites 11 cases, déficit 4 cases, dette : la grille déborde).
 - Le logo porte le tricolore : le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran, §6).
