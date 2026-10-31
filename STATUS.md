@@ -87,6 +87,7 @@ Le détail est dans `fr/LISEZMOI-site.md` §5.1.
 
 ### 4.2 Étapes suivantes, par priorité
 
+0. **Conception du site** : étape 1 (parcours et architecture) rédigée dans `fr/conception/01-parcours-et-architecture.md` ; revue des sites existants en cours ; puis charte graphique et maquettes.
 1. **Prototypes** du calendrier budgétaire (« à partir du 29 novembre, tout est emprunté »), du simulateur et du quiz, construits sur `platform/data/` ; test auprès de quelques lecteurs non spécialistes.
 2. **Relecture par les sources publiques : faite le 30 octobre 2026** (§3, étape 8). Reste à faire :
    - page « Débats » complète (103 points, 8 thèmes, 116 sources), mais trop longue pour une seule page (environ 41 000 mots, 2 h 50 de lecture) : la découper en une page par thème, et vérifier que chaque « Ce que dit le site » reprend bien la formulation corrigée des chapitres ;
