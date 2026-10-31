@@ -212,21 +212,21 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > Les enseignants sont moins payés que la moyenne de l’OCDE [[src:f04]]. Pour la Fondation iFRAP, l’école manque moins de moyens que d’organisation : elle propose notamment une part de salaire variable.
 >
-> **La justice.** La France a moins de juges par habitant que la plupart des pays européens, et des procès civils plus longs [[src:f04]] [[src:f10]]. Ces données de 2022 viennent surtout de l’Union syndicale des magistrats (syndicat de magistrats), qui juge la situation « critique ».
+> **La justice.** En 2022, la France compte 11,3 juges professionnels pour 100 000 habitants [[fig:judges_per_100k_2022]], contre 17,6 en médiane au Conseil de l’Europe [[fig:cepej_median_judges_2022]]. Ce ratio exclut les nombreux juges non professionnels (tribunaux de commerce, prud’hommes). L’Union syndicale des magistrats (syndicat de magistrats) juge la situation « critique » en moyens humains et budgétaires [[src:f10]].
 >
 > La Cour des comptes (juridiction financière) notait en 2021 un budget en nette hausse depuis 2011, sans baisse des délais civils. Elle demandait de mieux répartir les effectifs.
 
 **Visuel et animation**
 - Graphique 1 : nuage de points « dépense par élève / score PISA 2025 », pays de l’OCDE, France en couleur d’accent, droite de tendance (fichier 20, §4.2, GF09 ; données `data/13_pisa2025_country_values.csv`). Les valeurs des autres pays sont dans le fichier de données ; le texte n’en cite aucune.
 - Animation : la ligne « moyenne OCDE » (463) se dessine, puis le point France (458) apparaît sous la ligne.
-- Graphique 2 (justice) : **bloqué avant publication** (règle de publication du plan de site : les contre-preuves des deux camps doivent être chiffrées de la même façon). Prévu : petits multiples « juges pour 100 000 habitants » (fichier 20, §4.2, GF03). `judges_per_100k_2022` (11,3) et `cepej_median_judges_2022` (17,6) sont dans `figures.json` depuis le 31 octobre 2026, lus sur le tableau de bord public de la CEPEJ (CEPEJ-STAT, profil France, données 2022, mise à jour du 25/10/2024) ; le rapport PDF reste inaccessible. Reste à faire : ajouter les pastilles au texte, signaler que le ratio exclut les juges non professionnels (tribunaux de commerce, prud’hommes), puis débloquer le graphique. La médiane européenne des délais civils en première instance n’est toujours pas confirmée (France : 333 jours).
+- Graphique 2 (justice) : **débloqué pour le volet « juges », toujours bloqué pour le volet « délais »** (règle de publication du plan de site : les contre-preuves doivent être chiffrées de la même façon). Volet « juges » : petits multiples « juges professionnels pour 100 000 habitants » (fichier 20, §4.2, GF03), France 11,3 [[fig:judges_per_100k_2022]] contre une médiane de 17,6 [[fig:cepej_median_judges_2022]] ; valeurs lues sur le tableau de bord public de la CEPEJ (CEPEJ-STAT, profil France, données 2022, mise à jour du 25/10/2024), le rapport PDF restant inaccessible ; mention fixe sous le graphique : « hors juges non professionnels (tribunaux de commerce, conseils de prud’hommes) ». Pastilles ajoutées au texte affiché le 31 octobre 2026. Les valeurs des autres pays ne sont pas dans `figures.json` : à ajouter avant d’afficher les petits multiples, sinon montrer seulement France et médiane. Volet « délais » : la médiane européenne des délais civils en première instance n’est toujours pas confirmée (France : 333 jours, sans entrée dans `figures.json`) ; ne rien afficher tant qu’elle manque.
 
 **Pastilles**
 - 458 [[fig:pisa_math_2025]] ; 463 [[fig:oecd_pisa_math_2025]] ; 29e sur 38 [[fig:pisa_math_2025_rank]]
 - Baisse depuis 2015, lien dépense-score [[src:f13]] ; salaire des enseignants [[src:f04]]
 - CAE (Greneta, Landais), *Éducation : comment mieux orienter la dépense publique*, Note du CAE n° 84, mai 2025, https://cae-eco.fr/static/pdf/cae084-education-250514.pdf : dépense par élève 2021 (OCDE, *Regards sur l’éducation* 2024) 9 352 € contre 8 838 € pour l’OCDE ; primaire 11 % sous la moyenne, secondaire 13 % au-dessus ; enseignant du primaire à dix ans d’ancienneté payé 17 % de moins ; pays plus efficaces ; dépenses ciblées efficaces. Chiffres non affichés : **figures à créer** (`spending_per_pupil_2021_eur`, `oecd_spending_per_pupil_2021_eur`, `primary_spending_gap_2021_pct`, `secondary_spending_gap_2021_pct`) et **entrée à ajouter à sources.json**.
 - Fondation iFRAP, *Société Civile* n° 227, octobre 2021, https://www.ifrap.org/education-et-culture/eduquer-mieux-en-reallouant-et-en-baissant-les-depenses (constat de la Cour des comptes de 2013 : l’Éducation nationale « ne souffre pas d’un manque de moyens » ; part variable de rémunération) : **entrée à ajouter à sources.json**.
-- Justice (juges, durée des procès) [[src:f04]] [[src:f10]] ; Union syndicale des magistrats, *Note sur le rapport CEPEJ 2024*, 18 octobre 2024 (données 2022, source syndicale), https://union-syndicale-magistrats.org/wp-content/uploads/2024/10/2024.10.18_note-USM-sur-rapport-CEPEJ-2024.pdf (fichier 10, [S38])
+- Justice : 11,3 juges professionnels pour 100 000 habitants [[fig:judges_per_100k_2022]] ; médiane du Conseil de l’Europe 17,6 [[fig:cepej_median_judges_2022]] (CEPEJ-STAT, données 2022, mise à jour du 25/10/2024 ; ratio hors juges non professionnels des tribunaux de commerce et des conseils de prud’hommes) ; jugement « critique » de l’Union syndicale des magistrats [[src:f10]] (la note de l’USM de 2024 donne 333 jours pour une affaire civile en première instance, contre 637 jours dans l’édition précédente : ne pas écrire que les procès sont « plus longs » sans médiane européenne confirmée) ; Union syndicale des magistrats, *Note sur le rapport CEPEJ 2024*, 18 octobre 2024 (données 2022, source syndicale), https://union-syndicale-magistrats.org/wp-content/uploads/2024/10/2024.10.18_note-USM-sur-rapport-CEPEJ-2024.pdf (fichier 10, [S38])
 - Cour des comptes, note *Améliorer la gestion du service public de la justice*, 21 octobre 2021, lue seulement dans le résumé du Monde du Droit (25 octobre 2021), https://www.lemondedudroit.fr/judiciaire/324-organisation-judiciaire/78080-cour-des-comptes-ameliorer-la-gestion-du-service-public-de-la-justice.html (budget + 22 % de 2011 à 2021, délais civils en hausse) : **ouvrir la note primaire et ajouter l’entrée à sources.json** avant publication ; « nettement » remplace le chiffre en attendant.
 - Budget de la justice par habitant (au-dessus de la médiane européenne, sous la moyenne) : retiré du texte affiché le 30 octobre 2026 (voir notes de relecture), à rétablir avec les chiffres CEPEJ primaires.
 
@@ -349,8 +349,6 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Texte affiché**
 
-> Le même bilan nourrit donc plusieurs lectures.
->
 > Pour les uns, des services manquent de moyens. L’Union syndicale des magistrats (syndicat de magistrats) le dit pour la justice [[src:f10]]. L’OFCE (Sciences Po, sensibilité keynésienne) note que les prestations sortent moins de ménages de la pauvreté qu’avant.
 >
 > Pour d’autres, l’argent est mal utilisé : Fipeco pour la santé, la Fondation iFRAP (libérale) pour l’école et les frais de gestion. Le FMI (organisation internationale) veut réorienter la dépense vers les priorités [[src:f06:imf_aiv2026]].
@@ -364,7 +362,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 - Sous le texte, liens vers les fiches thématiques (fonction publique et résultats ; santé ; éducation).
 
 **Pastilles**
-- Union syndicale des magistrats, justice seulement [[src:f10]] (CEPEJ, cycle 2024, données 2022, transcrite par l’USM, fichier 10, §8.1). Aucun texte publié de gauche sur les moyens de la santé ou de l’école n’a été ouvert par la confrontation du 30 octobre 2026 : ne pas étendre la position de l’USM à ces domaines.
+- Union syndicale des magistrats, justice seulement [[src:f10]] (CEPEJ, cycle 2024, données 2022, transcrite par l’USM, fichier 10, §8.1). Aucun autre texte publié sur le manque de moyens de la santé ou de l’école n’a été ouvert par la confrontation du 30 octobre 2026 : ne pas étendre la position de l’USM à ces domaines.
 - OFCE (Madec, 26 novembre 2025, voir étape 8) : **entrée à ajouter à sources.json**
 - Lecture « mal utilisé » : Fipeco (santé, 30 janvier 2026), Fondation iFRAP (école, octobre 2021 ; frais de gestion, 7 juin 2026), FMI [[src:f06:imf_aiv2026]] (URL aux étapes 5, 6 et 9)
 - Lecture « niveau » : Institut Montaigne, *Budget base zéro*, novembre 2025 (les revues de dépenses ne sont que « le dernier maillon d’une recherche d’économies ») [[src:f10]] ; Cour des comptes, *La situation et les perspectives des finances publiques*, 25 juin 2026, page de présentation https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17 (dépense primaire « à un rythme légèrement supérieur à la croissance économique », « faute d’économies ») [[src:f20:cour26]]
@@ -405,7 +403,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 NOTES POUR L’ÉQUIPE (non affichées), suite
 
 1. Indicateurs absents de figures.json, à ajouter avant publication (valeurs dans les fichiers de recherche cités ; ne pas les saisir dans le texte avant leur intégration et leur validation par validate.py) :
-   - Justice : juges professionnels pour 100 000 habitants et médiane européenne ; durée des procédures civiles en première instance (fichier 04, §6.4 ; fichier 10, §8.1 ; fichier 20, §4.2 GF03). Attention : les fichiers 04/20 et 10 citent des valeurs et médianes CEPEJ légèrement différentes ; arbitrer dans le fichier 00 d’abord.
+   - Justice : ~~juges professionnels pour 100 000 habitants et médiane européenne~~ (`judges_per_100k_2022` et `cepej_median_judges_2022`, CEPEJ-STAT, ajoutés le 31 octobre 2026 et affichés à l’étape 6) ; reste la durée des procédures civiles en première instance et sa médiane européenne, non confirmée (fichier 04, §6.4 ; fichier 10, §8.1 ; fichier 20, §4.2 GF03). Attention : les fichiers 04/20 et 10 citent des valeurs et médianes CEPEJ légèrement différentes ; arbitrer dans le fichier 00 d’abord.
    - Pauvreté : ~~taux avant transferts, réduction par les transferts avec et sans retraites, rang UE~~ (ajoutés le 25 octobre 2026 et affichés aux étapes 8 et 9) ; pauvreté des enfants (fichier 20, §4.3).
    - Santé : mortalité évitable par les soins et rang UE, reste à charge, part des frais de gestion dans la dépense de santé, survie au cancer, besoins non satisfaits pour délai (fichier 12, §0 et §5-6).
    - Éducation : évolution PISA depuis 2015, scores en lecture et en sciences, salaire des enseignants (fichier 13, §0 ; fichier 04, §6.1).
@@ -421,6 +419,13 @@ NOTES POUR L’ÉQUIPE (non affichées), suite
 ---
 
 ## Notes de relecture
+
+**Passe du 31 octobre 2026 : chiffres CEPEJ de la justice et pas d’étiquette de camp sur les idées**
+
+- Étape 6, justice : pastilles [[fig:judges_per_100k_2022]] (11,3 juges professionnels pour 100 000 habitants, 2022) et [[fig:cepej_median_judges_2022]] (médiane du Conseil de l’Europe, 17,6) ajoutées, lues sur CEPEJ-STAT (mise à jour du 25/10/2024). Mise en garde ajoutée : le ratio exclut les nombreux juges non professionnels (tribunaux de commerce, prud’hommes). La phrase « Ces données de 2022 viennent surtout de l’Union syndicale des magistrats » est retirée (les juges viennent désormais de la CEPEJ) ; l’Union syndicale des magistrats reste citée pour la durée des procès civils et le jugement « critique » [[src:f10]]. Lecture de la Cour des comptes (2021) inchangée. Étape 9 inchangée (formulation qualitative compatible avec les nouveaux chiffres).
+- Graphique 2 : volet « juges » débloqué (France et médiane ; valeurs des autres pays à ajouter à `figures.json` avant les petits multiples) ; volet « délais civils » toujours bloqué (médiane européenne non confirmée, aucune entrée dans `figures.json`). Notes de l’étape 6 et de l’étape 11 mises à jour.
+- Décision du 31 octobre 2026 (glossaire §1.13, règle 8) : aucun libellé de camp dans le texte affiché de ce chapitre ; dans les notes, « les contre-preuves des deux camps » → « les contre-preuves » et « aucun texte publié de gauche » → « aucun autre texte publié sur le manque de moyens ».
+- Longueur : « Le même bilan nourrit donc plusieurs lectures. » (étape 10) retiré, redondant avec le titre de l’étape, pour rester sous 2 200 mots. Contrôle : `validate.py --strict` PASS ; 2 198 mots visibles (2 192 avant).
 
 **Confrontation aux sources publiques (2026-10-30)**
 

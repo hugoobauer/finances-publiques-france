@@ -1,0 +1,20 @@
+---
+import Base from '../../layouts/Base.astro';
+import { renderAll } from '../../lib/render.mjs';
+
+export function getStaticPaths() {
+  const { chapters } = renderAll();
+  return chapters.map((c, i) => ({
+    params: { slug: c.slug },
+    props: { chapter: c, prev: chapters[i - 1] ?? null, next: chapters[i + 1] ?? null },
+  }));
+}
+const { chapter, prev, next } = Astro.props;
+---
+<Base title={`${chapter.title} · Finances publiques 2027`}>
+  <article class="prose" set:html={chapter.html} />
+  <nav class="pager" aria-label="Chapitres">
+    {prev ? <a href={`/chapitres/${prev.slug}/`}>← {prev.title}</a> : <span />}
+    {next ? <a href={`/chapitres/${next.slug}/`}>{next.title} →</a> : <span />}
+  </nav>
+</Base>

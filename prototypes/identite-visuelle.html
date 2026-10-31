@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identité visuelle, spécimen</title>
+<meta name="description" content="Spécimen de la charte graphique : couleurs, typographie, filets tricolores, graphiques et composants. Document de travail, 31 octobre 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* ---------- Tokens (see fr/conception/03-identite-visuelle.md, §3) ---------- */
+:root {
+  --paper: #F7F6F2; --surface: #FFFFFF; --ink: #16181D; --muted: #5A5F69; --line: #DEDCD5;
+  --accent: #3A3FB8; --accent-soft: #E8E8F7;
+  --ochre: #8A5A00; --ochre-bar: #9E6C0A; --bar: #767B84; --track: #E9E8E3;
+  --f-bleu: #0055A4; --f-blanc: #FFFFFF; --f-blanc-line: #B9B7AF; --f-rouge: #EF4135;
+  --f-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --f-num: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 72px;
+  --r-s: 4px; --r-m: 8px; --r-pill: 999px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+    --accent: #A5A9FF; --accent-soft: #24264A;
+    --ochre: #E8B04F; --ochre-bar: #D69B33; --bar: #6C717B; --track: #25282E;
+    --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+  --accent: #A5A9FF; --accent-soft: #24264A;
+  --ochre: #E8B04F; --ochre-bar: #D69B33; --bar: #6C717B; --track: #25282E;
+  --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A;
+  color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-sans);
+  font-feature-settings: "ss01" 0; overflow-x: hidden; }
+h1, h2, h3, h4, p, figure, ul, ol { margin: 0; }
+h1, h2 { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.1; text-wrap: balance; }
+h1 { font-size: clamp(36px, 8vw, 60px); }
+h2 { font-size: clamp(28px, 5.5vw, 40px); }
+h3 { font: 600 20px/1.3 var(--f-sans); letter-spacing: -0.005em; }
+h4 { font: 600 17px/1.35 var(--f-sans); }
+p { max-width: 64ch; text-wrap: pretty; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.num { font-family: var(--f-num); font-variant-numeric: tabular-nums; font-weight: 500; letter-spacing: -0.02em; }
+.eyebrow { font: 500 13px/1.4 var(--f-sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: 14px; line-height: 1.5; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+.col { max-width: 720px; }
+section.spec, .hero { scroll-margin-top: 72px; }
+section.spec { padding-block: var(--s7) 0; display: flex; flex-direction: column; gap: var(--s4); }
+.spec-head { display: flex; gap: var(--s3); align-items: baseline; border-top: 1px solid var(--line); padding-top: var(--s4); }
+.spec-head .num { color: var(--muted); font-size: 13px; }
+
+/* ---------- Tricolor hairlines (the only place the flag colors live) ---------- */
+.tri { display: flex; gap: 2px; height: 2px; }
+.tri i { flex: 1; display: block; }
+.tri i:nth-child(1) { background: var(--f-bleu); }
+.tri i:nth-child(2) { background: var(--f-blanc); box-shadow: inset 0 0 0 0.5px var(--f-blanc-line); }
+.tri i:nth-child(3) { background: var(--f-rouge); }
+.tri.short { width: 36px; }
+
+/* Logotype: three ruler ticks of growing height (1, 10, 100) */
+.logo { display: inline-flex; align-items: flex-end; gap: 9px; color: var(--ink); text-decoration: none;
+  font: 600 17px/1 var(--f-sans); letter-spacing: -0.02em; }
+.logo svg { display: block; flex: none; }
+.logo > span { white-space: nowrap; }
+@media (max-width: 480px) { .logo .ph { display: none; } }
+.logo .t1 { fill: var(--f-bleu); } .logo .t3 { fill: var(--f-rouge); }
+.logo .t2 { fill: var(--f-blanc); stroke: var(--f-blanc-line); stroke-width: .75; }
+.logo .ph { font: 500 10px/1 var(--f-num); color: var(--muted); border: 1px dashed var(--line); border-radius: var(--r-s); padding: 2px 4px; margin-left: 2px; align-self: center; }
+
+/* ---------- Header ---------- */
+header.site { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
+header.site .bar { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); min-height: 56px; }
+nav.main { display: flex; gap: var(--s5); }
+nav.main a { position: relative; color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; padding-block: 18px; }
+nav.main a:hover { color: var(--ink); }
+nav.main a[aria-current="page"] { color: var(--ink); }
+nav.main a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 10px; height: 2px;
+  background: linear-gradient(90deg, var(--f-bleu) 0 30%, transparent 30% calc(30% + 2px), var(--f-blanc) calc(30% + 2px) calc(70% - 2px), transparent calc(70% - 2px) 70%, var(--f-rouge) 70%);
+  box-shadow: none; }
+@media (max-width: 720px) { nav.main { display: none; } }
+.toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font: 500 13px/1 var(--f-sans); color: var(--muted);
+  border: 1px solid var(--line); border-radius: var(--r-pill); padding: 8px 12px; min-height: 36px; box-sizing: border-box; }
+.toggle:hover { color: var(--ink); border-color: var(--muted); }
+.toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toggle svg { width: 14px; height: 14px; }
+.proto { font-size: 13px; color: var(--muted); padding-block: 10px; border-bottom: 1px solid var(--line); }
+.proto b { color: var(--ink); font-weight: 600; }
+
+/* ---------- Hero ---------- */
+.hero { padding-block: var(--s7) var(--s5); display: flex; flex-direction: column; gap: var(--s4); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); }
+.meta span + span::before { content: "·"; margin-right: 14px; color: var(--line); }
+.lede { font-size: 19px; line-height: 1.55; color: var(--muted); }
+.figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s4); margin-top: var(--s2); }
+.figures > div { border-top: 1px solid var(--ink); padding-top: var(--s2); min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.figures .num { font-size: clamp(24px, 5vw, 32px); }
+.figures span:last-child { font-size: 14px; color: var(--muted); line-height: 1.4; }
+@media (max-width: 560px) { .figures { grid-template-columns: 1fr; gap: var(--s3); }
+  .figures > div { flex-direction: row; align-items: baseline; justify-content: space-between; gap: var(--s3); }
+  .figures span:last-child { text-align: right; } }
+
+/* ---------- Tokens ---------- */
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--s3); }
+.sw { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); overflow: hidden; min-width: 0; }
+.sw .chip { height: 56px; border-bottom: 1px solid var(--line); }
+.sw .lab { padding: 8px 10px; display: flex; flex-direction: column; gap: 2px; font-size: 13px; line-height: 1.35; }
+.sw .lab b { font-weight: 600; font-size: 14px; }
+.sw .lab .num { font-size: 12px; color: var(--muted); }
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--line); border-radius: var(--r-m); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: baseline; }
+tr:last-child td { border-bottom: 0; }
+th { font-weight: 600; color: var(--muted); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
+td.num { white-space: nowrap; }
+
+/* Type scale */
+.scale { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); }
+.scale > div { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: var(--s3); padding: 14px 16px; border-bottom: 1px solid var(--line); align-items: baseline; }
+.scale > div:last-child { border-bottom: 0; }
+.scale .k { font: 500 12px/1.4 var(--f-num); color: var(--muted); }
+.scale .v { min-width: 0; overflow-wrap: anywhere; }
+
+/* Spacing */
+.spaces { display: flex; flex-wrap: wrap; gap: var(--s4); align-items: flex-end; }
+.spaces div { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; font: 500 12px var(--f-num); color: var(--muted); }
+.spaces i { display: block; background: var(--ink); height: 8px; border-radius: 1px; }
+.radii { display: flex; gap: var(--s4); flex-wrap: wrap; }
+.radii div { width: 88px; height: 56px; border: 1px solid var(--ink); display: grid; place-items: center; font: 500 12px var(--f-num); color: var(--muted); }
+
+/* Tricolor demo */
+.tri-demo { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--s3); }
+.tri-demo > div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); min-width: 0; }
+.tri-demo .stage { min-height: 56px; display: flex; align-items: center; }
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--s3); }
+.rules ul { padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+.yes h4::before { content: "Oui "; font-family: var(--f-num); color: var(--muted); font-weight: 500; }
+.no h4::before { content: "Jamais "; font-family: var(--f-num); color: var(--muted); font-weight: 500; }
+
+/* ---------- Charts ---------- */
+figure.chart { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); min-width: 0; }
+figure.chart .title { font: 600 17px/1.35 var(--f-sans); }
+figure.chart .sub { font-size: 14px; color: var(--muted); margin-top: 2px; }
+figure.chart svg { display: block; max-width: 100%; height: auto; overflow: visible; }
+[data-chart] { min-width: 0; width: 100%; }
+figure.chart svg text { font-family: var(--f-sans); fill: var(--ink); }
+figure.chart svg text.n { font-family: var(--f-num); font-weight: 500; }
+figure.chart svg text.m { fill: var(--muted); }
+figcaption { display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.5; border-top: 1px solid var(--line); padding-top: var(--s3); }
+figcaption b { font-weight: 600; }
+figcaption .src { color: var(--muted); }
+.charts { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s4); }
+@media (min-width: 900px) { .charts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .charts .wide { grid-column: 1 / -1; } }
+
+/* ---------- Components ---------- */
+.comp-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s4); }
+@media (min-width: 900px) { .comp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); min-width: 0; text-decoration: none; color: inherit; transition: border-color .15s; }
+.card:hover { border-color: var(--ink); }
+.card .k { font: 500 12px/1 var(--f-num); color: var(--muted); letter-spacing: .02em; }
+.card q { font: 400 24px/1.2 var(--f-display); quotes: "«\00a0" "\00a0»"; }
+.card .ans { font-size: 15px; }
+.mini { display: flex; flex-direction: column; gap: 4px; }
+.mini .trk { position: relative; height: 6px; background: var(--track); border-radius: 1px; overflow: hidden; }
+.mini .trk b { position: absolute; top: 0; bottom: 0; background: var(--ink); }
+.mini .trk b.hi { opacity: .35; }
+.mini .lg { display: flex; justify-content: space-between; gap: var(--s2); font-size: 13px; color: var(--muted); }
+.card .go { font-size: 15px; font-weight: 600; color: var(--accent); }
+.order-note { font-size: 13px; color: var(--muted); }
+
+.answer { display: flex; flex-direction: column; gap: var(--s3); }
+.ablock { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s2); }
+.ablock .k { font: 500 12px/1 var(--f-num); color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.ablock .k::before { content: attr(data-n); display: inline-grid; place-items: center; width: 20px; height: 20px; border: 1px solid var(--line); border-radius: 50%; font-size: 11px; }
+.ablock.lead { border-left: 2px solid var(--ink); }
+.ablock .big { font-size: clamp(30px, 7vw, 44px); line-height: 1.05; }
+
+.fchip { all: unset; cursor: pointer; font-family: var(--f-num); font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: -0.02em;
+  border-bottom: 1px dotted var(--muted); white-space: nowrap; }
+.fchip:hover, .fchip[aria-expanded="true"] { border-bottom-style: solid; border-bottom-color: var(--ink); }
+.fchip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.pop { margin-top: var(--s2); background: var(--surface); border: 1px solid var(--ink); border-radius: var(--r-m); padding: var(--s3) var(--s4); font-size: 14px; display: flex; flex-direction: column; gap: 6px; max-width: 420px; }
+.pop[hidden] { display: none; }
+.pop dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; margin: 0; }
+.pop dt { font-family: var(--f-num); font-weight: 500; white-space: nowrap; } .pop dd { margin: 0; color: var(--muted); }
+.schip { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; line-height: 1; color: var(--muted); text-decoration: none;
+  border: 1px solid var(--line); border-radius: var(--r-pill); padding: 6px 10px; white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+.schip:hover { color: var(--ink); border-color: var(--muted); }
+.schip .d { font-family: var(--f-num); font-size: 11px; }
+.tagrow { display: flex; flex-wrap: wrap; gap: var(--s2); }
+
+.phone { border: 1px solid var(--line); border-radius: 20px; background: var(--paper); height: 300px; overflow: auto; position: relative; max-width: 390px; }
+.phone .inner { padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); font-size: 15px; }
+.phone .lever { display: flex; justify-content: space-between; gap: var(--s3); align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: 12px; min-height: 52px; }
+.phone .lever .num { font-size: 14px; color: var(--muted); }
+.counter { position: sticky; bottom: 0; background: var(--ink); color: var(--paper); padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; }
+.counter .row { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s3); }
+.counter .num { font-size: 22px; }
+.counter .lbl { font-size: 13px; opacity: .8; }
+.counter .trk { height: 4px; background: color-mix(in srgb, var(--paper) 25%, transparent); border-radius: 1px; overflow: hidden; }
+.counter .trk b { display: block; height: 100%; width: 0%; background: var(--paper); }
+
+.btn { all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 0 20px;
+  border-radius: var(--r-m); background: var(--ink); color: var(--paper); font: 600 16px/1 var(--f-sans); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.avoid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--s3); }
+.avoid div { border-top: 1px solid var(--line); padding-top: var(--s3); font-size: 15px; }
+.avoid b { display: block; font-weight: 600; margin-bottom: 2px; }
+
+footer.site { margin-top: var(--s8); border-top: 1px solid var(--line); padding-block: var(--s5) var(--s7); font-size: 14px; color: var(--muted); }
+footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s3); align-items: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal b { transition: width .6s cubic-bezier(.2,.7,.2,1); }
+  .counter .trk b { transition: width .3s ease-out; }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="ordres de grandeur, nom provisoire">
+      <svg width="13" height="18" viewBox="0 0 13 18" aria-hidden="true">
+        <rect class="t1" x="0" y="13" width="2" height="5"/>
+        <rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/>
+        <rect class="t3" x="10" y="0" width="2" height="18"/>
+      </svg>
+      <span>ordres de grandeur</span><span class="ph">nom provisoire</span>
+    </a>
+    <nav class="main" aria-label="Navigation principale">
+      <a href="#sujets" aria-current="page">Sujets</a>
+      <a href="#composants">Réponses</a>
+      <a href="#graphiques">Simulateur</a>
+      <a href="#a-eviter">Méthode</a>
+    </nav>
+    <button class="toggle" id="theme" type="button" aria-label="Changer de thème">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
+      <span id="theme-label">Thème</span>
+    </button>
+  </div>
+  <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+
+<div class="wrap proto" id="top"><b>Spécimen de charte, document de travail (31 octobre 2026).</b> Le nom « ordres de grandeur » est provisoire. Chiffres tirés de <code>platform/data/figures.json</code>.</div>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero col" id="sujets">
+    <div class="meta"><span>Sujet · Retraites</span><span>Mis à jour le 21 octobre 2026</span><span>Lecture : 6 min</span></div>
+    <h1>Les retraites, un euro de dépense publique sur quatre.</h1>
+    <p class="lede">La France consacre 422,2 Md€ par an aux retraites. Avant de juger une promesse, voici sa taille, et celle des solutions proposées.</p>
+    <div class="figures">
+      <div><span class="num">422,2 Md€</span><span>retraites en 2025</span></div>
+      <div><span class="num">24,3 %</span><span>de la dépense publique</span></div>
+      <div><span class="num">14,1 %</span><span>du PIB</span></div>
+    </div>
+    <p class="small muted">Source : Conseil d'orientation des retraites (COR), rapport annuel, juin 2026.</p>
+  </section>
+
+  <!-- 1. COLORS -->
+  <section class="spec" id="couleurs">
+    <div class="spec-head"><span class="num">01</span><h2>Couleurs</h2></div>
+    <p class="col">Papier chaud, encre presque noire, une seule couleur d'interaction (indigo, pour les liens et le focus). Les graphiques n'utilisent que l'encre, le gris et l'ocre. Le bleu et le rouge du drapeau ne servent qu'aux filets.</p>
+    <div class="swatches" id="swatches"></div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Paire</th><th>Clair</th><th>Sombre</th><th>Seuil</th></tr></thead>
+        <tbody>
+          <tr><td>Encre sur papier</td><td class="num">16,42</td><td class="num">15,81</td><td class="num">4,5</td></tr>
+          <tr><td>Texte secondaire sur surface</td><td class="num">6,41</td><td class="num">7,29</td><td class="num">4,5</td></tr>
+          <tr><td>Indigo (liens) sur surface</td><td class="num">8,13</td><td class="num">8,14</td><td class="num">4,5</td></tr>
+          <tr><td>Ocre (texte) sur surface</td><td class="num">5,93</td><td class="num">9,01</td><td class="num">4,5</td></tr>
+          <tr><td>Barre grise sur fond de piste</td><td class="num">3,47</td><td class="num">3,01</td><td class="num">3</td></tr>
+          <tr><td>Barre ocre sur fond de piste</td><td class="num">3,72</td><td class="num">6,05</td><td class="num">3</td></tr>
+          <tr><td>Filet bleu sur papier</td><td class="num">6,85</td><td class="num">5,84</td><td class="num">3</td></tr>
+          <tr><td>Filet rouge sur papier</td><td class="num">3,55</td><td class="num">5,91</td><td class="num">3</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted">Ratios de contraste WCAG 2.1, calculés par script (voir la note de charte, §3).</p>
+  </section>
+
+  <!-- 2. TYPE -->
+  <section class="spec" id="typo">
+    <div class="spec-head"><span class="num">02</span><h2>Typographie</h2></div>
+    <p class="col">Instrument Serif pour les grands titres seulement ; Instrument Sans pour tout le reste ; Geist Mono, à chasse fixe, pour chaque chiffre affiché.</p>
+    <div class="scale">
+      <div><span class="k">Titre 1<br>60/36 px</span><span class="v" style="font:400 clamp(36px,8vw,60px)/1.05 var(--f-display)">Un fait, pas un verdict.</span></div>
+      <div><span class="k">Titre 2<br>40/28 px</span><span class="v" style="font:400 clamp(28px,5.5vw,40px)/1.1 var(--f-display)">Et ailleurs ?</span></div>
+      <div><span class="k">Titre 3<br>20 px · 600</span><span class="v" style="font:600 20px/1.3 var(--f-sans)">Ce qui est vrai</span></div>
+      <div><span class="k">Texte<br>17 px · 1,6</span><span class="v">Le déficit est la différence entre ce que les administrations publiques dépensent et ce qu'elles perçoivent.</span></div>
+      <div><span class="k">Petit<br>14 px</span><span class="v small">Source : Eurostat, notification d'octobre 2026.</span></div>
+      <div><span class="k">Chiffre<br>Geist Mono</span><span class="v num" style="font-size:32px">151,6 Md€ · 5,1 %</span></div>
+    </div>
+  </section>
+
+  <!-- 3. SPACING -->
+  <section class="spec" id="espace">
+    <div class="spec-head"><span class="num">03</span><h2>Espacements et rayons</h2></div>
+    <div class="spaces">
+      <div><i style="width:4px"></i>4</div><div><i style="width:8px"></i>8</div><div><i style="width:12px"></i>12</div>
+      <div><i style="width:16px"></i>16</div><div><i style="width:24px"></i>24</div><div><i style="width:32px"></i>32</div>
+      <div><i style="width:48px"></i>48</div><div><i style="width:72px"></i>72</div>
+    </div>
+    <div class="radii">
+      <div style="border-radius:4px">4 px</div><div style="border-radius:8px">8 px</div><div style="border-radius:999px">pilule</div>
+    </div>
+  </section>
+
+  <!-- 4. TRICOLOR -->
+  <section class="spec" id="tricolore">
+    <div class="spec-head"><span class="num">04</span><h2>Le tricolore en filets</h2></div>
+    <p class="col">Trois usages, pas plus, et jamais deux sur la même zone d'écran hors de l'en-tête. Sur fond clair, le segment blanc est cerclé d'un filet gris pour rester visible.</p>
+    <div class="tri-demo">
+      <div><span class="eyebrow">Logotype</span><div class="stage"><span class="logo" style="font-size:22px">
+        <svg width="17" height="24" viewBox="0 0 13 18" aria-hidden="true"><rect class="t1" x="0" y="13" width="2" height="5"/><rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/><rect class="t3" x="10" y="0" width="2" height="18"/></svg>
+        <span>ordres de grandeur</span></span></div>
+        <p class="small muted">Trois graduations de règle : 1, 10, 100. Les ordres de grandeur, en bleu, blanc, rouge.</p></div>
+      <div><span class="eyebrow">Filet d'en-tête, 2 px</span><div class="stage" style="flex-direction:column;align-items:stretch;justify-content:center;gap:10px"><div class="tri"><i></i><i></i><i></i></div></div>
+        <p class="small muted">Sous l'en-tête, sur toute la largeur. Segments séparés par 2 px de vide.</p></div>
+      <div><span class="eyebrow">Rubrique active</span><div class="stage"><nav class="main" style="display:flex" aria-hidden="true"><a aria-current="page" tabindex="-1">Sujets</a><a tabindex="-1">Réponses</a></nav></div>
+        <p class="small muted">Soulignement tricolore de la rubrique en cours, dans la navigation seulement.</p></div>
+    </div>
+    <div class="rules">
+      <div class="yes"><h4>là où il signe</h4><ul><li>Le logotype et l'icône du site.</li><li>Le filet de 2 px sous l'en-tête.</li><li>La rubrique active de la navigation.</li><li>L'image de partage (un filet, en bas).</li></ul></div>
+      <div class="no"><h4>là où il porterait un sens</h4><ul><li>Dans un graphique, une barre, une légende.</li><li>Sur un bouton, une carte, un verdict.</li><li>Pour opposer deux idées ou deux camps.</li><li>En aplat, en drapeau dessiné, avec une Marianne.</li></ul></div>
+    </div>
+  </section>
+
+  <!-- 5. CHARTS -->
+  <section class="spec" id="graphiques">
+    <div class="spec-head"><span class="num">05</span><h2>Graphiques</h2></div>
+    <p class="col">Encre pour la France ou la mesure, gris pour les points de comparaison, ocre hachuré pour l'emprunt et le déficit. Étiquettes directes, cinq séries au plus, une phrase « Lecture » et une ligne « Source » sous chaque graphique.</p>
+    <div class="charts">
+      <figure class="chart">
+        <div><div class="title">Dépense publique, en % du PIB, 2025</div><div class="sub">France, premier pays de l'UE et zone euro</div></div>
+        <div data-chart="compare"></div>
+        <figcaption>
+          <span><b>Lecture :</b> en 2025, la dépense publique représente 57,3 % du PIB en France, contre 49,7 % dans la zone euro, soit 7,6 points d'écart. La France est 2e de l'UE.</span>
+          <span class="src">Source : Eurostat, gov_10a_main (21 octobre 2026) ; Finlande : 2024-2025 ; zone euro à 21 pays, calcul du site.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="chart">
+        <div><div class="title">Taxer les plus aisés, face au déficit</div><div class="sub">Recette annuelle possible, en Md€, après réactions des contribuables</div></div>
+        <div data-chart="range"></div>
+        <figcaption>
+          <span><b>Lecture :</b> un ensemble plausible d'impôts sur les plus aisés rapporterait 10 à 25 Md€ par an, soit 7 à 16 % du déficit de 2025 (151,6 Md€).</span>
+          <span class="src">Source : synthèse du site (dossier 07, §5) ; déficit : Eurostat, notification d'octobre 2026.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="chart wide">
+        <div><div class="title">Le calendrier de la dépense publique</div><div class="sub">Si toute la dépense d'une année était versée du 1er janvier au 31 décembre</div></div>
+        <div data-chart="calendar"></div>
+        <figcaption>
+          <span><b>Lecture :</b> la vieillesse (surtout les retraites) représente 23,4 % de la dépense, soit environ 85 jours de l'année. À partir du 29 novembre, la dépense est financée par l'emprunt.</span>
+          <span class="src">Source : Eurostat, dépenses par fonction (COFOG), 2024 ; déficit 2025 : notification d'octobre 2026 ; calcul du site.</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6. COMPONENTS -->
+  <section class="spec" id="composants">
+    <div class="spec-head"><span class="num">06</span><h2>Composants</h2></div>
+    <div class="comp-grid">
+      <div style="display:flex;flex-direction:column;gap:var(--s3);min-width:0">
+        <span class="eyebrow">Carte « Oui, mais… »</span>
+        <a class="card" href="#reponse">
+          <span class="k">Oui, mais… · 10 à 25 Md€</span>
+          <q>Faisons payer les plus riches.</q>
+          <p class="ans">Cela rapporterait de l'argent, mais une part limitée du déficit.</p>
+          <div class="mini reveal" aria-label="De 7 à 16 % du déficit de 2025">
+            <div class="trk"><b style="left:0;width:0" data-w="6.6"></b><b class="hi" style="left:0;width:0" data-w="16.5"></b></div>
+            <div class="lg"><span>7 à 16 % du déficit</span><span class="num">151,6 Md€</span></div>
+          </div>
+          <span class="go">Lire la réponse →</span>
+        </a>
+        <p class="order-note">Cartes classées par montant, du plus grand au plus petit. Aucune étiquette de camp.</p>
+
+        <span class="eyebrow" style="margin-top:var(--s3)">Pastille chiffre et pastille source</span>
+        <p>Le déficit public atteint <button class="fchip" type="button" aria-expanded="false" aria-controls="pop1">151,6 Md€</button> en 2025.</p>
+        <div class="pop" id="pop1" hidden>
+          <dl>
+            <dt>5,1 %</dt><dd>du PIB</dd>
+            <dt>32 jours</dt><dd>de dépense publique</dd>
+            <dt>8,8 %</dt><dd>de la dépense, financée par l'emprunt</dd>
+          </dl>
+          <span class="muted small">Eurostat, notification d'octobre 2026. Chiffre constaté.</span>
+        </div>
+        <div class="tagrow">
+          <a class="schip" href="https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table">Eurostat <span class="d">21.10.2026</span> ↗</a>
+          <a class="schip" href="https://www.cor-retraites.fr/">COR <span class="d">06.2026</span> ↗</a>
+          <span class="schip">Terra Nova (centre gauche)</span>
+          <span class="schip">Fondation iFRAP (libérale)</span>
+        </div>
+      </div>
+
+      <div class="answer" id="reponse">
+        <span class="eyebrow">Blocs d'une page de réponse</span>
+        <div class="ablock lead"><span class="k" data-n="1">Ce qui est vrai</span><p>Une taxe sur les très hauts patrimoines et les revenus du capital rapporterait de l'argent, chaque année.</p></div>
+        <div class="ablock"><span class="k" data-n="2">Combien</span><span class="num big">10 à 25 Md€</span><p class="small muted">par an, soit 7 à 16 % du déficit de 2025</p></div>
+        <div class="ablock"><span class="k" data-n="3">Les limites</span><p>Le rendement dépend des départs et de l'optimisation. Les estimations publiées divergent fortement.</p></div>
+        <div style="display:flex;gap:var(--s3);flex-wrap:wrap"><button class="btn" type="button">Ajouter à mon budget</button><button class="btn ghost" type="button">Et ailleurs ?</button></div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:var(--s3);min-width:0">
+        <span class="eyebrow">Compteur fixe du simulateur (faites défiler)</span>
+        <div class="phone" tabindex="0" aria-label="Exemple de simulateur sur téléphone">
+          <div class="inner">
+            <p class="small muted">Base : déficit constaté 2025. Les hypothèses s'affichent avant le premier choix.</p>
+            <label class="lever"><span>Taxer les plus aisés (milieu de fourchette)</span><input type="checkbox" data-v="17.5"></label>
+            <label class="lever"><span>Nouveau plan antifraude (milieu)</span><input type="checkbox" data-v="2"></label>
+            <label class="lever"><span>Année blanche (milieu)</span><input type="checkbox" data-v="5.05"></label>
+            <div class="lever"><span class="muted">Autres leviers…</span><span class="num">34 au total</span></div>
+            <div class="lever"><span class="muted">…</span></div>
+            <div class="lever"><span class="muted">…</span></div>
+          </div>
+          <div class="counter" aria-live="polite">
+            <div class="row"><span class="lbl">Il reste à trouver</span><span class="num" id="left">151,6 Md€</span></div>
+            <div class="trk"><b id="done"></b></div>
+          </div>
+        </div>
+        <p class="small muted">Montants bruts, sans effet sur la croissance ; exemple de mise en forme, pas de calcul du simulateur.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. AVOID -->
+  <section class="spec" id="a-eviter">
+    <div class="spec-head"><span class="num">07</span><h2>À éviter</h2></div>
+    <div class="avoid">
+      <div><b>Un air officiel</b>Marianne, bloc « République française », police Marianne, grille et composants du système de design de l'État.</div>
+      <div><b>Bleu contre rouge</b>Deux camps, deux couleurs : jamais. Ni vert pour « bien », ni rouge pour « mal ».</div>
+      <div><b>Texte justifié</b>Il troue les lignes sur 390 px. Texte aligné à gauche, partout.</div>
+      <div><b>Boutons flottants</b>Rien ne recouvre le texte, sauf le compteur du simulateur, prévu pour.</div>
+      <div><b>Animations décoratives</b>Une barre peut se remplir une fois. Rien ne tourne, rien ne clignote.</div>
+      <div><b>Légendes à décoder</b>Étiqueter directement. Au-delà de cinq séries, couper le graphique.</div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap row">
+    <span class="logo" style="font-size:15px"><svg width="11" height="15" viewBox="0 0 13 18" aria-hidden="true"><rect class="t1" x="0" y="13" width="2" height="5"/><rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/><rect class="t3" x="10" y="0" width="2" height="18"/></svg><span>ordres de grandeur</span></span>
+    <span>Textes et données sous licence CC BY 4.0 · Méthode · Financement · Corrections</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // ---------- Theme toggle ----------
+  var root = document.documentElement, btn = document.getElementById('theme'), lab = document.getElementById('theme-label');
+  function sysDark() { return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches; }
+  function current() { var t = root.getAttribute('data-theme'); return t || (sysDark() ? 'dark' : 'light'); }
+  function label() { lab.textContent = current() === 'dark' ? 'Sombre' : 'Clair'; }
+  try { var saved = localStorage.getItem('theme'); if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved); } catch (e) {}
+  label();
+  btn.addEventListener('click', function () {
+    var next = current() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next); label(); drawAll(); swatches();
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+  if (window.matchMedia) matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { label(); drawAll(); swatches(); });
+
+  // ---------- Formatting (French) ----------
+  var NB = ' ';
+  function fr(x, d) { if (d === undefined) d = 1; return x.toLocaleString('fr-FR', { minimumFractionDigits: d, maximumFractionDigits: d }); }
+
+  // ---------- Swatches: read the live tokens ----------
+  var TOK = [['--paper','Papier'],['--surface','Surface'],['--ink','Encre'],['--muted','Texte secondaire'],['--line','Filet'],
+             ['--accent','Indigo (interaction)'],['--bar','Gris comparaison'],['--ochre-bar','Ocre emprunt'],['--track','Piste'],
+             ['--f-bleu','Filet bleu'],['--f-blanc','Filet blanc'],['--f-rouge','Filet rouge']];
+  function swatches() {
+    var cs = getComputedStyle(root), box = document.getElementById('swatches');
+    box.innerHTML = TOK.map(function (t) {
+      var v = cs.getPropertyValue(t[0]).trim();
+      return '<div class="sw"><div class="chip" style="background:var(' + t[0] + ')"></div><div class="lab"><b>' + t[1] + '</b><span class="num">' + t[0] + ' ' + v + '</span></div></div>';
+    }).join('');
+  }
+  swatches();
+
+  // ---------- Charts: SVG drawn at the real pixel width ----------
+  // Figures from platform/data/figures.json and yardsticks.json (October 2026):
+  // te_2025_pct_gdp 57.3; finland_te_2025_pct_gdp 57.5; ea21_te_2025_pct_gdp 49.7; spending_gap_ea21_2025_pp 7.6;
+  // tax_rich_package_eur_bn 10-25; deficit_2025_eur_bn 151.6;
+  // cofog_old_age_2024_pct_te 23.4 / calendar_days_old_age 85.41; borrowing_starts_day 332.7 (29 November).
+  var SVGNS = 'http://www.w3.org/2000/svg';
+  function el(name, attrs, text) {
+    var e = document.createElementNS(SVGNS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+  function svg(w, h, label) { return el('svg', { viewBox: '0 0 ' + w + ' ' + h, width: w, height: h, role: 'img', 'aria-label': label }); }
+  function hatch(s, id) {
+    var defs = el('defs'), p = el('pattern', { id: id, width: 6, height: 6, patternUnits: 'userSpaceOnUse', patternTransform: 'rotate(45)' });
+    p.appendChild(el('rect', { width: 6, height: 6, fill: 'var(--track)' }));
+    p.appendChild(el('rect', { width: 3, height: 6, fill: 'var(--ochre-bar)' }));
+    defs.appendChild(p); s.appendChild(defs);
+  }
+
+  function compare(box) {
+    var W = box.clientWidth, rows = [
+      { l: 'Finlande (1re de l’UE)', v: 57.5, c: 'var(--bar)' },
+      { l: 'France', v: 57.3, c: 'var(--ink)', b: true },
+      { l: 'Zone euro (21 pays)', v: 49.7, c: 'var(--bar)' }];
+    var rowH = 52, top = 4, H = top + rows.length * rowH + 26, valW = 92, max = 60;
+    var x = function (v) { return (W - valW) * v / max; };
+    var s = svg(W, H, 'Dépense publique en % du PIB : Finlande 57,5, France 57,3, zone euro 49,7');
+    [0, 20, 40, 60].forEach(function (g) {
+      s.appendChild(el('line', { x1: x(g), x2: x(g), y1: top, y2: H - 22, stroke: 'var(--line)', 'stroke-width': 1 }));
+      s.appendChild(el('text', { x: x(g), y: H - 6, 'font-size': 12, class: 'n m', 'text-anchor': g === 0 ? 'start' : 'middle' }, g + (g === 60 ? NB + '%' : '')));
+    });
+    rows.forEach(function (r, i) {
+      var y = top + i * rowH;
+      s.appendChild(el('text', { x: 0, y: y + 16, 'font-size': 14, 'font-weight': r.b ? 600 : 400 }, r.l));
+      s.appendChild(el('rect', { x: 0, y: y + 24, width: x(r.v), height: 14, fill: r.c, rx: 1 }));
+      s.appendChild(el('text', { x: x(r.v) + 8, y: y + 36, 'font-size': 14, class: 'n', 'font-weight': r.b ? 600 : 500 }, fr(r.v) + NB + '%'));
+    });
+    // gap bracket between France and euro area
+    var yA = top + rowH + 31, yB = top + 2 * rowH + 31, xa = x(49.7), xb = x(57.3);
+    var gx = xa + (xb - xa) / 2;
+    s.appendChild(el('path', { d: 'M' + xa + ' ' + (yB - 10) + ' V' + (yB - 16) + ' H' + xb + ' V' + (yA + 8), fill: 'none', stroke: 'var(--muted)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    s.appendChild(el('text', { x: xb + 6, y: yB - 19, 'font-size': 12, class: 'n m', 'text-anchor': 'start' }, 'écart 7,6 pts'));
+    return s;
+  }
+
+  function range(box) {
+    var W = box.clientWidth, H = 118, D = 151.6, lo = 10, hi = 25, pad = 0;
+    var x = function (v) { return (W - 1) * v / D; };
+    var s = svg(W, H, 'Fourchette de 10 à 25 milliards d’euros, face à un déficit de 151,6 milliards');
+    var y = 46, h = 22;
+    s.appendChild(el('rect', { x: 0.5, y: y, width: W - 1, height: h, fill: 'var(--track)', stroke: 'var(--muted)', 'stroke-width': 1, rx: 1 }));
+    s.appendChild(el('rect', { x: 0.5, y: y, width: x(lo), height: h, fill: 'var(--ink)' }));
+    s.appendChild(el('rect', { x: x(lo), y: y, width: x(hi) - x(lo), height: h, fill: 'var(--ink)', opacity: .35 }));
+    s.appendChild(el('line', { x1: x(hi), x2: x(hi), y1: y - 6, y2: y + h, stroke: 'var(--ink)', 'stroke-width': 1.5 }));
+    s.appendChild(el('line', { x1: x(lo), x2: x(lo), y1: y - 6, y2: y + h, stroke: 'var(--ink)', 'stroke-width': 1.5 }));
+    s.appendChild(el('text', { x: x(lo), y: y - 12, 'font-size': 13, class: 'n', 'text-anchor': 'middle' }, '10'));
+    s.appendChild(el('text', { x: x(hi) + 2, y: y - 12, 'font-size': 13, class: 'n', 'text-anchor': 'start' }, '25' + NB + 'Md€'));
+    s.appendChild(el('text', { x: W - 1, y: y - 12, 'font-size': 13, class: 'n', 'text-anchor': 'end' }, '151,6'));
+    s.appendChild(el('text', { x: W - 1, y: y + h + 20, 'font-size': 13, class: 'm', 'text-anchor': 'end' }, 'Déficit 2025'));
+    s.appendChild(el('text', { x: 0, y: y + h + 20, 'font-size': 13, 'font-weight': 600 }, 'Taxer les plus aisés'));
+    s.appendChild(el('text', { x: 0, y: y + h + 38, 'font-size': 13, class: 'm' }, '7 à 16' + NB + '% du déficit'));
+    return s;
+  }
+
+  function calendar(box) {
+    var W = box.clientWidth, narrow = W < 520, H = narrow ? 128 : 112;
+    var x = function (d) { return W * d / 365; };
+    var s = svg(W, H, 'Calendrier : vieillesse, 85 jours ; emprunt à partir du 29 novembre');
+    hatch(s, 'hatch-cal');
+    var y = 34, h = 26, old = 85.41, borrow = 332.7;
+    s.appendChild(el('rect', { x: 0, y: y, width: W, height: h, fill: 'var(--track)' }));
+    s.appendChild(el('rect', { x: 0, y: y, width: x(old), height: h, fill: 'var(--ink)' }));
+    s.appendChild(el('rect', { x: x(borrow), y: y, width: W - x(borrow), height: h, fill: 'url(#hatch-cal)' }));
+    s.appendChild(el('line', { x1: x(borrow), x2: x(borrow), y1: y - 8, y2: y + h, stroke: 'var(--ochre-bar)', 'stroke-width': 1.5 }));
+    // month ticks
+    var months = ['J','F','M','A','M','J','J','A','S','O','N','D'], start = [0,31,59,90,120,151,181,212,243,273,304,334];
+    start.forEach(function (d, i) {
+      if (i) s.appendChild(el('line', { x1: x(d), x2: x(d), y1: y + h, y2: y + h + 5, stroke: 'var(--muted)', 'stroke-width': 1 }));
+      s.appendChild(el('text', { x: x(d + 15), y: y + h + 18, 'font-size': 11, class: 'n m', 'text-anchor': 'middle' }, months[i]));
+    });
+    s.appendChild(el('text', { x: 0, y: y - 10, 'font-size': 13, 'font-weight': 600 }, 'Vieillesse' + NB + ': ' + '85 jours'));
+    s.appendChild(el('text', { x: W, y: y - 10, 'font-size': 13, 'font-weight': 600, 'text-anchor': 'end', fill: 'var(--ochre)' }, 'Emprunt dès le 29' + NB + 'nov.'));
+    s.appendChild(el('text', { x: 0, y: H - 6, 'font-size': 12, class: 'm' }, narrow ? 'Fond\u00a0: le reste de la dépense' : 'Fond\u00a0: le reste de la dépense (santé, école, défense, intérêts…)'));
+    return s;
+  }
+
+  var CH = { compare: compare, range: range, calendar: calendar };
+  function drawAll() {
+    document.querySelectorAll('[data-chart]').forEach(function (b) { b.innerHTML = ''; b.appendChild(CH[b.getAttribute('data-chart')](b)); });
+  }
+  drawAll();
+  // Redraw each chart whenever its box changes width (rotation, resize, sidebar).
+  if (window.ResizeObserver) {
+    var widths = new WeakMap();
+    var ro = new ResizeObserver(function (entries) {
+      entries.forEach(function (en) {
+        var b = en.target, w = Math.round(b.clientWidth);
+        if (widths.get(b) === w) return; widths.set(b, w);
+        b.innerHTML = ''; b.appendChild(CH[b.getAttribute('data-chart')](b));
+      });
+    });
+    document.querySelectorAll('[data-chart]').forEach(function (b) { ro.observe(b); });
+  } else {
+    var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(drawAll, 120); });
+  }
+
+  // ---------- Mini bars fill once ----------
+  requestAnimationFrame(function () { requestAnimationFrame(function () {
+    document.querySelectorAll('.reveal b[data-w]').forEach(function (b) { b.style.width = b.getAttribute('data-w') + '%'; });
+  }); });
+
+  // ---------- Figure chip popover ----------
+  document.querySelectorAll('.fchip').forEach(function (c) {
+    c.addEventListener('click', function () {
+      var p = document.getElementById(c.getAttribute('aria-controls')), open = c.getAttribute('aria-expanded') === 'true';
+      c.setAttribute('aria-expanded', String(!open)); p.hidden = open;
+    });
+  });
+
+  // ---------- Sticky counter demo ----------
+  var DEF = 151.6, left = document.getElementById('left'), done = document.getElementById('done');
+  document.querySelectorAll('.phone input').forEach(function (i) {
+    i.addEventListener('change', function () {
+      var sum = 0; document.querySelectorAll('.phone input:checked').forEach(function (k) { sum += parseFloat(k.getAttribute('data-v')); });
+      left.textContent = fr(DEF - sum) + NB + 'Md€'; done.style.width = (100 * sum / DEF) + '%';
+    });
+  });
+})();
+</script>
+</body>
+</html>

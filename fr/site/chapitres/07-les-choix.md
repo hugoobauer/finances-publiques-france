@@ -204,7 +204,8 @@ durée de lecture visée: environ 9 minutes (2 198 mots affichés mesurés par v
 
 ## Étape 8. Ce que pèsent les promesses d’« argent facile » (1) : les plus aisés et les entreprises
 
-*Gabarit identique à l’étape 9. Ces pistes sont surtout portées par la gauche.*
+*Gabarit identique à l’étape 9.*
+<!-- symétrie (règle interne, non affichée) : pistes surtout portées par des partis classés à gauche ; équilibrées par l’étape 9 -->
 
 **Interaction « Estimez d’abord »**
 > **Selon vous, combien rapporterait chaque année la taxe Zucman** (un impôt minimum sur les très grands patrimoines) ?
@@ -224,13 +225,14 @@ durée de lecture visée: environ 9 minutes (2 198 mots affichés mesurés par v
 
 **Visuel** : barres de fourchette horizontales, échelle commune de 0 à 100 Md€, ligne verticale à 89,6 Md€ (« dette stable ») ; auteur et orientation à chaque bout de barre ; aides aux entreprises et niches fiscales en barres grisées « assiette, pas un rendement » (45-211 ; 91,8), avec lien vers « Construisez votre définition », et, séparée, la barre de rendement « suppression des allègements généraux : 48 Md€ net » avec renvoi « emplois : chapitre 3 » ; fraude fiscale en barre grisée « incertitude : 30 ou 130 ? » (sans valeur centrale), à côté de la barre « contrôle fiscal 2024 : 20,1 notifiés, 11,4 encaissés » ; même gabarit que la fraude sociale à l’étape 9. Données : `zucman_proponents_eur_bn`, `zucman_critics_eur_bn`, `zucman_andrews_central_eur_bn`, `tax_rich_package_eur_bn`, `cdhr_announced_eur_bn`, `cdhr_observed_2025_eur_bn`, `tax_gap_cour_range_eur_bn`, `tax_audit_assessed_2024_eur_bn`, `tax_audit_collected_2024_eur_bn`, `business_aid_range_eur_bn`, `contribution_relief_abolition_net_eur_bn`, `tax_expenditures_2025_eur_bn`, `debt_stabilizing_gap_2025_eur_bn` ; montants des partis dans `proposals.json` (`zucman_tax`, `tax_rich_package`, `cdhr`).
 
-**Pastilles source :** proposition de loi n° 768 déposée par des députées de gauche (Écologistes), 7 janvier 2025 [[fig:zucman_proponents_eur_bn]] ; étude de P. Andrews commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! », juin 2026 (https://www.institut-entreprise.fr/wp-content/uploads/2026/06/TCT_Taxe-Zucman-2026.pdf ; perte nette possible avec les réactions des contribuables), et autres estimations publiées [[fig:zucman_critics_eur_bn]] ; Sénat, commission des finances (rapporteur E. Capus), rapport n° 689, 4 juin 2025 [[src:f07:S4]] ; synthèse de la plateforme ; composante succession sans chiffrage indépendant [[fig:tax_rich_package_eur_bn]] ; IPP et Cour des comptes, juin 2026 [[fig:cdhr_observed_2025_eur_bn]] ; Cour des comptes, *La lutte contre la fraude fiscale*, 16 décembre 2025 [[fig:tax_gap_cour_range_eur_bn]] [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]] ; A. Bozio et É. Wasmer, *Les politiques d’exonérations de cotisations sociales : une inflexion nécessaire*, octobre 2024 [[src:f08:bw2024]] [[fig:contribution_relief_abolition_net_eur_bn]] ; Haut-commissariat à la Stratégie et au Plan, juillet 2026, et Sénat [[fig:business_aid_range_eur_bn]] ; Cour des comptes et PLF 2027, *Voies et moyens* [[fig:tax_expenditures_2025_eur_bn]].
+**Pastilles source :** proposition de loi n° 768 déposée par des députées Écologistes, 7 janvier 2025 [[fig:zucman_proponents_eur_bn]] ; étude de P. Andrews commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! », juin 2026 (https://www.institut-entreprise.fr/wp-content/uploads/2026/06/TCT_Taxe-Zucman-2026.pdf ; perte nette possible avec les réactions des contribuables), et autres estimations publiées [[fig:zucman_critics_eur_bn]] ; Sénat, commission des finances (rapporteur E. Capus), rapport n° 689, 4 juin 2025 [[src:f07:S4]] ; synthèse de la plateforme ; composante succession sans chiffrage indépendant [[fig:tax_rich_package_eur_bn]] ; IPP et Cour des comptes, juin 2026 [[fig:cdhr_observed_2025_eur_bn]] ; Cour des comptes, *La lutte contre la fraude fiscale*, 16 décembre 2025 [[fig:tax_gap_cour_range_eur_bn]] [[fig:tax_audit_assessed_2024_eur_bn]] [[fig:tax_audit_collected_2024_eur_bn]] ; A. Bozio et É. Wasmer, *Les politiques d’exonérations de cotisations sociales : une inflexion nécessaire*, octobre 2024 [[src:f08:bw2024]] [[fig:contribution_relief_abolition_net_eur_bn]] ; Haut-commissariat à la Stratégie et au Plan, juillet 2026, et Sénat [[fig:business_aid_range_eur_bn]] ; Cour des comptes et PLF 2027, *Voies et moyens* [[fig:tax_expenditures_2025_eur_bn]].
 
 ---
 
 ## Étape 9. Ce que pèsent les promesses d’« argent facile » (2) : fraude, immigration, Europe, agences
 
-*Gabarit identique à l’étape 8. Ces pistes sont surtout portées par la droite.*
+*Gabarit identique à l’étape 8.*
+<!-- symétrie (règle interne, non affichée) : pistes surtout portées par des partis classés à droite ; équilibrées par l’étape 8 -->
 
 **Interaction « Estimez d’abord »**
 > **Selon vous, combien rapporterait chaque année un nouveau plan de lutte contre la fraude** (sociale et fiscale) ?
@@ -259,7 +261,7 @@ durée de lecture visée: environ 9 minutes (2 198 mots affichés mesurés par v
 
 **Texte affiché**
 
-> Face à l’objectif de stabiliser la dette (89,6 milliards [[fig:debt_stabilizing_gap_2025_eur_bn]]), aucune promesse d’« argent facile », à gauche comme à droite, ne comble seule l’écart.
+> Face à l’objectif de stabiliser la dette (89,6 milliards [[fig:debt_stabilizing_gap_2025_eur_bn]]), aucune promesse d’« argent facile », quelle qu’elle soit, ne comble seule l’écart.
 >
 > Seuls les grands postes s’en approchent : retraites, masse salariale, emploi, prestations sociales, impôts payés par tous, dépenses fiscales, baisses d’impôts et de cotisations depuis 2018. L’Institut Montaigne et la Fondation iFRAP visent d’abord la dépense ; l’OFCE insiste aussi sur les recettes.
 >
@@ -313,6 +315,11 @@ durée de lecture visée: environ 9 minutes (2 198 mots affichés mesurés par v
 ---
 
 ## Notes de relecture (non affichées)
+
+### Passe du 31 octobre 2026 : pas d’étiquette de camp sur les idées
+
+- Décision du 31 octobre 2026 (glossaire §1.13, règle 8) : étape 10, « aucune promesse d’« argent facile », à gauche comme à droite, ne comble seule l’écart » → « aucune promesse d’« argent facile », quelle qu’elle soit, ne comble seule l’écart ». Notes de gabarit des étapes 8 et 9 (« pistes surtout portées par la gauche / la droite ») déplacées dans un commentaire HTML (symétrie interne). Pastille de l’étape 8 : « députées de gauche (Écologistes) » → « députées du groupe Écologiste ».
+- Contrôle : `validate.py --strict` PASS ; 2 196 mots visibles (2 198 avant).
 
 ### Confrontation aux sources publiques (2026-10-30)
 

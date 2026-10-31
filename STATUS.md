@@ -42,7 +42,7 @@ Le texte original de la demande figure en annexe.
 | Chiffres non vérifiés | Signalés « ⚠ unverified » dans la recherche, jamais repris dans `platform/data/` ni sur le site. |
 | Symétrie | Même traitement des promesses d'« argent facile » de gauche (taxe Zucman, aides aux entreprises, fraude fiscale…) et de droite (fraude sociale, immigration, contribution à l'UE…). Encadrés « Le meilleur contre-argument » répartis entre les deux camps (7 gauche, 6 droite, 1 les deux) ; quiz équilibré (11 questions visant chaque camp) et règle de tirage qui garde l'équilibre. |
 | Étiquettes d'orientation | Une étiquette par organisme, formulée de façon comparable à gauche et à droite (glossaire §1.13). |
-| Pas d'étiquette gauche/droite sur les idées | Décision du 31 octobre 2026 : le site n'attribue jamais une idée ou un argument à « la gauche » ou à « la droite ». La symétrie reste une règle de rédaction interne (encadrés, quiz, cartes « Oui, mais… »), invisible pour le lecteur. Les étiquettes d'orientation des organismes cités (glossaire §1.13) restent (confirmé le 31 octobre 2026). À appliquer : environ 34 occurrences dans les chapitres 2, 4, 6, 7 et la page « Débats ». |
+| Pas d'étiquette gauche/droite sur les idées | Décision du 31 octobre 2026, appliquée dans la nuit : le site n'attribue jamais une idée ou un argument à « la gauche » ou à « la droite ». La symétrie reste une règle de rédaction interne (encadrés, quiz, cartes « Oui, mais… »), invisible pour le lecteur. Les étiquettes d'orientation des organismes cités (glossaire §1.13) restent (confirmé le 31 octobre 2026). |
 | Cartes « Oui, mais… » et unités | Décisions du 31 octobre 2026 : étiquettes d'orientation conservées pour les organismes cités (jamais pour les idées) ; cartes classées par montant, règle affichée ; pages de réponse mesurées par rapport au dernier déficit constaté (notification Eurostat), les prévisions restant dans le simulateur. Détail : `fr/conception/01-parcours-et-architecture.md`, §8. |
 | Comparaisons internationales | Chaque page compare la France à l'UE et, si possible, au reste du monde (OCDE, autres régions), dès que des données comparables existent. Une seule unité principale par page. |
 | Conception du site | Le prototype retraites (31 octobre 2026) sert seulement à valider le format « fait + Oui, mais… ». Une phase de conception dédiée (parcours, architecture, charte graphique, visualisation des données) précède la construction du site avec Astro. |
@@ -71,13 +71,32 @@ Le texte original de la demande figure en annexe.
 
 ---
 
+9. **Travail de nuit (31 octobre – 1er novembre 2026).**
+   - **Conception :** identité visuelle (`fr/conception/03-identite-visuelle.md`, page d'exemple `prototypes/identite-visuelle.html`) ; inventaire des sujets et des objections (`fr/conception/04-sujets-et-objections.md` : 12 sujets, 89 cartes, 15 premières pages de réponse) ; prototype v2 « retraites » (`prototypes/retraites.html`).
+   - **Données :** 42 chiffres ajoutés et revérifiés par un second agent (comparaisons UE par fonction et rangs, rang après mesure, OIT, taux de remplacement OCDE, durées d'indemnisation, délais civils CEPEJ, investissement public net) ; 6 décisions de notation ajoutées, 3 consolidées. Fitch a placé la France sous perspective négative le 30 octobre 2026 (communiqué du ministère ; chapitre 5 mis à jour).
+   - **Étiquettes gauche/droite retirées** des chapitres 2, 4, 5, 7 et de la page « Débats » (environ 200 occurrences sur la page « Débats », où les groupes « Gauche » et « Droite ou libéral » sont fusionnés en « Économistes, instituts et organisations ») ; règle ajoutée au glossaire (§1.13, règle 8) ; juges pour 100 000 habitants insérés au chapitre 6.
+   - **Squelette du site Astro** (`site/`) : 9 pages, pastilles résolues à la construction (une pastille inconnue fait échouer la construction), notes éditoriales masquées.
+
+### 3.1 À revoir ensemble (matin du 1er novembre 2026)
+
+1. **Identité visuelle :** nom provisoire « ordres de grandeur » ; polices (Instrument Sans/Serif, Geist Mono) ; liens indigo ou couleur du texte ; trait tricolore sur toute la largeur de l'en-tête ou sous le logo seulement.
+2. **Page « Débats » :** fusion des groupes de positions en un seul : la symétrie n'est plus visible et certains points ne citent plus qu'un type de source. Faut-il une mention neutre « une seule position publiée trouvée » ? Sondage Elabe (point 8.1) : nommer l'électorat est-il une étiquette ?
+3. **Ordre des cartes :** fourchettes classées sur la borne haute (les cartes à très large fourchette passent devant) ou sur le milieu ?
+4. **Sujets :** garder les deux sujets ajoutés (« Prix, énergie et pouvoir d'achat », « Train de vie de l'État ») ? Créer un sujet « Famille » ? Unité des sujets sans dépense (impôts, immigration, prix).
+5. **Justice (chapitre 6) :** le ratio de juges est sous la médiane, mais le budget par habitant est au-dessus ; cette nuance n'est plus affichée. La rétablir avec un chiffre CEPEJ ?
+6. **Indemnisation du chômage :** taux de remplacement OCDE (modèle sur 24 mois) et plafond Unédic (18 mois depuis 2023) ne se comparent pas sans explication.
+7. **Rafraîchir** `research/data/eurostat_spr_exp_func.csv` (millésime Eurostat du 26 octobre 2026 légèrement différent).
+8. **Squelette Astro :** affichage des pastilles (numéros et liste « Chiffres et sources » en bas de chapitre) ; libellés de sources encore en anglais ; nom et hébergement du site.
+
+---
+
 ## 4. Ce qu'il reste à faire
 
 ### 4.1 Avant de publier les chapitres
 
-- **Justice (chapitre 6, étape 6) :** les juges pour 100 000 habitants (France 11,3 ; médiane du Conseil de l'Europe 17,6 ; 2022) sont ajoutés aux données le 31 octobre 2026, lus sur le tableau de bord public de la CEPEJ. Reste à les intégrer au texte du chapitre et à débloquer le graphique ; la médiane des délais civils n'est pas confirmée.
-- **Investissement (chapitre 5, étape 6) :** l'investissement public net et la comparaison avec la zone euro manquent.
-- **Notations 2023-2024** (Fitch, S&P, Moody's) : confirmées seulement par la presse ; à vérifier sur les communiqués des agences avant affichage.
+- **Justice (chapitre 6, étape 6) :** les juges pour 100 000 habitants (France 11,3 ; médiane du Conseil de l'Europe 17,6 ; 2022) sont ajoutés aux données le 31 octobre 2026, lus sur le tableau de bord public de la CEPEJ. Le délai de jugement civil (333 jours pour la France, médiane du Conseil de l'Europe 239 jours, 2022) est confirmé et ajouté aux données le 31 octobre 2026. Reste à intégrer ces chiffres au texte du chapitre et à débloquer le graphique.
+- **Investissement (chapitre 5, étape 6) :** l'investissement public net 2025 (France environ 0,6 % du PIB, zone euro environ 0,8 %, à 0,1 point près) est ajouté aux données le 31 octobre 2026 ; la différence nette est dans la marge d'arrondi, donc pas de conclusion de sous-investissement. Reste à l'intégrer au texte du chapitre.
+- **Notations 2023-2024 :** Fitch (28 avril 2023 ; 11 octobre 2024) et Moody's (14 décembre 2024) sont vérifiées et ajoutées aux données le 31 octobre 2026. Restent non vérifiées, donc non affichables : S&P du 31 mai 2024, perspective négative de S&P du 28 février 2025 et Moody's du 25 octobre 2024. **Nouveau :** Fitch a placé la perspective de la France en négative le 30 octobre 2026 (communiqué du ministère n° 1161) ; tous les textes qui écrivent « Fitch A+ stable » sont à corriger (fichier 06 §3.4, chapitres).
 - **Chapitre 7 :** à 2 198 mots affichés pour un plafond de 2 200 ; tout ajout demande une coupe.
 - **Libellé « Cour des comptes » :** le chapitre 1 (ligne 86) doit employer « Cour des comptes (juridiction financière) » à sa première mention ; les chapitres 2 à 7 écrivent « juridiction financière » seul. Avertissements du validateur, non corrigés dans cette passe.
 - **Chiffres manquants (confrontation) :** investissement public net 2025 (ch. 5, étape 6) ; répartition de la charge d'intérêts et PIB potentiel de l'OFCE (ch. 4, critiques G2 et G8) ; écart de recettes avec la ZE21 (ch. 4, G11) ; ligne 2010 du tableau du chapitre 4 (rejetée faute d'identifiant) ; chiffrage de cinq critiques de gauche du chapitre 2 (n° 1, 5, 6, 8, 10), traitées sans identifiant chiffré.

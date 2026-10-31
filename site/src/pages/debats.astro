@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderAll } from '../lib/render.mjs';
+const { debats } = renderAll();
+const toc = debats.headings.filter((h) => h.depth === 2);
+---
+<Base title="Débats · Finances publiques 2027" description="Ce qui est contesté, et qui dit quoi.">
+  <nav class="toc" aria-label="Thèmes">
+    <strong>Thèmes</strong>
+    <ol>{toc.map((h) => <li><a href={`#${h.id}`}>{h.text}</a></li>)}</ol>
+  </nav>
+  <article class="prose" set:html={debats.html} />
+</Base>

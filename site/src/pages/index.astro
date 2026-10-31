@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderAll } from '../lib/render.mjs';
+const { chapters } = renderAll();
+---
+<Base title="Finances publiques 2027">
+  <h1>Finances publiques 2027</h1>
+  <p class="lead">Les ordres de grandeur de la dépense publique française, avec leurs sources.</p>
+  <h2>Les chapitres</h2>
+  <ol class="chapters">
+    {chapters.map((c) => (
+      <li>
+        <a href={`/chapitres/${c.slug}/`}>{c.title}</a>
+        {c.minutes && <span class="meta"> · {c.minutes}&nbsp;min</span>}
+      </li>
+    ))}
+  </ol>
+  <h2>Pour aller plus loin</h2>
+  <p><a href="/debats/">Débats : ce qui est contesté, et qui dit quoi</a></p>
+</Base>

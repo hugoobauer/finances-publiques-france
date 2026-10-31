@@ -33,7 +33,7 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 >
 > Pourquoi le déficit s’est-il creusé ces dernières années ? Deux récits s’opposent. Pour le premier, il vient surtout des baisses d’impôts. Pour le second, surtout de la hausse des dépenses.
 >
-> Ce chapitre montre que les deux s’appuient sur des chiffres exacts. La période choisie pèse beaucoup : l’année de départ, mais aussi l’année d’arrivée. Les deux camps divergent aussi sur ce qui aurait dû financer les baisses d’impôts, et sur le remède.
+> Ce chapitre montre que les deux s’appuient sur des chiffres exacts. La période choisie pèse beaucoup : l’année de départ, mais aussi l’année d’arrivée. Les deux récits divergent aussi sur ce qui aurait dû financer les baisses d’impôts, et sur le remède.
 >
 > Durée de lecture : environ 9 minutes.
 
@@ -347,6 +347,11 @@ et au Plan (fichier 10 §6.3), qui porte sur le remède et non sur la cause.
 ---
 
 ## Notes de relecture
+
+### Passe du 31 octobre 2026 : pas d’étiquette de camp sur les idées
+
+- Décision du 31 octobre 2026 (glossaire §1.13, règle 8) : étape 0, « Les deux camps divergent aussi… » → « Les deux récits divergent aussi… ». Aucun autre libellé de camp dans le texte affiché ; les mentions « à gauche / à droite » du visuel désignent des positions à l’écran.
+- Contrôle : `validate.py --strict` PASS ; 2 186 mots visibles (inchangé).
 
 ### Confrontation aux sources publiques (2026-10-30)
 

@@ -4,3 +4,8 @@ research/data/raw/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Site (Astro)
+site/node_modules/
+site/dist/
+site/.astro/

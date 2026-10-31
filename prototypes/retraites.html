@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Les retraites, ordres de grandeur</title>
+<meta name="description" content="Prototype v2 de la page de sujet Retraites et de deux pages de réponse (format « fait + Oui, mais… »). Document de travail, 31 octobre 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* ---------- Tokens (fr/conception/03-identite-visuelle.md, §3) ---------- */
+:root {
+  --paper: #F7F6F2; --surface: #FFFFFF; --ink: #16181D; --muted: #5A5F69; --line: #DEDCD5;
+  --accent: #3A3FB8; --accent-soft: #E8E8F7;
+  --ochre: #8A5A00; --ochre-bar: #9E6C0A; --bar: #767B84; --track: #E9E8E3;
+  --f-bleu: #0055A4; --f-blanc: #FFFFFF; --f-blanc-line: #B9B7AF; --f-rouge: #EF4135;
+  --f-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --f-num: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px; --s8: 72px;
+  --r-s: 4px; --r-m: 8px; --r-pill: 999px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+    --accent: #A5A9FF; --accent-soft: #24264A;
+    --ochre: #E8B04F; --ochre-bar: #D69B33; --bar: #6C717B; --track: #25282E;
+    --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+  --accent: #A5A9FF; --accent-soft: #24264A;
+  --ochre: #E8B04F; --ochre-bar: #D69B33; --bar: #6C717B; --track: #25282E;
+  --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A;
+  color-scheme: dark;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-sans); overflow-x: hidden; }
+h1, h2, h3, h4, p, figure, ul, ol, dl { margin: 0; }
+h1, h2 { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.1; text-wrap: balance; }
+h1 { font-size: clamp(36px, 8vw, 60px); line-height: 1.05; }
+h2 { font-size: clamp(28px, 5.5vw, 40px); }
+h3 { font: 600 20px/1.3 var(--f-sans); letter-spacing: -0.005em; }
+p { max-width: 64ch; text-wrap: pretty; }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+h1:focus { outline: none; }
+.num { font-family: var(--f-num); font-variant-numeric: tabular-nums; font-weight: 500; letter-spacing: -0.02em; }
+.eyebrow { font: 500 13px/1.4 var(--f-sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: 14px; line-height: 1.5; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+.col { max-width: 720px; }
+.stack { display: flex; flex-direction: column; gap: var(--s4); }
+section.blk { padding-top: var(--s7); display: flex; flex-direction: column; gap: var(--s4); }
+section.blk > h2 { border-top: 1px solid var(--line); padding-top: var(--s4); }
+
+/* ---------- Tricolor hairlines ---------- */
+.tri { display: flex; gap: 2px; height: 2px; }
+.tri i { flex: 1; display: block; }
+.tri i:nth-child(1) { background: var(--f-bleu); }
+.tri i:nth-child(2) { background: var(--f-blanc); box-shadow: inset 0 0 0 0.5px var(--f-blanc-line); }
+.tri i:nth-child(3) { background: var(--f-rouge); }
+.logo { display: inline-flex; align-items: flex-end; gap: 9px; color: var(--ink); text-decoration: none; font: 600 17px/1 var(--f-sans); letter-spacing: -0.02em; }
+.logo svg { display: block; flex: none; }
+.logo > span { white-space: nowrap; }
+.logo .t1 { fill: var(--f-bleu); } .logo .t3 { fill: var(--f-rouge); }
+.logo .t2 { fill: var(--f-blanc); stroke: var(--f-blanc-line); stroke-width: .75; }
+.logo .ph { font: 500 10px/1 var(--f-num); color: var(--muted); border: 1px dashed var(--line); border-radius: var(--r-s); padding: 2px 4px; margin-left: 2px; align-self: center; }
+@media (max-width: 480px) { .logo .ph { display: none; } }
+
+/* ---------- Header (sticky, translucent) ---------- */
+header.site { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
+header.site .bar { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); min-height: 56px; }
+nav.main { display: flex; gap: var(--s5); }
+nav.main a { position: relative; color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; padding-block: 18px; }
+nav.main a[aria-current="page"] { color: var(--ink); }
+nav.main a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 10px; height: 2px;
+  background: linear-gradient(90deg, var(--f-bleu) 0 30%, transparent 30% calc(30% + 2px), var(--f-blanc) calc(30% + 2px) calc(70% - 2px), transparent calc(70% - 2px) 70%, var(--f-rouge) 70%); }
+@media (max-width: 720px) { nav.main { display: none; } }
+.toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font: 500 13px/1 var(--f-sans); color: var(--muted);
+  border: 1px solid var(--line); border-radius: var(--r-pill); padding: 8px 12px; min-height: 44px; box-sizing: border-box; }
+.toggle:hover { color: var(--ink); border-color: var(--muted); }
+.toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toggle svg { width: 14px; height: 14px; }
+.proto { font-size: 13px; line-height: 1.5; color: var(--muted); padding-block: 10px; border-bottom: 1px solid var(--line); }
+.proto b { color: var(--ink); font-weight: 600; }
+
+/* ---------- Hero ---------- */
+.hero { padding-block: var(--s6) 0; display: flex; flex-direction: column; gap: var(--s4); }
+.crumb { font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; color: var(--muted); }
+.crumb a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); }
+.meta span + span::before { content: "·"; margin-right: 14px; color: var(--line); }
+.lede { font-size: 19px; line-height: 1.55; color: var(--muted); }
+.keyfig { display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--ink); padding-top: var(--s3); }
+.fchip.big { font-size: clamp(40px, 11vw, 64px); line-height: 1.05; }
+.keyfig .lbl { font-size: 17px; }
+
+/* ---------- Figure chip (tap to open) ---------- */
+.fchip { all: unset; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; align-self: flex-start; max-width: 100%; min-height: 24px; }
+.fchip .v { font-family: var(--f-num); font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; border-bottom: 1px dotted var(--muted); white-space: nowrap; }
+.fchip:hover .v, .fchip[aria-expanded="true"] .v { border-bottom-style: solid; border-bottom-color: var(--ink); }
+.fchip:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.fchip .hint { font: 500 13px/1.2 var(--f-sans); letter-spacing: 0; color: var(--muted); }
+.pop { margin-top: var(--s2); background: var(--surface); border: 1px solid var(--ink); border-radius: var(--r-m); padding: var(--s3) var(--s4); font-size: 14px; display: flex; flex-direction: column; gap: 6px; max-width: 460px; }
+.pop[hidden] { display: none; }
+.pop dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 14px; }
+.pop dt { font-family: var(--f-num); font-weight: 500; white-space: nowrap; }
+.pop dd { margin: 0; color: var(--muted); }
+
+/* ---------- Charts ---------- */
+figure.chart { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); min-width: 0; margin: 0; }
+figure.chart .title { font: 600 17px/1.35 var(--f-sans); }
+figure.chart .sub { font-size: 14px; color: var(--muted); margin-top: 2px; }
+figure.chart svg { display: block; max-width: 100%; height: auto; overflow: visible; }
+[data-chart] { min-width: 0; width: 100%; }
+figure.chart svg text { font-family: var(--f-sans); fill: var(--ink); }
+figure.chart svg text.n { font-family: var(--f-num); font-weight: 500; }
+figure.chart svg text.m { fill: var(--muted); }
+figcaption { display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.5; border-top: 1px solid var(--line); padding-top: var(--s3); }
+figcaption b { font-weight: 600; }
+figcaption .src { color: var(--muted); }
+
+/* ---------- Cards « Oui, mais… » ---------- */
+.cards { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s4); }
+@media (min-width: 900px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); min-width: 0; text-decoration: none; color: inherit; transition: border-color .15s; }
+a.card:hover { border-color: var(--ink); }
+.card .k { font: 500 12px/1.3 var(--f-num); color: var(--muted); letter-spacing: .02em; }
+.card q { font: 400 24px/1.2 var(--f-display); quotes: "«\00a0" "\00a0»"; }
+.card .ans { font-size: 15px; }
+.card .go { font-size: 15px; font-weight: 600; color: var(--accent); margin-top: auto; display: inline-flex; align-items: center; min-height: 24px; }
+.card .soon { font-size: 13px; color: var(--muted); margin-top: auto; }
+.mini { display: flex; flex-direction: column; gap: 4px; }
+.mini .trk { position: relative; height: 6px; background: var(--track); border-radius: 1px; overflow: hidden; }
+.mini .trk b { position: absolute; top: 0; bottom: 0; background: var(--ink); width: 0; }
+.mini .trk b.hi { opacity: .35; }
+.mini .lg { display: flex; justify-content: space-between; gap: var(--s2); font-size: 13px; color: var(--muted); }
+.order-note { font-size: 13px; color: var(--muted); }
+
+/* ---------- Answer blocks ---------- */
+.ablock { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-m); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); min-width: 0; }
+.ablock > .k { font: 500 12px/1 var(--f-num); color: var(--muted); display: flex; gap: 8px; align-items: center; }
+.ablock > .k::before { content: attr(data-n); display: inline-grid; place-items: center; width: 20px; height: 20px; border: 1px solid var(--line); border-radius: 50%; font-size: 11px; }
+.ablock.lead { border-left: 2px solid var(--ink); }
+.ablock ul { padding-left: 20px; display: flex; flex-direction: column; gap: var(--s2); max-width: 64ch; }
+.who { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--s3) var(--s4); font-size: 15px; }
+.who > div { min-width: 0; border-top: 1px solid var(--line); padding-top: var(--s3); }
+.who > .num { border-top: 1px solid var(--line); padding-top: var(--s3); text-align: right; white-space: nowrap; font-size: 14px; }
+.who .lab { color: var(--muted); }
+.who .what { font-size: 14px; color: var(--muted); display: block; }
+.note { font-size: 14px; color: var(--muted); }
+.ph-box { border: 1px dashed var(--muted); border-radius: var(--r-m); padding: var(--s3) var(--s4); display: flex; flex-direction: column; gap: 4px; font-size: 14px; }
+.ph-box .tag { font: 500 12px/1 var(--f-num); color: var(--muted); align-self: flex-start; border: 1px solid var(--line); border-radius: var(--r-s); padding: 3px 6px; }
+.rank { font-size: 17px; border-left: 2px solid var(--ink); padding-left: var(--s3); }
+.btn { all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 0 20px;
+  border-radius: var(--r-m); background: var(--ink); color: var(--paper); font: 600 16px/1 var(--f-sans); text-align: center; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--ink); text-decoration: none; }
+.btn[aria-disabled="true"] { background: transparent; color: var(--muted); border: 1px dashed var(--muted); cursor: not-allowed; }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.actions { display: flex; flex-wrap: wrap; gap: var(--s3); align-items: center; }
+details.more { border: 1px solid var(--line); border-radius: var(--r-m); background: var(--surface); }
+details.more summary { cursor: pointer; padding: 0 var(--s4); min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 600; color: var(--accent); }
+details.more[open] summary { border-bottom: 1px solid var(--line); }
+details.more table { border-collapse: collapse; width: 100%; font-size: 14px; }
+details.more td { padding: 8px var(--s4); border-bottom: 1px solid var(--line); }
+details.more tr:last-child td { border-bottom: 0; }
+details.more td:last-child { text-align: right; white-space: nowrap; }
+.next { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s3); }
+
+footer.site { margin-top: var(--s8); border-top: 1px solid var(--line); padding-block: var(--s5) var(--s7); font-size: 14px; color: var(--muted); }
+footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s3); align-items: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .mini .trk b { transition: width .6s cubic-bezier(.2,.7,.2,1); }
+}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#" aria-label="ordres de grandeur, nom provisoire">
+      <svg width="13" height="18" viewBox="0 0 13 18" aria-hidden="true">
+        <rect class="t1" x="0" y="13" width="2" height="5"/>
+        <rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/>
+        <rect class="t3" x="10" y="0" width="2" height="18"/>
+      </svg>
+      <span>ordres de grandeur</span><span class="ph">nom provisoire</span>
+    </a>
+    <nav class="main" aria-label="Navigation principale">
+      <a href="#" aria-current="page">Sujets</a>
+      <a aria-disabled="true" tabindex="-1">Réponses</a>
+      <a aria-disabled="true" tabindex="-1">Simulateur</a>
+      <a aria-disabled="true" tabindex="-1">Méthode</a>
+    </nav>
+    <button class="toggle" id="theme" type="button" aria-label="Changer de thème">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
+      <span id="theme-label">Thème</span>
+    </button>
+  </div>
+  <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+
+<div class="wrap proto"><b>Prototype v2, document de travail (31 octobre 2026).</b> Format « fait + Oui, mais… » en charte « ordres de grandeur » (nom provisoire). Chiffres tirés de <code>platform/data/figures.json</code> ; les cases « donnée à venir » signalent une donnée absente de la base.</div>
+
+<main class="wrap" id="app"></main>
+
+<footer class="site">
+  <div class="wrap row">
+    <span class="logo" style="font-size:15px"><svg width="11" height="15" viewBox="0 0 13 18" aria-hidden="true"><rect class="t1" x="0" y="13" width="2" height="5"/><rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/><rect class="t3" x="10" y="0" width="2" height="18"/></svg><span>ordres de grandeur</span></span>
+    <span>Textes et données sous licence CC BY 4.0 · Méthode · Financement · Corrections</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ======================================================================
+     DATA. Every value is copied from platform/data/figures.json or
+     yardsticks.json (October 2026); the id is in the comment. Nothing here
+     is invented. Derived values are computed below and labeled « calcul du site ».
+     ====================================================================== */
+  var D = {
+    te: 1714.1,            // figures: te_2025_eur_bn (Eurostat, 21 Oct 2026)
+    deficit: 151.6,        // figures: deficit_2025_eur_bn (Eurostat, Oct 2026 EDP notification)
+    gdp: 2991.1,           // figures: gdp_2025_eur_bn
+    pop: 68.998,           // figures: population_2025_m (million)
+    day: 4.6962,           // yardsticks: one_day_spending_eur_bn
+    borrowStart: 332.7183, // yardsticks: borrowing_starts_day (29 November)
+    pensions: 422.2,       // figures: pensions_cor_2025_eur_bn (COR, June 2026)
+    pensionsPctTe: 24.3,   // figures: pensions_cor_2025_pct_te (COR ratio, caveat: COR's own denominator)
+    pensionsPctGdp: 14.1,  // figures: pensions_cor_2025_pct_gdp
+    pensionsPps: 5940,     // figures: pension_exp_per_capita_pps_2024
+    pensionsPpsRank: 5,    // figures: pension_exp_per_capita_pps_2024_rank
+    oldAgeFr: 13.4,        // figures: cofog_old_age_2024_pct_gdp (COFOG 10.2, Eurostat)
+    oldAgeEu: 10.6,        // figures: eu_cofog_old_age_2024_pct_gdp_eu27
+    oldAgeRank: 4,         // figures: eu_cofog_old_age_2024_rank (of 27)
+    // Panel values: from the notes of eu_cofog_old_age_2024_pct_gdp_eu27 (DE 9.9, IT 13.9, ES 10.4, NL 6.1, BE 10.2, SE 10.9, DK 7.2)
+    panel: [["Italie", 13.9], ["Allemagne", 9.9], ["Espagne", 10.4], ["Suède", 10.9], ["Belgique", 10.2], ["Danemark", 7.2], ["Pays-Bas", 6.1]],
+    // Notes of eu_cofog_old_age_2024_rank: behind FI 15.5, AT 14.3 and IT 13.9; above EL 11.8
+    oldAgeAhead: [["Finlande", 15.5], ["Autriche", 14.3], ["Italie", 13.9]],
+    povOldFr: 6.1,         // figures: old_age_poverty_oecd_2022_pct (threshold 50 %)
+    povOldOecd: 14.8,      // figures: oecd_old_age_poverty_2022_pct
+    ret60: [43, 58],       // figures: return_60_general_cost_eur_bn (range, cost)
+    ret60Gdp: [1.4, 1.9],  // figures: return_60_general_cost_pct_gdp (points of GDP)
+    taxRich: [10, 25],     // figures: tax_rich_package_eur_bn (range, platform synthesis)
+    zucmanPro: [15, 25],   // figures: zucman_proponents_eur_bn (range)
+    zucmanSenate: [2, 3],  // proposals: zucman_tax, estimates[1] (Sénat, rapport n° 689, source f07:S4)
+    zucmanSeven: 5,        // proposals: zucman_tax, estimates[2] (sept économistes dont Aghion, source f07:S26)
+    zucmanAndrews: 5.5,    // figures: zucman_andrews_central_eur_bn
+    antifraud: [1, 3],     // figures: antifraud_marginal_yield_eur_bn (range, platform synthesis)
+    antifraud2026: 1.5,    // figures: antifraud_2026_announced_eur_bn (government claim)
+    socialFraud: 14,       // figures: social_fraud_hcfips_dec2025_eur_bn (HCFiPS, about 14)
+    taxGap: [30, 130],     // figures: tax_gap_cour_range_eur_bn (width of uncertainty, not an estimate)
+    auditAssessed: 20.1,   // figures: tax_audit_assessed_2024_eur_bn
+    auditCollected: 11.4,  // figures: tax_audit_collected_2024_eur_bn
+    contribIndex: [4.1, 5.7], // figures: pension_indexation_plfss2027_eur_bn (4.1); annee_blanche_eur_bn (range 4.4 to 5.7)
+    retireesLiving: 100.2, // figures: retirees_relative_living_standard_pct (2023)
+    pens2045: 14.2,        // figures: pensions_cor_2045f_pct_gdp
+    pens2070: 15.3,        // figures: pensions_cor_2070f_pct_gdp
+    res2025: 13.9,         // figures: pension_resources_2025_pct_gdp
+    res2070: 12.9,         // figures: pension_resources_2070f_pct_gdp
+    stateContrib: 49.3,    // figures: pension_state_balancing_contribution_2025_eur_bn
+    balance: -5.1,         // figures: pension_balance_2025_eur_bn
+    balancePct: -0.2,      // figures: pension_balance_2025_pct_gdp
+    balanceConv: 1.9,      // figures: pension_balance_convention_range_pct_gdp (high end, other convention)
+    oecdTaxFr: 43.5,       // figures: oecd_tax_to_gdp_2024_pct_gdp (OECD Revenue Statistics 2025)
+    oecdTaxRank: 2,        // figures: oecd_tax_to_gdp_2024_rank
+    oecdTaxDk: 45.2,       // figures: denmark_tax_to_gdp_2024_pct_gdp
+    oecdTaxAvg: 34.1       // figures: oecd_avg_tax_to_gdp_2024_pct_gdp
+  };
+
+  /* ---------- Formatting (French typography) ---------- */
+  var NB = " ", NN = " ";
+  function fr(x, d) { if (d === undefined) d = 1; return x.toLocaleString("fr-FR", { minimumFractionDigits: d, maximumFractionDigits: d, useGrouping: "always" }).replace("-", "−"); }
+  function md(x, d) { return fr(x, d === undefined ? 1 : d) + NB + "Md€"; }
+  function pc(x, d) { return fr(x, d === undefined ? 1 : d) + NB + "%"; }
+  function rng(a, b, d) { return fr(a, d) + " à " + fr(b, d); }
+  // Typography pass: non-breaking space before : » and narrow before ; ? !, after «.
+  function T(s) {
+    return s.replace(/ ([:»])/g, NB + "$1").replace(/ ([;?!])/g, NN + "$1").replace(/« /g, "«" + NB)
+            .replace(/(\d) (Md€|%|jours?|pts|points?|€|ans)(?![\wÀ-ÿ])/g, "$1" + NB + "$2");
+  }
+  function ord(n) { return n === 1 ? "1re" : n + "e"; }
+
+  /* ---------- Derived values (calcul du site) ---------- */
+  var DAYS = function (bn) { return bn / D.day; };
+  var PCT_DEF = function (bn) { return 100 * bn / D.deficit; };
+  var PCT_GDP = function (bn) { return 100 * bn / D.gdp; };
+  var PER_CAP = function (bn) { return bn * 1000 / D.pop; };
+  function share(lo, hi) { var d = hi < 10 ? 1 : 0; return lo === hi ? pc(PCT_DEF(lo), d) : rng(PCT_DEF(lo), PCT_DEF(hi), d) + NB + "%"; }
+
+  /* ======================================================================
+     CARDS « Oui, mais… » (inventory: fr/conception/04-sujets-et-objections.md, sujet 1)
+     Sorted by amount (upper bound, largest first); cards without amount follow,
+     alphabetical. The sort is done in code so the displayed rule is true.
+     ====================================================================== */
+  var CARDS = [
+    { id: "retraite-60", quote: "Revenons à la retraite à 60 ans.", kind: "coût", range: D.ret60,
+      ans: "Le retour général à 60 ans coûterait " + md(D.ret60[0], 0).replace(NB + "Md€", "") + " à " + md(D.ret60[1], 0) + " par an, soit " + rng(D.ret60Gdp[0], D.ret60Gdp[1]) + " points de PIB, selon deux chiffrages (Fipeco, Institut Montaigne). Aucun chiffrage officiel en 2026." },
+    { id: "taxer-riches", full: true, quote: "Faisons payer les plus riches, pas les retraités.", kind: "rendement", range: D.taxRich,
+      ans: "Rapporterait de l'argent, mais une part limitée du déficit." },
+    { id: "retraites-contribution", quote: "Les retraités ont un niveau de vie élevé, ils peuvent contribuer.", kind: "rendement", range: D.contribIndex,
+      ans: "Le niveau de vie moyen des retraités est de " + pc(D.retireesLiving) + " de celui de l'ensemble de la population (2023). Sous-indexer les pensions ou geler une année rapporterait " + rng(D.contribIndex[0], D.contribIndex[1]) + " Md€." },
+    { id: "fraude", full: true, quote: "Luttons d'abord contre la fraude.", kind: "rendement", range: D.antifraud,
+      ans: "Les pertes sont réelles, mais un nouveau plan rapporterait peu, vite." },
+    { id: "age-65", quote: "Il faut reculer l'âge de départ à 65 ans.", missing: true,
+      ans: "Le gain arrive surtout à terme, et les modèles ne s'accordent pas sur l'effet d'un recul de l'âge sur l'emploi et la croissance." },
+    { id: "abrogation-2023", quote: "Abrogeons la réforme de 2023 (retour à 62 ans).", missing: true,
+      ans: "Le coût dépend de l'horizon : il est plus faible les premières années qu'à effet plein." },
+    { id: "retraites-choix-de-societe", quote: "C'est un choix de société, et la dépense reste stable.",
+      ans: "Selon le COR, les dépenses passeraient de " + pc(D.pensionsPctGdp) + " du PIB en 2025 à " + pc(D.pens2045) + " en 2045, puis " + pc(D.pens2070) + " en 2070. Les ressources du système, elles, passeraient de " + pc(D.res2025) + " à " + pc(D.res2070) + "." },
+    { id: "retraites-fonctionnaires", quote: "Le régime des fonctionnaires cache un déficit.",
+      ans: "L'État employeur verse une contribution d'équilibre de " + md(D.stateContrib) + " (2025). Ce montant dépend d'une convention de comptage : ce n'est pas une économie à réaliser." },
+    { id: "retraites-equilibre", quote: "Le système de retraite est presque à l'équilibre.",
+      ans: "Vrai selon la convention légale (" + pc(D.balancePct) + " du PIB, soit " + md(D.balance) + "). Avec une autre convention sur la contribution de l'État, le déficit atteint " + pc(D.balanceConv) + " du PIB." }
+  ];
+  function sortedCards() {
+    var withAmt = CARDS.filter(function (c) { return c.range; }).sort(function (a, b) { return b.range[1] - a.range[1]; });
+    var without = CARDS.filter(function (c) { return !c.range; }).sort(function (a, b) {
+      return a.quote.localeCompare(b.quote, "fr", { ignorePunctuation: true });
+    });
+    return withAmt.concat(without);
+  }
+
+  function card(c) {
+    var k, mini = "";
+    if (c.range) {
+      var lo = c.range[0], hi = c.range[1];
+      k = "Oui, mais… · " + c.kind + " " + rng(lo, hi, (hi < 10 ? 1 : 0)).replace(/,0\b/g, "") + " Md€";
+      mini = '<div class="mini" role="img" aria-label="De ' + share(lo, hi) + ' du déficit de 2025">' +
+        '<div class="trk"><b data-w="' + PCT_DEF(lo).toFixed(2) + '"></b><b class="hi" data-w="' + PCT_DEF(hi).toFixed(2) + '"></b></div>' +
+        '<div class="lg"><span>' + share(lo, hi) + ' du déficit</span><span class="num">' + md(D.deficit) + '</span></div></div>';
+    } else {
+      k = "Oui, mais… · " + (c.missing ? "montant à chiffrer" : "sans montant de mesure");
+    }
+    var inner = '<span class="k">' + k + '</span><q>' + c.quote + '</q><p class="ans">' + c.ans + '</p>' + mini;
+    return c.full
+      ? '<a class="card" href="#' + c.id + '">' + inner + '<span class="go">Lire la réponse →</span></a>'
+      : '<article class="card">' + inner + '<span class="soon">Page de réponse à rédiger</span></article>';
+  }
+
+  /* ======================================================================
+     PAGES
+     ====================================================================== */
+  var SRC_COR = "Conseil d'orientation des retraites (COR), rapport annuel, juin 2026";
+  var SRC_DEF = "déficit : Eurostat, notification d'octobre 2026";
+
+  function chip(label, id, items, srcLine, big, after) {
+    return '<button class="fchip' + (big ? " big" : "") + '" type="button" aria-expanded="false" aria-controls="' + id + '"><span class="v">' + label + '</span><span class="hint">autres unités ▾</span></button>' + (after || "") +
+      '<div class="pop" id="' + id + '" hidden><dl>' + items.map(function (i) { return "<dt>" + i[0] + "</dt><dd>" + i[1] + "</dd>"; }).join("") + '</dl><span class="muted small">' + srcLine + '</span></div>';
+  }
+  function figure(title, sub, chartKey, lecture, source) {
+    return '<figure class="chart"><div><div class="title">' + title + '</div><div class="sub">' + sub + '</div></div>' +
+      '<div data-chart="' + chartKey + '"></div>' +
+      '<figcaption><span><b>Lecture :</b> ' + lecture + '</span><span class="src">Source : ' + source + '</span></figcaption></figure>';
+  }
+
+  function hub() {
+    var penDays = DAYS(D.pensions);
+    var order = sortedCards();
+    var poorGap = D.povOldOecd - D.povOldFr;
+    return '' +
+    '<section class="hero col">' +
+      '<div class="meta"><span>Sujet · Retraites</span><span>Données d\'octobre 2026</span></div>' +
+      '<h1 tabindex="-1">Les retraites sont le premier poste de la dépense publique.</h1>' +
+      '<p class="lede">En 2025, l\'État, la Sécurité sociale et les collectivités ont dépensé environ ' + fr(D.te, 0) + ' Md€. Près d\'un euro sur quatre a servi à payer des retraites.</p>' +
+      '<div class="keyfig">' +
+        chip(pc(D.pensionsPctTe), "pop-hub", [
+          [md(D.pensions), "de retraites versées en 2025"],
+          [pc(D.pensionsPctGdp), "du PIB (la richesse produite en un an en France)"],
+          ["≈ " + fr(penDays, 0) + " jours", "de dépense publique sur 365 (calcul du site)"]
+        ], SRC_COR + ". Le COR rapporte au total de dépense qui lui est propre, d'où un léger écart avec le total d'Eurostat.", true, '<span class="lbl">de la dépense publique de 2025</span>') +
+      '</div>' +
+      '<p class="small muted">Source : ' + SRC_COR + ' (périmètre de tous les régimes obligatoires) ; dépense totale : Eurostat, gov_10a_main, 21 octobre 2026.</p>' +
+    '</section>' +
+
+    '<section class="blk col">' +
+      '<h2>La dépense d\'une année, jour par jour</h2>' +
+      figure("Le calendrier de la dépense publique, 2025", "Si toute la dépense d'une année était versée du 1er janvier au 31 décembre", "calendar",
+        "les retraites occupent environ " + fr(penDays, 0) + " jours sur 365. À partir du 29 novembre, toute la dépense est financée par l'emprunt.",
+        SRC_COR + " ; déficit 2025 : Eurostat, notification d'octobre 2026 ; calcul du site.") +
+    '</section>' +
+
+    '<section class="blk">' +
+      '<h2 class="col">« Oui, mais… » : ce que l\'on entend souvent</h2>' +
+      '<p class="col">Choisissez une phrase. Pour chacune, nous montrons ce qui est vrai, combien cela représente, et où sont les limites. La mini-barre indique la part du déficit de 2025 (' + md(D.deficit) + ') que la mesure représenterait.</p>' +
+      '<div class="cards">' + order.map(card).join("") + '</div>' +
+      '<p class="order-note">Cartes classées par montant, du plus grand au plus petit ; les cartes sans montant suivent, par ordre alphabétique. Aucune étiquette de camp. Le coût (dépense nouvelle) et le rendement (recette ou économie) sont indiqués sur chaque carte.</p>' +
+    '</section>' +
+
+    '<section class="blk col">' +
+      '<h2>Et ailleurs ?</h2>' +
+      figure("Dépenses de vieillesse, en % du PIB, 2024", "France, UE-27 et trois grands pays du panel (Italie, Allemagne, Espagne)", "oldage",
+        "en 2024, les dépenses publiques de vieillesse représentent " + pc(D.oldAgeFr) + " du PIB en France, contre " + pc(D.oldAgeEu) + " dans l'UE-27, soit " + fr(D.oldAgeFr - D.oldAgeEu) + " points d'écart. La France est " + ord(D.oldAgeRank) + " sur 27, derrière la Finlande, l'Autriche et l'Italie.",
+        "Eurostat, dépenses par fonction (COFOG 10.2, gov_10a_exp), mise à jour du 21 octobre 2026 ; écart : calcul du site.") +
+      '<details class="more"><summary>Voir tout le panel</summary><table><tbody>' +
+        [["France", D.oldAgeFr], ["UE-27", D.oldAgeEu]].concat(D.panel).map(function (r) { return "<tr><td>" + r[0] + '</td><td class="num">' + pc(r[1]) + "</td></tr>"; }).join("") +
+      '</tbody></table></details>' +
+      '<p>Par habitant, en euros ajustés des écarts de prix (SPA), la dépense de pensions est de ' + fr(D.pensionsPps, 0) + ' € : ' + ord(D.pensionsPpsRank) + ' de l\'UE (Eurostat, 2024).</p>' +
+      '<p>Ce que l\'on obtient : la pauvreté des 65 ans et plus (seuil de 50 % du revenu médian) est de ' + pc(D.povOldFr) + ' en France, contre ' + pc(D.povOldOecd) + ' en moyenne dans l\'OCDE, soit ' + fr(poorGap) + ' points de moins (2022, OCDE).</p>' +
+      '<div class="ph-box"><span class="tag">donnée à venir</span><span>Reste du monde : âge effectif de départ, taux de remplacement et dépense de retraite hors UE (OCDE, <i>Pensions at a Glance</i> ; OIT). Aucune donnée dans la base pour l\'instant.</span></div>' +
+    '</section>' +
+
+    '<section class="blk col">' +
+      '<h2>Pour aller plus loin</h2>' +
+      '<p>Chapitre 2, « Où va l\'argent », et chapitre 7, « Les choix ». Sources et données : page « Méthode » (à venir).</p>' +
+    '</section>';
+  }
+
+  var PAGES = {
+    "taxer-riches": {
+      title: "Faisons payer les plus riches",
+      quote: "Faisons payer les plus riches, pas les retraités.",
+      range: D.taxRich, base: "Ce qu'un ensemble plausible d'impôts sur les plus aisés rapporterait",
+      trueText: "<p>De nouveaux impôts sur les très hauts revenus et les très gros patrimoines rapporteraient bien de l'argent. Les études publiées ne disent pas le contraire : elles divergent sur le montant.</p>" +
+        "<p>Une partie des plus fortunés paie aussi, en proportion de ses revenus, moins que d'autres foyers très aisés. Ce point est discuté dans le chapitre « Qui paie ? ».</p>",
+      sizeIntro: "Notre synthèse des chiffrages publiés, après les réactions des contribuables (départs, optimisation), donne " + rng(D.taxRich[0], D.taxRich[1], 0) + " Md€ de recettes par an.",
+      sizeRange: "Taxer les plus aisés",
+      limits: [
+        "C'est une estimation, pas une recette garantie : les montants dépendent du comportement des contribuables et des décisions du Conseil constitutionnel.",
+        "Même au plus haut, il resterait plus des quatre cinquièmes du déficit à combler.",
+        "Le choix de taxer davantage les plus aisés relève de la justice fiscale, donc de valeurs. Les chiffres ne tranchent pas ce débat ; ils disent seulement ce que cela rapporterait."],
+      who: [
+        ["Promoteurs de la taxe Zucman <span class='lab'>(proposition de loi n° 768, Assemblée nationale, janvier 2025)</span>", "taxe Zucman seule, chiffrage statique", rng(D.zucmanPro[0], D.zucmanPro[1], 0) + NB + "Md€"],
+        ["Sénat <span class='lab'>(rapport n° 689, commission des finances)</span>", "taxe Zucman, impôt sur les sociétés déduit", rng(D.zucmanSenate[0], D.zucmanSenate[1], 0) + NB + "Md€"],
+        ["Sept économistes, dont P. Aghion", "taxe Zucman, après réactions des contribuables", "≈ " + fr(D.zucmanSeven, 0) + NB + "Md€"],
+        ["Étude de P. Andrews <span class='lab'>(commandée par « Trop, c'est trop ! », collectif d'entreprises)</span>", "taxe Zucman, scénario central", fr(D.zucmanAndrews) + NB + "Md€"],
+        ["Notre synthèse", "ensemble plausible d'impôts sur les plus aisés", rng(D.taxRich[0], D.taxRich[1], 0) + NB + "Md€"]],
+      note: "Aucun organisme n'a chiffré l'ensemble « taxer les plus riches ». La fourchette est notre synthèse : impôt sur les très hauts patrimoines 3 à 10 Md€, revenus du capital 2 à 5, successions 3 à 10 ; la composante « successions » n'a pas de chiffrage indépendant. Détails et liens : page « Débats »."
+    },
+    "fraude": {
+      title: "Luttons d'abord contre la fraude",
+      quote: "Luttons d'abord contre la fraude.",
+      range: D.antifraud, base: "Un nouveau plan antifraude, fiscal et social, rapporterait",
+      trueText: "<p>La fraude coûte cher. Pour la fraude sociale (cotisations non payées, prestations versées à tort), le Haut Conseil du financement de la protection sociale estime les pertes à environ " + md(D.socialFraud, 0) + " par an. La fraude fiscale est plus grande encore, mais la Cour des comptes dit que personne ne sait la mesurer : l'écart possible va de " + rng(D.taxGap[0], D.taxGap[1], 0) + " Md€ (décembre 2025).</p>" +
+        "<p>Le contrôle fiscal rapporte déjà : en 2024, il a notifié " + md(D.auditAssessed) + " de redressements, dont " + md(D.auditCollected) + " ont été recouvrés. Cet argent figure déjà dans les recettes actuelles.</p>",
+      sizeIntro: "Ce qu'un nouveau plan antifraude rapporterait en plus chaque année, selon les estimations prudentes (Cour des comptes, Haut Conseil des finances publiques) : " + rng(D.antifraud[0], D.antifraud[1], 0) + " Md€.",
+      sizeRange: "Nouveau plan antifraude",
+      compare: "Pour comparer, les pertes estimées de la fraude sociale (environ " + md(D.socialFraud, 0) + ") représentent " + pc(PCT_DEF(D.socialFraud), 0) + " du déficit : une perte estimée n'est pas un montant récupérable.",
+      limits: [
+        "Une grande partie de la fraude n'est jamais détectée, et ce qui est détecté n'est pas toujours encaissé.",
+        "La mesure antifraude de " + md(D.antifraud2026) + " annoncée pour le budget 2026 a été jugée « optimiste voire hypothétique » par le Haut Conseil des finances publiques. Le projet de budget 2027 en attend " + md(1, 1) + ".",
+        "Lutter contre la fraude est juste en soi. Mais même un succès net ne changerait pas l'ordre de grandeur du déficit."],
+      who: [
+        ["Haut Conseil du financement de la protection sociale (HCFiPS) <span class='lab'>(instance de concertation sur le financement de la protection sociale)</span>", "fraude sociale, pertes estimées", "≈ " + fr(D.socialFraud, 0) + NB + "Md€"],
+        ["Cour des comptes <span class='lab'>(juridiction financière)</span>", "fraude fiscale, impossible à trancher", rng(D.taxGap[0], D.taxGap[1], 0) + NB + "Md€"],
+        ["Gouvernement, budget 2026", "mesure antifraude annoncée, jugée optimiste par le HCFP", fr(D.antifraud2026) + NB + "Md€"],
+        ["Fondation iFRAP <span class='lab'>(libérale)</span>", "on pourrait récupérer davantage", "non chiffré"],
+        ["Notre synthèse <span class='lab'>(Cour des comptes, HCFP)</span>", "nouveau plan, rendement réaliste", rng(D.antifraud[0], D.antifraud[1], 0) + NB + "Md€"]],
+      note: "La fourchette est une synthèse de la plateforme : aucun texte publié ne la donne telle quelle, et aucun chiffrage d'un nouveau plan n'a été trouvé du côté de ceux qui le proposent. Des syndicats des finances publiques avancent des montants de fraude fiscale plus élevés ; ils ne sont pas affichés faute de source ouverte. Détails : page « Débats »."
+    }
+  };
+
+  // « Et ailleurs ? » for the two answer pages: OECD tax-to-GDP, with the rank after the measure.
+  function taxRankBlock(id) {
+    var P = PAGES[id], lo = P.range[0], hi = P.range[1];
+    var dLo = PCT_GDP(lo), dHi = PCT_GDP(hi), dd = hi < 10 ? 2 : 1;
+    var nLo = D.oecdTaxFr + dLo, nHi = D.oecdTaxFr + dHi;
+    // Only Denmark (45.2) is above France (rank 2); France stays 2nd while its new level is below Denmark.
+    var rankAfter = 1 + (D.oecdTaxDk > nHi ? 1 : 0);
+    var gap = D.oecdTaxFr - D.oecdTaxAvg;
+    var heard = id === "fraude" ? "Un plan antifraude" : "Cette mesure";
+    return {
+      lecture: "en 2024, les recettes fiscales atteignent " + pc(D.oecdTaxFr) + " du PIB en France, contre " + pc(D.oecdTaxAvg) + " en moyenne dans l'OCDE, soit " + fr(gap) + " points d'écart. La France est " + ord(D.oecdTaxRank) + " de l'OCDE, derrière le Danemark (" + pc(D.oecdTaxDk) + ").",
+      rank: heard + " ajouterait " + fr(dLo, dd) + " à " + fr(dHi, dd) + " point de PIB de recettes (calcul du site) : les prélèvements passeraient de " + pc(D.oecdTaxFr) + " à " + fr(nLo) + " à " + fr(nHi) + NB + "% du PIB. <b>Même après cette mesure, la France resterait " + ord(rankAfter) + " de l'OCDE.</b>",
+      nLo: nLo, nHi: nHi
+    };
+  }
+
+  function answer(id) {
+    var P = PAGES[id], lo = P.range[0], hi = P.range[1], tr = taxRankBlock(id);
+    var chipItems = [
+      [rng(DAYS(lo), DAYS(hi)) + " jours", "de dépense publique (une journée : " + md(D.day) + ")"],
+      [rng(PER_CAP(lo), PER_CAP(hi), 0) + " €", "par habitant et par an"],
+      [rng(100 * lo / D.pensions, 100 * hi / D.pensions) + NB + "%", "des retraites versées en un an"]
+    ];
+    return '' +
+    '<section class="hero col">' +
+      '<nav class="crumb" aria-label="Fil d\'Ariane"><a href="#">← Retraites</a><span aria-hidden="true">/</span><span>Oui, mais…</span></nav>' +
+      '<h1 tabindex="-1">« ' + P.quote + ' »</h1>' +
+    '</section>' +
+    '<div class="stack col" style="margin-top:var(--s5)">' +
+      '<div class="ablock lead"><span class="k" data-n="1">Ce qui est vrai</span>' + P.trueText + '</div>' +
+
+      '<div class="ablock"><span class="k" data-n="2">Combien</span>' +
+        '<p>' + P.sizeIntro + '</p>' +
+        chip(share(lo, hi), "pop-" + id, chipItems, "Calculs du site : une journée de dépense publique, la population et les retraites de 2025.", true, '<span>du déficit de 2025 (' + md(D.deficit) + ')</span>') +
+        (P.compare ? '<p class="small muted">' + P.compare + '</p>' : '') +
+      '</div>' +
+      figure("« " + P.sizeRange + " », face au déficit", "Recette annuelle possible, en Md€, après réactions des contribuables", "range",
+        P.base.replace(/^./, function (c) { return c.toLowerCase(); }) + " " + rng(lo, hi, 0) + " Md€ par an, soit " + share(lo, hi) + " du déficit de 2025 (" + md(D.deficit) + ").",
+        "synthèse du site (dossier 07) ; " + SRC_DEF + ".") +
+
+      '<div class="ablock"><span class="k" data-n="3">Les limites</span><ul>' + P.limits.map(function (x) { return "<li>" + x + "</li>"; }).join("") + '</ul></div>' +
+
+      '<div class="ablock"><span class="k" data-n="4">Qui dit quoi</span>' +
+        '<div class="who">' + P.who.map(function (w) { return "<div>" + w[0] + '<span class="what">' + w[1] + '</span></div><span class="num">' + w[2] + "</span>"; }).join("") + '</div>' +
+        '<p class="note">' + P.note + '</p></div>' +
+
+      '<div class="ablock"><span class="k" data-n="5">Et ailleurs ?</span>' +
+        '<p>Les recettes fiscales de la France, comparées à celles des autres pays de l\'OCDE.</p></div>' +
+      figure("Recettes fiscales totales, en % du PIB, 2024", "France avant et après la mesure, Danemark et moyenne de l'OCDE", "tax:" + id, tr.lecture,
+        "OCDE, <i>Revenue Statistics 2025</i> (décembre 2025) ; effet de la mesure : calcul du site (recette ÷ PIB 2025 de " + md(D.gdp) + "), toutes choses égales par ailleurs.") +
+      '<p class="rank">' + tr.rank + '</p>' +
+      '<div class="ph-box"><span class="tag">donnée à venir</span><span>' +
+        (id === "fraude"
+          ? "Comparaison internationale de la fraude fiscale et sociale : aucune série comparable dans la base."
+          : "Comparaison des impôts sur la fortune et sur les successions dans l'OCDE et hors OCDE : aucune série dans la base.") +
+      '</span></div>' +
+
+      '<div class="actions"><button class="btn" type="button" aria-disabled="true">Ajouter à mon budget (simulateur à venir)</button></div>' +
+      '<section class="blk" style="padding-top:var(--s5)"><h3>Autres réponses sur les retraites</h3><div class="next">' +
+        '<a class="btn ghost" href="#' + (id === "fraude" ? "taxer-riches" : "fraude") + '">« ' + PAGES[id === "fraude" ? "taxer-riches" : "fraude"].title + ' »</a>' +
+        '<a class="btn ghost" href="#">Toutes les réponses, page Retraites</a></div></section>' +
+    '</div>';
+  }
+
+  /* ======================================================================
+     CHARTS (SVG drawn at the real pixel width; ink = France / the measure,
+     grey = comparison points, hatched ochre = borrowing; never blue or red)
+     ====================================================================== */
+  var SVGNS = "http://www.w3.org/2000/svg";
+  function el(name, attrs, text) {
+    var e = document.createElementNS(SVGNS, name);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = T(text);
+    return e;
+  }
+  function svg(w, h, label) { return el("svg", { viewBox: "0 0 " + w + " " + h, width: w, height: h, role: "img", "aria-label": T(label) }); }
+  function hatch(s, id) {
+    var defs = el("defs"), p = el("pattern", { id: id, width: 6, height: 6, patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" });
+    p.appendChild(el("rect", { width: 6, height: 6, fill: "var(--track)" }));
+    p.appendChild(el("rect", { width: 3, height: 6, fill: "var(--ochre-bar)" }));
+    defs.appendChild(p); s.appendChild(defs);
+  }
+
+  // Horizontal comparison bars. rows: {l, v, hi?, c, b?}; hi draws a 35 % extension (range after a measure).
+  function compare(box, rows, max, ticks, unit, bracket, label) {
+    var W = Math.max(box.clientWidth, 240), rowH = 52, top = 4, H = top + rows.length * rowH + 26, valW = 104;
+    var x = function (v) { return (W - valW) * v / max; };
+    var s = svg(W, H, label);
+    ticks.forEach(function (g, i) {
+      s.appendChild(el("line", { x1: x(g), x2: x(g), y1: top, y2: H - 22, stroke: "var(--line)", "stroke-width": 1 }));
+      s.appendChild(el("text", { x: x(g), y: H - 6, "font-size": 12, class: "n m", "text-anchor": i === 0 ? "start" : "middle" }, g + (i === ticks.length - 1 ? NB + unit : "")));
+    });
+    rows.forEach(function (r, i) {
+      var y = top + i * rowH;
+      s.appendChild(el("text", { x: 0, y: y + 16, "font-size": 14, "font-weight": r.b ? 600 : 400 }, r.l));
+      s.appendChild(el("rect", { x: 0, y: y + 24, width: Math.max(x(r.v), 1), height: 14, fill: r.c, rx: 1 }));
+      var end = r.v;
+      if (r.hi) { s.appendChild(el("rect", { x: x(r.v), y: y + 24, width: Math.max(x(r.hi) - x(r.v), 1), height: 14, fill: r.c, opacity: .35 })); end = r.hi; }
+      s.appendChild(el("text", { x: x(end) + 8, y: y + 36, "font-size": 14, class: "n", "font-weight": r.b ? 600 : 500 }, r.t));
+    });
+    if (bracket) {
+      var a = bracket.a, b = bracket.b, xa = x(rows[b].v), xb = x(rows[a].v);
+      var yA = top + a * rowH + 31, yB = top + b * rowH + 31;
+      s.appendChild(el("path", { d: "M" + xa + " " + (yB - 10) + " V" + (yB - 16) + " H" + xb + " V" + (yA + 8), fill: "none", stroke: "var(--muted)", "stroke-width": 1, "stroke-dasharray": "2 2" }));
+      s.appendChild(el("text", { x: Math.min(xb + 6, W - 70), y: yB - 19, "font-size": 12, class: "n m", "text-anchor": "start" }, bracket.t));
+    }
+    return s;
+  }
+
+  function oldAge(box) {
+    var pick = { "Italie": 1, "Allemagne": 1, "Espagne": 1 };
+    var rows = [{ l: "France", v: D.oldAgeFr, c: "var(--ink)", b: true }, { l: "UE-27", v: D.oldAgeEu, c: "var(--bar)" }];
+    D.panel.forEach(function (p) { if (pick[p[0]]) rows.push({ l: p[0], v: p[1], c: "var(--bar)" }); });
+    rows.sort(function (a, b) { return b.v - a.v; });
+    rows.forEach(function (r) { r.t = fr(r.v) + NB + "%"; });
+    var iF = rows.findIndex(function (r) { return r.l === "France"; }), iE = rows.findIndex(function (r) { return r.l === "UE-27"; });
+    var br = Math.abs(iF - iE) === 1 ? { a: Math.min(iF, iE), b: Math.max(iF, iE), t: "écart " + fr(D.oldAgeFr - D.oldAgeEu) + " pts" } : null;
+    if (br) { br.a = iF; br.b = iE; }
+    return compare(box, rows, 16, [0, 5, 10, 15], "%", br,
+      "Dépenses de vieillesse en pourcentage du PIB, 2024 : " + rows.map(function (r) { return r.l + " " + fr(r.v); }).join(", "));
+  }
+
+  function taxChart(id) {
+    return function (box) {
+      var tr = taxRankBlock(id);
+      var rows = [
+        { l: "Danemark (1er de l'OCDE)", v: D.oecdTaxDk, c: "var(--bar)", t: fr(D.oecdTaxDk) + NB + "%" },
+        { l: "France", v: D.oecdTaxFr, c: "var(--ink)", b: true, t: fr(D.oecdTaxFr) + NB + "%" },
+        { l: "France après la mesure (calcul)", v: tr.nLo, hi: tr.nHi, c: "var(--ink)", b: true, t: fr(tr.nLo) + " à " + fr(tr.nHi) + NB + "%" },
+        { l: "Moyenne de l'OCDE", v: D.oecdTaxAvg, c: "var(--bar)", t: fr(D.oecdTaxAvg) + NB + "%" }];
+      return compare(box, rows, 50, [0, 10, 20, 30, 40, 50], "%", null,
+        "Recettes fiscales en pourcentage du PIB, 2024 : Danemark 45,2, France 43,5, France après la mesure " + fr(tr.nLo) + " à " + fr(tr.nHi) + ", moyenne de l'OCDE 34,1");
+    };
+  }
+
+  // Range bar: the track is the 2025 deficit; solid ink = low estimate, 35 % ink up to the high estimate.
+  function rangeChart(id) {
+    return function (box) {
+      var P = PAGES[id], lo = P.range[0], hi = P.range[1];
+      var W = Math.max(box.clientWidth, 240), H = 124, Df = D.deficit;
+      var x = function (v) { return (W - 1) * v / Df; };
+      var s = svg(W, H, "Fourchette de " + fr(lo, 0) + " à " + fr(hi, 0) + " milliards d'euros, face à un déficit de " + fr(Df) + " milliards");
+      var y = 46, h = 22, close = x(hi) - x(lo) < 36;
+      s.appendChild(el("rect", { x: 0.5, y: y, width: W - 1, height: h, fill: "var(--track)", stroke: "var(--muted)", "stroke-width": 1, rx: 1 }));
+      s.appendChild(el("rect", { x: 0.5, y: y, width: x(lo), height: h, fill: "var(--ink)" }));
+      s.appendChild(el("rect", { x: x(lo), y: y, width: x(hi) - x(lo), height: h, fill: "var(--ink)", opacity: .35 }));
+      s.appendChild(el("line", { x1: x(hi), x2: x(hi), y1: y - 6, y2: y + h, stroke: "var(--ink)", "stroke-width": 1.5 }));
+      s.appendChild(el("line", { x1: x(lo) + 0.75, x2: x(lo) + 0.75, y1: y - 6, y2: y + h, stroke: "var(--ink)", "stroke-width": 1.5 }));
+      if (close) {
+        s.appendChild(el("text", { x: Math.max(x(lo), 1), y: y - 12, "font-size": 13, class: "n", "text-anchor": "start" }, fr(lo, 0) + " à " + fr(hi, 0) + NB + "Md€"));
+      } else {
+        s.appendChild(el("text", { x: x(lo), y: y - 12, "font-size": 13, class: "n", "text-anchor": "middle" }, fr(lo, 0)));
+        s.appendChild(el("text", { x: x(hi) + 2, y: y - 12, "font-size": 13, class: "n", "text-anchor": "start" }, fr(hi, 0) + NB + "Md€"));
+      }
+      s.appendChild(el("text", { x: W - 1, y: y - 12, "font-size": 13, class: "n", "text-anchor": "end" }, fr(Df)));
+      s.appendChild(el("text", { x: W - 1, y: y + h + 20, "font-size": 13, class: "m", "text-anchor": "end" }, "Déficit 2025"));
+      s.appendChild(el("text", { x: 0, y: y + h + 20, "font-size": 13, "font-weight": 600 }, P.sizeRange));
+      s.appendChild(el("text", { x: 0, y: y + h + 38, "font-size": 13, class: "m" }, share(lo, hi) + " du déficit"));
+      return s;
+    };
+  }
+
+  function calendar(box) {
+    var W = Math.max(box.clientWidth, 240), narrow = W < 520, H = narrow ? 128 : 112;
+    var x = function (d) { return W * d / 365; };
+    var pen = D.pensions / D.day;
+    var s = svg(W, H, "Calendrier : retraites, environ " + fr(pen, 0) + " jours ; emprunt à partir du 29 novembre");
+    hatch(s, "hatch-cal");
+    var y = 34, h = 26;
+    s.appendChild(el("rect", { x: 0, y: y, width: W, height: h, fill: "var(--track)" }));
+    s.appendChild(el("rect", { x: 0, y: y, width: x(pen), height: h, fill: "var(--ink)" }));
+    s.appendChild(el("rect", { x: x(D.borrowStart), y: y, width: W - x(D.borrowStart), height: h, fill: "url(#hatch-cal)" }));
+    s.appendChild(el("line", { x1: x(D.borrowStart), x2: x(D.borrowStart), y1: y - 8, y2: y + h, stroke: "var(--ochre-bar)", "stroke-width": 1.5 }));
+    var months = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], start = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    start.forEach(function (d, i) {
+      if (i) s.appendChild(el("line", { x1: x(d), x2: x(d), y1: y + h, y2: y + h + 5, stroke: "var(--muted)", "stroke-width": 1 }));
+      s.appendChild(el("text", { x: x(d + 15), y: y + h + 18, "font-size": 11, class: "n m", "text-anchor": "middle" }, months[i]));
+    });
+    s.appendChild(el("text", { x: 0, y: y - 10, "font-size": 13, "font-weight": 600 }, "Retraites : " + fr(pen, 0) + " jours"));
+    s.appendChild(el("text", { x: W, y: y - 10, "font-size": 13, "font-weight": 600, "text-anchor": "end", fill: "var(--ochre)" }, "Emprunt dès le 29 nov."));
+    s.appendChild(el("text", { x: 0, y: H - 6, "font-size": 12, class: "m" }, narrow ? "Fond : le reste de la dépense" : "Fond : le reste de la dépense (santé, école, défense, intérêts…)"));
+    return s;
+  }
+
+  function chartFor(key) {
+    if (key === "calendar") return calendar;
+    if (key === "oldage") return oldAge;
+    if (key.indexOf("tax:") === 0) return taxChart(key.slice(4));
+    return rangeChart(currentId);
+  }
+  var currentId = "";
+  function drawBox(b) { b.innerHTML = ""; b.appendChild(chartFor(b.getAttribute("data-chart"))(b)); }
+  function drawAll() { document.querySelectorAll("[data-chart]").forEach(drawBox); }
+  var ro = null, widths = new WeakMap();
+  function observe() {
+    if (!window.ResizeObserver) return;
+    if (ro) ro.disconnect();
+    ro = new ResizeObserver(function (entries) {
+      entries.forEach(function (en) {
+        var b = en.target, w = Math.round(b.clientWidth);
+        if (widths.get(b) === w) return; widths.set(b, w); drawBox(b);
+      });
+    });
+    document.querySelectorAll("[data-chart]").forEach(function (b) { ro.observe(b); });
+  }
+
+  /* ======================================================================
+     ROUTER, THEME, CHIPS
+     ====================================================================== */
+  var app = document.getElementById("app");
+  function render(first) {
+    var id = location.hash.slice(1);
+    currentId = PAGES[id] ? id : "";
+    app.innerHTML = T(currentId ? answer(currentId) : hub());
+    document.title = T(currentId ? "« " + PAGES[id].title + " », retraites" : "Les retraites, ordres de grandeur");
+    drawAll(); observe();
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      document.querySelectorAll(".mini b[data-w]").forEach(function (b) { b.style.width = b.getAttribute("data-w") + "%"; });
+    }); });
+    if (!first) { window.scrollTo(0, 0); var h1 = app.querySelector("h1"); if (h1) h1.focus({ preventScroll: true }); }
+  }
+  addEventListener("hashchange", function () { render(false); });
+  app.addEventListener("click", function (e) {
+    var c = e.target.closest(".fchip");
+    if (c) { var p = document.getElementById(c.getAttribute("aria-controls")), open = c.getAttribute("aria-expanded") === "true"; c.setAttribute("aria-expanded", String(!open)); p.hidden = open; return; }
+    if (e.target.closest('.btn[aria-disabled="true"]')) e.preventDefault();
+  });
+
+  var root = document.documentElement, btn = document.getElementById("theme"), lab = document.getElementById("theme-label");
+  function sysDark() { return window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches; }
+  function current() { var t = root.getAttribute("data-theme"); return t || (sysDark() ? "dark" : "light"); }
+  function label() { lab.textContent = current() === "dark" ? "Sombre" : "Clair"; }
+  try { var saved = localStorage.getItem("theme"); if (saved === "dark" || saved === "light") root.setAttribute("data-theme", saved); } catch (e) {}
+  label();
+  btn.addEventListener("click", function () {
+    var next = current() === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next); label(); drawAll();
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+  if (window.matchMedia) matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () { label(); drawAll(); });
+
+  render(true);
+})();
+</script>
+</body>
+</html>

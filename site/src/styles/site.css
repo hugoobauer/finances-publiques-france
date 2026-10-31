@@ -1,0 +1,28 @@
+/* CSS minimal, sans choix de design : l'identité visuelle est définie séparément. */
+:root { color-scheme: light dark; --max: 42rem; --pad: 1rem; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font: 1.0625rem/1.6 system-ui, sans-serif; background: Canvas; color: CanvasText; }
+.top, main, .foot { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.top { display: flex; justify-content: space-between; align-items: baseline; padding-top: 1rem; padding-bottom: 1rem; border-bottom: 1px solid color-mix(in srgb, CanvasText 20%, transparent); }
+.top nav a { margin-left: 1rem; }
+.brand { font-weight: 700; text-decoration: none; color: inherit; }
+main { padding-top: 1.5rem; padding-bottom: 3rem; }
+h1 { font-size: 1.75rem; line-height: 1.2; }
+h2 { font-size: 1.3rem; margin-top: 2.2rem; }
+h3 { font-size: 1.1rem; }
+.lead { font-size: 1.15rem; }
+.meta, .foot, .kind { color: color-mix(in srgb, CanvasText 60%, transparent); }
+.foot { font-size: 0.875rem; padding-bottom: 2rem; }
+.prose { overflow-wrap: break-word; }
+.prose table { border-collapse: collapse; display: block; overflow-x: auto; }
+.prose td, .prose th { border: 1px solid color-mix(in srgb, CanvasText 25%, transparent); padding: 0.25rem 0.5rem; }
+a.pastille { font-size: 0.7em; vertical-align: super; line-height: 0; text-decoration: none; margin-left: 0.1em; }
+a.pastille::before { content: "["; } a.pastille::after { content: "]"; }
+.sources { margin-top: 3rem; border-top: 1px solid color-mix(in srgb, CanvasText 20%, transparent); font-size: 0.9rem; }
+.sources li { margin-bottom: 0.6rem; }
+.sources .kind { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.sources .src { color: color-mix(in srgb, CanvasText 70%, transparent); }
+.chapters li { margin: 0.4rem 0; }
+.pager { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; }
+.toc { margin-bottom: 2rem; font-size: 0.95rem; }
+.toc ol { margin: 0.4rem 0 0; }

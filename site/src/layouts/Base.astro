@@ -1,0 +1,27 @@
+---
+import '../styles/site.css';
+interface Props { title: string; description?: string }
+const { title, description = 'Les ordres de grandeur des finances publiques françaises, avec leurs sources.' } = Astro.props;
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="top">
+      <a class="brand" href="/">Finances publiques 2027</a>
+      <nav aria-label="Navigation principale">
+        <a href="/">Chapitres</a>
+        <a href="/debats/">Débats</a>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer class="foot">
+      <p>Squelette technique : mise en page et identité visuelle à définir.</p>
+    </footer>
+  </body>
+</html>

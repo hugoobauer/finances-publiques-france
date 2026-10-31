@@ -172,7 +172,7 @@ Note sous le tableau : « Total : 999 € (arrondis). La vieillesse, dans cette 
 
 > En septembre 2026, l’institut de sondage Elabe a demandé aux Français, pour *Les Echos*, quelles dépenses réduire en priorité. Les plus citées : la famille (34 % des personnes interrogées), les aides aux entreprises (33 %), le chômage (30 %) [[quiz:M6]]. Les moins citées : les retraites (7 % des personnes interrogées), la santé (6 %), l’éducation (5 %) [[quiz:M6]].
 >
-> Les réponses varient selon le vote : à gauche, les aides aux entreprises viennent en tête ; à droite, la famille [[quiz:M6]].
+> Les réponses varient selon le vote : les aides aux entreprises viennent en tête chez certains électeurs, la famille chez d’autres [[quiz:M6]].
 >
 > La famille et le chômage pèsent ensemble **environ 7 % des dépenses publiques** (4,0 % et 2,9 %) [[fig:cofog_family_2024_pct_te]] [[fig:cofog_unemployment_2024_pct_te]] [[calc:cofog_family_2024_pct_te + cofog_unemployment_2024_pct_te = 6,9]]. La vieillesse, la santé et l’éducation en pèsent **environ 48 % des dépenses publiques** [[calc:cofog_old_age_2024_pct_te + cofog_health_2024_pct_te + cofog_education_2024_pct_te = 47,9]]. Les aides aux entreprises pèsent de 45 à 211 milliards d’euros selon la définition [[fig:business_aid_range_eur_bn]].
 >
@@ -234,22 +234,22 @@ Note sous le tableau : « Total : 999 € (arrondis). La vieillesse, dans cette 
 
 ---
 
-## Étape 9. Les sommes citées par chaque camp, au même étalon
+## Étape 9. Les sommes souvent citées, au même étalon
 
 **Texte affiché**
 
-> Chaque camp cite des sommes à mobiliser sans toucher aux grands postes. À gauche, surtout des recettes non perçues et des aides à conditionner ; à droite, surtout des dépenses. Même étalon pour tous : les jours de dépense publique.
+> Dans le débat, on cite souvent des sommes à mobiliser sans toucher aux grands postes. Ce sont des recettes non perçues et des aides à conditionner, ou des dépenses. Même étalon pour toutes : les jours de dépense publique.
 >
 > Une taille n’est pas un rendement : ce que chaque piste rapporterait vraiment, et les impôts nouveaux comme la taxe Zucman, sont au chapitre 7.
 >
-> Souvent citées à gauche :
+> Surtout des recettes et des aides :
 > - **Les aides publiques aux entreprises** : de 45 milliards (sens européen) à 211 milliards d’euros (Sénat) en 2023, soit **de 10 à 45 jours** [[fig:business_aid_range_eur_bn]] [[calc:business_aid_range_eur_bn / one_day_spending_eur_bn = 9,6 ; 44,9]]. Précaution : le haut compte surtout des baisses d’impôts et de cotisations, et des prêts. La Fondation iFRAP n’y voit pas des aides. Des syndicats (CGT, Force ouvrière) le retiennent et demandent des conditions et une évaluation.
 > - **Les « niches fiscales »** : 91,8 milliards d’euros d’impôts non prélevés en 2025, soit **environ 20 jours** [[fig:tax_expenditures_2025_eur_bn]] [[calc:tax_expenditures_2025_eur_bn / one_day_spending_eur_bn = 19,6]]. Précaution : des recettes non perçues, pas une recette disponible telle quelle ; elles recoupent en partie les aides aux entreprises (chapitre 3).
 > - **Les « niches sociales »** (exonérations et baisses de cotisations) : 91,0 milliards d’euros en 2025, soit **environ 19 jours** [[fig:niches_sociales_2025_eur_bn]] [[calc:niches_sociales_2025_eur_bn / one_day_spending_eur_bn = 19,4]]. Précaution : des recettes non perçues, qui recoupent en grande partie les aides aux entreprises ; les montants ne s’additionnent pas.
 > - **La fraude fiscale** : la Cour des comptes juge impossible de dire si elle est plus proche de 30 ou de 130 milliards d’euros par an [[fig:tax_gap_cour_range_eur_bn]]. Cela fait **de 6 à 28 jours** [[calc:tax_gap_cour_range_eur_bn / one_day_spending_eur_bn = 6,4 ; 27,7]]. Précaution : une perte estimée, pas un montant récupérable (chapitre 3).
 > - **L’impôt sur la fortune** : sa transformation en impôt sur la fortune immobilière coûte de 3 à 4,5 milliards d’euros par an [[fig:isf_repeal_mechanical_loss_eur_bn]]. Cela fait **de 0,6 à 1 jour** [[calc:isf_repeal_mechanical_loss_eur_bn / one_day_spending_eur_bn = 0,64 ; 0,96]]. Précaution : une estimation citée par le CAE, effet mécanique seulement. La Fondation iFRAP prévoyait un gain d’investissement et d’emploi. Le CAE juge l’exil fiscal limité (chapitre 4).
 >
-> Souvent citées à droite :
+> Surtout des dépenses :
 > - **Le « train de vie de l’État »** (services publics généraux hors intérêts) : 7,3 % des dépenses publiques en 2024, soit **environ 27 jours** [[calc:cofog_general_public_services_2024_pct_te − cofog_interest_2024_pct_te = 7,3]] [[yard:calendar_days_gps_excl_interest]]. Précaution : ce poste inclut la recherche fondamentale et l’aide extérieure, mais pas le personnel administratif des hôpitaux et des écoles.
 > - **La fraude sociale** : environ 14 milliards d’euros de pertes estimées par an (Haut Conseil du financement de la protection sociale), soit **environ 3 jours** [[fig:social_fraud_hcfips_dec2025_eur_bn]] [[calc:social_fraud_hcfips_dec2025_eur_bn / one_day_spending_eur_bn = 3,0]]. Précaution : une perte estimée sur un périmètre incomplet, dont une faible part est détectée. La Fondation iFRAP juge qu’on pourrait en récupérer davantage.
 > - **La contribution à l’Union européenne** : de 6,4 à 9,5 milliards d’euros net en 2025, selon la méthode [[fig:eu_net_contribution_2025_operating_eur_bn]] [[fig:eu_net_contribution_2025_accounting_eur_bn]]. Cela fait **de 1,4 à 2 jours** [[calc:eu_net_contribution_2025_*_eur_bn / one_day_spending_eur_bn = 1,4 ; 2,0]]. Précaution : la réduire suppose de changer une règle européenne adoptée à l’unanimité des 27 pays. Le ministère de l’Économie juge la notion de solde net limitée (chapitre 7).
@@ -347,6 +347,13 @@ AME 1,34 / 4,6962 = 0,29 jour (« 0,3 jour ») et × 24 = 6,8 heures ; table 1 0
 -->
 
 ## Notes de relecture
+
+**Passe du 31 octobre 2026 : pas d’étiquette de camp sur les idées**
+
+- Décision du 31 octobre 2026 : aucune idée n’est attribuée à « la gauche » ou à « la droite » (glossaire §1.13, règle 8). Organismes et étiquettes inchangés ; aucun chiffre ni pastille modifié.
+- Étape 6 : « à gauche, les aides aux entreprises viennent en tête ; à droite, la famille » → « les aides aux entreprises viennent en tête chez certains électeurs, la famille chez d’autres » (le détail par électorat reste sur la page « Débats », point 8.1).
+- Étape 9 : titre « Les sommes citées par chaque camp » → « Les sommes souvent citées » ; « Chaque camp cite… À gauche, surtout des recettes… ; à droite, surtout des dépenses » → « Dans le débat, on cite souvent… Ce sont des recettes non perçues et des aides à conditionner, ou des dépenses » ; intertitres « Souvent citées à gauche / à droite » → « Surtout des recettes et des aides / Surtout des dépenses ». Ordre et contenu des deux listes inchangés (la symétrie reste interne).
+- Contrôle : `validate.py --strict` PASS ; 2 188 mots visibles (2 186 avant).
 
 <!-- Non affiché sur le site. -->
 

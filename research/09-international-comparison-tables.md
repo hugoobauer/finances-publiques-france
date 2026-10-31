@@ -610,3 +610,114 @@ Scope: the README §8 residual inconsistencies that concern this file (#4, #5) a
 - Item-by-item bridge between Insee PO 2024 (42.7%) and Eurostat/OECD (43.5%): **now bridged to within about 0.1 pp** (section 6). Components: GDP vintage about 0.2 pp (Eurostat amount EUR 1,270.2 bn / current GDP = 43.28%); tax credits recorded as expenditure about 0.66 pp (EUR 19-20 bn, derived from HCFP-2026-5 §80-81 and Table 15: expenditure excluding tax credits of EUR 1,742 bn in 2026, +2.8% in 2026, +2.5% in 2025); residual about +0.1 pp unexplained. Insee's own table note confirms the PO concept: "*hors cotisations sociales imputées et crédit d'impôts*", including the EU share (0.1 pt) (https://www.insee.fr/fr/statistiques/2381412, xlsx `econ-fin-pub-prelev-oblig.xlsx`). The tax-credit amount is derived, not published as such: keep the bridge as an explanation, not as a headline figure.
 
 **Still open:** the 0.1 pp residual of the PO bridge (Insee publishes no official reconciliation); the 2024 broad tax-aggregate rank (2nd behind DK as published vs 2nd behind BE at current GDP) should be re-checked when Eurostat updates the `gov_10a_taxag` ratios (expected with the 2025 data).
+
+---
+
+## Addendum of 2026-10-31: new comparison data (Eurostat COFOG and ESSPROS, ILO, OECD, CEPEJ, ratings)
+
+Scope: data read on 31 October 2026 by three research agents and integrated into `platform/data/figures.json` the same night. All Eurostat series were read live from the dissemination API (`gov_10a_exp` updated 21 Oct 2026; `spr_exp_func` updated 26 Oct 2026; `gov_10a_main` updated 21 Oct 2026). Ranks are computed on the 27 member states (1 = highest; Greece is `EL` in the API). Nothing here replaces the values of file 00; where a value differs from file 00, the difference is flagged.
+
+### A.1 EU-27 aggregates, COFOG (% of GDP, 2024, sector S13, published ratios)
+
+| Function (code) | France (published ratio) | EU-27 | France rank of 27 | Neighbors in the ranking | Panel (DE, IT, ES, NL, BE, SE, DK) |
+|---|---|---|---|---|---|
+| Old age (GF1002) | 13.4 | **10.6** | 4 | above: IT 13.9; below: EL 11.8 | 9.9, 13.9, 10.4, 6.1, 10.2, 10.9, 7.2 |
+| Unemployment (GF1005) | 1.7 | **1.2** | 2, tied with DE at 1.7 | below: FI 1.6 | 1.7, 0.9, 1.5, 0.7, 1.1, 1.1, 1.4 |
+| Health (GF07) | 8.9 | **7.3** | 4 | above: HR 9.0 (tie CZ 9.0); below: DK 8.3 | 7.6, 6.6, 6.5, 7.3, 8.0, 7.4, 8.3 |
+| Education (GF09) | 5.1 | **4.7** | 11 | above: AT 5.3; below: NL 5.1 (tie at one decimal) | 4.5, 4.0, 4.1, 5.1, 6.3, 7.2, 5.6 |
+| Social protection (GF10) | 23.7 (file 00: 23.6 at current GDP) | **19.5** | 2 | above: FI 26.5; below: AT 22.8 | 20.4, 21.3, 18.7, 16.6, 20.4, 19.0, 19.6 |
+| Total expenditure (TOTAL) | 57.3 | **48.8** | 2 | above: FI 57.7; below: AT 55.2 | 49.4, 50.4, 45.5, 44.4, 54.1, 50.0, 47.3 |
+
+Caveats:
+- The COFOG unemployment rank is not robust at one decimal. FR and DE are tied at 1.7 in the published series; recomputed from MIO_EUR and current GDP, FR 1.653, DE 1.635, FI 1.623 (different GDP vintage). Use the ESSPROS series (A.2) for any unemployment rank.
+- Health (HR/CZ) and education (AT/NL) have ties at one decimal; the ranks 4 and 11 are indicative.
+- The France values above are the published ratios (older GDP vintage). The canonical France values of file 00 stay 13.4, 8.9, 5.1 and 23.6 (social protection, at current GDP: the published ratio is 23.7). The EU-27 aggregate for social protection is 19.5 in both vintages.
+
+### A.2 ESSPROS (SESPROS) unemployment and old-age benefits (% of GDP, 2024, provisional)
+
+| Function | France | EU-27 | France rank of 27 | Neighbors | Panel (DE, IT, ES, NL, BE, SE, DK) |
+|---|---|---|---|---|---|
+| Unemployment (UNE) | **1.75** | **1.08** | 1 | below: FI 1.65 (gap 0.10 point); then ES 1.53, AT 1.47, IT 1.21, DE 1.04 | 1.04, 1.21, 1.53, 0.67, 0.94, 0.77, 0.91 |
+| Old age (OLD) | **13.0** | **11.32** | 4 | above: FI 14.44 (IT 14.53, AT 14.5); below: SE 12.35 | 10.63, 14.53, 10.58, 9.81, 12.23, 12.35, 10.43 |
+
+Revision to note: the vintage of 26 Oct 2026 differs from the local CSV `research/data/eurostat_spr_exp_func.csv` and from older text (France unemployment 1.76, France old age 13.06, EU-27 old age 11.37). EU-27 unemployment is unchanged at 1.08. The CSV has not been re-downloaded; the API values above prevail.
+
+### A.3 Rank after a measure (static simulation, other countries unchanged)
+
+| Measure | Computed France value | Rank of 27 | Comment |
+|---|---|---|---|
+| Unemployment benefits (ESSPROS) cut by 10% | 1.75 x 0.90 = 1.575 % of GDP | 2 | behind FI (1.65); above ES (1.53); still 0.5 point above EU-27 (1.08) |
+| Unemployment benefits (ESSPROS) cut by 25% | 1.75 x 0.75 = 1.31 % of GDP | 4 | behind FI, ES, AT; above IT (1.21) |
+| Old-age expenditure (COFOG) cut by 0.5 point of GDP | 13.4 - 0.5 = 12.9 % of GDP | 4 | still above EL (11.8) |
+| Old-age expenditure (COFOG) cut by 1 point of GDP | 13.4 - 1.0 = 12.4 % of GDP | 4 | still above EL (11.8); it would take a cut of more than 1.6 points to fall to 5th |
+
+These are own computations from rounded published ratios, ceteris paribus (the EU average also moves, negligibly).
+
+### A.4 ILO: share of unemployed persons receiving unemployment cash benefits, 2023 (SDG 1.3.1)
+
+Source: ILO, *World Social Protection Report 2024-26*, Figure 4.26 (printed p. 160, PDF p. 186; text p. 159), https://www.ilo.org/sites/default/files/2024-09/WSPR_2024_EN_WEB_0.pdf. Read from the rendered page image. Aggregates are weighted by the number of unemployed. The ILO warns that the estimates are not strictly comparable with the previous edition (do not compare with the 2015 values as published earlier), and that 2023 is still affected by COVID-era transfers, notably in the United States. More than 168 million unemployed receive no benefit.
+
+| Group | 2023 | (2015) |
+|---|---|---|
+| World | 16.7 | 15.4 |
+| High-income countries | 56.1 | 44.0 |
+| Europe and Central Asia | 49.1 | 45.3 |
+| of which Northern, Southern and Western Europe (France's subregion) | 70.3 | 57.5 |
+| Americas | 21.0 | 14.3 |
+| of which Northern America | 50.1 | 29.6 |
+| Asia and the Pacific | 12.8 | 9.1 |
+| of which Eastern Asia (Japan, Korea) | 23.8 | 19.1 |
+| Africa | 3.8 | 2.7 |
+| Arab States | 1.2 | 2.7 |
+
+France in the country annex (Annex 5.2, printed p. 292, PDF p. 318): 100.0 for 2021. This is a ratio of recipients to unemployed persons capped at 100 (footnote 7), which includes recipients in part-time or reduced activity. Do not present it as "every unemployed person in France is paid". Country values for Italy, Spain, Japan, Korea, the US and the UK were not read reliably and are not recorded.
+
+### A.5 OECD net replacement rates (first month of unemployment)
+
+Source: OECD Tax-Benefit Data Portal, dataflow `DSD_TAXBEN_NRR@DF_NRR` (measure NHIDU), SDMX API, CSV. Case: single person, no children, previous earnings 100% of the average wage, unemployment insurance only (no social assistance, no housing benefit), first month. Values are rounded integers in the source, % of previous net household income.
+
+| Country | 2025 (or latest) | 2024 |
+|---|---|---|
+| France | **68** | 68 |
+| Germany | 60 | 60 |
+| Italy | 61 | 64 |
+| Spain | 52 | 54 |
+| Japan | 59 (2024; 2025 not published) | 59 |
+| Korea | 50 | 52 |
+| United States | 38 | 33 |
+| United Kingdom | 11 | 12 |
+| Denmark | 59 (2024; 2025 not published) | 59 |
+| OECD average | 55 | 55 |
+
+France is the highest of the ten in the first month. Duration profile (insurance only): France 68 through month 24 then 21; Germany 60 through month 12 then 17; Denmark (2024) 59 then 50 from month 4, 0 after month 24; Spain 52 through month 24, 27 months 25-30; Italy falling from 61 to 29 at month 24, 0 from month 25; Japan (2024) 59 for months 1-9 then 0; Korea 50 for months 1-8, 13 for months 9-14; US 38 for months 1-6 then 0; UK flat 11; OECD average 55, 29 at month 12, 20 at month 24. The model-implied insurance durations are read from these profiles, not from legal texts.
+
+Caveats:
+- The OECD profile for France shows 24 months, whereas Unedic rules cap the duration at 18 months for under-55s since 1 Feb 2023 (coefficient 0.75). The OECD model person (long record) apparently does not reflect the coefficient. Do not combine the two as if they were consistent. The France month-25 rate (21) is not recorded as a figure.
+- Japan and Korea: the OECD method is the same, so the rate is comparable in construction, but it describes a hypothetical eligible worker. Spells are short and coverage is low (ILO: Eastern Asia 23.8%). The US and UK rates reflect other system designs (low insurance benefit, assistance or tax credits).
+
+### A.6 French unemployment insurance (ARE): maximum duration
+
+Source: Unedic, *Fiche thématique "Durée d'indemnisation"*, February 2023, https://www.unedic.org/storage/uploads/2023/08/29/Dure-dindemnisation_uid_64edabcfa8df4.pdf, and the April 2025 edition, https://www.unedic.org/storage/uploads/2025/06/10/Dure-dindemnisation_uid_6847e575cd5df.pdf; Unedic parameters sheet of April 2026.
+- Since 1 Feb 2023 a coefficient of 0.75 applies to the duration: maximum 18 months (548 days) under 53, 22.5 months (685 days) at 53-54, 27 months (822 days) at 55+, floor 6 months (182 days). A supplement of up to 182 / 228 / 273 days (back to 730 / 913 / 1,095 days) applies when the INSEE unemployment rate (ILO definition) is at or above 9%, with rise conditions not read in full.
+- The convention of 15 Nov 2024 did not cut the duration further: the 18-month cap and the 0.75 coefficient are unchanged. It raises the age bands by two years (18 months now below 55; 22.5 months at 55-56; 27 months at 57+), lowers the cap on non-worked days from 75% to 70% of worked days and opens the training extension to 55+. The start dates (1 Jan 2025; 1 Apr 2025 for the age thresholds) come from a search summary and are to be confirmed on the Unedic page and on Legifrance.
+- Not recorded: the pre-2023 maxima (24 / 30 / 36 months), inferred from the end-of-rights supplement totals and not confirmed on Legifrance (HTTP 403). Suggested wording once confirmed: "durée maximale ramenée de 24 à 18 mois pour les moins de 53 ans en 2023", and describe the 2025 change as an age-threshold increase.
+
+### A.7 Justice and investment
+
+- **CEPEJ disposition time, civil and commercial litigious cases, first instance, 2022:** France 333 days (332.62), Council of Europe median 239.43 days (average 273.29; minimum 58.22 Azerbaijan; maximum 745.84 Greece; states reporting NA are excluded). Source: CEPEJ-STAT, Quantitative Data EN, version 2024.01, data refreshed 14/08/2025, question DT091.2, non-standardized values (Tableau: https://public.tableau.com/views/QuantitativeDataEN/Tables; screenshot in `research/data/raw/cepej/`). France is about 93 days (39%) above the median. Context: Spain 336.74, Italy 539.69, Germany 240.90, Portugal 237.95. Disposition time is a calculated indicator (pending cases at year end / resolved cases x 365), not a measured case duration. Do not confuse the median with the EU Justice Scoreboard "EU median", which reads 239 by coincidence on a different country set.
+- **Net public investment 2025 (general government, % of GDP):** gross fixed capital formation (P.51G) minus consumption of fixed capital (P.51C), Eurostat `gov_10a_main` (21 Oct 2026). France 4.4 - 3.8 = about 0.6 (2024: 4.3 - 3.8 = 0.5); euro area (EA20 and EA21 identical) 3.7 - 2.9 = about 0.8 (2024: 0.6). The net figures are computed from inputs rounded to 0.1, so they carry an uncertainty of about 0.1 point (France 0.5-0.7; euro area 0.7-0.9). France's gross investment is above the euro area (+0.7 point) while its consumption of fixed capital is also higher (+0.9 point): the net gap (-0.2 point) is within rounding and must not be presented as a clear under-investment.
+
+### A.8 Sovereign-rating actions confirmed on 31 Oct 2026
+
+Sources: Ministry of the Economy press releases read directly (presse.economie.gouv.fr), and Moody's own release for December 2024. The AFT page remained unreachable (Cloudflare).
+- Fitch, 28 Apr 2023: downgrade from AA to AA-, outlook stable (before: negative since 15 May 2020). Ministry release of 29 Apr 2023 (no. 810); Fitch release URL already checked on 25 Oct 2026.
+- Fitch, 11 Oct 2024: AA- affirmed, outlook revised from stable to negative (Fitch release, checked on 25 Oct 2026).
+- Moody's, 14 Dec 2024: downgrade from Aa2 to Aa3, outlook changed from negative to stable (Moody's release, Frankfurt, 14 Dec 2024; rationale: political fragmentation).
+- S&P, 29 Nov 2025 (date of the ministry release; the S&P decision date was not read): A+ maintained, outlook stable (ministry release no. 147).
+- Fitch, 6 Mar 2026: A+ maintained, outlook stable (ministry release no. 443).
+- Fitch, 28 Aug 2026: A+ maintained, outlook stable (ministry release no. 973; replaces the date-only AFT listing).
+- S&P, 29 May 2026: A+ maintained, outlook stable (ministry release no. 725). Next S&P review: 27 Nov 2026.
+- Moody's, 23 Oct 2026: Aa3 maintained, outlook negative (ministry release no. 1146; replaces the CNBC-only source).
+- **New, after the 25 Oct 2026 base: Fitch, 30 Oct 2026: A+ kept, outlook changed from stable to negative** (ministry release no. 1161; Fitch's own release not read). Every statement in the base that says "Fitch A+ stable" is now out of date (file 06 section 3.4, section 1 summary; chapters citing the three agencies' outlooks).
+
+Not verified and not recorded: S&P 31 May 2024 (AA to AA-, only a parliamentary budget report and wires; S&P's release needs a login); S&P outlook to negative on 28 Feb 2025 (press only; if confirmed, `outlook_before` of S&P 17 Oct 2025 should be negative, not null); Moody's 25 Oct 2024 (Aa2, outlook negative; page not opened).

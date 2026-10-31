@@ -9,12 +9,12 @@ Ce site n’a pas fait relire ses chapitres par des experts engagés pour cela. 
 Quelques règles :
 
 - Nous ne citons que des textes que nous avons ouverts. Si un texte n’a pas pu être ouvert, nous ne l’utilisons pas.
-- Chaque organisme porte son étiquette d’orientation, la même pour tous les camps. Une étiquette décrit une sensibilité ; elle ne juge pas la qualité du travail.
+- Chaque organisme porte son étiquette d’orientation, formulée de la même façon pour tous. Une étiquette décrit une sensibilité ; elle ne juge pas la qualité du travail.
 - Les institutions publiques (Cour des comptes, Insee, Banque de France, FMI, OCDE, COR, CAE, HCFP, Eurostat) sont citées comme des repères de chiffres, pas comme des arbitres de toutes les opinions.
 - Quand deux sources donnent des chiffres différents pour la même année, nous le disons au lieu de choisir en silence.
 - Vous pouvez tout vérifier : chaque lien mène au texte d’origine.
 
-**Périmètre.** Cette page couvre les sept chapitres du site et les huit thèmes où les positions publiées divergent. Chaque thème a été confronté aux textes ouverts lors de la collecte du 30 octobre 2026. Un point n’est présenté que lorsqu’au moins une position publiée a été ouverte et vérifiée ; quand un groupe n’a pas de position publiée sur un point, la page le signale.
+**Périmètre.** Cette page couvre les sept chapitres du site et les huit thèmes où les positions publiées divergent. Chaque thème a été confronté aux textes ouverts lors de la collecte du 30 octobre 2026. Un point n’est présenté que lorsqu’au moins une position publiée a été ouverte et vérifiée ; quand aucun texte publié n’a pu être ouvert sur un point, la page le signale.
 
 ## 1. Taille de la dépense publique
 
@@ -22,7 +22,7 @@ Cette partie compare la taille de la dépense publique française à celle d’a
 
 Deux précisions.
 
-- **Les positions sont classées en trois groupes** : à gauche, à droite ou libéral, et institutions. Quand un groupe n’a pas de position publiée sur un point, nous l’écrivons.
+- **Les positions sont classées en deux groupes** : d’un côté les économistes, instituts et organisations, chacun avec son étiquette d’orientation ; de l’autre les institutions. Les idées, elles, ne reçoivent pas d’étiquette. Quand aucun texte publié n’a pu être ouvert sur un point, nous l’écrivons.
 - **Dépense nette.** Le site ne traite pas la « dépense nette » (l’indicateur de la règle budgétaire européenne). Aucun point ne la concerne dans cette partie. Le mot « net » apparaît seulement dans la mesure de l’OCDE (Organisation de coopération et de développement économiques ; organisation internationale) sur la dépense sociale, au point 9.
 
 ### 1.1 « Quel est le bon chiffre : 57,3 %, 56,6 % ou 57,5 % du PIB ? »
@@ -37,15 +37,12 @@ Deux précisions.
 - Haut Conseil des finances publiques (HCFP ; organisme indépendant placé auprès de la Cour des comptes), avis HCFP-2026-5, 25 septembre 2026 : 56,6 % du PIB en 2025 hors crédits d’impôt, puis 57,1 % en 2026 et 56,9 % en 2027. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
 - Fonds monétaire international (FMI ; organisation internationale), déclaration de fin de mission, 21 mai 2026 : 57,5 % du PIB en 2025. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - Louis Maurin, Observatoire des inégalités (association ; son étiquette d’orientation reste à fixer dans le glossaire du site), 8 février 2017 : le classement européen « n’a pas de signification économique ». Ce texte s’appuie sur des données de 2014. [Lien](https://www.inegalites.fr/Depenses-publiques-les-Francais-ne-depensent-pas-plus-que-les-autres)
-
-*Droite ou libéral*
-
 - François Ecalle, Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 15 janvier 2025 : le PIB est une mesure approchée de la base des impôts, donc le ratio est le bon dénominateur. Mais il « ne mesure pas la part des APU dans la valeur ajoutée » (18 % en 2023). [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 
-**Où se situe le site, et pourquoi.** Le site garde 57,3 % parce que c’est la mesure harmonisée pour toute l’Europe. Il montre l’écart entre les sources (56,6 %, 57,3 %, 57,5 %) et rappelle que ce ratio compare deux grandeurs. Gauche et droite sont d’accord sur ce dernier point : le ratio n’est pas la part de la richesse captée par l’État.
+**Où se situe le site, et pourquoi.** Le site garde 57,3 % parce que c’est la mesure harmonisée pour toute l’Europe. Il montre l’écart entre les sources (56,6 %, 57,3 %, 57,5 %) et rappelle que ce ratio compare deux grandeurs. Les sources citées, quelle que soit leur orientation, sont d’accord sur ce dernier point : le ratio n’est pas la part de la richesse captée par l’État.
 
 **Chapitre :** [1, étapes 1, 2 et 13](../site/chapitres/01-combien.md).
 
@@ -59,16 +56,13 @@ Deux précisions.
 
 - Marion Cochard et Corentin Deredec, Banque de France (banque centrale nationale, membre de l’Eurosystème), *Bulletin* n° 259, 25 juillet 2025 : la protection sociale représente 32,2 % du PIB en France contre 27,2 % dans la zone euro (2023), soit environ deux tiers de l’écart. [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - Bruno Ducoudré, Mathieu Plane et Raul Sampognaro, OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), *Policy Brief* n° 17, 19 avril 2017 : de 1980 à 2015, la hausse de la dépense est presque entièrement due aux prestations sociales et aux transferts (10,3 points sur 10,9). [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
-
-*Droite ou libéral*
-
 - Institut Montaigne (libéral-centriste), *Budget base zéro : décider sous la contrainte*, novembre 2025 : sur 100 euros de dépense publique, 56 vont à la protection sociale. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - François Ecalle (Fipeco), 15 janvier 2025 : il n’est pas pertinent de retrancher des prestations les prélèvements qui les financent, car les personnes qui paient et celles qui reçoivent ne sont pas les mêmes. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 
-**Où se situe le site, et pourquoi.** Gauche, droite et institutions s’accordent sur le fait que la protection sociale pèse le plus. Elles diffèrent sur la lecture : « ce sont des revenus qui reviennent aux ménages » ou « c’est un coût payé par d’autres ». Le site donne les deux : il dit que l’argent est versé aux ménages, puis que des tiers le financent. Le chiffre de 19,4 % du PIB n’a pas pu être recalculé lors de la revue ; il reste en attente de contrôle. Le site ne donne pas de chiffre pour les services et les investissements.
+**Où se situe le site, et pourquoi.** Toutes les sources citées s’accordent sur le fait que la protection sociale pèse le plus. Elles diffèrent sur la lecture : « ce sont des revenus qui reviennent aux ménages » ou « c’est un coût payé par d’autres ». Le site donne les deux : il dit que l’argent est versé aux ménages, puis que des tiers le financent. Le chiffre de 19,4 % du PIB n’a pas pu être recalculé lors de la revue ; il reste en attente de contrôle. Le site ne donne pas de chiffre pour les services et les investissements.
 
 **Chapitre :** [1, étape 2](../site/chapitres/01-combien.md).
 
@@ -76,14 +70,14 @@ Deux précisions.
 
 **Ce que dit le site.** Une journée de dépense publique coûte 4,70 milliards d’euros (1 714,1 milliards divisés par 365). Par habitant, la dépense est d’environ 24 800 euros par an, soit 68 euros par jour. Le site précise que c’est une moyenne : ce n’est ni ce que chacun reçoit, ni ce que chacun paie.
 
-**Qui soutient quoi.** Aucun texte publié que nous avons ouvert n’utilise ces repères. Ce sont des conversions de la plateforme. Il n’y a donc pas de position de gauche ou de droite à citer. Deux textes encadrent seulement ces calculs.
+**Qui soutient quoi.** Aucun texte publié que nous avons ouvert n’utilise ces repères. Ce sont des conversions de la plateforme. Il n’y a donc pas de position publiée à citer. Deux textes encadrent seulement ces calculs.
 
 *Institutions*
 
 - HCFP, avis HCFP-2026-5, 25 septembre 2026 : 1 694 milliards d’euros de dépense en 2025 hors crédits d’impôt, soit environ 4,64 milliards par jour. Le repère change d’environ 1 % selon la définition. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
 - Conseil d’orientation des retraites (COR ; instance d’études et de concertation sur les retraites), *Rapport annuel 2026, synthèse*, juin 2026 : les retraites représentent 422 milliards d’euros, soit 24,3 % de la dépense publique en 2025. Cela correspond à un total proche de celui du site. [Lien](https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se_RA_2026_0.pdf)
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - François Ecalle (Fipeco), 15 janvier 2025 : les comparaisons de dépense par habitant entre pays doivent être considérées avec précaution, car le PIB par habitant en est la cause principale (voir le point 1.10). Le site n’utilise le chiffre par habitant que pour la France, de façon descriptive. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 
@@ -103,12 +97,9 @@ Deux précisions.
 - FMI, 21 mai 2026 : la France a 57,5 % du PIB en 2025, la dépense la plus élevée de la zone euro. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
 - Banque de France, *Bulletin* n° 259, 25 juillet 2025 : la France est deuxième derrière la Finlande en 2024, et la plus élevée de la zone euro en 2023. [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - Observatoire des inégalités, 8 février 2017 : le classement européen « n’a pas de signification économique ». [Lien](https://www.inegalites.fr/Depenses-publiques-les-Francais-ne-depensent-pas-plus-que-les-autres)
-
-*Droite ou libéral*
-
 - François Ecalle (Fipeco), 15 janvier 2025 : si l’on neutralise des doubles comptes comptables, « la France et la Finlande échangent la première et la deuxième place » (données 2023). [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 - Gilles Koleda, Fondation iFRAP (libérale), 14 janvier 2025 : la France est « championne des dépenses publiques » (58,2 % du PIB en 2022 contre 48,4 % dans la zone euro). [Lien](https://www.ifrap.org/fonction-publique-et-administration/depenses-publiques-et-prelevements-obligatoires-ou-se-situe-la-france-par-rapport-la-zone-euro)
 
@@ -128,17 +119,14 @@ Deux précisions.
 - Banque de France, *Bulletin* n° 259, 25 juillet 2025 : en 2023, l’écart est de 7,5 points avec la zone euro et de 9,3 points avec la zone euro hors France. [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
 - Hélène Paris, Conseil d’analyse économique (CAE ; instance d’économistes placée auprès du Premier ministre), *Focus* n° 121, septembre 2025 : les conventions comptables déplacent la dépense publique d’environ 1 point de PIB sans changer le solde. [Lien](https://cae-eco.fr/static/pdf/Focus_121_pension_250919.pdf)
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - OFCE, *Policy Brief* n° 17, 19 avril 2017 : le niveau de la dépense est un « choix de société ». Baisser la dépense de 1 point de PIB sans baisser les prélèvements ferait reculer le PIB d’environ 0,9 % après deux à trois ans (environ 240 000 emplois). Le site n’affiche pas ce chiffre. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
 - Observatoire des inégalités, 8 février 2017 : une grande partie de l’écart vient de retraites et de protection sociale financées par le public en France, par le privé ailleurs. [Lien](https://www.inegalites.fr/Depenses-publiques-les-Francais-ne-depensent-pas-plus-que-les-autres)
-
-*Droite ou libéral*
-
 - Institut Montaigne, *Budget base zéro*, novembre 2025 : l’écart avec la moyenne européenne mesure la « préférence nationale » de la France pour la dépense. Mais des mesures uniformes ou de petite taille ne couvrent qu’une partie de l’effort. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - François Ecalle (Fipeco), 15 janvier 2025 : la bonne question est de savoir si la dépense vaut plus que les prélèvements qui la financent. Un même ratio peut cacher des services très différents. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 
-**Où se situe le site, et pourquoi.** Les chiffres du site sont ceux d’Eurostat. Les deux camps refusent de lire l’écart comme une somme à couper : la gauche parle de choix de société et d’effet récessif, la droite note qu’une coupe uniforme ne suffirait pas. Le site a donc ajouté la phrase « ce n’est pas un objectif d’économies » et il cite l’OFCE et Fipeco côte à côte. La Banque de France donne une variante plus large (9,3 points hors France) ; le site signale seulement que la ZE21 comprend la France et que l’écart serait plus grand sans elle.
+**Où se situe le site, et pourquoi.** Les chiffres du site sont ceux d’Eurostat. Aucune des sources citées ne lit l’écart comme une somme à couper : l’OFCE parle de choix de société et d’effet récessif, Fipeco note qu’une coupe uniforme ne suffirait pas. Le site a donc ajouté la phrase « ce n’est pas un objectif d’économies » et il cite l’OFCE et Fipeco côte à côte. La Banque de France donne une variante plus large (9,3 points hors France) ; le site signale seulement que la ZE21 comprend la France et que l’écart serait plus grand sans elle.
 
 **Chapitres :** [1, étape 8](../site/chapitres/01-combien.md) ; [2, étape 10](../site/chapitres/02-ou-va-l-argent.md).
 
@@ -146,14 +134,14 @@ Deux précisions.
 
 **Ce que dit le site.** L’écart a culminé à 10,4 points en 2017. Jusqu’en 2019, il a baissé surtout parce que la dépense française a reculé. Depuis, la dépense a augmenté partout, mais plus vite dans l’ensemble de la zone euro qu’en France. Une raison comptable a pu jouer : le crédit d’impôt pour la compétitivité et l’emploi (CICE), compté en dépense, a laissé place en 2019 à une baisse de cotisations. Son effet exact est difficile à isoler.
 
-**Qui soutient quoi.** Nous n’avons ouvert aucun texte de gauche ni de droite qui chiffre ce point. La chronologie de 2017 à 2019 vient de la série d’Eurostat, pas d’un texte publié.
+**Qui soutient quoi.** Nous n’avons ouvert aucun texte publié qui chiffre ce point. La chronologie de 2017 à 2019 vient de la série d’Eurostat, pas d’un texte publié.
 
 *Institutions*
 
 - Banque de France, *Bulletin* n° 259, 25 juillet 2025 : de 2019 à 2023, la dépense a augmenté de 2,5 points de PIB dans la zone euro contre 1,6 point en France, ce qui réduit l’écart. [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
 - Insee (institut public de statistique), *Les comptes des administrations publiques en 2019*, 25 mars 2020 : la dépense est « quasiment stable » (55,7 % du PIB en 2018, 55,6 % en 2019). Le déficit est de 3,0 %, ou 2,1 % hors transformation du CICE. [Lien](https://www.insee.fr/fr/statistiques/4470888)
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - François Ecalle (Fipeco), *Les principales réformes fiscales du quinquennat*, 27 janvier 2022 : le CICE est supprimé pour les salaires versés à partir du 1er janvier 2019 et remplacé par une baisse des cotisations des employeurs. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
 
@@ -172,13 +160,10 @@ Deux précisions.
 - Banque de France, *Bulletin* n° 259, 25 juillet 2025 : en 2023, la protection sociale explique 5,0 points sur 7,5, soit environ deux tiers (retraites 2,2 points, santé 1,5 point, autres dépenses sociales 0,4 point). [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
 - CAE, *Focus* n° 121, septembre 2025 : les conventions comptables déplacent la dépense publique d’environ 1 point de PIB sans changer le solde. Cela soutient la mise en garde du site sur les définitions. [Lien](https://cae-eco.fr/static/pdf/Focus_121_pension_250919.pdf)
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - Observatoire des inégalités, 8 février 2017 : plus de la moitié de l’écart de 8,3 points (données 2014) vient de la protection sociale, presque entièrement des retraites. [Lien](https://www.inegalites.fr/Depenses-publiques-les-Francais-ne-depensent-pas-plus-que-les-autres)
 - OFCE, *Policy Brief* n° 17, 19 avril 2017 : le poids de la dépense s’explique d’abord par le modèle social et fiscal, une démographie plus dynamique et le budget de la défense. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
-
-*Droite ou libéral*
-
 - Institut Montaigne, *Budget base zéro*, novembre 2025 : sur 100 euros de dépense publique, 56 vont à la protection sociale. Ce n’est pas une décomposition de l’écart, mais elle va dans le même sens. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 
 **Où se situe le site, et pourquoi.** Les sources s’accordent sur la composition : la protection sociale en est le premier poste. Elles divergent sur le sens, ce qui est traité au point 1.9. Le site donne donc le chiffre, puis les deux lectures, sans choisir. Les chiffres de 2024 sont les plus récents disponibles par poste ; ceux de 2025 ne sont pas encore publiés.
@@ -191,12 +176,9 @@ Deux précisions.
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - Fondation iFRAP (libérale), Gorreri et Servière, 2 février 2022 : en 2019, les dépenses de personnel dépassent de 2,98 points de PIB (72,5 milliards d’euros) celles du reste de la zone euro (18 pays, France exclue). Pour la rémunération non marchande, l’écart est de 1,75 point (42,7 milliards). La France compte 936 221 emplois de plus dans les secteurs non marchands. La fondation propose de réduire l’emploi public. [Lien](https://www.ifrap.org/fonction-publique-et-administration/effectifs-publics-1-million-dagents-par-rapport-la-zone-euro)
-
-*Gauche*
-
 - OFCE, *Policy Brief* n° 17, 19 avril 2017 : l’emploi public représente 20 % de l’emploi, un peu moins que la moyenne de l’OCDE. Le nombre d’agents pour 1 000 habitants est plus faible en Allemagne, mais la comparaison dépend du périmètre. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
 
 *Institutions*
@@ -213,13 +195,10 @@ Deux précisions.
 
 **Qui soutient quoi.**
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - OFCE, *Policy Brief* n° 17, 19 avril 2017 : il faut comparer à périmètre équivalent. Aux États-Unis, la dépense publique de retraites et de santé est inférieure de 8 points de PIB à celle de la France, mais la dépense totale, privé compris, y est supérieure de 2 points. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
 - Observatoire des inégalités, 8 février 2017 : « Au final, le citoyen ne paie pas plus cher. » La dépense plus élevée en France finance des services que d’autres paient au privé. [Lien](https://www.inegalites.fr/Depenses-publiques-les-Francais-ne-depensent-pas-plus-que-les-autres)
-
-*Droite ou libéral*
-
 - François Ecalle (Fipeco), 15 janvier 2025 : comparer la dépense publique seule est pertinent, car les prélèvements obligatoires laissent peu de choix aux ménages. La frontière du secteur public est bien tracée et Eurostat garantit la comparabilité. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 - Gilles Koleda, Fondation iFRAP, 14 janvier 2025 : la France est « championne des dépenses publiques », avec des prélèvements environ 5 points au-dessus de la zone euro. [Lien](https://www.ifrap.org/fonction-publique-et-administration/depenses-publiques-et-prelevements-obligatoires-ou-se-situe-la-france-par-rapport-la-zone-euro)
 
@@ -227,7 +206,7 @@ Deux précisions.
 
 - Willem Adema (économiste à l’OCDE) et Maxime Ladaique, document de travail de l’OCDE n° 92, 13 novembre 2009 : après impôts et prestations privées, la dépense sociale nette dépasse 30 % du PIB en Belgique, en Allemagne et en France. Plusieurs pays, dont les États-Unis, sont à quelques points les uns des autres. Les chiffres de 2021 du site viennent de la base de données SOCX de l’OCDE, qui n’a pas pu être rouverte lors de la revue. [Lien](https://econpapers.repec.org/RePEc:oec:elsaab:92-en)
 
-**Où se situe le site, et pourquoi.** C’est l’objection de gauche la plus solide, et elle a une réponse de droite directe. Le site donne les deux au chapitre 1 puis mesure leur poids au chapitre 2. Il reconnaît que l’objection « tient » sur un point : public et privé additionnés, l’écart avec les États-Unis disparaît. Mais il rappelle que Adema et Ladaique placent déjà la France parmi les pays qui dépensent le plus, et que la part publique pèse sur le déficit. Il dit aussi que la mesure de l’OCDE et celle d’Eurostat sont différentes : l’égalité de leurs chiffres est une coïncidence.
+**Où se situe le site, et pourquoi.** C’est l’objection la plus solide, portée par l’OFCE et l’Observatoire des inégalités ; Fipeco et la Fondation iFRAP y répondent directement. Le site donne les deux au chapitre 1 puis mesure leur poids au chapitre 2. Il reconnaît que l’objection « tient » sur un point : public et privé additionnés, l’écart avec les États-Unis disparaît. Mais il rappelle que Adema et Ladaique placent déjà la France parmi les pays qui dépensent le plus, et que la part publique pèse sur le déficit. Il dit aussi que la mesure de l’OCDE et celle d’Eurostat sont différentes : l’égalité de leurs chiffres est une coïncidence.
 
 **Chapitres :** [1, étapes 10 et 12](../site/chapitres/01-combien.md) ; [2, étape 10](../site/chapitres/02-ou-va-l-argent.md).
 
@@ -237,19 +216,16 @@ Deux précisions.
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - François Ecalle (Fipeco), 15 janvier 2025 : le PIB est la base d’où l’on prélève les impôts ; le ratio compare la capacité à prélever entre pays et entre périodes. La dépense par habitant d’un pays pauvre est bien plus faible que celle d’un pays riche, et le PIB en est la cause principale : cette comparaison doit être considérée avec précaution. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
-
-*Gauche*
-
-- OFCE, *Policy Brief* n° 17, 19 avril 2017 : le niveau de la dépense reflète le modèle social et le périmètre. Ce texte ne fait pas de comparaison par habitant : il met en avant le périmètre et le dénominateur. Aucun autre texte de gauche ouvert ne défend le classement par habitant. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
+- OFCE, *Policy Brief* n° 17, 19 avril 2017 : le niveau de la dépense reflète le modèle social et le périmètre. Ce texte ne fait pas de comparaison par habitant : il met en avant le périmètre et le dénominateur. Aucun autre texte ouvert ne défend le classement par habitant. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
 
 *Institutions*
 
 - Eurostat : le classement en SPA par habitant est un calcul de la plateforme à partir de la base *nama_10_pc* (22 octobre 2026) ; aucune institution ouverte ne publie ce rang. Le rang de 2024 est 8e ou 9e selon la méthode.
 
-**Où se situe le site, et pourquoi.** Le site montre les deux classements côte à côte, parce que chacun répond à une question différente. Par habitant : quel volume de services et de prestations reçoit-on ? En % du PIB : quel effort faut-il pour les financer ? Il dit clairement que le chiffre par habitant est un calcul de la plateforme et que la source de droite la plus précise sur ce sujet (Fipeco) le conteste. Il ne présente ni l’un ni l’autre comme la bonne mesure.
+**Où se situe le site, et pourquoi.** Le site montre les deux classements côte à côte, parce que chacun répond à une question différente. Par habitant : quel volume de services et de prestations reçoit-on ? En % du PIB : quel effort faut-il pour les financer ? Il dit clairement que le chiffre par habitant est un calcul de la plateforme et que la source la plus précise sur ce sujet, Fipeco (orthodoxie budgétaire), le conteste. Il ne présente ni l’un ni l’autre comme la bonne mesure.
 
 **Chapitres :** [1, étapes 4, 10, 11 et 14](../site/chapitres/01-combien.md) ; [2, étape 10](../site/chapitres/02-ou-va-l-argent.md).
 
@@ -259,24 +235,18 @@ Deux précisions.
 
 **Qui soutient quoi.**
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - OFCE, *Policy Brief* n° 17, 19 avril 2017 : le poids de la dépense « s’est accru de près de 5 points de PIB depuis 2008 », ce qui s’explique « avant tout par l’affaissement de la croissance depuis la crise ». Presque la moitié de la hausse vient du dénominateur. Depuis 2010, la dépense a augmenté d’environ 1 % par an, sous la croissance potentielle (1,4 %) : c’est un effort. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
+- Aucun texte ouvert ne conteste directement l’argument du dénominateur. D’autres textes ouverts portent sur les prélèvements, un sujet voisin :
+  - Olivier Redoules, Rexecode (institut de conjoncture proche des organisations patronales), *Document de travail* n° 97, juillet 2025 : les prélèvements dépassent de 4,8 points de PIB la moyenne de l’UE-27 en 2023 et pénalisent la compétitivité des entreprises. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025)
+  - Institut Montaigne, *Budget base zéro*, novembre 2025 : un ajustement par les seules recettes serait un choc fiscal massif (TVA à 32,5 % ou trois taxes de type Zucman par an). [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
+  - Gilles Koleda, Fondation iFRAP, 14 janvier 2025 : prélèvements « très élevés », environ 150 milliards d’euros au-dessus de la moyenne européenne. [Lien](https://www.ifrap.org/fonction-publique-et-administration/depenses-publiques-et-prelevements-obligatoires-ou-se-situe-la-france-par-rapport-la-zone-euro)
 
 *Institutions*
 
 - Haut-commissariat à la Stratégie et au Plan (organisme d’expertise placé auprès du Premier ministre), *Focus Finances publiques*, 17 juillet 2026 : de 2005 à 2025, les dépenses ont augmenté en moyenne de 1,4 % par an en volume, et les recettes aussi de 1,4 % par an. Ce chiffre seul ne montre donc pas que la dépense dépasse les recettes ; le site ne l’affiche plus. [Lien](https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-07-17%20-%20Focus%20Finances%20publiques/HCSP-2026-FRANCE%202035-2050_Focus-Finances%20publiques_0.pdf)
 - HCFP, avis HCFP-2026-5, 25 septembre 2026 : la dépense croît plus vite que le PIB pour la troisième année de suite. À 56,9 % du PIB en 2027, elle baisserait pour la première fois depuis 2023. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
-
-*Droite ou libéral*
-
-- Aucun texte libéral ouvert ne conteste directement l’argument du dénominateur. Les textes ouverts portent sur les prélèvements, un sujet voisin :
-  - Olivier Redoules, Rexecode (institut de conjoncture proche des organisations patronales), *Document de travail* n° 97, juillet 2025 : les prélèvements dépassent de 4,8 points de PIB la moyenne de l’UE-27 en 2023 et pénalisent la compétitivité des entreprises. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025)
-  - Institut Montaigne, *Budget base zéro*, novembre 2025 : un ajustement par les seules recettes serait un choc fiscal massif (TVA à 32,5 % ou trois taxes de type Zucman par an). [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
-  - Gilles Koleda, Fondation iFRAP, 14 janvier 2025 : prélèvements « très élevés », environ 150 milliards d’euros au-dessus de la moyenne européenne. [Lien](https://www.ifrap.org/fonction-publique-et-administration/depenses-publiques-et-prelevements-obligatoires-ou-se-situe-la-france-par-rapport-la-zone-euro)
-
-*Institutions (suite)*
-
 - FMI, 21 mai 2026 : peu de marge pour un ajustement par les recettes ; la consolidation doit rationaliser les dépenses peu efficaces. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
 
 **Où se situe le site, et pourquoi.** L’argument de l’OFCE est publié, mais il date de 2017 et porte sur la période après 2008. Le site le présente tel quel, puis répond avec des chiffres d’Eurostat qui ont le même dénominateur pour la dépense et les recettes. Il a retiré le chiffre de 1,4 % par an, car le même tableau donne 1,4 % pour les recettes. Il n’ajoute pas de second encadré libéral : les textes libéraux ouverts parlent des prélèvements, pas du dénominateur. Un lecteur peut y voir une limite ; elle est signalée ici.
@@ -299,9 +269,9 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 - Hélène Paris, Conseil d’analyse économique (CAE ; instance d’économistes placée auprès du Premier ministre), *Retraites des fonctionnaires d’État : pas de déficit caché mais un coût salarial surévalué* (*Focus* n° 121), septembre 2025 : compter autrement les cotisations de l’État employeur baisserait la dépense et les recettes publiques de 28,9 milliards d’euros en 2023 (environ 1 point de PIB), sans effet sur le solde. Le texte ajoute que la répartition de la charge des cotisations est une convention. [Lien](https://cae-eco.fr/static/pdf/Focus_121_pension_250919.pdf)
 - Cour des comptes (juridiction financière), *Situation financière et perspectives du système de retraites*, février 2025 : deux présentations comptables du même régime donnent des montants de contribution de l’État qui ne se rapprochent pas, ce qui nuit à la lisibilité. [Lien](https://www.vie-publique.fr/files/rapport/pdf/297428.pdf)
 
-*Gauche et droite ou libéral*
+*Économistes, instituts et organisations*
 
-- Aucun texte de gauche ni de droite ouvert par la collecte ne conteste le choix entre ces deux périmètres. Pour la COFOG, aucun texte ouvert ne confirme le chiffre de 23,40 € ni l’exclusion des pensions de réversion.
+- Aucun texte ouvert par la collecte ne conteste le choix entre ces deux périmètres. Pour la COFOG, aucun texte ouvert ne confirme le chiffre de 23,40 € ni l’exclusion des pensions de réversion.
 
 **Où se situe le site, et pourquoi.** Il affiche les deux périmètres (90 jours de dépense publique avec le COR, 85 jours avec la COFOG) et explique l’écart. Il retient le point du CAE : toute part « de la dépense publique » dépend de la convention de comptage. Les calculs « 90 jours », « 6 100 € par habitant » et « 2,8 fois le déficit » sont des calculs du site, pas des chiffres publiés ; l’exemple du ménage à 811 € par mois est une « image illustrative », sans source qui le valide.
 
@@ -313,20 +283,17 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien*
+*Économistes, instituts et organisations*
 
 - Louis Maurin (Observatoire des inégalités, association), *Dépenses publiques : les Français ne dépensent pas plus que les autres*, 8 février 2017 : plus de la moitié de l’écart de 8,3 points (données 2014) vient de la protection sociale, presque entièrement des retraites. Les dépenses plus élevées financent des services que d’autres pays paient au privé. [Lien](https://www.inegalites.fr/Depenses-publiques-les-Francais-ne-depensent-pas-plus-que-les-autres)
 - Ducoudré, Plane et Sampognaro (OFCE ; Sciences Po, sensibilité keynésienne), *Policy Brief* n° 17, 19 avril 2017 : il faut comparer à périmètre équivalent. Les retraites et la santé sont surtout publiques en France et privées ailleurs ; l’effort total est proche. Le poids de la dépense s’explique d’abord par le modèle social et fiscal. Aux États-Unis, la dépense publique de retraites et de santé est inférieure de 8 points de PIB à celle de la France, mais la dépense totale (privé compris) est supérieure de 2 points. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
-
-*Droite ou libéral*
-
 - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *Le rapport des dépenses publiques au PIB*, 15 janvier 2025 : comparer la dépense publique seule est pertinent, car les prélèvements obligatoires laissent peu de choix aux ménages. Le périmètre est bien tracé et Eurostat garantit la comparabilité. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 
 *Institutions*
 
 - Banque de France (banque centrale nationale, membre de l’Eurosystème), Cochard et Deredec, *Bulletin* n° 259, 25 juillet 2025 : protection sociale à 32,2 % du PIB contre 27,2 % dans la zone euro, soit un écart de 5,0 points, environ deux tiers du total (données 2023). [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
 
-**Où se situe le site, et pourquoi.** Gauche et droite s’accordent sur la composition de l’écart ; elles divergent sur son sens. Le site donne les chiffres, puis les deux lectures, sans trancher (étape 12 du chapitre 1). Ses chiffres de 2024 (5,1 sur 7,8 points ; vieillesse 2,5) sont cohérents avec ceux de la Banque de France, qui portent sur 2023. La répartition de 2025 n’est pas encore publiée.
+**Où se situe le site, et pourquoi.** Les sources citées s’accordent sur la composition de l’écart ; elles divergent sur son sens. Le site donne les chiffres, puis les deux lectures, sans trancher (étape 12 du chapitre 1). Ses chiffres de 2024 (5,1 sur 7,8 points ; vieillesse 2,5) sont cohérents avec ceux de la Banque de France, qui portent sur 2023. La répartition de 2025 n’est pas encore publiée.
 
 **Chapitres :** [1, étapes 9 et 12](../site/chapitres/01-combien.md) ; [7, étape 5](../site/chapitres/07-les-choix.md).
 
@@ -336,12 +303,9 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - Institut Montaigne (libéral-centriste), *Budget base zéro : décider sous la contrainte*, novembre 2025 : l’ajustement doit venir de la dépense. Les retraites sont généreuses : 23,3 ans passés en retraite en moyenne, un niveau de vie global de 3 % au-dessus de celui de l’ensemble de la population. S’aligner sur l’Allemagne aurait placé la France sous le déficit moyen de la zone euro. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
-
-*Gauche*
-
 - Union syndicale Solidaires (syndicat), *Un rapport du COR prétexte à mauvaises idées !*, 15 juin 2026 : la dépense de retraites est stable ; le problème est un manque chronique de recettes, pas un excès de dépense. [Lien](https://solidaires.org/documents/12100/Com_rapport_COR-juin2026.pdf)
 
 *Institutions*
@@ -359,13 +323,9 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - Fondation iFRAP (libérale), *26 milliards de déficit pour le régime de retraite des agents de l’État*, 27 septembre 2022 (mise à jour le 2 octobre 2022) : en comparant les cotisations de l’État à un taux employeur de 16,46 %, après déduction des dépenses de solidarité, le déficit caché est de 26,3 milliards d’euros en 2021. [Lien](https://www.ifrap.org/retraite/26-milliards-de-deficit-pour-le-regime-de-retraite-des-agents-de-letat)
-
-*Gauche*
-
-- La collecte n’a trouvé aucun texte de gauche sur ce point, ni pour la thèse ni contre elle.
 
 *Institutions*
 
@@ -373,7 +333,7 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 - Cour des comptes (juridiction financière), *Situation financière et perspectives du système de retraites*, février 2025 : la comparaison des taux avec le régime général ne permet pas d’isoler des surcotisations, car les structures diffèrent (assiette plus étroite, sans les primes ; rapport démographique de 1,02 contre 1,52). Elle chiffre le déficit à environ 6,6 milliards d’euros en 2025 (estimation plus ancienne que celle du COR). [Lien](https://www.vie-publique.fr/files/rapport/pdf/297428.pdf)
 - CAE (instance d’économistes placée auprès du Premier ministre), Hélène Paris, *Focus* n° 121, septembre 2025 : pas de déficit caché, mais un coût salarial surévalué ; la convention est neutre pour le solde public. [Lien](https://cae-eco.fr/static/pdf/Focus_121_pension_250919.pdf)
 
-**Où se situe le site, et pourquoi.** Il présente la thèse comme une lecture de la droite libérale et donne en face le calcul de la Cour et du CAE. Il concède que le solde dépend d’une convention, mais rappelle que le déficit public total, lui, ne change pas. L’expression « déficit caché » ne figure pas dans le texte de la Cour : le site n’utilise plus de guillemets pour lui prêter ces mots. Les chiffres de l’iFRAP (26,3 milliards, pour 2021) et de la Cour (6,6 milliards) ne sont pas affichés : ils portent sur d’autres années et d’autres méthodes que les 49,3 et 5,1 milliards de 2025.
+**Où se situe le site, et pourquoi.** Il présente la thèse comme une lecture de la Fondation iFRAP (libérale) et donne en face le calcul de la Cour et du CAE. Il concède que le solde dépend d’une convention, mais rappelle que le déficit public total, lui, ne change pas. L’expression « déficit caché » ne figure pas dans le texte de la Cour : le site n’utilise plus de guillemets pour lui prêter ces mots. Les chiffres de l’iFRAP (26,3 milliards, pour 2021) et de la Cour (6,6 milliards) ne sont pas affichés : ils portent sur d’autres années et d’autres méthodes que les 49,3 et 5,1 milliards de 2025.
 
 **Chapitres :** [2, étape 7](../site/chapitres/02-ou-va-l-argent.md) ; [7, étape 5](../site/chapitres/07-les-choix.md).
 
@@ -383,12 +343,9 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - Fondation iFRAP (libérale), *Les six angles morts du rapport du COR*, juin 2026 : la dépense paraît stable parce que la pension moyenne relative baisse (de 54,6 % à 45,3 % du revenu d’activité moyen). Dans les simulations du COR, seule une hausse de l’âge de départ améliore le PIB. [Lien](https://www.ifrap.org/retraite/les-six-angles-morts-du-rapport-du-cor)
-
-*Gauche*
-
 - Union syndicale Solidaires (syndicat), *Un rapport du COR prétexte à mauvaises idées !*, 15 juin 2026 : la dépense est stable ; le problème vient d’un manque de recettes. Le texte demande la retraite à 60 ans avec 37,5 années de cotisation. [Lien](https://solidaires.org/documents/12100/Com_rapport_COR-juin2026.pdf)
 
 *Institutions*
@@ -405,13 +362,10 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *Avancer ou reculer l’âge de départ en retraite*, 25 juin 2024 : abandonner la réforme de 2023 coûterait environ 0,6 point de PIB (17 milliards d’euros) d’ici 2030 ; ramener l’âge minimal à 60 ans ajouterait un coût « pouvant atteindre » 0,9 point (26 milliards) à terme. Le texte argumente contre les deux mesures. [Lien](https://fipeco.fr/pdf/Retraites%202024.pdf)
 - Institut Montaigne (libéral-centriste), *Législatives 2024 : chiffrages retraites et fiscalité*, 3 juillet 2024 : le programme de retraites du Nouveau Front populaire (abrogation de la réforme, 60 ans, trimestres pour les bénéficiaires du revenu de solidarité active, minimum contributif au Smic) coûterait 58 milliards d’euros par an d’ici 2027. Il ne donne pas de chiffre séparé pour le seul retour à 60 ans. [Lien](https://institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrages-retraites-et-fiscalite)
-
-*Gauche*
-
 - Union syndicale Solidaires (syndicat), *Un rapport du COR prétexte à mauvaises idées !*, 15 juin 2026 : demande la retraite à 60 ans avec 37,5 années de cotisation ; le texte ne donne pas de chiffrage. [Lien](https://solidaires.org/documents/12100/Com_rapport_COR-juin2026.pdf)
 - La France insoumise, d’après Public Sénat, octobre 2026 : retour à 62 ans chiffré à 9 milliards d’euros ; la retraite à 60 ans est promise plus tard, sans coût indiqué (chiffre annoncé). [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
 
@@ -419,7 +373,7 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 - Aucun chiffrage récent n’a été trouvé dans un texte officiel, mais la collecte n’a pas pu l’exclure.
 
-**Où se situe le site, et pourquoi.** Il affiche les deux chiffrages avec leur auteur et prévient que leurs périmètres diffèrent. La comparaison reste imparfaite : les 43 milliards additionnent deux estimations de Fipeco (17 + 26) à des horizons différents, et le second montant est une borne haute ; les 58 milliards de l’Institut Montaigne couvrent tout un programme. Aucune source de gauche ouverte ne chiffre la mesure. Le site conserve aussi, dans ses données, une fourchette plus large (de −36 à −112,8 milliards) tirée d’une version 2022 de l’Institut Montaigne, qu’il n’a pas pu rouvrir : il la présente comme non datée de 2027.
+**Où se situe le site, et pourquoi.** Il affiche les deux chiffrages avec leur auteur et prévient que leurs périmètres diffèrent. La comparaison reste imparfaite : les 43 milliards additionnent deux estimations de Fipeco (17 + 26) à des horizons différents, et le second montant est une borne haute ; les 58 milliards de l’Institut Montaigne couvrent tout un programme. Aucune autre source ouverte ne chiffre la mesure. Le site conserve aussi, dans ses données, une fourchette plus large (de −36 à −112,8 milliards) tirée d’une version 2022 de l’Institut Montaigne, qu’il n’a pas pu rouvrir : il la présente comme non datée de 2027.
 
 **Chapitres :** [7, étape 6](../site/chapitres/07-les-choix.md).
 
@@ -436,13 +390,10 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 - Les Républicains (Bruno Retailleau) : 40 milliards d’euros « en cumulé sur cinq ans ».
 - Source de ces trois chiffres : Franceinfo (média), *Changement de système, passage à 60 ou à 65 ans, capitalisation… retraites : que proposent les candidats*, 30 septembre 2026. [Lien](https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html)
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - Institut Montaigne (libéral-centriste), *Législatives 2024 : chiffrages retraites et fiscalité*, 3 juillet 2024 : le programme du RN de 2024 (abrogation de la réforme, 40 années pour ceux qui ont commencé avant 20 ans, âge légal à 60 ans) coûterait 34,7 milliards d’euros par an d’ici 2027. Franceinfo rapporte une estimation de 23 à 38 milliards pour la mesure du RN. [Lien](https://institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrages-retraites-et-fiscalite)
-
-*Gauche*
-
-- La collecte n’a pas trouvé de contre-estimation de ces trois chiffres venant d’un groupe de gauche.
+- La collecte n’a pas trouvé de contre-estimation publiée de ces trois chiffres.
 
 **Où se situe le site, et pourquoi.** Il garde la mention « annoncé » et sépare le chiffre des Républicains, qui est cumulé sur cinq ans, des chiffres annuels. Il a retiré l’ancienne fourchette « 26 à 35 milliards » pour les carrières longues : sa borne basse n’avait pas de source. Un écart reste ouvert : le site affiche environ 42 milliards pour les Républicains, alors que Franceinfo cite 40 milliards ; le montant et l’horizon sont à confirmer. L’estimation de l’Institut Montaigne pour le RN est dite en mots, sans chiffre.
 
@@ -454,12 +405,9 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Gauche*
+*Économistes, instituts et organisations*
 
 - Union syndicale Solidaires (syndicat), *Un rapport du COR prétexte à mauvaises idées !*, 15 juin 2026 : la retraite à 60 ans serait financée par la fin des exonérations de cotisations, des salaires plus élevés, l’égalité salariale, plus d’emplois et des cotisations sociales plus fortes. [Lien](https://solidaires.org/documents/12100/Com_rapport_COR-juin2026.pdf)
-
-*Droite ou libéral*
-
 - Fondation iFRAP (libérale), *Les six angles morts du rapport du COR*, juin 2026 : dans les simulations du COR, seule une hausse de l’âge de départ a un effet positif sur le PIB, l’emploi et le solde public ; les hausses de cotisations et les baisses de pensions sont récessives. [Lien](https://www.ifrap.org/retraite/les-six-angles-morts-du-rapport-du-cor)
 
 *Institutions et presse*
@@ -476,13 +424,10 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 **Qui soutient quoi.**
 
-*Droite ou libéral*
+*Économistes, instituts et organisations*
 
 - Institut Montaigne (libéral-centriste), *Budget base zéro : décider sous la contrainte*, novembre 2025 : le niveau de vie global des retraités dépasse de 3 % celui de l’ensemble de la population ; la hausse de la dépense reflète « la générosité de notre système » ; 23,3 ans passés en retraite. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
-
-*Gauche*
-
-- Aucun texte de gauche sur ce point n’a été ouvert. Le texte de l’Institut Montaigne lui-même note aussi que la dépense monte en partie parce que les retraités sont plus nombreux.
+- Aucun autre texte sur ce point n’a été ouvert. Le texte de l’Institut Montaigne lui-même note aussi que la dépense monte en partie parce que les retraités sont plus nombreux.
 
 *Institutions*
 
@@ -495,7 +440,7 @@ Cette section regroupe neuf points contestés. Pour chacun : ce que dit le site,
 
 ## 3. Impôts et plus aisés
 
-Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui les paient, sur les propositions visant les plus aisés et sur les « niches ». Pour chaque point, les positions sont classées en trois groupes : gauche ou keynésien, droite ou libéral, institutions et organismes publics. Quand un camp n’a pas de position publiée dans les textes que nous avons ouverts, nous l’écrivons.
+Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui les paient, sur les propositions visant les plus aisés et sur les « niches ». Pour chaque point, les positions sont classées en deux groupes : économistes, instituts et organisations, puis institutions et organismes publics. Quand aucun texte publié n’a pu être ouvert sur un point, nous l’écrivons.
 
 ### 3.1 « Les prélèvements obligatoires pèsent 43,6 % du PIB, parmi les plus hauts »
 
@@ -503,10 +448,9 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.* Aucun texte de gauche ouvert ne conteste ce niveau. Le débat de gauche porte sur ses effets (point 3.2) et sur la baisse depuis 2017 (point 3.3).
+*Économistes, instituts et organisations.*
 
-*Droite ou libéral.*
-
+- Aucun texte ouvert ne conteste ce niveau. Le débat porte plutôt sur ses effets (point 3.2) et sur la baisse depuis 2017 (point 3.3).
 - Rexecode (institut de conjoncture proche des organisations patronales), *Bilan des prélèvements obligatoires 2026* (document de travail n° 105), septembre 2026 : 43,5 % (Commission européenne, 2024), soit 3,4 à 4,1 points de PIB de plus que l’Union européenne, la zone euro et les cinq principaux voisins. Cela fait 100 à 120 Md€. L’écart pèse surtout sur le travail et les entreprises. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - Rexecode (institut de conjoncture proche des organisations patronales), document de travail n° 97, juillet 2025 : 4,8 points de PIB de plus que la moyenne de l’UE à 27 en 2023. Plus de la moitié de l’écart pèse sur les entreprises et « pénalise leur compétitivité ». [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025)
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), François Ecalle, « Les prélèvements sur le travail, le capital et la consommation de 2016 à 2024 », 16 avril 2026 : la France est « au deuxième rang de l’Union européenne derrière le Danemark ». Elle est 3,7 points au-dessus de la zone euro et 4,1 au-dessus de l’UE. [Lien](https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf)
@@ -529,14 +473,11 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - Terra Nova (centre gauche), Gilles Hannezo, « Quel rendement peut-on réellement attendre de la taxation des plus fortunés ? », 20 septembre 2024 : les baisses d’impôts expliquent environ 60 % de la dégradation du déficit. Mais taxer les plus riches rapporte au plus environ 15 Md€ par an, ce qui ne suffit pas pour un ajustement d’environ 100 Md€. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
 - CGT (syndicat), *Mémo éco* « Dégradation des finances publiques : les conséquences de la politique de l’offre », 28 avril 2025 : les pertes nettes de recettes dues aux baisses (308,6 Md€ cumulés) devraient être récupérées ; 207 Md€ de « cadeaux fiscaux » aux entreprises et aux ménages aisés. [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-04/M%C3%A9mo%20%C3%A9co%20-%20D%C3%A9gradation%20des%20finances%20publiques%20les%20cons%C3%A9quences%20de%20la%20politique%20de%20l%27offre.pdf)
 - OFCE (Sciences Po, sensibilité keynésienne), Ducoudré, Plane et Sampognaro, *Policy Brief* n° 17, 19 avril 2017 : des coupes massives dans la dépense sont récessives et modifient la répartition des revenus. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
-
-*Droite ou libéral.*
-
 - Institut Montaigne (libéral-centriste), *Budget base zéro*, novembre 2025 : « Un ajustement seulement par les recettes impliquerait un choc fiscal massif ». Il faudrait 15 Md€ de recettes nouvelles par an pendant cinq ans, soit une TVA normale à 32,5 % ou trois taxes de type Zucman par an. L’objectif devrait être une baisse ciblée des prélèvements, notamment ceux qui pèsent sur la production. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - Rexecode (institut de conjoncture proche des organisations patronales), document de travail n° 105, septembre 2026 : des « effets désincitatifs croissants pour l’investissement et pour le travail ». Juger ce niveau « normal » est une « idée fausse » : il va avec des comptes publics plus fragiles. La France prélève 1,7 point de PIB de plus que ses voisins sur le travail et 1,1 sur le capital. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 16 avril 2026 : l’écart avec l’UE sur le travail est de 2,1 points de PIB. La France est passée de la 2e place (2016) à la 5e (2024) pour les prélèvements sur le travail, mais reste 1re pour ceux à la charge des employeurs. [Lien](https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf)
@@ -556,13 +497,10 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - OFCE (Sciences Po, sensibilité keynésienne), Heyer, Plane, Ragot, Sampognaro et Timbeau, *Quelles trajectoires pour les finances publiques de la France ?* (*Policy Brief* n° 146), 11 juillet 2025 : la dégradation n’est « pas attribuable à une augmentation plus marquée des dépenses publiques », mais à une baisse des recettes. Le taux de prélèvements recule de 2,5 points entre 2017 et 2024 (1,6 pour les ménages, 0,9 pour les entreprises), alors qu’il est stable dans la zone euro. L’OFCE part de 2017 sans discuter ce sommet. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
 - Attac (association altermondialiste), Observatoire de la justice fiscale et CADTM, *La dette de l’injustice fiscale*, 26 mars 2025 : prend aussi 2017 comme référence. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-
-*Droite ou libéral.*
-
 - Rexecode (institut de conjoncture proche des organisations patronales), document de travail n° 105, septembre 2026 : 42,7 % en 2024 contre 41,4 % en 2010. Par rapport à la législation de 2010, les prélèvements sont encore plus élevés d’environ 65 Md€ par an (2,1 points). « Les cadeaux fiscaux n’ont pas effacé le choc fiscal des années 2010. » [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - Institut Montaigne (libéral-centriste), novembre 2025 : le taux reste 2,2 points au-dessus de son niveau de 2010, malgré les baisses depuis 2017. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 16 avril 2026 : −2,2 points de PIB en France de 2016 à 2024, contre −0,3 pour la zone euro et −0,4 pour l’UE. La France reste pourtant 3,7 points au-dessus de la zone euro. [Lien](https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf)
@@ -582,14 +520,11 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - Terra Nova (centre gauche), 20 septembre 2024 : reprend le chiffre de la Cour (62 Md€) comme coût net des mesures permanentes depuis 2017. Les baisses expliquent environ 60 % de la dégradation du déficit, « essentiellement comptable ». Elles ont été décidées « sans réel effort de réduction de dépenses ». [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
 - Attac (association altermondialiste), Observatoire de la justice fiscale et CADTM, 26 mars 2025 : au moins 308,62 Md€ cumulés sur 2018-2023 (environ 35 % de la hausse de la dette), dont 207 Md€ pour les ménages aisés et les grandes entreprises. C’est un total cumulé, pas comparable à un coût annuel. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
 - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : la hausse du déficit de 2,4 points depuis 2017 s’explique par la « baisse non financée des PO » (−2,5 points). Les subventions baissent de 0,6 point avec la fin du CICE. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-
-*Droite ou libéral.*
-
 - Institut Montaigne (libéral-centriste), novembre 2025 : accepte « 65 Md€ de baisses décidées depuis 2017 ». Selon lui, la plupart ont profité aux classes moyennes, et le taux reste 2,2 points au-dessus de 2010. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), « Mesures fiscales », 27 janvier 2022 : environ 44 Md€ de coût en 2022, « pas compensé par des économies équivalentes ». Le CICE est « surtout un changement comptable » : double coût d’environ 20 Md€ en 2019, puis environ 3 Md€ de coût net durable. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
 - Rexecode (institut de conjoncture proche des organisations patronales), document de travail n° 97, juillet 2025 : 66 Md€ de baisses cumulées sur 2018-2023 (75 Md€ en euros de 2025), puis 25 Md€ de hausses en 2024-2025. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025)
@@ -600,7 +535,7 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 - Cour des comptes (juridiction financière), rapport du 15 juillet 2024 : baisses des impôts et cotisations de 2018 à 2023, impact estimé à 62 Md€ en 2023, 2,2 points de PIB. « Ces baisses de prélèvements, non compensées par des économies en dépenses, ont creusé le déficit de l’État et accru sa dette. » Les transferts de TVA ont compensé la Sécurité sociale et les collectivités. [Lien](https://www.ccomptes.fr/sites/default/files/2024-07/20240715-RSPFP-2024_0.pdf)
 - Cour des comptes (juridiction financière), 25 juin 2026 : la baisse du déficit de 2025 est « exclusivement imputable à des hausses d’impôts » de 23 Md€, dont un tiers temporaire. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
 
-**Où se situe le site, et pourquoi.** Il garde les 62 Md€ parce que c’est la mesure d’une institution, en précisant que c’est un coût de mesures et non une part du déficit. Il cite les autres mesures sans les mélanger (cumulé pour Attac, brut pour Rexecode). Tous les camps ouverts s’accordent sur un fait : les baisses n’ont pas été financées par des économies. Ils divergent sur la cause : moins de recettes (OFCE, Terra Nova, Attac) ou dépenses trop rapides (Fipeco, Rexecode, Montaigne). Cette question (« pourquoi le déficit ? ») est traitée au chapitre 4.
+**Où se situe le site, et pourquoi.** Il garde les 62 Md€ parce que c’est la mesure d’une institution, en précisant que c’est un coût de mesures et non une part du déficit. Il cite les autres mesures sans les mélanger (cumulé pour Attac, brut pour Rexecode). Tous les textes ouverts s’accordent sur un fait : les baisses n’ont pas été financées par des économies. Ils divergent sur la cause : moins de recettes (OFCE, Terra Nova, Attac) ou dépenses trop rapides (Fipeco, Rexecode, Montaigne). Cette question (« pourquoi le déficit ? ») est traitée au chapitre 4.
 
 **Chapitres :** [chapitre 4, étapes 1, 4, 7 et 10](../site/chapitres/04-pourquoi-le-deficit.md) ; [chapitre 3, étapes 3 et 13](../site/chapitres/03-qui-paie.md) ; [chapitre 7, étape 10](../site/chapitres/07-les-choix.md).
 
@@ -610,16 +545,15 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.* François Geerolf (économiste à l’OFCE, qui écrit à titre personnel), *Les mensonges de la taxe Zucman*, version révisée d’octobre 2026 : « 84 % des foyers situés sous la médiane ne paient pas d’impôt sur le revenu ». Ce passage ne cite pas de source et vient d’une note critique de la taxe Zucman. [Lien](https://fgeerolf.com/mensonges-taxe-zucman.pdf)
+*Économistes, instituts et organisations.*
 
-*Droite ou libéral.*
-
+- François Geerolf (économiste à l’OFCE, qui écrit à titre personnel), *Les mensonges de la taxe Zucman*, version révisée d’octobre 2026 : « 84 % des foyers situés sous la médiane ne paient pas d’impôt sur le revenu ». Ce passage ne cite pas de source et vient d’une note critique de la taxe Zucman. [Lien](https://fgeerolf.com/mensonges-taxe-zucman.pdf)
 - Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : les très hauts revenus (3,6 % des revenus) paient déjà près de 15 % de la recette de l’impôt sur le revenu. [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 - Fondation iFRAP (libérale), Sébastien-François Servière, 26 septembre 2023, qui rapporte une étude de l’Insee (données 2019) : les 10 % les plus aisés paient 30,46 % de l’ensemble des prélèvements hors TVA, signe d’une forte redistribution. [Lien](https://www.ifrap.org/budget-et-fiscalite/les-10-les-plus-aises-paient-plus-de-30-des-prelevements-obligatoires)
 
 *Institutions et organismes publics.* Aucune institution ouverte ne publie ces parts sous cette forme.
 
-**Où se situe le site, et pourquoi.** Les deux côtés utilisent ces parts, pour des conclusions opposées. Le site garde les deux faits (concentration de l’impôt sur le revenu, universalité de la TVA et de la CSG) et laisse la question « qui devrait payer plus ? » aux valeurs. Limite : nous n’avons pas pu rouvrir la source du 47,2 % (DGFiP) ni celle du 33,3 %. Le chiffre le plus proche que nous avons ouvert (30,46 %, données 2019, hors TVA) est du même ordre. Aucun texte ouvert ne chiffre le poids de la TVA et de la CSG qui compense la faible part de l’impôt sur le revenu.
+**Où se situe le site, et pourquoi.** François Geerolf et la Fondation iFRAP utilisent ces parts, pour des conclusions opposées. Le site garde les deux faits (concentration de l’impôt sur le revenu, universalité de la TVA et de la CSG) et laisse la question « qui devrait payer plus ? » aux valeurs. Limite : nous n’avons pas pu rouvrir la source du 47,2 % (DGFiP) ni celle du 33,3 %. Le chiffre le plus proche que nous avons ouvert (30,46 %, données 2019, hors TVA) est du même ordre. Aucun texte ouvert ne chiffre le poids de la TVA et de la CSG qui compense la faible part de l’impôt sur le revenu.
 
 **Chapitres :** [chapitre 3, étapes 7, 8 et 10](../site/chapitres/03-qui-paie.md).
 
@@ -629,9 +563,10 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.* Aucun texte de gauche ouvert ne reprend ni ne conteste les taux de 64 % et de 48 %. Nous n’avons pas pu les vérifier dans un texte ouvert.
+*Économistes, instituts et organisations.*
 
-*Droite ou libéral.* Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : taux des impôts directs de 18,5 % en moyenne en 2022 et de 42,1 % pour le dixième le plus aisé ; avec les cotisations, 54,2 % contre 28,4 % en moyenne ; 55,8 % pour le 1 % le plus aisé (hors TVA). [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
+- Aucun texte ouvert ne reprend ni ne conteste les taux de 64 % et de 48 %. Nous n’avons pas pu les vérifier dans un texte ouvert.
+- Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : taux des impôts directs de 18,5 % en moyenne en 2022 et de 42,1 % pour le dixième le plus aisé ; avec les cotisations, 54,2 % contre 28,4 % en moyenne ; 55,8 % pour le 1 % le plus aisé (hors TVA). [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 
 *Institutions et organismes publics.* Insee (institut public de statistique), Insee Analyses n° 118, 16 avril 2026 : 56 % de bénéficiaires nets en 2023 (99 % dans le dixième le plus modeste, 18 % dans le plus aisé). Les transferts en nature expliquent 51 % de la réduction des inégalités. La part passe à 96 % chez les 65 ans et plus et à 43 % pour les autres. [Lien](https://www.insee.fr/fr/statistiques/8974371)
 
@@ -645,12 +580,11 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - Observatoire européen de la fiscalité (centre de recherche de l’École d’économie de Paris), Quentin Parrinello, entretien dans *Reporterre*, 11 juin 2025 : « Dans tous les pays pour lesquels on dispose de données, le taux d’effort fiscal des milliardaires est inférieur à celui du reste de la population. » [Lien](https://reporterre.net/Taxer-les-milliardaires-rapporterait-20-milliards-d-euros)
 - François Geerolf (économiste à l’OFCE, qui écrit à titre personnel), octobre 2026 : « Les 75 foyers du sommet paient 25,1 % de leur revenu économique, contre 26,8 % au seuil du top 10 % ». La première version de la note de l’IPP donnait 26,2 % contre environ 30 %. Il critique aussi le mélange de holdings et de sociétés opérationnelles et le calendrier d’imposition. [Lien](https://fgeerolf.com/mensonges-taxe-zucman.pdf)
-
-*Droite ou libéral.* Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : conteste le concept de revenu « économique » de l’IPP. Sur le revenu disponible, le taux d’impôts directs est de 55,8 % pour le 1 % le plus aisé et de 55,2 % pour les 0,1 % (« très légèrement régressif »). [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
+- Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : conteste le concept de revenu « économique » de l’IPP. Sur le revenu disponible, le taux d’impôts directs est de 55,8 % pour le 1 % le plus aisé et de 55,2 % pour les 0,1 % (« très légèrement régressif »). [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 
 *Institutions et organismes publics.* IPP (institut de recherche académique), Bach, Bozio, Guillouzouic et Malgouyres, « Quels impôts les milliardaires paient-ils ? » (*Note IPP* n° 92), juin 2023, mise à jour en mai 2025 : le taux passe de 46 % pour les 0,1 % les plus riches à 26 % pour les 0,0002 %, à cause des bénéfices gardés dans les sociétés. [Lien](https://www.ipp.eu/wp-content/uploads/2025/05/92_Note_IPP_Billionaires-version-actualisee.pdf)
 
@@ -664,16 +598,13 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - Proposition de loi n° 768, déposée par des députées écologistes, 7 janvier 2025 (citée par le rapport du Sénat n° 689) : entre 15 et 25 Md€, selon G. Zucman (environ 20 plus ou moins 5). [Lien](https://www.senat.fr/rap/l24-689/l24-6891.pdf)
 - Observatoire européen de la fiscalité (centre de recherche de l’École d’économie de Paris), Quentin Parrinello, *Reporterre*, 11 juin 2025 : un plancher de 2 % sur environ 1 800 foyers « produirait une recette d’environ 20 milliards d’euros ». [Lien](https://reporterre.net/Taxer-les-milliardaires-rapporterait-20-milliards-d-euros)
 - La France insoumise, programme rapporté par Public Sénat, octobre 2026 : 15 Md€ inscrits pour 2027 (annoncé). [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
 - Terra Nova (centre gauche), 20 septembre 2024 : une nouvelle taxe sur la fortune rapporterait environ 5 Md€ ; les estimations de 30 à 40 Md€ pour un dispositif plus dur ne sont pas crédibles, car trois familles en représentent l’essentiel. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
 - François Geerolf (économiste à l’OFCE, qui écrit à titre personnel), octobre 2026 : « les 20 milliards d’euros promis en valent plutôt 2 à 6 » (son propre calcul : 4,4). Les chiffres des promoteurs vont de 13 à 25 Md€. [Lien](https://fgeerolf.com/mensonges-taxe-zucman.pdf)
-
-*Droite ou libéral.*
-
 - Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : les 15 à 25 Md€ sont les chiffres des promoteurs ; le rendement est probablement environ dix fois plus faible. Le chiffre de 20 Md€ a été « largement revu à la baisse par un rapport du Sénat (2 ou 3 Md€) ». [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 - Patrick Andrews et autres, étude commandée par le collectif de chefs d’entreprise « Trop, c’est trop ! », *La taxe Zucman : diagnostic fiscal, rendement effectif et effets macroéconomiques*, juin 2026 : rendement réaliste d’environ 5,5 Md€ (de 1,25 à 5,5 avec imputation de l’impôt sur les sociétés, 24 sans). Avec les réactions des contribuables, perte nette jusqu’à environ 22,75 Md€. [Lien](https://www.institut-entreprise.fr/wp-content/uploads/2026/06/TCT_Taxe-Zucman-2026.pdf)
 - Institut Montaigne (libéral-centriste), novembre 2025 : combler 15 Md€ par an équivaut à « trois nouvelles taxes Zucman » par an, soit environ 5 Md€ chacune. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
@@ -690,14 +621,11 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - Observatoire européen de la fiscalité (centre de recherche de l’École d’économie de Paris), *Reporterre*, 11 juin 2025 : l’exil est marginal quand les impôts sur la fortune augmentent. [Lien](https://reporterre.net/Taxer-les-milliardaires-rapporterait-20-milliards-d-euros)
 - François Geerolf (économiste à l’OFCE, qui écrit à titre personnel), octobre 2026, section 3.4 : retourne l’argument constitutionnel. Un impôt de 2 % sans plafond, sur des rendements réels de 3 à 4 %, prend 50 à 67 % du revenu. [Lien](https://fgeerolf.com/mensonges-taxe-zucman.pdf)
-- E. Sas, présenté comme rapporteur de gauche dans le [rapport du Sénat n° 689](https://www.senat.fr/rap/l24-689/l24-6891.pdf), y avance trois arguments contre l’inconstitutionnalité. Nous n’avons pas ouvert de texte séparé de sa part.
-
-*Droite ou libéral.*
-
+- E. Sas (Écologistes), présentée comme rapporteure minoritaire dans le [rapport du Sénat n° 689](https://www.senat.fr/rap/l24-689/l24-6891.pdf), y avance trois arguments contre l’inconstitutionnalité. Nous n’avons pas ouvert de texte séparé de sa part.
 - Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : la taxe serait « certainement » censurée (2 % sans plafond contre 0,5 % accepté). Elle lit aussi le CAE comme montrant une perte de patrimoine importante à 20-40 ans, même si l’exil reste « relativement modeste ». [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 - Patrick Andrews et autres pour « Trop, c’est trop ! », juin 2026 : les réactions des contribuables peuvent donner une perte nette. [Lien](https://www.institut-entreprise.fr/wp-content/uploads/2026/06/TCT_Taxe-Zucman-2026.pdf)
 
@@ -707,7 +635,7 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 - Conseil des prélèvements obligatoires (organisme placé auprès de la Cour des comptes), *Corriger les principales distorsions de l’imposition du patrimoine*, 1er décembre 2025 : la jurisprudence impose un plafond au-delà d’un taux marginal d’environ 1,8 %. Il propose plutôt une contribution différentielle à taux modéré, sans plafond, sur le seul patrimoine non professionnel. La taxation récurrente des actifs professionnels pèserait sur l’investissement ; la taxation à la transmission aurait des effets plus limités. [Lien](https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf)
 - CAE (instance d’économistes placée auprès du Premier ministre), Bach, Bozio, Grimprel, Guillouzouic, Landais et Malgouyres, *Focus* n° 118, juillet 2025 : l’exil est sensible à la fiscalité mais faible (+0,04 à 0,09 point de taux de départ après 2013). [Lien](https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf)
 
-**Où se situe le site, et pourquoi.** Il garde les deux risques (censure, départs) et parle d’« incertitude réelle » plutôt que de trancher. Les deux camps ont des arguments juridiques publiés ; le site nomme surtout celui du Sénat et pourrait nommer davantage l’argument inverse. Il utilise le CAE pour la mesure des départs, une source d’institution, et ajoute la lecture de la Fondation iFRAP.
+**Où se situe le site, et pourquoi.** Il garde les deux risques (censure, départs) et parle d’« incertitude réelle » plutôt que de trancher. Les deux thèses ont des arguments juridiques publiés ; le site nomme surtout celui du Sénat et pourrait nommer davantage l’argument inverse. Il utilise le CAE pour la mesure des départs, une source d’institution, et ajoute la lecture de la Fondation iFRAP.
 
 **Chapitres :** [chapitre 7, étape 8](../site/chapitres/07-les-choix.md) ; simulateur, fiche « Taxe Zucman ».
 
@@ -717,10 +645,9 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.* La France insoumise, programme rapporté par Public Sénat, octobre 2026 : un ISF climatique à 10 Md€ (annoncé). Aucun texte ouvert d’un organisme de gauche ne chiffre la réforme de 2018. [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
+*Économistes, instituts et organisations.*
 
-*Droite ou libéral.*
-
+- La France insoumise, programme rapporté par Public Sénat, octobre 2026 : un ISF climatique à 10 Md€ (annoncé). Aucun autre texte ouvert ne chiffre la réforme de 2018. [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
 - Fondation iFRAP (libérale), « La suppression totale de l’ISF aurait été la meilleure solution », 15 février 2018 : la suppression libère environ 3 Md€ sur les actifs d’entreprise. Elle prévoit (prévision, pas mesure) +4,6 Md€ d’investissement et 64 000 emplois d’ici 2022. L’IFI rapporterait environ 850 M€. [Lien](https://www.ifrap.org/budget-et-fiscalite/la-suppresion-totale-de-lisf-aurait-ete-la-meilleure-solution)
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), « Mesures fiscales », 27 janvier 2022 : coût d’environ 3 Md€ (ISF à 5,1 Md€ en 2017, IFI à 2,1 Md€ en 2019) ; pas d’effet clair sur l’investissement des entreprises. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
 - Institut Montaigne (libéral-centriste), 3 juillet 2024, micro-chiffrage du programme du Nouveau Front populaire : rétablir l’ISF avec une composante climat rapporterait 3,5 Md€ par an, contre 15 Md€ annoncés. [Lien](https://www.institutmontaigne.org/ressources/documents/synthese-legislatives-2024-micro-chiffrages-institut-montaigne-nfp.pdf)
@@ -741,19 +668,16 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - La France insoumise, programme rapporté par Public Sénat, octobre 2026 : supprimer la flat tax rapporterait 9 Md€ (annoncé). [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
 - Terra Nova (centre gauche), 20 septembre 2024 : garde le PFU à 30-34 % mais met fin à l’effacement des plus-values latentes au décès ; cite France Stratégie : pas d’effet majeur sur l’investissement. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
-
-*Droite ou libéral.*
-
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 27 janvier 2022 : coût statique de 1,5 à 1,8 Md€, mais les dividendes sont passés de 14 à 23 Md€ en 2018, donc le coût réel a probablement été nul. Pas d’effet significatif sur l’investissement ; les effets de long terme dépendent de la crédibilité de la mesure. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
 - Institut Montaigne (libéral-centriste), 3 juillet 2024 : abolir la flat tax et rétablir l’*exit tax* rapporterait 3,2 Md€ par an (programme du Nouveau Front populaire). [Lien](https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrages-retraites-et-fiscalite)
 
 *Institutions et organismes publics.* Haut-commissariat à la Stratégie et au Plan (organisme d’expertise placé auprès du Premier ministre), comité d’évaluation (ex-France Stratégie), avis du 17 octobre 2023 : le PFU « aurait été autofinancé les premières années » (hausse des dividendes). « Les travaux de recherche n’ont pas détecté d’impact du PFU sur l’investissement et les salaires », mais l’exposition « demeure imprécise », ce qui fragilise les estimations. [Lien](https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf)
 
-**Où se situe le site, et pourquoi.** Il garde les deux résultats (aucun effet détecté, estimations fragiles) et la fourchette large, car les sources ouvertes ne donnent pas le même coût (1,5 à 1,8 Md€ statique, environ 1 Md€ dans le simulateur). Les deux camps ouverts convergent : pas d’effet net démontré sur l’investissement.
+**Où se situe le site, et pourquoi.** Il garde les deux résultats (aucun effet détecté, estimations fragiles) et la fourchette large, car les sources ouvertes ne donnent pas le même coût (1,5 à 1,8 Md€ statique, environ 1 Md€ dans le simulateur). Les textes ouverts convergent : pas d’effet net démontré sur l’investissement.
 
 **Chapitres :** [chapitre 4, étape 4](../site/chapitres/04-pourquoi-le-deficit.md) ; simulateur, fiche « Supprimer le PFU ».
 
@@ -763,12 +687,11 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - La France insoumise, programme rapporté par Public Sénat, octobre 2026 : réforme des successions à 20 Md€ (annoncé). [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
 - Terra Nova (centre gauche), 20 septembre 2024 : environ 4 Md€ (montée progressive) pour mettre fin à l’effacement des plus-values latentes à la transmission, plus 1,4 Md€ pour le cumul du pacte Dutreil. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
-
-*Droite ou libéral.* Institut Montaigne (libéral-centriste), 3 juillet 2024 : micro-chiffrage indépendant de la mesure du Nouveau Front populaire sur les successions, environ 9 Md€ par an (la mise en page du PDF est ambiguë). [Lien](https://www.institutmontaigne.org/ressources/documents/synthese-legislatives-2024-micro-chiffrages-institut-montaigne-nfp.pdf)
+- Institut Montaigne (libéral-centriste), 3 juillet 2024 : micro-chiffrage indépendant de la mesure du Nouveau Front populaire sur les successions, environ 9 Md€ par an (la mise en page du PDF est ambiguë). [Lien](https://www.institutmontaigne.org/ressources/documents/synthese-legislatives-2024-micro-chiffrages-institut-montaigne-nfp.pdf)
 
 *Institutions et organismes publics.* Conseil des prélèvements obligatoires (organisme placé auprès de la Cour des comptes), 1er décembre 2025 : recommande une contribution différentielle sur les successions et les donations, et un pacte Dutreil mieux encadré, plutôt qu’une hausse des taux. [Lien](https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf)
 
@@ -782,16 +705,16 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.* Nous n’avons pas trouvé de texte de gauche ouvert qui commente ce résultat.
+*Économistes, instituts et organisations.*
 
-*Droite ou libéral.* Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : avait prévu un rendement de seulement 1,2 à 1,5 Md€, et s’en sert pour dire que les milliards de la taxe Zucman sont un « mirage ». Les très hauts revenus paient déjà une grande part de l’impôt sur le revenu, avec un risque de départs. [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
+- Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : avait prévu un rendement de seulement 1,2 à 1,5 Md€, et s’en sert pour dire que les milliards de la taxe Zucman sont un « mirage ». Les très hauts revenus paient déjà une grande part de l’impôt sur le revenu, avec un risque de départs. [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 
 *Institutions et organismes publics.*
 
 - Cour des comptes (juridiction financière), 25 juin 2026 : environ 0,4 Md€ contre 2,0 Md€ prévus, une prévision « trop optimiste ». Le revenu taxé (dividendes, plus-values) est facile à différer. Le rendement 2025 pouvait encore être ajusté, et la mesure est prolongée tant que le déficit dépasse 3 %. [Lien](https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf)
 - Legifiscal (site d’actualité fiscale), Damien Péan, 24 mars 2026 : 0,4 Md€ en 2025 contre 1,9 Md€ attendus ; causes : entrée en vigueur tardive, règles déclaratives qui ont réduit la base la première année, optimisation (report de dividendes). Le rendement attendu pour 2026 passe à 650 M€. [Lien](https://www.legifiscal.fr/actualites-fiscales/4455-contribution-differentielle-hauts-revenus-04-md-recettes-lieu-19-prevu.html)
 
-**Où se situe le site, et pourquoi.** Il s’appuie sur la Cour des comptes et Legifiscal pour les chiffres et dit clairement que la CDHR taxe le revenu. Elle montre à quelle vitesse un impôt minimum sur les hauts revenus rapporte moins que prévu quand les contribuables s’adaptent ; elle ne prouve pas qu’une taxe sur le patrimoine échouerait. Les causes détaillées de Legifiscal ne sont pas dans le texte du chapitre 7 (elles relèvent du chapitre 3). Un côté n’a pas de position publiée ouverte : la gauche.
+**Où se situe le site, et pourquoi.** Il s’appuie sur la Cour des comptes et Legifiscal pour les chiffres et dit clairement que la CDHR taxe le revenu. Elle montre à quelle vitesse un impôt minimum sur les hauts revenus rapporte moins que prévu quand les contribuables s’adaptent ; elle ne prouve pas qu’une taxe sur le patrimoine échouerait. Les causes détaillées de Legifiscal ne sont pas dans le texte du chapitre 7 (elles relèvent du chapitre 3). Parmi les économistes, instituts et organisations, seule la Fondation iFRAP commente ce résultat dans les textes ouverts.
 
 **Chapitres :** [chapitre 7, étape 8](../site/chapitres/07-les-choix.md) ; [chapitre 3, étape 10](../site/chapitres/03-qui-paie.md) ; simulateur, fiche « CDHR ».
 
@@ -801,21 +724,18 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - Terra Nova (centre gauche), 20 septembre 2024 : un ensemble de cinq mesures, à la limite de la jurisprudence constitutionnelle, rapporterait 10 à 15 Md€ à vitesse de croisière (environ 10 Md€ à court terme). C’est une contribution significative mais minoritaire, face à un effort d’environ 100 Md€ pour stabiliser la dette. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
 - La France insoumise, programme rapporté par Public Sénat, octobre 2026 : 106 Md€ de recettes supplémentaires au total, dont Zucman 15, successions 20, fin de la flat tax 9 et ISF climatique 10 (annoncé). [Lien](https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027)
 - CGT (syndicat), 28 avril 2025 : les baisses d’impôts doivent être récupérées ; « cadeaux fiscaux » de 207 Md€. [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-04/M%C3%A9mo%20%C3%A9co%20-%20D%C3%A9gradation%20des%20finances%20publiques%20les%20cons%C3%A9quences%20de%20la%20politique%20de%20l%27offre.pdf)
-
-*Droite ou libéral.*
-
 - Institut Montaigne (libéral-centriste), juillet 2024 : chaque mesure de recettes du Nouveau Front populaire est chiffrée bien en dessous de l’annonce (ISF 3,5 contre 15 Md€, flat tax 3,2 contre 9 Md€). [Lien](https://www.institutmontaigne.org/ressources/documents/synthese-legislatives-2024-micro-chiffrages-institut-montaigne-nfp.pdf)
 - Institut Montaigne (libéral-centriste), novembre 2025 : un ajustement par les seules recettes demanderait « au moins trois nouvelles taxes Zucman chaque année pendant cinq ans ». [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - Fondation iFRAP (libérale), Revue n° 270, septembre 2025 : les milliards tirés des plus riches sont un « mirage » ; ces foyers supportent déjà des taux élevés (impôts directs de 42,1 % pour le dixième le plus aisé). [Lien](https://www.ifrap.org/sites/default/files/documents/2025-09/ifrap270_etude_fiscalite_des_plus_riches.pdf)
 
 *Institutions et organismes publics.* Cour des comptes (juridiction financière), 25 juin 2026 : déficit de 2025 de 152,5 Md€ (5,1 % du PIB), base du calcul de la part du déficit. [Lien](https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf)
 
-**Où se situe le site, et pourquoi.** Aucun organisme n’a chiffré cet ensemble exact : le site le dit et l’appelle « notre propre synthèse ». Il reconnaît que le centre de la fourchette (17,5 Md€) se situe au-dessus du chiffrage le plus favorable d’un groupe de réflexion de centre gauche (Terra Nova : 10 à 15 Md€) et que la composante succession n’a pas de chiffrage indépendant. Il refuse « il suffit » sans rejeter l’idée : de l’argent serait bien rapporté. Les deux camps ouverts s’accordent sur le fait que les montants annoncés sont plus hauts que les montants chiffrés de façon indépendante.
+**Où se situe le site, et pourquoi.** Aucun organisme n’a chiffré cet ensemble exact : le site le dit et l’appelle « notre propre synthèse ». Il reconnaît que le centre de la fourchette (17,5 Md€) se situe au-dessus du chiffrage le plus favorable d’un groupe de réflexion de centre gauche (Terra Nova : 10 à 15 Md€) et que la composante succession n’a pas de chiffrage indépendant. Il refuse « il suffit » sans rejeter l’idée : de l’argent serait bien rapporté. Les textes ouverts s’accordent sur le fait que les montants annoncés sont plus hauts que les montants chiffrés de façon indépendante.
 
 **Chapitres :** [chapitre 3, étape 10](../site/chapitres/03-qui-paie.md) ; [chapitre 7, étape 8](../site/chapitres/07-les-choix.md) ; simulateur, « Paquet taxer les riches ».
 
@@ -825,16 +745,15 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.* CGT (syndicat), *Mémo économique* n° 150, 28 août 2025 : sur les 211 Md€ d’aides aux entreprises du Sénat, 88 Md€ sont des dépenses fiscales. Les aides sont accordées « sans conditions ni contreparties ». [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-09/M%C3%A9mo%20%C3%A9co%20n%C2%B0150%20-%20Aides%20publiques%20un%20pognon%20de%20dingue%20pour%20les%20entreprises.pdf)
+*Économistes, instituts et organisations.*
 
-*Droite ou libéral.*
-
+- CGT (syndicat), *Mémo économique* n° 150, 28 août 2025 : sur les 211 Md€ d’aides aux entreprises du Sénat, 88 Md€ sont des dépenses fiscales. Les aides sont accordées « sans conditions ni contreparties ». [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-09/M%C3%A9mo%20%C3%A9co%20n%C2%B0150%20-%20Aides%20publiques%20un%20pognon%20de%20dingue%20pour%20les%20entreprises.pdf)
 - Fondation iFRAP (libérale), 25 juillet 2025 (mise à jour le 17 septembre 2025) : environ 52 Md€ de niches, dont seulement 8,3 Md€ sont gardés comme aide ; les niches « suivent le niveau global des prélèvements » et reflètent en partie le niveau d’imposition. [Lien](https://www.ifrap.org/budget-et-fiscalite/aides-aux-entreprises-211-milliards-deuros-par-ou-185-milliards)
 - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), « Les dépenses fiscales », 4 décembre 2024 : 474 niches dans l’annexe au projet de loi de finances pour 2025 ; coût chiffré pour 387 seulement, simple ordre de grandeur pour 125. Le changement de méthode sur la TVA a réduit le coût d’environ 10 Md€ ; avec l’ancienne méthode, 95,0 Md€ en 2023. [Lien](https://fipeco.fr/pdf/Niches2024.pdf)
 
 *Institutions et organismes publics.* FMI (Fonds monétaire international ; organisation internationale), 21 mai 2026 : toute recette nouvelle doit viser les niches et les dépenses fiscales inefficaces. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
 
-**Où se situe le site, et pourquoi.** Il montre le coût comme une « assiette », pas comme un rendement, avec la précaution « recettes non perçues ». Le nombre de 474 vient de l’annexe au projet de loi de finances, pas d’une statistique de la Cour. Aucun côté ouvert ne conteste la précaution : la gauche compte les niches comme des aides, la droite estime que beaucoup ne sont pas des aides ciblées, mais personne ne les présente comme une recette facile. Nous n’avons pas pu rouvrir le total de 91,8 Md€ dans le texte d’origine ; le site le reprend de la Cour des comptes (avril 2026).
+**Où se situe le site, et pourquoi.** Il montre le coût comme une « assiette », pas comme un rendement, avec la précaution « recettes non perçues ». Le nombre de 474 vient de l’annexe au projet de loi de finances, pas d’une statistique de la Cour. Aucun texte ouvert ne conteste la précaution : la CGT compte les niches comme des aides, la Fondation iFRAP estime que beaucoup ne sont pas des aides ciblées, mais personne ne les présente comme une recette facile. Nous n’avons pas pu rouvrir le total de 91,8 Md€ dans le texte d’origine ; le site le reprend de la Cour des comptes (avril 2026).
 
 **Chapitres :** [chapitre 3, étape 11](../site/chapitres/03-qui-paie.md) ; [chapitre 2, étape 9](../site/chapitres/02-ou-va-l-argent.md) ; [chapitre 7, étape 8](../site/chapitres/07-les-choix.md) ; [chapitre 4, étape 7](../site/chapitres/04-pourquoi-le-deficit.md).
 
@@ -844,16 +763,15 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - CGT (syndicat), *Mémo économique* n° 150, 28 août 2025 : reprend les 211 Md€ du Sénat en 2023 (41 pour Bpifrance, 88 de dépenses fiscales, 75 d’exonérations de cotisations, 7 de subventions de l’État) et l’estimation de 203,2 Md€ du Clersé. Pas de définition claire ni de recensement exhaustif. [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-09/M%C3%A9mo%20%C3%A9co%20n%C2%B0150%20-%20Aides%20publiques%20un%20pognon%20de%20dingue%20pour%20les%20entreprises.pdf)
 - Force ouvrière (syndicat), note à la commission de concertation sur les aides aux entreprises, avril 2026 : les estimations publiées « varient de 15 à 270 Md€ » ; l’enquête du Sénat a listé 2 267 dispositifs pour 211 Md€ ; FO soutient ce large périmètre. [Lien](https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-07-16%20-%20Rapport%20Aides%20aux%20entreprises/FO%202026%2004%20Commission%20de%20concertation%20sur%20les%20aides%20aux%20entreprises.pdf)
-
-*Droite ou libéral.* Fondation iFRAP (libérale), « Aides aux entreprises : 211 milliards d’euros… par où 185 milliards ? », 25 juillet 2025 (mise à jour le 17 septembre 2025) : 211 Md€ est trop élevé ; avec des critères stricts, environ 18,5 Md€. Les baisses générales de cotisations ne sont pas des aides ciblées (elle garde 3,2 Md€) et la plupart des niches non plus. [Lien](https://www.ifrap.org/budget-et-fiscalite/aides-aux-entreprises-211-milliards-deuros-par-ou-185-milliards)
+- Fondation iFRAP (libérale), « Aides aux entreprises : 211 milliards d’euros… par où 185 milliards ? », 25 juillet 2025 (mise à jour le 17 septembre 2025) : 211 Md€ est trop élevé ; avec des critères stricts, environ 18,5 Md€. Les baisses générales de cotisations ne sont pas des aides ciblées (elle garde 3,2 Md€) et la plupart des niches non plus. [Lien](https://www.ifrap.org/budget-et-fiscalite/aides-aux-entreprises-211-milliards-deuros-par-ou-185-milliards)
 
 *Institutions et organismes publics.* Pas de position publiée dans les textes ouverts autre que le périmètre du Sénat, repris par les syndicats ci-dessus.
 
-**Où se situe le site, et pourquoi.** Il affiche toute la fourchette et dit pourquoi elle est large : la définition. Il reprend le point de la droite (le haut compte surtout des baisses d’impôts et de cotisations) et celui de la gauche (aides sans conditions, évaluation insuffisante), mais n’affiche pas l’estimation la plus basse (18,5 Md€) : le plancher de 45 Md€ est plus haut. Le site documente que ce plancher suit la définition des aides d’État au sens européen.
+**Où se situe le site, et pourquoi.** Il affiche toute la fourchette et dit pourquoi elle est large : la définition. Il reprend le point de la Fondation iFRAP (le haut compte surtout des baisses d’impôts et de cotisations) et celui de la CGT et de Force ouvrière (aides sans conditions, évaluation insuffisante), mais n’affiche pas l’estimation la plus basse (18,5 Md€) : le plancher de 45 Md€ est plus haut. Le site documente que ce plancher suit la définition des aides d’État au sens européen.
 
 **Chapitres :** [chapitre 2, étapes 6 et 9](../site/chapitres/02-ou-va-l-argent.md) ; [chapitre 7, étape 8](../site/chapitres/07-les-choix.md).
 
@@ -863,13 +781,12 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 **Qui soutient quoi.**
 
-*Gauche ou keynésien.*
+*Économistes, instituts et organisations.*
 
 - CGT (syndicat), « PLFSS 2025 : points clefs, exonérations de cotisations », novembre 2024 : défend la suppression complète des exonérations de cotisations patronales ; critique le recentrage, dont l’effet sur l’emploi n’est pas prouvé. [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2024-11/202411-Points%20clefs%20-%20exonerations%20cotisationsVF.pdf)
 - Union syndicale Solidaires (syndicat), 15 juin 2026 : propose de financer le retour de la retraite à 60 ans notamment par la fin des exonérations de cotisations. [Lien](https://solidaires.org/documents/12100/Com_rapport_COR-juin2026.pdf)
 - Un sénateur écologiste, cité par Public Sénat (5 novembre 2024), soutient qu’il n’y a pas d’effet sur l’emploi au-dessus de 2 SMIC.
-
-*Droite ou libéral.* Pas de position publiée de ce camp sur ce point précis dans les textes ouverts. Le texte de la Fondation iFRAP ouvert sur les aides aux entreprises exclut les baisses générales de cotisations des « aides » (voir point 3.16).
+- Aucune position publiée contraire n’a été trouvée sur ce point précis dans les textes ouverts. Le texte de la Fondation iFRAP ouvert sur les aides aux entreprises exclut les baisses générales de cotisations des « aides » (voir point 3.16).
 
 *Institutions et organismes publics.*
 
@@ -882,7 +799,7 @@ Ce thème réunit les points contestés sur le niveau des impôts, sur ceux qui 
 
 ## 4. Déficit et années de référence
 
-Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient surtout des baisses d’impôts depuis 2017. Pour le second, il vient surtout de la hausse des dépenses depuis 2019. Cette section reprend seize points contestés du chapitre 4 et des chapitres 1, 3 et 7. Pour chaque point, les sources sont rangées en trois groupes : gauche, droite ou libéral, institutions. Quand un camp n’a pas publié de position sur un point, nous le disons.
+Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient surtout des baisses d’impôts depuis 2017. Pour le second, il vient surtout de la hausse des dépenses depuis 2019. Cette section reprend seize points contestés du chapitre 4 et des chapitres 1, 3 et 7. Pour chaque point, les sources sont rangées en deux groupes : économistes, instituts et organisations, puis institutions. Quand aucune position publiée n’a été trouvée sur un point, nous le disons.
 
 ### 4.1 « Les baisses d’impôts de 2018 à 2023 coûtent 62 milliards d’euros »
 
@@ -890,10 +807,9 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - Terra Nova (centre gauche), G. Hannezo, « Quel rendement peut-on réellement attendre de la taxation des plus fortunes ? », 20 septembre 2024 : reprend le chiffre de la Cour (62 milliards d’euros) comme coût net des mesures permanentes depuis 2017. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
   - Attac (association altermondialiste), *La dette de l’injustice fiscale*, 26 mars 2025 : au moins 308,62 milliards d’euros de pertes cumulées de 2018 à 2023, environ 35 % de la hausse de la dette. Elle compte aussi 207 milliards d’euros allés à des ménages aisés et à de grandes entreprises. Ce total est cumulé : il ne se compare pas à un coût annuel. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- *Droite ou libéral*
   - Institut Montaigne (libéral-centriste), *Budget base zéro : décider sous la contrainte*, novembre 2025 : accepte « 65 Md€ de baisses décidées depuis 2017 ». Selon lui, la plupart ont profité aux classes moyennes. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
   - Rexecode (institut de conjoncture proche des organisations patronales), *Bilan des prélèvements obligatoires*, document de travail n° 97, juin 2025 : baisses de 2018 à 2023 de 66 milliards d’euros en euros courants, soit 75 milliards en euros de 2025. Elle note aussi 25 milliards d’euros de hausses en 2024 et 2025. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025)
 - *Institutions*
@@ -907,11 +823,10 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Ce que dit le site.** Les 62 milliards d’euros valent 13,2 jours de dépense publique. Le site dit que les jours sont une unité à lui : un coût de 2023 est rapporté à une journée de 2025. Il ne compare plus terme à terme ces 62 milliards d’euros et la hausse de 2,0 points de PIB des dépenses : l’un est un coût en euros, l’autre la variation d’un ratio.
 
-**Qui soutient quoi.** Aucun texte ouvert n’utilise les « jours de dépense publique ». Aucun texte ouvert ne met ces deux chiffres face à face. Il n’y a donc pas de position publiée de la gauche ou de la droite sur ce point. Voici ce que font les sources.
+**Qui soutient quoi.** Aucun texte ouvert n’utilise les « jours de dépense publique ». Aucun texte ouvert ne met ces deux chiffres face à face. Il n’y a donc pas de position publiée sur ce point. Voici ce que font les sources.
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), « Quelles trajectoires pour les finances publiques de la France ? », *Policy Brief* n° 146, 11 juillet 2025 : la dépense totale est « stable » de 2017 à 2024, en points de PIB. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-- *Droite ou libéral*
   - Rexecode (institut de conjoncture proche des organisations patronales), document de travail n° 105, septembre 2026 : raisonne en milliards d’euros et en points de PIB (36,7 milliards d’euros, 1,2 point). Le document n° 97 (juin 2025) restate les mesures en euros constants de 2025 : le choix de l’année de prix change les montants. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - *Institutions*
   - Cour des comptes (juridiction financière), 15 juillet 2024 : exprime les baisses en milliards d’euros et en points de PIB, pas en jours. [Lien](https://www.ccomptes.fr/sites/default/files/2024-07/20240715-RSPFP-2024_0.pdf)
@@ -927,16 +842,15 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : la hausse du déficit s’explique par « la baisse non financée des PO », et non par une dérive des dépenses publiques primaires. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
   - Terra Nova (centre gauche), Hannezo, 20 septembre 2024 : des baisses d’impôts sans « réel effort de réduction de dépenses ». [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
-- *Droite ou libéral*
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), F. Ecalle, *Les principales réformes fiscales du quinquennat*, 27 janvier 2022 : le coût des mesures du quinquennat, environ 44 milliards d’euros en 2022, « n’a pas été compensé par des économies équivalentes sur les dépenses publiques ». [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
   - Rexecode (institut de conjoncture proche des organisations patronales), document n° 105, septembre 2026 : les hausses d’impôts n’ont pas réduit le déficit, car la dépense augmente plus vite que l’activité. C’est l’autre face du même constat. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - *Institutions*
   - Cour des comptes (juridiction financière), 15 juillet 2024 : « Ces baisses de prélèvements, non compensées par des économies en dépenses, ont creusé le déficit de l’État et accru sa dette. » Elle parle du déficit de l’État. Des transferts de TVA ont compensé la Sécurité sociale et les collectivités : leurs recettes ont augmenté de 24 % et de 21 % depuis 2017, contre 4 % pour l’État. [Lien](https://www.ccomptes.fr/sites/default/files/2024-07/20240715-RSPFP-2024_0.pdf)
 
-**Où se situe le site, et pourquoi.** Les trois camps disent la même chose de deux façons : baisses non financées, ou économies non faites. Le site garde le constat commun et laisse chaque source parler avec ses mots. Il a retiré la phrase « financées par l’emprunt », qui était une déduction du site placée juste après la citation de la Cour. Il écrit « le déficit de l’État », comme la Cour.
+**Où se situe le site, et pourquoi.** Toutes les sources citées disent la même chose de deux façons : baisses non financées, ou économies non faites. Le site garde le constat commun et laisse chaque source parler avec ses mots. Il a retiré la phrase « financées par l’emprunt », qui était une déduction du site placée juste après la citation de la Cour. Il écrit « le déficit de l’État », comme la Cour.
 
 **Chapitres :** [4, étapes 4, 7 et 8](../site/chapitres/04-pourquoi-le-deficit.md) ; [3](../site/chapitres/03-qui-paie.md).
 
@@ -946,11 +860,10 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : « Depuis 2017 », le creusement du déficit de 2,4 points de PIB s’explique « comptablement » par la baisse de 2,5 points du taux de prélèvements. Les recettes françaises baissent de 1,6 point de PIB, alors qu’elles sont stables dans la zone euro. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
   - Attac (association altermondialiste), 26 mars 2025 : compte les baisses depuis l’élection de 2017. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-  - Terra Nova date aussi ses chiffres de 2017 ou 2018. Ces trois sources utilisent 2017 sans discuter l’idée d’un sommet : nous n’avons pas trouvé de réponse publiée de la gauche à cet argument.
-- *Droite ou libéral*
+  - Terra Nova date aussi ses chiffres de 2017 ou 2018. Ces trois sources utilisent 2017 sans discuter l’idée d’un sommet : nous n’avons pas trouvé de réponse publiée à cet argument.
   - Rexecode (institut de conjoncture proche des organisations patronales), document n° 105, septembre 2026 : « Le choix du point de départ détermine le diagnostic ». Les baisses de 2014 à 2023 « n’ont pas suffi à effacer le choc fiscal du début des années 2010 » : le cumul depuis 2010 reste proche de 1 point de PIB. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
   - Institut Montaigne (libéral-centriste), novembre 2025 : les prélèvements restent 2,2 points au-dessus de leur niveau de 2010. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), F. Ecalle, 16 avril 2026 : le taux de prélèvements baisse de 2,2 points de PIB de 2016 à 2024 (zone euro : −0,3). La France reste pourtant 3,7 points au-dessus de la zone euro, au 2e rang de l’Union européenne. [Lien](https://www.fipeco.fr/pdf/AssiettePr%C3%A9l%C3%A8vements2024.pdf)
@@ -958,7 +871,7 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
   - Cour des comptes (juridiction financière), 25 juin 2026 : les hausses d’impôts de 2010 à 2014 représentent 3,8 points de PIB. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - Cour des comptes, 15 juillet 2024 : le taux de prélèvements est de 45,0 % en 2022, contre 45,3 % en 2017. [Lien](https://www.ccomptes.fr/sites/default/files/2024-07/20240715-RSPFP-2024_0.pdf)
 
-**Où se situe le site, et pourquoi.** Il garde 2017 comme départ du premier récit et montre l’objection du sommet dans un encadré, avec ses chiffres. Pour la gauche, la baisse de 2017 à 2024 est réelle ; pour la droite, le niveau reste élevé. Les deux constats viennent de textes publiés. Au chapitre 3, le site donne aussi la base 2010 de Rexecode (41,4 % en 2010, 42,7 % en 2024).
+**Où se situe le site, et pourquoi.** Il garde 2017 comme départ du premier récit et montre l’objection du sommet dans un encadré, avec ses chiffres. Pour l’OFCE, Attac et Terra Nova, la baisse de 2017 à 2024 est réelle ; pour Rexecode, l’Institut Montaigne et Fipeco, le niveau reste élevé. Les deux constats viennent de textes publiés. Au chapitre 3, le site donne aussi la base 2010 de Rexecode (41,4 % en 2010, 42,7 % en 2024).
 
 **Chapitres :** [4, étape 4](../site/chapitres/04-pourquoi-le-deficit.md) ; [3, étape 3](../site/chapitres/03-qui-paie.md) ; [1](../site/chapitres/01-combien.md).
 
@@ -968,15 +881,14 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : les dépenses primaires hors investissement baissent de 0,8 point de PIB potentiel de 2017 à 2024, et de 0,2 point seulement si l’on corrige les subventions. Les subventions baissent de 0,6 point avec la fin du CICE, transformé en baisse de cotisations patronales (−1,1 point). [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-- *Droite ou libéral*
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 27 janvier 2022 : le CICE est supprimé au 1er janvier 2019 et remplacé par des baisses de cotisations. En 2019, le double coût est d’environ 20 milliards d’euros ; ensuite, le coût net durable est d’environ 3 milliards d’euros. Les crédits d’impôt sont de la dépense, les baisses de cotisations réduisent les prélèvements. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
 - *Institutions*
   - Cour des comptes (juridiction financière), 15 juillet 2024 : les crédits d’impôt (exemple du CICE) sont désormais enregistrés l’année du fait générateur, avec un effet de −1,0 milliard d’euros sur le solde de 2023. [Lien](https://www.ccomptes.fr/sites/default/files/2024-07/20240715-RSPFP-2024_0.pdf)
   - Insee (institut public de statistique), *Les comptes des administrations publiques en 2019*, 25 mars 2020 : dépense « quasiment stable » (55,7 % puis 55,6 % du PIB) ; déficit de 3,0 %, ou 2,1 % sans la transformation du CICE. [Lien](https://www.insee.fr/fr/statistiques/4470888)
 
-**Où se situe le site, et pourquoi.** Les deux sources de gauche et de droite décrivent le même mécanisme. Nous n’avons pas trouvé de source de droite qui réfute l’OFCE sur ce point. Le site a donc nuancé son texte : « pas une baisse nouvelle » devient « surtout un changement comptable », plus un petit coût net. Au chapitre 1, il dit que le CICE « a pu jouer » dans le recul de la dépense, mais que son effet exact est difficile à isoler.
+**Où se situe le site, et pourquoi.** L’OFCE et Fipeco décrivent le même mécanisme. Nous n’avons pas trouvé de source qui réfute l’OFCE sur ce point. Le site a donc nuancé son texte : « pas une baisse nouvelle » devient « surtout un changement comptable », plus un petit coût net. Au chapitre 1, il dit que le CICE « a pu jouer » dans le recul de la dépense, mais que son effet exact est difficile à isoler.
 
 **Chapitres :** [4, étapes 4 et 5](../site/chapitres/04-pourquoi-le-deficit.md) ; [1](../site/chapitres/01-combien.md).
 
@@ -986,16 +898,15 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : utilise le taux de prélèvements obligatoires : −2,5 points de PIB de 2017 à 2024 (1,6 pour les ménages, 0,9 pour les entreprises). [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-- *Droite ou libéral*
   - Institut Montaigne (libéral-centriste), novembre 2025 : utilise le niveau du taux (45,2 %, soit 4,9 points au-dessus de la moyenne de l’Union européenne) pour s’opposer aux hausses d’impôts. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - *Institutions*
   - Cour des comptes (juridiction financière), 15 juillet 2024 : en 2023, le taux baisse de 1,8 point, dont −1,6 d’évolution spontanée et seulement −0,2 de décisions. [Lien](https://www.ccomptes.fr/sites/default/files/2024-07/20240715-RSPFP-2024_0.pdf)
   - Cour des comptes, 25 juin 2026 : les prélèvements d’Eurostat « se distinguent de ceux mesurés par l’INSEE », car les crédits d’impôt n’en sont pas déduits. [Lien](https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf)
   - OCDE (Organisation de coopération et de développement économiques ; organisation internationale), *Revenue Statistics 2025*, décembre 2025 : la part payée d’un crédit d’impôt remboursable est traitée comme une dépense et n’est pas déduite des recettes. [Lien](https://www.oecd.org/en/publications/2025/12/revenue-statistics-2025_07ca0a8e/full-report/tax-revenue-trends-1965-2024_98c75833.html)
 
-**Où se situe le site, et pourquoi.** Gauche et droite n’utilisent pas le même indicateur pour la même question : l’une mesure une baisse, l’autre un niveau. Le site explique donc quel indicateur répond à quelle question. Il dit aussi qu’aucun des deux ne mesure le coût des baisses décidées (62 milliards d’euros). Pour les 19,6 milliards d’euros de crédits remboursables, il écrit « surtout » : ils expliquent environ 0,7 point des 0,8 point d’écart, le reste vient d’autres différences de définition et de millésime.
+**Où se situe le site, et pourquoi.** L’OFCE et l’Institut Montaigne n’utilisent pas le même indicateur pour la même question : l’un mesure une baisse, l’autre un niveau. Le site explique donc quel indicateur répond à quelle question. Il dit aussi qu’aucun des deux ne mesure le coût des baisses décidées (62 milliards d’euros). Pour les 19,6 milliards d’euros de crédits remboursables, il écrit « surtout » : ils expliquent environ 0,7 point des 0,8 point d’écart, le reste vient d’autres différences de définition et de millésime.
 
 **Chapitres :** [4, étapes 3 et 4](../site/chapitres/04-pourquoi-le-deficit.md) ; [3, étapes 1 et 3](../site/chapitres/03-qui-paie.md).
 
@@ -1005,9 +916,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : la hausse du déficit tient à « la baisse non financée des PO, et non [à] une dérive des dépenses publiques primaires ». La dépense totale est stable en points de PIB ; la charge d’intérêts augmente. Sur 25 ans, la dépense française monte d’environ 1 point de PIB, quand celle de la zone euro baisse de 1,4 point. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-- *Droite ou libéral*
   - Rexecode (institut de conjoncture proche des organisations patronales), document n° 105, septembre 2026 : « une dépense qui augmente plus rapidement que l’activité » ; le déficit serait proche de 5,4 % en 2026, comme en 2023. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
   - Institut Montaigne (libéral-centriste), novembre 2025 : la hausse de la dépense hors crises vient des collectivités locales (+2,7 % en volume) et de la Sécurité sociale (+3,3 %). Selon lui, « depuis 2000, les dépenses publiques de la France ont doublé » (chiffre en valeur, sans précision du déflateur). Montaigne ne donne pas d’année de départ explicite en 2019. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - *Institutions*
@@ -1021,15 +931,13 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 ### 4.8 Le poids de la dépense monte-t-il à cause de la croissance faible ?
 
-**Ce que dit le site.** Au chapitre 1, un encadré de gauche dit que la hausse du poids de la dépense depuis 2008 vient surtout du ralentissement de la croissance. Le site ne crédite l’OFCE que de ce qu’il a publié (avril 2017). Il donne aussi la comparaison Eurostat depuis 2005 : +3,0 points de PIB pour la dépense, +1,4 pour les recettes. Il dit que l’écart avec la zone euro se réduit surtout parce que la dépense a augmenté ailleurs.
+**Ce que dit le site.** Au chapitre 1, un encadré cite des économistes de l’OFCE pour qui la hausse du poids de la dépense depuis 2008 vient surtout du ralentissement de la croissance. Le site ne crédite l’OFCE que de ce qu’il a publié (avril 2017). Il donne aussi la comparaison Eurostat depuis 2005 : +3,0 points de PIB pour la dépense, +1,4 pour les recettes. Il dit que l’écart avec la zone euro se réduit surtout parce que la dépense a augmenté ailleurs.
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), D. Ducoudré, M. Plane et X. Sampognaro, « Dépenses publiques : quels enjeux pour le prochain quinquennat ? », *Policy Brief* n° 17, 19 avril 2017 : si le poids de la dépense « s’est accru de près de 5 points de PIB depuis 2008, cela s’explique avant tout par l’affaissement de la croissance depuis la crise ». Presque la moitié de la hausse vient du dénominateur. Dès 2010, la dépense croît d’environ 1 % par an, sous la croissance potentielle (1,4 %). Ce texte a neuf ans. [Lien](https://www.ofce.fr/pdf/pbrief/2017/pbrief17.pdf)
-- *Droite ou libéral*
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), F. Ecalle, « Le rapport des dépenses publiques au PIB : pertinence et comparabilité », 15 janvier 2025 : le PIB est la base d’où l’on prélève les impôts, donc le ratio compare la capacité à prélever. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
-  - Aucun autre texte libéral ouvert ne répond à l’argument de la croissance faible.
 - *Institutions*
   - Banque de France (institution publique), M. Cochard et A. Deredec, *Bulletin* n° 259, 25 juillet 2025 : l’écart avec la zone euro se réduit depuis 2019 parce que la dépense y a augmenté plus (+2,5 points de PIB) qu’en France (+1,6), de 2019 à 2023. [Lien](https://www.banque-france.fr/fr/publications-et-statistiques/publications/ou-la-france-depense-t-elle-davantage-que-ses-voisins-de-la-zone-euro)
   - Haut Conseil des finances publiques (HCFP, institution publique), avis HCFP-2026-5, 25 septembre 2026 : la dépense dépasse la croissance du PIB pour la troisième année de suite. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
@@ -1045,37 +953,35 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : sur 2017-2024, les recettes expliquent la dégradation. L’OFCE y voit un choix de politique budgétaire : des baisses non financées. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
   - Attac (association altermondialiste), 26 mars 2025 : le déficit et la dette s’expliquent largement par les baisses depuis 2017 (environ 35 % de la hausse de la dette). [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- *Droite ou libéral*
   - Rexecode (institut de conjoncture proche des organisations patronales), document n° 105, septembre 2026 : « Le choix du point de départ détermine le diagnostic. » Il ne dit pas que les deux lectures se valent : il conclut que les hausses d’impôts n’ont pas réduit le déficit. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - *Institutions*
   - Cour des comptes (juridiction financière), 25 juin 2026 : repère « d’avant-crise » pour la dépense ; la baisse du déficit de 2025 est « exclusivement » due à 23 milliards d’euros de hausses d’impôts. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
 
-**Seuil de 0,3 point.** Le titre du curseur dit « à parts à peu près égales » quand l’écart des deux effets est inférieur à 0,3 point. Aucune source ouverte ne définit un tel seuil : il n’y a pas de position publiée, ni de gauche ni de droite. Le site l’affiche comme « convention de ce site, pas d’une source ».
+**Seuil de 0,3 point.** Le titre du curseur dit « à parts à peu près égales » quand l’écart des deux effets est inférieur à 0,3 point. Aucune source ouverte ne définit un tel seuil : il n’y a pas de position publiée. Le site l’affiche comme « convention de ce site, pas d’une source ».
 
-**Où se situe le site, et pourquoi.** Il garde les deux fenêtres comme un tableau de sensibilité, avec les deux nombres toujours affichés. Les sources ne disent pas que la période est la seule cause : les camps divergent aussi sur ce qui aurait dû financer les baisses, sur les définitions (CICE, prélèvements) et sur le remède. C’est pourquoi le site écrit « pas tout ». Les calculs par fenêtre sont des calculs du site d’après Eurostat, pas des chiffres publiés tels quels.
+**Où se situe le site, et pourquoi.** Il garde les deux fenêtres comme un tableau de sensibilité, avec les deux nombres toujours affichés. Les sources ne disent pas que la période est la seule cause : les sources divergent aussi sur ce qui aurait dû financer les baisses, sur les définitions (CICE, prélèvements) et sur le remède. C’est pourquoi le site écrit « pas tout ». Les calculs par fenêtre sont des calculs du site d’après Eurostat, pas des chiffres publiés tels quels.
 
 **Chapitre :** [4, étapes 0, 1, 6 et 10](../site/chapitres/04-pourquoi-le-deficit.md).
 
-### 4.10 Chaque récit est-il bien attribué à son camp ?
+### 4.10 Chaque récit est-il bien attribué à ses auteurs ?
 
 **Ce que dit le site.** Le premier récit est attribué à l’OFCE, à Terra Nova et à Attac. Le second est attribué à la Cour des comptes, au FMI et à l’OCDE, puis à la Fondation iFRAP (libérale) et à l’Institut Montaigne. Le site précise que la Cour « compte aussi pour le premier récit », car elle fournit le chiffre de coût. Terra Nova est cité avec sa réserve : un calcul « essentiellement comptable ».
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - Terra Nova (centre gauche), Hannezo, 20 septembre 2024 : pose un diagnostic du côté des recettes (les baisses expliquent environ 60 % de la dégradation, « essentiellement comptable »). Mais taxer les plus fortunés rapporte au plus environ 15 milliards d’euros par an. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
   - OFCE (Sciences Po, sensibilité keynésienne), 11 juillet 2025 : récit des recettes, ancré sur 2017. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-- *Droite ou libéral*
   - Institut Montaigne (libéral-centriste), novembre 2025 : diagnostic du côté de la dépense, mais accepte le chiffre de 65 milliards d’euros de baisses depuis 2017. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
-  - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 27 janvier 2022 : compte le coût des mesures (44 milliards d’euros en 2022) et reconnaît qu’il n’a pas été compensé. Il reconnaît donc les deux côtés. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
+  - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 27 janvier 2022 : compte le coût des mesures (44 milliards d’euros en 2022) et reconnaît qu’il n’a pas été compensé. Il reconnaît donc les deux récits. [Lien](https://www.fipeco.fr/pdf/Mesures%20fiscales.pdf)
 - *Institutions*
-  - Cour des comptes (juridiction financière), 25 juin 2026 : documente à la fois les 62 milliards d’euros de baisses et l’effet de cliquet. Ce n’est pas une source d’un seul camp. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
+  - Cour des comptes (juridiction financière), 25 juin 2026 : documente à la fois les 62 milliards d’euros de baisses et l’effet de cliquet. Elle ne soutient pas un seul des deux récits. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - FMI (organisation internationale), 21 mai 2026 : demande de rationaliser la dépense, mais aussi de viser les niches fiscales inefficaces. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
 
-**Où se situe le site, et pourquoi.** Un partage en deux camps simplifie le débat : Fipeco, Rexecode et Montaigne reconnaissent tous les baisses de 2017 et leur non-financement. Le site nomme donc chaque position au lieu de parler d’« économistes du premier récit ». Il place Fipeco au point d’accord, pas dans un camp. Deux limites : nous n’avons pas pu lire en entier le texte de la Fondation iFRAP (aucune année ne lui est attribuée), ni ouvrir celui de l’OCDE (accès refusé). Le site cite pourtant l’OCDE dans le second récit : ce point reste à revoir.
+**Où se situe le site, et pourquoi.** Un partage en deux récits opposés simplifie le débat : Fipeco, Rexecode et Montaigne reconnaissent tous les baisses de 2017 et leur non-financement. Le site nomme donc chaque position au lieu de parler d’« économistes du premier récit ». Il place Fipeco au point d’accord, pas dans un récit. Deux limites : nous n’avons pas pu lire en entier le texte de la Fondation iFRAP (aucune année ne lui est attribuée), ni ouvrir celui de l’OCDE (accès refusé). Le site cite pourtant l’OCDE dans le second récit : ce point reste à revoir.
 
 **Chapitre :** [4, étapes 4, 5 et 7](../site/chapitres/04-pourquoi-le-deficit.md).
 
@@ -1085,8 +991,7 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Nous n’avons pas trouvé, dans les textes ouverts, de position de gauche sur ce point précis.
-- *Droite ou libéral*
+- *Économistes, instituts et organisations.*
   - Rexecode (institut de conjoncture proche des organisations patronales), *Bilan des prélèvements obligatoires*, document n° 105, septembre 2026 : « En trois ans, les prélèvements ont augmenté de 36,7 milliards d’euros », soit 1,2 point de PIB depuis 2023. « Les hausses d’impôts n’ont pas permis de réduire le déficit » (environ 5,4 % en 2026, comme en 2023). [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2026/bilan-des-prelevements-obligatoires-document-de-travail-n.105-septembre-2026)
 - *Institutions*
   - Cour des comptes (juridiction financière), 25 juin 2026 : la baisse du déficit de 2025 est « exclusivement imputable à des hausses d’impôts » de 23 milliards d’euros, dont un tiers de mesures temporaires. La dépense n’y a pas contribué. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
@@ -1101,17 +1006,16 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - Terra Nova (centre gauche), Hannezo, 20 septembre 2024 : les baisses expliquent largement la dégradation, mais taxer les plus fortunés rapporte au plus environ 15 milliards d’euros par an, loin des quelque 100 milliards d’euros à trouver. [Lien](https://tnova.fr/economie-social/finances-macro-economie/quel-rendement-peut-on-rellement-attendre-de-la-taxation-des-plus-fortunes/)
   - Attac (association altermondialiste), 26 mars 2025 : chiffre les pertes (308,62 milliards d’euros cumulés) et parle de « cadeaux fiscaux ». La page consultée ne demande pas explicitement d’annuler les baisses : le site ne le lui attribue pas. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
   - OFCE (Sciences Po, sensibilité keynésienne) : le terme « annuler les baisses » n’a pas été vérifié dans son texte ; le site ne lui prête pas de recommandation.
-- *Droite ou libéral*
   - Institut Montaigne (libéral-centriste), novembre 2025 : les hausses d’impôts sont de « fausses bonnes idées » : 15 milliards d’euros par an pendant cinq ans équivalent à trois taxes Zucman par an, ou à une TVA à 32,5 %. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - *Institutions*
   - FMI (organisation internationale), 21 mai 2026 : un ratio de recettes parmi les plus élevés de la zone euro limite l’ajustement par les recettes. Il recommande de rationaliser la dépense, et de viser les niches et exonérations inefficaces pour toute recette nouvelle. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
   - Cour des comptes (juridiction financière) : la phrase « réduit les marges sur les recettes » vient d’une note de recherche ; nous ne l’avons pas relue mot pour mot dans le texte de la Cour. Le site la donne donc en paraphrase.
 
-**Où se situe le site, et pourquoi.** Il n’en choisit pas : c’est un choix politique. Il donne le constat des institutions, la position libérale et deux positions de gauche, et chiffre chaque option au chapitre 7. Le FMI ne dit pas « seulement la dépense » : le site l’a corrigé en ajoutant les niches fiscales. Au chapitre 7, un encadré cite aussi l’option « inverser les baisses ou aligner la dépense sur celle des voisins ».
+**Où se situe le site, et pourquoi.** Il n’en choisit pas : c’est un choix politique. Il donne le constat des institutions, la position de l’Institut Montaigne et celles de Terra Nova et d’Attac, et chiffre chaque option au chapitre 7. Le FMI ne dit pas « seulement la dépense » : le site l’a corrigé en ajoutant les niches fiscales. Au chapitre 7, un encadré cite aussi l’option « inverser les baisses ou aligner la dépense sur celle des voisins ».
 
 **Chapitres :** [4, étape 7](../site/chapitres/04-pourquoi-le-deficit.md) ; [7, étape 10](../site/chapitres/07-les-choix.md).
 
@@ -1119,10 +1023,9 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Ce que dit le site.** En 2025, l’État porte 128,1 des 151,6 milliards d’euros de déficit, soit 84,5 % (calcul du site). Les administrations publiques locales portent 15,6 milliards, les administrations de sécurité sociale 5,8 et les organismes divers d’administration centrale 2,2. Le site prévient que ces soldes dépendent des transferts de TVA, et qu’« un petit déficit ne signifie pas, à lui seul, une gestion plus économe ».
 
-**Qui soutient quoi.** Nous n’avons pas trouvé de position de gauche ou de droite sur la répartition du déficit par sous-secteur. Voici les textes ouverts.
+**Qui soutient quoi.** Nous n’avons pas trouvé de position publiée d’économistes ou d’instituts sur la répartition du déficit par sous-secteur. Voici les textes ouverts.
 
-- *Gauche.* Pas de position publiée trouvée sur ce point.
-- *Droite ou libéral*
+- *Économistes, instituts et organisations.*
   - Institut Montaigne (libéral-centriste), novembre 2025 : sur la hausse de la dépense hors crises, il pointe les collectivités locales (+2,7 % en volume) et la Sécurité sociale (+3,3 %). [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - *Institutions*
   - Cour des comptes (juridiction financière), 25 juin 2026 : déficit de l’État de 128,1 milliards d’euros en 2025 (4,3 points de PIB) ; déficit total de 152,5 milliards (5,1 points) ; les administrations de sécurité sociale sont en déficit de 6,7 milliards. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
@@ -1138,9 +1041,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE (Sciences Po, sensibilité keynésienne), *Policy Brief* n° 146, 11 juillet 2025 : la dégradation française vient d’une baisse des recettes (−1,6 point de PIB), alors qu’elles sont stables dans la zone euro. L’OFCE compare la France à son passé plus qu’à ses voisins. [Lien](https://www.ofce.fr/pdf/pbrief/2025/OFCEpbrief146.pdf)
-- *Droite ou libéral*
   - Institut Montaigne (libéral-centriste), novembre 2025 : le déficit n’a respecté la barre des 3 % qu’à huit reprises depuis 1997 ; le taux de prélèvements de 45,2 % est 4,9 points au-dessus de la moyenne de l’Union européenne. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - *Institutions*
   - FMI (organisation internationale), 21 mai 2026 : dépense de 57,5 % du PIB en 2025, la plus élevée de la zone euro ; ratio de recettes parmi les plus élevés. [Lien](https://www.imf.org/en/news/articles/2026/05/21/mcs-052126-france-staff-concluding-statement-of-the-2026-article-iv-mission)
@@ -1155,8 +1057,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche n’a été ouvert sur ce point. Des critiques de gauche citent le rapport de France Stratégie pour dire que le PFU n’a rien apporté à l’économie réelle ; une étude de l’IPP (institut de recherche académique) n’a été vue que dans un résultat de recherche, non ouverte.
-- *Droite ou libéral.* Aucun texte de droite n’a été ouvert sur ce point.
+- *Économistes, instituts et organisations.*
+  - Aucun texte publié sur ce point n’a été ouvert. Certains critiques citent le rapport de France Stratégie pour dire que le PFU n’a rien apporté à l’économie réelle ; une étude de l’IPP (institut de recherche académique) n’a été vue que dans un résultat de recherche, non ouverte.
 - *Institutions*
   - Conseil d’analyse économique (CAE, institution publique), *Focus* n° 118, 2025 : la perte due au remplacement de l’ISF par l’IFI est « entre 3 et 4,5 milliards d’euros (effet mécanique uniquement) ». [Lien](https://cae-eco.fr/static/pdf/Focus_118_emigration_fiscale_250725_v2.pdf)
   - France Stratégie, comité d’évaluation des réformes de la fiscalité du capital, avis du 17 octobre 2023 : la perte de l’IFI est de 4,5 milliards d’euros en 2022 (l’ISF aurait rapporté 6,3). Le PFU « aurait été autofinancé les premières années ». Les travaux n’ont pas détecté d’effet sur l’investissement et les salaires, mais les estimations restent fragiles. [Lien](https://www.strategie-plan.gouv.fr/files/files/Publications/Rapport/fs-2023-rapport-isf-quatrieme_rapport_complet_17octobre_avis_0.pdf)
@@ -1171,19 +1073,18 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - Attac (association altermondialiste), 26 mars 2025 : sur le total cumulé, 207 milliards d’euros seraient allés à des ménages aisés et à de grandes entreprises. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- *Droite ou libéral*
   - Institut Montaigne (libéral-centriste), novembre 2025 : la plupart des baisses ont profité aux classes moyennes. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - *Institutions.* Pas de texte public ouvert sur la répartition.
 
-**Où se situe le site, et pourquoi.** Il affiche les chiffres de l’IPP, après les avoir vérifiés sur la page de l’étude (30 octobre 2026), avec la réserve que le champ est limité aux ménages. Le texte de la note ne figure pas dans la liste des sources ouvertes de cette confrontation : nous ne donnons donc pas de lien ici. Les deux lectures (Attac et Montaigne) ne se comparent pas : l’une porte sur des totaux cumulés, l’autre sur l’effet pour les classes moyennes. Nous n’avons pas trouvé de réponse publiée de l’IPP aux deux camps.
+**Où se situe le site, et pourquoi.** Il affiche les chiffres de l’IPP, après les avoir vérifiés sur la page de l’étude (30 octobre 2026), avec la réserve que le champ est limité aux ménages. Le texte de la note ne figure pas dans la liste des sources ouvertes de cette confrontation : nous ne donnons donc pas de lien ici. Les deux lectures (Attac et Montaigne) ne se comparent pas : l’une porte sur des totaux cumulés, l’autre sur l’effet pour les classes moyennes. Nous n’avons pas trouvé de réponse publiée de l’IPP à ces deux lectures.
 
 **Chapitre :** [3](../site/chapitres/03-qui-paie.md).
 
 ## 5. Dette, intérêts et notation
 
-**Comment lire cette partie.** Pour chaque point, vous voyez ce que dit le site, qui soutient quoi, puis où le site se place et pourquoi. Les auteurs sont rangés en trois groupes : gauche, droite ou libéral, institutions. Le classement à gauche ou à droite est celui de la relecture ; il ne juge pas la qualité du texte. Quand un camp n’a pas de texte publié que nous avons pu ouvrir, nous le disons. Les institutions publiques servent de repères de chiffres, pas d’arbitres.
+**Comment lire cette partie.** Pour chaque point, vous voyez ce que dit le site, qui soutient quoi, puis où le site se place et pourquoi. Les auteurs sont rangés en deux groupes : économistes, instituts et organisations, puis institutions. Chaque organisme porte son étiquette d’orientation ; elle ne juge pas la qualité du texte. Quand aucun texte publié n’a pu être ouvert, nous le disons. Les institutions publiques servent de repères de chiffres, pas d’arbitres.
 
 ### 5.1 La dette : brute, nette, et quelle définition
 
@@ -1191,13 +1092,12 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche sur ce point n’a été ouvert.
-- *Droite ou libéral.*
+- *Économistes, instituts et organisations.*
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), « Le montant et l’évolution de la dette publique », 15 mai 2026 : dette au sens de Maastricht de 3 460 Md€, soit 115,6 % du PIB ; dette nette au sens de l’Insee de 108,4 % ; dette nette au sens d’Eurostat et de l’OCDE (actifs financiers nets) de 73,7 %. [Lien](https://www.fipeco.fr/fiche/Le-montant-et-l%C3%A9volution-de-la-dette-publique)
   - Fondation iFRAP (libérale), « Dette publique au 2ème trimestre 2026 : un record à 119 % du PIB », 29 septembre 2026 : dette nette de 3 366,8 Md€, soit 111,4 % du PIB à la fin du deuxième trimestre 2026. [Lien](https://www.ifrap.org/budget-et-fiscalite/dette-publique-au-2eme-trimestre-2026-un-record-119-du-pib)
 - *Institutions.* Pas de texte d’institution ouvert qui contredise ces chiffres.
 
-**Où le site se place, et pourquoi.** Il garde la dette brute comme chiffre principal et la dette nette de l’Insee à côté. L’écart de 0,1 point avec Fipeco (115,7 % contre 115,6 %) vient de la date de publication des comptes. Le site dit qu’il existe plusieurs définitions, car quelqu’un de gauche peut citer le chiffre le plus bas pour dire que la dette inquiète moins, et quelqu’un de droite répondre que la mesure de l’Insee ne retire que les actifs liquides. Le chiffre de 73,7 % n’est pas affiché : il n’a pas encore de fiche de données. Sur l’investissement, le site montre l’investissement public brut (4,4 % du PIB) en précisant qu’après usure des équipements l’investissement net est bien plus faible ; la mise en ligne attend que le chiffre de l’investissement net soit affiché.
+**Où le site se place, et pourquoi.** Il garde la dette brute comme chiffre principal et la dette nette de l’Insee à côté. L’écart de 0,1 point avec Fipeco (115,7 % contre 115,6 %) vient de la date de publication des comptes. Le site dit qu’il existe plusieurs définitions, car certains peuvent citer le chiffre le plus bas pour dire que la dette inquiète moins, et d’autres répondre que la mesure de l’Insee ne retire que les actifs liquides. Le chiffre de 73,7 % n’est pas affiché : il n’a pas encore de fiche de données. Sur l’investissement, le site montre l’investissement public brut (4,4 % du PIB) en précisant qu’après usure des équipements l’investissement net est bien plus faible ; la mise en ligne attend que le chiffre de l’investissement net soit affiché.
 
 **Chapitre :** [5](../site/chapitres/05-dette-et-interets.md) (étapes 2 et 6).
 
@@ -1207,8 +1107,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucune position de gauche sur ce diagnostic n’a été ouverte. La relecture ne note pas de désaccord gauche-droite sur le constat, seulement sur le remède.
-- *Droite ou libéral.* Aucun texte propre sur la trajectoire n’a été ouvert ; voir le point 5.9 pour le risque à la hausse des taux selon l’iFRAP.
+- *Économistes, instituts et organisations.*
+  - Aucune position publiée sur ce diagnostic n’a été ouverte. La relecture ne note pas de désaccord sur le constat, seulement sur le remède.
 - *Institutions.*
   - HCFP (organisme indépendant placé auprès de la Cour des comptes), avis n° 2026-5 sur le projet de loi de finances 2027, 1er octobre 2026 : la prévision de croissance pour 2027 « paraît optimiste » ; la prévision du gouvernement (1,0 %) est « un peu au-dessus des autres prévisions ». [Lien](https://www.hcfp.fr/liste-avis/avis-ndeg2026-5-lois-de-finances-2027)
   - FMI (organisation internationale), consultation « article IV » 2026, 22 juillet 2026 : dette de 115,7 % en 2025, 118,5 % en 2026 et 120,3 % en 2027 ; déficit de 4,9 % en 2027 ; il demande un redressement fondé sur les dépenses ; l’incertitude politique est un risque. Cette prévision est plus ancienne que le projet de budget. [Lien](https://www.imf.org/en/news/articles/2026/07/22/pr26255-france-imf-executive-board-concludes-2026-article-iv-consultation)
@@ -1224,8 +1124,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche ouvert sur ce point.
-- *Droite ou libéral.* Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), « Les risques d’un endettement public hors de contrôle », 11 mars 2025 : « La dette publique française est elle-même sur une tendance croissante depuis 1978. » [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
+- *Économistes, instituts et organisations.*
+  - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), « Les risques d’un endettement public hors de contrôle », 11 mars 2025 : « La dette publique française est elle-même sur une tendance croissante depuis 1978. » [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
 - *Institutions.* DG Trésor (administration économique ; G. Clavères), *Trésor-Éco* n° 334, « Taux d’intérêt, croissance et soutenabilité de la dette publique », 17 octobre 2023 : avec un déficit primaire, un écart r − g négatif ne suffit pas en général à maîtriser la dette ; il ralentit surtout sa hausse. [Lien](https://www.tresor.economie.gouv.fr/Articles/2023/10/17/taux-d-interet-croissance-et-soutenabilite-de-la-dette-publique)
 
 **Où le site se place, et pourquoi.** Les classements (zone euro à 21, 2005 et 2019, Roumanie et Finlande) sont un calcul de la plateforme sur les données d’Eurostat, pas une position publiée. La relecture a refait ce calcul et corrigé le texte : l’Italie (+2,5 points) et l’Espagne (+2,8 points) sont « à peu près stabilisées », et l’Espagne n’avait pas d’excédent primaire en 2025. Le choix de 2005 comme année de départ reste un choix de la plateforme (avant la crise de 2008, zone euro avec la Bulgarie). Fipeco montre que la hausse est plus ancienne, donc 2005 ne sert pas à noircir le tableau. Le point de départ 2019 doit être affiché à côté, mais il attend une fiche de données.
@@ -1238,11 +1138,12 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Attac (association altermondialiste), avec l’Observatoire de la justice fiscale et le CADTM, « La dette de l’injustice fiscale », 26 mars 2025 : le discours « nous avons vécu au-dessus de nos moyens » est un mensonge ; la dette viendrait surtout de baisses de recettes et du coût des crises. Ce chiffrage est une estimation militante. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- *Droite ou libéral.* Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), « Le rapport des dépenses publiques au PIB : pertinence et comparabilité », 15 janvier 2025 : si l’on admet que l’endettement des administrations publiques n’est pas illimité, leurs dépenses doivent être financées par des prélèvements. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
+- *Économistes, instituts et organisations.*
+  - Attac (association altermondialiste), avec l’Observatoire de la justice fiscale et le CADTM, « La dette de l’injustice fiscale », 26 mars 2025 : le discours « nous avons vécu au-dessus de nos moyens » est un mensonge ; la dette viendrait surtout de baisses de recettes et du coût des crises. Ce chiffrage est une estimation militante. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
+  - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), « Le rapport des dépenses publiques au PIB : pertinence et comparabilité », 15 janvier 2025 : si l’on admet que l’endettement des administrations publiques n’est pas illimité, leurs dépenses doivent être financées par des prélèvements. [Lien](https://fipeco.fr/pdf/D%C3%A9pensesPIB2025.pdf)
 - *Institutions.* Cour des comptes (juridiction financière), 25 juin 2026 : la charge de la dette est devenue « le premier budget de l’État » ; elle chiffre l’effort en euros et en points de PIB, sans image de ménage. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17) La relecture n’a trouvé ni dans la Cour, ni dans le HCFP, ni dans le FMI une comparaison avec un ménage.
 
-**Où le site se place, et pourquoi.** L’image est un outil de lecture, présenté comme illustratif : aucun texte publié ouvert ne la chiffre ni ne la défend. Le site garde les deux faces. D’un côté, l’objection de gauche (la dette n’est pas une faute de dépense) : il évoque le débat sur l’origine du déficit au chapitre 4 sans reprendre le chiffre d’Attac. De l’autre, la remarque de la droite : l’emprunt n’est pas illimité. Il ajoute les limites de l’image dans un encadré. La relecture n’a pas pu citer de texte précis pour dire qu’un État n’a pas d’horizon fini, c’est pourquoi cette remarque reste présentée comme une limite de l’image, sans nom d’auteur.
+**Où le site se place, et pourquoi.** L’image est un outil de lecture, présenté comme illustratif : aucun texte publié ouvert ne la chiffre ni ne la défend. Le site garde les deux faces. D’un côté, l’objection d’Attac (la dette n’est pas une faute de dépense) : il évoque le débat sur l’origine du déficit au chapitre 4 sans reprendre le chiffre d’Attac. De l’autre, la remarque de Fipeco : l’emprunt n’est pas illimité. Il ajoute les limites de l’image dans un encadré. La relecture n’a pas pu citer de texte précis pour dire qu’un État n’a pas d’horizon fini, c’est pourquoi cette remarque reste présentée comme une limite de l’image, sans nom d’auteur.
 
 **Chapitres :** [1](../site/chapitres/01-combien.md) (étape 6), [5](../site/chapitres/05-dette-et-interets.md) (étape 6), [7](../site/chapitres/07-les-choix.md) (conversion en euros par mois).
 
@@ -1252,8 +1153,7 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche ouvert sur ce point.
-- *Droite ou libéral.*
+- *Économistes, instituts et organisations.*
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), « Les enjeux de la hausse du taux d’intérêt de la dette publique », 2 mars 2017 : la dette ancienne se renouvelle peu à peu, donc le taux apparent « n’est modifié que progressivement ». Sa simulation d’un choc de 1 point : +2,1 Md€ la première année, +4,6 Md€ la deuxième, +10,3 Md€ la cinquième, +15,8 Md€ la dixième (dette et émissions différentes d’aujourd’hui). [Lien](https://www.fipeco.fr/commentaire/Les%20enjeux%20de%20la%20hausse%20du%20taux%20d'int%C3%A9r%C3%AAt%20de%20la%20dette%20publique)
   - Fondation iFRAP (libérale), 29 septembre 2026 : la dette à court terme a augmenté de 100 Md€ depuis fin 2023, à 312,3 Md€ ; « le financement glisse vers le court terme », donc une hausse des taux se transmet plus vite ; « le risque est à la hausse ». [Lien](https://www.ifrap.org/budget-et-fiscalite/dette-publique-au-2eme-trimestre-2026-un-record-119-du-pib)
 - *Institutions.* Pas de texte d’institution ouvert avec une simulation plus récente.
@@ -1268,8 +1168,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche ouvert sur ces montants.
-- *Droite ou libéral.* Aucun texte propre sur ces montants ; l’iFRAP juge que les taux risquent de monter plus (voir le point 5.9).
+- *Économistes, instituts et organisations.*
+  - Aucun texte publié sur ces montants n’a été ouvert.
 - *Institutions.*
   - Cour des comptes (juridiction financière), 25 juin 2026 : intérêts de 65,7 Md€ en 2025 (2,2 % du PIB, plus de 9 % de hausse) ; hausse de près de 12 Md€ en 2026, jusqu’à 77 Md€ ; la hausse des intérêts efface la plus grande partie de l’effort de réduction du déficit prévu en 2026. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - Mission sur la transparence des finances publiques (Jaravel, Ragot, Tavernier, Valla), hébergée par l’Inspection générale des finances (IGF), juillet 2026 : à politique inchangée, la charge d’intérêts monte fortement, avec une « dynamique défavorable de r − g » jusqu’en 2030. [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
@@ -1284,8 +1184,9 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), *Policy Brief* 154 sur le budget 2026, 26 février 2026 : les intérêts et la contribution à l’Union européenne ont un multiplicateur nul ou très faible. [Lien](https://ofce.github.io/budget2026/)
-- *Droite ou libéral.* Aucun texte ouvert. La relecture n’a pas pu confirmer que l’Institut Montaigne (libéral-centriste) traite les intérêts, la contribution à l’UE et la défense comme des lignes intouchables : le communiqué ouvert ne le dit pas.
+- *Économistes, instituts et organisations.*
+  - OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne), *Policy Brief* 154 sur le budget 2026, 26 février 2026 : les intérêts et la contribution à l’Union européenne ont un multiplicateur nul ou très faible. [Lien](https://ofce.github.io/budget2026/)
+  - Aucun texte ouvert. La relecture n’a pas pu confirmer que l’Institut Montaigne (libéral-centriste) traite les intérêts, la contribution à l’UE et la défense comme des lignes intouchables : le communiqué ouvert ne le dit pas.
 - *Institutions.* Cour des comptes (juridiction financière), 25 juin 2026 : la charge de la dette est « le premier budget de l’État » et pourrait atteindre 77 Md€. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
 
 **Où le site se place, et pourquoi.** Il place les intérêts en tête du budget de l’État en suivant la Cour. Il ajoute la phrase de l’OFCE pour éviter de laisser croire que tous les postes se valent. Le rang des intérêts dépend du périmètre : dans le seul budget de l’État, la charge de la dette (72,9 Md€ prévus en 2027) est comparée aux crédits de la loi de programmation militaire (63 Md€). Cette comparaison n’a pas été revérifiée sur une page ouverte : le site garde les fiches existantes. La relecture n’a pas non plus ouvert de tableau de l’Insee qui place les intérêts parmi les « services généraux » ; le site s’en tient à ce qu’il a pu vérifier.
@@ -1294,17 +1195,18 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 ### 5.8 L’étalon de 25,3 Md€ : une mesure de taille, pas l’effort nécessaire
 
-**Ce que dit le site.** La hausse des intérêts de 2025 à 2027 (25,3 Md€, soit 5,4 jours de dépense publique) sert d’étalon pour mesurer les promesses de tous les camps, avec la même règle (chapitre 7). Le site précise que c’est un repère de taille : stabiliser la dette demande bien plus.
+**Ce que dit le site.** La hausse des intérêts de 2025 à 2027 (25,3 Md€, soit 5,4 jours de dépense publique) sert d’étalon pour mesurer toutes les promesses, avec la même règle (chapitre 7). Le site précise que c’est un repère de taille : stabiliser la dette demande bien plus.
 
 **Qui soutient quoi.**
 
-- *Gauche.* Terra Nova (centre gauche ; Gaspard Hannezo), 20 septembre 2024 : les économies nécessaires pour stabiliser la dette sont d’environ une centaine de milliards d’euros. [Lien](https://tnova.fr/site/assets/files/67145/terra_nova_-_quel_rendement_peut-on_reellement_attendre_de_la_taxation_des_plus_fortunes.pdf?1kkund)
-- *Droite ou libéral.* Institut Montaigne (libéral-centriste), « Budget base zéro : décider sous la contrainte », 26 novembre 2025 : 140 Md€ d’économies nécessaires d’ici 2029 pour stabiliser la dette. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte)
+- *Économistes, instituts et organisations.*
+  - Terra Nova (centre gauche ; Gaspard Hannezo), 20 septembre 2024 : les économies nécessaires pour stabiliser la dette sont d’environ une centaine de milliards d’euros. [Lien](https://tnova.fr/site/assets/files/67145/terra_nova_-_quel_rendement_peut-on_reellement_attendre_de_la_taxation_des_plus_fortunes.pdf?1kkund)
+  - Institut Montaigne (libéral-centriste), « Budget base zéro : décider sous la contrainte », 26 novembre 2025 : 140 Md€ d’économies nécessaires d’ici 2029 pour stabiliser la dette. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte)
 - *Institutions.*
   - Cour des comptes (juridiction financière), 25 juin 2026 : la hausse des intérêts de 2026 compense l’essentiel de l’effort de réduction du déficit prévu. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - Mission sur la transparence des finances publiques, hébergée par l’IGF, juillet 2026 : environ 125 Md€ d’ajustement d’ici 2032 (excédent primaire de 0,8 % du PIB). [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
 
-**Où le site se place, et pourquoi.** Un lecteur pourrait objecter que 25,3 Md€ sous-estime l’effort, puisque les besoins publiés vont de 100 à 140 Md€ selon l’horizon et la définition. Le site le dit lui-même : l’étalon est un repère de taille, et l’effort de stabilisation est traité à l’étape 11 (point 5.14). Il cite Terra Nova et l’Institut Montaigne comme donnant des estimations « du même ordre, à d’autres horizons », sans chiffre dans le chapitre 5. Le chapitre 7 doit lister ces fourchettes et appliquer l’étalon à tous les camps.
+**Où le site se place, et pourquoi.** Un lecteur pourrait objecter que 25,3 Md€ sous-estime l’effort, puisque les besoins publiés vont de 100 à 140 Md€ selon l’horizon et la définition. Le site le dit lui-même : l’étalon est un repère de taille, et l’effort de stabilisation est traité à l’étape 11 (point 5.14). Il cite Terra Nova et l’Institut Montaigne comme donnant des estimations « du même ordre, à d’autres horizons », sans chiffre dans le chapitre 5. Le chapitre 7 doit lister ces fourchettes et appliquer l’étalon à toutes les promesses.
 
 **Chapitres :** [5](../site/chapitres/05-dette-et-interets.md) (étapes 9 et 11), [7](../site/chapitres/07-les-choix.md).
 
@@ -1314,8 +1216,7 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche ouvert sur les écarts de taux.
-- *Droite ou libéral.*
+- *Économistes, instituts et organisations.*
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), 11 mars 2025 : écart de 70 à 80 points de base depuis juin 2024, sous le pic de 2011-2012 (plus de 150) ; l’instrument de protection de la BCE (TPI) est un filet de sécurité conditionnel. [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
   - Fondation iFRAP (libérale), 29 septembre 2026 : les taux des obligations à 10 ans (OAT) dépassent 4,5 % ; « le risque est à la hausse ». [Lien](https://www.ifrap.org/budget-et-fiscalite/dette-publique-au-2eme-trimestre-2026-un-record-119-du-pib)
 - *Institutions.* Pas de texte d’institution ouvert sur ces chiffres de marché.
@@ -1330,8 +1231,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche ouvert sur ce lien. Le site l’avait d’abord placé sous une étiquette de gauche ; il a été retiré de cet encadré.
-- *Droite ou libéral.* Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), 11 mars 2025 : l’écart s’est élargi depuis la dissolution de juin 2024 ; les marchés restent calmes ; les conditions politiques d’une consolidation plus forte manquent. [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
+- *Économistes, instituts et organisations.*
+  - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), 11 mars 2025 : l’écart s’est élargi depuis la dissolution de juin 2024 ; les marchés restent calmes ; les conditions politiques d’une consolidation plus forte manquent. [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
 - *Institutions.* FMI (organisation internationale), 22 juillet 2026 : l’incertitude politique avant l’élection présidentielle est un risque à la baisse pour les perspectives ; un consensus politique sur les réformes est un scénario favorable ; il demande un redressement crédible fondé sur les dépenses. [Lien](https://www.imf.org/en/news/articles/2026/07/22/pr26255-france-imf-executive-board-concludes-2026-article-iv-consultation)
 
 **Où le site se place, et pourquoi.** Il présente le lien comme une lecture partagée par le FMI et Fipeco : l’instabilité freine la consolidation, donc pèse sur la confiance. Aucun de ces textes ne dit que la stabilité ferait plus baisser les taux qu’un plan d’économies, donc le site ne l’affirme plus. La citation de Moody’s sur la « fragmentation » a été retirée : elle n’avait été lue que dans la presse. Un contrepoint manque dans les textes ouverts : la hausse mondiale des taux (la presse signale un Bund à des sommets pluriannuels, sans que le texte ait été ouvert), donc toute la hausse des taux français ne vient pas de la politique intérieure.
@@ -1344,8 +1245,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche sur la notation n’a été ouvert.
-- *Droite ou libéral.* Aucun texte de droite sur la notation n’a été ouvert.
+- *Économistes, instituts et organisations.*
+  - Aucun texte publié sur la notation n’a été ouvert.
 - *Institutions.* La relecture n’a pas pu ouvrir les communiqués de Fitch, de S&P ni de Moody’s. Un résultat de recherche, non ouvert en entier, indique que Moody’s a gardé Aa3 avec une perspective négative après son examen du 23 octobre 2026.
 
 **Où le site se place, et pourquoi.** Il décrit les notes comme un état des lieux, sans dire s’il faut s’en inquiéter, car aucune position publiée ouverte n’est à confronter. Il compte les niveaux depuis le sommet de l’échelle et le dit, pour éviter la confusion avec la baisse d’un seul cran. Il a retiré les dates des décisions de 2025 du texte (elles restent dans le visuel). La confirmation de Moody’s du 23 octobre 2026 n’est pas mentionnée : aucune page primaire n’a été ouverte. Ce point reste à confronter.
@@ -1358,8 +1259,8 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche ouvert sur cette mesure.
-- *Droite ou libéral.* Fondation iFRAP (libérale), 29 septembre 2026 : taux apparent d’environ 1,9 %, égal à la croissance nominale d’environ 1,9 % ; effet boule de neige « neutre » ; la dette monte à cause du déficit primaire d’environ 3 points de PIB. [Lien](https://www.ifrap.org/budget-et-fiscalite/dette-publique-au-2eme-trimestre-2026-un-record-119-du-pib)
+- *Économistes, instituts et organisations.*
+  - Fondation iFRAP (libérale), 29 septembre 2026 : taux apparent d’environ 1,9 %, égal à la croissance nominale d’environ 1,9 % ; effet boule de neige « neutre » ; la dette monte à cause du déficit primaire d’environ 3 points de PIB. [Lien](https://www.ifrap.org/budget-et-fiscalite/dette-publique-au-2eme-trimestre-2026-un-record-119-du-pib)
 - *Institutions.*
   - Cour des comptes (juridiction financière), 25 juin 2026 : un excédent primaire durable est une « condition sine qua non » pour infléchir le poids de la dette. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - DG Trésor (administration économique), 17 octobre 2023 : l’écart r − g a été négatif sur la dernière décennie, mais il est volatil. [Lien](https://www.tresor.economie.gouv.fr/Articles/2023/10/17/taux-d-interet-croissance-et-soutenabilite-de-la-dette-publique)
@@ -1374,8 +1275,9 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* Aucun texte de gauche, hors Blanchard (qui n’est pas classé à gauche), n’a été ouvert. Le site a retiré de cet encadré l’argument de l’instabilité politique, sans source de gauche.
-- *Droite ou libéral.* Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), 11 mars 2025 : un solde primaire au moins nul est une précaution, car la croissance pourrait ne pas rester au-dessus des taux d’intérêt. [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
+- *Économistes, instituts et organisations.*
+  - Aucun autre texte ouvert ne défend cette thèse, hors Blanchard (voir les institutions). Le site a retiré de cet encadré l’argument de l’instabilité politique, faute de source publiée.
+  - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), 11 mars 2025 : un solde primaire au moins nul est une précaution, car la croissance pourrait ne pas rester au-dessus des taux d’intérêt. [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
 - *Institutions.*
   - Olivier Blanchard (ancien économiste en chef du FMI), « Public Debt and Low Interest Rates », *American Economic Review*, avril 2019 : si le taux sans risque reste sous la croissance, la dette publique peut n’avoir aucun coût budgétaire ; mais des coûts pour l’économie peuvent subsister, des équilibres avec prime de risque peuvent alourdir la charge, et il ne plaide pas pour plus de dette. [Lien](https://www.aeaweb.org/articles?id=10.1257/aer.109.4.1197)
   - DG Trésor (administration économique), 17 octobre 2023 : l’écart r − g peut devenir positif avec les taux de marché ; avec un déficit primaire, un écart négatif ne suffit pas. [Lien](https://www.tresor.economie.gouv.fr/Articles/2023/10/17/taux-d-interet-croissance-et-soutenabilite-de-la-dette-publique)
@@ -1390,11 +1292,10 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.*
+- *Économistes, instituts et organisations.*
   - OFCE (Observatoire français des conjonctures économiques ; Sciences Po, sensibilité keynésienne ; Heyer, Plane, Ragot, Sampognaro, Timbeau), « Quelles trajectoires pour les finances publiques de la France ? », 11 juillet 2025 : une trajectoire progressive qui stabilise la dette à 110 % demande un ajustement de 2,8 points de PIB (un peu plus de 80 Md€) d’ici 2029, contre environ 110 Md€ dans le plan du gouvernement ; la hausse du déficit depuis 2017 s’explique par une baisse de 2,5 points du taux de prélèvements. [Lien](https://www.ofce.sciences-po.fr/blog2024/fr/2025/20250711_PSMT/blog.fr.pdf)
   - Terra Nova (centre gauche ; Gaspard Hannezo), 20 septembre 2024 : environ une centaine de milliards d’euros d’économies pour stabiliser la dette. [Lien](https://tnova.fr/site/assets/files/67145/terra_nova_-_quel_rendement_peut-on_reellement_attendre_de_la_taxation_des_plus_fortunes.pdf?1kkund)
   - Attac (association altermondialiste), avec l’Observatoire de la justice fiscale et le CADTM, 26 mars 2025 : rejette le récit « nous avons vécu au-dessus de nos moyens » ; les baisses de prélèvements depuis 2017 auraient coûté au moins 308,62 Md€ sur 2018-2023, soit environ 35 % de la hausse de la dette (estimation militante). [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- *Droite ou libéral.*
   - Fondation iFRAP (libérale), « Croissance à 0,7 % en 2026 : la boule de neige de la dette est en route », juillet 2026 : le solde qui stabilise la dette serait d’environ −2,5 % du PIB, soit la moitié de la cible de 5,0 % ; les petits pas ne tiennent plus et un effort massif dès le départ serait plus efficace. [Lien](https://www.ifrap.org/budget-et-fiscalite/croissance-07-en-2026-la-boule-de-neige-de-la-dette-est-en-route)
   - Institut Montaigne (libéral-centriste), 26 novembre 2025 : 140 Md€ d’économies d’ici 2029. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte)
 - *Institutions.*
@@ -1402,25 +1303,25 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
   - Mission sur la transparence des finances publiques, hébergée par l’IGF, juillet 2026 : environ 125 Md€ d’ajustement d’ici 2032, soit un excédent primaire de 0,8 % du PIB, par rapport à une politique inchangée ; l’hypothèse d’un multiplicateur nul est « très favorable ». [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
   - HCFP (organisme indépendant placé auprès de la Cour des comptes), avis n° 2026-5, 25 septembre 2026 : l’effort brut dépasse l’effet net sur le déficit, car les mesures pèsent sur la croissance. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
 
-**Où le site se place, et pourquoi.** Aucune source ne nie qu’un effort soit nécessaire ; les camps divergent sur sa taille, son rythme et son contenu. Le site affiche le chiffre de la Cour, comme un ordre de grandeur, et le dit clairement : 89,6 Md€ est calculé sur une version plus ancienne du déficit (environ 152,5 Md€), ce qui explique 62,0 contre 62,9. Les 125 Md€ de l’IGF sont un écart par rapport à une tendance d’ici 2032, pas un écart d’une année. Les estimations de Terra Nova et de l’Institut Montaigne sont citées « du même ordre, à d’autres horizons », sans chiffre dans le chapitre 5. Le site ne reprend pas le chiffre d’Attac, une estimation militante sans fiche, et renvoie le débat sur l’origine du déficit au chapitre 4. Il n’a pas converti en milliards le solde stabilisant de l’iFRAP : aucune source ouverte ne le fait. La sensibilité du résultat à la croissance et à l’inflation (environ 2,1 % pour la Cour, environ 2,5 % pour l’iFRAP) n’est pas encore affichée en chiffres.
+**Où le site se place, et pourquoi.** Aucune source ne nie qu’un effort soit nécessaire ; les sources divergent sur sa taille, son rythme et son contenu. Le site affiche le chiffre de la Cour, comme un ordre de grandeur, et le dit clairement : 89,6 Md€ est calculé sur une version plus ancienne du déficit (environ 152,5 Md€), ce qui explique 62,0 contre 62,9. Les 125 Md€ de l’IGF sont un écart par rapport à une tendance d’ici 2032, pas un écart d’une année. Les estimations de Terra Nova et de l’Institut Montaigne sont citées « du même ordre, à d’autres horizons », sans chiffre dans le chapitre 5. Le site ne reprend pas le chiffre d’Attac, une estimation militante sans fiche, et renvoie le débat sur l’origine du déficit au chapitre 4. Il n’a pas converti en milliards le solde stabilisant de l’iFRAP : aucune source ouverte ne le fait. La sensibilité du résultat à la croissance et à l’inflation (environ 2,1 % pour la Cour, environ 2,5 % pour l’iFRAP) n’est pas encore affichée en chiffres.
 
 **Chapitres :** [5](../site/chapitres/05-dette-et-interets.md) (étapes 4 et 11), [7](../site/chapitres/07-les-choix.md) (étapes 1 et 2).
 
 ### 5.15 Comment partager l’effort : recettes, dépenses ou les deux ?
 
-**Ce que dit le site.** Le site écrit que trouver l’effort « en dépenses ou en impôts est un choix politique, que ce site ne fait pas à votre place ». Il renvoie les ordres de grandeur par camp au chapitre 7 et applique à tous la même règle.
+**Ce que dit le site.** Le site écrit que trouver l’effort « en dépenses ou en impôts est un choix politique, que ce site ne fait pas à votre place ». Il renvoie les ordres de grandeur des promesses au chapitre 7 et applique à toutes la même règle.
 
 **Qui soutient quoi.**
 
-- *Gauche.*
+- *Économistes, instituts et organisations.*
   - Terra Nova (centre gauche ; Gaspard Hannezo), 20 septembre 2024 : taxer les plus fortunés pourrait rapporter 10 à 15 Md€, une contribution notable mais minoritaire face à une centaine de milliards nécessaires. [Lien](https://tnova.fr/site/assets/files/67145/terra_nova_-_quel_rendement_peut-on_reellement_attendre_de_la_taxation_des_plus_fortunes.pdf?1kkund)
   - Attac (association altermondialiste), avec l’Observatoire de la justice fiscale et le CADTM, 26 mars 2025 : les baisses de prélèvements depuis 2017 auraient coûté au moins 308,62 Md€ sur 2018-2023 (estimation militante). [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- *Droite ou libéral.* Institut Montaigne (libéral-centriste), 26 novembre 2025 : 140 Md€ d’économies d’ici 2029. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte) Aucun document d’économies de l’iFRAP pour 2026 n’a été ouvert.
+  - Institut Montaigne (libéral-centriste), 26 novembre 2025 : 140 Md€ d’économies d’ici 2029. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte) Aucun document d’économies de l’iFRAP pour 2026 n’a été ouvert.
 - *Institutions.*
   - Cour des comptes (juridiction financière), 25 juin 2026 : dépenses primaires en baisse de 0,5 % par an en volume, pour un déficit sous 3 % en 2029. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - Mission sur la transparence des finances publiques, hébergée par l’IGF, juillet 2026 : l’effort doit être partagé ; il serait « illusoire » de le concentrer sur une minorité, comme les plus riches. [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
 
-**Où le site se place, et pourquoi.** Les camps ne s’accordent pas sur le levier, donc le site ne choisit pas : il traite tous les camps de la même façon et renvoie au chapitre 7 pour les fourchettes. Il évite ainsi de présenter le chiffre d’un seul camp. Il n’affiche pas ici les chiffres d’Attac ni de la Cour sur les baisses ou les économies, pour garder le chapitre 5 centré sur la dette.
+**Où le site se place, et pourquoi.** Les sources ne s’accordent pas sur le levier, donc le site ne choisit pas : il traite toutes les promesses de la même façon et renvoie au chapitre 7 pour les fourchettes. Il évite ainsi de présenter le chiffre d’une seule source. Il n’affiche pas ici les chiffres d’Attac ni de la Cour sur les baisses ou les économies, pour garder le chapitre 5 centré sur la dette.
 
 **Chapitres :** [5](../site/chapitres/05-dette-et-interets.md) (étapes 3, 11 et 13), [7](../site/chapitres/07-les-choix.md).
 
@@ -1430,19 +1331,19 @@ Deux récits s’opposent sur l’origine du déficit. Pour le premier, il vient
 
 **Qui soutient quoi.**
 
-- *Gauche.* François Geerolf (OFCE ; Observatoire français des conjonctures économiques, Sciences Po, sensibilité keynésienne), dans *Le Monde*, 12 janvier 2025 : la dette n’est pas un problème à court terme ; un effort douloureux est « inutile » ; la dette se stabiliserait « naturellement » ; il insiste sur le rôle de prêteur de dernier recours de la Banque centrale européenne. [Lien](https://fgeerolf.com/ofce/lemonde-20250112-1.pdf)
-- *Droite ou libéral.*
+- *Économistes, instituts et organisations.*
+  - François Geerolf (OFCE ; Observatoire français des conjonctures économiques, Sciences Po, sensibilité keynésienne), dans *Le Monde*, 12 janvier 2025 : la dette n’est pas un problème à court terme ; un effort douloureux est « inutile » ; la dette se stabiliserait « naturellement » ; il insiste sur le rôle de prêteur de dernier recours de la Banque centrale européenne. [Lien](https://fgeerolf.com/ofce/lemonde-20250112-1.pdf)
   - Fipeco (site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire ; François Ecalle), dans *Le Monde*, 12 janvier 2025 : il veut stabiliser la dette, ce qui suppose selon lui de moins dépenser dans le social. [Lien](https://fgeerolf.com/ofce/lemonde-20250112-1.pdf)
   - Fipeco, 11 mars 2025 : « Une politique budgétaire très dure pourrait donc nous être imposée. » [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
 - *Institutions.* Cour des comptes (juridiction financière), 25 juin 2026 : « une consolidation choisie est préférable à une consolidation subie dans l’urgence » ; elle cite le Portugal et l’Italie comme exemples d’ajustements subis ; effort de −0,5 % par an en volume des dépenses primaires. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17) Le HCFP parle d’un risque d’« effet boule de neige » (voir le point 5.2).
 
-**Où le site se place, et pourquoi.** Les deux textes du *Monde* sont les deux faces d’un même débat : Geerolf minimise l’urgence, Ecalle veut stabiliser la dette. Le site ne choisit pas entre eux. Il garde « pas une faillite imminente », qui rejoint Geerolf, et le risque d’un ajustement imposé, qui rejoint la Cour et Fipeco. Pour être symétrique, il a sorti cette phrase de l’encadré « Ce qu’on peut répondre » et l’a mise dans le texte principal, avec les deux sources. La relecture n’a pas pu relire sur le PDF complet les phrases exactes de la Cour ni les deux exemples de pays : elle a lu une page de synthèse. Aucun contre-argument publié de gauche n’a été trouvé contre la thèse de l’ajustement imposé.
+**Où le site se place, et pourquoi.** Les deux textes du *Monde* sont les deux faces d’un même débat : Geerolf minimise l’urgence, Ecalle veut stabiliser la dette. Le site ne choisit pas entre eux. Il garde « pas une faillite imminente », qui rejoint Geerolf, et le risque d’un ajustement imposé, qui rejoint la Cour et Fipeco. Pour être symétrique, il a sorti cette phrase de l’encadré « Ce qu’on peut répondre » et l’a mise dans le texte principal, avec les deux sources. La relecture n’a pas pu relire sur le PDF complet les phrases exactes de la Cour ni les deux exemples de pays : elle a lu une page de synthèse. Aucun autre contre-argument publié n’a été trouvé contre la thèse de l’ajustement imposé.
 
 **Chapitres :** [5](../site/chapitres/05-dette-et-interets.md) (étapes 12 et 13), [1](../site/chapitres/01-combien.md) (étape 6).
 
 ## 6. Résultats des services publics
 
-Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les trois groupes sont toujours présentés dans le même ordre : gauche, droite ou libéral, institutions. Quand un groupe n’a pas de position publiée sur un point, nous l’écrivons.
+Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les deux groupes sont toujours présentés dans le même ordre : économistes, instituts et organisations, puis institutions. Quand aucun texte publié n’a pu être ouvert sur un point, nous l’écrivons.
 
 ### 6.1 « Dans la moyenne », « mieux », « moins bien » : comparer la France aux autres
 
@@ -1450,8 +1351,7 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte publié sur le choix du groupe de comparaison n’a été ouvert.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *L’efficience des dépenses d’assurance maladie*, 30 janvier 2026 : dans l’OCDE, la France est 3e pour la dépense de santé publique ou obligatoire, mais 9e pour l’espérance de vie. Le site la classe 7e dans l’UE-27. Le groupe change donc le verdict. [Lien](https://fipeco.fr/pdf/EfficienceD%C3%A9pensesSant%C3%A9.pdf)
 - Institutions :
   - Conseil d’analyse économique (CAE ; instance d’économistes placée auprès du Premier ministre), Antoine Greneta et Camille Landais, *Éducation : comment mieux orienter la dépense publique* (Note du CAE n° 84), mai 2025 : compare la France à la moyenne de l’OCDE et dit que ses résultats PISA « restent dans la moyenne de l’OCDE », sans définir de bande « à peu près pareil ». [Lien](https://cae-eco.fr/static/pdf/cae084-education-250514.pdf)
@@ -1466,10 +1366,9 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - Pierre Madec (OFCE ; Sciences Po, sensibilité keynésienne), *Lutte contre la pauvreté : le décrochage français ?*, 26 novembre 2025 : de 2014 à 2024, l’emploi a augmenté de 5,3 points et la pauvreté de 2,6 points, « contrairement à la tendance observée dans la plupart des pays de l’Union européenne ». Il explique la hausse par des causes réelles : inflation, fin des aides exceptionnelles, emplois peu payés (micro-entreprise, apprentissage). Il ne met pas en avant un changement de méthode. [Lien](https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/)
   - L’Observatoire des inégalités, 6 décembre 2022 : « Notre modèle social contient mieux la pauvreté que la plupart des pays européens ». Ce texte repose sur des données plus anciennes et sur le seuil de 50 %. Cet organisme n’a pas d’étiquette dans notre glossaire ; le site ne le cite pas. [Lien](https://www.inegalites.fr/L-essentiel-des-donnees-sur-la-pauvrete-en-France)
-- Droite ou libéral : aucun texte publié sur ce point n’a été ouvert.
 - Institutions :
   - Insee (institut public de statistique), *Niveau de vie et pauvreté en 2024* (*Insee Première* n° 2117), 9 juillet 2026 : le taux national est de 15,4 % en France métropolitaine, « à son plus haut niveau depuis 1996 », stable par rapport à 2023. Il ne couvre ni les personnes sans domicile ni celles qui vivent en institution. L’Insee signale aussi des ruptures de série en 2010, 2012 et 2020 pour sa propre série. [Lien](https://www.insee.fr/fr/statistiques/9019316)
 
@@ -1483,10 +1382,9 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - Pierre Madec (OFCE ; Sciences Po, sensibilité keynésienne), 26 novembre 2025 : avec la mesure nationale de l’Insee et hors retraites, l’effet des prestations est passé de 7,7 points en 2013 à 6,1 points en 2023. La part des ménages pauvres qu’elles sortent de la pauvreté est passée de 37 % en 2017 à 28 % en 2023. Pour lui, la capacité des transferts « s’est considérablement affaiblie ». [Lien](https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/)
   - L’Observatoire des inégalités, 6 décembre 2022 : la protection sociale a contenu la pauvreté pendant la crise sanitaire. Même réserve que ci-dessus sur son étiquette. [Lien](https://www.inegalites.fr/L-essentiel-des-donnees-sur-la-pauvrete-en-France)
-- Droite ou libéral : aucun texte publié sur l’effet des transferts n’a été ouvert.
 - Institutions :
   - Conseil d’orientation des retraites (COR ; instance d’études et de concertation sur les retraites), *Rapport annuel 2026*, partie 3, chapitre 2, juin 2026 : les pensions sont un revenu de remplacement pour les retraités, dont le niveau de vie est proche de celui de l’ensemble de la population. Cela appuie la réserve du site sur le chiffre « retraites comprises ». [Lien](https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part3_Chap2.pdf)
 
@@ -1500,8 +1398,8 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte publié qui discute ce chiffre n’a été ouvert.
-- Droite ou libéral : aucun texte publié qui discute ce chiffre n’a été ouvert.
+- Économistes, instituts et organisations :
+  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
 - Institutions :
   - Insee (institut public de statistique), André, Barrau et Renaud, *Revenus des ménages élargis à l’ensemble de l’économie en 2023* (*Insee Analyses* n° 118), 16 avril 2026 : « 56 % des personnes reçoivent plus qu’elles ne versent » (99 % dans le dixième le plus pauvre, 18 % dans le dixième le plus riche). Le calcul inclut les services collectifs (police, justice, défense), répartis uniformément. Environ 66 Md€ de déficit, soit environ 1 400 € par unité de consommation, sont financés par la dette. [Lien](https://www.insee.fr/fr/statistiques/8974371)
 
@@ -1515,8 +1413,7 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte publié de gauche sur le niveau de vie des retraités n’a été ouvert.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
   - Institut Montaigne (libéral-centriste), *Budget base zéro : décider sous la contrainte* (note d’éclairage), novembre 2025 : les retraités passent en moyenne 23,3 ans à la retraite, « avec un niveau de vie global qui dépasse désormais de 3 % celui de l’ensemble de la population ». La hausse des pensions reflète en partie « la générosité de notre système », en partie la hausse du nombre de retraités (près de 50 % de plus). [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
 - Institutions :
   - COR (instance d’études et de concertation sur les retraites), *Rapport annuel 2026*, partie 3, chapitre 2, juin 2026 : le niveau de vie relatif des personnes de 65 ans « est l’un des plus élevés d’Europe ». Retraités : 2 473 € par mois et par unité de consommation, contre 2 468 € pour l’ensemble (100,2 %) en 2023 ; avec loyers imputés, 6,5 % au-dessus. Il prévoit 90,3 % en 2070 (*Rapport annuel 2026*, synthèse, juin 2026). [Lien](https://www.cor-retraites.fr/sites/default/files/2026-06/RA_Part3_Chap2.pdf)
@@ -1532,8 +1429,7 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte publié de gauche sur la santé n’a été ouvert.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *L’efficience des dépenses d’assurance maladie*, 30 janvier 2026 : dépense courante de santé de 332 Md€ en 2024 (11,4 % du PIB, définition internationale). La France est 3e de l’OCDE pour la dépense financée par l’argent public ou obligatoire (9,7 % du PIB en 2023), mais 9e pour l’espérance de vie (2023) et 10e pour la mortalité évitable (2022). La dépense « n’est certainement pas le seul déterminant de l’espérance de vie », qui est « une mesure partielle ». L’efficience « pourrait être nettement améliorée ». [Lien](https://fipeco.fr/pdf/EfficienceD%C3%A9pensesSant%C3%A9.pdf)
 - Institutions :
   - Insee (institut public de statistique), *Classification des fonctions des administrations publiques* (sans date) : la fonction santé regroupe la prise en charge des soins de santé. Cette page ne parle pas de l’Ondam (objectif national de dépenses d’assurance maladie). [Lien](https://www.insee.fr/fr/metadonnees/definition/c1064)
@@ -1548,8 +1444,7 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte publié de gauche sur ces marges n’a été ouvert.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), *Les montants laissés à la charge des ménages par l’assurance maladie*, 30 janvier 2024 : l’intervention des complémentaires « se traduit par une duplication des frais de gestion de l’assurance maladie ». Leurs frais de gestion (7,8 Md€ en 2022) dépassent ceux de l’Assurance maladie obligatoire (6,7 Md€). [Lien](https://fipeco.fr/pdf/Bouclier2024.pdf)
   - Iphigénie Betolaud (Fondation iFRAP ; libérale), *17 Md€ de coûts de gestion de la santé*, 7 juin 2026 : les frais de gestion des deux assurances sont de 16,9 Md€ en 2024. Ils pèsent 0,57 % du PIB en France contre 0,3 % aux Pays-Bas (Eurostat, 2023). Elle estime l’économie possible à 7,6 Md€, mais reconnaît que la comparaison est imparfaite. [Lien](https://www.ifrap.org/emploi-et-politiques-sociales/17-mdeu-de-couts-de-gestion-de-la-sante)
 - Institutions :
@@ -1565,8 +1460,7 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte publié de gauche sur l’école n’a été ouvert.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
   - Fondation iFRAP (libérale), *Société Civile* n° 227, octobre 2021 : elle reprend un constat de la Cour des comptes de 2013 : « l’Éducation nationale ne souffre pas d’un manque de moyens ou d’un nombre trop faible d’enseignants ». Elle propose de changer l’organisation. L’école publique coûte plus cher par élève que l’école privée (29,4 Md€ d’écart en 2019), dont environ la moitié viendrait des différences de rémunération. Elle recommande des contrats de droit privé et 30 % de salaire variable. [Lien](https://www.ifrap.org/education-et-culture/eduquer-mieux-en-reallouant-et-en-baissant-les-depenses)
 - Institutions :
   - CAE (instance d’économistes placée auprès du Premier ministre), Antoine Greneta et Camille Landais, Note n° 84, mai 2025 : les résultats en mathématiques « se dégradent » alors que la dépense est au-dessus de la moyenne de l’OCDE ; le Canada, l’Estonie, l’Irlande, le Japon et la Pologne font mieux « avec des niveaux de dépense par élève comparables, voire inférieurs ». Mais la dépense d’éducation peut être très efficace quand elle est ciblée (petites classes en primaire, tutorat). Données 2021 : 9 352 € par élève contre 8 838 € en moyenne de l’OCDE ; en primaire 11 % de moins, en secondaire 13 % de plus. Un enseignant du primaire à dix ans d’ancienneté gagne 17 % de moins que ses pairs de l’OCDE. [Lien](https://cae-eco.fr/static/pdf/cae084-education-250514.pdf)
@@ -1581,9 +1475,8 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - Union syndicale des magistrats (syndicat de magistrats ; ce n’est pas un parti), *Note sur le rapport CEPEJ 2024*, 18 octobre 2024 : selon la Commission européenne pour l’efficacité de la justice (CEPEJ), la France compte 11,3 juges pour 100 000 habitants, contre une médiane de 17,6 et une moyenne de 21,9 (données 2022). Elle compte 37,3 agents non juges pour 100 000 habitants. Le syndicat parle d’une « situation critique » pour le budget et les effectifs. [Lien](https://union-syndicale-magistrats.org/wp-content/uploads/2024/10/2024.10.18_note-USM-sur-rapport-CEPEJ-2024.pdf)
-- Droite ou libéral : aucun texte publié de droite sur les moyens de la justice n’a été ouvert.
 - Institutions :
   - Cour des comptes (juridiction financière), *Améliorer la gestion du service public de la justice*, note du 21 octobre 2021, lue seulement dans un résumé du *Monde du Droit* du 25 octobre 2021 : le budget de la justice a augmenté de 22 % entre 2011 et 2021, mais « les délais de traitement des affaires civiles se détériorent ». Elle demande des outils d’évaluation de la charge de travail, une meilleure répartition des effectifs et une réforme de la carte des cours d’appel. [Lien](https://www.lemondedudroit.fr/judiciaire/324-organisation-judiciaire/78080-cour-des-comptes-ameliorer-la-gestion-du-service-public-de-la-justice.html)
 
@@ -1597,9 +1490,8 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - Pierre Madec (OFCE ; Sciences Po, sensibilité keynésienne), 26 novembre 2025 : l’emploi a progressé depuis 2014, mais avec beaucoup d’emplois peu payés. [Lien](https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/)
-- Droite ou libéral :
   - Rexecode (institut de conjoncture proche des organisations patronales), Gancel et Redoulès, *La durée effective du travail et sa quantité en France et en Europe en 2024* (document de travail n° 98), décembre 2025 : 69 % d’emploi en 2024 ; la durée effective des personnes en emploi (1 603 heures) n’est pas la plus basse, et la France n’a pas non plus le taux d’emploi le plus bas. Les pays où l’on travaille moins d’heures ont un taux d’emploi plus haut (Europe du Nord). [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/la-duree-effective-du-travail-et-sa-quantite-en-france-et-en-europe-en-2024-document-de-travail-n.98-dec.-2025)
   - Rexecode, *Durée effective du travail en France et en Europe en 2023* (document de travail n° 92), décembre 2024 : pour les salariés à temps plein, la France travaille 1 673 heures contre 1 790 en Allemagne. Pour l’ensemble des salariés, c’est presque égal (France 1 553 heures, Allemagne 1 548, Pays-Bas 1 364). [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2024/duree-effective-du-travail-en-france-et-en-europe-2023-et-la-quantite-de-travail-dans-l-economie-document-de-travail-n.92-dec.-2024)
 - Institutions :
@@ -1618,10 +1510,9 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - Union syndicale des magistrats (syndicat de magistrats), 18 octobre 2024 : manque de moyens pour la justice, avec 11,3 juges pour 100 000 habitants contre une médiane de 17,6. Cette position ne vaut que pour la justice. [Lien](https://union-syndicale-magistrats.org/wp-content/uploads/2024/10/2024.10.18_note-USM-sur-rapport-CEPEJ-2024.pdf)
-  - Pierre Madec (OFCE ; Sciences Po, sensibilité keynésienne), 26 novembre 2025 : pour lui, les résultats plus faibles sur la pauvreté tiennent aussi à des choix de politique publique, car l’effet des prestations a reculé. Aucun autre texte publié de gauche sur la santé ou l’école n’a été ouvert. [Lien](https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/)
-- Droite ou libéral :
+  - Pierre Madec (OFCE ; Sciences Po, sensibilité keynésienne), 26 novembre 2025 : pour lui, les résultats plus faibles sur la pauvreté tiennent aussi à des choix de politique publique, car l’effet des prestations a reculé. Aucun autre texte publié de ce type sur la santé ou l’école n’a été ouvert. [Lien](https://www.ofce.fr/blog2024/fr/2025/20251125_PIM/)
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 30 janvier 2026 : en santé, la dépense n’est « certainement pas le seul déterminant » des résultats, et l’efficience est « un enjeu majeur ». [Lien](https://fipeco.fr/pdf/EfficienceD%C3%A9pensesSant%C3%A9.pdf)
   - Fondation iFRAP (libérale), 7 juin 2026 et octobre 2021 : économies possibles de 7,6 Md€ sur les frais de gestion de la santé ; l’école « ne souffre pas d’un manque de moyens ». [Lien](https://www.ifrap.org/emploi-et-politiques-sociales/17-mdeu-de-couts-de-gestion-de-la-sante)
   - Institut Montaigne (libéral-centriste), *Budget base zéro : décider sous la contrainte*, novembre 2025 : les revues de dépenses ne traitent que l’efficience, « le dernier maillon d’une recherche d’économies ». Le niveau de la dépense vient de deux choix politiques en amont : l’État intervient-il, et avec quelle ambition. Depuis 2001, la santé et les retraites ont ajouté plus de 4 points de PIB à la dépense publique, alors que l’éducation en a perdu 0,5. [Lien](https://institutmontaigne.org/ressources/pdfs/publications/note-budget-base-zero-decider-sous-la-contrainte.pdf)
@@ -1630,7 +1521,7 @@ Cette partie suit le chapitre 6 et quelques points des chapitres 2 et 7. Les tro
   - Cour des comptes (juridiction financière), *La situation et les perspectives des finances publiques*, 25 juin 2026 : la dépense primaire croît « à un rythme légèrement supérieur à la croissance économique » « faute d’économies ». La trajectoire exigerait de la baisser de 0,5 % par an en volume. La page ne parle ni d’efficience ni d’« argent mal utilisé ». [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - CAE (instance d’économistes placée auprès du Premier ministre), Note n° 84, mai 2025 : d’autres pays obtiennent de meilleurs résultats à dépense comparable, mais la dépense ciblée est très efficace. [Lien](https://cae-eco.fr/static/pdf/cae084-education-250514.pdf)
 
-**Où se situe le site, et pourquoi.** Le site n’attribue plus la thèse « argent mal utilisé » à la Cour des comptes : sa page parle d’économies absentes, pas d’usage inefficace. Il la place chez Fipeco (santé), l’iFRAP et le FMI, et lui oppose la lecture « niveau de la dépense » (Institut Montaigne, Cour des comptes). Il a complété la citation du FMI (réorienter vers les priorités, protéger les plus vulnérables). L’Institut Montaigne parle de « combien » autant que de « où » : c’est pourquoi le site écrit que le débat porte sur les deux. La thèse de l’encadré (« les résultats ne justifient plus le niveau de la dépense ») est formulée par l’équipe du site, non par un auteur. Le côté gauche est mince : seuls l’OFCE et un syndicat de magistrats ont été trouvés, et rien sur la santé ni l’école.
+**Où se situe le site, et pourquoi.** Le site n’attribue plus la thèse « argent mal utilisé » à la Cour des comptes : sa page parle d’économies absentes, pas d’usage inefficace. Il la place chez Fipeco (santé), l’iFRAP et le FMI, et lui oppose la lecture « niveau de la dépense » (Institut Montaigne, Cour des comptes). Il a complété la citation du FMI (réorienter vers les priorités, protéger les plus vulnérables). L’Institut Montaigne parle de « combien » autant que de « où » : c’est pourquoi le site écrit que le débat porte sur les deux. La thèse de l’encadré (« les résultats ne justifient plus le niveau de la dépense ») est formulée par l’équipe du site, non par un auteur. La lecture « des services manquent de moyens » est mince dans les textes ouverts : seuls l’OFCE et un syndicat de magistrats ont été trouvés, et rien sur la santé ni l’école.
 
 **Chapitre :** [6, étapes 8, 9 et 10](../site/chapitres/06-ce-que-l-on-obtient.md).
 
@@ -1644,16 +1535,15 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - Observatoire français des conjonctures économiques (OFCE ; Sciences Po, sensibilité keynésienne), *Policy Brief* n° 154, « Budget 2026 : un budget de compromis », 26 février 2026 : le budget 2026 réduit la croissance de 0,5 point, dont 0,4 point pour les économies structurelles sur les dépenses. [Lien](https://ofce.github.io/budget2026/OFCEpbrief154.pdf)
-- *Droite ou libéral*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts : nous n’avons pas ouvert de texte de ce camp qui conteste le principe d’un effet freinant des économies.
+  - Nous n’avons ouvert aucun texte qui conteste le principe d’un effet freinant des économies.
 - *Institutions*
   - Haut Conseil des finances publiques (HCFP ; organisme indépendant placé auprès de la Cour des comptes), avis HCFP-2026-5, §36, 25 septembre 2026 : un ajustement de 0,5 point de PIB coûterait 0,5 point de croissance, « selon l’administration ». Le HCFP juge ce chiffrage crédible au regard des multiplicateurs usuels. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
   - Mission sur la transparence des finances publiques (Jaravel, Ragot, Tavernier, Valla ; accueillie par l’Inspection générale des finances, corps d’inspection du ministère de l’Économie), juillet 2026 : l’hypothèse d’un effet nul est « très favorable ». [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
   - Cour des comptes (juridiction financière), *La situation et les perspectives des finances publiques*, 25 juin 2026 : la consolidation doit réduire au minimum ses coûts macroéconomiques et sociaux. La page ne donne pas de multiplicateur chiffré. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
 
-**Où se situe le site, et pourquoi.** Le site suit ici les sources qui se rejoignent : l’OFCE, le HCFP, la mission de l’Inspection générale des finances et la Cour décrivent tous un effet freinant, de taille variable. Le site ne présente jamais une mesure qui « s’autofinance ». Comme aucun texte ouvert ne défend la thèse inverse, il ne montre pas de camp opposé à ce point. Il dit seulement que l’ampleur est incertaine.
+**Où se situe le site, et pourquoi.** Le site suit ici les sources qui se rejoignent : l’OFCE, le HCFP, la mission de l’Inspection générale des finances et la Cour décrivent tous un effet freinant, de taille variable. Le site ne présente jamais une mesure qui « s’autofinance ». Comme aucun texte ouvert ne défend la thèse inverse, il ne montre pas de position opposée sur ce point. Il dit seulement que l’ampleur est incertaine.
 
 **Chapitres :** [7, étape 4](../site/chapitres/07-les-choix.md) ; [5, étapes 4 et 11](../site/chapitres/05-dette-et-interets.md).
 
@@ -1663,10 +1553,8 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE, *Policy Brief* n° 154, 26 février 2026 : multiplicateurs de court terme compris entre 0,7 et 0,8 pour les économies structurelles. [Lien](https://ofce.github.io/budget2026/OFCEpbrief154.pdf)
-- *Droite ou libéral*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
 - *Institutions*
   - HCFP, avis HCFP-2026-5, §36, 25 septembre 2026 : il ne donne pas de multiplicateur moyen. Il donne 0,5 point de croissance perdu pour un effort de 0,8 point de PIB hors intérêts. Ce rapport implique environ 0,6, mais c’est un calcul, pas une valeur publiée. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
   - Mission sur la transparence des finances publiques (Inspection générale des finances), juillet 2026 : revenir sous 3 % en 2029 demande un ajustement de 125 milliards d’euros et l’hypothèse « extrême » d’un multiplicateur nul. Sinon, le déficit passe sous 3 % en 2031, ou jamais avec un ajustement uniforme. [Lien](https://www.banquedesterritoires.fr/sites/default/files/2026-07/904%20%20Rapport%20%20Mission%20sur%20la%20transparence%20des%20finances%20publiques.pdf)
@@ -1682,10 +1570,8 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE, *Policy Brief* n° 154, 26 février 2026 : de 0,7 à 0,8 pour les économies structurelles de l’État, des collectivités et de la Sécurité sociale ; environ 1 pour la défense et la prime d’activité ; un multiplicateur nul ou très faible pour les intérêts de la dette et pour la contribution à l’Union européenne. [Lien](https://ofce.github.io/budget2026/OFCEpbrief154.pdf)
-- *Droite ou libéral*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
 - *Institutions*
   - HCFP, avis HCFP-2026-5, §36, 25 septembre 2026 : « proche de 1 » pour les baisses de demande publique, « modéré » pour certaines hausses de recettes, proche de zéro pour un prélèvement sur les industries électriques et gazières. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
   - Institut Avant-Garde (Anne-Laure Delatte), octobre 2025 : le multiplicateur doit varier selon la mesure, comme dans le modèle Mésange. [Lien](https://www.institutavantgarde.fr/wp-content/uploads/2025/10/Institut_avant-garde-Redresser-les-finances-publiques.pdf)
@@ -1700,10 +1586,8 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
-- *Droite ou libéral*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts. En particulier, aucune source ouverte, de gauche comme de droite ou syndicale, ne contredit les chiffres retenus pour la TVA.
+- *Économistes, instituts et organisations*
+  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts. En particulier, aucune source ouverte ne contredit les chiffres retenus pour la TVA.
 - *Institutions*
   - Direction générale du Trésor (administration économique), « Le modèle macroéconométrique Mésange », mai 2017 : une hausse de TVA d’un point de PIB réduit le PIB de 0,32 point la première année et de 0,81 point à cinq ans, et améliore le solde public de 0,47 point par rapport au scénario central. [Lien](https://www.tresor.economie.gouv.fr/Articles/88381f48-797c-4e76-8f03-ef78d0bff99e/files/1c29ff21-585d-488b-8f4b-497540e9fc62)
   - Groupe de travail du Système européen de banques centrales (Kilponen et autres), document de travail n° 1760, mars 2015 : les multiplicateurs varient beaucoup selon les modèles et les pays, y compris pour les impôts sur la consommation ; ils sont plus faibles pour les revenus du capital et la consommation que pour les dépenses. [Lien](https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1760.en.pdf)
@@ -1718,9 +1602,7 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
-- *Droite ou libéral*
+- *Économistes, instituts et organisations*
   - Rexecode (institut de conjoncture proche des organisations patronales), document de travail n° 97, juillet 2025 : les surtaxes et contributions sur les entreprises pèsent sur la compétitivité ; les hausses de 2025 sont supportées pour deux tiers par les entreprises. [Lien](https://www.rexecode.fr/media/documents/document-de-travail/2025/bilan-des-prelevements-obligatoires-en-france-document-de-travail-n.97-juin-2025)
 - *Institutions*
   - Conseil des prélèvements obligatoires (institution publique), 1er décembre 2025 : la taxation récurrente du patrimoine professionnel risque de peser sur l’investissement et la compétitivité ; la taxation à la transmission a des effets plus limités. [Lien](https://www.ccomptes.fr/sites/default/files/2025-12/20251201-Corriger-les-principales-distorsions-de-l-imposition-du-patrimoine.pdf)
@@ -1737,15 +1619,13 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts, hors l’OFCE (voir 7.1 à 7.3), qui retient des multiplicateurs d’environ 0,7 à 1 selon la mesure.
-- *Droite ou libéral*
+- *Économistes, instituts et organisations*
   - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
 - *Institutions*
   - Mission sur la transparence des finances publiques (Inspection générale des finances), juillet 2026 : environ 125 milliards d’ajustement d’ici 2032 pour un excédent primaire de 0,8 % du PIB, par rapport à une politique inchangée ; l’hypothèse d’un multiplicateur nul est « très favorable », « extrême » et « particulièrement forte ». [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
   - Aucun texte du gouvernement qui défend cette hypothèse n’a été ouvert.
 
-**Où se situe le site, et pourquoi.** Le site cite l’hypothèse et son jugement par la mission, sans l’adopter. Il la mentionne à côté du chiffre de 125 milliards, pour que le lecteur sache sur quelle base il est calculé. La même mission défend pourtant un ajustement concentré au début (voir 7.7) : le site le dit aussi, pour ne pas réduire le point de vue de droite à cette seule hypothèse.
+**Où se situe le site, et pourquoi.** Le site cite l’hypothèse et son jugement par la mission, sans l’adopter. Il la mentionne à côté du chiffre de 125 milliards, pour que le lecteur sache sur quelle base il est calculé. La même mission défend pourtant un ajustement concentré au début (voir 7.7) : le site le dit aussi, pour ne pas réduire le point de vue favorable à un effort rapide à cette seule hypothèse.
 
 **Chapitres :** [5, étape 11](../site/chapitres/05-dette-et-interets.md) ; [7, étape 4](../site/chapitres/07-les-choix.md).
 
@@ -1755,9 +1635,8 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
+- *Économistes, instituts et organisations*
   - OFCE, « Quelles trajectoires pour les finances publiques de la France ? », 11 juillet 2025 : une trajectoire progressive stabilise la dette autour de 110 % du PIB avec un ajustement de 2,8 % du PIB (un peu plus de 80 milliards d’euros) jusqu’en 2029, contre environ 110 milliards dans le plan du gouvernement. [Lien](https://www.ofce.sciences-po.fr/blog2024/fr/2025/20250711_PSMT/blog.fr.pdf)
-- *Droite ou libéral*
   - Fondation iFRAP (libérale), « Croissance à 0,7 % en 2026 : la boule de neige de la dette est en route », juillet 2026 : un effort massif et documenté dès le départ est plus efficace qu’un ajustement brutal imposé par une crise de confiance des marchés. [Lien](https://www.ifrap.org/budget-et-fiscalite/croissance-07-en-2026-la-boule-de-neige-de-la-dette-est-en-route)
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), « Les risques d’un endettement public hors de contrôle », 11 mars 2025 : sans réforme, une politique budgétaire très dure pourrait être imposée à la France. [Lien](https://www.fipeco.fr/commentaire/Les%2520risques%2520d%27un%2520endettement%2520public%2520hors%2520de%2520contr%C3%B4le)
 - *Institutions*
@@ -1765,7 +1644,7 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
   - Cour des comptes, rapport du 25 juin 2026 (pages 138 à 140) : quand les taux d’intérêt sont sous tension, il vaut mieux concentrer l’effort ; quand les multiplicateurs sont élevés, l’étaler limite la perte d’activité. Elle écrit aussi qu’« une consolidation choisie est préférable à une consolidation subie dans l’urgence », cite le Portugal et l’Italie, et appelle à baisser les dépenses primaires de 0,5 % par an en volume. [Lien](https://www.vie-publique.fr/files/rapport/pdf/303867.pdf)
   - Mission sur la transparence des finances publiques (Inspection générale des finances), juillet 2026 : l’hypothèse d’un effet nul est « extrême », mais un ajustement concentré au début limite la hausse de la dette et doit être privilégié. [Lien](https://www.banquedesterritoires.fr/sites/default/files/2026-07/904%20%20Rapport%20%20Mission%20sur%20la%20transparence%20des%20finances%20publiques.pdf)
 
-**Où se situe le site, et pourquoi.** Le site a choisi de présenter la thèse publiée la plus forte, celle de l’effort précoce, dans l’encadré, avec l’étiquette de ses auteurs. Il répond par une phrase de la Cour que chaque camp peut accepter : concentrer quand les taux sont tendus, étaler quand les multiplicateurs sont élevés. Il ne dit pas quelle condition domine en 2027. Il cite aussi la trajectoire progressive de l’OFCE, sans en faire la seule voie.
+**Où se situe le site, et pourquoi.** Le site a choisi de présenter la thèse publiée la plus forte, celle de l’effort précoce, dans l’encadré, avec l’étiquette de ses auteurs. Il répond par une phrase de la Cour que chaque partie au débat peut accepter : concentrer quand les taux sont tendus, étaler quand les multiplicateurs sont élevés. Il ne dit pas quelle condition domine en 2027. Il cite aussi la trajectoire progressive de l’OFCE, sans en faire la seule voie.
 
 **Chapitres :** [7, étape 4](../site/chapitres/07-les-choix.md) ; [5, étape 12](../site/chapitres/05-dette-et-interets.md).
 
@@ -1775,9 +1654,7 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 **Qui soutient quoi.**
 
-- *Gauche*
-  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
-- *Droite ou libéral*
+- *Économistes, instituts et organisations*
   - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
 - *Institutions*
   - Conseil d’analyse économique (CAE ; instance d’économistes placée auprès du Premier ministre), *Focus* n° 108 (Auclert, Philippon, Ragot), juillet 2024 : l’élasticité du déficit conjoncturel à l’écart de production est de 0,57, avec un multiplicateur de 1. Le multiplicateur varie selon le type d’ajustement et le contexte monétaire. [Lien](https://www.cae-eco.fr/static/pdf/focus-108-240712-en.pdf)
@@ -1788,7 +1665,7 @@ Un **multiplicateur budgétaire** mesure de combien l’activité baisse (ou mon
 
 ## 8. « Économies faciles » et chiffrages des programmes
 
-Les camps politiques citent souvent des sommes « faciles » à trouver. Cette section regroupe les points contestés sur ces pistes. Le classement en « gauche », « droite ou libéral » et « institutions » suit celui de la collecte de sources. Il décrit la sensibilité d’un auteur, pas la qualité de son travail. Les chiffres des partis sont des chiffres **annoncés**. Quand un camp n’a pas de position publiée dans nos sources, nous le disons.
+Les partis citent souvent des sommes « faciles » à trouver. Cette section regroupe les points contestés sur ces pistes. Les sources sont rangées en deux groupes : économistes, instituts et organisations, puis institutions. L’étiquette d’un organisme décrit sa sensibilité, pas la qualité de son travail. Les chiffres des partis sont des chiffres **annoncés**. Quand aucune position publiée n’a été trouvée dans nos sources, nous le disons.
 
 ### 8.1 Où réduire la dépense ? Le sondage Elabe
 
@@ -1796,11 +1673,12 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : selon le même sondage, les électeurs du Nouveau Front populaire citent d’abord les aides aux entreprises (47 %).
-- Droite ou libéral : les électeurs de droite citent d’abord les allocations familiales (47 %) ; ceux du Rassemblement national aussi (50 %).
+- Résultats selon le vote, dans le même sondage :
+  - Les électeurs du Nouveau Front populaire citent d’abord les aides aux entreprises (47 %).
+  - D’autres électeurs citent d’abord les allocations familiales (47 %), comme ceux du Rassemblement national (50 %).
 - Institutions : l’institut de sondage Elabe pour *Les Echos*, « Les Français et la dette publique », 3 septembre 2026. Il note de fortes différences selon le vote. [Lien](https://elabe.fr/fichier-pdf/13231-20260903_elabe_les-echos_les-francais-et-la-dette-publique/)
 
-**Où se situe le site, et pourquoi.** Il reprend les chiffres du sondage et ajoute l’écart entre les camps, sans les pourcentages par électorat. La mise en garde (« où sont les grosses sommes, pas quoi couper ») est une lecture du site : aucune source ne soutient le contraire. La taille exacte de l’échantillon n’a pas été isolée.
+**Où se situe le site, et pourquoi.** Il reprend les chiffres du sondage et ajoute l’écart selon le vote, sans les pourcentages par électorat. La mise en garde (« où sont les grosses sommes, pas quoi couper ») est une lecture du site : aucune source ne soutient le contraire. La taille exacte de l’échantillon n’a pas été isolée.
 
 **Chapitre :** [2, étape 6](../site/chapitres/02-ou-va-l-argent.md).
 
@@ -1810,13 +1688,13 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - CGT (syndicat), Pôle prospective et territoires, *Mémo économique* n° 150, 28 août 2025 : 211 Md€ en 2023 (Sénat) et 203,2 Md€ (Clersé) ; des aides versées « sans conditions ni contreparties ». [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-09/M%C3%A9mo%20%C3%A9co%20n%C2%B0150%20-%20Aides%20publiques%20un%20pognon%20de%20dingue%20pour%20les%20entreprises.pdf)
   - Force ouvrière (syndicat), note à la commission de concertation sur les aides aux entreprises, 2026 (PDF d’avril) : les estimations publiées vont de 15 à 270 Md€ ; le syndicat soutient le large périmètre du Sénat. [Lien](https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-07-16%20-%20Rapport%20Aides%20aux%20entreprises/FO%202026%2004%20Commission%20de%20concertation%20sur%20les%20aides%20aux%20entreprises.pdf)
-- Droite ou libéral : Fondation iFRAP (libérale), 25 juillet 2025 (mise à jour le 17 septembre 2025), *Aides aux entreprises : 211 milliards d’euros… par où 185 milliards ?* : 211 Md€ est trop élevé. Avec des critères stricts, environ 18,5 Md€ ; les baisses générales de cotisations et la plupart des niches ne sont pas des aides ciblées. [Lien](https://www.ifrap.org/budget-et-fiscalite/aides-aux-entreprises-211-milliards-deuros-par-ou-185-milliards)
+  - Fondation iFRAP (libérale), 25 juillet 2025 (mise à jour le 17 septembre 2025), *Aides aux entreprises : 211 milliards d’euros… par où 185 milliards ?* : 211 Md€ est trop élevé. Avec des critères stricts, environ 18,5 Md€ ; les baisses générales de cotisations et la plupart des niches ne sont pas des aides ciblées. [Lien](https://www.ifrap.org/budget-et-fiscalite/aides-aux-entreprises-211-milliards-deuros-par-ou-185-milliards)
 - Institutions : aucune source de cette liste ne donne de chiffre officiel unique.
 
-**Où se situe le site, et pourquoi.** Il montre toute la fourchette et explique qu’elle vient du périmètre. Il reprend la remarque de la droite (le haut est surtout fait de baisses générales) et celle de la gauche (aides sans conditions, évaluation faible). Le bas de la fourchette (45 Md€) correspond à la définition européenne des aides d’État ; il est plus haut que le chiffre le plus bas publié (18,5 Md€ pour la Fondation iFRAP).
+**Où se situe le site, et pourquoi.** Il montre toute la fourchette et explique qu’elle vient du périmètre. Il reprend la remarque de la Fondation iFRAP (le haut est surtout fait de baisses générales) et celle de la CGT et de Force ouvrière (aides sans conditions, évaluation faible). Le bas de la fourchette (45 Md€) correspond à la définition européenne des aides d’État ; il est plus haut que le chiffre le plus bas publié (18,5 Md€ pour la Fondation iFRAP).
 
 **Chapitres :** [2, étape 9](../site/chapitres/02-ou-va-l-argent.md) ; [7, étape 8](../site/chapitres/07-les-choix.md).
 
@@ -1826,10 +1704,9 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - CGT (syndicat), *Mémo économique* n° 150, 28 août 2025 : sur les 211 Md€ d’aides retenus par le Sénat, 88 Md€ sont des dépenses fiscales et 75 Md€ des exonérations de cotisations. [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2025-09/M%C3%A9mo%20%C3%A9co%20n%C2%B0150%20-%20Aides%20publiques%20un%20pognon%20de%20dingue%20pour%20les%20entreprises.pdf)
   - CGT (syndicat), *PLFSS 2025 – Points clefs : exonérations de cotisations*, novembre 2024 : elle défend la suppression complète des exonérations patronales et critique le « recentrage » faute d’effet prouvé sur l’emploi. [Lien](https://analyses-propositions.cgt.fr/sites/analyses-propositions.cgt.fr/files/2024-11/202411-Points%20clefs%20-%20exonerations%20cotisationsVF.pdf)
-- Droite ou libéral :
   - Fondation iFRAP (libérale), 25 juillet 2025 : environ 52 Md€ de niches, dont 8,3 Md€ seulement sont des aides ; les niches « suivent » le niveau des impôts. Les baisses générales de cotisations ne sont pas des aides sectorielles (3,2 Md€ gardés). [Lien](https://www.ifrap.org/budget-et-fiscalite/aides-aux-entreprises-211-milliards-deuros-par-ou-185-milliards)
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 4 décembre 2024 : 474 dépenses fiscales dans l’annexe du projet de loi de finances pour 2025, mais le coût n’est donné que pour 387. Un changement de méthode sur la TVA a réduit le total d’environ 10 Md€ ; avec l’ancienne méthode, 95,0 Md€ en 2023. [Lien](https://fipeco.fr/pdf/Niches2024.pdf)
 - Institutions : Antoine Bozio et Étienne Wasmer (rapport remis au gouvernement), octobre 2024 : supprimer toutes les exonérations générales rapporterait 48 Md€ net en statique, après environ 980 000 emplois perdus ; dans le modèle Mésange de la DG Trésor, l’effet long terme sur le solde public est de −0,1 point de PIB. Ils recommandent de recentrer, pas de supprimer. [Lien](https://vie-publique.fr/files/rapport/pdf/295596.pdf)
@@ -1844,13 +1721,13 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : le rapport d’information n° 3072 de la commission des finances de l’Assemblée nationale (rapporteur M. Feld), 21 juillet 2026, cite un écart fiscal de 80 à 100 Md€ avancé par les syndicats de la DGFiP. Il juge que les baisses de moyens du contrôle ont été une erreur budgétaire. [Lien](https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3072_rapport-information.pdf)
-- Droite ou libéral : aucune position publiée sur le montant de la fraude fiscale n’a été retenue dans nos sources.
+- Économistes, instituts et organisations :
+  - Le rapport d’information n° 3072 de la commission des finances de l’Assemblée nationale (rapporteur M. Feld), 21 juillet 2026, cite un écart fiscal de 80 à 100 Md€ avancé par les syndicats de la DGFiP. Il juge que les baisses de moyens du contrôle ont été une erreur budgétaire. [Lien](https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3072_rapport-information.pdf)
 - Institutions :
   - Cour des comptes (juridiction financière), *La lutte contre la fraude fiscale*, 16 décembre 2025 : « Nul ne peut aujourd’hui se hasarder à affirmer que ce montant est proche de 30 ou de 130 Md€ » sur 1 268 Md€ de prélèvements obligatoires en 2024. Les vieilles estimations « créent l’espérance d’une manne potentielle ». [Lien](https://www.ccomptes.fr/sites/default/files/2025-12/20251216-Lutte-contre-la-fraude-fiscale.pdf)
   - Public Sénat (presse), rapportant la Cour : « carence regrettable » faute d’estimation robuste ; 11,4 Md€ recouvrés en 2024 contre 12,2 Md€ en 2015 ; la thèse de 80 à 100 Md€ est « une affirmation quasi-gratuite ». [Lien](https://www.publicsenat.fr/actualites/economie/la-fraude-fiscale-reste-un-phenomene-mal-cerne-mal-chiffre-mal-traite-pointe-la-cour-des-comptes)
 
-**Où se situe le site, et pourquoi.** Il suit la Cour : « 30 » et « 130 » montrent l’incertitude, pas une estimation. Il n’affiche pas le chiffre de 80 à 100 Md€ des syndicats, faute d’étiquette dans le glossaire et parce que la Cour juge ces estimations fragiles. Ce choix laisse la position de gauche moins visible que celle de la Cour. Le texte de Solidaires Finances publiques n’a pas pu être ouvert.
+**Où se situe le site, et pourquoi.** Il suit la Cour : « 30 » et « 130 » montrent l’incertitude, pas une estimation. Il n’affiche pas le chiffre de 80 à 100 Md€ des syndicats, faute d’étiquette dans le glossaire et parce que la Cour juge ces estimations fragiles. Ce choix laisse la position des syndicats moins visible que celle de la Cour. Le texte de Solidaires Finances publiques n’a pas pu être ouvert.
 
 **Chapitres :** [2, étape 9](../site/chapitres/02-ou-va-l-argent.md) ; [3, étape 11](../site/chapitres/03-qui-paie.md) ; [7, étape 8](../site/chapitres/07-les-choix.md).
 
@@ -1860,11 +1737,12 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte de gauche sur la fraude sociale n’a été ouvert. Une remarque parlementaire (la fraude sociale serait mineure à côté de la fraude fiscale) n’a été vue que dans un extrait.
-- Droite ou libéral : Fondation iFRAP (libérale), *La fraude sociale en 2024 : 17,5 Md€ estimés, seulement 1,2 Md€ recouvré ou évité*, 15 janvier 2026 (mise à jour le 9 avril 2026). Estimation étroite d’environ 14 Md€ ; 17,5 Md€ avec les erreurs de paiement. Seulement 2,06 Md€ détectés et environ 1,2 Md€ recouvrés ou évités ; 3 à 4 Md€ seraient récupérables. [Lien](https://www.ifrap.org/emploi-et-politiques-sociales/la-fraude-sociale-en-2024-175-mdeu-estimes-seulement-12-mdeu-recouvre-ou-evite)
+- Économistes, instituts et organisations :
+  - Une remarque parlementaire (la fraude sociale serait mineure à côté de la fraude fiscale) n’a été vue que dans un extrait.
+  - Fondation iFRAP (libérale), *La fraude sociale en 2024 : 17,5 Md€ estimés, seulement 1,2 Md€ recouvré ou évité*, 15 janvier 2026 (mise à jour le 9 avril 2026). Estimation étroite d’environ 14 Md€ ; 17,5 Md€ avec les erreurs de paiement. Seulement 2,06 Md€ détectés et environ 1,2 Md€ recouvrés ou évités ; 3 à 4 Md€ seraient récupérables. [Lien](https://www.ifrap.org/emploi-et-politiques-sociales/la-fraude-sociale-en-2024-175-mdeu-estimes-seulement-12-mdeu-recouvre-ou-evite)
 - Institutions : la note du Haut Conseil du financement de la protection sociale n’a pas pu être lue (PDF illisible). Son chiffre est confirmé par l’analyse de la Fondation iFRAP.
 
-**Où se situe le site, et pourquoi.** Il garde les 14 Md€ comme perte estimée et reprend la remarque de la droite sur le montant récupérable, sans chiffre. Il a retiré l’affirmation « plus de la moitié porte sur les cotisations », qu’aucun texte ouvert ne confirmait. Il n’affiche pas les 17,5 Md€, faute d’entrée dans ses données.
+**Où se situe le site, et pourquoi.** Il garde les 14 Md€ comme perte estimée et reprend la remarque de la Fondation iFRAP sur le montant récupérable, sans chiffre. Il a retiré l’affirmation « plus de la moitié porte sur les cotisations », qu’aucun texte ouvert ne confirmait. Il n’affiche pas les 17,5 Md€, faute d’entrée dans ses données.
 
 **Chapitres :** [2, étape 9](../site/chapitres/02-ou-va-l-argent.md) ; [7, étape 9](../site/chapitres/07-les-choix.md).
 
@@ -1874,14 +1752,15 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : le rapport n° 3072 de l’Assemblée nationale (commission des finances, rapporteur M. Feld), 21 juillet 2026, juge le contrôle fiscal très rentable : dix agents de contrôle rapportent environ 100 M€ par an de droits rappelés. [Lien](https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3072_rapport-information.pdf)
-- Droite ou libéral : Public Sénat (presse), 24 octobre 2025, cite François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire). Il juge le contre-budget du Rassemblement national fait de « baguettes magiques ». L’article rapporte que le HCFP a jugé l’estimation de fraude du Rassemblement national (3,5 Md€) « pas crédible ». [Lien](https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale)
+- Économistes, instituts et organisations :
+  - Le rapport n° 3072 de l’Assemblée nationale (commission des finances, rapporteur M. Feld), 21 juillet 2026, juge le contrôle fiscal très rentable : dix agents de contrôle rapportent environ 100 M€ par an de droits rappelés. [Lien](https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b3072_rapport-information.pdf)
+  - Public Sénat (presse), 24 octobre 2025, cite François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire). Il juge le contre-budget du Rassemblement national fait de « baguettes magiques ». L’article rapporte que le HCFP a jugé l’estimation de fraude du Rassemblement national (3,5 Md€) « pas crédible ». [Lien](https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale)
 - Institutions :
   - Haut Conseil des finances publiques (HCFP, institution publique), avis n° HCFP-2026-5, 25 septembre 2026 : la mesure de 1,5 Md€ a disparu ; son rendement avait un « caractère optimiste voire hypothétique » ; elle revient en 2027 à environ 1,0 Md€. [Lien](https://www.hcfp.fr/sites/default/files/2026-10/Avis%20HCFP%202026-5%20-%20PLF-PLFSS%202027.pdf)
   - Cour des comptes (juridiction financière), rapport sur la situation et les perspectives des finances publiques, 25 juin 2026 : le rendement attendu de 1,5 Md€ est « élevé ». [Lien](https://www.ccomptes.fr/sites/default/files/2026-07/20260625_RSPFP-2026.pdf)
   - Cour des comptes, 16 décembre 2025 : les résultats du contrôle stagnent (de 16,1 à 17,4 Md€ entre 2015 et 2024) ; pas d’estimation robuste. [Lien](https://www.ccomptes.fr/sites/default/files/2025-12/20251216-Lutte-contre-la-fraude-fiscale.pdf)
 
-**Où se situe le site, et pourquoi.** Il retient une fourchette prudente de 1 à 3 Md€ et la marque « non crédible » au-delà de 3 dans le simulateur. Cette fourchette est une synthèse de la plateforme : aucun texte ouvert ne la donne. Le HCFP écrit « optimiste voire hypothétique » pour la mesure de 2026 ; « pas crédible » concerne, dans la presse, l’estimation du Rassemblement national. Le site emploie « non crédible » pour la mesure de 2026 : c’est plus fort que le texte du HCFP, et l’écart est signalé pour correction. Aucun chiffrage de droite d’un nouveau plan antifraude n’a été trouvé.
+**Où se situe le site, et pourquoi.** Il retient une fourchette prudente de 1 à 3 Md€ et la marque « non crédible » au-delà de 3 dans le simulateur. Cette fourchette est une synthèse de la plateforme : aucun texte ouvert ne la donne. Le HCFP écrit « optimiste voire hypothétique » pour la mesure de 2026 ; « pas crédible » concerne, dans la presse, l’estimation du Rassemblement national. Le site emploie « non crédible » pour la mesure de 2026 : c’est plus fort que le texte du HCFP, et l’écart est signalé pour correction. Aucun autre chiffrage publié d’un nouveau plan antifraude n’a été trouvé.
 
 **Chapitres :** [7, étape 9](../site/chapitres/07-les-choix.md) ; simulateur (levier « fraude »).
 
@@ -1891,14 +1770,14 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : Xavier Chojnicki, Xavier Ragot (OFCE ; Sciences Po, sensibilité keynésienne) et Lionel Sokhna, *The fiscal impact of 30 years of immigration in France*, 2018 : la contribution nette des immigrés est le plus souvent légèrement négative, mais extrêmement faible (environ ±0,5 % du PIB, ±0,2 % selon certaines conventions). Elle n’a jamais déterminé le solde primaire. [Lien](https://ideas.repec.org:443/p/drm/wpaper/2018-36.html)
-- Droite ou libéral :
+- Économistes, instituts et organisations :
+  - Xavier Chojnicki, Xavier Ragot (OFCE ; Sciences Po, sensibilité keynésienne) et Lionel Sokhna, *The fiscal impact of 30 years of immigration in France*, 2018 : la contribution nette des immigrés est le plus souvent légèrement négative, mais extrêmement faible (environ ±0,5 % du PIB, ±0,2 % selon certaines conventions). Elle n’a jamais déterminé le solde primaire. [Lien](https://ideas.repec.org:443/p/drm/wpaper/2018-36.html)
   - Institut Montaigne (libéral-centriste), 5 juillet 2024 : le programme 2024 du Rassemblement national compte environ 8 Md€ d’économies sur l’immigration. [Lien](https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrage-global-des-programmes)
   - Public Sénat (presse), 24 octobre 2025, cite E. Delannoy et François Ecalle (Fipeco). Pour E. Delannoy, les économies annoncées par le Rassemblement national sont inatteignables. Aucun économiste n’a évalué le passage de l’AME à une aide d’urgence (1,3 Md€) ; le Conseil constitutionnel avait censuré des versions antérieures. [Lien](https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale)
   - Public Sénat (presse), 12 octobre 2026 : Les Républicains comptent 10 Md€ d’économies sur l’immigration, en partie liées à un référendum constitutionnel. [Lien](https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu)
 - Institutions : Christian Évin et Pierre Stefanini (avec l’IGA et l’IGAS), *Rapport sur l’aide médicale de l’État*, 4 décembre 2023 : un dispositif « utile, maîtrisé pour l’essentiel », exposé à la hausse du nombre de bénéficiaires, qui « mérite d’être adapté ». [Lien](https://www.vie-publique.fr/files/rapport/pdf/292122.pdf)
 
-**Où se situe le site, et pourquoi.** Il dit que le résultat dépend de la convention, ce que confirme l’ordre de grandeur de l’étude de Chojnicki, Ragot et Sokhna. Le rapport de l’OCDE n’a pas pu être ouvert : la fourchette de 1,02 % et −0,85 % et le chiffre de l’AME ne sont pas vérifiés dans un texte ouvert. Nous n’avons trouvé aucun chiffrage de droite ou libéral du solde net de l’immigration (Institut Montaigne, Fipeco, Rexecode) ni de texte de la Fondation iFRAP sur l’AME. Le site ne mentionne pas le risque juridique (Conseil constitutionnel). Il omet aussi que le rapport Évin-Stefanini propose des adaptations, par exemple du panier de soins.
+**Où se situe le site, et pourquoi.** Il dit que le résultat dépend de la convention, ce que confirme l’ordre de grandeur de l’étude de Chojnicki, Ragot et Sokhna. Le rapport de l’OCDE n’a pas pu être ouvert : la fourchette de 1,02 % et −0,85 % et le chiffre de l’AME ne sont pas vérifiés dans un texte ouvert. Nous n’avons trouvé aucun chiffrage du solde net de l’immigration par l’Institut Montaigne, Fipeco ou Rexecode, ni de texte de la Fondation iFRAP sur l’AME. Le site ne mentionne pas le risque juridique (Conseil constitutionnel). Il omet aussi que le rapport Évin-Stefanini propose des adaptations, par exemple du panier de soins.
 
 **Chapitres :** [2, étape 9](../site/chapitres/02-ou-va-l-argent.md) ; [7, étape 9](../site/chapitres/07-les-choix.md) ; simulateur (levier « AME »).
 
@@ -1908,8 +1787,9 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : Marietta Karamanli (Parti socialiste), citée par la Banque des Territoires : être contributeur net « ne signifie pas être perdant ».
-- Droite ou libéral : aucun texte d’économiste de droite ou libéral n’a été ouvert sur ce point. Les chiffres des partis (par exemple environ 9 Md€ d’économies avec un plafond, selon le Rassemblement national) ont été vus dans des échanges politiques ; aucun texte n’a été ouvert et le site ne les cite pas.
+- Économistes, instituts et organisations :
+  - Marietta Karamanli (Parti socialiste), citée par la Banque des Territoires : être contributeur net « ne signifie pas être perdant ».
+  - Aucun autre texte d’économiste n’a été ouvert sur ce point. Les chiffres des partis (par exemple environ 9 Md€ d’économies avec un plafond, selon le Rassemblement national) ont été vus dans des échanges politiques ; aucun texte n’a été ouvert et le site ne les cite pas.
 - Institutions :
   - Direction du Budget, *Jaune* du projet de loi de finances 2027, « Relations financières avec l’Union européenne », octobre 2026 : solde net de −9,5 Md€ (méthode comptable) et −6,4 Md€ (méthode opérationnelle de la Commission) en 2025 ; contribution de 25,9 Md€ et retours de 16,4 Md€. [Lien](https://www.budget.gouv.fr/documentation/file-download/34459)
   - Frédéric Fortin, Banque des Territoires (article de presse), 15 octobre 2026 : sortie nette de 9,5 Md€ ; Bercy juge que la notion « rencontre plusieurs limites » ; le prélèvement sur recettes pour l’UE augmente. [Lien](https://www.banquedesterritoires.fr/budget-2027-la-facture-europeenne-continue-de-gonfler)
@@ -1924,8 +1804,8 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : aucune position de gauche sur l’aide au développement n’a été ouverte.
-- Droite ou libéral : Bruno Cabrillac (Ferdi), entretien pour l’Institut Montaigne (libéral-centriste), 18 mars 2025. Sont comptés l’équivalent-don des prêts, l’aide aux réfugiés en France et les annulations de dette ; le budget du programme de développement est de 4,3 Md€ en 2025, environ un tiers plus bas. Il recommande de mobiliser des capitaux privés. C’est un auteur extérieur, pas une position officielle de l’Institut. [Lien](https://institutmontaigne.org/expressions/aide-publique-au-developpement-polemiques-et-perspectives)
+- Économistes, instituts et organisations :
+  - Bruno Cabrillac (Ferdi), entretien pour l’Institut Montaigne (libéral-centriste), 18 mars 2025. Sont comptés l’équivalent-don des prêts, l’aide aux réfugiés en France et les annulations de dette ; le budget du programme de développement est de 4,3 Md€ en 2025, environ un tiers plus bas. Il recommande de mobiliser des capitaux privés. C’est un auteur extérieur, pas une position officielle de l’Institut. [Lien](https://institutmontaigne.org/expressions/aide-publique-au-developpement-polemiques-et-perspectives)
 - Institutions : aucun texte officiel n’a été ouvert. Le chiffre de 12,9 Md€ (0,42 % du revenu national brut) n’a été vu que dans un extrait de recherche.
 
 **Où se situe le site, et pourquoi.** Il présente l’écart comme un effet de périmètre, ce que confirme l’entretien. Le coût des étudiants accueillis n’a pas été confirmé. Aucune source de la Fondation iFRAP ni de Fipeco sur ce sujet n’a été trouvée.
@@ -1938,8 +1818,8 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : aucune position publiée dans nos sources.
-- Droite ou libéral : aucun texte ouvert ne définit ce poste comme le « train de vie ». La collecte a seulement vu que le plan de la Fondation iFRAP (libérale) de 2019 dit qu’il n’existe pas de donnée d’ensemble ni de définition fixe. Les économies de fonctionnement (agences, immobilier, opérateurs) sont cadrées autrement par la droite ; ces textes n’ont pas été ouverts.
+- Économistes, instituts et organisations :
+  - Aucun texte ouvert ne définit ce poste comme le « train de vie ». La collecte a seulement vu que le plan de la Fondation iFRAP (libérale) de 2019 dit qu’il n’existe pas de donnée d’ensemble ni de définition fixe. Les économies de fonctionnement (agences, immobilier, opérateurs) sont cadrées autrement par d’autres auteurs ; ces textes n’ont pas été ouverts.
 - Institutions : aucune source ouverte.
 
 **Où se situe le site, et pourquoi.** Le chiffre est un calcul de la plateforme à partir des données COFOG (classification des fonctions des administrations publiques). Il est affiché avec ses limites, car il n’existe pas de définition publiée du « train de vie ».
@@ -1952,8 +1832,8 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : aucun texte de gauche contestant ou soutenant ces montants n’a été ouvert. Une lecture possible (ce sont des coûts de qualité, les économies demandent des investissements) n’a pas été trouvée dans un texte publié.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
+  - Aucun texte contestant ces montants n’a été ouvert. Une lecture possible (ce sont des coûts de qualité, les économies demandent des investissements) n’a pas été trouvée dans un texte publié.
   - François Ecalle (Fipeco ; site indépendant, ancien magistrat de la Cour des comptes, orthodoxie budgétaire), 30 janvier 2024 : l’intervention des complémentaires entraîne une « duplication des frais de gestion » (7,8 Md€ pour les complémentaires contre 6,7 Md€ pour l’Assurance maladie en 2022). [Lien](https://fipeco.fr/pdf/Bouclier2024.pdf)
   - Iphigénie Betolaud (Fondation iFRAP, libérale), 7 juin 2026 : 16,9 Md€ de frais de gestion en 2024 ; 0,57 % du PIB en France contre 0,3 % aux Pays-Bas ; économie possible d’environ 7,6 Md€. Elle dit elle-même que la comparaison est imparfaite. [Lien](https://www.ifrap.org/emploi-et-politiques-sociales/17-mdeu-de-couts-de-gestion-de-la-sante)
 - Institutions : Cour des comptes (juridiction financière), avril 2026, rapport sur la qualité des soins dans les établissements de santé : « sur la base d’extrapolations fondées sur des données de l’OCDE », plus de 11 Md€ de dommages évitables et 22 Md€ de soins inutiles ou de faible valeur par an. Les chiffres sont lus dans le rapport principal ; le lien est celui de son annexe méthodologique. [Lien](https://www.vie-publique.fr/files/rapports/fichiers_joints/303029-Cahier%20m%C3%A9thodologique.pdf)
@@ -1968,8 +1848,7 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : aucune position de gauche sur ces mesures n’a été ouverte.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
   - Public Sénat (presse), 12 octobre 2026 : Les Républicains annoncent le non-remplacement de 400 000 agents qui partent à la retraite, évalué à 25 Md€, et des économies sur les opérateurs et le budget base zéro. L’article ne donne ni indemnités ni calcul net. [Lien](https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu)
   - Public Sénat (presse), 24 octobre 2025 : la commission d’enquête du Sénat chiffre les économies de fonctionnement des agences à 540 M€, contre un objectif de 7,7 Md€ du Rassemblement national. [Lien](https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale)
 - Institutions :
@@ -1986,7 +1865,8 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche et droite ou libéral : aucune source ouverte ne contredit ce cadrage, qui est celui de la plateforme.
+- Économistes, instituts et organisations :
+  - Aucune position publiée sur ce point n’a été retrouvée dans les textes ouverts.
 - Institutions :
   - Direction du Budget, octobre 2026 : contribution à l’UE de 9,5 Md€ (voir 8.8). [Lien](https://www.budget.gouv.fr/documentation/file-download/34459)
   - Sénat, rapport n° 807, 1er juillet 2025 : voir 8.12. [Lien](https://www.senat.fr/rap/r24-807-1/r24-807-1-syn.pdf)
@@ -2001,8 +1881,8 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 **Qui soutient quoi.**
 
-- Gauche : la collecte n’a pas retenu de chiffrage indépendant des économies de dépense annoncées par la gauche sur ce thème.
-- Droite ou libéral :
+- Économistes, instituts et organisations :
+  - La collecte n’a pas retenu de chiffrage indépendant des économies de dépense annoncées par La France insoumise ou le Nouveau Front populaire sur ce thème.
   - Public Sénat (presse), 12 octobre 2026 : le plan des Républicains compte 197 Md€ « sur cinq ans », dont 56 Md€ rendus en baisses d’impôts, 25 Md€ pour 400 000 postes, un déficit sous 3 % en 2031 et 2,2 % en fin de mandat. Les lignes détaillées de l’État (environ 101 Md€) ne s’additionnent pas aux 96 Md€ affichés. [Lien](https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu)
   - Public Sénat (presse), 24 octobre 2025 : le contre-budget du Rassemblement national « manque de crédibilité économique » (François Ecalle, Fipeco, et E. Delannoy). Le HCFP dit qu’il ne peut pas juger le programme crédible. [Lien](https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale)
   - Institut Montaigne (libéral-centriste), 5 juillet 2024 : une baisse de TVA sur l’énergie de 20 % à 5,5 % (Rassemblement national) coûterait plus de 11 Md€. [Lien](https://www.institutmontaigne.org/communiques-de-presse/legislatives-2024-chiffrage-global-des-programmes)
@@ -2014,19 +1894,19 @@ Les camps politiques citent souvent des sommes « faciles » à trouver. Cette s
 
 ### 8.15 Faut-il d’abord des économies ou des recettes ? Le renvoi du chapitre 5
 
-**Ce que dit le site.** Le chapitre 5 ne liste aucune « économie facile » : il renvoie à la page du chapitre 7, qui traite tous les camps de la même façon.
+**Ce que dit le site.** Le chapitre 5 ne liste aucune « économie facile » : il renvoie à la page du chapitre 7, qui traite toutes les promesses de la même façon.
 
 **Qui soutient quoi.**
 
-- Gauche :
+- Économistes, instituts et organisations :
   - Terra Nova (centre gauche), G. Hannezo, 20 septembre 2024 : taxer les plus fortunés pourrait rapporter de 10 à 15 Md€, une contribution notable mais minoritaire à l’effort d’environ 100 Md€. [Lien](https://tnova.fr/site/assets/files/67145/terra_nova_-_quel_rendement_peut-on_reellement_attendre_de_la_taxation_des_plus_fortunes.pdf?1kkund)
   - Attac (association altermondialiste), avec l’Observatoire de la justice fiscale et le CADTM, 26 mars 2025 : les baisses d’impôts et de prélèvements depuis 2017 ont coûté au moins 308,62 Md€ sur 2018-2023, soit environ 35 % de la hausse de la dette. C’est une estimation propre aux auteurs. [Lien](https://france.attac.org/nos-publications/notes-et-rapports/article/rapport-la-dette-de-l-injustice-fiscale)
-- Droite ou libéral : Institut Montaigne (libéral-centriste), 26 novembre 2025, *Budget base zéro* : 140 Md€ d’économies nécessaires d’ici 2029 pour stabiliser la dette. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte)
+  - Institut Montaigne (libéral-centriste), 26 novembre 2025, *Budget base zéro* : 140 Md€ d’économies nécessaires d’ici 2029 pour stabiliser la dette. [Lien](https://institutmontaigne.org/communiques-de-presse/budget-base-zero-decider-sous-la-contrainte)
 - Institutions :
   - Cour des comptes (juridiction financière), 25 juin 2026 : la dépense primaire doit baisser de 0,5 % par an en volume ; déficit sous 3 % en 2029. [Lien](https://www.ccomptes.fr/fr/publications/la-situation-et-les-perspectives-des-finances-publiques-17)
   - Mission de l’Inspection générale des finances, juillet 2026 : l’effort doit être partagé ; il serait « illusoire » de le concentrer sur une minorité comme les ultra-riches. [Lien](https://www.igf.gouv.fr/files/igf/files/contributed/Rapports%20de%20mission/2026/Transparence-finances-publiques.pdf)
 
-**Où se situe le site, et pourquoi.** Il ne choisit pas : il renvoie à une page qui doit lister les fourchettes de chaque camp, pas le chiffre d’un seul. Ces positions montrent pourquoi ce choix est nécessaire : les camps ne s’accordent pas sur le levier principal. La collecte n’a pas ouvert de document d’économies de la Fondation iFRAP pour 2026.
+**Où se situe le site, et pourquoi.** Il ne choisit pas : il renvoie à une page qui doit lister toutes les fourchettes, pas le chiffre d’une seule source. Ces positions montrent pourquoi ce choix est nécessaire : les sources ne s’accordent pas sur le levier principal. La collecte n’a pas ouvert de document d’économies de la Fondation iFRAP pour 2026.
 
 **Chapitres :** [5, « Pour aller plus loin »](../site/chapitres/05-dette-et-interets.md) ; [7, étapes 8 et 9](../site/chapitres/07-les-choix.md).
 

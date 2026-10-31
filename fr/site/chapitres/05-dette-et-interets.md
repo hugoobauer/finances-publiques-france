@@ -56,7 +56,7 @@ statut: brouillon pour relecture éditoriale (30 octobre 2026, confrontation aux
 
 > Chaque année, le déficit remplit la baignoire : 151,6 milliards d’euros en 2025, soit 5,1 % du PIB [[fig:deficit_2025_eur_bn]] [[fig:deficit_2025_pct_gdp]] (chapitre 4). Le dernier excédent des administrations publiques remonte à 1974 [[fig:last_surplus_year]].
 >
-> Le déficit est l’écart entre les dépenses et les recettes. Les camps débattent de la part de chacune dans sa hausse (chapitre 4).
+> Le déficit est l’écart entre les dépenses et les recettes. Les économistes débattent de la part de chacune dans sa hausse (chapitre 4).
 
 **Visuel** : la baignoire de l’étape 2, robinet ouvert (pas de ruban calendrier : le bloc « 32,3 jours » appartient au chapitre 1). Compteur discret : « … € dépensés de plus que reçus pendant votre lecture (moyenne de 2025) », sur la base d’**environ 4 800 € par seconde** [[yard:deficit_per_second_eur]], mention « illustratif ».
 
@@ -187,7 +187,7 @@ statut: brouillon pour relecture éditoriale (30 octobre 2026, confrontation aux
 >
 > Ils atteindraient **environ 91 milliards** en 2027 [[fig:interest_2027f_eur_bn]]. C’est **25,3 milliards d’euros** de plus en deux ans [[yard:interest_rise_2025_2027_eur_bn]], **5,4 jours** de dépense publique [[calc:interest_rise_2025_2027_eur_bn / yard:one_day_spending_eur_bn = 5,4]]. Pour notre ménage, de **126 €** à environ **175 €** par mois [[calc:interest_2027f_eur_bn × yard:household_scale_eur_per_month_per_bn = 175]].
 >
-> Au chapitre 7, cette hausse sert d’étalon pour mesurer les promesses de tous les camps, avec la même règle. C’est un repère de taille, pas l’effort nécessaire : stabiliser la dette demande bien plus (étape 11).
+> Au chapitre 7, cette hausse sert d’étalon pour mesurer toutes les promesses, avec la même règle. C’est un repère de taille, pas l’effort nécessaire : stabiliser la dette demande bien plus (étape 11).
 
 **Visuel** : barres 2025, 2026 (prév.), 2027 (prév.) en Md€ ; la hausse (25,3) devient une barre étalon (les promesses sont comparées à cet étalon au chapitre 7, pas ici). Mention : « 2026 et 2027 : prévisions du gouvernement (PLF 2027). Conversions avec les dénominateurs de 2025 : ordre de grandeur. »
 
@@ -211,7 +211,7 @@ statut: brouillon pour relecture éditoriale (30 octobre 2026, confrontation aux
 >
 > Les agences de notation évaluent le risque qu’un emprunteur ne rembourse pas. En 2025, Fitch et S&P ont abaissé la note de la France d’un cran, de AA- à A+. Moody’s l’a placée sous perspective négative [[fig:credit_ratings_oct2026]].
 >
-> En octobre 2026, la France est notée **Aa3** par Moody’s, perspective négative, et **A+** par S&P et par Fitch, perspective stable [[fig:credit_ratings_oct2026]]. C’est **3 niveaux** sous la meilleure note chez Moody’s [[fig:rating_moodys_oct2026_notches]] et **4 niveaux** chez S&P [[fig:rating_sp_oct2026_notches]] et Fitch [[fig:rating_fitch_oct2026_notches]].
+> En octobre 2026, la France est notée **Aa3** par Moody’s, perspective négative. Elle est notée **A+** par S&P (perspective stable) et par Fitch (perspective négative depuis le 30 octobre) [[fig:credit_ratings_oct2026]]. C’est **3 niveaux** sous la meilleure note chez Moody’s [[fig:rating_moodys_oct2026_notches]] et **4 niveaux** chez S&P [[fig:rating_sp_oct2026_notches]] et Fitch [[fig:rating_fitch_oct2026_notches]].
 
 **Visuel**
 - Courbe mensuelle de l’écart OAT-Bund (Eurostat, 1993 à septembre 2026), axe « en points de base », ligne pointillée à 154 ; le 22 octobre 2026 (169) en **losange distinct**, légende « valeur d’un jour (clôture), pas une moyenne mensuelle : comparaison indicative ». Le losange porte une barre d’incertitude seulement quand la marge (fichier 06, §3.4 : environ 5 points de base entre séries) aura une fiche dans `figures.json`. Données : `research/data/eurostat_irt_lt_mcby_m_10y_yields_monthly.csv`.
@@ -342,6 +342,13 @@ statut: brouillon pour relecture éditoriale (30 octobre 2026, confrontation aux
 - Chiffres de marché et notation datés de la semaine du 22 octobre 2026 : à actualiser à chaque version des données (prochaine revue S&P : 27 novembre 2026, d’après l’AFT).
 
 ---
+
+## Notes de relecture (31 octobre 2026, non publiées)
+
+### Passe du 31 octobre 2026 : pas d’étiquette de camp sur les idées
+
+- Décision du 31 octobre 2026 (glossaire §1.13, règle 8) : étape 3, « Les camps débattent de la part de chacune… » → « Les économistes débattent de la part de chacune… » ; étape 9, « les promesses de tous les camps » → « toutes les promesses ». Chiffres et pastilles inchangés.
+- Contrôle : `validate.py --strict` PASS ; 2 173 mots visibles (2 176 avant).
 
 ## Notes de relecture (30 octobre 2026, non publiées)
 
