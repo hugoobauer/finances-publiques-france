@@ -462,7 +462,7 @@ Chaque ligne manque aujourd'hui d'identifiant et bloque une comparaison ou une c
 
 ### 7.2 Points à trancher
 
-1. **Tri des fourchettes :** borne haute (retenue ici) ou milieu de la fourchette ? La borne haute place en tête les cartes dont la fourchette est la plus large (`aides-entreprises-supprimer`) ; le milieu serait plus stable mais demande un choix de « centre » pour les estimations qui n'en ont pas.
+1. ~~**Tri des fourchettes**~~ : tranché le 31 octobre 2026, tri sur le milieu de la fourchette (§1, règle 2).
 2. **Cartes dont le montant est un constat** (hausse des intérêts, hausse de la dépense depuis 2019) : les classer avec les mesures, comme ici, ou les mettre avec les cartes sans montant ?
 3. **Unité des pages de sujet qui ne portent pas sur une dépense** (Impôts, Prix, Immigration) : la « part de la dépense publique » du fichier 01 (§5) ne convient pas ; proposition dans chaque fiche. Pour Retraites : une seule convention pour le calendrier (COR ou COFOG).
 4. **Montants cumulés sur cinq ans** (plans LR, `lr_pensions`, `lr_unemployment`) : ne les comparer au déficit annuel qu'une fois ramenés à une année, avec la règle de montée en charge de `proposals.json` ; d'ici là, la carte n'affiche pas de part du déficit pour eux.

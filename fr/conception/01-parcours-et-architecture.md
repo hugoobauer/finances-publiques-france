@@ -127,7 +127,7 @@ Point à trancher : le % du PIB est l'unité des comparaisons internationales, m
 
 1. **Le fait** (titre) et trois chiffres : montant, part de la dépense, comparaison UE en une ligne.
 2. **La taille** : calendrier ou barre (une seule image).
-3. **« Oui, mais… »** : 4 à 8 cartes, chacune avec la phrase entendue, une ligne de réponse et une mini-barre (part du déficit). Pas d'étiquette de camp ; l'ordre des cartes est tiré au sort à chaque visite, pour ne favoriser aucun camp par la position.
+3. **« Oui, mais… »** : 4 à 8 cartes, chacune avec la phrase entendue, une ligne de réponse et une mini-barre (part du déficit). Pas d'étiquette de camp ; cartes classées par montant (milieu de la fourchette), règle affichée (§8).
 4. **« Et ailleurs ? »**.
 5. **Pour aller plus loin** : chapitre lié, sources.
 
