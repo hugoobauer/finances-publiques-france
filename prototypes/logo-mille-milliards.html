@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Logo Mille milliards</title>
+<meta name="description" content="Logo du site Mille milliards : grille 9 × 9 aux couleurs du drapeau, variantes et usages. Document de travail, 31 octobre 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+:root {
+  --paper: #F7F6F2; --surface: #FFFFFF; --ink: #16181D; --muted: #5A5F69; --line: #DEDCD5;
+  --accent: #3A3FB8;
+  --f-bleu: #0055A4; --f-blanc: #E3E1DA; --f-blanc-line: #A9A79F; --f-rouge: #EF4135;
+  --f-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-display: "Instrument Serif", Georgia, serif;
+  --f-num: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+    --accent: #A5A9FF;
+    --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #C9C7C0; --f-rouge: #F0605A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36;
+  --accent: #A5A9FF;
+  --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #C9C7C0; --f-rouge: #F0605A;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-sans); overflow-x: hidden; }
+h1, h2, h3, p, ul { margin: 0; }
+h1, h2 { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.08; text-wrap: balance; }
+h1 { font-size: clamp(38px, 9vw, 64px); }
+h2 { font-size: clamp(28px, 5.5vw, 38px); }
+h3 { font: 600 18px/1.3 var(--f-sans); }
+p { max-width: 64ch; text-wrap: pretty; }
+.muted { color: var(--muted); } .small { font-size: 14px; line-height: 1.5; }
+.mono { font-family: var(--f-num); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.eyebrow { font: 500 12px/1.4 var(--f-sans); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+section { padding-block: 48px 0; display: flex; flex-direction: column; gap: 16px; }
+.head { border-top: 1px solid var(--line); padding-top: 16px; display: flex; gap: 12px; align-items: baseline; }
+.head .n { font: 500 13px var(--f-num); color: var(--muted); }
+
+/* site header mock */
+header.site { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.site .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; }
+.lock { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font: 600 18px/1 var(--f-sans); letter-spacing: -0.03em; white-space: nowrap; text-decoration: none; }
+.lock svg { flex: none; }
+nav.main { display: flex; gap: 22px; font-size: 15px; font-weight: 500; }
+nav.main a { color: var(--muted); text-decoration: none; padding-block: 18px; position: relative; }
+nav.main a[aria-current="page"] { color: var(--ink); }
+nav.main a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 12px; height: 1px; background: var(--ink); }
+@media (max-width: 640px) { nav.main { display: none; } }
+.toggle { all: unset; cursor: pointer; font: 500 13px/1 var(--f-sans); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; }
+.toggle:hover { color: var(--ink); border-color: var(--muted); }
+.toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.hero { padding-block: 44px 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px; align-items: center; }
+@media (max-width: 640px) { .hero { grid-template-columns: 1fr; } .hero .mark { order: -1; } }
+.hero .lede { font-size: 19px; line-height: 1.55; color: var(--muted); margin-top: 14px; }
+.hero .tag { font-family: var(--f-display); font-style: italic; font-size: clamp(22px, 4vw, 28px); margin-top: 10px; }
+
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card .stage { display: grid; place-items: center; min-height: 150px; }
+.card .k { font: 500 12px/1 var(--f-num); color: var(--muted); }
+.card .k b { color: var(--ink); font-weight: 600; }
+.card.fav { border-color: var(--ink); }
+
+.sizes { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: flex-end; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+.sizes figure { margin: 0; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.sizes figcaption { font: 500 11px/1.3 var(--f-num); color: var(--muted); }
+.tab { display: inline-flex; align-items: center; gap: 7px; background: var(--paper); border: 1px solid var(--line); border-bottom: 0; border-radius: 8px 8px 0 0; padding: 7px 12px; font-size: 12px; }
+.app { width: 64px; height: 64px; border-radius: 15px; background: var(--surface); border: 1px solid var(--line); display: grid; place-items: center; }
+.app.dark { background: #16181D; border-color: #16181D; }
+.inv { background: var(--ink); border-radius: 8px; padding: 12px 16px; display: inline-flex; }
+.inv .lock { color: var(--paper); }
+
+.rec { border-left: 2px solid var(--ink); padding: 4px 0 4px 16px; display: flex; flex-direction: column; gap: 10px; }
+ul.lines { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.taglines { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.taglines .card q { font-family: var(--f-display); font-size: 24px; line-height: 1.2; quotes: "« " " »"; }
+.demo { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: center; }
+@media (max-width: 560px) { .demo { grid-template-columns: 1fr; } }
+.demo .big { font: 500 clamp(28px, 6vw, 40px)/1 var(--f-num); letter-spacing: -0.03em; }
+.slider { display: flex; flex-wrap: wrap; gap: 8px; }
+.slider button { all: unset; cursor: pointer; font: 500 13px/1 var(--f-sans); padding: 0 12px; min-height: 40px; display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: var(--surface); box-sizing: border-box; }
+.slider button[aria-pressed="true"] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.slider button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="lock" href="#top"><span data-logo="flag" data-size="24"></span>Mille milliards</a>
+    <nav class="main" aria-label="Navigation (maquette)"><a href="#top" aria-current="page">Sujets</a><a href="#variantes">Réponses</a><a href="#simulateur">Simulateur</a></nav>
+    <button class="toggle" id="theme" type="button">Thème : auto</button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">Identité · nom retenu le 31 octobre 2026</span>
+      <h1>Mille milliards</h1>
+      <p class="tag">Ni naufrage, ni croisière.</p>
+      <p class="lede">Le capitaine Haddock empile des « mille milliards de mille sabords » ; un sabord est une ouverture dans la coque d'un navire. Le logo reprend l'idée avec mesure : une grille de 81 cases aux couleurs du drapeau, dont quelques-unes peuvent rester vides. On compte les trous, sans annoncer le naufrage.</p>
+    </div>
+    <div class="mark"><span data-logo="holes" data-size="168"></span></div>
+  </div>
+
+  <section id="variantes">
+    <div class="head"><span class="n">01</span><h2>La grille 9 × 9</h2></div>
+    <p class="muted small">Neuf colonnes, trois par couleur : 27 cases bleues, 27 blanches, 27 rouges. Le drapeau est fait de cases, sans être dessiné. Comme il porte le tricolore, le filet sous l'en-tête redevient un trait gris de 1 px (règle : un seul tricolore par écran).</p>
+    <div class="grid3">
+      <article class="card"><div class="stage"><span data-logo="flag" data-size="120"></span></div>
+        <div class="k"><b>A</b> · drapeau plein</div>
+        <p class="small">La grille complète. Le plus simple, le plus lisible.</p></article>
+      <article class="card fav"><div class="stage"><span data-logo="holes" data-size="120"></span></div>
+        <div class="k"><b>B</b> · avec sabords · ma préférence</div>
+        <p class="small">7 cases sur 81 sont ouvertes : c'est la part de la dépense publique de 2025 financée par l'emprunt (151,6 Md€ sur 1 714 Md€, soit 8,8 %). Le logo est un chiffre vrai, discret, et le clin d'œil à Haddock tient dans ces sept cases.</p></article>
+      <article class="card"><div class="stage" style="color:var(--ink)"><span data-logo="mono" data-size="120"></span></div>
+        <div class="k"><b>C</b> · une couleur</div>
+        <p class="small">Pour l'impression en noir, le tampon, la gravure. Les sabords se lisent encore.</p></article>
+    </div>
+  </section>
+
+  <section id="tailles">
+    <div class="head"><span class="n">02</span><h2>Aux petites tailles</h2></div>
+    <p class="muted small">Sous 24 px, 81 cases deviennent une texture. La grille passe alors à 3 × 3 : une case par bande de couleur et par tiers de hauteur. Le passage de 9 × 9 à 3 × 3 garde le même dessin, seulement moins fin.</p>
+    <div class="sizes">
+      <figure><span class="tab"><span data-logo="small" data-size="16"></span>Mille milliards</span><figcaption>onglet<br>16 px · 3 × 3</figcaption></figure>
+      <figure><span data-logo="small" data-size="24"></span><figcaption>24 px<br>3 × 3</figcaption></figure>
+      <figure><span data-logo="holes" data-size="32"></span><figcaption>32 px<br>9 × 9</figcaption></figure>
+      <figure><span data-logo="holes" data-size="48"></span><figcaption>48 px</figcaption></figure>
+      <figure><span class="app"><span data-logo="holes" data-size="42"></span></span><figcaption>icône<br>d'application</figcaption></figure>
+      <figure><span class="inv"><span class="lock"><span data-logo="holes" data-size="22"></span>Mille milliards</span></span><figcaption>sur encre</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="simulateur">
+    <div class="head"><span class="n">03</span><h2>L'idée, au-delà du logo</h2></div>
+    <p>Les sabords donnent une image simple du déficit, à condition de ne pas en faire une alarme. Trois usages possibles :</p>
+    <ul class="lines">
+      <li><b>Le simulateur.</b> La grille montre le budget ; chaque choix du lecteur ferme des sabords (économie ou recette) ou en ouvre (promesse non financée). Une baisse de dépense et une hausse d'impôt ferment les cases de la même façon : la grille ne dit pas laquelle choisir.</li>
+      <li><b>Les pages de réponse.</b> « Combien de sabords cette mesure ferme-t-elle ? » Une case vaut 21,2 Md€ : une mesure de 15 Md€ en ferme moins d'une.</li>
+      <li><b>Le ton.</b> Le site rappelle aussi que la France reste notée entre A+ et Aa3 et que sa dette est longue (8 ans et demi de durée moyenne pour l'État) : une coque percée n'est pas un navire qui coule. D'où la signature « Ni naufrage, ni croisière ».</li>
+    </ul>
+    <div class="card">
+      <span class="eyebrow">Essai : combien de sabords fermés ?</span>
+      <div class="demo">
+        <span data-logo="holes" data-size="132" id="demo-logo"></span>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div class="big" id="demo-big">7 sabords ouverts</div>
+          <p class="small muted" id="demo-text">Sans mesure, 7 cases sur 81 : 151,6 Md€ empruntés en 2025.</p>
+          <div class="slider" id="demo-btns" role="group" aria-label="Montant de la mesure">
+            <button type="button" data-v="0" aria-pressed="true">aucune mesure</button>
+            <button type="button" data-v="15">15 Md€</button>
+            <button type="button" data-v="50">50 Md€</button>
+            <button type="button" data-v="100">100 Md€</button>
+          </div>
+        </div>
+      </div>
+      <p class="small muted">Une case = 1/81 de la dépense publique 2025, soit 21,2 Md€ ; nombre de cases arrondi. Montants illustratifs, sans mesure particulière.</p>
+    </div>
+  </section>
+
+  <section id="signature">
+    <div class="head"><span class="n">04</span><h2>Signatures possibles</h2></div>
+    <div class="taglines">
+      <article class="card fav"><q>Ni naufrage, ni croisière.</q><p class="small muted">Reprend l'image du navire et dit l'équilibre : ni catastrophe, ni « tout va bien ». Ma préférence.</p></article>
+      <article class="card"><q>Les finances publiques, toutes proportions gardées.</q><p class="small muted">Plus explicite, sans référence au navire. Bon sous-titre pour le référencement.</p></article>
+      <article class="card"><q>Mille milliards… de quoi, au juste ?</q><p class="small muted">Ton plus joueur ; marche pour une campagne ou une page d'accueil, moins comme signature durable.</p></article>
+    </div>
+  </section>
+
+  <section id="reserves">
+    <div class="head"><span class="n">05</span><h2>Précautions</h2></div>
+    <ul class="lines small">
+      <li><b>Droits sur Tintin.</b> Le juron est cité, rien d'autre : pas de dessin, de nom ou de silhouette du capitaine, pas de navire inspiré d'Hergé. Les ayants droit (Moulinsart) défendent activement l'univers de Tintin. Une page « Pourquoi ce nom » peut citer la réplique avec sa source.</li>
+      <li><b>Marques.</b> Vérifier « Mille milliards » dans la base des marques de l'INPI avant de réserver <span class="mono">millemilliards.fr</span> et <span class="mono">.com</span> (libres le 31 octobre 2026) et les comptes sur les réseaux sociaux.</li>
+      <li><b>Le chiffre du logo.</b> Si l'on garde les sept sabords, ils suivent le déficit : à revoir chaque printemps, à la notification d'Eurostat (6 cases si le déficit 2026 passe sous 138 Md€ environ, à dépense égale).</li>
+      <li><b>Le blanc.</b> Sur fond clair, les cases « blanches » sont d'un gris très clair (#E3E1DA), sans contour, pour qu'on les distingue des sabords, qui sont en contour ; sur fond sombre, elles sont en blanc cassé. Sur une affiche à fond coloré, elles redeviennent blanches.</li>
+    </ul>
+  </section>
+
+  <footer>Document de travail, 31 octobre 2026 · <span class="mono">fr/conception/03-identite-visuelle.md</span>, §2</footer>
+</main>
+
+<script>
+(function () {
+  var NS = 'http://www.w3.org/2000/svg';
+  var COLS = ['var(--f-bleu)', 'var(--f-blanc)', 'var(--f-rouge)'];
+  var HOLES_DEFAULT = 7; // round(81 × 151.6 / 1714.1) = 7 (deficit / total spending, 2025)
+
+  // Holes are opened from the end of the bottom row, right to left, then the row above.
+  function holeSet(n) {
+    var s = {};
+    for (var k = 0; k < n; k++) { var idx = 80 - k; s[idx] = true; }
+    return s;
+  }
+  function svgGrid(kind, size, holes) {
+    var small = kind === 'small';
+    var n = small ? 3 : 9;
+    var cell = small ? 8.4 : 2.6, gap = small ? 1.4 : 0.6;
+    var span = n * cell + (n - 1) * gap, off = (32 - span) / 2;
+    var hs = kind === 'holes' || kind === 'mono' ? holeSet(holes == null ? HOLES_DEFAULT : holes) : {};
+    var svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 32 32'); svg.setAttribute('width', size); svg.setAttribute('height', size);
+    svg.setAttribute('aria-hidden', 'true');
+    for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) {
+      var band = Math.floor(c / (n / 3));
+      var rect = document.createElementNS(NS, 'rect');
+      var x = off + c * (cell + gap), y = off + r * (cell + gap);
+      var hole = hs[r * n + c];
+      var col = kind === 'mono' ? 'currentColor' : COLS[band];
+      var sw = small ? 0.9 : 0.42;
+      rect.setAttribute('width', (cell - (hole ? sw : 0)).toFixed(2)); rect.setAttribute('height', (cell - (hole ? sw : 0)).toFixed(2));
+      rect.setAttribute('x', (x + (hole ? sw / 2 : 0)).toFixed(2)); rect.setAttribute('y', (y + (hole ? sw / 2 : 0)).toFixed(2));
+      rect.setAttribute('rx', small ? '1' : '.3');
+      var st;
+      if (hole) {
+        st = 'fill:none;stroke:' + (kind !== 'mono' && band === 1 ? 'var(--f-blanc-line)' : col) + ';stroke-width:' + sw;
+      } else {
+        st = 'fill:' + col;
+      }
+      rect.setAttribute('style', st);
+      svg.appendChild(rect);
+    }
+    return svg;
+  }
+  function paint(el, holes) {
+    el.textContent = '';
+    el.appendChild(svgGrid(el.dataset.logo, +el.dataset.size, holes));
+    el.style.display = 'inline-flex';
+  }
+  document.querySelectorAll('[data-logo]').forEach(function (el) { paint(el); });
+
+  // Demo: one cell = 1/81 of 2025 spending
+  var CELL = 1714.1 / 81, DEF = 151.6;
+  var demo = document.getElementById('demo-logo');
+  document.getElementById('demo-btns').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-v]'); if (!b) return;
+    this.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
+    var v = +b.dataset.v, left = Math.max(0, DEF - v), holes = Math.round(left / CELL);
+    paint(demo, holes);
+    var fmt = function (x) { return x.toFixed(1).replace('.', ','); };
+    document.getElementById('demo-big').textContent = holes + (holes > 1 ? ' sabords ouverts' : holes === 1 ? ' sabord ouvert' : ' sabord ouvert');
+    document.getElementById('demo-text').textContent = v === 0
+      ? 'Sans mesure, 7 cases sur 81 : 151,6 Md€ empruntés en 2025.'
+      : 'Une mesure de ' + v + ' Md€ laisse ' + fmt(left) + ' Md€ à emprunter : ' + holes + ' case' + (holes > 1 ? 's' : '') + ' sur 81.';
+  });
+
+  // Theme toggle
+  var modes = ['auto', 'clair', 'sombre'], mi = 0;
+  try { mi = Math.max(0, modes.indexOf(localStorage.getItem('theme-mm') || 'auto')); } catch (e) {}
+  function apply() {
+    var m = modes[mi], r = document.documentElement;
+    if (m === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', m === 'clair' ? 'light' : 'dark');
+    document.getElementById('theme').textContent = 'Thème : ' + m;
+  }
+  document.getElementById('theme').addEventListener('click', function () { mi = (mi + 1) % 3; try { localStorage.setItem('theme-mm', modes[mi]); } catch (e) {} apply(); });
+  apply();
+})();
+</script>
+</body>
+</html>

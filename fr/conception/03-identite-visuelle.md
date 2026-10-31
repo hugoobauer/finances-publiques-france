@@ -27,7 +27,16 @@
 | E. Fléau de balance | balance réduite au fléau, légèrement penchée | Le Poids |
 | F. Dix puissance n | monogramme « 10ⁿ » en chasse fixe | Mille milliards |
 
-**Recommandation (à valider).** « Mille milliards » avec la règle logarithmique en encre ; second choix, « Mètre étalon » avec la cote. Signature possible : « Les finances publiques, toutes proportions gardées. »
+**Décision du 31 octobre 2026 : nom « Mille milliards ».** Le porteur du projet retient le nom et le clin d'œil au capitaine Haddock (« mille milliards de mille sabords » : un navire si percé qu'il devrait couler), « avec une certaine mesure ». Signature proposée : « Ni naufrage, ni croisière. » Précautions : citer la réplique, ne rien emprunter d'autre à l'univers de Tintin (dessin, personnage, navire) ; vérifier la marque à l'INPI avant de réserver `millemilliards.fr` et `.com` (libres le 31 octobre 2026).
+
+**Logo retenu : la grille, en 9 × 9 aux couleurs du drapeau** (demande du porteur du projet). Spécimen : `prototypes/logo-mille-milliards.html`.
+
+- 81 cases, trois colonnes par couleur (27 bleues, 27 blanches, 27 rouges). Sur fond clair, les cases blanches sont gris très clair (`#E3E1DA`), sans contour.
+- Variante recommandée, **« avec sabords »** : 7 cases sur 81 en contour seul, la part de la dépense publique 2025 financée par l'emprunt (151,6 Md€ sur 1 714,1 Md€, soit 8,8 % ; arrondi de 81 × 0,088 = 7,2). Les cases s'ouvrent depuis la fin de la dernière ligne. À mettre à jour chaque printemps avec la notification d'Eurostat.
+- Sous 24 px : grille 3 × 3 (une case par couleur et par tiers de hauteur).
+- Version une couleur pour l'impression.
+- Le logo porte le tricolore : le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran, §6).
+- Prolongement possible : dans le simulateur, chaque choix ferme ou ouvre des sabords ; une baisse de dépense et une hausse d'impôt ferment les cases de la même façon.
 
 ## 3. Couleurs
 
@@ -103,12 +112,12 @@ Règles : texte aligné à gauche, jamais justifié ; 64 caractères par ligne a
 
 | Oui (il signe le site) | Jamais (il porterait un sens) |
 |---|---|
-| Le logotype, seulement si la piste D est retenue (le filet d'en-tête devient alors gris). | Dans un graphique, une barre, une légende ou une carte de pays. |
-| Un filet de 2 px sous l'en-tête, en trois segments séparés par 2 px de vide. | Sur un bouton, une carte « Oui, mais… » ou une réponse. |
+| Le logotype (grille 9 × 9) et l'icône de l'onglet (grille 3 × 3). | Dans un graphique, une barre, une légende ou une carte de pays. |
+| ~~Un filet de 2 px sous l'en-tête~~ : remplacé par un trait gris de 1 px, puisque le logo porte déjà le tricolore. | Sur un bouton, une carte « Oui, mais… » ou une réponse. |
 | Jamais la rubrique active de la navigation (retirée le 31 octobre 2026). | Pour opposer deux idées, deux camps, une hausse et une baisse. |
 | Un filet en bas de l'image de partage sur les réseaux sociaux. | En aplat, en drapeau dessiné, en cocarde, avec une Marianne. |
 
-**Le blanc.** Sur fond clair, le segment blanc reçoit un filet gris de 0,5 px (`#B9B7AF`) pour rester visible ; sur fond sombre, il est en blanc cassé sans filet. **Dosage (revu le 31 octobre 2026)** : un seul tricolore par écran. Par défaut, c'est le filet d'en-tête ; le logo est en encre et la rubrique active est soulignée d'un filet d'encre de 1 px.
+**Le blanc.** Sur fond clair, le segment blanc reçoit un filet gris de 0,5 px (`#B9B7AF`) pour rester visible ; sur fond sombre, il est en blanc cassé sans filet. **Dosage (revu le 31 octobre 2026)** : un seul tricolore par écran. C'est le logo (grille 9 × 9) ; le filet d'en-tête est gris et la rubrique active est soulignée d'un filet d'encre de 1 px.
 
 ## 7. Graphiques
 
@@ -158,7 +167,7 @@ Le site suit le réglage du téléphone (`prefers-color-scheme`) et propose un b
 
 ## 12. Points à trancher
 
-1. **Nom et logo** : choisir parmi les pistes de `prototypes/nom-et-logo.html`, puis vérifier les marques (INPI) et réserver domaine et comptes.
+1. **Nom et logo** : « Mille milliards » et grille 9 × 9 retenus (31 octobre 2026) ; reste à choisir entre drapeau plein et « avec sabords », vérifier la marque (INPI), réserver domaine et comptes.
 2. **Polices** : confirmer Instrument Sans après un test de lecture sur téléphone auprès de quelques lecteurs B1 ; repli possible, Atkinson Hyperlegible Next.
 3. **Indigo d'interaction** : il reste éloigné du bleu du drapeau, mais un lecteur pourrait y voir du bleu. Variante possible : liens en encre soulignés.
 4. **Calendrier** : il combine une part par fonction (COFOG 2024) et le déficit 2025 ; à aligner sur le même millésime quand l'Insee publiera la COFOG 2025 (décembre 2026).
