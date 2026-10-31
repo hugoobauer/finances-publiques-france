@@ -206,12 +206,14 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
       var order = (n - 1 - r) * n + c; // bottom row first, left to right
       var on = order < filled, band = Math.floor(c / (n / 3));
       var rect = document.createElementNS(NS, 'rect');
-      rect.setAttribute('x', (off + c * (cell + gap)).toFixed(2)); rect.setAttribute('y', (off + r * (cell + gap)).toFixed(2));
-      rect.setAttribute('width', cell); rect.setAttribute('height', cell); rect.setAttribute('rx', small ? '1.2' : '.45');
+      // A stroked cell is drawn inset by half its stroke so its outer edge matches the unstroked cells (equal gaps).
+      var sw = (on && kind !== 'mono' && band === 1) ? (small ? .7 : .3) : 0;
+      rect.setAttribute('x', (off + c * (cell + gap) + sw / 2).toFixed(3)); rect.setAttribute('y', (off + r * (cell + gap) + sw / 2).toFixed(3));
+      rect.setAttribute('width', (cell - sw).toFixed(3)); rect.setAttribute('height', (cell - sw).toFixed(3)); rect.setAttribute('rx', small ? '1.2' : '.45');
       var st;
       if (!on) st = 'fill:var(--empty)';
       else if (kind === 'mono') st = 'fill:currentColor';
-      else st = 'fill:' + COLS[band] + (band === 1 ? ';stroke:var(--f-blanc-line);stroke-width:' + (small ? '.7' : '.3') : '');
+      else st = 'fill:' + COLS[band] + (sw ? ';stroke:var(--f-blanc-line);stroke-width:' + sw : '');
       rect.setAttribute('style', st);
       svg.appendChild(rect);
     }
