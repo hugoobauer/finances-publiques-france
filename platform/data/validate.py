@@ -57,6 +57,23 @@ Checks (errors make the exit code 1; warnings do not):
      id with the same number is still reported. The file is validated (data error if malformed or if
      an id does not resolve), every applied exemption is listed as INFO, and an entry that matches no
      finding is reported as a stale-exemption warning (with --strict too: it is a warning, not an error).
+ 11. Answer pages (fr/site/reponses/*.md; files starting with "_", such as _modele.md, are templates and
+     skipped; format: fr/conception/05-pages-de-reponse.md). Problems are prefixed "reponses/".
+     - Check 8 (chip resolution, placeholders) as for chapters.
+     - Check 9 lints on the displayed text, same codes and severities, except: word-count bounds are
+       300-900 (strict); the chapter-plan lints are skipped (title, step-heading, chapter-ref,
+       reading-time, box-*, box-balance, estimate-*, quiz-rounding, stale-exemption). Cross-page lints
+       (rounding, same-number-ids, orientation) compare answer pages among themselves only.
+     - [answer-meta] (strict): the file must open with a <!-- page … --> comment holding slug, phrase
+       and sujets; slug must equal the file name; montant (if any) must be a figures, yardsticks or
+       proposals id; levier (if any) must list simulator-levers ids. Warnings: a sujets entry that is
+       not a subject slug of fr/conception/04-sujets-et-objections.md; an H1 that differs from phrase.
+     - [answer-structure] (strict): the displayed text must hold, once each and in this order,
+       « # « … » » (first displayed line), « **En bref.** », « ## Ce qui est vrai », « ## Combien »,
+       « ## Les limites », « ## Qui dit quoi », « ## Et ailleurs ? »; each of these sections must have
+       displayed text. Another H2 is a warning.
+     Options: --no-reponses (skip), --reponses PATH (a directory or a single answer page).
+     Single page: python3 -I platform/data/validate.py --strict --reponses fr/site/reponses/<slug>.md
 """
 import argparse
 import ast
@@ -73,6 +90,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 RESEARCH = os.path.normpath(os.path.join(HERE, "..", "..", "research"))
 CHAPTERS = os.path.normpath(os.path.join(HERE, "..", "..", "fr", "site", "chapitres"))
+REPONSES = os.path.normpath(os.path.join(HERE, "..", "..", "fr", "site", "reponses"))
 TOL = 0.005  # 0.5 %
 
 DATASETS = {
@@ -852,6 +870,24 @@ def check_chapters(data):
     if not os.path.isdir(CHAPTERS):
         warn(f"chapters: directory not found: {CHAPTERS}")
         return 0, 0
+    return check_chips(data, CHAPTERS, chapter_files(CHAPTERS), "chapters")
+
+
+def chapter_files(directory):
+    return [f for f in sorted(os.listdir(directory)) if f.endswith(".md")]
+
+
+def answer_files(path):
+    """Answer pages: every *.md of the directory except templates ("_modele.md"); or one file."""
+    if os.path.isfile(path):
+        return os.path.dirname(path), [os.path.basename(path)]
+    if not os.path.isdir(path):
+        return path, []
+    return path, [f for f in sorted(os.listdir(path)) if f.endswith(".md") and not f.startswith("_")]
+
+
+def check_chips(data, directory, files, prefix):
+    """Check 8 on a list of files of one directory; problems are reported as '<prefix>/<file>:<line>'."""
     figs = {f["id"] for f in data["figures"]["figures"]}
     tables = {t["id"] for t in data["figures"].get("rating_tables", [])}
     ys = {y["id"] for y in data["yardsticks"]["yardsticks"]}
@@ -863,13 +899,11 @@ def check_chapters(data):
     calc_pool = figs | ys | params | {f["id"] + s for f in data["figures"]["figures"] if f.get("range")
                                       for s in ("__low", "__high")}
     n_chips = n_err = 0
-    for fname in sorted(os.listdir(CHAPTERS)):
-        if not fname.endswith(".md"):
-            continue
-        with open(os.path.join(CHAPTERS, fname), encoding="utf-8") as fh:
+    for fname in files:
+        with open(os.path.join(directory, fname), encoding="utf-8") as fh:
             text = _strip_comments_and_code(fh.read())
         for lineno, line in enumerate(text.splitlines(), 1):
-            where = f"chapters/{fname}:{lineno}"
+            where = f"{prefix}/{fname}:{lineno}"
             if PLACEHOLDER.search(line):
                 err(f"{where}: placeholder 'EN ATTENTE DE DONNÉES' remains")
                 n_err += 1
@@ -902,7 +936,7 @@ def check_chapters(data):
                 else:
                     err(f"{where}: unknown chip type [[{kind}:{ref}]]")
                     n_err += 1
-    INFO.append(f"chapters: {n_chips} chips checked in {CHAPTERS}")
+    INFO.append(f"{prefix}: {n_chips} chips checked in {directory}")
     return n_chips, n_err
 
 
@@ -1525,12 +1559,174 @@ def word_count(s):
 
 
 # ----------------------------------------------------------------- the lint pass
+def _same_value_ids(pg, P, page_disp):
+    if "coïncidence" in pg.raw:
+        return
+    seen = {}
+    for ln, key, t, info in page_disp:
+        if t.kind in ("ordinal", "date") or t.value < 10:
+            continue
+        for (ln2, key2, t2) in seen.get(t.unit, []):
+            if key2 != key and t2.text != t.text:
+                k = min(t.dec, t2.dec)
+                if _rounds_to(t.value, round(t2.value, k), k) and _rounds_to(t2.value, round(t.value, k), k) \
+                        and abs(t.value - t2.value) > 1e-9:
+                    lint("warn", "same-value-ids", f"{P}:{ln}",
+                         f"{t.text} {t.unit} ({key}) and {t2.text} {t2.unit} ({key2}, l.{ln2}) look like "
+                         f"the same number; add a « coïncidence » note or align them")
+        seen.setdefault(t.unit, []).append((ln, key, t))
+
+
+def _symmetry_gate(pg, P, idx):
+    for i, line in enumerate(pg.raw_lines, 1):
+        for m in SYM_GATE.finditer(line):
+            missing = [x for x in re.split(r"[\s,]+", m.group(1).replace("ids=", "")) if x and not idx.exists(x)]
+            if missing:
+                lint("warn", "symmetry-gate", f"{P}:{i}", f"publication gate: {(m.group(2) or '').strip(' -') or 'claim'}"
+                                                         f" waits for data id(s) {', '.join(missing)}")
+
+
+# ----------------------------------------------------------------- 11. answer pages (structure and metadata)
+ANSWER_WORDS_MIN, ANSWER_WORDS_MAX = 300, 900
+ANSWER_META = re.compile(r"\A\s*<!--\s*page\b(.*?)-->", re.S)
+ANSWER_TITLE = re.compile(r"^#\s+«[\s  ]*\S.*?[\s  ]*»\s*$")
+ANSWER_SECTIONS = ("Ce qui est vrai", "Combien", "Les limites", "Qui dit quoi", "Et ailleurs ?")
+SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+
+def _heading_key(s):
+    s = re.sub(r"[\s  ]+", " ", s).strip()
+    return re.sub(r" ?([?!:;])", r" \1", s)
+
+
+def subject_slugs():
+    """Subject slugs of fr/conception/04-sujets-et-objections.md (« ### Sujet N : … (`slug`) »)."""
+    p = os.path.normpath(os.path.join(HERE, "..", "..", "fr", "conception", "04-sujets-et-objections.md"))
+    try:
+        txt = open(p, encoding="utf-8").read()
+    except OSError:
+        return None
+    return set(re.findall(r"^### Sujet \d+ : .*\(`([a-z0-9-]+)`\)\s*$", txt, re.M))
+
+
+def check_answer_page(pg, data, P):
+    """[answer-meta] leading <!-- page --> comment; [answer-structure] displayed headings in order."""
+    # --- metadata
+    m = ANSWER_META.match(pg.raw)
+    meta = {}
+    if not m:
+        lint("strict", "answer-meta", P, "no leading <!-- page … --> metadata comment (slug, phrase, sujets, …)")
+    else:
+        for line in m.group(1).splitlines():
+            kv = re.match(r"^\s*([a-z_]+)\s*:\s*(.*?)\s*$", line)
+            if kv:
+                meta[kv.group(1)] = kv.group(2)
+        for k in ("slug", "phrase", "sujets"):
+            if not meta.get(k):
+                lint("strict", "answer-meta", P, f"<!-- page --> lacks '{k}:'")
+        slug = meta.get("slug", "")
+        if slug and slug != pg.fname[:-3]:
+            lint("strict", "answer-meta", P, f"slug '{slug}' differs from the file name ({pg.fname[:-3]})")
+        elif slug and not SLUG.match(slug):
+            lint("strict", "answer-meta", P, f"slug '{slug}' must be lowercase words joined by hyphens")
+        mont = meta.get("montant", "")
+        if mont:
+            pools = {f["id"] for f in data["figures"]["figures"]} | \
+                    {y["id"] for y in data["yardsticks"]["yardsticks"]} | \
+                    {p["id"] for p in data["yardsticks"].get("parameters", [])} | \
+                    {p["id"] for p in data["proposals"]["proposals"]}
+            if mont not in pools:
+                lint("strict", "answer-meta", P, f"montant '{mont}' is not a figures/yardsticks/proposals id")
+        levers = {lv["id"] for lv in data["levers"]["levers"]}
+        bad = [x for x in re.split(r"[\s,]+", meta.get("levier", "")) if x and x not in levers]
+        if bad:
+            lint("strict", "answer-meta", P, f"levier: unknown simulator lever id(s) {', '.join(bad)}")
+        known = subject_slugs()
+        if known and meta.get("sujets"):
+            unknown = [x for x in re.split(r"[\s,]+", meta["sujets"]) if x and x not in known]
+            if unknown:
+                lint("warn", "answer-meta", P, f"sujets: {', '.join(unknown)} not among the subject slugs of "
+                                               f"fr/conception/04-sujets-et-objections.md")
+    # --- structure of the displayed text
+    expected = ["title", "en-bref"] + [_heading_key(s) for s in ANSWER_SECTIONS]
+    labels = {"title": "« # « … » » title", "en-bref": "« **En bref.** » paragraph"}
+    found, order = {}, []
+    first_text = None
+    for ln, t in pg.disp:
+        s = t.strip()
+        if not s:
+            continue
+        if first_text is None:
+            first_text = (ln, s)
+        if s.startswith("# "):
+            if ANSWER_TITLE.match(s) and "title" not in found:
+                found["title"] = ln
+                order.append(("title", ln))
+                if meta.get("phrase") and _norm(re.sub(r"^#\s+«\s*|\s*»\s*$", "", s)).strip() != _norm(meta["phrase"]):
+                    lint("warn", "answer-meta", f"{P}:{ln}", "title differs from 'phrase:' in <!-- page -->")
+            else:
+                lint("strict", "answer-structure", f"{P}:{ln}", "only one H1, written « # « phrase entendue » »")
+        elif s.startswith("**En bref.**"):
+            if "en-bref" in found:
+                lint("strict", "answer-structure", f"{P}:{ln}", "second « **En bref.** » paragraph")
+            else:
+                found["en-bref"] = ln
+                order.append(("en-bref", ln))
+        elif re.match(r"^##\s", s):
+            k = _heading_key(s[2:])
+            if k in expected:
+                if k in found:
+                    lint("strict", "answer-structure", f"{P}:{ln}", f"« ## {k} » appears twice")
+                else:
+                    found[k] = ln
+                    order.append((k, ln))
+            elif not s.startswith("###"):
+                lint("warn", "answer-structure", f"{P}:{ln}", f"unexpected section « {s} » (spec §2: "
+                                                             f"{', '.join(ANSWER_SECTIONS)})")
+    for k in expected:
+        if k not in found:
+            lint("strict", "answer-structure", P, f"missing {labels.get(k, '« ## ' + k + ' »')}")
+    seq = [k for k, _ in order]
+    want = [k for k in expected if k in found]
+    if seq != want:
+        lint("strict", "answer-structure", P, "sections out of order: " + " → ".join(seq) +
+             " (expected: " + " → ".join(want) + ")")
+    if first_text and "title" in found and first_text[0] != found["title"]:
+        lint("strict", "answer-structure", f"{P}:{first_text[0]}", "displayed text must start with the « # « … » » title")
+    # every required section has displayed text (« Ce qui est vrai » is never empty)
+    heads = sorted((ln, k) for k, ln in found.items() if k not in ("title", "en-bref"))
+    disp_lines = [(ln, t.strip()) for ln, t in pg.disp if t.strip()]
+    for i, (ln, k) in enumerate(heads):
+        end = heads[i + 1][0] if i + 1 < len(heads) else float("inf")
+        body = [t for l2, t in disp_lines if ln < l2 < end and not re.match(r"^#{1,6}\s", t)]
+        if not body:
+            lint("strict", "answer-structure", f"{P}:{ln}", f"section « ## {k} » has no displayed text")
+
+
 def check_chapter_lints(data):
     if not os.path.isdir(CHAPTERS):
         return
+    pages = [Page(os.path.join(CHAPTERS, f)) for f in chapter_files(CHAPTERS)]
+    lint_pages(data, pages, "chapters", answer=False)
+
+
+def check_answer_lints(data, directory, files):
+    pages = [Page(os.path.join(directory, f)) for f in files]
+    lint_pages(data, pages, "reponses", answer=True)
+
+
+def lint_pages(data, pages, prefix, answer):
+    """Check 9 on chapters (answer=False) or check 11 on answer pages (answer=True).
+
+    Answer pages share the numeric and editorial lints; the chapter-plan lints (title, step-heading,
+    chapter-ref, reading-time, box-*, estimate-*, box balance, quiz-rounding, stale exemptions) are
+    skipped, the word bounds are ANSWER_WORDS_MIN-ANSWER_WORDS_MAX, and answer-meta / answer-structure
+    are added. Cross-page checks (rounding, same-number-ids, orientation) run within the page set."""
+    LINT["counts"] = {}
     ref = load_references()
     idx = ChipIndex(data)
-    pages = [Page(os.path.join(CHAPTERS, f)) for f in sorted(os.listdir(CHAPTERS)) if f.endswith(".md")]
+    wmin, wmax = (ANSWER_WORDS_MIN, ANSWER_WORDS_MAX) if answer else (WORDS_MIN, WORDS_MAX)
+    across = "answer pages" if answer else "chapters"
     displays = {}      # (kind:id, which) -> [(page, line, text, dec, approx, unit)]
     by_value = {}      # (number text, unit) -> {(kind:id)}
     estimate = []      # (page, line, answer ids, answer tokens)
@@ -1538,7 +1734,9 @@ def check_chapter_lints(data):
     labels_used = {}   # body -> {label: [page]}
     words_total = {}
     for pg in pages:
-        P = f"chapters/{pg.fname}"
+        P = f"{prefix}/{pg.fname}"
+        if answer:
+            check_answer_page(pg, data, P)
         page_disp = []  # (line, chip key, tok text, value) for same-page collisions
         first_acr, first_body = set(), set()
         long_sent, long_para = [], []
@@ -1769,7 +1967,7 @@ def check_chapter_lints(data):
                         if not any(a <= m.start() and m.end() <= b for a, b in spans):
                             lint("warn", "typo-italics", W, f"publication title « {title} » should be in italics")
                             break
-                if re.search(r"meilleur contre-argument", sent, re.I) and re.match(r"^\*\*", sent.strip()):
+                if not answer and re.search(r"meilleur contre-argument", sent, re.I) and re.match(r"^\*\*", sent.strip()):
                     if not re.fullmatch(r"\*\*Le meilleur contre-argument\*\*", sent.strip()):
                         lint("warn", "box-title", W, "box title must be exactly **Le meilleur contre-argument** "
                                                      "(no guillemets, no suffix)")
@@ -1833,10 +2031,15 @@ def check_chapter_lints(data):
             if LINT["details"]:
                 for a, b in long_para:
                     lint("warn", "long-paragraph", f"{P}:{a}", f"paragraph of {b} words")
-        INFO.append(f"chapters/{pg.fname}: {n_words} visible words (target {WORDS_MIN}-{WORDS_MAX}); "
+        INFO.append(f"{P}: {n_words} visible words (target {wmin}-{wmax}); "
                     f"{src_only} displayed sentences backed only by [[src:]]")
-        if not WORDS_MIN <= n_words <= WORDS_MAX:
-            lint("strict", "word-count", P, f"{n_words} visible words, outside {WORDS_MIN}-{WORDS_MAX}")
+        if not wmin <= n_words <= wmax:
+            lint("strict", "word-count", P, f"{n_words} visible words, outside {wmin}-{wmax}")
+        if answer:
+            # same page: two ids with the same displayed value (kept); chapter-plan lints skipped
+            _same_value_ids(pg, P, page_disp)
+            _symmetry_gate(pg, P, idx)
+            continue
         expected = round(n_words / WORDS_PER_MIN)
         found = False
         for i, line in enumerate(pg.lines, 1):
@@ -1856,20 +2059,7 @@ def check_chapter_lints(data):
         if not found and not fm:
             lint("warn", "reading-time", P, f"no « Durée de lecture : environ {expected} minutes. » line")
         # --- same page: two ids with the same displayed value
-        if "coïncidence" not in pg.raw:
-            seen = {}
-            for ln, key, t, info in page_disp:
-                if t.kind in ("ordinal", "date") or t.value < 10:
-                    continue
-                for (ln2, key2, t2) in seen.get(t.unit, []):
-                    if key2 != key and t2.text != t.text:
-                        k = min(t.dec, t2.dec)
-                        if _rounds_to(t.value, round(t2.value, k), k) and _rounds_to(t2.value, round(t.value, k), k) \
-                                and abs(t.value - t2.value) > 1e-9:
-                            lint("warn", "same-value-ids", f"{P}:{ln}",
-                                 f"{t.text} {t.unit} ({key}) and {t2.text} {t2.unit} ({key2}, l.{ln2}) look like "
-                                 f"the same number; add a « coïncidence » note or align them")
-                seen.setdefault(t.unit, []).append((ln, key, t))
+        _same_value_ids(pg, P, page_disp)
         # --- boxes
         disp_idx = {ln: t for ln, t in pg.disp}
         box_lines = [ln for ln, t in pg.disp if re.match(r"^\*\*«?[   ]*Le meilleur contre-argument", t.strip())]
@@ -1982,12 +2172,7 @@ def check_chapter_lints(data):
                 continue
             estimate.append((pg, ask, ids, ans_toks, cut or ask))
         # --- data symmetry gate
-        for i, line in enumerate(pg.raw_lines, 1):
-            for m in SYM_GATE.finditer(line):
-                missing = [x for x in re.split(r"[\s,]+", m.group(1).replace("ids=", "")) if x and not idx.exists(x)]
-                if missing:
-                    lint("warn", "symmetry-gate", f"{P}:{i}", f"publication gate: {(m.group(2) or '').strip(' -') or 'claim'}"
-                                                             f" waits for data id(s) {', '.join(missing)}")
+        _symmetry_gate(pg, P, idx)
     # --- cross-page checks
     pnum = {pg.num: pg for pg in pages}
 
@@ -2039,36 +2224,40 @@ def check_chapter_lints(data):
         if len({d for _, d in exact}) > 1 or (len(exact) >= 1 and any(r[4] and r[3] < max(d for _, d in exact)
                                                                        for r in rows)):
             locs = "; ".join(f"{('environ ' if r[4] else '') + r[2]} ({r[0]}:{r[1]})" for r in rows)
-            lint("warn", "rounding", f"chapters/{key}", f"displayed with different roundings: {locs}")
+            lint("warn", "rounding", f"{prefix}/{key}", f"displayed with different roundings: {locs}")
         dd, display = info.get("dd"), info.get("display")
         if which == "value" and display:
             for r in rows:
                 if r[2] != _norm(display) and not r[4]:
-                    lint("warn", "rounding", f"chapters/{r[0]}:{r[1]}", f"{key} shown as {r[2]}; canonical "
+                    lint("warn", "rounding", f"{prefix}/{r[0]}:{r[1]}", f"{key} shown as {r[2]}; canonical "
                                                                          f"display is {display}")
         elif which == "value" and dd is not None and key.startswith("yard:"):
             v = info["values"][0][0]
             want = fr(round(v, dd), dd)
             for r in rows:  # only over-precise displays: coarser rounding in a sentence is a style choice
                 if not r[4] and r[3] > max(dd, 0) and _norm(r[2]) != _norm(want):
-                    lint("warn", "rounding", f"chapters/{r[0]}:{r[1]}", f"{key} shown as {r[2]}; canonical display "
+                    lint("warn", "rounding", f"{prefix}/{r[0]}:{r[1]}", f"{key} shown as {r[2]}; canonical display "
                                                                          f"(display_decimals {dd}) is {want}")
     for (txt, unit), ids in sorted(by_value.items()):
         if len(ids) > 1:
             if exempt_same_number(txt, unit, ids):
                 continue
             locs = "; ".join(f"{k} ({', '.join(v[:2])})" for k, v in sorted(ids.items()))
-            lint("warn", "same-number-ids", f"chapters/{txt} {unit}".rstrip(), f"same displayed number chipped with "
+            lint("warn", "same-number-ids", f"{prefix}/{txt} {unit}".rstrip(), f"same displayed number chipped with "
                                                                                 f"different ids: {locs}")
-    if not LINT["only"] or "same-number-ids" in LINT["only"]:
+    if not answer and (not LINT["only"] or "same-number-ids" in LINT["only"]):
         for i, (key, allowed, e) in enumerate(EXEMPTIONS["same_number_ids"]):
             if i not in EXEMPTIONS["used"]:
                 warn(f"lint-exemptions.json: [stale-exemption] same-number-ids {e['number']} {e['unit']} "
                      f"({', '.join(sorted(allowed))}) matches no finding; remove it or update it")
     for body, labs in sorted(labels_used.items()):
         if len(labs) > 1:
-            lint("warn", "orientation", f"chapters/{body}", "labelled differently across chapters: " +
+            lint("warn", "orientation", f"{prefix}/{body}", f"labelled differently across {across}: " +
                  "; ".join(f"« {k or '(none)'} » ({', '.join(v)})" for k, v in labs.items()))
+    if answer:
+        INFO.append(f"{prefix} lint: " + (", ".join(f"{k} {v}" for k, v in sorted(LINT["counts"].items()))
+                                         or "no finding") + (" (strict)" if LINT["strict"] else ""))
+        return
     n_boxes = sum(box_tally.values())
     INFO.append(f"chapters: « Le meilleur contre-argument » boxes tagged: gauche {box_tally['gauche']}, "
                 f"droite {box_tally['droite']}, les-deux {box_tally['les-deux']} ({n_boxes} tagged)")
@@ -2094,16 +2283,21 @@ def check_chapter_lints(data):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--write-derived", action="store_true", help="recompute derived values in place before validating")
-    ap.add_argument("--data-only", action="store_true", help="skip the chapter checks (8 and 9)")
+    ap.add_argument("--data-only", action="store_true", help="skip the chapter and answer-page checks (8, 9 and 11)")
     ap.add_argument("--chapters", metavar="DIR", help="chapter directory (default: fr/site/chapitres)")
     ap.add_argument("--no-lint", action="store_true", help="skip the chapter lints (9)")
     ap.add_argument("--strict", action="store_true", help="chapter lints marked 'strict' become errors")
     ap.add_argument("--details", action="store_true", help="list every long sentence and paragraph")
     ap.add_argument("--lint-only", metavar="CODES", help="comma-separated lint codes to report (e.g. num-chip,calc-value)")
+    ap.add_argument("--no-reponses", action="store_true", help="skip the answer-page checks (11)")
+    ap.add_argument("--reponses", metavar="PATH", help="answer-page directory, or a single answer page "
+                                                         "(default: fr/site/reponses)")
     args = ap.parse_args()
-    global CHAPTERS
+    global CHAPTERS, REPONSES
     if args.chapters:
         CHAPTERS = os.path.abspath(args.chapters)
+    if args.reponses:
+        REPONSES = os.path.abspath(args.reponses)
     LINT["strict"], LINT["details"] = args.strict, args.details
     LINT["only"] = set(args.lint_only.split(",")) if args.lint_only else None
     data = load_all()
@@ -2119,10 +2313,23 @@ def main():
     check_quiz_draw(data)
     load_exemptions(data)
     n_data_errors = len(ERRORS)
+    n_answer_errors, n_answers = 0, 0
     if not args.data_only:
         check_chapters(data)
         if not args.no_lint:
             check_chapter_lints(data)
+    n_chapter_errors = len(ERRORS) - n_data_errors
+    if not args.data_only and not args.no_reponses:
+        a_dir, a_files = answer_files(REPONSES)
+        n_answers = len(a_files)
+        if args.reponses and not os.path.exists(REPONSES):
+            err(f"reponses: not found: {REPONSES}")
+        INFO.append(f"reponses: {n_answers} answer page(s) in {a_dir} (templates « _*.md » skipped)")
+        if a_files:
+            check_chips(data, a_dir, a_files, "reponses")
+            if not args.no_lint:
+                check_answer_lints(data, a_dir, a_files)
+        n_answer_errors = len(ERRORS) - n_data_errors - n_chapter_errors
     counts = {
         "figures.json": len(data["figures"]["figures"]),
         "yardsticks.json": len(data["yardsticks"]["yardsticks"]),
@@ -2138,9 +2345,10 @@ def main():
         print("WARN   " + w)
     for e in ERRORS:
         print("ERROR  " + e)
-    n_chapter_errors = len(ERRORS) - n_data_errors
     print(f"Data errors: {n_data_errors}; chapter errors: {n_chapter_errors}"
           + (" (chapter check skipped)" if args.data_only else ""))
+    if not args.data_only and not args.no_reponses:
+        print(f"Answer-page errors: {n_answer_errors} ({n_answers} page(s))")
     print(f"Result: {'PASS' if not ERRORS else 'FAIL'} ({len(ERRORS)} errors, {len(WARNINGS)} warnings)")
     return 1 if ERRORS else 0
 

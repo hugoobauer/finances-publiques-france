@@ -113,3 +113,11 @@ export function resolveChip(kind, rawRef) {
 }
 
 export const dataMeta = { figures: figs.size, yardsticks: yards.size, proposals: props.size, sources: sources.size };
+
+/** Montant d'une page de réponse (`montant:` du commentaire <!-- page -->) : figure, étalon, paramètre ou proposition. */
+export function resolveAmount(id) {
+  if (figs.has(id)) return resolveChip('fig', id);
+  if (yards.has(id) || params.has(id)) return resolveChip('yard', id);
+  if (props.has(id)) return resolveChip('prop', id);
+  return { ok: false, error: 'identifiant absent de figures.json, yardsticks.json et proposals.json' };
+}

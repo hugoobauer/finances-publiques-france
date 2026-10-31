@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { renderAll } from '../../lib/render.mjs';
+const { answers } = renderAll();
+---
+<Base title="Réponses · Mille milliards" description="Ce que l’on entend, chiffré : combien, et quelle part du déficit.">
+  <h1>Réponses</h1>
+  <p class="lead">Ce que l’on entend sur les finances publiques, chiffré et sourcé.</p>
+  {answers.length ? (
+    <ul class="answers">
+      {answers.map((a) => (
+        <li>
+          <a href={`/reponses/${a.slug}/`}>{a.title}</a>
+          {a.montant?.value && <span class="meta"> · {a.montant.value}</span>}
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p>Aucune page de réponse publiée pour l’instant.</p>
+  )}
+</Base>

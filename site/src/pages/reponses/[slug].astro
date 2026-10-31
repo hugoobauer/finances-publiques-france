@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { renderAll } from '../../lib/render.mjs';
+
+export function getStaticPaths() {
+  const { answers } = renderAll();
+  return answers.map((a) => ({ params: { slug: a.slug }, props: { answer: a } }));
+}
+const { answer } = Astro.props;
+---
+<Base title={`${answer.title} · Mille milliards`} description={answer.phrase ? `Réponse chiffrée : « ${answer.phrase} »` : undefined}>
+  <article class="prose" set:html={answer.html} />
+  <nav class="pager" aria-label="Réponses">
+    <a href="/reponses/">← Toutes les réponses</a>
+    <span />
+  </nav>
+</Base>

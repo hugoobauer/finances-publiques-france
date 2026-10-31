@@ -410,21 +410,21 @@ Une page de réponse a une seule adresse (la page « principale »). Les autres 
 
 | Rang | Page (slug) | Montant | Sujets servis | Prêt ? | Levier |
 |---|---|---|---|---|---|
-| 1 | « Il suffit de faire payer les plus riches » (`taxer-riches`) | 10 à 25 Md€ | Impôts, Retraites, Déficit | oui | R1 à R5 |
-| 2 | « Revenons à la retraite à 60 ans » (`retraite-60`) | 43 à 58 Md€ | Retraites | oui | S1 |
-| 3 | « Luttons contre la fraude » (`fraude`) | 1 à 3 Md€ réalistes | Chômage et minima, Impôts, Déficit | oui | R12 |
-| 4 | « Réduisons le train de vie de l'État » (`train-de-vie-ministeres`, avec le total de 29,4 Md€) | 29,4 Md€ plafond | Train de vie, Déficit | oui, prototypée | S12 à S19 |
-| 5 | « Supprimons les cadeaux aux entreprises » (`aides-entreprises-supprimer`) | 45 à 211 Md€ | Aides aux entreprises, Impôts | oui | S7, R11 |
-| 6 | « Les baisses d'impôts depuis 2017 ont creusé le déficit » (`baisses-impots-2017`) | 62 Md€ | Impôts, Déficit | oui | aucun (constat) |
-| 7 | « Ne remplaçons pas tous les départs en retraite » (`non-remplacement`) | 2,5 à 25,3 Md€ | Fonction publique, Train de vie | oui (illustratif) | S4 (non chiffré) |
-| 8 | « Il faut reculer l'âge à 65 ans » (`age-65`) | 9 à 19 Md€ à terme | Retraites | à moitié : levier sans identifiant | S1 |
-| 9 | « Coupons l'AME » (`ame`) | 1,34 Md€ | Immigration, Santé, Train de vie | oui, prototypée | S19 |
-| 10 | « Bloquons le prix du carburant » et « Baissons la TVA sur l'énergie » (`gel-prix-carburant`, `tva-energie`) | 12 à 26,5 ; 11 à 12,2 Md€ | Prix | à moitié : pas d'identifiant ni de Débats | S9 |
-| 11 | « Revenons à 3 % tout de suite » (`revenir-a-3-pct`) | 61,9 à 94 Md€ | Déficit, Intérêts | oui | objectif B du simulateur |
-| 12 | « Les intérêts vont grimper de 25 milliards » (`interets-hausse`) | 25,3 Md€ (constat) | Intérêts, Déficit | oui | G2 |
-| 13 | « Supprimons les niches fiscales » (`niches-fiscales`) | 22 à 91,8 Md€ (réservoir) | Impôts, Aides aux entreprises | oui | R9 |
-| 14 | « Traquons les soins inutiles » (`sante-soins-inutiles`, avec `sante-gestion`) | 22 et 6 Md€ (réservoirs) | Santé | oui, comparaison à verser | S6 |
-| 15 | « Le système de retraite est presque à l'équilibre » (`retraites-equilibre`) | −5,1 Md€ ; jusqu'à 1,9 % du PIB | Retraites | oui, prototypée | aucun (constat) |
+| 1 | « Il suffit de faire payer les plus riches » (`taxer-riches`) | 10 à 25 Md€ | Impôts, Retraites, Déficit | rédigée le 31 octobre 2026 | R1 à R5 |
+| 2 | « Revenons à la retraite à 60 ans » (`retraite-60`) | 43 à 58 Md€ | Retraites | rédigée le 31 octobre 2026 | S1 |
+| 3 | « Luttons contre la fraude » (`fraude`) | 1 à 3 Md€ réalistes | Chômage et minima, Impôts, Déficit | rédigée le 31 octobre 2026 | R12 |
+| 4 | « Réduisons le train de vie de l'État » (`train-de-vie-ministeres`, avec le total de 29,4 Md€) | 29,4 Md€ plafond | Train de vie, Déficit | rédigée le 31 octobre 2026 | S12 à S19 |
+| 5 | « Supprimons les cadeaux aux entreprises » (`aides-entreprises-supprimer`) | 45 à 211 Md€ | Aides aux entreprises, Impôts | rédigée le 31 octobre 2026 | S7, R11 |
+| 6 | « Les baisses d'impôts depuis 2017 ont creusé le déficit » (`baisses-impots-2017`) | 62 Md€ | Impôts, Déficit | rédigée le 31 octobre 2026 | aucun (constat) |
+| 7 | « Ne remplaçons pas tous les départs en retraite » (`non-remplacement`) | 2,5 à 25,3 Md€ | Fonction publique, Train de vie | rédigée le 31 octobre 2026 | S4 (non chiffré) |
+| 8 | « Il faut reculer l'âge à 65 ans » (`age-65`) | 9 à 19 Md€ à terme | Retraites | rédigée le 31 octobre 2026 | S1 |
+| 9 | « Coupons l'AME » (`ame`) | 1,34 Md€ | Immigration, Santé, Train de vie | rédigée le 31 octobre 2026 | S19 |
+| 10 | « Bloquons le prix du carburant » et « Baissons la TVA sur l'énergie » (`gel-prix-carburant`, `tva-energie`) | 12 à 26,5 ; 11 à 12,2 Md€ | Prix | rédigées le 31 octobre 2026 | S9 |
+| 11 | « Revenons à 3 % tout de suite » (`revenir-a-3-pct`) | 61,9 à 94 Md€ | Déficit, Intérêts | rédigée le 31 octobre 2026 | objectif B du simulateur |
+| 12 | « Les intérêts vont grimper de 25 milliards » (`interets-hausse`) | 25,3 Md€ (constat) | Intérêts, Déficit | rédigée le 31 octobre 2026 | G2 |
+| 13 | « Supprimons les niches fiscales » (`niches-fiscales`) | 22 à 91,8 Md€ (réservoir) | Impôts, Aides aux entreprises | rédigée le 31 octobre 2026 | R9 |
+| 14 | « Traquons les soins inutiles » (`sante-soins-inutiles`, avec `sante-gestion`) | 22 et 6 Md€ (réservoirs) | Santé | rédigée le 31 octobre 2026 | S6 |
+| 15 | « Le système de retraite est presque à l'équilibre » (`retraites-equilibre`) | −5,1 Md€ ; jusqu'à 1,9 % du PIB | Retraites | rédigée le 31 octobre 2026 | aucun (constat) |
 
 **Ensuite (16 à 25, non classées) :** `travailler-plus`, `tva-plus-1-point`, `contribution-ue`, `aide-au-developpement`, `associations`, `agences-operateurs`, `allegements-cotisations`, `stabiliser-la-dette`, `taux-hausse`, `multiplicateur` (à écrire tôt, car toutes les pages s'y réfèrent).
 

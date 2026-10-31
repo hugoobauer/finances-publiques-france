@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import { visit } from 'unist-util-visit';
-import { REPO, CHIP, resolveChip, dataMeta } from './data.mjs';
+import { REPO, CHIP, resolveChip, resolveAmount, dataMeta } from './data.mjs';
 import { typography, unitStats } from './format.mjs';
 
 const SITE_DIR = path.join(REPO, 'fr', 'site');
@@ -44,9 +44,26 @@ function maskChips(text, file, chips, errors) {
 const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const textOf = (node) => (node.value ?? (node.children || []).map(textOf).join(''));
 
-/** Chapitres : ne garder que le texte affiché (blocs « > »), avec leurs titres. Tout le reste est de la spécification. */
+/** Chapitres : ne garder que le texte affiché (blocs « > »), avec leurs titres. Tout le reste est de la spécification.
+ *  Pages de réponse : seuls les blocs « > » sont affichés (titres compris, écrits dans les blocs) ; une section
+ *  de notes hors bloc (« ## Notes… ») arrête l'affichage, comme Page.notes_from dans validate.py. */
 function editorialFilter(file, mode) {
   return (tree) => {
+    if (mode === 'answer') {
+      const out = [];
+      let hidden = 0;
+      for (const node of tree.children) {
+        if (node.type === 'heading' && node.depth <= 3 && NOTES_HEADING.test(textOf(node))) {
+          report.hiddenNotes.push(`${file}: « ${textOf(node)} »`);
+          break;
+        }
+        if (node.type === 'blockquote') out.push(...node.children);
+        else hidden++;
+      }
+      report.hidden = (report.hidden || 0) + hidden;
+      tree.children = out;
+      return;
+    }
     if (mode !== 'chapter') return;
     const out = [];
     let pending = null;
@@ -86,6 +103,8 @@ function rewriteLinks(tree) {
     const m = url.match(/(?:^|\/)chapitres\/([\w-]+)\.md(#.*)?$/);
     if (m) { node.url = `/chapitres/${m[1]}/${m[2] || ''}`; return; }
     if (/(^|\/)debats\.md(#.*)?$/.test(url)) { node.url = '/debats/'; return; }
+    const r = url.match(/(?:^|\/)reponses\/([a-z0-9-]+)\.md(#.*)?$/);
+    if (r) { node.url = `/reponses/${r[1]}/${r[2] || ''}`; return; }
     report.relativeLinksDropped++;
     parent.children.splice(index, 1, ...node.children);
     return index;
@@ -170,6 +189,56 @@ function renderFile(file, mode) {
   return { html, errors, headings };
 }
 
+// Métadonnées des pages de réponse : commentaire « <!-- page … --> » en tête de fichier (05-pages-de-reponse.md §1).
+const ANSWER_META = /^\s*<!--\s*page\b([\s\S]*?)-->/;
+const splitList = (v) => (v || '').split(/[\s,]+/).filter(Boolean);
+
+function parseAnswerMeta(file) {
+  const raw = fs.readFileSync(path.join(SITE_DIR, file), 'utf8');
+  const m = raw.match(ANSWER_META);
+  if (!m) return null;
+  const meta = {};
+  for (const line of m[1].split('\n')) {
+    const kv = line.match(/^\s*([a-z_]+)\s*:\s*(.*?)\s*$/);
+    if (kv) meta[kv[1]] = kv[2];
+  }
+  return meta;
+}
+
+/** Pages de réponse (fr/site/reponses/*.md, sauf les modèles « _*.md ») ; aucune page = liste vide. */
+function renderAnswers(errors) {
+  const dir = path.join(SITE_DIR, 'reponses');
+  if (!fs.existsSync(dir)) return [];
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.md') && !f.startsWith('_')).sort();
+  return files.map((f) => {
+    const file = path.join('reponses', f);
+    const slug = f.replace(/\.md$/, '');
+    const meta = parseAnswerMeta(file);
+    if (!meta) errors.push(`${file}: commentaire <!-- page … --> absent en tête de fichier`);
+    else if (meta.slug !== slug) errors.push(`${file}: slug « ${meta.slug ?? ''} » différent du nom du fichier`);
+    const r = renderFile(file, 'answer');
+    errors.push(...r.errors);
+    let montant = null;
+    if (meta?.montant) {
+      const res = resolveAmount(meta.montant);
+      if (!res.ok) errors.push(`${file}: montant « ${meta.montant} » : ${res.error}`);
+      else montant = res.entry;
+    }
+    const h1 = r.headings.find((h) => h.depth === 1);
+    return {
+      slug,
+      title: h1 ? h1.text : (meta?.phrase ? `« ${meta.phrase} »` : slug),
+      phrase: meta?.phrase ?? null,
+      sujets: splitList(meta?.sujets),
+      leviers: splitList(meta?.levier),
+      debats: splitList(meta?.debats),
+      montant,
+      html: r.html,
+      headings: r.headings,
+    };
+  });
+}
+
 let cache;
 /** Rend tous les contenus ; échoue (build) à la moindre pastille inconnue. */
 export function renderAll() {
@@ -188,12 +257,14 @@ export function renderAll() {
   });
   const debats = renderFile('debats.md', 'page');
   errors.push(...debats.errors);
+  const answers = renderAnswers(errors);
   if (errors.length) {
     throw new Error(`Pastilles invalides (${errors.length}) :\n  ` + errors.join('\n  '));
   }
+  console.log(`[réponses] ${answers.length} page(s) de réponse`);
   console.log(`[pastilles] ${report.chips} pastilles vérifiées (${report.chipsDisplayed} affichées), 0 inconnue ; ${report.hiddenNotes.length} section(s) de notes masquée(s) ; ${report.relativeLinksDropped} lien(s) relatif(s) vers le dépôt réduit(s) à leur texte`);
   for (const w of report.warnings) console.warn(`[pastilles] avertissement : ${w}`);
   if (unitStats.approximated.size) console.warn(`[pastilles] unités sans traduction exacte : ${[...unitStats.approximated].map(([u, n]) => `${u} (${n})`).join(' ; ')}`);
-  cache = { chapters, debats: { html: debats.html, headings: debats.headings }, report, unitStats, dataMeta };
+  cache = { chapters, answers, debats: { html: debats.html, headings: debats.headings }, report, unitStats, dataMeta };
   return cache;
 }
