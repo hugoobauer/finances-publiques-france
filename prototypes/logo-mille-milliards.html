@@ -85,6 +85,7 @@ nav.main a[aria-current="page"]::after { content: ""; position: absolute; left: 
 
 .rec { border-left: 2px solid var(--ink); padding: 4px 0 4px 16px; display: flex; flex-direction: column; gap: 10px; }
 ul.lines { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.patterns { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 12px; }
 .taglines { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 12px; }
 .taglines .card q { font-family: var(--f-display); font-size: 24px; line-height: 1.2; quotes: "« " " »"; }
 .demo { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: center; }
@@ -117,6 +118,31 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
     </div>
     <div class="mark"><span data-logo="gauge" data-size="168"></span></div>
   </div>
+
+  <section id="motifs">
+    <div class="head"><span class="n">00</span><h2>Motifs : où mettre ce qui dépasse ?</h2></div>
+    <p class="muted small">57,3 % de 81 cases font 46,4 cases : 5 lignes pleines et un reste. Quatre façons de traiter ce reste. Le choix ci-dessous s'applique à toute la page.</p>
+    <div class="patterns">
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="rows"></span></div>
+        <div class="k"><b>1</b> · lignes entières</div>
+        <p class="small">Arrondi à 5 lignes (45 cases, 55,6 %). Le plus net, mais le chiffre est arrondi de 1,7 point.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="center"></span></div>
+        <div class="k"><b>2</b> · reste centré</div>
+        <p class="small">46 cases exactes ; la case en trop est au milieu, dans le blanc. Symétrique, mais on la lit comme un détail.</p></article>
+      <article class="card fav"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="level"></span></div>
+        <div class="k"><b>3</b> · niveau exact · ma préférence</div>
+        <p class="small">La 6e ligne est remplie à 16 % de sa hauteur, comme un niveau d'eau. Le chiffre est exact et le dessin reste symétrique.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="grid97"></span></div>
+        <div class="k"><b>4</b> · grille 9 × 7</div>
+        <p class="small">Avec 7 lignes, 57,3 % tombe sur 4 lignes pleines (36 cases sur 63, 57,1 %). Exact et net, mais la grille n'est plus carrée et colle moins à « 81 ».</p></article>
+    </div>
+    <div class="slider" id="pattern-btns" role="group" aria-label="Motif appliqué à la page">
+      <button type="button" data-p="rows">1 · lignes entières</button>
+      <button type="button" data-p="center">2 · reste centré</button>
+      <button type="button" data-p="level">3 · niveau exact</button>
+      <button type="button" data-p="grid97">4 · grille 9 × 7</button>
+    </div>
+  </section>
 
   <section id="variantes">
     <div class="head"><span class="n">01</span><h2>La grille qui se remplit</h2></div>
@@ -160,7 +186,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
           <div class="slider" id="demo-btns" role="group" aria-label="Chiffre affiché"></div>
         </div>
       </div>
-      <p class="small muted">Une case = 1/81 du PIB, soit 1,2 point ; nombre de cases arrondi. Sources : Insee (dépense, prélèvements, déficit, dette, 2025), Eurostat (zone euro, 2025), Drees (prestations sociales, 2024), COR (retraites, 2025).</p>
+      <p class="small muted">Une case = 1/81 du PIB (1,2 point), ou 1/63 avec la grille 9 × 7 (1,6 point) ; nombre de cases arrondi, sauf en motif « niveau exact ». Sources : Insee (dépense, prélèvements, déficit, dette, 2025), Eurostat (zone euro, 2025), Drees (prestations sociales, 2024), COR (retraites, 2025).</p>
     </div>
     <p class="small muted">Le clin d'œil à Haddock reste dans le nom et la signature : la dette, à 115,7 % du PIB, déborde de la grille, sans que le site annonce le naufrage.</p>
   </section>
@@ -193,33 +219,66 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   var COLS = ['var(--f-bleu)', 'var(--f-blanc)', 'var(--f-rouge)'];
   var LOGO_PCT = 57.3; // te_2025_pct_gdp (Insee) → 46 of 81 cells
 
-  function svgGrid(kind, size, pct) {
-    var small = kind === 'small', n = small ? 3 : 9;
+  // Fill patterns (see section « Motifs »):
+  //  rows   – 9 × 9, rounded to whole rows (57,3 % → 5 rows = 55,6 %)
+  //  center – 9 × 9, exact cell count, the leftover cells centred in the top row (46 = 45 + 1 in the middle)
+  //  level  – 9 × 9, exact level: the top row is filled to a fraction of its height, like a water line
+  //  grid97 – 9 columns × 7 rows: 57,3 % of 7 rows = 4,01, so the level falls on a whole row (36/63 = 57,1 %)
+  var PATTERN = 'level';
+  try { PATTERN = localStorage.getItem('motif-mm') || 'level'; } catch (e) {}
+
+  function geom(kind, pattern) {
+    var small = kind === 'small';
+    var cols = small ? 3 : 9, rows = small ? 3 : (pattern === 'grid97' ? 7 : 9);
     var cell = small ? 8.4 : 2.6, gap = small ? 1.4 : 0.6;
-    var span = n * cell + (n - 1) * gap, off = (32 - span) / 2;
-    var total = n * n;
-    var filled = kind === 'flag' ? total : Math.min(total, Math.round(total * (pct == null ? LOGO_PCT : pct) / 100));
+    return { small: small, cols: cols, rows: rows, cell: cell, gap: gap,
+      ox: (32 - (cols * cell + (cols - 1) * gap)) / 2, oy: (32 - (rows * cell + (rows - 1) * gap)) / 2 };
+  }
+  // Returns, for each row counted from the bottom, an array of fill fractions (0…1) per column.
+  function fills(g, kind, p, pattern) {
+    var out = [], r, c;
+    for (r = 0; r < g.rows; r++) { out.push([]); for (c = 0; c < g.cols; c++) out[r].push(kind === 'flag' ? 1 : 0); }
+    if (kind === 'flag') return out;
+    var level = Math.min(g.rows, g.rows * p / 100);
+    var pat = g.small && (pattern === 'center' || pattern === 'grid97') ? 'level' : pattern;
+    if (pat === 'rows') level = Math.round(level);
+    if (pat === 'center') {
+      var count = Math.min(g.rows * g.cols, Math.round(g.rows * g.cols * p / 100));
+      var full = Math.floor(count / g.cols), rem = count % g.cols, start = Math.floor((g.cols - rem) / 2);
+      for (r = 0; r < full; r++) for (c = 0; c < g.cols; c++) out[r][c] = 1;
+      for (c = start; c < start + rem; c++) out[full][c] = 1;
+      return out;
+    }
+    for (r = 0; r < g.rows; r++) for (c = 0; c < g.cols; c++) out[r][c] = Math.max(0, Math.min(1, level - r));
+    return out;
+  }
+  function svgGrid(kind, size, pct, pattern) {
+    pattern = pattern || PATTERN;
+    var g = geom(kind, pattern), p = pct == null ? LOGO_PCT : pct, F = fills(g, kind, p, pattern);
     var svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('viewBox', '0 0 32 32'); svg.setAttribute('width', size); svg.setAttribute('height', size);
     svg.setAttribute('aria-hidden', 'true');
-    for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) {
-      var order = (n - 1 - r) * n + c; // bottom row first, left to right
-      var on = order < filled, band = Math.floor(c / (n / 3));
-      var rect = document.createElementNS(NS, 'rect');
-      // A stroked cell is drawn inset by half its stroke so its outer edge matches the unstroked cells (equal gaps).
-      var sw = (on && kind !== 'mono' && band === 1) ? (small ? .7 : .3) : 0;
-      rect.setAttribute('x', (off + c * (cell + gap) + sw / 2).toFixed(3)); rect.setAttribute('y', (off + r * (cell + gap) + sw / 2).toFixed(3));
-      rect.setAttribute('width', (cell - sw).toFixed(3)); rect.setAttribute('height', (cell - sw).toFixed(3)); rect.setAttribute('rx', small ? '1.2' : '.45');
-      var st;
-      if (!on) st = 'fill:var(--empty)';
-      else if (kind === 'mono') st = 'fill:currentColor';
-      else st = 'fill:' + COLS[band] + (sw ? ';stroke:var(--f-blanc-line);stroke-width:' + sw : '');
-      rect.setAttribute('style', st);
-      svg.appendChild(rect);
+    var rx = g.small ? 1.2 : .45;
+    function rect(x, y, w, h, st, r) {
+      var e = document.createElementNS(NS, 'rect');
+      e.setAttribute('x', x.toFixed(3)); e.setAttribute('y', y.toFixed(3)); e.setAttribute('width', w.toFixed(3)); e.setAttribute('height', h.toFixed(3));
+      e.setAttribute('rx', r.toFixed(3)); e.setAttribute('style', st); svg.appendChild(e);
+    }
+    for (var rb = 0; rb < g.rows; rb++) for (var c = 0; c < g.cols; c++) {
+      var f = F[rb][c], band = Math.floor(c / (g.cols / 3));
+      var x = g.ox + c * (g.cell + g.gap), y = g.oy + (g.rows - 1 - rb) * (g.cell + g.gap);
+      if (f < 1) rect(x, y, g.cell, g.cell, 'fill:var(--empty)', rx);
+      if (f <= 0.02) continue;
+      var white = kind !== 'mono' && band === 1;
+      // A stroked cell is drawn inset by half its stroke so its outer edge matches the others (equal gaps).
+      var sw = white ? (g.small ? .7 : .3) : 0;
+      var h = g.cell * f;
+      var st = kind === 'mono' ? 'fill:currentColor' : 'fill:' + COLS[band] + (sw ? ';stroke:var(--f-blanc-line);stroke-width:' + sw : '');
+      rect(x + sw / 2, y + g.cell - h + sw / 2, g.cell - sw, Math.max(0.01, h - sw), st, Math.min(rx, h / 2));
     }
     return svg;
   }
-  function paint(el, pct) { el.textContent = ''; el.appendChild(svgGrid(el.dataset.logo, +el.dataset.size, pct)); el.style.display = 'inline-flex'; }
+  function paint(el, pct) { el.textContent = ''; el.appendChild(svgGrid(el.dataset.logo, +el.dataset.size, pct == null ? (el.dataset.pct ? +el.dataset.pct : null) : pct, el.dataset.pattern)); el.style.display = 'inline-flex'; }
   document.querySelectorAll('[data-logo]').forEach(function (el) { paint(el); });
 
   // Demo: one cell = 1/81 of GDP
@@ -238,11 +297,24 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   box.addEventListener('click', function (e) {
     var b = e.target.closest('button[data-i]'); if (!b) return;
     box.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b); });
-    var it = ITEMS[+b.dataset.i], cells = Math.round(81 * it.v / 100);
+    var N = PATTERN === 'grid97' ? 63 : 81, it = ITEMS[+b.dataset.i], cells = Math.round(N * it.v / 100);
     paint(demo, it.v);
     document.getElementById('demo-big').textContent = fmt(it.v) + ' % du PIB';
-    document.getElementById('demo-text').textContent = it.t + ' : ' + (cells > 81 ? 'la grille déborde, ' + cells + ' cases pour 81 (' + (cells - 81) + ' de trop).' : cells + ' case' + (cells > 1 ? 's' : '') + ' sur 81.');
+    document.getElementById('demo-text').textContent = it.t + ' : ' + (cells > N ? 'la grille déborde, ' + cells + ' cases pour ' + N + ' (' + (cells - N) + ' de trop).' : cells + ' case' + (cells > 1 ? 's' : '') + ' sur ' + N + '.');
   });
+
+  var pb = document.getElementById('pattern-btns');
+  function syncPattern() {
+    pb.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.p === PATTERN); });
+    document.querySelectorAll('[data-logo]:not([data-pattern])').forEach(function (el) { if (el.id !== 'demo-logo') paint(el); });
+    var on = box.querySelector('button[aria-pressed="true"]'); if (on) on.click();
+  }
+  pb.addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-p]'); if (!b) return;
+    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm', PATTERN); } catch (err) {}
+    syncPattern();
+  });
+  syncPattern();
 
   var modes = ['auto', 'clair', 'sombre'], mi = 0;
   try { mi = Math.max(0, modes.indexOf(localStorage.getItem('theme-mm') || 'auto')); } catch (e) {}
