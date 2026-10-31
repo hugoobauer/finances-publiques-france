@@ -31,12 +31,13 @@
 
 **Logo retenu : la grille, en 9 × 9 aux couleurs du drapeau** (demande du porteur du projet). Spécimen : `prototypes/logo-mille-milliards.html`.
 
-- 81 cases, trois colonnes par couleur (27 bleues, 27 blanches, 27 rouges). Sur fond clair, les cases blanches sont gris très clair (`#E3E1DA`), sans contour.
-- Variante recommandée, **« avec sabords »** : 7 cases sur 81 en contour seul, la part de la dépense publique 2025 financée par l'emprunt (151,6 Md€ sur 1 714,1 Md€, soit 8,8 % ; arrondi de 81 × 0,088 = 7,2). Les cases s'ouvrent depuis la fin de la dernière ligne. À mettre à jour chaque printemps avec la notification d'Eurostat.
-- Sous 24 px : grille 3 × 3 (une case par couleur et par tiers de hauteur).
-- Version une couleur pour l'impression.
+- 81 cases, trois colonnes par couleur, qui **se remplissent par le bas** (ligne par ligne, de gauche à droite) ; les cases vides restent grises (choix du porteur du projet, 31 octobre 2026).
+- **Niveau du logo : 46 cases sur 81**, soit la dépense publique de 2025 en part du PIB (57,3 %, Insee, `te_2025_pct_gdp`). Le niveau reste à 46 cases tant que la dépense reste entre 56,2 % et 57,4 % du PIB ; à vérifier chaque printemps.
+- Sur fond clair, les cases blanches remplies sont blanches avec un filet gris fin ; les cases vides sont gris clair (`#E6E4DD`). Sur fond sombre : blanc cassé et `#2A2D34`.
+- Sous 24 px : grille 3 × 3, remplie à 5 cases sur 9.
+- Variantes : grille pleine (sans chiffre) et version une couleur. La variante « avec sabords » (cases ouvertes) est abandonnée.
+- Usage dans le site : une case = 1/81 du PIB (1,2 point). Même grille pour chaque page (retraites 11 cases, déficit 4 cases, dette : la grille déborde).
 - Le logo porte le tricolore : le filet sous l'en-tête devient un trait gris de 1 px (un seul tricolore par écran, §6).
-- Prolongement possible : dans le simulateur, chaque choix ferme ou ouvre des sabords ; une baisse de dépense et une hausse d'impôt ferment les cases de la même façon.
 
 ## 3. Couleurs
 
@@ -112,7 +113,7 @@ Règles : texte aligné à gauche, jamais justifié ; 64 caractères par ligne a
 
 | Oui (il signe le site) | Jamais (il porterait un sens) |
 |---|---|
-| Le logotype (grille 9 × 9) et l'icône de l'onglet (grille 3 × 3). | Dans un graphique, une barre, une légende ou une carte de pays. |
+| Le logotype (grille 9 × 9 remplie par le bas) et l'icône de l'onglet (grille 3 × 3). | Dans un graphique, une barre, une légende ou une carte de pays. |
 | ~~Un filet de 2 px sous l'en-tête~~ : remplacé par un trait gris de 1 px, puisque le logo porte déjà le tricolore. | Sur un bouton, une carte « Oui, mais… » ou une réponse. |
 | Jamais la rubrique active de la navigation (retirée le 31 octobre 2026). | Pour opposer deux idées, deux camps, une hausse et une baisse. |
 | Un filet en bas de l'image de partage sur les réseaux sociaux. | En aplat, en drapeau dessiné, en cocarde, avec une Marianne. |
@@ -167,7 +168,7 @@ Le site suit le réglage du téléphone (`prefers-color-scheme`) et propose un b
 
 ## 12. Points à trancher
 
-1. **Nom et logo** : « Mille milliards » et grille 9 × 9 retenus (31 octobre 2026) ; reste à choisir entre drapeau plein et « avec sabords », vérifier la marque (INPI), réserver domaine et comptes.
+1. **Nom et logo** : « Mille milliards » et grille 9 × 9 retenus (31 octobre 2026) ; jauge remplie à 57 % retenue ; reste à vérifier la marque (INPI), réserver domaine et comptes.
 2. **Polices** : confirmer Instrument Sans après un test de lecture sur téléphone auprès de quelques lecteurs B1 ; repli possible, Atkinson Hyperlegible Next.
 3. **Indigo d'interaction** : il reste éloigné du bleu du drapeau, mais un lecteur pourrait y voir du bleu. Variante possible : liens en encre soulignés.
 4. **Calendrier** : il combine une part par fonction (COFOG 2024) et le déficit 2025 ; à aligner sur le même millésime quand l'Insee publiera la COFOG 2025 (décembre 2026).
