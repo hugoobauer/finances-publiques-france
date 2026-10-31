@@ -138,6 +138,32 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
       <button type="button" data-p="f6">6 lignes moins 2</button>
       <button type="button" data-p="f7">7 lignes moins 2</button>
     </div>
+    <h3 style="margin-top:12px">Et en 6 × 6 ?</h3>
+    <p class="muted small">Deux colonnes par couleur, des cases deux fois plus grandes : plus lisible en petit, moins « mille milliards de cases ». 4 lignes pleines sur 6, la dernière entamée.</p>
+    <div class="patterns">
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="s1"></span></div>
+        <div class="k"><b>6 × 6</b> · 4 lignes moins 1</div>
+        <p class="small">Il manque une case rouge : le drapeau reste lisible sur la dernière ligne.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="s2"></span></div>
+        <div class="k"><b>6 × 6</b> · 4 lignes moins 2</div>
+        <p class="small">La dernière ligne perd tout son rouge : la jauge se lit mieux, le drapeau moins.</p></article>
+      <article class="card"><div class="stage"><span data-logo="gauge" data-size="112" data-pattern="s2s"></span></div>
+        <div class="k"><b>6 × 6</b> · moins 2, symétrique</div>
+        <p class="small">Une case bleue et une rouge en moins : équilibré, mais ressemble moins à une jauge.</p></article>
+    </div>
+    <div class="card"><span class="eyebrow">Côte à côte, à la taille réelle de l'en-tête (24 px) et de l'onglet</span>
+      <div class="sizes" style="border:0;padding:0">
+        <figure><span class="lock"><span data-logo="gauge" data-size="24" data-pattern="f6"></span>Mille milliards</span><figcaption>9 × 9, 24 px</figcaption></figure>
+        <figure><span class="lock"><span data-logo="gauge" data-size="24" data-pattern="s1"></span>Mille milliards</span><figcaption>6 × 6, 24 px</figcaption></figure>
+        <figure><span data-logo="gauge" data-size="32" data-pattern="f6"></span><figcaption>9 × 9, 32 px</figcaption></figure>
+        <figure><span data-logo="gauge" data-size="32" data-pattern="s1"></span><figcaption>6 × 6, 32 px</figcaption></figure>
+      </div>
+    </div>
+    <div class="slider" id="pattern-btns-6" role="group" aria-label="Motif 6 × 6 appliqué à la page">
+      <button type="button" data-p="s1">6 × 6, moins 1</button>
+      <button type="button" data-p="s2">6 × 6, moins 2</button>
+      <button type="button" data-p="s2s">6 × 6, symétrique</button>
+    </div>
     <p class="small muted">En dessous de 24 px, la grille 3 × 3 suit la même règle : 2 lignes moins une case. Le logo n'a plus besoin d'être mis à jour chaque année.</p>
   </section>
 
@@ -223,7 +249,8 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
   //   g6x8   – 6 × 8: round(48 × 57,3 %) = 28 = 5 rows − 2 (58,3 %)
   //   small  – 3 × 3: round(9 × 57,3 %) = 5 = 2 rows − 1 (55,6 %)
   // Since 31 Oct 2026 the logo is decorative (no longer tied to a figure): 9 × 9, N full rows minus 2 squares.
-  var PATTERNS = { f5: [9, 9, 'end', 5], f6: [9, 9, 'end', 6], f7: [9, 9, 'end', 7] };
+  var PATTERNS = { f5: [9, 9, 'end', 5, 2], f6: [9, 9, 'end', 6, 2], f7: [9, 9, 'end', 7, 2],
+    s1: [6, 6, 'end', 4, 1], s2: [6, 6, 'end', 4, 2], s2s: [6, 6, 'sym', 4, 2] };
   var PATTERN = 'f6';
   try { var saved = localStorage.getItem('motif-mm3'); if (PATTERNS[saved]) PATTERN = saved; } catch (e) {}
 
@@ -232,7 +259,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
     var cols = small ? 3 : P[0], rows = small ? 3 : P[1];
     var n = Math.max(cols, rows);
     var cell = small ? 8.4 : 28 / (n + (n - 1) * 0.2308), gap = small ? 1.4 : cell * 0.2308;
-    return { small: small, logoRows: small ? 2 : P[3], cols: cols, rows: rows, cell: cell, gap: gap, gaps: small ? 'end' : P[2],
+    return { small: small, logoRows: small ? 2 : P[3], logoMinus: small ? 1 : P[4], cols: cols, rows: rows, cell: cell, gap: gap, gaps: small ? 'end' : P[2],
       ox: (32 - (cols * cell + (cols - 1) * gap)) / 2, oy: (32 - (rows * cell + (rows - 1) * gap)) / 2 };
   }
   // Returns, for each row counted from the bottom, 0/1 per column.
@@ -240,7 +267,7 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
     var out = [], r, c, total = g.rows * g.cols;
     for (r = 0; r < g.rows; r++) { out.push([]); for (c = 0; c < g.cols; c++) out[r].push(kind === 'flag' ? 1 : 0); }
     if (kind === 'flag') return out;
-    var count = p == null ? g.logoRows * g.cols - (g.small ? 1 : 2) : Math.min(total, Math.round(total * p / 100));
+    var count = p == null ? g.logoRows * g.cols - g.logoMinus : Math.min(total, Math.round(total * p / 100));
     var full = Math.floor(count / g.cols), rem = count % g.cols;
     for (r = 0; r < full; r++) for (c = 0; c < g.cols; c++) out[r][c] = 1;
     if (rem) {
@@ -302,10 +329,15 @@ footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
 
   var pb = document.getElementById('pattern-btns');
   function syncPattern() {
-    pb.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.p === PATTERN); });
+    document.querySelectorAll('#pattern-btns button, #pattern-btns-6 button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.p === PATTERN); });
     document.querySelectorAll('[data-logo]:not([data-pattern])').forEach(function (el) { if (el.id !== 'demo-logo') paint(el); });
     var on = box.querySelector('button[aria-pressed="true"]'); if (on) on.click();
   }
+  document.getElementById('pattern-btns-6').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-p]'); if (!b) return;
+    PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm3', PATTERN); } catch (err) {}
+    syncPattern();
+  });
   pb.addEventListener('click', function (e) {
     var b = e.target.closest('button[data-p]'); if (!b) return;
     PATTERN = b.dataset.p; try { localStorage.setItem('motif-mm3', PATTERN); } catch (err) {}
