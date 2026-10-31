@@ -147,4 +147,4 @@ Point à trancher : le % du PIB est l'unité des comparaisons internationales, m
 2. **Ordre des cartes** : tirage au sort ou ordre fixe par taille d'effet ? Le tirage protège la neutralité ; l'ordre par taille aide la compréhension.
 3. **Liste des 10 sujets** et des objections par sujet : à établir à partir des fichiers 07, 08, 16 et de la page « Débats ».
 4. **Unité des pages de réponse** : la part du déficit suppose un déficit de référence (2025 : 151,6 Md€). En 2027, il faudra choisir entre le déficit constaté et la prévision.
-5. **Étapes suivantes de la conception :** revue des sites existants (en cours), puis charte graphique et style des graphiques, puis maquettes à tester sur téléphone.
+5. **Étapes suivantes de la conception :** revue des sites existants (`02-revue-des-sites.md`), puis charte graphique et style des graphiques, puis maquettes à tester sur téléphone.
