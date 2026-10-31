@@ -7,16 +7,27 @@
 ## 1. Principes
 
 1. **Le chiffre est le héros.** La page met en valeur un nombre, une phrase et une source. Le reste (couleurs, filets, typographie) s'efface.
-2. **Neutre, et pas officiel.** Le site ne doit pas ressembler à un site de l'État : pas de Marianne, pas de bloc « République française », pas de police Marianne, pas d'imitation du système de design de l'État (DSFR), pas de bleu `#000091`. Le tricolore n'apparaît qu'en filets fins, comme une signature.
+2. **Neutre, et pas officiel.** Le site ne doit pas ressembler à un site de l'État : pas de Marianne, pas de bloc « République française », pas de police Marianne, pas d'imitation du système de design de l'État (DSFR), pas de bleu `#000091`. Le tricolore n'apparaît qu'en un filet fin, une fois par écran, comme une signature.
 3. **Aucune couleur ne prend parti.** Le bleu et le rouge ne codent jamais un camp, ni le vert et le rouge un « bien » et un « mal ». Les graphiques n'utilisent que l'encre, le gris et l'ocre.
 4. **Le téléphone d'abord.** Tout est conçu pour 390 px de large, puis élargi. Lecteur visé : niveau B1, lecture rapide, pouce sur l'écran.
 5. **Moins d'éléments, mieux finis.** Un seul accent d'interaction, deux rayons d'angle, une grille d'espacement. Le côté « start-up » vient du soin des détails (chiffres en police à chasse fixe, filets de 1 px, en-tête translucide), pas de l'ornement.
 
-## 2. Logotype et nom (provisoires)
+## 2. Logotype et nom (à choisir)
 
-**Nom de travail : « ordres de grandeur »** (en minuscules). C'est la promesse centrale du site (glossaire §1.13) et il se comprend sans explication. **À valider par le porteur du projet**, avec la disponibilité du nom de domaine et des comptes. Autres pistes : « à l'échelle », « le bon ordre ».
+**Retour du porteur du projet (31 octobre 2026).** Le nom « ordres de grandeur » est rejeté, même comme nom provisoire. Le logo aux trois graduations tricolores « a de l'idée mais n'est pas assez travaillé ». Le drapeau est « trop » présent : la rubrique active perd son soulignement tricolore.
 
-**Logotype.** Le nom en Instrument Sans demi-gras, précédé de trois graduations de règle de hauteur croissante (5, 10 et 18 px dans l'en-tête), qui évoquent 1, 10 et 100 : des ordres de grandeur. Elles sont bleue, blanche et rouge. C'est le seul « drapeau » du site : un drapeau couché en traits fins, lisible même en 16 px (icône de l'onglet). Le segment blanc est cerclé d'un filet gris sur fond clair.
+**Pistes.** `prototypes/nom-et-logo.html` présente huit noms dont le domaine en .fr était libre le 31 octobre 2026 (vérification `whois`, registre AFNIC ; marques INPI non vérifiées) et six logos dessinés sur une grille de 32 px, avec une version redessinée pour 16 px :
+
+| Logo | Idée | Nom associé |
+|---|---|---|
+| A. Règle logarithmique | graduations 1 à 10 à leur vraie position logarithmique, en encre | Mille milliards |
+| B. Cote | ligne de cote d'architecte, deux flèches | Mètre étalon |
+| C. Grille de cent | cent cases, vingt-quatre remplies (part des retraites) | Sur cent |
+| D. Drapeau en trois traits | trois barres obliques bleu, blanc, rouge ; seule piste tricolore | (tous) |
+| E. Fléau de balance | balance réduite au fléau, légèrement penchée | Le Poids |
+| F. Dix puissance n | monogramme « 10ⁿ » en chasse fixe | Mille milliards |
+
+**Recommandation (à valider).** « Mille milliards » avec la règle logarithmique en encre ; second choix, « Mètre étalon » avec la cote. Signature possible : « Les finances publiques, toutes proportions gardées. »
 
 ## 3. Couleurs
 
@@ -92,12 +103,12 @@ Règles : texte aligné à gauche, jamais justifié ; 64 caractères par ligne a
 
 | Oui (il signe le site) | Jamais (il porterait un sens) |
 |---|---|
-| Les trois graduations du logotype et l'icône de l'onglet. | Dans un graphique, une barre, une légende ou une carte de pays. |
+| Le logotype, seulement si la piste D est retenue (le filet d'en-tête devient alors gris). | Dans un graphique, une barre, une légende ou une carte de pays. |
 | Un filet de 2 px sous l'en-tête, en trois segments séparés par 2 px de vide. | Sur un bouton, une carte « Oui, mais… » ou une réponse. |
-| Le soulignement de la rubrique active dans la navigation. | Pour opposer deux idées, deux camps, une hausse et une baisse. |
+| Jamais la rubrique active de la navigation (retirée le 31 octobre 2026). | Pour opposer deux idées, deux camps, une hausse et une baisse. |
 | Un filet en bas de l'image de partage sur les réseaux sociaux. | En aplat, en drapeau dessiné, en cocarde, avec une Marianne. |
 
-**Le blanc.** Sur fond clair, le segment blanc reçoit un filet gris de 0,5 px (`#B9B7AF`) pour rester visible ; sur fond sombre, il est en blanc cassé sans filet. **Dosage** : l'en-tête porte déjà le logotype, le filet et la rubrique active ; en dehors de l'en-tête, au plus une occurrence par écran (l'image de partage, par exemple).
+**Le blanc.** Sur fond clair, le segment blanc reçoit un filet gris de 0,5 px (`#B9B7AF`) pour rester visible ; sur fond sombre, il est en blanc cassé sans filet. **Dosage (revu le 31 octobre 2026)** : un seul tricolore par écran. Par défaut, c'est le filet d'en-tête ; le logo est en encre et la rubrique active est soulignée d'un filet d'encre de 1 px.
 
 ## 7. Graphiques
 
@@ -127,7 +138,7 @@ Règles : texte aligné à gauche, jamais justifié ; 64 caractères par ligne a
 - **Pastille source.** Organisme et date en pilule (« Eurostat 21.10.2026 ↗ »), qui ouvre la source. Les étiquettes d'organisme reprennent mot pour mot le glossaire (« Fondation iFRAP (libérale) », « Terra Nova (centre gauche) »).
 - **Compteur du simulateur.** Barre en encre pleine, collée en bas de l'écran (`position: sticky`), avec « Il reste à trouver » et le montant en grand, plus une jauge fine. C'est le seul élément autorisé à recouvrir le contenu (leçon du *Debt Fixer*, étape 2, §7.5) ; il ne doit jamais masquer les boutons Retour / Suivant.
 - **Boutons.** Plein (encre) pour l'action principale, contour pour l'action secondaire ; 48 px de haut.
-- **En-tête.** Fixé en haut, translucide (flou d'arrière-plan), logotype, navigation (masquée sous 720 px), bouton de thème, filet tricolore.
+- **En-tête.** Fixé en haut, translucide (flou d'arrière-plan), logotype, navigation (masquée sous 720 px ; rubrique active soulignée d'un filet d'encre de 1 px), bouton de thème, filet tricolore.
 
 ## 9. Mouvement
 
@@ -147,7 +158,7 @@ Le site suit le réglage du téléphone (`prefers-color-scheme`) et propose un b
 
 ## 12. Points à trancher
 
-1. **Nom du site** : « ordres de grandeur » ou autre (domaine, comptes, risque de confusion avec une marque existante à vérifier).
+1. **Nom et logo** : choisir parmi les pistes de `prototypes/nom-et-logo.html`, puis vérifier les marques (INPI) et réserver domaine et comptes.
 2. **Polices** : confirmer Instrument Sans après un test de lecture sur téléphone auprès de quelques lecteurs B1 ; repli possible, Atkinson Hyperlegible Next.
 3. **Indigo d'interaction** : il reste éloigné du bleu du drapeau, mais un lecteur pourrait y voir du bleu. Variante possible : liens en encre soulignés.
 4. **Calendrier** : il combine une part par fonction (COFOG 2024) et le déficit 2025 ; à aligner sur le même millésime quand l'Insee publiera la COFOG 2025 (décembre 2026).

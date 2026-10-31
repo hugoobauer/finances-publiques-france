@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Les retraites, ordres de grandeur</title>
+<title>Retraites, prototype</title>
 <meta name="description" content="Prototype v2 de la page de sujet Retraites et de deux pages de réponse (format « fait + Oui, mais… »). Document de travail, 31 octobre 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -213,7 +213,7 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
   <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
 </header>
 
-<div class="wrap proto"><b>Prototype v2, document de travail (31 octobre 2026).</b> Format « fait + Oui, mais… » en charte « ordres de grandeur » (nom provisoire). Chiffres tirés de <code>platform/data/figures.json</code> ; les cases « donnée à venir » signalent une donnée absente de la base.</div>
+<div class="wrap proto"><b>Prototype v2, document de travail (31 octobre 2026).</b> Format « fait + Oui, mais… » dans la charte graphique (nom du site à choisir). Chiffres tirés de <code>platform/data/figures.json</code> ; les cases « donnée à venir » signalent une donnée absente de la base.</div>
 
 <main class="wrap" id="app"></main>
 
@@ -305,7 +305,7 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
 
   /* ======================================================================
      CARDS « Oui, mais… » (inventory: fr/conception/04-sujets-et-objections.md, sujet 1)
-     Sorted by amount (upper bound, largest first); cards without amount follow,
+     Sorted by amount (middle of the range, largest first); cards without amount follow,
      alphabetical. The sort is done in code so the displayed rule is true.
      ====================================================================== */
   var CARDS = [
@@ -329,7 +329,7 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
       ans: "Vrai selon la convention légale (" + pc(D.balancePct) + " du PIB, soit " + md(D.balance) + "). Avec une autre convention sur la contribution de l'État, le déficit atteint " + pc(D.balanceConv) + " du PIB." }
   ];
   function sortedCards() {
-    var withAmt = CARDS.filter(function (c) { return c.range; }).sort(function (a, b) { return b.range[1] - a.range[1]; });
+    var withAmt = CARDS.filter(function (c) { return c.range; }).sort(function (a, b) { return (b.range[0] + b.range[1]) - (a.range[0] + a.range[1]); });
     var without = CARDS.filter(function (c) { return !c.range; }).sort(function (a, b) {
       return a.quote.localeCompare(b.quote, "fr", { ignorePunctuation: true });
     });
@@ -399,7 +399,7 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
       '<h2 class="col">« Oui, mais… » : ce que l\'on entend souvent</h2>' +
       '<p class="col">Choisissez une phrase. Pour chacune, nous montrons ce qui est vrai, combien cela représente, et où sont les limites. La mini-barre indique la part du déficit de 2025 (' + md(D.deficit) + ') que la mesure représenterait.</p>' +
       '<div class="cards">' + order.map(card).join("") + '</div>' +
-      '<p class="order-note">Cartes classées par montant, du plus grand au plus petit ; les cartes sans montant suivent, par ordre alphabétique. Aucune étiquette de camp. Le coût (dépense nouvelle) et le rendement (recette ou économie) sont indiqués sur chaque carte.</p>' +
+      '<p class="order-note">Cartes classées par montant, du plus grand au plus petit (milieu de la fourchette) ; les cartes sans montant suivent, par ordre alphabétique. Aucune étiquette de camp. Le coût (dépense nouvelle) et le rendement (recette ou économie) sont indiqués sur chaque carte.</p>' +
     '</section>' +
 
     '<section class="blk col">' +

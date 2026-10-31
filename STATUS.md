@@ -77,13 +77,15 @@ Le texte original de la demande figure en annexe.
    - **Étiquettes gauche/droite retirées** des chapitres 2, 4, 5, 7 et de la page « Débats » (environ 200 occurrences sur la page « Débats », où les groupes « Gauche » et « Droite ou libéral » sont fusionnés en « Économistes, instituts et organisations ») ; règle ajoutée au glossaire (§1.13, règle 8) ; juges pour 100 000 habitants insérés au chapitre 6.
    - **Squelette du site Astro** (`site/`) : 9 pages, pastilles résolues à la construction (une pastille inconnue fait échouer la construction), notes éditoriales masquées.
 
-### 3.1 À revoir ensemble (matin du 1er novembre 2026)
+### 3.1 À revoir ensemble (revue du 31 octobre 2026)
 
-1. **Identité visuelle :** nom provisoire « ordres de grandeur » ; polices (Instrument Sans/Serif, Geist Mono) ; liens indigo ou couleur du texte ; trait tricolore sur toute la largeur de l'en-tête ou sous le logo seulement.
+*Retour du porteur du projet : identité « bien, mais trop de drapeaux » ; logo « pas assez travaillé » ; nom rejeté ; « sinon, continuons ». Les recommandations sans objection (points 3 et 5) sont appliquées.*
+
+1. **Identité visuelle :** ~~tricolore sous la rubrique active~~ (retiré : filet d'encre de 1 px ; un seul tricolore par écran) ; **nom et logo : à choisir** parmi les pistes de `prototypes/nom-et-logo.html` (8 noms, domaines .fr libres le 31 octobre ; 6 logos ; recommandation « Mille milliards » + règle logarithmique), puis marques INPI ; polices (Instrument Sans/Serif, Geist Mono) ; liens indigo ou couleur du texte ; trait tricolore sur toute la largeur de l'en-tête ou sous le logo seulement.
 2. **Page « Débats » :** fusion des groupes de positions en un seul : la symétrie n'est plus visible et certains points ne citent plus qu'un type de source. Faut-il une mention neutre « une seule position publiée trouvée » ? Sondage Elabe (point 8.1) : nommer l'électorat est-il une étiquette ?
-3. **Ordre des cartes :** fourchettes classées sur la borne haute (les cartes à très large fourchette passent devant) ou sur le milieu ?
+3. ~~**Ordre des cartes**~~ : **fait** : tri sur le milieu de la fourchette (prototype, fichiers 01 et 04 ; 4 tableaux réordonnés).
 4. **Sujets :** garder les deux sujets ajoutés (« Prix, énergie et pouvoir d'achat », « Train de vie de l'État ») ? Créer un sujet « Famille » ? Unité des sujets sans dépense (impôts, immigration, prix).
-5. **Justice (chapitre 6) :** le ratio de juges est sous la médiane, mais le budget par habitant est au-dessus ; cette nuance n'est plus affichée. La rétablir avec un chiffre CEPEJ ?
+5. ~~**Justice (chapitre 6)**~~ : **fait** : budget exécuté 77,2 € par habitant contre une médiane de 74,8 €, mais 0,20 % du PIB contre 0,28 % et moins que chaque pays du panel (CEPEJ, rapport 2024, partie 1, fig. 2.1 ; 4 figures ajoutées ; fichier 04, addendum). Chapitre 5 : investissement net (0,6 % du PIB contre 0,8 % en zone euro) désormais affiché.
 6. **Indemnisation du chômage :** taux de remplacement OCDE (modèle sur 24 mois) et plafond Unédic (18 mois depuis 2023) ne se comparent pas sans explication.
 7. **Rafraîchir** `research/data/eurostat_spr_exp_func.csv` (millésime Eurostat du 26 octobre 2026 légèrement différent).
 8. **Squelette Astro :** affichage des pastilles (numéros et liste « Chiffres et sources » en bas de chapitre) ; libellés de sources encore en anglais ; nom et hébergement du site.

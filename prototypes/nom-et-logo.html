@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nom et logo, pistes</title>
+<meta name="description" content="Pistes de nom et de logo pour le site sur les finances publiques. Document de travail, 31 octobre 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Instrument+Sans:wght@400..700&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+:root {
+  --paper: #F7F6F2; --surface: #FFFFFF; --ink: #16181D; --muted: #5A5F69; --line: #DEDCD5; --faint: #D3D1CA;
+  --accent: #3A3FB8; --accent-soft: #E8E8F7;
+  --f-bleu: #0055A4; --f-blanc: #FFFFFF; --f-blanc-line: #A9A79F; --f-rouge: #EF4135;
+  --f-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-display: "Instrument Serif", Georgia, serif;
+  --f-num: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36; --faint: #3A3E46;
+    --accent: #A5A9FF; --accent-soft: #24264A;
+    --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F1013; --surface: #17191E; --ink: #ECEAE4; --muted: #A3A7AF; --line: #2C2F36; --faint: #3A3E46;
+  --accent: #A5A9FF; --accent-soft: #24264A;
+  --f-bleu: #5B8FE0; --f-blanc: #F4F3EF; --f-blanc-line: #F4F3EF; --f-rouge: #F0605A;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.6 var(--f-sans); overflow-x: hidden; }
+h1, h2, h3, p, ul { margin: 0; }
+h1, h2 { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.01em; line-height: 1.08; text-wrap: balance; }
+h1 { font-size: clamp(36px, 8vw, 56px); }
+h2 { font-size: clamp(28px, 5.5vw, 38px); }
+h3 { font: 600 19px/1.3 var(--f-sans); }
+p { max-width: 64ch; text-wrap: pretty; }
+a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.muted { color: var(--muted); } .small { font-size: 14px; line-height: 1.5; }
+.mono { font-family: var(--f-num); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.eyebrow { font: 500 12px/1.4 var(--f-sans); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+section { padding-block: 48px 0; display: flex; flex-direction: column; gap: 16px; }
+.head { border-top: 1px solid var(--line); padding-top: 16px; display: flex; gap: 12px; align-items: baseline; }
+.head .n { font: 500 13px var(--f-num); color: var(--muted); }
+
+/* top bar */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; border-bottom: 1px solid var(--line); }
+.toggle { all: unset; cursor: pointer; font: 500 13px/1 var(--f-sans); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 9px 14px; min-height: 36px; box-sizing: border-box; display: inline-flex; align-items: center; }
+.toggle:hover { color: var(--ink); border-color: var(--muted); }
+.toggle:focus-visible, .chips button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hero { padding-block: 40px 8px; display: flex; flex-direction: column; gap: 14px; }
+.lede { font-size: 19px; line-height: 1.55; color: var(--muted); }
+
+/* name chooser */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips button { all: unset; cursor: pointer; font: 500 14px/1 var(--f-sans); padding: 0 14px; min-height: 40px; display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: var(--surface); box-sizing: border-box; }
+.chips button[aria-pressed="true"] { color: var(--paper); background: var(--ink); border-color: var(--ink); }
+
+/* names */
+.names { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.name { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.name .w { font: 600 26px/1.1 var(--f-sans); letter-spacing: -0.03em; }
+.name .dom { display: flex; flex-wrap: wrap; gap: 6px; }
+.dom span { font: 500 12px/1 var(--f-num); padding: 5px 7px; border-radius: 4px; border: 1px solid var(--line); color: var(--muted); }
+.dom span.ok { color: var(--ink); border-color: var(--ink); }
+.dom span.ko { text-decoration: line-through; }
+.name .pick { font: 500 12px/1 var(--f-num); color: var(--ink); }
+.name.fav { border-color: var(--ink); }
+
+/* logos */
+.dirs { display: flex; flex-direction: column; gap: 16px; }
+.dir { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: grid; grid-template-columns: 220px minmax(0, 1fr); }
+@media (max-width: 720px) { .dir { grid-template-columns: 1fr; } }
+.dir .big { display: grid; place-items: center; border-right: 1px solid var(--line); padding: 28px; min-height: 200px; }
+@media (max-width: 720px) { .dir .big { border-right: 0; border-bottom: 1px solid var(--line); min-height: 170px; } }
+.dir .big svg { width: 112px; height: 112px; }
+.dir .body { padding: 18px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.dir .tag { font: 500 12px/1 var(--f-num); color: var(--muted); }
+.dir .tag b { color: var(--ink); font-weight: 600; }
+
+/* lockups */
+.mock { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }
+.mock .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 14px; min-height: 52px; }
+.mock .nav { display: flex; gap: 18px; font-size: 14px; color: var(--muted); }
+.mock .nav b { color: var(--ink); font-weight: 500; box-shadow: inset 0 -1px 0 var(--ink); padding-bottom: 2px; }
+@media (max-width: 560px) { .mock .nav { display: none; } }
+.mock .rule { height: 1px; background: var(--line); }
+.tri { display: flex; gap: 2px; height: 2px; }
+.tri i { flex: 1; } .tri i:nth-child(1) { background: var(--f-bleu); } .tri i:nth-child(2) { background: var(--f-blanc); box-shadow: inset 0 0 0 .5px var(--f-blanc-line); } .tri i:nth-child(3) { background: var(--f-rouge); }
+.lock { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); font: 600 17px/1 var(--f-sans); letter-spacing: -0.025em; white-space: nowrap; min-width: 0; }
+.lock svg { width: 22px; height: 22px; flex: none; }
+.lock .nm { overflow: hidden; text-overflow: ellipsis; }
+.sizes { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: flex-end; }
+.sizes figure { margin: 0; display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.sizes figcaption { font: 500 11px/1 var(--f-num); color: var(--muted); }
+.tab { display: inline-flex; align-items: center; gap: 7px; background: var(--paper); border: 1px solid var(--line); border-bottom: 0; border-radius: 8px 8px 0 0; padding: 7px 12px; font-size: 12px; color: var(--ink); max-width: 200px; }
+.tab svg { width: 16px; height: 16px; flex: none; }
+.inv { background: var(--ink); color: var(--paper); border-radius: 8px; padding: 10px 14px; display: inline-flex; }
+.inv .lock { color: var(--paper); }
+.pc { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 15px; }
+@media (max-width: 560px) { .pc { grid-template-columns: 1fr; } }
+.pc ul { padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.pc h4 { margin: 0 0 4px; font: 500 12px/1.4 var(--f-num); color: var(--muted); }
+
+.rec { border-left: 2px solid var(--ink); padding: 4px 0 4px 16px; display: flex; flex-direction: column; gap: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 12px/1.4 var(--f-sans); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.tscroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+footer { padding-block: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+
+<!-- Marks: one symbol per direction, drawn on a 32 × 32 grid, strokes in currentColor -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- A. Log ruler: real log10 positions of 1…10 -->
+    <symbol id="m-log" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M3 25.25H29"/>
+        <path d="M3.75 25V6M29 25V6"/>
+        <path d="M10.83 25v-7M15.4 25v-7M18.65 25v-7M23.23 25v-7M24.97 25v-7M26.48 25v-7M27.81 25v-7" stroke-width="1"/>
+        <path d="M21.17 25V13"/>
+      </g>
+    </symbol>
+    <!-- A, small sizes: the 1-2-5-10 series only -->
+    <symbol id="m-log-s" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M2 27.5H30"/><path d="M3.25 28V4M28.75 28V4"/><path d="M11 28V18"/><path d="M20.5 28V12"/>
+      </g>
+    </symbol>
+    <!-- B. Dimension line (cote) -->
+    <symbol id="m-cote" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+        <path d="M4 8v16M28 8v16"/>
+        <path d="M4.75 16h22.5"/>
+        <path d="M9 13.25 5 16l4 2.75M23 13.25 27 16l-4 2.75"/>
+      </g>
+    </symbol>
+    <symbol id="m-cote-s" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2.75" stroke-linejoin="round">
+        <path d="M3.5 6v20M28.5 6v20"/><path d="M5 16h22"/>
+        <path d="M10 11.5 5 16l5 4.5M22 11.5 27 16l-5 4.5"/>
+      </g>
+    </symbol>
+    <!-- C. Out of 100: 10 × 10 grid, 24 cells on (pensions ≈ 24 % of spending) -->
+    <symbol id="m-cent" viewBox="0 0 32 32">
+      <g id="cent-grid"></g>
+    </symbol>
+    <symbol id="m-cent-s" viewBox="0 0 32 32">
+      <rect x="3" y="3" width="26" height="26" rx="1.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <rect x="3" y="22.75" width="26" height="6.25" fill="currentColor"/>
+    </symbol>
+    <!-- D. The flag as three slanted hairlines -->
+    <symbol id="m-tri" viewBox="0 0 32 32">
+      <path d="M6 26 13.5 6h2L8 26z" style="fill:var(--f-bleu)"/>
+      <path d="M12.5 26 20 6h2l-7.5 20z" style="fill:var(--f-blanc);stroke:var(--f-blanc-line);stroke-width:.6"/>
+      <path d="M19 26 26.5 6h2L21 26z" style="fill:var(--f-rouge)"/>
+    </symbol>
+    <symbol id="m-tri-s" viewBox="0 0 32 32">
+      <path d="M3 29 12 3h4L7 29z" style="fill:var(--f-bleu)"/>
+      <path d="M11 29 20 3h4l-9 26z" style="fill:var(--f-blanc);stroke:var(--f-blanc-line);stroke-width:1"/>
+      <path d="M19 29 28 3h4l-9 26z" style="fill:var(--f-rouge)"/>
+    </symbol>
+    <!-- E. Beam balance, slightly tipped -->
+    <symbol id="m-fleau" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 18.6 28 12.4"/>
+        <path d="M16 15.5 12.5 25h7z"/>
+        <path d="M2.5 22.4h5M24.5 16.2h5"/>
+      </g>
+    </symbol>
+    <symbol id="m-fleau-s" viewBox="0 0 32 32">
+      <g fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 19.5 29 12.5"/><path d="M16 16 11.5 28h9z"/>
+      </g>
+    </symbol>
+    <!-- F. 10ⁿ monogram -->
+    <symbol id="m-dix" viewBox="0 0 32 32">
+      <rect x="1.75" y="1.75" width="28.5" height="28.5" rx="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <text x="5.6" y="22.5" font-family="Geist Mono, ui-monospace, monospace" font-weight="500" font-size="13.5" letter-spacing="-1" fill="currentColor">10</text>
+      <text x="20.4" y="15" font-family="Geist Mono, ui-monospace, monospace" font-weight="500" font-size="9" fill="currentColor">n</text>
+    </symbol>
+    <symbol id="m-dix-s" viewBox="0 0 32 32">
+      <rect x="0" y="0" width="32" height="32" rx="8" fill="currentColor"/>
+      <text x="3" y="23" font-family="Geist Mono, ui-monospace, monospace" font-weight="600" font-size="16" letter-spacing="-1.5" style="fill:var(--paper)">10</text>
+      <text x="21" y="14" font-family="Geist Mono, ui-monospace, monospace" font-weight="600" font-size="10" style="fill:var(--paper)">n</text>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <div class="top">
+    <span class="eyebrow">Document de travail · 31 octobre 2026</span>
+    <button class="toggle" id="theme" type="button">Thème : auto</button>
+  </div>
+
+  <div class="hero">
+    <span class="eyebrow">Identité · étape 3 bis</span>
+    <h1>Nom et logo : six pistes</h1>
+    <p class="lede">Retour du 31 octobre : moins de drapeau, un logo plus travaillé, un autre nom. Ici, huit noms dont le domaine en <span class="mono">.fr</span> était libre ce matin, et six logos. Choisissez un nom ci-dessous : tous les logos se mettent à jour.</p>
+    <div class="chips" id="chooser" role="group" aria-label="Nom affiché dans les logos"></div>
+  </div>
+
+  <section id="regle">
+    <div class="head"><span class="n">01</span><h2>La nouvelle règle du drapeau</h2></div>
+    <div class="rec">
+      <p><b>Un seul tricolore par écran.</b> Par défaut, c'est le filet de 2 px sous l'en-tête et le logo reste en encre. La rubrique active est soulignée d'un filet d'encre de 1 px, sans couleur.</p>
+      <p class="small muted">Exception : si l'on choisit le logo D (le drapeau en trois traits), c'est lui qui porte le tricolore et le filet d'en-tête redevient un trait gris de 1 px.</p>
+    </div>
+  </section>
+
+  <section id="noms">
+    <div class="head"><span class="n">02</span><h2>Noms</h2></div>
+    <p class="muted small">Domaines vérifiés par <span class="mono">whois</span> le 31 octobre 2026 (registre AFNIC pour le .fr, Verisign pour le .com). Un domaine pris n'est pas forcément utilisé ; un domaine libre ne dit rien des marques déposées. À vérifier ensuite : base des marques de l'INPI, comptes sur les réseaux sociaux.</p>
+    <div class="names" id="names"></div>
+  </section>
+
+  <section id="logos">
+    <div class="head"><span class="n">03</span><h2>Logos</h2></div>
+    <p class="muted small">Chaque piste est montrée en grand, dans l'en-tête du site, en icône d'onglet (16 px, dessin simplifié), en icône d'application et sur fond d'encre. Les traits font 1,5 px sur une grille de 32 px ; la version 16 px est redessinée avec des traits plus épais, pas seulement réduite.</p>
+    <div class="dirs" id="dirs"></div>
+  </section>
+
+  <section id="avis">
+    <div class="head"><span class="n">04</span><h2>Mon avis</h2></div>
+    <div class="rec">
+      <p><b>Ma préférence : « Mille milliards » avec la règle logarithmique (A), en encre.</b> Le nom donne tout de suite l'échelle du sujet : la dépense publique fait 1 714 milliards d'euros, la dette plus de 3 400. Il est court, se retient et sonne un peu « start-up » sans faire gadget. La règle tient la promesse du site : chaque graduation est à sa vraie place sur une échelle logarithmique, donc un logo « exact ». Le drapeau ne reste que dans le filet de l'en-tête.</p>
+      <p><b>Deuxième choix : « Mètre étalon » avec la cote (B).</b> L'idée est plus française (le mètre est né à Paris) et plus sobre, mais le nom est moins parlant pour un public qui ne connaît pas l'expression.</p>
+      <p class="small muted">Signature possible, quel que soit le nom : « Les finances publiques, toutes proportions gardées. »</p>
+    </div>
+  </section>
+
+  <footer>Données et décisions : <span class="mono">fr/conception/03-identite-visuelle.md</span>, §2 et §6.</footer>
+</div>
+
+<script>
+const NAMES = [
+  { id: 'mm', w: 'Mille milliards', sense: "L'ordre de grandeur du sujet : 1 714 Md€ de dépense publique, plus de 3 400 Md€ de dette. Court, se retient.", risk: "Écho au « mille milliards de mille sabords » du capitaine Haddock : sympathique, mais vérifier qu'aucune marque ne bloque.", dom: [['millemilliards.fr', 1], ['millemilliards.com', 1]], fav: true },
+  { id: 'me', w: 'Mètre étalon', sense: "La mesure de référence, née en France. Le site sert d'étalon pour mesurer les promesses. Le logo en découle (une cote).", risk: "Expression moins connue des moins de 30 ans ; peut sonner technique.", dom: [['metreetalon.fr', 1], ['metreetalon.com', 1]] },
+  { id: 'sc', w: 'Sur cent', sense: "Le geste pédagogique du site : « sur 100 € de dépense publique, 24 vont aux retraites ».", risk: "Peu distinctif à l'oral ; « sur 100 » peut évoquer une note scolaire.", dom: [['sur100.fr', 1], ['surcent.fr', 1], ['sur100.com', 1], ['surcent.com', 0]] },
+  { id: 'tp', w: 'Toutes proportions', sense: "Tiré de « toutes proportions gardées » : comparer sans exagérer. Très juste pour le propos.", risk: "Long pour un logo ; meilleur en signature qu'en nom.", dom: [['toutesproportions.fr', 1], ['toutesproportionsgardees.fr', 1]] },
+  { id: 'bc', w: 'Budget en clair', sense: "Dit exactement ce que fait le site. Aucune ambiguïté.", risk: "Descriptif, peu mémorable ; proche du « budget citoyen » officiel.", dom: [['budgetenclair.fr', 1], ['budgetenclair.com', 1]] },
+  { id: 'lp', w: 'Le Poids', sense: "Le poids de chaque dépense, de chaque promesse. Un mot, un logo (la balance).", risk: "Évoque d'abord le poids du corps (régimes, santé) dans les moteurs de recherche.", dom: [['lepoids.fr', 1], ['lepoids.com', 0]] },
+  { id: 'ph', w: 'Par habitant', sense: "L'unité qui rend tout lisible : 24 800 € de dépense publique par habitant en 2025.", risk: "Sonne comme une rubrique plus que comme une marque.", dom: [['parhabitant.fr', 1]] },
+  { id: 'jc', w: 'Le Juste Chiffre', sense: "Promesse d'exactitude, ton léger.", risk: "Clin d'œil trop direct au jeu télévisé « Le Juste Prix » ; ton de jeu.", dom: [['lejustechiffre.fr', 1], ['lejustechiffre.com', 1]] },
+];
+const TAKEN = [['ordresdegrandeur', 'rejeté'], ['laddition.fr', 'pris'], ['legrandlivre.fr', 'pris'], ['contrepoids.fr', 'pris'], ['aplomb.fr', 'pris'], ['comptesclairs.fr', 'pris'], ['lignealigne.fr', 'pris'], ['justemesure.fr', 'pris'], ['combien.fr', 'pris']];
+
+const DIRS = [
+  { k: 'A', id: 'log', title: 'Règle logarithmique', idea: "Une règle dont les graduations 1 à 10 sont placées à leur vraie position logarithmique : 1, 2 et 5 tombent où un ingénieur les attend. C'est l'idée d'hier (trois graduations), dessinée juste : une seule décade, un seul trait de base, en encre.", pros: ['Exact : le logo est lui-même une échelle', 'Fin et technique, sans folklore', 'Marche avec tous les noms'], cons: ["À 16 px, garder seulement 1, 2, 5 et 10", 'Peut paraître froid sans le filet tricolore'], fit: 'mm' },
+  { k: 'B', id: 'cote', title: 'Cote', idea: "La ligne de cote des plans d'architecte : deux traits d'attache, une flèche à chaque bout. Elle dit « voici la mesure », sans dire si c'est trop ou trop peu.", pros: ['Le plus sobre des six', 'Lien direct avec « Mètre étalon »', 'Très lisible à 16 px'], cons: ['Rappelle les outils de dessin (Figma, AutoCAD)', 'Ne dit rien de l\'argent public'], fit: 'me' },
+  { k: 'C', id: 'cent', title: 'Grille de cent', idea: "Cent cases, vingt-quatre remplies : la part des retraites dans la dépense publique. Le logo est un graphique vrai, et la grille peut changer selon la page (santé, école, intérêts).", pros: ['Pédagogique : il montre la méthode du site', 'Peut s\'animer d\'une page à l\'autre', 'Lien direct avec « Sur cent »'], cons: ['Fragile sous 24 px : à 16 px, un carré à moitié rempli', 'Un logo qui porte un chiffre devra être tenu à jour'], fit: 'sc' },
+  { k: 'D', id: 'tri', title: 'Drapeau en trois traits', idea: "Le drapeau réduit à trois traits fins inclinés, comme une ponctuation. C'est la seule piste où le tricolore est dans le logo ; le filet d'en-tête redevient alors gris.", pros: ['Reconnaissable tout de suite', 'Allure « start-up » (barres obliques)', 'Une seule touche de couleur dans tout le site'], cons: ['Rapproche le site de l\'univers officiel ou militant', 'C\'est ce que vous avez trouvé « trop » ; à n\'utiliser qu\'ici'], fit: 'tp' },
+  { k: 'E', id: 'fleau', title: 'Fléau de balance', idea: "Une balance réduite au fléau et à son pivot, légèrement penchée : les comptes ne sont pas à l'équilibre. Le dessin reste neutre : il ne dit pas de quel côté il faut rééquilibrer.", pros: ['Parle de budget et d\'équilibre', 'Le déséquilibre est discret mais lisible', 'Lien avec « Le Poids »'], cons: ['Balance = justice dans l\'imaginaire commun', 'Le côté qui penche peut être lu comme un parti pris'], fit: 'lp' },
+  { k: 'F', id: 'dix', title: 'Dix puissance n', idea: "Le monogramme « 10ⁿ » en chasse fixe, dans un carré arrondi : la notation des ordres de grandeur, avec un clin d'œil aux applications.", pros: ['Le plus « start-up »', 'Icône d\'application immédiate', 'Repose sur la police des chiffres du site'], cons: ['Peut intimider un lecteur fâché avec les maths', 'Dépend d\'une police : à vectoriser avant usage'], fit: 'mm' },
+];
+
+const $ = (s, el = document) => el.querySelector(s);
+let current = 'mm';
+try { current = localStorage.getItem('nom-choisi') || 'mm'; } catch (e) {}
+if (!NAMES.find(n => n.id === current)) current = 'mm';
+
+// Grid of 100 for mark C
+(function () {
+  const g = document.getElementById('cent-grid'); const ns = 'http://www.w3.org/2000/svg';
+  for (let i = 0; i < 100; i++) {
+    const r = Math.floor(i / 10), c = i % 10;
+    const on = (9 - r) * 10 + c < 24; // fill from the bottom row up
+    const d = document.createElementNS(ns, 'rect');
+    d.setAttribute('x', (3.2 + c * 2.65).toFixed(2)); d.setAttribute('y', (3.2 + r * 2.65).toFixed(2));
+    d.setAttribute('width', '1.75'); d.setAttribute('height', '1.75'); d.setAttribute('rx', '.35');
+    d.setAttribute('style', on ? 'fill:currentColor' : 'fill:var(--faint)');
+    g.appendChild(d);
+  }
+})();
+
+const use = (id, cls = '') => `<svg class="${cls}" viewBox="0 0 32 32" aria-hidden="true"><use href="#m-${id}"/></svg>`;
+const nameOf = () => NAMES.find(n => n.id === current).w;
+
+function renderChooser() {
+  $('#chooser').innerHTML = NAMES.map(n => `<button type="button" data-id="${n.id}" aria-pressed="${n.id === current}">${n.w}</button>`).join('');
+}
+function renderNames() {
+  $('#names').innerHTML = NAMES.map(n => `
+    <article class="name${n.fav ? ' fav' : ''}">
+      ${n.fav ? '<span class="pick">Ma préférence</span>' : ''}
+      <div class="w">${n.w}</div>
+      <p class="small">${n.sense}</p>
+      <p class="small muted"><b style="color:var(--ink);font-weight:500">Risque.</b> ${n.risk}</p>
+      <div class="dom">${n.dom.map(([d, ok]) => `<span class="${ok ? 'ok' : 'ko'}" title="${ok ? 'libre le 31/10/2026' : 'déjà pris'}">${d}</span>`).join('')}</div>
+    </article>`).join('') +
+    `<article class="name"><span class="eyebrow">Écartés</span><div class="dom">${TAKEN.map(([d, s]) => `<span class="ko" title="${s}">${d}</span>`).join('')}</div><p class="small muted">Domaine .fr déjà pris, ou nom rejeté.</p></article>`;
+}
+function renderDirs() {
+  const nm = nameOf();
+  $('#dirs').innerHTML = DIRS.map(d => {
+    const headerRule = d.id === 'tri' ? '<div class="rule"></div>' : '<div class="tri"><i></i><i></i><i></i></div>';
+    const fitName = NAMES.find(n => n.id === d.fit).w;
+    return `
+    <article class="dir" id="dir-${d.id}">
+      <div class="big" style="color:var(--ink)">${use(d.id)}</div>
+      <div class="body">
+        <div class="tag"><b>${d.k}</b> · ${d.title} · va bien avec « ${fitName} »</div>
+        <p>${d.idea}</p>
+        <div class="mock" aria-label="Aperçu de l'en-tête">
+          <div class="bar"><span class="lock">${use(d.id)}<span class="nm">${nm}</span></span><span class="nav"><b>Sujets</b><span>Réponses</span><span>Simulateur</span></span></div>
+          ${headerRule}
+        </div>
+        <div class="sizes">
+          <figure><span class="tab">${use(d.id + '-s')}<span>${nm}</span></span><figcaption>onglet, 16 px</figcaption></figure>
+          <figure><svg viewBox="0 0 32 32" width="32" height="32" aria-hidden="true" style="color:var(--ink)"><use href="#m-${d.id}-s"/></svg><figcaption>32 px</figcaption></figure>
+          <figure><span class="inv"><span class="lock">${use(d.id)}<span class="nm">${nm}</span></span></span><figcaption>sur encre</figcaption></figure>
+        </div>
+        <div class="pc">
+          <div><h4>Pour</h4><ul>${d.pros.map(x => `<li>${x}</li>`).join('')}</ul></div>
+          <div><h4>Contre</h4><ul>${d.cons.map(x => `<li>${x}</li>`).join('')}</ul></div>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
+function renderAll() { renderChooser(); renderDirs(); }
+$('#chooser').addEventListener('click', e => {
+  const b = e.target.closest('button[data-id]'); if (!b) return;
+  current = b.dataset.id; try { localStorage.setItem('nom-choisi', current); } catch (err) {}
+  renderAll();
+});
+renderNames(); renderAll();
+
+// Theme toggle: auto → clair → sombre
+const modes = ['auto', 'clair', 'sombre']; let mi = 0;
+try { mi = Math.max(0, modes.indexOf(localStorage.getItem('theme-nom') || 'auto')); } catch (e) {}
+function applyTheme() {
+  const m = modes[mi]; const r = document.documentElement;
+  if (m === 'auto') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', m === 'clair' ? 'light' : 'dark');
+  $('#theme').textContent = 'Thème : ' + m;
+}
+$('#theme').addEventListener('click', () => { mi = (mi + 1) % 3; try { localStorage.setItem('theme-nom', modes[mi]); } catch (e) {} applyTheme(); });
+applyTheme();
+</script>
+</body>
+</html>

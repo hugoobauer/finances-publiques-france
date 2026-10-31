@@ -168,7 +168,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Texte affiché**
 
-> La santé est le 2e poste de la dépense publique : 8,9 % du PIB en 2024 [[fig:cofog_health_2024_pct_gdp]]. C’est 1,5 point de PIB de plus que la zone euro à 21 pays (ZE21, Bulgarie comprise) dans son ensemble [[fig:gap2024_health_pp]]. Ce calcul suit la classification des fonctions des administrations publiques (COFOG). L’écart est plus faible avec d’autres définitions [[src:f12]].
+> La santé est le 2e poste de la dépense publique : 8,9 % du PIB en 2024 [[fig:cofog_health_2024_pct_gdp]]. C’est 1,5 point de PIB de plus que la zone euro à 21 pays (ZE21, Bulgarie comprise) [[fig:gap2024_health_pp]]. Ce calcul suit la classification des fonctions des administrations publiques (COFOG). L’écart est plus faible avec d’autres définitions [[src:f12]].
 >
 > Par habitant, à coût de la vie égal et dépense privée comprise, la France dépense moins que l’Allemagne, les Pays-Bas, la Belgique ou la Suède [[src:f12]]. C’est le coût total, pas la seule charge publique (étape 8).
 >
@@ -204,7 +204,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 
 **Texte affiché**
 
-> **L’école.** Selon l’enquête 2025 du Programme international pour le suivi des acquis des élèves (PISA), les élèves de 15 ans obtiennent 458 points en mathématiques [[fig:pisa_math_2025]]. La moyenne de l’OCDE est de 463 points [[fig:oecd_pisa_math_2025]]. La France est 29e sur 38 pays de l’OCDE [[fig:pisa_math_2025_rank]]. Sa baisse depuis 2015 est l’une des plus fortes, même si la moyenne de l’OCDE a aussi baissé [[src:f13]].
+> **L’école.** Selon l’enquête 2025 du Programme international pour le suivi des acquis des élèves (PISA), les élèves de 15 ans obtiennent 458 points en mathématiques [[fig:pisa_math_2025]]. La moyenne de l’OCDE est de 463 points [[fig:oecd_pisa_math_2025]]. La France est 29e sur 38 pays de l’OCDE [[fig:pisa_math_2025_rank]]. Elle a plus baissé depuis 2015 que la moyenne de l’OCDE [[src:f13]].
 >
 > Parmi les pays riches, ceux qui dépensent le plus par élève n’ont pas toujours les meilleurs scores [[src:f13]]. Le Conseil d’analyse économique (CAE ; instance d’économistes placée auprès du Premier ministre) nuance. En 2021, la France dépensait un peu plus par élève que la moyenne de l’OCDE : moins en primaire, plus dans le secondaire.
 >
@@ -212,7 +212,9 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > Les enseignants sont moins payés que la moyenne de l’OCDE [[src:f04]]. Pour la Fondation iFRAP, l’école manque moins de moyens que d’organisation : elle propose notamment une part de salaire variable.
 >
-> **La justice.** En 2022, la France compte 11,3 juges professionnels pour 100 000 habitants [[fig:judges_per_100k_2022]], contre 17,6 en médiane au Conseil de l’Europe [[fig:cepej_median_judges_2022]]. Ce ratio exclut les nombreux juges non professionnels (tribunaux de commerce, prud’hommes). L’Union syndicale des magistrats (syndicat de magistrats) juge la situation « critique » en moyens humains et budgétaires [[src:f10]].
+> **La justice.** En 2022, la France compte 11,3 juges professionnels pour 100 000 habitants [[fig:judges_per_100k_2022]], contre 17,6 en médiane au Conseil de l’Europe [[fig:cepej_median_judges_2022]]. Ce ratio exclut les juges non professionnels (tribunaux de commerce, prud’hommes).
+>
+> La justice coûte 77,2 € par habitant [[fig:justice_budget_per_capita_fr_2022]], contre 74,8 € en médiane [[fig:justice_budget_per_capita_cepej_median_2022]]. Mais cette médiane inclut des pays moins riches. En part du PIB, c’est 0,20 % [[fig:justice_budget_pct_gdp_fr_2022]], contre 0,28 % [[fig:justice_budget_pct_gdp_cepej_median_2022]]. L’Union syndicale des magistrats (syndicat de magistrats) juge la situation « critique » [[src:f10]].
 >
 > La Cour des comptes (juridiction financière) notait en 2021 un budget en nette hausse depuis 2011, sans baisse des délais civils. Elle demandait de mieux répartir les effectifs.
 
@@ -228,7 +230,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 - Fondation iFRAP, *Société Civile* n° 227, octobre 2021, https://www.ifrap.org/education-et-culture/eduquer-mieux-en-reallouant-et-en-baissant-les-depenses (constat de la Cour des comptes de 2013 : l’Éducation nationale « ne souffre pas d’un manque de moyens » ; part variable de rémunération) : **entrée à ajouter à sources.json**.
 - Justice : 11,3 juges professionnels pour 100 000 habitants [[fig:judges_per_100k_2022]] ; médiane du Conseil de l’Europe 17,6 [[fig:cepej_median_judges_2022]] (CEPEJ-STAT, données 2022, mise à jour du 25/10/2024 ; ratio hors juges non professionnels des tribunaux de commerce et des conseils de prud’hommes) ; jugement « critique » de l’Union syndicale des magistrats [[src:f10]] (la note de l’USM de 2024 donne 333 jours pour une affaire civile en première instance, contre 637 jours dans l’édition précédente : ne pas écrire que les procès sont « plus longs » sans médiane européenne confirmée) ; Union syndicale des magistrats, *Note sur le rapport CEPEJ 2024*, 18 octobre 2024 (données 2022, source syndicale), https://union-syndicale-magistrats.org/wp-content/uploads/2024/10/2024.10.18_note-USM-sur-rapport-CEPEJ-2024.pdf (fichier 10, [S38])
 - Cour des comptes, note *Améliorer la gestion du service public de la justice*, 21 octobre 2021, lue seulement dans le résumé du Monde du Droit (25 octobre 2021), https://www.lemondedudroit.fr/judiciaire/324-organisation-judiciaire/78080-cour-des-comptes-ameliorer-la-gestion-du-service-public-de-la-justice.html (budget + 22 % de 2011 à 2021, délais civils en hausse) : **ouvrir la note primaire et ajouter l’entrée à sources.json** avant publication ; « nettement » remplace le chiffre en attendant.
-- Budget de la justice par habitant (au-dessus de la médiane européenne, sous la moyenne) : retiré du texte affiché le 30 octobre 2026 (voir notes de relecture), à rétablir avec les chiffres CEPEJ primaires.
+- Budget de la justice par habitant : rétabli le 31 octobre 2026 avec les chiffres CEPEJ primaires (rapport 2024, partie 1, fig. 2.1, budget exécuté) : 77,2 € contre une médiane de 74,8 €, mais 0,20 % du PIB contre 0,28 % ; sous chacun des pays du panel (fichier 04, addendum du 31 octobre 2026).
 
 ---
 
@@ -246,7 +248,7 @@ NOTES POUR L’ÉQUIPE (non affichées)
 >
 > Le chapitre 7 chiffre ce que rapporterait un taux d’emploi plus élevé. Le CAE prévient : la production augmenterait moins vite que l’emploi.
 >
-> Nuance : ceux qui ont un emploi travaillent un peu moins que la moyenne de l’UE, sans être les derniers [[src:f08]]. Rexecode (institut de conjoncture proche des organisations patronales) le note aussi. Le retard vient surtout du faible emploi des jeunes et des seniors [[src:f08]]. Ces comparaisons d’heures restent fragiles, prévient l’Insee.
+> Nuance : ceux qui ont un emploi travaillent un peu moins que la moyenne de l’UE, sans être les derniers [[src:f08]]. Le retard vient surtout du faible emploi des jeunes et des seniors [[src:f08]]. L’Insee juge ces comparaisons fragiles.
 >
 > Par heure travaillée, la productivité française dépasse la moyenne de l’UE. En 2025, elle atteint l’indice 114,6 en standards de pouvoir d’achat (SPA), UE = 100 [[fig:productivity_per_hour_pps_2025]]. La France est 8e sur 27 [[fig:productivity_per_hour_pps_2025_rank]]. Une hypothèse : les moins qualifiés sont plus souvent sans emploi. D’après notre calcul, elle a reculé depuis 2019 [[src:f08]].
 

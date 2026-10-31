@@ -695,3 +695,25 @@ Flags resolved elsewhere and removed here: **PISA 2025** (file 13 §4.1, StatLin
 
 - **Cour des comptes: do not write "EUR 20 bn over three years".** Write "at least about EUR 20 bn by 2032 (savings against the trend); EUR 17.4 bn if the wage bill contributed in proportion to its 21.7% weight".
 - Euro-area comparisons of the wage bill use EA21: 12.4% vs 10.0% of GDP (2025).
+
+## Addendum of 2026-10-31: judicial-system budget (CEPEJ primary)
+
+Source: CEPEJ, *European judicial systems – CEPEJ Evaluation Report, 2024 evaluation cycle (2022 data), Part 1: General analyses*, ch. 2, Fig. 2.1 (printed p. 20) and Fig. 2.8. https://rm.coe.int/cepej-evaluation-report-2024-general-analyses/1680b1e91d (the coe.int pages are behind Cloudflare; the PDF was opened in a browser and read from the rendered page). Perimeter: **implemented** budget (actual spending, not the approved budget) of the judicial system = courts + public prosecution + legal aid; prisons and enforcement excluded.
+
+| Entity | € per inhabitant (2022) | % of GDP (2022) |
+|---|---|---|
+| France | 77.2 | 0.20 |
+| CoE median | 74.8 | 0.28 |
+| CoE average | 85.4 | 0.31 |
+| Average, France's GDP-per-capita group (20–40k €) | 92.1 | 0.30 |
+| Germany | 136.1 | 0.30 |
+| Italy | 100.6 | 0.31 |
+| Spain | 96.8 | 0.34 |
+| Netherlands | 138.8 | 0.26 |
+| Belgium | 102.5 | 0.22 |
+| Sweden | 121.3 | 0.24 |
+| Denmark | 96.7 | 0.15 |
+
+France, courts only (Fig. 2.8): 54.3 € per inhabitant (median 46.2). Prosecution 13.6 € and legal aid 9.28 € come only from the USM note of 18 Oct 2024 (secondary, not displayed).
+
+**Reading.** France is just above the CoE median per inhabitant (77.2 vs 74.8), but the median includes much poorer member states: France is below the average of its income group and below every panel country, and below the median as a share of GDP (0.20 % vs 0.28 %). Both statements must be shown together.

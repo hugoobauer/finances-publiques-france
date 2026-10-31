@@ -91,9 +91,7 @@ nav.main { display: flex; gap: var(--s5); }
 nav.main a { position: relative; color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; padding-block: 18px; }
 nav.main a:hover { color: var(--ink); }
 nav.main a[aria-current="page"] { color: var(--ink); }
-nav.main a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 10px; height: 2px;
-  background: linear-gradient(90deg, var(--f-bleu) 0 30%, transparent 30% calc(30% + 2px), var(--f-blanc) calc(30% + 2px) calc(70% - 2px), transparent calc(70% - 2px) 70%, var(--f-rouge) 70%);
-  box-shadow: none; }
+nav.main a[aria-current="page"]::after { content: ""; position: absolute; left: 0; right: 0; bottom: 12px; height: 1px; background: var(--ink); }
 @media (max-width: 720px) { nav.main { display: none; } }
 .toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font: 500 13px/1 var(--f-sans); color: var(--muted);
   border: 1px solid var(--line); border-radius: var(--r-pill); padding: 8px 12px; min-height: 36px; box-sizing: border-box; }
@@ -238,13 +236,13 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
 
 <header class="site">
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="ordres de grandeur, nom provisoire">
+    <a class="logo" href="#top" aria-label="Nom du site à choisir">
       <svg width="13" height="18" viewBox="0 0 13 18" aria-hidden="true">
         <rect class="t1" x="0" y="13" width="2" height="5"/>
         <rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/>
         <rect class="t3" x="10" y="0" width="2" height="18"/>
       </svg>
-      <span>ordres de grandeur</span><span class="ph">nom provisoire</span>
+      <span>Nom du site</span><span class="ph">à choisir</span>
     </a>
     <nav class="main" aria-label="Navigation principale">
       <a href="#sujets" aria-current="page">Sujets</a>
@@ -260,7 +258,7 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
   <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
 </header>
 
-<div class="wrap proto" id="top"><b>Spécimen de charte, document de travail (31 octobre 2026).</b> Le nom « ordres de grandeur » est provisoire. Chiffres tirés de <code>platform/data/figures.json</code>.</div>
+<div class="wrap proto" id="top"><b>Spécimen de charte, document de travail (31 octobre 2026).</b> Nom et logo : voir <code>prototypes/nom-et-logo.html</code>. Chiffres tirés de <code>platform/data/figures.json</code>.</div>
 
 <main class="wrap">
 
@@ -330,19 +328,19 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
   <!-- 4. TRICOLOR -->
   <section class="spec" id="tricolore">
     <div class="spec-head"><span class="num">04</span><h2>Le tricolore en filets</h2></div>
-    <p class="col">Trois usages, pas plus, et jamais deux sur la même zone d'écran hors de l'en-tête. Sur fond clair, le segment blanc est cerclé d'un filet gris pour rester visible.</p>
+    <p class="col">Deux usages, pas plus (logo et filet d'en-tête), et un seul par écran en pratique, et jamais deux sur la même zone d'écran hors de l'en-tête. Sur fond clair, le segment blanc est cerclé d'un filet gris pour rester visible.</p>
     <div class="tri-demo">
       <div><span class="eyebrow">Logotype</span><div class="stage"><span class="logo" style="font-size:22px">
         <svg width="17" height="24" viewBox="0 0 13 18" aria-hidden="true"><rect class="t1" x="0" y="13" width="2" height="5"/><rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/><rect class="t3" x="10" y="0" width="2" height="18"/></svg>
-        <span>ordres de grandeur</span></span></div>
-        <p class="small muted">Trois graduations de règle : 1, 10, 100. Les ordres de grandeur, en bleu, blanc, rouge.</p></div>
+        <span>Nom du site</span></span></div>
+        <p class="small muted">Trois graduations de règle : 1, 10, 100. Piste abandonnée le 31 octobre : voir les six pistes de logo.</p></div>
       <div><span class="eyebrow">Filet d'en-tête, 2 px</span><div class="stage" style="flex-direction:column;align-items:stretch;justify-content:center;gap:10px"><div class="tri"><i></i><i></i><i></i></div></div>
         <p class="small muted">Sous l'en-tête, sur toute la largeur. Segments séparés par 2 px de vide.</p></div>
-      <div><span class="eyebrow">Rubrique active</span><div class="stage"><nav class="main" style="display:flex" aria-hidden="true"><a aria-current="page" tabindex="-1">Sujets</a><a tabindex="-1">Réponses</a></nav></div>
-        <p class="small muted">Soulignement tricolore de la rubrique en cours, dans la navigation seulement.</p></div>
+      <div><span class="eyebrow">Rubrique active (sans tricolore)</span><div class="stage"><nav class="main" style="display:flex" aria-hidden="true"><a aria-current="page" tabindex="-1">Sujets</a><a tabindex="-1">Réponses</a></nav></div>
+        <p class="small muted">Filet d'encre de 1 px, sans couleur (retour du 31 octobre : le tricolore y était de trop).</p></div>
     </div>
     <div class="rules">
-      <div class="yes"><h4>là où il signe</h4><ul><li>Le logotype et l'icône du site.</li><li>Le filet de 2 px sous l'en-tête.</li><li>La rubrique active de la navigation.</li><li>L'image de partage (un filet, en bas).</li></ul></div>
+      <div class="yes"><h4>là où il signe</h4><ul><li>Le logotype et l'icône du site.</li><li>Le filet de 2 px sous l'en-tête.</li><li>L'image de partage (un filet, en bas).</li></ul></div>
       <div class="no"><h4>là où il porterait un sens</h4><ul><li>Dans un graphique, une barre, une légende.</li><li>Sur un bouton, une carte, un verdict.</li><li>Pour opposer deux idées ou deux camps.</li><li>En aplat, en drapeau dessiné, avec une Marianne.</li></ul></div>
     </div>
   </section>
@@ -463,7 +461,7 @@ footer.site .row { display: flex; flex-wrap: wrap; justify-content: space-betwee
 
 <footer class="site">
   <div class="wrap row">
-    <span class="logo" style="font-size:15px"><svg width="11" height="15" viewBox="0 0 13 18" aria-hidden="true"><rect class="t1" x="0" y="13" width="2" height="5"/><rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/><rect class="t3" x="10" y="0" width="2" height="18"/></svg><span>ordres de grandeur</span></span>
+    <span class="logo" style="font-size:15px"><svg width="11" height="15" viewBox="0 0 13 18" aria-hidden="true"><rect class="t1" x="0" y="13" width="2" height="5"/><rect class="t2" x="5.375" y="7.375" width="1.25" height="10.25"/><rect class="t3" x="10" y="0" width="2" height="18"/></svg><span>Nom du site</span></span>
     <span>Textes et données sous licence CC BY 4.0 · Méthode · Financement · Corrections</span>
   </div>
 </footer>
